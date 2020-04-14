@@ -11,14 +11,12 @@
     
     
     <item>
-      <title>About Bilberry</title>
-      <link>https://xfrnk2.github.io/page/about-bilberry/</link>
+      <title>about</title>
+      <link>https://xfrnk2.github.io/page/about/</link>
       <pubDate>Wed, 01 Nov 2017 13:18:45 +0100</pubDate>
       
-      <guid>https://xfrnk2.github.io/page/about-bilberry/</guid>
-      <description>Bilberry is a premium theme for the Hugo Static Website Builder.
-It is full of little nice features, such as:
- built-in integration for the wonderful algolia search built-in integration for the powerful disqus comments gravatar and custom image integration for the header keyboard shortcut for the search (press the s key, type something and hit enter or esc) responsive design - optimized for desktop and mobile devices full internationalization (i18n) support (en, de, fr, ru, es out of the box!</description>
+      <guid>https://xfrnk2.github.io/page/about/</guid>
+      <description>Hello World!</description>
     </item>
     
     <item>
