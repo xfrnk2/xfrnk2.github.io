@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Support on My cool new Blog</title>
-    <link>https://example.com/tags/support/</link>
+    <link>https://xfrnk2.github.io/tags/support/</link>
     <description>Recent content in Support on My cool new Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Nov 2017 18:10:14 +0100</lastBuildDate>
     
-	<atom:link href="https://example.com/tags/support/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/tags/support/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Support and Discussions</title>
-      <link>https://example.com/article/support-and-discussions/</link>
+      <link>https://xfrnk2.github.io/article/support-and-discussions/</link>
       <pubDate>Wed, 01 Nov 2017 18:10:14 +0100</pubDate>
       
-      <guid>https://example.com/article/support-and-discussions/</guid>
+      <guid>https://xfrnk2.github.io/article/support-and-discussions/</guid>
       <description>Hey there!
 This Premium Theme is published under an open source license so you can use it for your blog. It took me 100+ hours of work to create one of the best Hugo themes out there.
 If you enjoy this theme and want to stay informed about the latest releases and features or want to say thanks and discuss with other users, join our Discord server:</description>

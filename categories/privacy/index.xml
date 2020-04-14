@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Privacy on My cool new Blog</title>
-    <link>https://example.com/categories/privacy/</link>
+    <link>https://xfrnk2.github.io/categories/privacy/</link>
     <description>Recent content in Privacy on My cool new Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Nov 2017 13:05:27 +0100</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/privacy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/categories/privacy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Duckduckgo.com</title>
-      <link>https://example.com/link/duckduckgo/</link>
+      <link>https://xfrnk2.github.io/link/duckduckgo/</link>
       <pubDate>Wed, 01 Nov 2017 13:05:27 +0100</pubDate>
       
-      <guid>https://example.com/link/duckduckgo/</guid>
+      <guid>https://xfrnk2.github.io/link/duckduckgo/</guid>
       <description>A search engnine that respects your privacy.</description>
     </item>
     
     <item>
       <title>Edward Snowden About Privacy</title>
-      <link>https://example.com/quote/edward-snowden-privacy/</link>
+      <link>https://xfrnk2.github.io/quote/edward-snowden-privacy/</link>
       <pubDate>Wed, 01 Nov 2017 13:01:14 +0100</pubDate>
       
-      <guid>https://example.com/quote/edward-snowden-privacy/</guid>
+      <guid>https://xfrnk2.github.io/quote/edward-snowden-privacy/</guid>
       <description>Arguing that you don&amp;rsquo;t care about the right to privacy because you have nothing to hide is no different than saying you don&amp;rsquo;t care about free speech because you have nothing to say.</description>
     </item>
     

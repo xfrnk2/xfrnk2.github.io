@@ -3,397 +3,397 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/de/author/albert-einstein/</loc>
+    <loc>https://xfrnk2.github.io/de/author/albert-einstein/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/quote/einstein-sinn-des-lebens/</loc>
+    <loc>https://xfrnk2.github.io/de/quote/einstein-sinn-des-lebens/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/author/</loc>
+    <loc>https://xfrnk2.github.io/de/author/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/author/"
+                href="https://xfrnk2.github.io/author/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/author/"
+                href="https://xfrnk2.github.io/de/author/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/"
+                href="https://xfrnk2.github.io/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/categories/"
+                href="https://xfrnk2.github.io/de/categories/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/</loc>
+    <loc>https://xfrnk2.github.io/de/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://xfrnk2.github.io/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/"
+                href="https://xfrnk2.github.io/de/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/quote/</loc>
+    <loc>https://xfrnk2.github.io/de/quote/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/quote/"
+                href="https://xfrnk2.github.io/quote/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/quote/"
+                href="https://xfrnk2.github.io/de/quote/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/zitate/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/zitate/</loc>
     <lastmod>2017-12-01T14:40:32+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/article/</loc>
+    <loc>https://xfrnk2.github.io/de/article/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/article/"
+                href="https://xfrnk2.github.io/article/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/article/"
+                href="https://xfrnk2.github.io/de/article/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/discord/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/discord/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/discord/"
+                href="https://xfrnk2.github.io/tags/discord/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/discord/"
+                href="https://xfrnk2.github.io/de/tags/discord/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/author/lednerb/</loc>
+    <loc>https://xfrnk2.github.io/de/author/lednerb/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/author/lednerb/"
+                href="https://xfrnk2.github.io/author/lednerb/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/author/lednerb/"
+                href="https://xfrnk2.github.io/de/author/lednerb/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/sag-danke/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/sag-danke/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/support/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/support/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/support/"
+                href="https://xfrnk2.github.io/tags/support/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/support/"
+                href="https://xfrnk2.github.io/de/tags/support/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/"
+                href="https://xfrnk2.github.io/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/"
+                href="https://xfrnk2.github.io/de/tags/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/article/support-and-discussions/</loc>
+    <loc>https://xfrnk2.github.io/de/article/support-and-discussions/</loc>
     <lastmod>2017-11-01T18:10:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/article/support-and-discussions/"
+                href="https://xfrnk2.github.io/article/support-and-discussions/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/article/support-and-discussions/"
+                href="https://xfrnk2.github.io/de/article/support-and-discussions/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/eilean-donan-castle/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/eilean-donan-castle/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/eilean-donan-castle/"
+                href="https://xfrnk2.github.io/tags/eilean-donan-castle/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/eilean-donan-castle/"
+                href="https://xfrnk2.github.io/de/tags/eilean-donan-castle/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/gallery/</loc>
+    <loc>https://xfrnk2.github.io/de/gallery/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/gallery/"
+                href="https://xfrnk2.github.io/gallery/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/gallery/"
+                href="https://xfrnk2.github.io/de/gallery/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/glennfinnan-viadukt/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/glennfinnan-viadukt/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/gallery/my-trip-to-scotland/</loc>
+    <loc>https://xfrnk2.github.io/de/gallery/my-trip-to-scotland/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/gallery/my-trip-to-scotland/"
+                href="https://xfrnk2.github.io/gallery/my-trip-to-scotland/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/gallery/my-trip-to-scotland/"
+                href="https://xfrnk2.github.io/de/gallery/my-trip-to-scotland/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/reise/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/reise/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/schottland/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/schottland/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/urlaub/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/urlaub/</loc>
     <lastmod>2017-11-01T18:01:26+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/kilez-more/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/kilez-more/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/kilez-more/"
+                href="https://xfrnk2.github.io/tags/kilez-more/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/kilez-more/"
+                href="https://xfrnk2.github.io/de/tags/kilez-more/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
+    <loc>https://xfrnk2.github.io/de/video/kilez-more-leben-und-tod-des-imperialismus/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/video/kilez-more-leben-und-tod-des-imperialismus/"
+                href="https://xfrnk2.github.io/video/kilez-more-leben-und-tod-des-imperialismus/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/video/kilez-more-leben-und-tod-des-imperialismus/"
+                href="https://xfrnk2.github.io/de/video/kilez-more-leben-und-tod-des-imperialismus/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/musik/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/musik/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/politik/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/politik/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/de/categories/video/</loc>
+    <loc>https://xfrnk2.github.io/de/categories/video/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/categories/video/"
+                href="https://xfrnk2.github.io/categories/video/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/categories/video/"
+                href="https://xfrnk2.github.io/de/categories/video/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/video/</loc>
+    <loc>https://xfrnk2.github.io/de/video/</loc>
     <lastmod>2017-11-01T16:23:40+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/video/"
+                href="https://xfrnk2.github.io/video/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/video/"
+                href="https://xfrnk2.github.io/de/video/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/audio/</loc>
+    <loc>https://xfrnk2.github.io/de/audio/</loc>
     <lastmod>2017-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/audio/"
+                href="https://xfrnk2.github.io/audio/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/audio/"
+                href="https://xfrnk2.github.io/de/audio/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/audio/kilez-more-new-world-order/</loc>
+    <loc>https://xfrnk2.github.io/de/audio/kilez-more-new-world-order/</loc>
     <lastmod>2017-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/audio/kilez-more-new-world-order/"
+                href="https://xfrnk2.github.io/audio/kilez-more-new-world-order/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/audio/kilez-more-new-world-order/"
+                href="https://xfrnk2.github.io/de/audio/kilez-more-new-world-order/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/tags/truth-rap/</loc>
+    <loc>https://xfrnk2.github.io/de/tags/truth-rap/</loc>
     <lastmod>2017-11-01T16:12:47+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/tags/truth-rap/"
+                href="https://xfrnk2.github.io/tags/truth-rap/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/tags/truth-rap/"
+                href="https://xfrnk2.github.io/de/tags/truth-rap/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/page/</loc>
+    <loc>https://xfrnk2.github.io/de/page/</loc>
     <lastmod>2017-11-01T13:18:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/"
+                href="https://xfrnk2.github.io/page/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/"
+                href="https://xfrnk2.github.io/de/page/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/page/about-bilberry/</loc>
+    <loc>https://xfrnk2.github.io/de/page/about-bilberry/</loc>
     <lastmod>2017-11-01T13:18:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/about-bilberry/"
+                href="https://xfrnk2.github.io/page/about-bilberry/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/about-bilberry/"
+                href="https://xfrnk2.github.io/de/page/about-bilberry/"
                 />
   </url>
   
   <url>
-    <loc>https://example.com/de/page/github/</loc>
+    <loc>https://xfrnk2.github.io/de/page/github/</loc>
     <lastmod>2017-11-01T13:17:56+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/page/github/"
+                href="https://xfrnk2.github.io/page/github/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://example.com/de/page/github/"
+                href="https://xfrnk2.github.io/de/page/github/"
                 />
   </url>
   

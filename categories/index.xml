@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My cool new Blog</title>
-    <link>https://example.com/categories/</link>
+    <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on My cool new Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Nov 2017 18:01:26 +0100</lastBuildDate>
     
-	<atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Holidays</title>
-      <link>https://example.com/categories/holidays/</link>
+      <link>https://xfrnk2.github.io/categories/holidays/</link>
       <pubDate>Wed, 01 Nov 2017 18:01:26 +0100</pubDate>
       
-      <guid>https://example.com/categories/holidays/</guid>
+      <guid>https://xfrnk2.github.io/categories/holidays/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Travelling</title>
-      <link>https://example.com/categories/travelling/</link>
+      <link>https://xfrnk2.github.io/categories/travelling/</link>
       <pubDate>Wed, 01 Nov 2017 18:01:26 +0100</pubDate>
       
-      <guid>https://example.com/categories/travelling/</guid>
+      <guid>https://xfrnk2.github.io/categories/travelling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Music</title>
-      <link>https://example.com/categories/music/</link>
+      <link>https://xfrnk2.github.io/categories/music/</link>
       <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
       
-      <guid>https://example.com/categories/music/</guid>
+      <guid>https://xfrnk2.github.io/categories/music/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Politics</title>
-      <link>https://example.com/categories/politics/</link>
+      <link>https://xfrnk2.github.io/categories/politics/</link>
       <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
       
-      <guid>https://example.com/categories/politics/</guid>
+      <guid>https://xfrnk2.github.io/categories/politics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Video</title>
-      <link>https://example.com/categories/video/</link>
+      <link>https://xfrnk2.github.io/categories/video/</link>
       <pubDate>Wed, 01 Nov 2017 16:23:40 +0100</pubDate>
       
-      <guid>https://example.com/categories/video/</guid>
+      <guid>https://xfrnk2.github.io/categories/video/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Privacy</title>
-      <link>https://example.com/categories/privacy/</link>
+      <link>https://xfrnk2.github.io/categories/privacy/</link>
       <pubDate>Wed, 01 Nov 2017 13:05:27 +0100</pubDate>
       
-      <guid>https://example.com/categories/privacy/</guid>
+      <guid>https://xfrnk2.github.io/categories/privacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Society</title>
-      <link>https://example.com/categories/society/</link>
+      <link>https://xfrnk2.github.io/categories/society/</link>
       <pubDate>Wed, 01 Nov 2017 13:01:14 +0100</pubDate>
       
-      <guid>https://example.com/categories/society/</guid>
+      <guid>https://xfrnk2.github.io/categories/society/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Code</title>
-      <link>https://example.com/categories/code/</link>
+      <link>https://xfrnk2.github.io/categories/code/</link>
       <pubDate>Wed, 01 Nov 2017 09:31:27 +0100</pubDate>
       
-      <guid>https://example.com/categories/code/</guid>
+      <guid>https://xfrnk2.github.io/categories/code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tutorials</title>
-      <link>https://example.com/categories/tutorials/</link>
+      <link>https://xfrnk2.github.io/categories/tutorials/</link>
       <pubDate>Wed, 01 Nov 2017 09:31:27 +0100</pubDate>
       
-      <guid>https://example.com/categories/tutorials/</guid>
+      <guid>https://xfrnk2.github.io/categories/tutorials/</guid>
       <description></description>
     </item>
     
