@@ -8,7 +8,7 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> Tutorials | xfrnk2</title>
+    <title> Tutorials | 배우고 익히니 즐겁지 아니한가</title>
     <meta name="description" content="Tutorials - Bilberry Premium Theme for Hugo.">
     <meta itemprop="name" content="Tutorials">
     <meta itemprop="description" content="Tutorials - Bilberry Premium Theme for Hugo.">
@@ -16,14 +16,14 @@
     <meta property="og:description" content="Tutorials - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
     <meta property="og:url" content="https://xfrnk2.github.io/categories/tutorials/">
-    <meta property="og:site_name" content="xfrnk2"><meta property="og:type" content="website">
+    <meta property="og:site_name" content="배우고 익히니 즐겁지 아니한가"><meta property="og:type" content="website">
 
     
 
 
     
-    <link href="/categories/tutorials/" rel="alternate" type="application/rss+xml" title="xfrnk2" />
-    <link href="/categories/tutorials/" rel="feed" type="application/rss+xml" title="xfrnk2" />
+    <link href="/categories/tutorials/" rel="alternate" type="application/rss+xml" title="배우고 익히니 즐겁지 아니한가" />
+    <link href="/categories/tutorials/" rel="feed" type="application/rss+xml" title="배우고 익히니 즐겁지 아니한가" />
     
 
     
@@ -33,6 +33,8 @@
     
 
     
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme4.css">
     
     
 </head>
@@ -46,25 +48,7 @@
         <ul class="topnav">
             
             
-            <li><a href="https://xfrnk2.github.io/page/about/">About me</a></li>
-            
-            
-            
-
- 
-				<li><a href="https://xfrnk2.github.io/page/all-latest/" target="">All Latest</a></li>
-            
-            
-            
-
- 
-				<li><a href="https://xfrnk2.github.io/page/categories/" target="">Categories</a></li>
-            
-            
-            
-
- 
-				<li><a href="https://xfrnk2.github.io/page/tags/" target="">Tags</a></li>
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
             
             
         </ul>
@@ -86,7 +70,7 @@
         <div class="logo">
             <a id="siteBaseUrl" href="/" class="logo">
                 
-                <img src="/custom/customImage.jpg" alt="">
+                <img src="/customImage2.jpg" alt="">
                 
 
                 <span class="overlay"><i class="fa fa-home"></i></span>
@@ -94,9 +78,9 @@
         </div>
         <div class="titles">
             <h3 class="title"><a
-                    href="/">xfrnk2</a></h3>
+                    href="/">배우고 익히니 즐겁지 아니한가</a></h3>
             
-            <span class="subtitle">한걸음씩</span>
+            <span class="subtitle">개발, 매 순간을 오롯이</span>
             
         </div>
 
@@ -160,10 +144,29 @@
     
     <p>You will find all information to setup this theme with your hugo site
 on the official <!-- raw HTML omitted --> <a href="https://github.com/Lednerb/bilberry-hugo-theme">Github Repository</a>.</p>
-
-    
-    <a href="https://xfrnk2.github.io/code/installing-bilberry-theme/" class="more">Continue reading</a>
-    
+<p><strong>If you want to install this theme, follow these steps:</strong></p>
+<ul>
+<li>Install Hugo and create a new site:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">hugo new site my-new-blog
+</code></pre></div><ul>
+<li>Switch to your <code>theme</code> folder and import the latest version of the Bilberry Theme</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cd my-new-blog/themes
+git clone https://github.com/Lednerb/bilberry-hugo-theme.git
+</code></pre></div><ul>
+<li>Copy the example content to your new site</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cp -r bilberry-hugo-theme/exampleSite/* ../
+</code></pre></div><ul>
+<li>Test the installation</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cd ../
+hugo server -D
+</code></pre></div><ul>
+<li>Configure the <code>config.toml</code> file according to your needs</li>
+<li>Start blogging</li>
+</ul>
     
 </div>
 
@@ -214,7 +217,7 @@ on the official <!-- raw HTML omitted --> <a href="https://github.com/Lednerb/bi
 
         
         <div class="recent-posts">
-            <strong>Latest posts</strong>
+            <a href="/"><strong>Latest posts</strong></a>
             <ul>
                 
                 <li>
@@ -232,17 +235,39 @@ on the official <!-- raw HTML omitted --> <a href="https://github.com/Lednerb/bi
                 
                 <li>
                     <a href="/categories/code">Code
-                        (1)</a>
+                        </a>
                 </li>
                 
                 <li>
                     <a href="/categories/tutorials">Tutorials
-                        (1)</a>
+                        </a>
                 </li>
                 
             </ul>
         </div>
         
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/bilberry-theme">Bilberry theme
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/hugo">Hugo
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
 
         <div class="right">
             
