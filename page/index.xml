@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on 무엇이든 만들고픈 초보의 개발공략일기</title>
+    <title>Pages on xfrnk2</title>
     <link>https://xfrnk2.github.io/page/</link>
-    <description>Recent content in Pages on 무엇이든 만들고픈 초보의 개발공략일기</description>
+    <description>Recent content in Pages on xfrnk2</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 01 Nov 2017 13:18:45 +0100</lastBuildDate>
     
@@ -11,7 +11,7 @@
     
     
     <item>
-      <title>about</title>
+      <title>About me</title>
       <link>https://xfrnk2.github.io/page/about/</link>
       <pubDate>Wed, 01 Nov 2017 13:18:45 +0100</pubDate>
       
@@ -20,11 +20,29 @@
     </item>
     
     <item>
-      <title>Github</title>
-      <link>https://xfrnk2.github.io/page/github/</link>
+      <title>All Latest</title>
+      <link>https://xfrnk2.github.io/page/all-latest/</link>
       <pubDate>Wed, 01 Nov 2017 13:17:56 +0100</pubDate>
       
-      <guid>https://xfrnk2.github.io/page/github/</guid>
+      <guid>https://xfrnk2.github.io/page/all-latest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Categories</title>
+      <link>https://xfrnk2.github.io/page/categories/</link>
+      <pubDate>Wed, 01 Nov 2017 13:17:56 +0100</pubDate>
+      
+      <guid>https://xfrnk2.github.io/page/categories/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://xfrnk2.github.io/page/tags/</link>
+      <pubDate>Wed, 01 Nov 2017 13:17:56 +0100</pubDate>
+      
+      <guid>https://xfrnk2.github.io/page/tags/</guid>
       <description></description>
     </item>
     
