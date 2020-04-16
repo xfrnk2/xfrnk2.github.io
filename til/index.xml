@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tils on Rad Blog</title>
+    <link>https://xfrnk2.github.io/til/</link>
+    <description>Recent content in Tils on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 17 Apr 2020 02:00:13 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>20 04 17</title>
+      <link>https://xfrnk2.github.io/til/20-04-17/</link>
+      <pubDate>Fri, 17 Apr 2020 02:00:13 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20-04-17/</guid>
+      <description>he</description>
+    </item>
+    
+  </channel>
+</rss>
