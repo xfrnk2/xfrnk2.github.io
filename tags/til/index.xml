@@ -5,18 +5,30 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 17 Apr 2020 02:00:13 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2020 00:05:09 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>20 04 17</title>
-      <link>https://xfrnk2.github.io/til/20-04-17/</link>
-      <pubDate>Fri, 17 Apr 2020 02:00:13 +0900</pubDate>
+      <title>20.04.18</title>
+      <link>https://xfrnk2.github.io/til/20.04.18_/</link>
+      <pubDate>Sat, 18 Apr 2020 00:05:09 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/til/20-04-17/</guid>
-      <description>he</description>
+      <guid>https://xfrnk2.github.io/til/20.04.18_/</guid>
+      <description>그저께부터 다시 &amp;lsquo;성공과 실패를 결정하는 1%의 네트워크 원리&amp;rsquo; 책을 읽고 있다.
+마침 Django를 본격적으로 공부하려던 참이어서 웹에 대한 이해도를 높이고 싶었기 때문이다. 이 책은 구매해두고 몇번인가 반복적으로 읽었으나 피부에 와닿지는 못했다. 그러니 이번 기회로 직접적인 경험과 더불어 네트워크에 대한 이해도도 높일 수 있으면 좋겠다.
+블로그를 시작한 가장 큰 이유는 배우고 지나간 것들을 내 자신이 자주 복습하지 않기 때문에 의식적으로 정리하고 활용하기 위해서이다.
+그리고 당시에는 열심히 찾아보고 해결했던 문제조차 얼마 시간이 지나지 않았음에도 불구하고 휘발성 지식인 것처럼 날라가는 경험을 여러번 겪었기 때문이다.</description>
+    </item>
+    
+    <item>
+      <title>20.04.17 - TIL 처음 시작</title>
+      <link>https://xfrnk2.github.io/til/20.04.17/</link>
+      <pubDate>Fri, 17 Apr 2020 23:55:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.17/</guid>
+      <description>오늘부터 새롭게 배우거나 느낀 것들을 정리하여 기록하는 작업을 시작합니다.</description>
     </item>
     
   </channel>
