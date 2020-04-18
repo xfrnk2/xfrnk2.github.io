@@ -5,17 +5,29 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Apr 2020 00:05:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2020 01:26:11 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>20.04.19</title>
+      <link>https://xfrnk2.github.io/til/20.04.19/</link>
+      <pubDate>Sun, 19 Apr 2020 01:26:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.19/</guid>
+      <description>평소라면 아침에 일어나면 책부터 읽으려고 하는 편인데, 오늘은 왠지 모르게 오래도록 방치해둔 github와 travis-ci간의 오류를 해결하고 싶다는 생각이 들었다.
+makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 겸용 스크립트를 작성하는 것이었다.
+그동안 나는 Python을 통해 코딩 퀴즈만 풀어왔었기 때문에 다른 영역의 것들을 쉽게 건드릴 수가 없었다. 뭘 모르는지를 몰랐다. travis-ci를 연동시키고 언젠가는 해야겠지 하면서 차일피일 미루었었다. 틈틈이 해결하기 위해 씨름해본적이 있는데 매번 해결하지 못했다.
+그동안 문제를 해결할 때 일관된 방식으로 빠르게 답을 찾으려고만 했던것 같아서, 작은 것부터 알아갈 필요가 있다고 느꼈다.</description>
+    </item>
+    
+    <item>
       <title>20.04.18</title>
-      <link>https://xfrnk2.github.io/til/20.04.18_/</link>
+      <link>https://xfrnk2.github.io/til/20.04.18/</link>
       <pubDate>Sat, 18 Apr 2020 00:05:09 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/til/20.04.18_/</guid>
+      <guid>https://xfrnk2.github.io/til/20.04.18/</guid>
       <description>그저께부터 다시 &amp;lsquo;성공과 실패를 결정하는 1%의 네트워크 원리&amp;rsquo; 책을 읽고 있다.
 마침 Django를 공부와 함께 웹에 대한 이해도를 높이고 싶었기 때문이다. 이 책은 구매해두고 몇번인가 반복적으로 읽었으나 피부에 와닿지는 못했다. 이번 기회로 직접적인 경험과 더불어 네트워크에 대한 이해도도 높일 수 있으면 좋겠다.
 블로그를 시작한 가장 큰 이유는 배우고 지나간 것들을 내 자신이 자주 복습하지 않기 때문에 의식적으로 정리하고 활용하기 위해서이다.
