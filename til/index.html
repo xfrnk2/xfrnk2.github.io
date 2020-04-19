@@ -100,6 +100,81 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.04.20/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.20/">20.04.20</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-20</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    생각보다 책을 오래 읽었다. 이제 절반정도 읽었다. 읽으면서 차츰차츰 네트워크의 구조가 인지되고 그려진다. 다 읽을때 즈음에는 보다 선명하게 머릿속에 남아있으면 좋겠다. 기술서적은 한번 보고 끝나는게 아니라 보고 또 보면서 머릿속에 구조를 각인시켜야 좋은 것 같다. 책을 읽다보니 반성이 된다.
+블로그 글을 작성하기 앞서 블로그 템플릿에 익숙하지 못한 관계로 올리고 싶은 이미지를 올릴 수 없었다. 어차피 블로그를 운영하려면 계속 배울 수 밖에 없다. 그래도 재밌다.
+배웠던 DjangoAdmin의 기능을 문서로 정리해서 글을 작성하였다.
+
+    
+    <a href="https://xfrnk2.github.io/til/20.04.20/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/til/20.04.19/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -138,43 +213,14 @@
     </div>
 
     
-    <p>평소라면 아침에 일어나면 책부터 읽으려고 하는 편인데, 오늘은 왠지 모르게 오래도록 방치해둔 github와 travis-ci간의 오류를 해결하고 싶다는 생각이 들었다.<br>
-<strong>makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 겸용 스크립트를 작성</strong>하는 것이었다.</p>
-<p>그동안 나는 Python을 통해 코딩 퀴즈만 풀어왔었기 때문에 다른 영역의 것들을 쉽게 건드릴 수가 없었다. 뭘 모르는지를 몰랐다. travis-ci를 연동시키고 언젠가는 해야겠지 하면서 차일피일 미루었었다. 틈틈이 해결하기 위해 씨름해본적이 있는데 매번 해결하지 못했다.</p>
-<p>그동안 문제를 해결할 때 일관된 방식으로 빠르게 답을 찾으려고만 했던것 같아서, 작은 것부터 알아갈 필요가 있다고 느꼈다. 그래서 배치파일과 쉘스크립트, makefile 관계된 자료들을 찾아보았다.</p>
-<p>결정적으로 도달한 결론은 쉘스크립트에서 변수를 반환하여, 해당 변수를 makefile에서 참조할수 있도록 하는 것이었다.
-가장 크게 도움이 된 것은 아래와 같은 정보였다.</p>
-<hr>
-<ol>
-<li>Shellscript 환경변수를 이용하여 전달. 환경변수는 터미널이 실행되는동안 유효하다.</li>
-</ol>
-<pre><code>export test_path=/venv/scripts/activate.bat     #Windows의 경우
-export test_path=/venv/bin/activate 		#Linux의 경우
-</code></pre><ol start="2">
-<li>Makefile에서는 간단하게 참조가 가능했다.</li>
-</ol>
-<pre><code>TestPath=${test_path}  
-</code></pre><p>[출처 : https://sonseungha.tistory.com/540]</p>
-<hr>
-<p>사실 오늘은 Django강의 수강과 실습에 비중을 두려고 했는데 위의 작업을 하는데만 무려 7시간이 소요되었다.
-성공적으로 해결해서 다행이지만 못하면 어쩔뻔했나 싶었다. 확인이 필요할 것 같아 잘 아시는 분께 빌드 내역을 가지고 여쭈어 보니, 다행히도 문제가 없다는 피드백을 받았다.</p>
-<p>예전 같았으면 이렇게 하다가 번아웃이 오는 일이 빈번했는데 요즘은 의식적으로 무모히 도전하지 않으려고 하는 편이다. 해결 되지 않으면 시간이 너무 아깝기 때문이다. 그 시간에 새로운 것을
-배우거나 복습하는게 더 좋다고 생각한다.</p>
-<p>아무튼 간단히 쓰려고 했는데 순간을 기록하고자 하다보니 글이 길어졌다. 앞으로는 좀더 요점에 충실해서 기록하도록 하자.
-결과적으로 오늘 한것은 쉘스크립트 파일을 통한 Windows/Linux 겸용 스크립트를 만들기에 성공한 일이다.</p>
-<p>장시간 작업 후 잠시 휴식한 뒤 Django 공부로 돌아왔다.
-DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
-벌써 새벽 두시인데 오늘 책을 읽지 못했으니 잠들기 전까지 책을 읽으려고 한다.</p>
-<hr>
-<h4 id="내일-할-일">내일 할 일</h4>
-<ul>
-<li>블로그에 DjangoAdmin기능 문서정리해서 글 올리기.</li>
-<li>블로그에 어제 풀었던 알고리즘 문제의 코드 올리기.</li>
-<li>Django ImageField와 FileField을 구현하여 연습하기.</li>
-<li>시간 내서 네트워크 원리 책 읽기.</li>
-</ul>
-<hr>
+    평소라면 아침에 일어나면 책부터 읽으려고 하는 편인데, 오늘은 왠지 모르게 오래도록 방치해둔 github와 travis-ci간의 오류를 해결하고 싶다는 생각이 들었다.
+makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 겸용 스크립트를 작성하는 것이었다.
+그동안 나는 Python을 통해 코딩 퀴즈만 풀어왔었기 때문에 다른 영역의 것들을 쉽게 건드릴 수가 없었다. 뭘 모르는지를 몰랐다. travis-ci를 연동시키고 언젠가는 해야겠지 하면서 차일피일 미루었었다. 틈틈이 해결하기 위해 씨름해본적이 있는데 매번 해결하지 못했다.
+그동안 문제를 해결할 때 일관된 방식으로 빠르게 답을 찾으려고만 했던것 같아서, 작은 것부터 알아갈 필요가 있다고 느꼈다.
 
+    
+    <a href="https://xfrnk2.github.io/til/20.04.19/" class="more">Continue reading</a>
+    
     
 </div>
 
@@ -372,6 +418,18 @@ DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.20/">20.04.20</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1026/">BOJ-1026-보물[정렬]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_admin/">Django의 Admin 기능</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.04.19/">20.04.19</a>
                 </li>
                 
@@ -397,6 +455,16 @@ DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
                         </a>
                 </li>
                 
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
             </ul>
         </div>
         
@@ -408,6 +476,31 @@ DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
                 
                 <li>
                     <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/admin">Admin
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
                         </a>
                 </li>
                 

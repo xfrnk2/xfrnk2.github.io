@@ -4,7 +4,7 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 01:26:11 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:56:38 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -12,9 +12,27 @@
     <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Sun, 19 Apr 2020 01:26:11 +0900</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:56:38 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bojs</title>
+      <link>https://xfrnk2.github.io/boj/</link>
+      <pubDate>Mon, 20 Apr 2020 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Djangos</title>
+      <link>https://xfrnk2.github.io/django/</link>
+      <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/</guid>
       <description></description>
     </item>
     

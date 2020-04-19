@@ -5,10 +5,21 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 01:26:11 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:56:38 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04.20</title>
+      <link>https://xfrnk2.github.io/til/20.04.20/</link>
+      <pubDate>Mon, 20 Apr 2020 00:56:38 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.20/</guid>
+      <description>생각보다 책을 오래 읽었다. 이제 절반정도 읽었다. 읽으면서 차츰차츰 네트워크의 구조가 인지되고 그려진다. 다 읽을때 즈음에는 보다 선명하게 머릿속에 남아있으면 좋겠다. 기술서적은 한번 보고 끝나는게 아니라 보고 또 보면서 머릿속에 구조를 각인시켜야 좋은 것 같다. 책을 읽다보니 반성이 된다.
+블로그 글을 작성하기 앞서 블로그 템플릿에 익숙하지 못한 관계로 올리고 싶은 이미지를 올릴 수 없었다. 어차피 블로그를 운영하려면 계속 배울 수 밖에 없다. 그래도 재밌다.
+배웠던 DjangoAdmin의 기능을 문서로 정리해서 글을 작성하였다.</description>
+    </item>
     
     <item>
       <title>20.04.19</title>

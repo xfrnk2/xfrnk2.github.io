@@ -5,7 +5,7 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 01:26:11 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2020 00:56:38 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +13,54 @@
     <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Sun, 19 Apr 2020 01:26:11 +0900</pubDate>
+      <pubDate>Mon, 20 Apr 2020 00:56:38 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BOJ</title>
+      <link>https://xfrnk2.github.io/tags/boj/</link>
+      <pubDate>Mon, 20 Apr 2020 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/boj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>정렬</title>
+      <link>https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/</link>
+      <pubDate>Mon, 20 Apr 2020 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Admin</title>
+      <link>https://xfrnk2.github.io/tags/admin/</link>
+      <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/admin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Django</title>
+      <link>https://xfrnk2.github.io/tags/django/</link>
+      <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://xfrnk2.github.io/tags/python/</link>
+      <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/python/</guid>
       <description></description>
     </item>
     

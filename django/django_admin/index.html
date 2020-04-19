@@ -1,0 +1,486 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Django의 Admin 기능 | Rad Blog</title>
+    <meta name="description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Django의 Admin 기능">
+    <meta itemprop="description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Django의 Admin 기능">
+    <meta property="og:description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/django/django_admin/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/django/django_admin/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/django_admin/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_admin/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_admin/">Django의 Admin 기능</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-19</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="1-django의-admin-기능">1. Django의 Admin 기능</h3>
+<ul>
+<li>관리자 페이지, 강력한 자동 관리 인터페이스</li>
+<li>모델 중심의 빠른 인터페이스를 제공</li>
+</ul>
+<hr>
+<h3 id="2-django-admin의-사용-효과">2. Django Admin의 사용 효과</h3>
+<ul>
+<li>서비스 초기에 관리 도구로 사용하기에 제격</li>
+<li>관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능</li>
+</ul>
+<hr>
+<h3 id="3-model-class를-django-admin에-등록하는-방법">3. Model Class를 Django Admin에 등록하는 방법</h3>
+<h6 id="1-기본">1. 기본</h6>
+<pre><code>from django.contrib import admin
+from .models import Item 
+  
+admin.site.regiester(Item)
+</code></pre><h6 id="2-class">2. Class</h6>
+<pre><code>from django.contrib import admin
+from .models import Item
+  
+class ItemAdmin(admin.ModelAdmin):
+	pass
+admin.site.register(Item, ItemAdmin) 
+</code></pre><h6 id="3-class--decorator선호">3. Class + Decorator	(선호)</h6>
+<pre><code>from django.contrib import admin
+from .models import Item
+
+@admin.register(Item)
+class ItemAdmin(admin.ModelAdmin):
+	pass
+</code></pre><hr>
+<h3 id="4-제공되는-기능">4. 제공되는 기능</h3>
+<table>
+<thead>
+<tr>
+<th>이름</th>
+<th>기능</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>list_display</td>
+<td>컬럼의 노출여부를 결정</td>
+<td>function도 가능</td>
+</tr>
+<tr>
+<td>list_display_links</td>
+<td>컬럼의 링크 설정 (기본값은 1번째 컬럼)</td>
+<td>여러개 허용</td>
+</tr>
+<tr>
+<td>search_fields</td>
+<td>admin 내 검색 UI 제공</td>
+<td></td>
+</tr>
+<tr>
+<td>list_filter</td>
+<td>지정 필드값으로 필터링 옵션 UI 제공</td>
+<td></td>
+</tr>
+<tr>
+<td>&hellip;</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h6 id="구현-형태">구현 형태</h6>
+<pre><code>admin.py
+
+@admin.register(Post)
+class PostAdmin(admin.ModelAdmin):
+   
+   list_display = ['title', 'content', 'title_length', 'is_public', 'created_at', 'updated_at'] 
+   list_display_links = ['content'] 
+   search_fields = ['title']   
+   list_filter = ['created_at', 'is_public']
+   
+   def title_length(self, post):
+      return f&quot;{len(post.title)}글자&quot;
+	  
+   title_length.short_description = &quot;타이틀 글자수&quot;
+</code></pre><h6 id="추가-설명">추가 설명</h6>
+<hr>
+<blockquote>
+<p><strong>title_length</strong></p>
+</blockquote>
+<ul>
+<li>function도 가능 (list_display 비고란 참고)</li>
+<li>list_display 내의 원소이름과 동일해야함.</li>
+<li>model.py에서 같은 구현 가능</li>
+<li>python의 경우 @property로도 정의</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>title_length.short_description</strong></p>
+</blockquote>
+<ul>
+<li>컬럼의 표시되는 부분을 설정</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>search_fileds</strong></p>
+</blockquote>
+<pre><code>**로직상의 의미**
+Post.objects.all().filter(title__icontains='포함하는 글자')
+</code></pre><ul>
+<li>search_field = [&lsquo;title&rsquo;]의 경우, &lsquo;title'에 대해서 search 옵션을 적용하겠다는 의미.</li>
+</ul>
+<hr>
+<h6 id="더-많은-기능에-대한-정보는-공식문서를-참고">더 많은 기능에 대한 정보는 공식문서를 참고.</h6>
+<p><a href="https://docs.djangoproject.com/en/3.0/ref/contrib/admin/">https://docs.djangoproject.com/en/3.0/ref/contrib/admin/</a></p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/admin/">Admin</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.20/">20.04.20</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1026/">BOJ-1026-보물[정렬]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_admin/">Django의 Admin 기능</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.19/">20.04.19</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.18/">20.04.18</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.17/">TIL을 처음으로 시작합니다</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/admin">Admin
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
