@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Apr 2020 00:56:38 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2020 02:45:59 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04</title>
+      <link>https://xfrnk2.github.io/til/20.04.21/</link>
+      <pubDate>Tue, 21 Apr 2020 02:45:59 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.21/</guid>
+      <description>오늘은 다른날보다 몸상태가 좋지 않았다. 그래서 쉬는 시간도 가졌다.
+ python decorator의 작동 원리와 wraps의 사용법을 공부했다. 그저께 풀었던 백준 알고리즘 문제를 다른 방법으로 풀어보고 결과적으로는 더 간명하게 만들었다. 풀었던 알고리즘 문제를 블로그에 업로드했다. Django 모델을 통한 조회(기초)와 Shell 사용 강의를 들었다.   내일 할 일  Django Queryset을 통한 간단 검색 구현, Queryset의 정렬 및 범위 조건 강의 듣고 공부하기. 알고리즘 문제 풀기 다음으로 읽을 개발관련서적 알아보기   </description>
+    </item>
     
     <item>
       <title>20.04.20</title>

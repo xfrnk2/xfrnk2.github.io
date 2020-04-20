@@ -140,7 +140,15 @@
     
     <h6 id="boj-1026-보물-문제-바로가기httpswwwacmicpcnetproblem1026">BOJ-1026-보물 <a href="https://www.acmicpc.net/problem/1026">문제 바로가기</a></h6>
 <hr>
-<h6 id="생각">생각</h6>
+<h6 id="나의-풀이1">나의 풀이1</h6>
+<pre><code>get_input = lambda:sorted(map(int, input().split()))
+get_input()
+print(sum(list(map(lambda x, y : x * y, get_input(), get_input()[::-1]))))
+</code></pre><h6 id="나의-풀이2">나의 풀이2</h6>
+<pre><code>get_input = lambda:sorted(map(int, input().split()))
+get_input()
+print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
+</code></pre><h6 id="생각">생각</h6>
 <p>reverse로 정렬하기보다 더 좋은방법이 없나 찾아본 결과 [::-1]이 가장 좋아보였다.</p>
 <h6 id="순서">순서</h6>
 <ul>
@@ -157,15 +165,6 @@
 <h6 id="쟁점-거리">쟁점 거리</h6>
 <p>list[::-1]이 리스트를 정렬하는데 가장 빠르고 효과적일까?</p>
 <hr>
-<h6 id="나의-풀이1">나의 풀이1</h6>
-<pre><code>get_input = lambda:sorted(map(int, input().split()))
-get_input()
-print(sum(list(map(lambda x, y : x * y, get_input(), get_input()[::-1]))))
-</code></pre><h6 id="나의-풀이2">나의 풀이2</h6>
-<pre><code>get_input = lambda:sorted(map(int, input().split()))
-get_input()
-print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
-</code></pre><hr>
 
     
 </div>
@@ -234,6 +233,14 @@ print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.21/">20.04</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/10825/">BOJ-10825-국영수[정렬]</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.04.20/">20.04.20</a>
                 </li>
                 
@@ -251,10 +258,6 @@ print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.04.18/">20.04.18</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.04.17/">TIL을 처음으로 시작합니다</a>
                 </li>
                 
             </ul>
@@ -296,12 +299,17 @@ print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
                 </li>
                 
                 <li>
-                    <a href="/tags/admin">Admin
+                    <a href="/tags/boj">Boj
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/boj">Boj
+                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/admin">Admin
                         </a>
                 </li>
                 
@@ -312,11 +320,6 @@ print(sum(x*y for x, y in zip(get_input(), get_input()[::-1])))
                 
                 <li>
                     <a href="/tags/python">Python
-                        </a>
-                </li>
-                
-                <li>
-                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
                         </a>
                 </li>
                 

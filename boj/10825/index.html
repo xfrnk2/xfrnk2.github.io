@@ -8,12 +8,12 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 10825 | Rad Blog</title>
-    <meta name="description" content="10825 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="10825">
-    <meta itemprop="description" content="10825 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="10825">
-    <meta property="og:description" content="10825 - Bilberry Premium Theme for Hugo.">
+    <title> BOJ-10825-국영수[정렬] | Rad Blog</title>
+    <meta name="description" content="BOJ-10825-국영수[정렬] - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="BOJ-10825-국영수[정렬]">
+    <meta itemprop="description" content="BOJ-10825-국영수[정렬] - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="BOJ-10825-국영수[정렬]">
+    <meta property="og:description" content="BOJ-10825-국영수[정렬] - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
     <meta property="og:url" content="https://xfrnk2.github.io/boj/10825/">
     <meta property="og:site_name" content="Rad Blog">
@@ -108,11 +108,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/10825/">10825</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/10825/">BOJ-10825-국영수[정렬]</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-04-20</span>
+        <span class="date moment">2020-04-21</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
                 
             
         </span>
@@ -138,7 +138,49 @@
     </div>
 
     
-    
+    <h6 id="boj-10825-국영수-문제-바로가기httpswwwacmicpcnetproblem10825">BOJ-10825-국영수 <a href="https://www.acmicpc.net/problem/10825">문제 바로가기</a></h6>
+<hr>
+<h6 id="나의-풀이">나의 풀이</h6>
+<pre><code>student_list = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split())) for _ in range(int(input()))]
+student_list.sort(key=lambda student: (-student[1], student[2], -student[3], student[0]))
+for x in student_list: print(x[0])
+</code></pre><h6 id="생각">생각</h6>
+<ul>
+<li>operator.itemgetter도 이용할수 있을까?</li>
+<li>정수판별을 위해서 어떤 함수를 사용하는게 적절할까?</li>
+</ul>
+<h6 id="순서">순서</h6>
+<ul>
+<li>input값의 문자열이 정수일 경우 정수화</li>
+<li>정렬 실행</li>
+<li>0번째 인덱스에 위치한 학생의 이름을 출력</li>
+</ul>
+<h6 id="방법">방법</h6>
+<ul>
+<li>정수 판별을 위해 isdecimal 이용</li>
+<li>lambda함수를 이용</li>
+<li>정렬하고자 하는 인덱스를 역순으로 정렬하기 위해 머리부분에 -를 붙임.</li>
+</ul>
+<h6 id="쟁점-거리">쟁점 거리</h6>
+<ul>
+<li>itemgetter로는 불가능할까?</li>
+</ul>
+<blockquote>
+<ul>
+<li>혹시나 해서 itemgetter(-1, 2, -3, 0) 와 같이 -를 머리에 붙여본 결과 뒤에서부터의 인덱스로 적용된다.</li>
+<li>하나하나 reverse 속성을 부여할 수 없었다.</li>
+</ul>
+</blockquote>
+<ul>
+<li>정수 확인을 위한 방법으로 무엇이 적절할까?</li>
+</ul>
+<blockquote>
+<ul>
+<li>int 타입으로의 변환을 안전하게 보장받고 싶다면 isdigit() 대신, isdecimal()을 쓰는 편이 좋다.</li>
+<li><a href="https://soooprmx.com/archives/10159">참고링크 바로가기</a></li>
+</ul>
+</blockquote>
+
     
 </div>
 
@@ -152,7 +194,9 @@
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
                 
                 
             </div>
@@ -204,11 +248,19 @@
             <ul>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/boj/1026/">BOJ-1026-보물[정렬]</a>
+                    <a href="https://xfrnk2.github.io/til/20.04.21/">20.04</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/boj/10825/">10825</a>
+                    <a href="https://xfrnk2.github.io/boj/10825/">BOJ-10825-국영수[정렬]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.20/">20.04.20</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1026/">BOJ-1026-보물[정렬]</a>
                 </li>
                 
                 <li>
@@ -221,10 +273,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.04.18/">20.04.18</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.04.17/">TIL을 처음으로 시작합니다</a>
                 </li>
                 
             </ul>
@@ -266,12 +314,17 @@
                 </li>
                 
                 <li>
-                    <a href="/tags/admin">Admin
+                    <a href="/tags/boj">Boj
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/boj">Boj
+                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/admin">Admin
                         </a>
                 </li>
                 
@@ -282,11 +335,6 @@
                 
                 <li>
                     <a href="/tags/python">Python
-                        </a>
-                </li>
-                
-                <li>
-                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
                         </a>
                 </li>
                 
