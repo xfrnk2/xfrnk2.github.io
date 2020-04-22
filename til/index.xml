@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Apr 2020 02:07:45 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2020 02:16:56 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04.23</title>
+      <link>https://xfrnk2.github.io/til/20.04.23/</link>
+      <pubDate>Thu, 23 Apr 2020 02:16:56 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.23/</guid>
+      <description> Django 관계를 표현하는 모델 필드(ForeignKey, OneToOneField)에 대한 강의를 들었다. 어제 풀지 못한 알고리즘 문제를 풀었다. 백준 온라인 저지 알고리즘 문제를 2가지 풀었다.   내일 할 일  오늘 학습한 내용을 정리하고 구조화 하기. 블로그 사용법 분명하게 익히기. 배웠던 내용을 가지고 Django 연습하기.   </description>
+    </item>
     
     <item>
       <title>20.04.22</title>
@@ -16,7 +25,7 @@
       <pubDate>Wed, 22 Apr 2020 02:07:45 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.04.22/</guid>
-      <description> Django Queryset을 통한 간단 검색 구현, Queryset의 정렬 및 범위 조건에 대해서 정리 및 복습하였다. Django-debug-toolbar, Django 관계를 표현하는 모델 필드 강의를 들었다. 알고리즘 문제 하나를 가지고 다 풀지 못했다. 네트워크 원리 책을 읽었다.   내일 할 일  Django Queryset을 통한 간단 검색 구현, Queryset의 정렬 및 범위 조건 강의 듣고 공부하기. 풀지 못한 알고리즘 문제 문제 해결하기.   </description>
+      <description> Django 모델을 통한 정리방법 및 media파일을 다루는 방법에 대해서 정리 및 복습하였다. Django-debug-toolbar, Django 관계를 표현하는 모델 필드 강의를 들었다. 알고리즘 문제 하나를 가지고 다 풀지 못했다. 네트워크 원리 책을 읽었다.   내일 할 일  Django Queryset을 통한 간단 검색 구현, Queryset의 정렬 및 범위 조건 강의 듣고 공부하기. 풀지 못한 알고리즘 문제 문제 해결하기.   </description>
     </item>
     
     <item>
