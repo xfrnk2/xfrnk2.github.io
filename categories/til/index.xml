@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Apr 2020 02:16:56 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 01:31:15 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04</title>
+      <link>https://xfrnk2.github.io/til/20.04.24/</link>
+      <pubDate>Fri, 24 Apr 2020 01:31:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.24/</guid>
+      <description> Django 강의 수강이후로 배웠던 내용들을 한꺼번에 복습하였다.   내일 할 일  그간 학습한 내용을 정리하고 구조화 하기. 그간의 학습 내용을 가지고 Django를 통해 직접 코드를 작성해서 구현한 나만의 사이트 만들기.   </description>
+    </item>
     
     <item>
       <title>20.04.23</title>
