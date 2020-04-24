@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 24 Apr 2020 01:31:15 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 01:17:02 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04.25</title>
+      <link>https://xfrnk2.github.io/til/20.04.25/</link>
+      <pubDate>Sat, 25 Apr 2020 01:17:02 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.25/</guid>
+      <description> 몸상태가 좋지 않아 쉬는 시간을 가졌다. 아무것도 안할 수는 없으니 백준 알고리즘 문제를 하나 풀었다.   내일 할 일  내일은 약속이 있어 외출을 하지만 이동중 객체지향의 사실과 오해 책을 독서하겠다.   </description>
+    </item>
     
     <item>
       <title>20.04.24</title>
