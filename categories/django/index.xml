@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/categories/django/</link>
     <description>Recent content in Django on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Apr 2020 18:03:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2020 23:25:41 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/django/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django Static &amp; Media 파일</title>
+      <link>https://xfrnk2.github.io/django/static_media_file/</link>
+      <pubDate>Tue, 28 Apr 2020 23:25:41 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/static_media_file/</guid>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Static &amp;amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&amp;gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest.</description>
+    </item>
     
     <item>
       <title>Django의 Admin 기능</title>
@@ -16,7 +26,8 @@
       <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/django_admin/</guid>
-      <description>1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin.site.regiester(Item) 2. Class from django.contrib import admin from .models import Item class ItemAdmin(admin.</description>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin.</description>
     </item>
     
   </channel>
