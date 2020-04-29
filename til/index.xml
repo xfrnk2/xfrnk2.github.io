@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 23:14:19 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 23:39:48 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04.29</title>
+      <link>https://xfrnk2.github.io/til/20.04.29/</link>
+      <pubDate>Wed, 29 Apr 2020 23:39:48 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.29/</guid>
+      <description>오늘 한 일  어제에 이어서 영어 표현들을 복습했다. Django 쉘을 다룬 내용을 복습하고 정리해서 글을 올렸다. 백준 알고리즘 문제를 풀었다. (2748번 피보나치 수2) 1904번 문제(01타일)을 풀었는데 시간초과가 나왔다. 앞의 문제와 마찬가지로 동적 프로그래밍을 사용하는 문제였다. 관련 자료들을 검색하다보니 수열과 조합, 등차수열을 배워야 할 것만 같았다. 부자의 독서 책을 약 50% 읽었다. 이따금 접속하던 Okky 사이트의 모바일 앱을 설치했다. 주로 신입 개발자의 직장생활 고충과 그에 관한 팁들을 다루는 내용의 글들을 읽었다.</description>
+    </item>
     
     <item>
       <title>20.04.28</title>
