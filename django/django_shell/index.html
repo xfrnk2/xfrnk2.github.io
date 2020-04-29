@@ -8,22 +8,23 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 정렬 | Rad Blog</title>
-    <meta name="description" content="정렬 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="정렬">
-    <meta itemprop="description" content="정렬 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="정렬">
-    <meta property="og:description" content="정렬 - Bilberry Premium Theme for Hugo.">
+    <title> 장고 쉘 | Rad Blog</title>
+    <meta name="description" content="장고 쉘 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="장고 쉘">
+    <meta itemprop="description" content="장고 쉘 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="장고 쉘">
+    <meta property="og:description" content="장고 쉘 - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/">
-    <meta property="og:site_name" content="Rad Blog"><meta property="og:type" content="website">
+    <meta property="og:url" content="https://xfrnk2.github.io/django/django_shell/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
 
     
 
 
     
-    <link href="/tags/%EC%A0%95%EB%A0%AC/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/tags/%EC%A0%95%EB%A0%AC/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/django_shell/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/django_shell/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -96,11 +97,10 @@
 
     <div class="main container">
         
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/boj/10825/">
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_shell/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -108,11 +108,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/10825/">BOJ-10825-국영수[정렬]</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_shell/">장고 쉘</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-04-21</span>
+        <span class="date moment">2020-04-29</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
                 
             
         </span>
@@ -138,11 +138,89 @@
     </div>
 
     
-    BOJ-10825-국영수 문제 바로가기  나의 풀이 student_list = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split())) for _ in range(int(input()))] student_list.sort(key=lambda student: (-student[1], student[2], -student[3], student[0])) for x in student_list: print(x[0]) 생각  operator.itemgetter도 이용할수 있을까? 정수판별을 위해서 어떤 함수를 사용하는게 적절할까?  순서  input값의 문자열이 정수일 경우 정수화 정렬 실행 0번째 인덱스에 위치한 학생의 이름을 출력  방법  정수 판별을 위해 isdecimal 이용 lambda함수를 이용 정렬하고자 하는 인덱스를 역순으로 정렬하기 위해 머리부분에 -를 붙임.
+    <blockquote>
+<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
+</blockquote>
+<hr>
+<h3 id="shell">Shell</h3>
+<ul>
+<li>Ipython은 기본 파이썬 패키지에는 없고 pip install 또는 콘다 install을 통해서 설치 가능하다.</li>
+<li>Jupyter Notebook은 Ipython의 웹버전이다. 웹브라우저를 통해 사용한다.</li>
+<li>웹상에서 코드가 동작하므로 글자 이외의 이미지나 차트 등의 여러 intertive한 UI들을 아웃풋으로 내어 줄 수 있다.</li>
+<li>그러므로 분석이나 머신러닝 등에서 사용하는 편이다.</li>
+<li>BPython도 있다.</li>
+</ul>
+<hr>
+<h3 id="장고-프로젝트-설정이-로딩된-파이썬-쉘">장고 프로젝트 설정이 로딩된 파이썬 쉘</h3>
+<ul>
+<li>
+<p>쉘&gt; python manage.py shell</p>
+</li>
+<li>
+<p>우선순위 : ipython 쉘, bpython 쉘, python 쉘</p>
+</li>
+</ul>
+<h6 id="옵션-">옵션 :</h6>
+<ul>
+<li>
+<p>-i (&ndash;interface) : 인터프리터 인터페이스 커스텀 지정</p>
+</li>
+<li>
+<p>-c (&ndash;command) : 실행할 파이썬 코드를 문자열로 지정</p>
+</li>
+</ul>
+<hr>
+<h6 id="예시">예시</h6>
+<pre><code>python -c &quot;print(&quot;2**100&quot;)&quot; # 쉘로 진입하지 않음
+python manage.py shell -c &quot;print(&quot;2**100&quot;) # manage.py 쉘에서도 동일하게 지원
+</code></pre><h6 id="유사한-예">유사한 예</h6>
+<pre><code>echo print(2**100) | python
+echo print(2**100) | python manage.py shell -c
+</code></pre><hr>
+<h3 id="장고가-시작될-때-꼭-필요한-환경-변수">장고가 시작될 때 꼭 필요한 환경 변수</h3>
+<ul>
+<li>wsgi나 asgi, manage.py 파일에 가보면 아래와 같이 나와있다.</li>
+</ul>
+<pre><code>os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_tech.settings')
+</code></pre><ul>
+<li>장고가 시작될 때 꼭 필요한 환경변수이다.</li>
+<li>장고 setting의 위치를 알려달라는 것이다. 알려 줘야지만 장고에 필요한 설정을 읽어들일 것이기 때문이다.</li>
+</ul>
+<h6 id="현재-프로세스에서-환경변수-목록">현재 프로세스에서 환경변수 목록</h6>
+<pre><code>import os 
+os.environ
+</code></pre><p>아래와 같은 형태로 접근이 가능하다.</p>
+<pre><code>import os
+os.environ['DJANGO_SETTINGS_MODULE'] = 'django_tech.settings'
+os.environ[&quot;DJANGO_ALLOW_ASYNC_UNSAFE&quot;] = &quot;true&quot; # 주피터 노트북의 경우
+import django
+django.setup()
+from blog1.models import Post
+qs = Post.objects.all()
+print(qs.query)
+</code></pre><h6 id="결과">결과</h6>
+<pre><code>SELECT &quot;blog1_post&quot;.&quot;id&quot;, &quot;blog1_post&quot;.&quot;title&quot;, &quot;blog1_post&quot;.&quot;content&quot;, &quot;blog1_post&quot;.&quot;created_at&quot;, &quot;blog1_post&quot;.&quot;updated_at&quot;, &quot;blog1_post&quot;.&quot;photo&quot;, &quot;blog1_post&quot;.&quot;is_public&quot; FROM &quot;blog1_post&quot;
+</code></pre><ul>
+<li>
+<p>주피터 노트북에서도 과정은 위와 동일하다.</p>
+</li>
+<li>
+<p>주피터 노트북에서 사용하고자 한다면 어떻게 해야하는가에 대한 내용이 나와있다.<br>
+<a href="https://docs.djangoproject.com/en/3.0/topics/async/">https://docs.djangoproject.com/en/3.0/topics/async/</a></p>
+</li>
+</ul>
+<hr>
+<h3 id="주피터노트북의-활용방법">주피터노트북의 활용방법</h3>
+<ul>
+<li>
+<p>분석이나 크롤링 같은 작업을 통해서 모델을 저장하는 경우 등 장고 모델과 연계해서 분석 같은 것을 하고자 할때,
+주피터 노트북은 테스트를 하기 위한 편리한 환경이 된다.</p>
+</li>
+<li>
+<p>그때 그때 파이참이나 Vscode와 같은 프로그램을 사용해서 실행을 하는 방법도 있겠지만, 주피터 환경을 사용하면 좀더 편리한 사용이 가능하다.</p>
+</li>
+</ul>
 
-    
-    <a href="https://xfrnk2.github.io/boj/10825/" class="more">Continue reading</a>
-    
     
 </div>
 
@@ -156,85 +234,11 @@
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
                 
                 
                 
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/boj/1026/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/1026/">BOJ-1026-보물[정렬]</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-20</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    BOJ-1026-보물 문제 바로가기  나의 풀이1 get_input = lambda:sorted(map(int, input().split())) get_input() print(sum(list(map(lambda x, y : x * y, get_input(), get_input()[::-1])))) 나의 풀이2 get_input = lambda:sorted(map(int, input().split())) get_input() print(sum(x*y for x, y in zip(get_input(), get_input()[::-1]))) 생각 reverse로 정렬하기보다 더 좋은방법이 없나 찾아본 결과 [::-1]이 가장 좋아보였다.
-순서  정렬된 리스트를 얻어오는 함수를 작성 B를 역순으로 정렬 A와 B의 각각의 원소들을 곱한 리스트를 구한다. 구해진 리스트의 값을을 모두 더한 값을 반환한다.  방법  list와 map, lambda 함수를 이용해서 구현해 보았다.
-
-    
-    <a href="https://xfrnk2.github.io/boj/1026/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
-                
-                
+                <a href="https://xfrnk2.github.io/tags/shell/">Shell</a>
                 
                 
             </div>
@@ -246,18 +250,33 @@
 
 </article>
 
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
         
     </div>
 
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
+     
 
     </div>
 
@@ -398,8 +417,7 @@
                 
                 by xfrnk2
             </a>
-            -
-            <a href="https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/index.xml">RSS</a>
+            
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"

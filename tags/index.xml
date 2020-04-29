@@ -5,7 +5,7 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 23:25:41 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 14:27:36 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +13,18 @@
     <item>
       <title>Django</title>
       <link>https://xfrnk2.github.io/tags/django/</link>
-      <pubDate>Tue, 28 Apr 2020 23:25:41 +0900</pubDate>
+      <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>https://xfrnk2.github.io/tags/shell/</link>
+      <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/shell/</guid>
       <description></description>
     </item>
     

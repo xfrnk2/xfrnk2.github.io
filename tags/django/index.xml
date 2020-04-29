@@ -5,17 +5,27 @@
     <link>https://xfrnk2.github.io/tags/django/</link>
     <description>Recent content in Django on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 28 Apr 2020 23:25:41 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 14:27:36 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>장고 쉘</title>
+      <link>https://xfrnk2.github.io/django/django_shell/</link>
+      <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_shell/</guid>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Shell  Ipython은 기본 파이썬 패키지에는 없고 pip install 또는 콘다 install을 통해서 설치 가능하다. Jupyter Notebook은 Ipython의 웹버전이다. 웹브라우저를 통해 사용한다. 웹상에서 코드가 동작하므로 글자 이외의 이미지나 차트 등의 여러 intertive한 UI들을 아웃풋으로 내어 줄 수 있다. 그러므로 분석이나 머신러닝 등에서 사용하는 편이다. BPython도 있다.   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘&amp;gt; python manage.</description>
+    </item>
+    
+    <item>
       <title>Django Static &amp; Media 파일</title>
-      <link>https://xfrnk2.github.io/django/static_media_file/</link>
+      <link>https://xfrnk2.github.io/django/django_static_media_file/</link>
       <pubDate>Tue, 28 Apr 2020 23:25:41 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/django/static_media_file/</guid>
+      <guid>https://xfrnk2.github.io/django/django_static_media_file/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Static &amp;amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&amp;gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest.</description>
     </item>
