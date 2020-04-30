@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 20.04.19 | Rad Blog</title>
-    <meta name="description" content="20.04.19 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="20.04.19">
-    <meta itemprop="description" content="20.04.19 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="20.04.19">
-    <meta property="og:description" content="20.04.19 - Bilberry Premium Theme for Hugo.">
+    <title> (기초)모델을 통한 조회 | Rad Blog</title>
+    <meta name="description" content="(기초)모델을 통한 조회 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="(기초)모델을 통한 조회">
+    <meta itemprop="description" content="(기초)모델을 통한 조회 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="(기초)모델을 통한 조회">
+    <meta property="og:description" content="(기초)모델을 통한 조회 - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/til/20.04.19/">
+    <meta property="og:url" content="https://xfrnk2.github.io/django/model_basic/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/til/20.04.19/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/til/20.04.19/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/model_basic/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/model_basic/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.04.19/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/django/model_basic/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.19/">20.04.19</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/model_basic/">(기초)모델을 통한 조회</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-04-19</span>
+        <span class="date moment">2020-05-01</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
                 
             
         </span>
@@ -138,44 +138,146 @@
     </div>
 
     
-    <p>평소라면 아침에 일어나면 책부터 읽으려고 하는 편인데, 오늘은 왠지 모르게 오래도록 방치해둔 github와 travis-ci간의 오류를 해결하고 싶다는 생각이 들었다.<br>
-<strong>makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 겸용 스크립트를 작성</strong>하는 것이었다.</p>
-<p>그동안 나는 Python을 통해 코딩 퀴즈만 풀어왔었기 때문에 다른 영역의 것들을 쉽게 건드릴 수가 없었다. 뭘 모르는지를 몰랐다. travis-ci를 연동시키고 언젠가는 해야겠지 하면서 차일피일 미루었었다. 틈틈이 해결하기 위해 씨름해본적이 있는데 매번 해결하지 못했다.</p>
-<p>그동안 문제를 해결할 때 일관된 방식으로 빠르게 답을 찾으려고만 했던것 같아서, 작은 것부터 알아갈 필요가 있다고 느꼈다. 그래서 배치파일과 쉘스크립트, makefile 관계된 자료들을 찾아보았다.</p>
-<p>결정적으로 도달한 결론은 쉘스크립트에서 변수를 반환하여, 해당 변수를 makefile에서 참조할수 있도록 하는 것이었다.
-가장 크게 도움이 된 것은 아래와 같은 정보였다.</p>
-<hr>
+    <h3 id="model-manager">Model Manager</h3>
+<p>SELECT * FROM app_model;</p>
+<pre><code>ModelCls.objects.all()
+</code></pre><p>SELECT * FROM app_model ORDER BY id DESC LIMIT 10;</p>
+<pre><code>ModelCls.objects.all().order_by('-id')[:10]
+</code></pre><p>INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);</p>
+<pre><code>ModelCls.objects.create(title=&quot;New Title&quot;)
+</code></pre><hr>
+<h3 id="queryset">Queryset</h3>
+<h6 id="chaining을-지원">Chaining을 지원</h6>
+<blockquote>
+<p>Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet</p>
+</blockquote>
+<h6 id="lazy한-특성">Lazy한 특성</h6>
+<blockquote>
+<p>QuerySet을 만드는 동안에 DB 접근 X<br>
+실제로 데이터가 필요한 시점에 접근</p>
+</blockquote>
+<h6 id="데이터가-필요한-시점">데이터가 필요한 시점</h6>
 <ol>
-<li>Shellscript 환경변수를 이용하여 전달. 환경변수는 터미널이 실행되는동안 유효하다.</li>
+<li>queryset</li>
+<li>print(queryset)</li>
+<li>list(queryset)</li>
+<li>for instance in queryset: print(instance)</li>
 </ol>
-<pre><code>export test_path=/venv/scripts/activate.bat     #Windows의 경우
-export test_path=/venv/bin/activate 		#Linux의 경우
-</code></pre><ol start="2">
-<li>Makefile에서는 간단하게 참조가 가능했다.</li>
-</ol>
-<pre><code>TestPath=${test_path}  
-</code></pre><p>[출처 : https://sonseungha.tistory.com/540]</p>
+<blockquote>
+<p><strong>&ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;</strong></p>
+</blockquote>
 <hr>
-<p>사실 오늘은 Django강의 수강과 실습에 비중을 두려고 했는데 위의 작업을 하는데만 무려 7시간이 소요되었다.
-성공적으로 해결해서 다행이지만 못하면 어쩔뻔했나 싶었다. 확인이 필요할 것 같아 잘 아시는 분께 빌드 내역을 가지고 여쭈어 보니, 다행히도 문제가 없다는 피드백을 받았다.</p>
-<p>예전 같았으면 이렇게 하다가 번아웃이 오는 일이 빈번했는데 요즘은 의식적으로 무모히 도전하지 않으려고 하는 편이다. 해결 되지 않으면 시간이 너무 아깝기 때문이다. 그 시간에 새로운 것을
-배우거나 복습하는게 더 좋다고 생각한다.</p>
-<p>아무튼 간단히 쓰려고 했는데 순간을 기록하고자 하다보니 글이 길어졌다. 앞으로는 좀더 요점에 충실해서 기록하도록 하자.
-결과적으로 오늘 한것은 쉘스크립트 파일을 통한 Windows/Linux 겸용 스크립트를 만들기에 성공한 일이다.</p>
-<p>장시간 작업 후 잠시 휴식한 뒤 Django 공부로 돌아왔다.
-DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
-벌써 새벽 두시인데 오늘 책을 읽지 못했으니 잠들기 전까지 책을 읽으려고 한다.</p>
-<hr>
-<h4 id="내일-할-일">내일 할 일</h4>
+<h3 id="다양한-조회요청-방법---select-sql-생성">다양한 조회요청 방법 - SELECT SQL 생성</h3>
+<h6 id="조건을-추가한-queryset-획득할-준비">조건을 추가한 Queryset, 획득할 준비</h6>
 <ul>
-<li>블로그에 DjangoAdmin기능 문서정리해서 글 올리기.</li>
-<li>블로그에 어제 풀었던 알고리즘 문제의 코드 올리기.</li>
-<li>Django ImageField와 FileField을 구현하여 연습하기.</li>
-<li>시간 내서 네트워크 원리 책 읽기.</li>
+<li>queryset.filter(&hellip;)</li>
+<li>queryset.exclude(&hellip;)</li>
+</ul>
+<h6 id="특정-모델객체-1개-획득을-시도">특정 모델객체 1개 획득을 시도</h6>
+<ul>
+<li>
+<p>queryset[Number Index]-&gt;모델객체 혹은 예외발생(IndexError)<br>
+<strong>Index 범위를 벗어날 시 예외발생</strong></p>
+</li>
+<li>
+<p>queryset.get(&hellip;)-&gt;모델객체 혹은 예외발생(DoesNotExist, MultipleObjectsReturned)
+<strong>존재하지 않거나, 값이 여러개일때 에러 발생</strong></p>
+</li>
+<li>
+<p>queryset.first() -&gt; 모델객체 혹은 None</p>
+</li>
+<li>
+<p>queryset.last() -&gt; 모델객체 혹은 None</p>
+</li>
 </ul>
 <hr>
-<p><!-- raw HTML omitted -->테스트<!-- raw HTML omitted --></p>
-
+<h3 id="filter와-exclude-반대---select-쿼리에-where-조건-추가">filter와 exclude (반대) - SELECT 쿼리에 WHERE 조건 추가</h3>
+<ul>
+<li>인자로 &ldquo;필드명 = 조건값&rdquo; 지정</li>
+<li>1개 이상의 인자 지정 -&gt; 모두 <strong>AND 조건</strong>으로 묶임</li>
+<li><strong>OR 조건을 묶기 위해서는, django.db.models.Q 활용</strong></li>
+</ul>
+<h6 id="기본---and-조건">기본 - and 조건</h6>
+<pre><code>Item.objects.filter(name-&quot;New Item&quot;, price=3000)
+</code></pre><h6 id="q-사용법---or-조건">q 사용법 - or 조건</h6>
+<pre><code>from django.db.models import Q
+qs = qs.filter((Q(id_gte=2) | Q(message__icontains=query)) # 비트 연산자의 or(|)를 사용
+</code></pre><h6 id="q-사용예시">q 사용예시</h6>
+<pre><code>cond = Q(id_gte=2) | Q(message__icontains=query
+qs = qs.filter(cond)
+</code></pre><hr>
+<h3 id="필드-타입별-다양한-조건-매칭">필드 타입별 다양한 조건 매칭</h3>
+<blockquote>
+<p><strong>주의!</strong> 데이터베이스에 따라 생성되는 SQL이 다름</p>
+</blockquote>
+<h6 id="숫자날짜시간-필드">숫자/날짜/시간 필드</h6>
+<table>
+<thead>
+<tr>
+<th>필드 타입</th>
+<th>조건 매칭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>필드명__lt = 조건값</td>
+<td>필드명 &lt; 조건값</td>
+</tr>
+<tr>
+<td>필드명__lte = 조건값</td>
+<td>필드명 &lt;= 조건값</td>
+</tr>
+<tr>
+<td>필드명__gt = 조건값</td>
+<td>필드명 &gt; 조건값</td>
+</tr>
+<tr>
+<td>필드명__gte = 조건값</td>
+<td>필드명 &gt;= 조건값</td>
+</tr>
+</tbody>
+</table>
+<h6 id="문자열-필드">문자열 필드</h6>
+<table>
+<thead>
+<tr>
+<th>필드 타입</th>
+<th>조건 매칭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>필드명__startswith = 조건값</td>
+<td>필드명 LIKE &ldquo;조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__istartswith = 조건값</td>
+<td>필드명 ILIKE &ldquo;조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__endswith = 조건값</td>
+<td>필드명 LIKE &ldquo;%조건값&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__iendswith = 조건값</td>
+<td>필드명 ILIKE &ldquo;%조건값&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__contains = 조건값</td>
+<td>필드명 LIKE &ldquo;%조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__icontains = 조건값</td>
+<td>필드명 ILIKE &ldquo;%조건값%&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="메모">메모</h3>
+<h6 id="아래와-같은-형식으로도-사용이-가능하니-알아두기">아래와 같은 형식으로도 사용이 가능하니 알아두기</h6>
+<pre><code>for post in qs:
+print(&quot;id : {id}, message : {message} ({created_at})&quot;.format(**post.__dict__)) 
+</code></pre>
     
 </div>
 
@@ -189,7 +291,11 @@ DjangoAdmin의 다양한 주된 사용법을 학습하고 구현하였다.
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
                 
                 
             </div>

@@ -5,10 +5,25 @@
     <link>https://xfrnk2.github.io/tags/django/</link>
     <description>Recent content in Django on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Apr 2020 14:27:36 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 00:20:38 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>(기초)모델을 통한 조회</title>
+      <link>https://xfrnk2.github.io/django/model_basic/</link>
+      <pubDate>Fri, 01 May 2020 00:20:38 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/model_basic/</guid>
+      <description>Model Manager SELECT * FROM app_model;
+ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
+ModelCls.objects.all().order_by(&#39;-id&#39;)[:10] INSERT INTO app_model (title) VALUES (&amp;ldquo;New Title&amp;rdquo;);
+ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&amp;hellip;).exclude(&amp;hellip;).filter(&amp;hellip;) -&amp;gt; QuerySet
+ Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
+실제로 데이터가 필요한 시점에 접근
+ 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &amp;ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&amp;rdquo;</description>
+    </item>
     
     <item>
       <title>장고 쉘</title>
@@ -17,7 +32,7 @@
       
       <guid>https://xfrnk2.github.io/django/django_shell/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작 이미지, 차트 등 활용이 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
+  Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
   우선순위 : ipython 쉘, bpython 쉘, python 쉘
   옵션 :   -i (&amp;ndash;interface) : 인터프리터 인터페이스 커스텀 지정</description>
     </item>

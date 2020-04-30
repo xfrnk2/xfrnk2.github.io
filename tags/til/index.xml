@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Apr 2020 23:39:48 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 23:07:21 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.04.30</title>
+      <link>https://xfrnk2.github.io/til/20.04.30/</link>
+      <pubDate>Thu, 30 Apr 2020 23:07:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.30/</guid>
+      <description>계획했던 일  Django 강의 많이 듣고 진도 나가기 성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기   오늘 한 일  Django Model을 통한 조회 기초를 복습하고 문서화했다. 문서화 한 것을 업로드했다. Django Debug Toolbar를 설치하고 구현해보았다. 라이브 아카데미 동영상을 시청하고 공부했다.   내일 할 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기 학교 과제 시작하기   </description>
+    </item>
     
     <item>
       <title>20.04.29</title>
