@@ -159,9 +159,9 @@
 <h3 id="media-파일-처리-순서">Media 파일 처리 순서</h3>
 <ol>
 <li>HttpRequest.FILES를 통해 파일이 전달</li>
-<li>뷰 로직이나 폼 로직을 통해, 유효성 검증을 수행하고,</li>
-<li>FileFIeld/ImageField 필드에 &ldquo;경로(문자열)&ldquo;를 저장하고,</li>
-<li>setings.MEDIA_ROOT 경로에 파일을 저장합니다.</li>
+<li>뷰 로직이나 폼 로직을 통해, 유효성 검증을 수행</li>
+<li>FileFIeld/ImageField 필드에 &ldquo;경로(문자열)&ldquo;를 저장</li>
+<li>setings.MEDIA_ROOT 경로에 파일을 저장</li>
 </ol>
 <h6 id="코드-예시">코드 예시</h6>
 <pre><code>MEDIA_URL = '/media/'
@@ -180,7 +180,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
 <h3 id="imagefield-file-field-상속">ImageField (File Field 상속)</h3>
 <ul>
 <li>Image Field 는 Pillow 이미지 처리 라이브러리 설치를 통해 width와 height 획득</li>
-<li>미설치시 ImageField를 추가한 makemigrations 수행에 실패함.</li>
+<li>미설치시 ImageField를 추가한 makemigrations 수행에 실패</li>
 <li>빈 경로 처리여부 : blank=True의 디폴트 설정은 false</li>
 </ul>
 <h6 id="위-필드를-상속-받은-커스텀-필드를-만들-수-있다">위 필드를 상속 받은 커스텀 필드를 만들 수 있다.</h6>
@@ -210,7 +210,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
 </ul>
 <hr>
 <h3 id="파일-저장-경로--커스텀-upload_to-옵션">파일 저장 경로 / 커스텀 upload_to 옵션</h3>
-<p>한 디렉토리에 파일을 너무 많이 몰아둘 경우, OS 파일찾기 성능 저하. 디렉토리 Depth가 깊어지는 것은 성능에 큰 영향 없음. 필드 별로, 다른 디렉토리 저장경로를 가지기</p>
+<p>한 디렉토리에 파일을 너무 많이 몰아둘 경우, OS 파일찾기 성능 저하. 디렉토리 Depth가 깊어지는 것은 성능에 큰 영향 없음. 필드 별로, 다른 디렉토리 저장경로를 가질 것을 권장</p>
 <h6 id="대책-1-필드-별로-다른-디렉토리에-저장">대책 1) 필드 별로 다른 디렉토리에 저장</h6>
 <ul>
 <li>photo = models.ImageField(upload_to=&quot;blog&rdquo;)</li>
@@ -286,8 +286,8 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
     urlpatterns += static.static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 </code></pre><ul>
 <li>파일을 읽어서 응답을 주기 위한 방법 (urls.py)</li>
-<li>장고는 미디어 파일등의 스테틱 파일의 서빙을 실제 프로덕션에서 하는 것을 권장하지 않는다.</li>
-<li>만약 if 문을 한 줄 없앤다 해도 빈 리스트를 반환하게 되지만, 명시적으로 사용하기 위해서 if문을 사용한다.</li>
+<li>장고는 미디어 파일등의 스테틱 파일의 서빙을 실제 프로덕션에서 하는 것을 권장하지 않음</li>
+<li>만약 if 문을 한 줄 없앤다 해도 빈 리스트를 반환하게 되지만, 명시적으로 사용하기 위해서 if문을 사용</li>
 </ul>
 <h6 id="ㅇ-mark_safe">ㅇ mark_safe()</h6>
 <ul>
@@ -305,7 +305,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 </code></pre><h6 id="ㅇ-settings의-import">ㅇ settings의 import</h6>
 <blockquote>
 <p>settings는 기본적으로 django.conf의 global_settings와, 현재 프로젝트의 settings가 합쳐져야 되므로
-from django.conf import 현 프로젝트의 settings인 settings 로 하면 합쳐진다. 오버라이팅.</p>
+from django.conf import 현 프로젝트의 settings인 settings 로 하면 합쳐짐(오버라이팅)</p>
 </blockquote>
 <pre><code># from django.conf import global_settings
 # from django_tech import settings
