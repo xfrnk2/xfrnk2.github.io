@@ -138,7 +138,11 @@
     </div>
 
     
-    <h3 id="model-manager">Model Manager</h3>
+    <blockquote>
+<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
+</blockquote>
+<hr>
+<h3 id="model-manager">Model Manager</h3>
 <p>SELECT * FROM app_model;</p>
 <pre><code>ModelCls.objects.all()
 </code></pre><p>SELECT * FROM app_model ORDER BY id DESC LIMIT 10;</p>
@@ -274,7 +278,7 @@ qs = qs.filter(cond)
 </table>
 <hr>
 <h3 id="메모">메모</h3>
-<h6 id="아래와-같은-형식으로도-사용이-가능하니-알아두기">아래와 같은 형식으로도 사용이 가능하니 알아두기</h6>
+<h6 id="아래와-같은-형식으로도-사용이-가능하니-알아두자">아래와 같은 형식으로도 사용이 가능하니 알아두자</h6>
 <pre><code>for post in qs:
 print(&quot;id : {id}, message : {message} ({created_at})&quot;.format(**post.__dict__)) 
 </code></pre>
