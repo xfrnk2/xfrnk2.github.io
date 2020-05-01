@@ -20,9 +20,18 @@
     </item>
     
     <item>
-      <title>(기초)모델을 통한 조회</title>
+      <title>20.04.30</title>
+      <link>https://xfrnk2.github.io/til/20.04.30/</link>
+      <pubDate>Thu, 30 Apr 2020 23:07:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.04.30/</guid>
+      <description>계획했던 일  Django 강의 많이 듣고 진도 나가기 성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기   오늘 한 일  Django Model을 통한 조회 기초를 복습하고 문서화했다. 문서화 한 것을 업로드했다. Django Debug Toolbar를 설치하고 구현해보았다. 라이브 아카데미 동영상을 시청하고 공부했다.   내일 할 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기 학교 과제 시작하기   </description>
+    </item>
+    
+    <item>
+      <title>모델을 통한 조회 (기초)</title>
       <link>https://xfrnk2.github.io/django/model_basic/</link>
-      <pubDate>Fri, 01 May 2020 00:20:38 +0900</pubDate>
+      <pubDate>Thu, 30 Apr 2020 11:59:38 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/model_basic/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
@@ -33,15 +42,6 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
  Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
 실제로 데이터가 필요한 시점에 접근
  데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &amp;ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&amp;rdquo;</description>
-    </item>
-    
-    <item>
-      <title>20.04.30</title>
-      <link>https://xfrnk2.github.io/til/20.04.30/</link>
-      <pubDate>Thu, 30 Apr 2020 23:07:21 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/til/20.04.30/</guid>
-      <description>계획했던 일  Django 강의 많이 듣고 진도 나가기 성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기   오늘 한 일  Django Model을 통한 조회 기초를 복습하고 문서화했다. 문서화 한 것을 업로드했다. Django Debug Toolbar를 설치하고 구현해보았다. 라이브 아카데미 동영상을 시청하고 공부했다.   내일 할 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기 학교 과제 시작하기   </description>
     </item>
     
     <item>

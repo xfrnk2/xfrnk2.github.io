@@ -5,15 +5,15 @@
     <link>https://xfrnk2.github.io/categories/django/</link>
     <description>Recent content in Django on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 May 2020 00:20:38 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2020 11:59:38 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/django/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>(기초)모델을 통한 조회</title>
+      <title>모델을 통한 조회 (기초)</title>
       <link>https://xfrnk2.github.io/django/model_basic/</link>
-      <pubDate>Fri, 01 May 2020 00:20:38 +0900</pubDate>
+      <pubDate>Thu, 30 Apr 2020 11:59:38 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/model_basic/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
