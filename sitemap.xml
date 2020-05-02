@@ -4,26 +4,61 @@
   
   <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/debug-toolbar/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/tags/django/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/django/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/django_model_field/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/model/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2020-05-02T23:19:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/django_foreignkey/</loc>
+    <lastmod>2020-05-02T23:07:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/debug-toolbar/</loc>
     <lastmod>2020-05-02T22:12:14+09:00</lastmod>
   </url>
   
@@ -33,27 +68,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/django/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/tags/sql/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2020-05-02T22:12:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
     <lastmod>2020-05-02T22:12:14+09:00</lastmod>
   </url>
   
@@ -89,11 +104,6 @@
   
   <url>
     <loc>https://xfrnk2.github.io/django/django_model_basic/</loc>
-    <lastmod>2020-04-30T11:59:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/model/</loc>
     <lastmod>2020-04-30T11:59:38+09:00</lastmod>
   </url>
   
