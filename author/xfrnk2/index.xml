@@ -5,10 +5,29 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 May 2020 11:13:20 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 22:12:14 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django debug-toolbar를 통한 SQL 디버깅</title>
+      <link>https://xfrnk2.github.io/django/django_debug_toolbar_sql/</link>
+      <pubDate>Sat, 02 May 2020 22:12:14 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_debug_toolbar_sql/</guid>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &amp;ldquo;/body&amp;rdquo;)</description>
+    </item>
+    
+    <item>
+      <title>20.05.02</title>
+      <link>https://xfrnk2.github.io/til/20.05.02/</link>
+      <pubDate>Sat, 02 May 2020 22:10:50 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.02/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>20.05.01</title>
@@ -29,11 +48,11 @@
     </item>
     
     <item>
-      <title>모델을 통한 조회 (기초)</title>
-      <link>https://xfrnk2.github.io/django/model_basic/</link>
+      <title>Django Model을 통한 조회 (기초)</title>
+      <link>https://xfrnk2.github.io/django/django_model_basic/</link>
       <pubDate>Thu, 30 Apr 2020 11:59:38 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/django/model_basic/</guid>
+      <guid>https://xfrnk2.github.io/django/django_model_basic/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Model Manager SELECT * FROM app_model;
 ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
@@ -54,7 +73,7 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
     </item>
     
     <item>
-      <title>장고 쉘</title>
+      <title>Django Shell</title>
       <link>https://xfrnk2.github.io/django/django_shell/</link>
       <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       

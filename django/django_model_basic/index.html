@@ -1,0 +1,519 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Django Model을 통한 조회 (기초) | Rad Blog</title>
+    <meta name="description" content="Django Model을 통한 조회 (기초) - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Django Model을 통한 조회 (기초)">
+    <meta itemprop="description" content="Django Model을 통한 조회 (기초) - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Django Model을 통한 조회 (기초)">
+    <meta property="og:description" content="Django Model을 통한 조회 (기초) - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/django/django_model_basic/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/django/django_model_basic/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/django_model_basic/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_model_basic/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_model_basic/">Django Model을 통한 조회 (기초)</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-30</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <blockquote>
+<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
+</blockquote>
+<hr>
+<h3 id="model-manager">Model Manager</h3>
+<p>SELECT * FROM app_model;</p>
+<pre><code>ModelCls.objects.all()
+</code></pre><p>SELECT * FROM app_model ORDER BY id DESC LIMIT 10;</p>
+<pre><code>ModelCls.objects.all().order_by('-id')[:10]
+</code></pre><p>INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);</p>
+<pre><code>ModelCls.objects.create(title=&quot;New Title&quot;)
+</code></pre><hr>
+<h3 id="queryset">Queryset</h3>
+<h6 id="chaining을-지원">Chaining을 지원</h6>
+<blockquote>
+<p>Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet</p>
+</blockquote>
+<h6 id="lazy한-특성">Lazy한 특성</h6>
+<blockquote>
+<p>QuerySet을 만드는 동안에 DB 접근 X<br>
+실제로 데이터가 필요한 시점에 접근</p>
+</blockquote>
+<h6 id="데이터가-필요한-시점">데이터가 필요한 시점</h6>
+<ol>
+<li>queryset</li>
+<li>print(queryset)</li>
+<li>list(queryset)</li>
+<li>for instance in queryset: print(instance)</li>
+</ol>
+<blockquote>
+<p><strong>&ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;</strong></p>
+</blockquote>
+<hr>
+<h3 id="다양한-조회요청-방법---select-sql-생성">다양한 조회요청 방법 - SELECT SQL 생성</h3>
+<h6 id="조건을-추가한-queryset-획득할-준비">조건을 추가한 Queryset, 획득할 준비</h6>
+<ul>
+<li>queryset.filter(&hellip;)</li>
+<li>queryset.exclude(&hellip;)</li>
+</ul>
+<h6 id="특정-모델객체-1개-획득을-시도">특정 모델객체 1개 획득을 시도</h6>
+<ul>
+<li>
+<p>queryset[Number Index]-&gt;모델객체 혹은 예외발생(IndexError)<br>
+<strong>Index 범위를 벗어날 시 예외발생</strong></p>
+</li>
+<li>
+<p>queryset.get(&hellip;)-&gt;모델객체 혹은 예외발생(DoesNotExist, MultipleObjectsReturned)
+<strong>존재하지 않거나, 값이 여러개일때 에러 발생</strong></p>
+</li>
+<li>
+<p>queryset.first() -&gt; 모델객체 혹은 None</p>
+</li>
+<li>
+<p>queryset.last() -&gt; 모델객체 혹은 None</p>
+</li>
+</ul>
+<hr>
+<h3 id="filter와-exclude-반대---select-쿼리에-where-조건-추가">filter와 exclude (반대) - SELECT 쿼리에 WHERE 조건 추가</h3>
+<ul>
+<li>인자로 &ldquo;필드명 = 조건값&rdquo; 지정</li>
+<li>1개 이상의 인자 지정 -&gt; 모두 <strong>AND 조건</strong>으로 묶임</li>
+<li><strong>OR 조건을 묶기 위해서는, django.db.models.Q 활용</strong></li>
+</ul>
+<h6 id="기본---and-조건">기본 - and 조건</h6>
+<pre><code>Item.objects.filter(name-&quot;New Item&quot;, price=3000)
+</code></pre><h6 id="q-사용법---or-조건">q 사용법 - or 조건</h6>
+<pre><code>from django.db.models import Q
+qs = qs.filter((Q(id_gte=2) | Q(message__icontains=query)) # 비트 연산자의 or(|)를 사용
+</code></pre><h6 id="q-사용예시">q 사용예시</h6>
+<pre><code>cond = Q(id_gte=2) | Q(message__icontains=query
+qs = qs.filter(cond)
+</code></pre><hr>
+<h3 id="필드-타입별-다양한-조건-매칭">필드 타입별 다양한 조건 매칭</h3>
+<blockquote>
+<p><strong>주의!</strong> 데이터베이스에 따라 생성되는 SQL이 다름</p>
+</blockquote>
+<h6 id="숫자날짜시간-필드">숫자/날짜/시간 필드</h6>
+<table>
+<thead>
+<tr>
+<th>필드 타입</th>
+<th>조건 매칭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>필드명__lt = 조건값</td>
+<td>필드명 &lt; 조건값</td>
+</tr>
+<tr>
+<td>필드명__lte = 조건값</td>
+<td>필드명 &lt;= 조건값</td>
+</tr>
+<tr>
+<td>필드명__gt = 조건값</td>
+<td>필드명 &gt; 조건값</td>
+</tr>
+<tr>
+<td>필드명__gte = 조건값</td>
+<td>필드명 &gt;= 조건값</td>
+</tr>
+</tbody>
+</table>
+<h6 id="문자열-필드">문자열 필드</h6>
+<table>
+<thead>
+<tr>
+<th>필드 타입</th>
+<th>조건 매칭</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>필드명__startswith = 조건값</td>
+<td>필드명 LIKE &ldquo;조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__istartswith = 조건값</td>
+<td>필드명 ILIKE &ldquo;조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__endswith = 조건값</td>
+<td>필드명 LIKE &ldquo;%조건값&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__iendswith = 조건값</td>
+<td>필드명 ILIKE &ldquo;%조건값&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__contains = 조건값</td>
+<td>필드명 LIKE &ldquo;%조건값%&rdquo;</td>
+</tr>
+<tr>
+<td>필드명__icontains = 조건값</td>
+<td>필드명 ILIKE &ldquo;%조건값%&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="메모">메모</h3>
+<h6 id="아래와-같은-형식으로도-사용이-가능하니-알아두자">아래와 같은 형식으로도 사용이 가능하니 알아두자</h6>
+<pre><code>for post in qs:
+print(&quot;id : {id}, message : {message} ({created_at})&quot;.format(**post.__dict__)) 
+</code></pre>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">Django debug-toolbar를 통한 SQL 디버깅</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.05.02/">20.05.02</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.05.01/">20.05.01</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.30/">20.04.30</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_model_basic/">Django Model을 통한 조회 (기초)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.04.29/">20.04.29</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_shell/">Django Shell</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/admin">Admin
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/debug-toolbar">Debug toolbar
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
