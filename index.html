@@ -105,6 +105,111 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.05.03/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.05.03/">20.05</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h4 id="계획했던-일">계획했던 일</h4>
+<ul>
+<li><del>LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기</del></li>
+<li><del>독서하기</del></li>
+<li>Django 배운 내용 문서화하기</li>
+</ul>
+<hr>
+<h4 id="오늘-한-일">오늘 한 일</h4>
+<ul>
+<li>도서 <a href="http://www.yes24.com/Product/Goods/15281236">&lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo;</a> 을 읽기 시작해서 20%정도 읽었다.</li>
+<li>파이썬 사용자모임 단톡방에 올라온 질문들에 대해 답변을 남겼다. (리스트 열과 행의 합, 팩토리얼, Counter, 리스트 컴프리헨션) 그로부터 파생된 것들을 공부하는 시간을 보냈다.</li>
+<li>딕셔너리의 값 기준 정렬 방법에 대해 알아봤다.</li>
+</ul>
+<pre><code>1. Counter(list).most_common(number) 
+2. result = sorted(arr.items(), key=lambda x : x[1])
+위처럼 두 가지 형태로 구현하였는데, 최빈값을 구하는 문제를 풀기 위함이었다.
+</code></pre><ul>
+<li>
+<p>코딩 연습을 위해서 피보나치와 팩토리얼을 for, while, recursion 각각의 형태로 구현해 보았다.</p>
+</li>
+<li>
+<p>파이썬의 2중 리스트를 일자화 시키는 방법을 공부해서 직접 실행시켜보았다. <a href="https://winterj.me/list_of_lists_to_flatten/">[참고한 곳 링크]</a> sum(list, []) 의 방법이 마음에 들었다.</p>
+</li>
+<li>
+<p>LCS (최장 공통 부분 수열)을 이해하고, 인터넷 자료들을 참고해서 구현했다.</p>
+</li>
+</ul>
+<hr>
+<h4 id="내일-할-일">내일 할 일</h4>
+<ul>
+<li>Django 배운 내용 문서화하기</li>
+<li>LCS (최장 공통 부분 수열) 을 또다른 형태로 구현하기</li>
+<li>분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사하기</li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/django/django_model_field/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -576,92 +681,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_model_basic/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_model_basic/">Django Model을 통한 조회 (기초)</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-30</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Model Manager SELECT * FROM app_model;
-ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
-ModelCls.objects.all().order_by('-id')[:10] INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);
-ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet
- Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
-실제로 데이터가 필요한 시점에 접근
- 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;
-
-    
-    <a href="https://xfrnk2.github.io/django/django_model_basic/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -686,6 +705,10 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.05.03/">20.05</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/django/django_model_field/">Django - Model Field</a>
                 </li>
                 
@@ -707,10 +730,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.04.30/">20.04.30</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/django/django_model_basic/">Django Model을 통한 조회 (기초)</a>
                 </li>
                 
             </ul>
