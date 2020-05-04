@@ -100,6 +100,85 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_onetoonefield/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_onetoonefield/">Django - 관계를 표현하는 Model Field - OneToOneField</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능  User:Profile  ForeignKey(unique_True)와 유사하지만, reverse 차이  User:Profile를 ForeignKey로 지정한다면 -&gt; profile.user_set.first() -&gt; user User:Profile를 OneToOneField로 지정한다면 -&gt; profile.user -&gt; user  OneToOneField(to, on_delete) #django/contrib/auth/models.py class User(abstractBaseUser): ... # accounts/models.py class Profile(models.Model): author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
+ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&gt; 모델명소문자 accounts/models.py class Profile(models.
+
+    
+    <a href="https://xfrnk2.github.io/django/django_onetoonefield/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/django/django_model_field/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -361,6 +440,10 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/django/django_onetoonefield/">Django - 관계를 표현하는 Model Field - OneToOneField</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.05.03/">20.05.03_TIL</a>
                 </li>
                 
@@ -382,10 +465,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.05.01/">20.05.01_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.04.30/">20.04.30_TIL</a>
                 </li>
                 
             </ul>
