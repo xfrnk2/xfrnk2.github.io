@@ -4,12 +4,47 @@
   
   <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/django/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/django_manytomanyfield/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/model/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
   </url>
   
   <url>
@@ -18,37 +53,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/categories/django/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/django/django_onetoonefield/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/django/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/model/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2020-05-04T11:11:59+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
     <lastmod>2020-05-04T11:11:59+09:00</lastmod>
   </url>
   
