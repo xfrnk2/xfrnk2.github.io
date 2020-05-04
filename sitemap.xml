@@ -3,13 +3,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://xfrnk2.github.io/til/20.05.04/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/til/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/til/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2020-05-04T23:43:22+09:00</lastmod>
   </url>
   
   <url>
@@ -33,21 +68,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
-    <lastmod>2020-05-04T12:24:08+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/tags/django/</loc>
     <lastmod>2020-05-04T11:11:59+09:00</lastmod>
   </url>
@@ -59,21 +79,6 @@
   
   <url>
     <loc>https://xfrnk2.github.io/til/20.05.03/</loc>
-    <lastmod>2020-05-03T22:10:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/til/</loc>
-    <lastmod>2020-05-03T22:10:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/til/</loc>
-    <lastmod>2020-05-03T22:10:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/til/</loc>
     <lastmod>2020-05-03T22:10:50+09:00</lastmod>
   </url>
   

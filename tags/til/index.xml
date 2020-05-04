@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 03 May 2020 22:10:50 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2020 23:43:22 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.04_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.04/</link>
+      <pubDate>Mon, 04 May 2020 23:43:22 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.04/</guid>
+      <description>계획했던 일  Django 배운 내용 문서화하기 LCS (최장 공통 부분 수열) 을 또다른 형태로 구현하기 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사하기   오늘 한 일  Django ManyToManyField 에 대해 복습하고 정리해서 글을 올렸다. Django OneToOneField 에 대해 복습하고 정리해서 글을 올렸다. 도서 &amp;lsquo;지적 대화를 위한 넓고 얕은 지식&amp;rsquo; 을 어제 읽었던 부분을 다시 한 번 읽었다. 결과적으로 어제 이상으로 읽은 것은 10페이지 정도였다. 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사한 내용을 정리 후 문서화했다.</description>
+    </item>
     
     <item>
       <title>20.05.03_TIL</title>
