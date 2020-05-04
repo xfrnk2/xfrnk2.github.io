@@ -16,9 +16,10 @@
       <pubDate>Mon, 04 May 2020 12:24:08 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/django_manytomanyfield/</guid>
-      <description>ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
 예 ) 태그 지정에 대한 유효성 검사 ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,
-ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.ManyToManyField(&#39;Tag&#39;, blank=True) class Article(models.Model): tag_set = models.ManyToManyField(&#39;Tag&#39;, blank=True) class Tag(models.Model): name = models.</description>
+ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.</description>
     </item>
     
     <item>

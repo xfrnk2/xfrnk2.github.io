@@ -143,9 +143,10 @@
     </div>
 
     
-    ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
 예 ) 태그 지정에 대한 유효성 검사 ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,
-ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.ManyToManyField('Tag', blank=True) class Article(models.Model): tag_set = models.ManyToManyField('Tag', blank=True) class Tag(models.Model): name = models.
+ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.
 
     
     <a href="https://xfrnk2.github.io/django/django_manytomanyfield/" class="more">Continue reading</a>
@@ -657,37 +658,11 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     </div>
 
     
-    <h4 id="계획했던-일">계획했던 일</h4>
-<ul>
-<li><del>성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기</del></li>
-<li>LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기</li>
-<li><del>Django 배운 내용 문서화하기</del></li>
-</ul>
-<hr>
-<h4 id="오늘-한-일">오늘 한 일</h4>
-<ul>
-<li>Django debug-toolbar에 대한 내용을 복습하고 정리해서 글을 올렸다.</li>
-<li>Django 관계를 표현하는 Model Field, Foreign Key에 대한 내용을 복습하고 정리해서 글을 올렸다.</li>
-</ul>
-<blockquote>
-<ol>
-<li>강의를 들은지 얼마 지난것을 다시 복습하고 정리하려고 하니 머릿속에 그려지는 동안 또다시 시간이 소비된다.</li>
-<li>블로그에 글을 쓰다보니 복습을 잘 할 수 있어서 좋으나 한편으로는 복습에 시간을 쏟으며 세월아네월아 하게 되는게 아닌가 싶기도 하다. 정리하는데 시간이 꽤 소모되는 편이기 때문이다.</li>
-<li>며칠만에 붙잡고 하는 복습을 통해서 망각하는 정도가 체감된 만큼 앞으로를 내다본다면 2주에 한번 정도의 꼴로 지난 기간동안 배운 내용을 복습할 필요가 있다고 느꼈다. 추진해 봐야지.</li>
-</ol>
-</blockquote>
-<ul>
-<li>자기전까지 성공과 실패를 결정하는 1%의 네트워크 원리 책을 읽고 자겠다. 이미 2시지만..</li>
-<li><strong>처음으로 남의 Github 저장소에 issue를 추가했다!(올려서 질문했다).</strong> 질문을 위한 공간이었기 때문에 템플릿 사용중 알아내지 못한 이미지 업로드 방법에 대해서 여쭈어 보았다. 올린지 불과 1시간 뿐 되지 않아서 아직 확인받지는 않은 상태이다.</li>
-</ul>
-<hr>
-<h4 id="내일-할-일">내일 할 일</h4>
-<ul>
-<li>LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기</li>
-<li>독서하기</li>
-<li>Django 배운 내용 문서화하기</li>
-</ul>
+    계획했던 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기 Django 배운 내용 문서화하기   오늘 한 일  Django debug-toolbar에 대한 내용을 복습하고 정리해서 글을 올렸다. Django 관계를 표현하는 Model Field, Foreign Key에 대한 내용을 복습하고 정리해서 글을 올렸다.    강의를 들은지 얼마 지난것을 다시 복습하고 정리하려고 하니 머릿속에 그려지는 동안 또다시 시간이 소비된다. 블로그에 글을 쓰다보니 복습을 잘 할 수 있어서 좋으나 한편으로는 복습에 시간을 쏟으며 세월아네월아 하게 되는게 아닌가 싶기도 하다.
 
+    
+    <a href="https://xfrnk2.github.io/til/20.05.02/" class="more">Continue reading</a>
+    
     
 </div>
 
