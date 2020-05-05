@@ -157,16 +157,13 @@
 <pre><code>&gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt;
 </code></pre><hr>
 <h3 id="migration-file">Migration File</h3>
-<blockquote>
-<p>의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요</p>
-</blockquote>
 <h6 id="기능">기능</h6>
 <ul>
-<li>Migration File은 모델의 변경내역을 누적하는 역할</li>
-<li>데이터베이스에 어떤 변화를 가하는 Operation들을 나열</li>
+<li>모델의 변경내역을 누적</li>
 <li>테이블 생성/삭제, 필드 추가/삭제 등</li>
+<li>데이터베이스에 어떤 변화를 가하는 Operation들을 나열</li>
 <li>Custom Python/SQL Operation (data migration 등)</li>
-<li>makemigrations 명령에 의해 모데로부터 자동 생성</li>
+<li>makemigrations 명령에 의해 모델로부터 자동 생성</li>
 <li>모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능</li>
 </ul>
 <h6 id="주의할-점">주의할 점</h6>
@@ -175,6 +172,9 @@
 <li>모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음</li>
 <li><strong>적용된 마이그레이션 파일은 절대로 삭제해서는 안됨</strong></li>
 </ul>
+<blockquote>
+<p>의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요</p>
+</blockquote>
 <hr>
 <h3 id="makemigrations의-타이밍">makemigrations의 타이밍</h3>
 <ul>
@@ -228,7 +228,7 @@ Migration 파일의 dependencies에 따라서 정의되는 형태</p>
 <pre><code>from django.db iport migrations, models
 class Migration(migration.Migration):
   dependencies = [
- ('shop, '0001_initial'),
+ ('account, '0001_initial'),
 ]
 operations = [
 ...
