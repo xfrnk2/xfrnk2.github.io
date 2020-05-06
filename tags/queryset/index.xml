@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Queryset on Rad Blog</title>
+    <link>https://xfrnk2.github.io/tags/queryset/</link>
+    <description>Recent content in Queryset on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 06 May 2020 12:55:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/queryset/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Django - Queryset의 정렬 및 범위조건</title>
+      <link>https://xfrnk2.github.io/django/django_queryset_sort/</link>
+      <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_queryset_sort/</guid>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  정렬 조건 추가  일관된 순서를 보장받기 위해 정렬 조건을 추가 DB에서 다수 필드에 대한 정렬을 지원하나 가급적 단일 필드로 하는것이 성능에 이익 시간순/역순 정렬이 필요할때는 id필드를 활용   정렬 조건 지정 방법 1. (추천) 모델 클래스의 Meta 속성으로 ordering 설정 : list로 지정 2. 모든 queryset에 order_by(&amp;hellip;)에 지정  (주의) queryset코드에서 직접 order_by를 지정하면, Meta&amp;gt;ordering 설정값이 무시된다</description>
+    </item>
+    
+    <item>
+      <title>Django Model을 통한 조회 (기초)</title>
+      <link>https://xfrnk2.github.io/django/django_model_basic/</link>
+      <pubDate>Thu, 30 Apr 2020 11:59:38 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_model_basic/</guid>
+      <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Model Manager SELECT * FROM app_model;
+ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
+ModelCls.objects.all().order_by(&#39;-id&#39;)[:10] INSERT INTO app_model (title) VALUES (&amp;ldquo;New Title&amp;rdquo;);
+ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&amp;hellip;).exclude(&amp;hellip;).filter(&amp;hellip;) -&amp;gt; QuerySet
+ Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
+실제로 데이터가 필요한 시점에 접근
+ 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &amp;ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&amp;rdquo;</description>
+    </item>
+    
+  </channel>
+</rss>

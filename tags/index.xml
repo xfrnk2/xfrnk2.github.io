@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 05 May 2020 23:35:24 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2020 12:55:27 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django</title>
+      <link>https://xfrnk2.github.io/tags/django/</link>
+      <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Model</title>
+      <link>https://xfrnk2.github.io/tags/model/</link>
+      <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Queryset</title>
+      <link>https://xfrnk2.github.io/tags/queryset/</link>
+      <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/queryset/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -16,15 +43,6 @@
       <pubDate>Tue, 05 May 2020 23:35:24 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/til/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Django</title>
-      <link>https://xfrnk2.github.io/tags/django/</link>
-      <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/django/</guid>
       <description></description>
     </item>
     
@@ -43,15 +61,6 @@
       <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/migration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Model</title>
-      <link>https://xfrnk2.github.io/tags/model/</link>
-      <pubDate>Mon, 04 May 2020 12:24:08 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/model/</guid>
       <description></description>
     </item>
     

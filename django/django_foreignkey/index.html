@@ -202,7 +202,7 @@ comment = Comment.objects.first()
 <hr>
 <h3 id="코멘트-리스트-가져오기">코멘트 리스트 가져오기</h3>
 <h6 id="모두-같은-결과를-도출">모두 같은 결과를 도출</h6>
-<pre><code>Comment.objects.filter(post__id=4) #직접적인 필드
+<pre><code>Comment.objects.filter(post_id=4) #직접적인 필드
 Comment.objects.filter(post__id=4) #post 측에 있는, 관계에 있는 id
 </code></pre><pre><code>Comment.objects.filter(post=post) #추천
 post.comment_set.all() #추천, 사용하기 좋은 코드
@@ -324,6 +324,10 @@ limit_choices_to={'is_staff': True}, #조건을 걸 수 있음!
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/django/django_queryset_sort/">Django - Queryset의 정렬 및 범위조건</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.05.05/">20.05.05_TIL</a>
                 </li>
                 
@@ -345,10 +349,6 @@ limit_choices_to={'is_staff': True}, #조건을 걸 수 있음!
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.05.03/">20.05.03_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/django/django_model_field/">Django - Model Field</a>
                 </li>
                 
             </ul>
@@ -405,17 +405,17 @@ limit_choices_to={'is_staff': True}, #조건을 걸 수 있음!
                 </li>
                 
                 <li>
+                    <a href="/tags/queryset">Queryset
+                        </a>
+                </li>
+                
+                <li>
                     <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
                         </a>
                 </li>
                 
                 <li>
                     <a href="/tags/admin">Admin
-                        </a>
-                </li>
-                
-                <li>
-                    <a href="/tags/debug-toolbar">Debug toolbar
                         </a>
                 </li>
                 
