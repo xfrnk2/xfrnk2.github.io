@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 06 May 2020 23:07:12 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 23:53:23 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.07/</link>
+      <pubDate>Thu, 07 May 2020 23:53:23 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.07/</guid>
+      <description>계획했던 일  학교 과제 하기 Django Queryset으로 간단한 검색, 정렬 기능 한번 더 구현하기(복습, 익숙해지기) Django 강의 듣기   오늘 한 일  Django 지금까지 배운 내용을 모두 복습하고 클론 코딩하였다. Django Queryset으로 간단한 검색, 정렬 기능 한번 더 구현하였다. Django 함수 기반 View에 대한 강의를 들었다. 도서 &amp;lsquo;지적 대화를 위한 넓고 얕은 지식&amp;rsquo; 을 (+25%)50% 읽었다. 학교 과제 하나를 선택해서 시작했고, 현재 진행 중이다.(데이터베이스 시스템) 앞으로 주어진 요구사항에 대한 ER 다이어그램 작성, 관계형 모델로 변환, 관계대수식 작성, 관계대수식을 SQL로 변환해야하는데 아직 이것들에 대해 공부하지 못했다.</description>
+    </item>
     
     <item>
       <title>20.05.06_TIL</title>
