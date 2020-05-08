@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 May 2020 23:24:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 00:48:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BOJ</title>
+      <link>https://xfrnk2.github.io/categories/boj/</link>
+      <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/boj/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -25,15 +34,6 @@
       <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BOJ</title>
-      <link>https://xfrnk2.github.io/categories/boj/</link>
-      <pubDate>Tue, 21 Apr 2020 00:55:42 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/boj/</guid>
       <description></description>
     </item>
     

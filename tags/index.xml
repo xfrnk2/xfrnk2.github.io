@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 May 2020 23:24:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 00:48:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BOJ</title>
+      <link>https://xfrnk2.github.io/tags/boj/</link>
+      <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/boj/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>문자열 처리</title>
+      <link>https://xfrnk2.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC/</link>
+      <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -88,15 +106,6 @@
       <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/shell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BOJ</title>
-      <link>https://xfrnk2.github.io/tags/boj/</link>
-      <pubDate>Tue, 21 Apr 2020 00:55:42 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/boj/</guid>
       <description></description>
     </item>
     
