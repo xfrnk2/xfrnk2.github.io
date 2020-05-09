@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 08 May 2020 23:24:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 23:44:52 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.09</title>
+      <link>https://xfrnk2.github.io/til/20.05.09/</link>
+      <pubDate>Sat, 09 May 2020 23:44:52 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.09/</guid>
+      <description> 데이터베이스 시스템 공부하기 데이터베이스 시스템 과목 과제 하기 독서하기 지나간 공부했던 내용들 복습하기(알고리즘 등)   오늘 한 일  소화기가 좋지 못해 산에 혼자 다녀왔다. 데이터베이스 시스템 - 관계형 모델의 강의를 3분의 2 시청하고 중요한 내용을 노트에 정리했다. 이전에 푼 백준(4949) 알고리즘 문제를 블로그에 올리며 정리했다.   내일 할 일  데이터베이스 시스템 과목 공부와 과제 하기 건강 신경쓰기  </description>
+    </item>
     
     <item>
       <title>20.05.08_TIL</title>
