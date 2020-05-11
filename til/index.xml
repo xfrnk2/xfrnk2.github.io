@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 10 May 2020 23:33:45 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 23:52:33 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.11_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.11/</link>
+      <pubDate>Mon, 11 May 2020 23:52:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.11/</guid>
+      <description>계획했던 일  데이터베이스 시스템 공부하기, 특히 SQL 공부하기 최대한 할 수 있는 만큼으로 데이터베이스 시스템 과제 하기 Django 강의 듣기 알고리즘 문제 풀기 독서하기  오늘 한 일  ER모델과 관계형 모델에 대해 복습했다. SQL 강의를 듣고 공부했다. 데이터베이스 시스템 과제를 했다. SQL을 사용하는 문제 하나만을 남겨두고 있다. 백준 알고리즘 분할정복 문제를 풀었다. 하지만 global을 사용했으니 다시 풀어보려고 한다. Django URL Dispatcher와 정규 표현식에 대한 강의를 들었다.   내일 할 일  지난 강의를 들으면서 공부한 내용을 복습하고 구조화하기 백준 알고리즘 분할정복 문제 다시 풀기 데이터베이스 시스템 과제 하기 Django 강의 듣기  </description>
+    </item>
     
     <item>
       <title>20.05.10_TIL</title>
@@ -16,7 +25,7 @@
       <pubDate>Sun, 10 May 2020 23:33:45 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.05.10/</guid>
-      <description>데이터베이스 시스템 과목 공부와 과제 하기 건강 신경쓰기   오늘 한 일  데이터베이스 시스템 ER 다이어그램, 관계형 모델, 데이터 연산에 대한 강의를 수강했다. 강의를 듣고 내용을 정리했다. 과제의 일부분을 끝냈다. 생각했던 것보다 시간이 많이 소요되었다. 요구사항에 맞춘 ER다이어그램과 관계형 모델을 처음으로 만들어 보았다. 도서 &amp;lsquo;지적 대화를 위한 넓고 얕은 지식&amp;rsquo; 을 (+10%)60% 읽었다. 한 연구결과 설명 동영상 을 기회 삼아 도서 &amp;lsquo;마시멜로 테스트&amp;rsquo;를 다시 보았다. 동영상에서 언급하길, 꿈을 이루려면 미래의 모습을 타인으로 느끼지말고 자신으로 느끼는 것부터 시작하라는 구절이 있었는데, 나에게 깊은 울림과 영감을 주었다.</description>
+      <description>계획했던 일  데이터베이스 시스템 과목 공부와 과제 하기 건강 신경쓰기   오늘 한 일  데이터베이스 시스템 ER 다이어그램, 관계형 모델, 데이터 연산에 대한 강의를 수강했다. 강의를 듣고 내용을 정리했다. 과제의 일부분을 끝냈다. 생각했던 것보다 시간이 많이 소요되었다. 요구사항에 맞춘 ER다이어그램과 관계형 모델을 처음으로 만들어 보았다. 도서 &amp;lsquo;지적 대화를 위한 넓고 얕은 지식&amp;rsquo; 을 (+10%)60% 읽었다. 한 연구결과 설명 동영상 을 기회 삼아 도서 &amp;lsquo;마시멜로 테스트&amp;rsquo;를 다시 보았다. 동영상에서 언급하길, 꿈을 이루려면 미래의 모습을 타인으로 느끼지말고 자신으로 느끼는 것부터 시작하라는 구절이 있었는데, 나에게 깊은 울림과 영감을 주었다.</description>
     </item>
     
     <item>
