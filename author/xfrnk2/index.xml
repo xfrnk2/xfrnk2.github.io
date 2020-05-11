@@ -5,7 +5,7 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 23:52:33 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2020 23:30:24 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>20.05.11_TIL</title>
       <link>https://xfrnk2.github.io/til/20.05.11/</link>
-      <pubDate>Mon, 11 May 2020 23:52:33 +0900</pubDate>
+      <pubDate>Mon, 11 May 2020 23:30:24 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.05.11/</guid>
       <description>계획했던 일  데이터베이스 시스템 공부하기, 특히 SQL 공부하기 최대한 할 수 있는 만큼으로 데이터베이스 시스템 과제 하기 Django 강의 듣기 알고리즘 문제 풀기 독서하기  오늘 한 일  ER모델과 관계형 모델에 대해 복습했다. SQL 강의를 듣고 공부했다. 데이터베이스 시스템 과제를 했다. SQL을 사용하는 문제 하나만을 남겨두고 있다. 백준 알고리즘 분할정복 문제를 풀었다. 하지만 global을 사용했으니 다시 풀어보려고 한다. Django URL Dispatcher와 정규 표현식에 대한 강의를 들었다.   내일 할 일  지난 강의를 들으면서 공부한 내용을 복습하고 구조화하기 백준 알고리즘 분할정복 문제 다시 풀기 데이터베이스 시스템 과제 하기 Django 강의 듣기  </description>
