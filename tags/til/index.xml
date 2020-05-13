@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 May 2020 23:30:24 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2020 23:51:18 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.12_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.12/</link>
+      <pubDate>Tue, 12 May 2020 23:51:18 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.12/</guid>
+      <description>계획했던 일  지난 강의를 들으면서 공부한 내용을 복습하고 구조화하기 백준 알고리즘 분할정복 문제 다시 풀기 데이터베이스 시스템 과제 하기 Django 강의 듣기  오늘 한 일  SQL 강의를 들었다. 백준 알고리즘 분할정복 문제를 다른 문법들을 사용해서 풀었다. global을 사용하지 않는 문제의 해결은 아직이다. Django 강의 듣기를 마음같아서는 계속 하고 싶은데 기한이 정해져있는 과제가 우선일 것 같다.   내일 할 일  SQL 강의 듣고 과제 이어하기 지난 강의를 들으면서 공부한 내용을 구조화하기  </description>
+    </item>
     
     <item>
       <title>20.05.11_TIL</title>
