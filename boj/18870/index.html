@@ -8,22 +8,23 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 404 Page not found | Rad Blog</title>
-    <meta name="description" content="404 Page not found - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="404 Page not found">
-    <meta itemprop="description" content="404 Page not found - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="404 Page not found">
-    <meta property="og:description" content="404 Page not found - Bilberry Premium Theme for Hugo.">
+    <title> BOJ-18870-좌표압축 | Rad Blog</title>
+    <meta name="description" content="BOJ-18870-좌표압축 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="BOJ-18870-좌표압축">
+    <meta itemprop="description" content="BOJ-18870-좌표압축 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="BOJ-18870-좌표압축">
+    <meta property="og:description" content="BOJ-18870-좌표압축 - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/404.html">
-    <meta property="og:site_name" content="Rad Blog"><meta property="og:type" content="website">
+    <meta property="og:url" content="https://xfrnk2.github.io/boj/18870/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
 
     
 
 
     
-    <link href="/404.html" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/404.html" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/boj/18870/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/boj/18870/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -96,24 +97,127 @@
 
     <div class="main container">
         
-
-<div class="content">
+     
     <div class="article-wrapper u-cf single">
-        <a class="bubble" href="/">
-            <i class="fa fa-fw fa-exclamation-triangle"></i>
-        </a>
+        
+            <a class="bubble" href="https://xfrnk2.github.io/boj/18870/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
 
-        <article class="error404 article">
-            <div class="content">
-                <h3>WOAH BUDDY!</h3>
-                <p></p>
-                <p>This is definitly not the page you're looking for...</p>
-                <p><strong>An Error 404 occured.</strong> That means the page is not available. </p>
-                <p>Please select a category at the bottom or change over to the <a href="/"> HOMEPAGE</a>.</p>
-            </div>
-        </article>
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/18870/">BOJ-18870-좌표압축</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-14</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
     </div>
+
+    
+    <h6 id="boj-18870-좌표압축-문제-바로가기httpswwwacmicpcnetproblem18870">BOJ-18870-좌표압축 <a href="https://www.acmicpc.net/problem/18870">문제 바로가기</a></h6>
+<hr>
+<h6 id="나의-풀이">나의 풀이</h6>
+<pre><code>input()
+arr = list(map(int, input().split()))
+values_by_key = {}
+for i,j in enumerate(sorted(set(arr))):
+    values_by_key[j] = i
+for x in arr:
+    print(values_by_key[x], end=' ')
+</code></pre><h6 id="생각">생각</h6>
+<ul>
+<li>중복값을 제거하고 컨테이너로 어떻게 전달할까?</li>
+</ul>
+<h6 id="순서">순서</h6>
+<ul>
+<li>중복값 제거한 오름차순 정렬이 된 리스트를 순회</li>
+<li>값을 키로, 인덱스를 해당 값의 값으로 저장</li>
+<li>초기 리스트 순회하여 저장한 컨테이너로부터 찾아내서 출력</li>
+</ul>
+<h6 id="방법">방법</h6>
+<ul>
+<li>set()으로 중복값 제거, list로 형변환</li>
+<li>딕셔너리 사용</li>
+</ul>
+
+    
 </div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
 
     </div>
 

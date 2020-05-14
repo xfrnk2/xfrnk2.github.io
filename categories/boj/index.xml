@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/boj/</link>
     <description>Recent content in BOJ on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 09 May 2020 00:48:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 18:20:50 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/boj/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BOJ-18870-좌표압축</title>
+      <link>https://xfrnk2.github.io/boj/18870/</link>
+      <pubDate>Thu, 14 May 2020 18:20:50 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/18870/</guid>
+      <description>BOJ-18870-좌표압축 문제 바로가기  나의 풀이 input() arr = list(map(int, input().split())) values_by_key = {} for i,j in enumerate(sorted(set(arr))): values_by_key[j] = i for x in arr: print(values_by_key[x], end=&#39; &#39;) 생각  중복값을 제거하고 컨테이너로 어떻게 전달할까?  순서  중복값 제거한 오름차순 정렬이 된 리스트를 순회 값을 키로, 인덱스를 해당 값의 값으로 저장 초기 리스트 순회하여 저장한 컨테이너로부터 찾아내서 출력  방법  set()으로 중복값 제거, list로 형변환 딕셔너리 사용  </description>
+    </item>
     
     <item>
       <title>BOJ-4949-균형잡힌 세상[문자열 처리]</title>
