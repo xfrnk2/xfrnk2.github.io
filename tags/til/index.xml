@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 12 May 2020 23:51:18 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 23:48:41 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.13_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.13/</link>
+      <pubDate>Wed, 13 May 2020 23:48:41 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.13/</guid>
+      <description>계획했던 일  SQL 강의 듣고 과제 이어하기 지난 강의를 들으면서 공부한 내용을 구조화하기  오늘 한 일  SQL 강의를 듣고 공부했다. 지난 내용 정리한 것을 보고 복습했다. 갑작스러웠지만 같이 밖에 외출하자는 권유에 가족과의 시간을 보냈다. 그래서 변변찮게 강의 듣는것으로 하루를 마무리했다.   내일 할 일  SQL 공부하기 데이터베이스 시스템 과제 마무리하기 또다른 과제 시작하기 Django 강의 듣기 독서하기 블로그 글 올리기  </description>
+    </item>
     
     <item>
       <title>20.05.12_TIL</title>
