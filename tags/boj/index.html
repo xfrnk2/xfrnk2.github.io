@@ -100,6 +100,83 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/boj/1991/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/1991/">BOJ-1991-트리순회[트리순회]</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-14</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    BOJ-1991-트리순회 문제 바로가기  나의 풀이 def pre_order(node): print(node.item, end='') if node.left_child != '.': pre_order(tree[node.left_child]) if node.right_child != '.': pre_order(tree[node.right_child]) def in_order(node): if node.left_child != '.': in_order(tree[node.left_child]) print(node.item, end='') if node.right_child != '.': in_order(tree[node.right_child]) def post_order(node): if node.left_child != '.': post_order(tree[node.left_child]) if node.right_child != '.': post_order(tree[node.right_child]) print(node.item, end='') class Node: def __init__(self, item, left_child, right_child): self.item = item self.left_child = left_child self.right_child = right_child if __name__ == '__main__': tree = {} for _ in range(int(input())): data = input().
+
+    
+    <a href="https://xfrnk2.github.io/boj/1991/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/boj/10814/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -155,6 +232,8 @@
                 
                 
                 <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
                 
                 
                 
@@ -232,6 +311,8 @@
                 
                 
                 
+                
+                
             </div>
         </div>
     
@@ -303,6 +384,8 @@
                 
                 
                 <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
                 
                 
                 
@@ -492,11 +575,15 @@
             <ul>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/boj/18870/">BOJ-18870-좌표압축[알고리즘]</a>
+                    <a href="https://xfrnk2.github.io/boj/1991/">BOJ-1991-트리순회[트리순회]</a>
                 </li>
                 
                 <li>
                     <a href="https://xfrnk2.github.io/boj/10814/">BOJ-10814-나이순 정렬[정렬]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/18870/">BOJ-18870-좌표압축[알고리즘]</a>
                 </li>
                 
                 <li>
@@ -513,10 +600,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.05.10/">20.05.10_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.05.09/">20.05.09_TIL</a>
                 </li>
                 
             </ul>
@@ -563,17 +646,12 @@
                 </li>
                 
                 <li>
-                    <a href="/tags/model">Model
-                        </a>
-                </li>
-                
-                <li>
                     <a href="/tags/boj">Boj
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/queryset">Queryset
+                    <a href="/tags/model">Model
                         </a>
                 </li>
                 
@@ -584,6 +662,11 @@
                 
                 <li>
                     <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/queryset">Queryset
                         </a>
                 </li>
                 
