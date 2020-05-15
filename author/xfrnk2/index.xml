@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 14 May 2020 20:57:49 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2020 23:03:52 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>데이터베이스의 이해</title>
+      <link>https://xfrnk2.github.io/database/database1/</link>
+      <pubDate>Fri, 15 May 2020 23:03:52 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/database/database1/</guid>
+      <description>테스트</description>
+    </item>
     
     <item>
       <title>20.05.14_TIL</title>
