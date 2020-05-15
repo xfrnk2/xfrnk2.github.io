@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 13 May 2020 23:48:41 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 14 May 2020 20:57:49 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.14/</link>
+      <pubDate>Thu, 14 May 2020 20:57:49 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.14/</guid>
+      <description>계획했던 일  SQL 공부하기 데이터베이스 시스템 과제 마무리하기 또다른 과제 시작하기 Django 강의 듣기 독서하기 블로그 글 올리기  오늘 한 일  SQL 기본 이론에 대한 학습을 마쳤다. 이후 블로그에도 SQL 공부한 내용을 정리해서 올려 보려고 한다. 데이터베이스 시스템 과제를 끝냈다. 도서 &amp;lsquo;지적 대화를 위한 넓고 얕은 지식&amp;rsquo; 를 지금까지 읽은 내용을 다시 읽었다. 이전에 푼 백준 알고리즘 문제를 다시 풀어보았고, 블로그에 포스팅했다.   내일 할 일  또다른 과제 시작하기 Django 강의 듣기 독서하기 SQL 공부한 내용 정리해서 포스팅하기  </description>
+    </item>
     
     <item>
       <title>20.05.13_TIL</title>
