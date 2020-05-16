@@ -5,7 +5,7 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 May 2020 01:07:13 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 23:41:19 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Sat, 16 May 2020 01:07:13 +0900</pubDate>
+      <pubDate>Sat, 16 May 2020 23:41:19 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/til/</guid>
       <description></description>
@@ -22,9 +22,18 @@
     <item>
       <title>database</title>
       <link>https://xfrnk2.github.io/tags/database/</link>
-      <pubDate>Fri, 15 May 2020 23:52:57 +0900</pubDate>
+      <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>relationmodel</title>
+      <link>https://xfrnk2.github.io/tags/relationmodel/</link>
+      <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/relationmodel/</guid>
       <description></description>
     </item>
     

@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 데이터베이스 기초 - 데이터베이스 모델링과 ER모델 | Rad Blog</title>
-    <meta name="description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델">
-    <meta itemprop="description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델">
-    <meta property="og:description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
+    <title> 데이터베이스 기초 - 관계형 모델 | Rad Blog</title>
+    <meta name="description" content="데이터베이스 기초 - 관계형 모델 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="데이터베이스 기초 - 관계형 모델">
+    <meta itemprop="description" content="데이터베이스 기초 - 관계형 모델 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="데이터베이스 기초 - 관계형 모델">
+    <meta property="og:description" content="데이터베이스 기초 - 관계형 모델 - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/database/database2-modeling-ermodel/">
+    <meta property="og:url" content="https://xfrnk2.github.io/database/database3-modeling-relationmodel/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/database/database2-modeling-ermodel/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/database/database2-modeling-ermodel/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/database/database3-modeling-relationmodel/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/database/database3-modeling-relationmodel/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,7 +100,7 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/database/database2-modeling-ermodel/">
+            <a class="bubble" href="https://xfrnk2.github.io/database/database3-modeling-relationmodel/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -108,11 +108,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/database/database2-modeling-ermodel/">데이터베이스 기초 - 데이터베이스 모델링과 ER모델</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/database/database3-modeling-relationmodel/">데이터베이스 기초 - 관계형 모델</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-15</span>
+        <span class="date moment">2020-05-16</span>
         
         
 
@@ -142,84 +142,221 @@
 <p>데이터베이스에 대해 공부한 내용을 이해하고 정리한 글입니다. 첫 공부이므로 기초적인 내용을 다루며 추후 자세한 정보로 업데이트를 예정하고 있습니다.</p>
 </blockquote>
 <hr>
-<h3 id="모델링의-단계">모델링의 단계</h3>
-<ol>
-<li>사용자 요구사항 분석 (-&gt; 데이터 및 업무)</li>
-<li>개념적 데이터 모델링 (-&gt; ER 모델)</li>
-<li>논리적 데이터 모델링 (-&gt; 관계형 모델)</li>
-<li>물리적 데이터 모델링 (-&gt; 물리적 세부사항)</li>
-<li>내부 스키마</li>
-</ol>
-<hr>
-<h3 id="사용자-요구-사항-분석">사용자 요구 사항 분석</h3>
+<h3 id="릴레이션">릴레이션</h3>
+<blockquote>
+<p>데이터베이스에서는 표를 릴레이션이라 부른다.</p>
+</blockquote>
+<h6 id="릴레이션의-구성">릴레이션의 구성</h6>
 <ul>
-<li>도출, 분석, 기록 단계로 수행</li>
-<li>국제 표준화 : IEEE-Std-830</li>
+<li>스키마 : 열에 대한 의미를 담고 있는 공간, 표머리</li>
+<li>레코드/투플 : 행(값)</li>
+<li>컬럼/속성/필드 : 열</li>
+<li>컬럼값 : 특정 행과 열에 해당하는 값, 데이터란 값에 메타데이터가 2개 붙어 있는 것이므로, 릴레이션은 DB 데이터를 표현하기에 이상적인 구조</li>
+<li>인스턴스 : 특정 시점에서의 레코드가 들어가있는 상태, 모드 레코드들</li>
 </ul>
-<h6 id="분석-과정">분석 과정</h6>
-<ol>
-<li>제안요청서 (-&gt; 도출)</li>
-<li>요구사항 명세서 (-&gt; 분석)</li>
-<li>요구사항 정의서 (-&gt; 기록)</li>
-</ol>
-<hr>
-<h3 id="er-모델">ER 모델</h3>
-<ol>
-<li>개체집합 : 속성을 공유하는 개체들의 모임</li>
-<li>관계집합 : 개체와 개체간의 연관성</li>
-<li>속성 : 개체의 특성</li>
-</ol>
-<blockquote>
-<p><strong>속성의 종류</strong><br>
-저장 속성 : 다른값으로부터 유추될수가 없는 속성<br>
-유도속성 : 다른값으로부터 유추될수가 있는 속성</p>
-<p>단순 속성 : 더 작은 구성요소로 나눌수 없는 속성<br>
-복합 속성 : 더 작은 구성요소로 나눌수 있는 속성</p>
-<p>단일값 속성 : 한 개체에 대해 단 하나의 값만 갖는 속성<br>
-다중값 속성 : 한 개체에 대해 여러 개의 값을 갖는 속성</p>
-</blockquote>
-<hr>
-<h3 id="제약-조건">제약 조건</h3>
-<h6 id="효과">효과</h6>
+<h6 id="릴레이션의-특징">릴레이션의 특징</h6>
 <ul>
-<li>정확성 향상</li>
+<li>레코드의 유일성 : 중복된 레코드의 존재가 불가능</li>
+<li>레코드의 무순서성 : 레코드의 순서는 의미가 없음</li>
+<li>컬럼의 무순서성 : 컬럼은 순서가 없고, 이름과 값의 쌍</li>
+<li>컬럼의 원자성 : 모든 값들은 나눌 수 없는, 단 하나의 의미</li>
 </ul>
-<h6 id="종류">종류</h6>
+<h6 id="키의-종류-및-속성">키의 종류 및 속성</h6>
+<ul>
+<li>키의 속성 : 유일성(Uniqueness), 최소성(모든 군더더기를 제거, Irreducibility)</li>
+<li>키의 종류
+<ul>
+<li>슈퍼키(super key) : 유일성 만족</li>
+<li>후보키(candidate key) : 유일성, 최소성 만족</li>
+<li>기본키(PK:primary key) : 레코드의 구분을 위해 선택된 후보키</li>
+<li>외래키(FK:foreign key) : 참조된 다른 릴레이션의 기본키</li>
+</ul>
+</li>
+</ul>
+<h6 id="관계형-모델의-제약조건">관계형 모델의 제약조건</h6>
+<ul>
+<li>영역 제약조건 : 컬럼에 정의된 영역(domain)에 속한 값으로만 컬럼값이 결정</li>
+<li>키 제약조건 : 키는 레코드를 고유하게 구별하는 값으로 구성</li>
+<li>개체 무결성 제약조건 : 어떠한 기본 값도 널(null:모른다는 의미)이 될 수 없음</li>
+<li>참조 무결성 제약조건 : 반드시 존재하는 레코드의 기본키만 참조 가능</li>
+</ul>
+<blockquote>
+<p>널(NULL)의 개념<br>
+모른다, &lsquo;없음&rsquo; 또는 0이 아닌 미지의 값에 대한 표현, 입력된 적이 없는 값을 의미</p>
+</blockquote>
+<h6 id="er다이어그램의-변환">ER다이어그램의 변환</h6>
+<ul>
+<li>
+<p>일대일(1:1) 관계에서는 양쪽 모두 외래키로서 참조가 가능. 선택적인 부분이지만, 레코드의 갯수가 적은 쪽으로 가게 하는 것을 권장</p>
+</li>
+<li>
+<p>약한 개체집합에 대해서는 참조 되는 기본키가 그 테이블의 기본키가 된다.</p>
+</li>
+<li>
+<p>일대일(1:1)과 일대다(1:N) 및 다대일(N:1)관계에서는 새로운 릴레이션이 만들어지지 않음</p>
+</li>
+<li>
+<p>다대다(N:N)관계집합에 대해서만 해당 관계 집합을 릴레이션화</p>
+</li>
+<li>
+<p>다대다 관계에서는 관계 집합이 하나의 릴레이션으로 만들어짐</p>
+</li>
+<li>
+<p>만들어지는 릴레이션은 각각의 개체 집합으로 만들어지는 양쪽 릴레이션의 기본키가 참조되어서 기본키이자 외래키로 사용됨</p>
+</li>
+<li>
+<p>&lsquo;관계집합의 속성'은 외래키가 위치한 곳을 따라감</p>
+</li>
+</ul>
+<h6 id="관계형-모델로-변환-방법">관계형 모델로 변환 방법</h6>
 <ol>
-<li>사상수</li>
-<li>참가 제약조건</li>
-<li>키 속성</li>
+<li>개체 집합 : 개체 집합은 릴레이션으로 변환</li>
+<li>약한 개체 집합 : 강한 개체 집합의 키 속성을 약한 개체 집합의 릴레이션에 포함</li>
+<li>일대일 관계 : 두 릴레이션 중에서 한 릴레이션의 기본키를 다른 릴레이션에서 외래키로 참조</li>
+<li>일대다 혹은 다대일 관계 : ‘일’쪽의 기본키를 ‘다’쪽 릴레이 션에서 외래키로 참조</li>
+<li>다대다 관계 : 관계 릴레이션을 생성하고, 두 릴레이션의 기본키를 각각 참조하는 외래키를 복합키 형태의 컬럼으 로 구성</li>
+<li>다중값 속성 : 릴레이션의 기본키를 참조하는 외래키와 다중 값 속성으로 별도의 릴레이션으로 구성</li>
+<li>관계 집합의 속성 : 외래키가 위치한 릴레이션의 컬럼으로 삽입</li>
 </ol>
+<h6 id="관계-연산">관계 연산</h6>
+<ul>
+<li>의미 : 관계형 모델을 기반으로 구성된 릴레이션을 사용하여 새로운 릴레이션을 생성하는 표현</li>
+<li>관계 대수(relational algebra) :  관계 연산을 정의하는 방법</li>
+<li>관계 대수 연산자는 새로운 임시 릴레이션을 생성, 주어진 릴레이션에서 필요한 릴레이션을 만드는 연산자(∪, ∩, -, σ, π,  x, ⋈, ÷, 집계함수 등)로 구성</li>
+</ul>
+<hr>
+<h6 id="셀렉트-연산">셀렉트 연산</h6>
 <blockquote>
-<h6 id="1-사상수">1. 사상수</h6>
-<p>일대일(1:1) : 마름모(관계) + 양 쪽 모두 화살표<br>
-일대다(1:N) : 마름모(관계) + 일 쪽만 화살표<br>
-다대일(N:1) : 마름모(관계) + 일 쪽만 화살표<br>
-다대다(N:N) : 마름모(관계) + 화살표 X</p>
+<p>σ 조건(R)</p>
 </blockquote>
+<ul>
+<li>주어진 릴레이션에서 조건을 만족하는 레코드를 갖는 릴레이션을 생성</li>
+<li>
+<table>
+<thead>
+<tr>
+<th>조건 : aΘb 또는 aΘv</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a, b</td>
+<td>속성 이름</td>
+<td>v</td>
+<td>상수값</td>
+</tr>
+<tr>
+<td>Θ</td>
+<td>비교자 {＝, ≠, ＜, ＞, ≤, ≥}</td>
+<td>R</td>
+<td>릴레이션</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><strong>조건의 결합: ∧(and), ∨(or)</strong></li>
+<li>예시 : σ 소속학과='컴퓨터과학과&rsquo;(교수)</li>
+</ul>
+<hr>
+<h6 id="프로젝트-연산">프로젝트 연산</h6>
 <blockquote>
-<h6 id="2-참가-제약조건">2. 참가 제약조건</h6>
-<ol>
-<li>전체적 참가<br>
--&gt; 어떤 개체 집합의 모든 개체가 관계 집합에 참여하는 조건 / <strong>두 줄</strong></li>
-<li>부분적 참가<br>
--&gt; 어떤 개체 집합의 일부 개체가 관계 집합에 참여하는 조건<br>
-예시) 교수와 강의하지 않는 교수, 그리고 과목</li>
-</ol>
+<p>π&lt;컬럼리스트&gt;(R)</p>
 </blockquote>
+<ul>
+<li>&lt;컬럼리스트&gt;: A1, A2, …, An와 같이 R에 존재하는 컬럼을 ,(콤마)로 분리하여 기술</li>
+<li>예시 : π학생이름,수강과목(학생)</li>
+</ul>
+<hr>
+<h6 id="카티시언-프로덕트-연산">카티시언 프로덕트 연산</h6>
 <blockquote>
-<h6 id="3-키-속성">3. 키 속성</h6>
-<p><strong>키</strong><br>
-각 개체를 구별하는데 사용되는 유일한 값을 가지는 속성의 집합<br>
-개체 및 관계 집합의 특정 관계를 찾는 역할</p>
-<p><strong>특수 속성과 관계</strong><br>
-관계 집합의 속성 : 두 개체 집합의 관계에서 생성되는 값을 저장하는 속성<br>
-재귀적 관계 : 한 개체 집합이 자기 자신과 관계 집합을 형성하는 관계<br>
-예시) &lsquo;과목&rsquo; 개체집합의 선수과목코드-&lt;선수과목&gt;-&gt; 과목코드</p>
-<p><strong>특수 관계</strong><br>
-약한 개체 집합 : 개체의 존재 유무가 관계를 맺고 있는 개체의 존재에 종속되는 개체 집합<br>
-강한 개체 집합 : 약한 개체 집합과 연결되는 일반 개체 집합</p>
+<p>R × S</p>
 </blockquote>
+<ul>
+<li>두 릴레이션에 포함된 레코드 간의 모든 조합을 생성하는 이항 연산자</li>
+<li>R과 S의 행 a와 b, 열 m과 n일 때, R X S = a x b, m + n 이 됨</li>
+</ul>
+<hr>
+<h6 id="조인-연산">조인 연산</h6>
+<blockquote>
+<p>R ⋈ AθB S<br>
+-&gt; σ AθB(R × S)</p>
+</blockquote>
+<ul>
+<li>두 릴레이션에서 조건을 만족하는 레코드를 결합한 레코드로 구성된 릴레이션을 생성</li>
+<li>예시1 : σ 과목.교수번호=교수.교수번호(과목 × 교수)</li>
+<li>예시2 : 과목 ⋈ 과목.교수번호=교수.교수번호 교수</li>
+</ul>
+<hr>
+<h6 id="집계-함수-연산">집계 함수 연산</h6>
+<blockquote>
+<p>Gx(A)(R)</p>
+</blockquote>
+<ul>
+<li>집계 함수를 값들의 집합 또는 레코드의 집합에 적용 하는 연산</li>
+<li>x( ) : AVG, SUM, MIN, MAX, COUNT등의 집계 함수</li>
+<li>A : 집계 연산을 적용할 컬럼</li>
+<li>
+<table>
+<thead>
+<tr>
+<th align="center">예시 : Gcount(과목명)(과목)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">count(과목명)</td>
+</tr>
+<tr>
+<td align="center">15</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<blockquote>
+<p>B Gx(A)(R)</p>
+</blockquote>
+<ul>
+<li>B : 그룹의 기준이 되는 컬럼</li>
+<li>x( ) : 집계 함수</li>
+<li>A : 집계 연산을 적용할 컬럼</li>
+<li>R : 릴레이션</li>
+<li>
+<table>
+<thead>
+<tr>
+<th align="center">예시 : 소속학과G소속학과,count(*)(교수)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">소속학과</td>
+<td align="center">count(*)</td>
+</tr>
+<tr>
+<td align="center">국어국문학과</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">법학과</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">생활과학과</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">유아교육과</td>
+<td align="center">2</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
 
     
 </div>
@@ -238,7 +375,7 @@
                 
                 
                 
-                <a href="https://xfrnk2.github.io/tags/ermodel/">ermodel</a>
+                <a href="https://xfrnk2.github.io/tags/relationmodel/">relationmodel</a>
                 
                 
             </div>
