@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 May 2020 23:41:19 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2020 23:29:03 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.17_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.17/</link>
+      <pubDate>Sun, 17 May 2020 23:29:03 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.17/</guid>
+      <description>계획했던 일  Django 클래스 기반뷰의 보다 명확한 이해를 위해서 클래스 상속, 인자, 패킹, 언패킹에 대해 학습하기 또다른 과제 시작하기 독서하기 그동안 세웠던 계획을 돌아보기  오늘 한 일  컴퓨터그래픽스 소프트웨어와 기본 요소에 대한 강의를 시청했다. 과제를 시작했다. 그동안 세웠던 계획들 중 실행에 옮기는 것을 보류했던 것들을 돌아보니 python으로 게임 만들기를 최우선적으로 해보고 싶다는 생각이 들었다. 아직 실행에 옮기지 못한것은 리눅스,Javascript 언어 입문하기와 선형대수학에 대한 공부이다. 클래스 상속, 인자, 패킹, 언패킹의 개념적인 부분은 알고 있으니 직접 만들어보면서 지식을 확충하는 편이 좋을 것 같았다.</description>
+    </item>
     
     <item>
       <title>20.05.16_TIL</title>
