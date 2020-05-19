@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 17 May 2020 23:29:03 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2020 23:19:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.18_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.18/</link>
+      <pubDate>Mon, 18 May 2020 23:19:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.18/</guid>
+      <description>계획했던 일  OpenCL 기초 공부하기 컴퓨터 그래픽스 과목 공부 &amp;amp; 과제 하기 Python으로 게임 만들기 코딩 시작하기 독서하기  오늘 한 일  컴퓨터 그래픽스 과목 OpenCL과 DDA, 브레센헴 알고리즘에 대한 강의를 듣고 공부했다.   내일 할 일  브레센헴 알고리즘 코드로 구현하기 Python으로 게임 만들기 코딩 시작하기 독서하기 컴퓨터 그래픽스 과제 문제 해결하기  </description>
+    </item>
     
     <item>
       <title>20.05.17_TIL</title>
