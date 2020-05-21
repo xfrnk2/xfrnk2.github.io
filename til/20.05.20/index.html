@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 데이터베이스 기초 - 데이터베이스의 이해 | Rad Blog</title>
-    <meta name="description" content="데이터베이스 기초 - 데이터베이스의 이해 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="데이터베이스 기초 - 데이터베이스의 이해">
-    <meta itemprop="description" content="데이터베이스 기초 - 데이터베이스의 이해 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="데이터베이스 기초 - 데이터베이스의 이해">
-    <meta property="og:description" content="데이터베이스 기초 - 데이터베이스의 이해 - Bilberry Premium Theme for Hugo.">
+    <title> 20.05.20_TIL | Rad Blog</title>
+    <meta name="description" content="20.05.20_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.05.20_TIL">
+    <meta itemprop="description" content="20.05.20_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.05.20_TIL">
+    <meta property="og:description" content="20.05.20_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/database/database1/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.05.20/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/database/database1/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/database/database1/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.05.20/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.05.20/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/database/database1/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.05.20/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/database/database1/">데이터베이스 기초 - 데이터베이스의 이해</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.05.20/">20.05.20_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-15</span>
+        <span class="date moment">2020-05-20</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/database/">database</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,92 +138,27 @@
     </div>
 
     
-    <blockquote>
-<p>데이터베이스에 대해 공부한 내용을 이해하고 정리한 글입니다. 첫 공부이므로 기초적인 내용을 다루며 추후 자세한 정보로 업데이트를 예정하고 있습니다.</p>
-</blockquote>
-<hr>
-<h3 id="용어-구분">용어 구분</h3>
-<h6 id="데이터베이스-관련">데이터베이스 관련</h6>
+    <h4 id="계획했던-일">계획했던 일</h4>
 <ul>
-<li>데이터베이스 : 데이터의 집합</li>
-<li>데이터베이스 관리 시스템(DBMS) : 구성, 저장, 관리, 사용을 위한 S/W 패키지</li>
-<li>데이터베이스 시스템 : 데이터베이스와 어플리케이션을 연결</li>
+<li><del>Python으로 게임 만들기 - 진행하기, 코딩하기</del></li>
+<li><del>또다른 과제 시작하기</del></li>
+<li>독서하기</li>
 </ul>
-<h6 id="값-데이터-메타데이터">값, 데이터, 메타데이터</h6>
+<h4 id="오늘-한-일">오늘 한 일</h4>
 <ul>
-<li>값 : 다양한 해석이 가능한 상태</li>
-<li>데이터 : 하나의 값에 두개 이상의 설명 패드가 붙은 것</li>
-<li>메타데이터 : 값에 의미를 부여하는 부연설명</li>
-</ul>
-<blockquote>
-<p>예)<br>
-12&rsquo;C -&gt; 값<br>
-오늘, 낮 최고기온 -&gt; 메타데이터<br>
-위의 세 가지를 통틀어서 데이터 (값과 메타데이터의 묶음)</p>
-</blockquote>
-<hr>
-<h3 id="db의-3단계-구조">DB의 3단계 구조</h3>
-<h6 id="내부-스키마">내부 스키마</h6>
-<ul>
-<li>개념 단계의 스키마를 어떻게 저장할것인지 결정</li>
-<li>물리적 단위(어디의 몇번째 파일)</li>
-</ul>
-<h6 id="개념-스키마">개념 스키마</h6>
-<ul>
-<li>전체 데이터의 구조를 나타내며 데이터의 의미만 표현</li>
-</ul>
-<h6 id="외부-스키마">외부 스키마</h6>
-<ul>
-<li>뷰, 사용자가 필요한 데이터를 볼 수 있는 공간</li>
-</ul>
-<h6 id="사상의-존재">사상의 존재</h6>
-<ul>
-<li>내부와 개념, 개념과 외부 사이에 각각 존재</li>
+<li><a href="https://www.youtube.com/watch?v=JLQLxrgygKk">퍼즈도라 만드는 동영상</a>을 보고 로직을 따라해서 전체기준 약 50%정도 파이썬 코딩을 진행했다.</li>
+<li>디지털 시스템의 설계단계에 대한 내용을 강의를 보며 학습했다.</li>
+<li>예전에 배웠던 내용이지만 n진법간의 변환, r의 보수 및 r-1의 관계, (r-1)보수를 사용한 n진수별 감산방법을 배우고 연습했다.</li>
+<li>디지털논리회로 과목 과제를 시작했다.</li>
 </ul>
 <hr>
-<h3 id="트랜잭션">트랜잭션</h3>
+<h4 id="내일-할-일">내일 할 일</h4>
 <ul>
-<li>하나의 논리적 작업을 처리하기 위한 일련의 데이터베이스 명령의 집합</li>
-<li>동시에 같은 데이터에 접근할수 없도록 하여 일관성을 유지</li>
+<li>디지털논리회로 과목 공부 및 과제 하기</li>
+<li>파이썬 코딩하기</li>
+<li>이전에 공부한 DDA와 브레센헴 알고리즘에 대해 복습할 시간을 가지고 정리한 후 블로그에 올리기</li>
+<li>독서하기</li>
 </ul>
-<blockquote>
-<p>예)<br>
-명령어 집합인 A(출금)가 완전히 수행되기 전까지 다른 작업(입금)을 수행하지 않도록 함</p>
-</blockquote>
-<hr>
-<h3 id="데이터베이스-언어">데이터베이스 언어</h3>
-<ul>
-<li>DBMS는 편리성을 위해 언어 형태의 인터페이스를 제공</li>
-<li>현대 데이터베이스 언어는 자연어와 유사한 형태의 SQL로 표준화</li>
-</ul>
-<h6 id="1-ddldata-definition-language">1. DDL(Data Definition Language)</h6>
-<ul>
-<li>데이터를 저장할 수 있는 구조를 만드는 역할</li>
-<li>데이터베이스 객체를 생성, 수정 삭제</li>
-<li>논리적 구성과 특징 및 물리적 구성을 규정</li>
-</ul>
-<h6 id="2-dmldata-manipulation-language">2. DML(Data Manipulation Language)</h6>
-<ul>
-<li>사용자의 접근 및 조작을 간편하고 정확하며 효율적이게 할 수 있도록 지원</li>
-<li>검색, 삽입, 삭제, 수정</li>
-</ul>
-<hr>
-<h3 id="시스템-아키텍쳐-방식">시스템 아키텍쳐 방식</h3>
-<h6 id="중앙-집중식-방식">중앙 집중식 방식</h6>
-<ul>
-<li>저렴한 구성, 과부하시 전체 시스템 성능 저하</li>
-</ul>
-<h6 id="분산-시스템-방식">분산 시스템 방식</h6>
-<ul>
-<li>중앙 서버에게 데이터 관리만을 위임하고 일을 분산해서 처리</li>
-<li>소프트웨어의 유지 보수 비용을 절감 및 이식성 증가</li>
-<li>2계층 구조와 3계층 구조</li>
-</ul>
-<blockquote>
-<p><strong>2계층과 3계층의 차이</strong><br>
-애플리케이션이 애플리케이션 서버와 클라이언트로 각각 분화하여 서버사이드와 클라이언트 사이드에 위치<br>
--&gt; 시스템 특징 및 상황에 따라 더 좋은 방식이 달라진다.</p>
-</blockquote>
 
     
 </div>
@@ -238,7 +173,7 @@
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/database/">database</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>
