@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>정수판별 on Rad Blog</title>
+    <link>https://xfrnk2.github.io/tags/%EC%A0%95%EC%88%98%ED%8C%90%EB%B3%84/</link>
+    <description>Recent content in 정수판별 on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Apr 2020 00:55:42 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/%EC%A0%95%EC%88%98%ED%8C%90%EB%B3%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BOJ-10825-국영수[정렬]</title>
+      <link>https://xfrnk2.github.io/boj/10825/</link>
+      <pubDate>Tue, 21 Apr 2020 00:55:42 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/10825/</guid>
+      <description>BOJ-10825-국영수 문제 바로가기  나의 풀이 student_list = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split())) for _ in range(int(input()))] student_list.sort(key=lambda student: (-student[1], student[2], -student[3], student[0])) for x in student_list: print(x[0]) 생각  operator.itemgetter도 이용할수 있을까? 정수판별을 위해서 어떤 함수를 사용하는게 적절할까?  순서  input값의 문자열이 정수일 경우 정수화 정렬 실행 0번째 인덱스에 위치한 학생의 이름을 출력  방법  정수 판별을 위해 isdecimal 이용 lambda함수를 이용 정렬하고자 하는 인덱스를 역순으로 정렬하기 위해 머리부분에 -를 붙임.</description>
+    </item>
+    
+  </channel>
+</rss>
