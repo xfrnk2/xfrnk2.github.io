@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 May 2020 23:37:05 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2020 23:02:32 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.21/</link>
+      <pubDate>Thu, 21 May 2020 23:02:32 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.21/</guid>
+      <description>계획했던 일  디지털논리회로 과목 공부 및 과제 하기 파이썬 코딩하기 DDA와 브레센헴 알고리즘에 대해 복습할 시간을 가지기 독서하기   오늘 한 일  n진법간의 변환, r의 보수 및 r-1의 관계, (r-1)보수를 사용한 n진수별 감산방법을 복습했다. 디지털 논리회로 과목 과제를 했다. 아직 진행중이다. 디지털 논리회로 과제를 하다보니 문득, 진법 변환 프로그램을 만들어보고싶은 욕구가 올라와, 파이썬을 가지고 진법 변환 프로그램을 만들기 시작했다. 2-&amp;gt;10진법으로 바꾸는 함수를 만들었다. 점심 식사 시간에 &amp;lsquo;JTBC 토크멘터리 헤어지기 전 몰래 하고싶었던 말&amp;rsquo; 2회, 8020 이어령학당을 시청했다.</description>
+    </item>
     
     <item>
       <title>20.05.20_TIL</title>
