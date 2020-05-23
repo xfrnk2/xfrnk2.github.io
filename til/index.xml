@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 21 May 2020 23:02:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 23 May 2020 22:48:52 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.23/</link>
+      <pubDate>Sat, 23 May 2020 22:48:52 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.23/</guid>
+      <description>계획했던 일  디지털 논리회로 강의 듣고 과제 하기 파이썬 코딩하기   오늘 한 일  디지털논리회로 - 부울대수의 간소화, 표현, 카르노 도표에 대한 강의를 듣고 공부했다. Python에서, 이차원 배열으로서, 리스트 컴프리헨션과 for문을 사용한 배열 A, * (multiply)연산을 이용한 배열 B의 결과값이 같다는 전제 하에, 공통된 특정 위치의 값을 변경했을때 각각의 배열에서 다른 결과를 나타냈다. 구글링으로 찾아내지 못해서 stackoverflow에 질문을 올렸다. 어떤 분께서 이미 존재하던 stackoverflow 글 링크를 코멘트에 달아주신 덕분에 해답을 찾을 수 있었다.</description>
+    </item>
+    
+    <item>
+      <title>20.05.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.22/</link>
+      <pubDate>Fri, 22 May 2020 23:33:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.22/</guid>
+      <description>계획했던 일  독서하기 디지털논리회로 강의 듣기 디지털논리회로 과목 공부 및 과제 하기 파이썬 코딩하기   오늘 한 일  디지털논리회로 - 부울대수의 보수, 정규형, 표준형에 대해 강의를 듣고 공부했다. 디지털논리회로 - 과제를 했다. 진행중이다. 파이썬으로 진법 변환 프로그램을 완성했다. 변환 함수에 대한 논리적인 코딩을 시도 했었는데, 만들던 도중에 문득 해당 기능을 수행하는 모듈은 없는지 궁금해져서 알아본 결과 bin(), oct(), str(), hex()의 내장함수를 이용하면 쉽게 구현이 가능해서 훨씬 간단하고 수월하게 만들어냈다.</description>
+    </item>
     
     <item>
       <title>20.05.21_TIL</title>
