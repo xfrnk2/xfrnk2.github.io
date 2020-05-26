@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> BOJ-18870-좌표압축[알고리즘] | Rad Blog</title>
-    <meta name="description" content="BOJ-18870-좌표압축[알고리즘] - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="BOJ-18870-좌표압축[알고리즘]">
-    <meta itemprop="description" content="BOJ-18870-좌표압축[알고리즘] - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="BOJ-18870-좌표압축[알고리즘]">
-    <meta property="og:description" content="BOJ-18870-좌표압축[알고리즘] - Bilberry Premium Theme for Hugo.">
+    <title> 20.05.25_TIL | Rad Blog</title>
+    <meta name="description" content="20.05.25_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.05.25_TIL">
+    <meta itemprop="description" content="20.05.25_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.05.25_TIL">
+    <meta property="og:description" content="20.05.25_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/boj/18870/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.05.25/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/boj/18870/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/boj/18870/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.05.25/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.05.25/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/boj/18870/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.05.25/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/18870/">BOJ-18870-좌표압축[알고리즘]</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.05.25/">20.05.25_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-14</span>
+        <span class="date moment">2020-05-25</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,30 +138,23 @@
     </div>
 
     
-    <h6 id="boj-18870-좌표압축-문제-바로가기httpswwwacmicpcnetproblem18870">BOJ-18870-좌표압축 <a href="https://www.acmicpc.net/problem/18870">문제 바로가기</a></h6>
+    <h4 id="계획했던-일">계획했던 일</h4>
+<ul>
+<li><del>디지털 논리회로 강의 듣고 과제 마무리 짓기</del></li>
+<li><del>적절한 휴식, 몸 건강 챙기기</del></li>
+</ul>
 <hr>
-<h6 id="나의-풀이">나의 풀이</h6>
-<pre><code>input()
-arr = list(map(int, input().split()))
-values_by_key = {}
-for i,j in enumerate(sorted(set(arr))):
-    values_by_key[j] = i
-for x in arr:
-    print(values_by_key[x], end=' ')
-</code></pre><h6 id="생각">생각</h6>
+<h4 id="오늘-한-일">오늘 한 일</h4>
 <ul>
-<li>중복값을 제거하고 컨테이너로 어떻게 전달할까?</li>
+<li>디지털 논리회로 강의를 들었다.</li>
+<li>여러 조합논리회로(BCD-세븐 세그먼트 표시기,코드 변환기 인코더, 디코더, 멀티플렉서)에 대한 강의내용을 공부하였다.</li>
+<li>디지털 논리회로 과목의 과제를 마무리했다. 시간이 많이 늦었다.</li>
 </ul>
-<h6 id="순서">순서</h6>
+<hr>
+<h4 id="내일-할-일">내일 할 일</h4>
 <ul>
-<li>중복값 제거한 오름차순 정렬이 된 리스트를 순회</li>
-<li>값을 키로, 인덱스를 해당 값의 값으로 저장</li>
-<li>초기 리스트 순회하여 저장한 컨테이너로부터 찾아내서 출력</li>
-</ul>
-<h6 id="방법">방법</h6>
-<ul>
-<li>set()으로 중복값 제거, list로 형변환</li>
-<li>딕셔너리 사용</li>
+<li>그간의 과제물 내용들을 복습하고 검토하기, 제출하기</li>
+<li>새로운 과제물(4개)중 하나 시작하기</li>
 </ul>
 
     
@@ -177,11 +170,7 @@ for x in arr:
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
-                
-                
-                
-                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>

@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 May 2020 23:07:35 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2020 23:16:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.25_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.25/</link>
+      <pubDate>Mon, 25 May 2020 23:16:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.25/</guid>
+      <description>계획했던 일  디지털 논리회로 강의 듣고 과제 마무리 짓기 적절한 휴식, 몸 건강 챙기기   오늘 한 일  디지털 논리회로 강의를 들었다. 여러 조합논리회로(BCD-세븐 세그먼트 표시기,코드 변환기 인코더, 디코더, 멀티플렉서)에 대한 강의내용을 공부하였다. 디지털 논리회로 과목의 과제를 마무리했다. 시간이 많이 늦었다.   내일 할 일  그간의 과제물 내용들을 복습하고 검토하기, 제출하기 새로운 과제물(4개)중 하나 시작하기  </description>
+    </item>
     
     <item>
       <title>20.05.24_TIL</title>
