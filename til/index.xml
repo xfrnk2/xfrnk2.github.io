@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 28 May 2020 23:55:19 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 23:28:52 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.29/</link>
+      <pubDate>Fri, 29 May 2020 23:28:52 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.29/</guid>
+      <description>계획했던 일  디지털논리회로 과목 강의 듣고 공부하기 과제 하기   오늘 한 일  디지털논리회로 과목, 기억장치와 RAM, ROM에 대한 강의를 듣고 공부했다. 디지털논리회로 과목 과제를 모두 마쳤다. 덕분에 상태도와 상태표, 부울함수와 논리회로도를 고민해보고, 그려볼 수 있었다. 오랜만에 Django View에 대한 강의를 가볍게 들었다. 정규표현식에 대해 간단히 학습했다. 정규표현식에 관한 BOJ-2671-잠수함식별 문제를 풀었다. 나중에 안 사실이지만 match가 아닌 fullmatch를 사용해서 해결할 수 있는 문제였다.   내일 할 일  과제 하기 독서 하기  </description>
+    </item>
     
     <item>
       <title>20.05.28_TIL</title>
