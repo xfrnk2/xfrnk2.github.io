@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 29 May 2020 23:28:52 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 19:06:22 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.05.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.05.30/</link>
+      <pubDate>Sun, 31 May 2020 19:06:22 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.05.30/</guid>
+      <description>계획했던 일  과제 하기 독서 하기   오늘 한 일  과제에 앞서 데이터베이스의 정규화에 대한 강의를 듣고, 그동안 배운 내용들을 복습하는 시간을 가졌다. 도서 12월의 어느날을 읽기 시작했다.   내일 할 일  과제하기 독서하기  </description>
+    </item>
     
     <item>
       <title>20.05.29_TIL</title>
