@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Jun 2020 11:54:32 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 23:57:13 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.02_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.02/</link>
+      <pubDate>Tue, 02 Jun 2020 23:57:13 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.02/</guid>
+      <description>계획했던 일  과제하기 코딩하기 독서하기   오늘 한 일  데이터베이스시스템 과목의 과제를 했고 아직 진행중이다. 파일 구조에 대한 개략적인 내용을 공부했다. 힙 파일 구조, 순차 파일 구조, 해시 파일 구조에 대해서 공부했다. 다만 해시 파일 구조의 해시 충돌시 체이닝 등의 기법을 사용해서 해결하는 등 세부적인 내용은 추후 공부하려고 한다. 무라카미하루키의 やがて哀しき外國語 를 읽었다. 뿌요뿌요 게임 제작중 골격을 만들고 입력에 반응할 수 있는 기본적인 기능을 구현하였다.   내일 할 일  데이터베이스시스템 과목 과제 마무리하기 독서하기 코딩하기(가급적 Django 우선)  </description>
+    </item>
     
     <item>
       <title>20.06.01_TIL</title>
