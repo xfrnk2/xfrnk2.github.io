@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Jun 2020 23:57:13 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 04 Jun 2020 23:36:01 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.04_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.04/</link>
+      <pubDate>Thu, 04 Jun 2020 23:36:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.04/</guid>
+      <description>계획했던 일  b+트리에 대해서 자세히 공부하기 데이터베이스시스템 과목 과제하기 장학금 신청하기 코딩하기   오늘 한 일  장학금을 신청했다. b+트리를 공부했다. 시뮬레이터도 사용해 보았다. 데이터베이스시스템 과목의 과제를 했고 아직 진행중이다. 뿌요뿌요 게임 제작중 재시작 기능을 만들었다.   내일 할 일  몸 건강 챙기기 b+트리 공부한 내용 정리하기 데이터베이스시스템 과제 하기  </description>
+    </item>
+    
+    <item>
+      <title>20.06.03_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.03/</link>
+      <pubDate>Wed, 03 Jun 2020 23:36:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.03/</guid>
+      <description>계획했던 일  데이터베이스시스템 과목 과제 마무리하기 독서하기 코딩하기(가급적 Django 우선)   오늘 한 일  데이터베이스시스템 과목의 과제를 했고 아직 진행중이다. b트리와 b+트리에 대한 강의를 듣고 공부했다. 누워서 읽는 알고리즘을 10%(20%) 읽었다. 뿌요뿌요 게임 제작중 발생하던 에러들을 고치기 위해 코드를 수정하고 색패 회전 기능을 구현했다.   내일 할 일  b+트리에 대해서 자세히 공부하기 데이터베이스시스템 과목 과제하기 장학금 신청하기 코딩하기  </description>
+    </item>
     
     <item>
       <title>20.06.02_TIL</title>
