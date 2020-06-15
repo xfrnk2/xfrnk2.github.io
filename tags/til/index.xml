@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Jun 2020 23:27:21 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2020 23:41:42 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.14/</link>
+      <pubDate>Sun, 14 Jun 2020 23:41:42 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.14/</guid>
+      <description>계획했던 일  알고리즘 과목 과제 마무리하기 새로운 학교 과제 시작하기 이전에 작업하던 뿌요뿌요 코딩 하기 개발 관련 서적 읽기   오늘 한 일  제사를 지내고, 성묘를 다녀왔다. 가족과의 시간을 보냈다. 도서 훌륭한 프로그래머가 되는 법 를 완독했다. 알고리즘 과목 과제를 모두 마무리했다. 뿌요뿌요 코딩으로 전반적인 기능 구현과 발화 기능까지 구현했다. 이제 연쇄가 될 수 있도록 구현해야 한다.   내일 할 일  새로운 학교 과제 시작하기 개발 관련 서적 읽기 뿌요뿌요 코딩 계속 하기  </description>
+    </item>
     
     <item>
       <title>20.06.13_TIL</title>
