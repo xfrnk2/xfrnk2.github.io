@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 Jun 2020 23:41:42 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 23:36:50 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.15/</link>
+      <pubDate>Mon, 15 Jun 2020 23:36:50 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.15/</guid>
+      <description>계획했던 일  새로운 학교 과제 시작하기 개발 관련 서적 읽기 뿌요뿌요 코딩 계속 하기   오늘 한 일  병행 프로세스, 교착상태, 가상 메모리, 운영체제 보안에 대한 강의를 들었다. 운영체제 과목 과제를 시작해서 모두 마무리 지었다. 그동안 해 온 과제를 비롯해 배웠던 내용을 확인하고 복습하는 시간을 보냈다.   내일 할 일  새로운 학교 과제 시작하기 개발 관련 서적 읽기 뿌요뿌요 관련 코딩 계속 하기  </description>
+    </item>
     
     <item>
       <title>20.06.14_TIL</title>
