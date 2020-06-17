@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 15 Jun 2020 23:36:50 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2020 23:43:15 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.16/</link>
+      <pubDate>Tue, 16 Jun 2020 23:43:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.16/</guid>
+      <description>계획했던 일  새로운 학교 과제 시작하기 개발 관련 서적 읽기 뿌요뿌요 관련 코딩 계속 하기   오늘 한 일  뿌요뿌요의 연쇄 기능을 구현했으나 특정한 경우 일부 블록이 지워지지 않는 문제가 발생, 모든 상쇄된 블록의 수 만큼 낙차를 적용하고 이것을 일괄적으로 적용할수 있는 방법 필요하다. 컴퓨터 그래픽스의 강의를 두편 들었다. 기하변환과 복합변환에 대해 공부했다. 이동변환과 밀림변환 문제들을 풀었다. 컴퓨터 그래픽스 과목의 과제를 했다. (진행중)   내일 할 일  학교 과제 하기 개발 관련 서적 읽기  </description>
+    </item>
     
     <item>
       <title>20.06.15_TIL</title>
