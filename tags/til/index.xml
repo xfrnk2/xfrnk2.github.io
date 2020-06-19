@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Jun 2020 23:22:23 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2020 23:45:36 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.18_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.18/</link>
+      <pubDate>Thu, 18 Jun 2020 23:45:36 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.18/</guid>
+      <description>계획했던 일  학교 과제 하기 개발 관련 서적 읽기 늦게 자면 잘수록 능률이 떨어지는것 같으니 가급적 일찍 자도록 하기   오늘 한 일  컴퓨터 그래픽스의 강의를 두편 들었다. 선과 면의 표현, 베지어 스플라인 곡선에 대한 강의를 듣고 공부했다. 컴퓨터 그래픽스 과목의 과제를 모두 마무리했다. 모든 과제를 기한내 마무리했다. 학교의 모든 평가과정이 코로나바이러스 때문에 과제물로 바뀌게 되서 오래 걸린것 같다.후반에 다다를수록 강의도 다소 촉박하게 들었다. 알고 갈만한 개념은 반복학습과 추가학습으로 꼭 배우고 넘어가고싶다.</description>
+    </item>
     
     <item>
       <title>20.06.17_TIL</title>
