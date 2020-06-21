@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 18 Jun 2020 23:45:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 23:49:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.20/</link>
+      <pubDate>Sat, 20 Jun 2020 23:49:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.20/</guid>
+      <description>계획했던 일  도서 읽기 몸 건강 챙기기, 일찍 자기   오늘 한 일  도서 넛지(똑똑한 선택을 이끄는 힘)를 읽었다. 앞으로 공부해 나아갈 것들에 대한 대략적인 목표를 정했다. 한동안 과제 해결에만 집중하는 바람에 분명 감각이 많이 무뎌졌을 것이다. 재기를 위해서는 보다 명확한 목표가 필요하다고 생각했다.    django 로 게시판, 댓글, 파일 업로드, 회원 인증 기능을 구현하기 등의 목표를 설정하여 프로젝트 진행(지금까지 배운 것 총망라 하는 느낌으로) 알고리즘 - 재귀함수 강의 시청과 복습을 통해 뿌요뿌요 알고리즘의 실마리 찾아내고 봉착해 있는 문제점 해결하기 지금까지 배운 과목들을 즐기듯이 블로그에 포스팅 하고, 교양수업을 듣는다고 생각하고 자주 시청하기    내일 할 일  독서하기 코딩하기  </description>
+    </item>
+    
+    <item>
+      <title>20.06.19_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.19/</link>
+      <pubDate>Fri, 19 Jun 2020 23:28:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.19/</guid>
+      <description>계획했던 일  재충전의 시간을 가지기 위해 독서하기, 개발 관련 소식 듣기 즐겁게 코딩하기 일찍 자기   오늘 한 일  뿌요뿌요 코드를 단순화했다. 연쇄 기능 구현에 고전을 면치 못했다. 완벽하게 구현해낼 수가 없었다. 문제 해결을 위하여 재귀함수 학습이 선행되어야 한다고 느꼈다. 도서 넛지(똑똑한 선택을 이끄는 힘)를 처음부터 200페이지 읽었다.   내일 할 일  독서 하기 몸 건강 챙기기, 일찍 자기  </description>
+    </item>
     
     <item>
       <title>20.06.18_TIL</title>
