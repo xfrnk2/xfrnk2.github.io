@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 20 Jun 2020 23:49:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 23:34:33 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.21/</link>
+      <pubDate>Sun, 21 Jun 2020 23:34:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.21/</guid>
+      <description>계획했던 일  독서하기 코딩하기   오늘 한 일  도서 넛지(똑똑한 선택을 이끄는 힘)를 다 읽었다. 컨디션이 돌아오지않아 충분히 쉬었다.   내일 할 일  django 배운것 복습하기, 프로젝트 시작하기 재귀함수 공부하기  </description>
+    </item>
     
     <item>
       <title>20.06.20_TIL</title>
