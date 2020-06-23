@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Jun 2020 23:34:33 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2020 23:39:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.22/</link>
+      <pubDate>Mon, 22 Jun 2020 23:39:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.22/</guid>
+      <description> django 배운것 복습하기, 프로젝트 시작하기 재귀함수 공부하기   오늘 한 일  깊이우선탐색(DFS)에 대한 강의를 듣고 함수를 직접 만들어서 뿌요뿌요 게임에 적용시켰다. 발화시 기존의 재귀함수로부터 깊이우선탐색을 적용한 함수로 바꿔보았으나 여전히 실패한다.   내일 할 일  코딩하기 django 배운것 복습하기, 프로젝트 시작하기  </description>
+    </item>
     
     <item>
       <title>20.06.21_TIL</title>
