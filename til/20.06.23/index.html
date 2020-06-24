@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> Django의 Admin 기능 | Rad Blog</title>
-    <meta name="description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="Django의 Admin 기능">
-    <meta itemprop="description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="Django의 Admin 기능">
-    <meta property="og:description" content="Django의 Admin 기능 - Bilberry Premium Theme for Hugo.">
+    <title> 20.06.23_TIL | Rad Blog</title>
+    <meta name="description" content="20.06.23_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.06.23_TIL">
+    <meta itemprop="description" content="20.06.23_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.06.23_TIL">
+    <meta property="og:description" content="20.06.23_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/django/django_admin/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.06.23/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/django/django_admin/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_admin/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.06.23/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.06.23/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_admin/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.06.23/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_admin/">Django의 Admin 기능</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.06.23/">20.06.23_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-04-19</span>
+        <span class="date moment">2020-06-23</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,129 +138,22 @@
     </div>
 
     
-    <blockquote>
-<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
-</blockquote>
+    <ul>
+<li><del>코딩하기</del></li>
+<li><del>django 배운것 복습하기</del></li>
+</ul>
 <hr>
-<h3 id="1-django의-admin-기능">1. Django의 Admin 기능</h3>
+<h4 id="오늘-한-일">오늘 한 일</h4>
 <ul>
-<li>관리자 페이지, 강력한 자동 관리 인터페이스</li>
-<li>모델 중심의 빠른 인터페이스를 제공</li>
+<li>Django 기본 CBV API (Base Views)에 대한 강의를 시청했다.</li>
+<li>Django 강의 다시듣기를 통해 이전에 배웠던 내용을 복습했다.</li>
 </ul>
 <hr>
-<h3 id="2-django-admin의-사용-효과">2. Django Admin의 사용 효과</h3>
+<h4 id="내일-할-일">내일 할 일</h4>
 <ul>
-<li>서비스 초기에 관리 도구로 사용하기에 제격</li>
-<li>관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능</li>
+<li>코딩하기</li>
+<li>Django 공부하기</li>
 </ul>
-<hr>
-<h3 id="3-model-class를-django-admin에-등록하는-방법">3. Model Class를 Django Admin에 등록하는 방법</h3>
-<h6 id="1-기본">1. 기본</h6>
-<pre><code>from django.contrib import admin
-from .models import Item 
-  
-admin.site.regiester(Item)
-</code></pre><h6 id="2-class">2. Class</h6>
-<pre><code>from django.contrib import admin
-from .models import Item
-  
-class ItemAdmin(admin.ModelAdmin):
-	pass
-admin.site.register(Item, ItemAdmin) 
-</code></pre><h6 id="3-class--decorator선호">3. Class + Decorator	(선호)</h6>
-<pre><code>from django.contrib import admin
-from .models import Item
-
-@admin.register(Item)
-class ItemAdmin(admin.ModelAdmin):
-	pass
-</code></pre><hr>
-<h3 id="4-제공되는-기능">4. 제공되는 기능</h3>
-<table>
-<thead>
-<tr>
-<th>이름</th>
-<th>기능</th>
-<th>비고</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>list_display</td>
-<td>컬럼의 노출여부를 결정</td>
-<td>function도 가능</td>
-</tr>
-<tr>
-<td>list_display_links</td>
-<td>컬럼의 링크 설정 (기본값은 1번째 컬럼)</td>
-<td>여러개 허용</td>
-</tr>
-<tr>
-<td>search_fields</td>
-<td>admin 내 검색 UI 제공</td>
-<td></td>
-</tr>
-<tr>
-<td>list_filter</td>
-<td>지정 필드값으로 필터링 옵션 UI 제공</td>
-<td></td>
-</tr>
-<tr>
-<td>&hellip;</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h6 id="구현-형태">구현 형태</h6>
-<pre><code>admin.py
-
-@admin.register(Post)
-class PostAdmin(admin.ModelAdmin):
-   
-   list_display = ['title', 'content', 'title_length', 'is_public', 'created_at', 'updated_at'] 
-   list_display_links = ['content'] 
-   search_fields = ['title']   
-   list_filter = ['created_at', 'is_public']
-   
-   def title_length(self, post):
-      return f&quot;{len(post.title)}글자&quot;
-	  
-   title_length.short_description = &quot;타이틀 글자수&quot;
-</code></pre><h6 id="추가-설명">추가 설명</h6>
-<hr>
-<blockquote>
-<p><strong>title_length</strong></p>
-</blockquote>
-<ul>
-<li>function도 가능 (list_display 비고란 참고)</li>
-<li>list_display 내의 원소이름과 동일해야함.</li>
-<li>model.py에서 같은 구현 가능</li>
-<li>python의 경우 @property로도 정의</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>title_length.short_description</strong></p>
-</blockquote>
-<ul>
-<li>컬럼의 표시되는 부분을 설정</li>
-</ul>
-<hr>
-<blockquote>
-<p><strong>search_fileds</strong></p>
-</blockquote>
-<pre><code>**로직상의 의미**
-Post.objects.all().filter(title__icontains='포함하는 글자')
-</code></pre><ul>
-<li>search_field = [&lsquo;title&rsquo;]의 경우, &lsquo;title'에 대해서 search 옵션을 적용하겠다는 의미.</li>
-</ul>
-<hr>
-<ul>
-<li>
-<h6 id="더-많은-기능에-대한-정보는-공식문서를-참고-httpsdocsdjangoprojectcomen30refcontribadmin">더 많은 기능에 대한 정보는 공식문서를 참고. (<a href="https://docs.djangoproject.com/en/3.0/ref/contrib/admin/">https://docs.djangoproject.com/en/3.0/ref/contrib/admin/</a>)</h6>
-</li>
-</ul>
-<hr>
 
     
 </div>
@@ -275,15 +168,7 @@ Post.objects.all().filter(title__icontains='포함하는 글자')
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/admin/">Admin</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>

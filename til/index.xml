@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Jun 2020 23:39:07 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2020 23:34:57 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.23/</link>
+      <pubDate>Tue, 23 Jun 2020 23:34:57 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.23/</guid>
+      <description> 코딩하기 django 배운것 복습하기   오늘 한 일  Django 기본 CBV API (Base Views)에 대한 강의를 시청했다. Django 강의 다시듣기를 통해 이전에 배웠던 내용을 복습했다.   내일 할 일  코딩하기 Django 공부하기  </description>
+    </item>
     
     <item>
       <title>20.06.22_TIL</title>
