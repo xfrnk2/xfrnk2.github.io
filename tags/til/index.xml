@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 25 Jun 2020 23:14:46 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2020 23:50:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.26_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.26/</link>
+      <pubDate>Fri, 26 Jun 2020 23:50:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.26/</guid>
+      <description>계획했던 일  코딩하기 Apachi HTTP Web Server 설치와 사용해보기   오늘 한 일  Apachi를 설치하고 초기 설정을 마쳤다. Apachi와 Django를 연동하려고 했더니, mod_wsgi 모듈을 컴파일 하기 위해 C++ 컴파일러가 필요하다고 나오는 바람에 VS Code로 C++컴파일과 실행이 가능한 환경을 구현한 후 다시 시도해보니, 아뿔싸 에러 메세지가 요구하는것은 Microsift Visual C++이었다. 시간이 좀 걸릴것 같으니 이 설치는 내일 계속 하기로 했다.   내일 할 일  Apachi와 Django 연동 시키기 코딩하기 독서하기, 다가오는 주간 계획 고민하기  </description>
+    </item>
     
     <item>
       <title>20.06.25_TIL</title>
@@ -16,7 +25,7 @@
       <pubDate>Thu, 25 Jun 2020 23:14:46 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.06.25/</guid>
-      <description> 코딩 하기 개발 관련 자료 찾기, 강의 시청하기   오늘 한 일  비가 왔지만 체력 관리를 위해 등산에 다녀왔다. 생활코딩 Web 강의(1~7)를 시청했다. 훌륭한 개발자가 되는 방법을 제시하는 강의들을 시청했다.   우아한 형제들 기술 블로그
+      <description>계획했던 일  코딩 하기 개발 관련 자료 찾기, 강의 시청하기   오늘 한 일  비가 왔지만 체력 관리를 위해 등산에 다녀왔다. 생활코딩 Web 강의(1~7)를 시청했다. 훌륭한 개발자가 되는 방법을 제시하는 강의들을 시청했다.   우아한 형제들 기술 블로그
 개발자는 어떻게 성장해야 할까? - 강대명
 30년차 개발자 장동수가 말하는 좋은 개발자
   내일 할 일  코딩하기 Apachi HTTP Web Server 설치와 사용해보기  </description>
@@ -46,7 +55,7 @@
       <pubDate>Mon, 22 Jun 2020 23:39:07 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.06.22/</guid>
-      <description> django 배운것 복습하기, 프로젝트 시작하기 재귀함수 공부하기   오늘 한 일  깊이우선탐색(DFS)에 대한 강의를 듣고 함수를 직접 만들어서 뿌요뿌요 게임에 적용시켰다. 발화시 기존의 재귀함수로부터 깊이우선탐색을 적용한 함수로 바꿔보았으나 여전히 실패한다.   내일 할 일  코딩하기 django 배운것 복습하기, 프로젝트 시작하기  </description>
+      <description>계획했던 일  django 배운것 복습하기, 프로젝트 시작하기 재귀함수 공부하기   오늘 한 일  깊이우선탐색(DFS)에 대한 강의를 듣고 함수를 직접 만들어서 뿌요뿌요 게임에 적용시켰다. 발화시 기존의 재귀함수로부터 깊이우선탐색을 적용한 함수로 바꿔보았으나 여전히 실패한다.   내일 할 일  코딩하기 django 배운것 복습하기, 프로젝트 시작하기  </description>
     </item>
     
     <item>
