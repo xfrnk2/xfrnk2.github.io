@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 24 Jun 2020 23:44:52 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 23:14:46 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.25_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.25/</link>
+      <pubDate>Thu, 25 Jun 2020 23:14:46 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.25/</guid>
+      <description> 코딩 하기 개발 관련 자료 찾기, 강의 시청하기   오늘 한 일  비가 왔지만 체력 관리를 위해 등산에 다녀왔다. 생활코딩 Web 강의(1~7)를 시청했다. 훌륭한 개발자가 되는 방법을 제시하는 강의들을 시청했다.   우아한 형제들 기술 블로그 개발자는 어떻게 성장해야 할까? - 강대명 30년차 개발자 장동수가 말하는 좋은 개발자
+  내일 할 일  코딩하기 Apachi HTTP Web Server 설치와 사용해보기  </description>
+    </item>
     
     <item>
       <title>20.06.24_TIL</title>
