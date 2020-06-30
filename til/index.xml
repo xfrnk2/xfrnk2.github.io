@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Jun 2020 23:42:27 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2020 23:46:24 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.06.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.06.30/</link>
+      <pubDate>Tue, 30 Jun 2020 23:46:24 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.06.30/</guid>
+      <description>계획했던 일  코딩하기 셸 정렬 직접 구현 Apachi와 Django 연동 시키기 HTML, CSS, Java Script 강의 듣기   오늘 한 일  생활코딩 HTML과 CSS에 대한 강의를 듣고 직접 코드를 작성해보았다. css혼합의 html태그를 중구난방으로 쓰다가 정리된 개념으로 배우니 좀더 정리되는 느낌을 받았다. 헌옷과 가지고 있는 옷들을 정리했다. 다른 계획한 것들을 마저 하고 싶었지만 몸 상태가 좋지 못해 집안일로 마무리하게 되었다.   내일 할 일  생활코딩 Java Script 강의 듣기 코딩하기 셸 정렬 직접 구현 Apachi와 Django 연동 시키기  </description>
+    </item>
     
     <item>
       <title>20.06.29_TIL</title>
