@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 30 Jun 2020 23:46:24 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2020 01:25:38 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.01/</link>
+      <pubDate>Wed, 01 Jul 2020 01:25:38 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.01/</guid>
+      <description>계획했던 일  생활코딩 Java Script 강의 듣기 코딩하기 셸 정렬 직접 구현 Apachi와 Django 연동 시키기   오늘 한 일  셸 정렬을 직접 구현하였다. 퀵 정렬을 이전과 다른 형태로 구현하고, 복습했다. 이다음엔 중간을 피벗으로 한 것을 구현해보려고 한다. 사실상 알바 관계로 계획했던 것들을 미처 끝내지 못했다.   내일 할 일  Apachi와 Django 연동 시키기 생활코딩 Java Script 강의 듣기 퀵 정렬 중앙을 피벗으로 한 형태의 코드를 구현하기  </description>
+    </item>
     
     <item>
       <title>20.06.30_TIL</title>
