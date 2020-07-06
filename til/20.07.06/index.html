@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> Django - 관계를 표현하는 Model Field - OneToOneField | Rad Blog</title>
-    <meta name="description" content="Django - 관계를 표현하는 Model Field - OneToOneField - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="Django - 관계를 표현하는 Model Field - OneToOneField">
-    <meta itemprop="description" content="Django - 관계를 표현하는 Model Field - OneToOneField - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="Django - 관계를 표현하는 Model Field - OneToOneField">
-    <meta property="og:description" content="Django - 관계를 표현하는 Model Field - OneToOneField - Bilberry Premium Theme for Hugo.">
+    <title> 20.07.06_TIL | Rad Blog</title>
+    <meta name="description" content="20.07.06_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.07.06_TIL">
+    <meta itemprop="description" content="20.07.06_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.07.06_TIL">
+    <meta property="og:description" content="20.07.06_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/django/django_onetoonefield/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.07.06/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/django/django_onetoonefield/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_onetoonefield/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.06/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.06/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_onetoonefield/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.06/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_onetoonefield/">Django - 관계를 표현하는 Model Field - OneToOneField</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.06/">20.07.06_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-04</span>
+        <span class="date moment">2020-07-06</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,62 +138,27 @@
     </div>
 
     
-    <blockquote>
-<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
-</blockquote>
-<hr>
-<h3 id="onetoonefield">OneToOneField</h3>
-<h6 id="1--1-관계에서-어느-쪽이라도-가능">1 : 1 관계에서 어느 쪽이라도 가능</h6>
+    <h4 id="계획했던-일">계획했던 일</h4>
 <ul>
-<li>User:Profile</li>
+<li>Apachi와 Django 연동 시키기</li>
+<li>생활코딩 Java Script 강의 듣기</li>
+<li><del>팀정렬 구현하기</del></li>
 </ul>
-<h6 id="foreignkeyunique_true와-유사하지만-reverse-차이">ForeignKey(unique_True)와 유사하지만, reverse 차이</h6>
-<ul>
-<li>User:Profile를 ForeignKey로 지정한다면 -&gt; profile.user_set.first() -&gt; user</li>
-<li>User:Profile를 OneToOneField로 지정한다면 -&gt; profile.user -&gt; user</li>
-</ul>
-<h6 id="onetoonefieldto-on_delete">OneToOneField(to, on_delete)</h6>
-<pre><code>#django/contrib/auth/models.py
-class User(abstractBaseUser):
-  ...
-  
-# accounts/models.py
-class Profile(models.Model):
-	author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-</code></pre><p><a href="https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield">https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield</a></p>
 <hr>
-<h3 id="onetoonefield에서의-related_name">OneToOneField에서의 related_name</h3>
-<h6 id="reverse-접근-시의-속성명--디폴트---모델명소문자">reverse 접근 시의 속성명 : 디폴트 -&gt; 모델명소문자</h6>
-<pre><code>accounts/models.py
-class Profile(models.Model):
-	user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-	phone = models.CharField(max_length=11, blank=True)
-	birth = models.DataField(null=True)
-	
-&gt;&gt;&gt; profile.user
+<h4 id="오늘-한-일">오늘 한 일</h4>
+<ul>
+<li>팀정렬의 코드를 외국 [geeksforgeeks]사이트에서 참고하여 똑같은 형태로 구현했다. 아직 명쾌하게 이해하지는 않았으므로 조금 더 학습해볼 예정이다.</li>
+<li>퀵 정렬을 복습하고 구현했다.</li>
+<li>Django Forms와 Model Forms에 대한 강의 두편을 시청했다.</li>
+</ul>
+<hr>
+<h4 id="내일-할-일">내일 할 일</h4>
+<ul>
+<li>팀정렬 명확하게 이해하고 구현해보기</li>
+<li>Apachi와 Django 연동 시키기</li>
+<li>생활코딩 Java Script 강의 듣기</li>
+</ul>
 
-&gt;&gt;&gt; user.profile	
-</code></pre><hr>
-<h3 id="유저-모델을-얻어오는-방법">유저 모델을 얻어오는 방법</h3>
-<h6 id="권장하지-않는-방법">권장하지 않는 방법</h6>
-<pre><code>from django.contrib.auth.models import User
-User.objects.all()
-</code></pre><h6 id="추천하는-방법">추천하는 방법</h6>
-<pre><code>from django.contrib.auth import get_user_model
-User = get_user_model()
-user = User.objects.first()
-user.profile
-</code></pre><ul>
-<li>
-<ul>
-<li>현재 활성화된 유저 모델을 얻을 수 있는 함수 : <strong>get_user_model</strong></li>
-</ul>
-</li>
-</ul>
-<hr>
-<h3 id="기타">기타</h3>
-<pre><code>profile.delete() #삭제
-</code></pre>
     
 </div>
 
@@ -207,11 +172,7 @@ user.profile
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>
