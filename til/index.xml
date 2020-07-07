@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jul 2020 23:51:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jul 2020 23:25:32 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.07/</link>
+      <pubDate>Tue, 07 Jul 2020 23:25:32 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.07/</guid>
+      <description>계획했던 일  팀정렬 명확하게 이해하고 구현해보기 Apachi와 Django 연동 시키기 생활코딩 Java Script 강의 듣기   오늘 한 일  팀정렬을 대부분 이해한 것 같다. 파이썬 코드로 구현해보다가 말았다. Django Forms와 Model Forms에 대한 강의, CSRF Token에 대한 강의를 시청했다. 생활코딩 Javascript 강의수강을 시작해서 초반 일부의 강의를 시청했다.   내일 할 일  팀정렬 명확하게 이해하고 구현해보기 Apachi와 Django 연동 시키기 생활코딩 Java Script 강의 듣기 Web 공부하기 블로그 포스팅 계획 세우고 실천하기  </description>
+    </item>
     
     <item>
       <title>20.07.06_TIL</title>
