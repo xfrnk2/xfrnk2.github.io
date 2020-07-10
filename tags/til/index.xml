@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 09 Jul 2020 23:08:09 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2020 23:08:08 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.10_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.10/</link>
+      <pubDate>Fri, 10 Jul 2020 23:08:08 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.10/</guid>
+      <description> Django 인스타그램 클론 프로젝트 시작하기 Apachi와 Django 연동 시키기 버블 정렬에 대한 글 작성 완료하기 코딩하기   오늘 한 일  영어 회화 표현 14문장을 공부하고 라이브 아카데미 강의를 두편 들었다. 쉽게 습관이 들 것 같다. 도서 파친코 1권을 완독했다. 길지 않은 감상평을 작성했다. 버블 정렬에 대한 글을 완성했다. 어제 작성한 내용의 부족한 것을 보완했다. 최소한의 공수가 드는 방법을 잘 생각해보아야겟다.   내일 할 일  Django 인스타그램 클론 프로젝트 시작하기 Apachi와 Django 연동 시키기 블로그에 아무 포스팅이나 하기(블로그에 포스팅하는 습관 만들기)  </description>
+    </item>
     
     <item>
       <title>20.07.09_TIL</title>
