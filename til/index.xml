@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Jul 2020 23:08:08 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jul 2020 23:20:02 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.11_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.11/</link>
+      <pubDate>Sat, 11 Jul 2020 23:20:02 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.11/</guid>
+      <description>Django 인스타그램 클론 프로젝트 시작하기 Apachi와 Django 연동 시키기 블로그에 아무 포스팅이나 하기(블로그에 포스팅하는 습관 만들기)   오늘 한 일  영어 회화 표현 12문장을 공부하고 라이브아카데미의 강의를 두 편 들었다. 섀도잉으로 speaking 연습을 이례적으로 오래 했다. 도서 파친코 2권을 15% 읽었다. VScode의 전반적인 사용방법 숙지를 위해 시간을 들였다. VScode로 Django를 다루어서 프로젝트를 만들고 기초적인 것에 대한 세팅을 어느정도 마쳤다. 오랜만에 해서 그런지 감이 떨어진것이 느껴진다. 학교 과제를 하느라 2달을 소비했으니 말이다.</description>
+    </item>
     
     <item>
       <title>20.07.10_TIL</title>
@@ -166,7 +175,7 @@
       <pubDate>Wed, 24 Jun 2020 23:44:52 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.06.24/</guid>
-      <description> 코딩하기 Django 공부하기   오늘 한 일  뿌요뿌요 코딩 - 기존의 점화시 문제가 여전히 발생하지만 버그를 찾고 코드를 보완하였다. okky와 개발자 블로그를 통해 취업 및 개발 공부, 블로그 사용 방법에 대한 글들을 읽었다.   내일 할 일  코딩 하기 개발 관련 자료 찾기, 강의 시청하기  </description>
+      <description>계획했던 일  코딩하기 Django 공부하기   오늘 한 일  뿌요뿌요 코딩 - 기존의 점화시 문제가 여전히 발생하지만 버그를 찾고 코드를 보완하였다. okky와 개발자 블로그를 통해 취업 및 개발 공부, 블로그 사용 방법에 대한 글들을 읽었다.   내일 할 일  코딩 하기 개발 관련 자료 찾기, 강의 시청하기  </description>
     </item>
     
     <item>
@@ -175,7 +184,7 @@
       <pubDate>Tue, 23 Jun 2020 23:34:57 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.06.23/</guid>
-      <description> 코딩하기 django 배운것 복습하기   오늘 한 일  Django 기본 CBV API (Base Views)에 대한 강의를 시청했다. Django 강의 다시듣기를 통해 이전에 배웠던 내용을 복습했다.   내일 할 일  코딩하기 Django 공부하기  </description>
+      <description>계획했던 일  코딩하기 django 배운것 복습하기   오늘 한 일  Django 기본 CBV API (Base Views)에 대한 강의를 시청했다. Django 강의 다시듣기를 통해 이전에 배웠던 내용을 복습했다.   내일 할 일  코딩하기 Django 공부하기  </description>
     </item>
     
     <item>
@@ -429,7 +438,7 @@
       <pubDate>Tue, 26 May 2020 23:23:09 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/20.05.26/</guid>
-      <description>계획했던 일  그간의 과제물 내용들을 복습하고 검토하기, 제출하기 새로운 과제물(4개)중 하나 시작하기   오늘 한 일  할머니댁과 고모댁을 방문해서 집안 볼일을 대신 해결하고 귀가했다. 그래서 공부를 위한 시간을 그다지 확보하지 못했다. 그간의 과제물 내용들을 복습하고 검토하여 제출했다. 최근에 공부했던 데이터베이스 시스템 과목을 이어서 공부하고, 과제를 작성하는 것이 좋을 것 같았다. 관련 정보에 대해서 간단한 웹서핑을 했다.   내일 할 일  데이터베이스 시스템 강의 듣고 공부하기, 과제 하기 최근에 공부했던 내용을 정리하기, 문서화하기  </description>
+      <description>계획했던 일  그간의 과제물 내용들을 복습하고 검토하기, 제출하기 새로운 과제물(4개)중 하나 시작하기   오늘 한 일  할머니댁과 고모댁을 방문해서 집안 볼일을 대신 해결하고 귀가했다. 그래서 공부를 위한 시간을 그다지 확보하지 못했다. 그간의 과제물 내용들을 복습하고 검토하여 제출했다. 최근에 공부했던 데이터베이스 시스템 과목을 이어서 공부하고, 과제를 작성하는 것이 좋을 것 같았다. 관련 정보에 대해서 간단한 웹서핑을 했다.   내일 할 일  디지털논리회로 강의 듣고 공부하기, 과제 하기 최근에 공부했던 내용을 정리하기, 문서화하기  </description>
     </item>
     
     <item>

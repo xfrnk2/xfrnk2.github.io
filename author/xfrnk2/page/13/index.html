@@ -100,6 +100,172 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_foreignkey/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_foreignkey/">Django - 관계를 표현하는 Model Field - Foreign Key</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.
+
+    
+    <a href="https://xfrnk2.github.io/django/django_foreignkey/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+    <div class="featured-image">
+        <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
+            <img src="https://example.org/images/my-image.jpg" alt="">
+        </a>
+    </div>
+
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">Django debug-toolbar를 통한 SQL 디버깅</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
+
+    
+    <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/debug-toolbar/">debug-toolbar</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/sql/">SQL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/til/20.05.02/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -476,160 +642,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_shell/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_shell/">Django Shell</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-29</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
-  우선순위 : ipython 쉘, bpython 쉘, python 쉘
-  옵션 :   -i (&ndash;interface) : 인터프리터 인터페이스 커스텀 지정
-
-    
-    <a href="https://xfrnk2.github.io/django/django_shell/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/shell/">Shell</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_static_media_file/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_static_media_file/">Django Static &amp; Media 파일</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-28</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Static &amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest.
-
-    
-    <a href="https://xfrnk2.github.io/django/django_static_media_file/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -656,11 +668,19 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.07.11/">20.07.11_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/algorithm/selection_sort/">정렬 알고리즘 - 선택 정렬(Selection Sort)</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.07.10/">20.07.10_TIL</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/algorithm/bubble_sort/">정렬 알고리즘 - 버블 정렬(Bubble Sort) 정리</a>
+                    <a href="https://xfrnk2.github.io/algorithm/bubble_sort/">정렬 알고리즘 - 버블 정렬(Bubble Sort)</a>
                 </li>
                 
                 <li>
@@ -673,14 +693,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.07.07/">20.07.07_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.06/">20.07.06_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.05/">20.07.05_TIL</a>
                 </li>
                 
             </ul>
