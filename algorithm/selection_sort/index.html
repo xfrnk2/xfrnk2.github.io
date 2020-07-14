@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 20.07.01_TIL | Rad Blog</title>
-    <meta name="description" content="20.07.01_TIL - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="20.07.01_TIL">
-    <meta itemprop="description" content="20.07.01_TIL - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="20.07.01_TIL">
-    <meta property="og:description" content="20.07.01_TIL - Bilberry Premium Theme for Hugo.">
+    <title> 정렬 알고리즘 - 선택 정렬(Selection Sort) | Rad Blog</title>
+    <meta name="description" content="정렬 알고리즘 - 선택 정렬(Selection Sort) - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="정렬 알고리즘 - 선택 정렬(Selection Sort)">
+    <meta itemprop="description" content="정렬 알고리즘 - 선택 정렬(Selection Sort) - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="정렬 알고리즘 - 선택 정렬(Selection Sort)">
+    <meta property="og:description" content="정렬 알고리즘 - 선택 정렬(Selection Sort) - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/til/20.07.01/">
+    <meta property="og:url" content="https://xfrnk2.github.io/algorithm/selection_sort/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/til/20.07.01/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/til/20.07.01/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/algorithm/selection_sort/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/algorithm/selection_sort/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.01/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/algorithm/selection_sort/">
+    <i class="fas fa-fw fa-code"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.01/">20.07.01_TIL</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/algorithm/selection_sort/">정렬 알고리즘 - 선택 정렬(Selection Sort)</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-07-01</span>
+        <span class="date moment">2020-07-14</span>
         
         
 
@@ -138,27 +138,101 @@
     </div>
 
     
-    <h4 id="계획했던-일">계획했던 일</h4>
+    <p><em>선택정렬의 원리와 특징 및 성능에 대해서 정리하는 글이다.</em></p>
+<blockquote>
+<p><strong>&lt;학습 목표&gt;</strong></p>
 <ul>
-<li>생활코딩 Java Script 강의 듣기</li>
-<li><del>코딩하기</del></li>
-<li><del>셸 정렬 직접 구현</del></li>
-<li>Apachi와 Django 연동 시키기</li>
+<li>선택정렬의 원리를 이해한다.</li>
+<li>선택정렬의 특징을 파악한다.</li>
+<li>선택정렬의 성능을 기억한다.</li>
+<li>모든 과정을 설명할 수 있다.</li>
+<li>선택정렬을 프로그래밍 언어로 구현할 수 있다.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="선택정렬의-원리"><strong>선택정렬의 원리</strong></h3>
+<ul>
+<li>비교 연산을 통해 주어진 배열의 최솟값을 탐색</li>
+<li>배열의 가장 앞에있는 원소와 최솟값을 교환</li>
+<li>나머지 미정렬 부분을 가지고 위의 과정을 반복</li>
 </ul>
 <hr>
-<h4 id="오늘-한-일">오늘 한 일</h4>
+<h3 id="선택정렬의-정렬-과정"><strong>선택정렬의 정렬 과정</strong></h3>
+<p>배열의 크기 = n = 5,<br>
+최솟값의 인덱스 = least_index</p>
+<pre><code>[5, 3, 4, 2, 1] 
+</code></pre><hr>
 <ul>
-<li>셸 정렬을 직접 구현하였다.</li>
-<li>퀵 정렬을 이전과 다른 형태로 구현하고, 복습했다. 이다음엔 중간을 피벗으로 한 것을 구현해보려고 한다.</li>
-<li>사실상 알바 관계로 계획했던 것들을 미처 끝내지 못했다.</li>
+<li>0번째와 1~4번째값을 비교하여 보다 작은 값의 index를 least_index에 저장한다.</li>
+<li>결과 : 최솟값 = 1, least_index = 4</li>
+<li>least_index 위치의 값과 0번째 값을 swap한다.</li>
 </ul>
+<p><strong>결과 : 0번째 값(1) 정렬</strong></p>
+<pre><code>[1, 3, 4, 2, 5] 
+</code></pre><hr>
+<ul>
+<li>1번째와 2~4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
+<li>최솟값 = 2, least_index = 3</li>
+<li>least_index 위치의 값과 1번째 값을 swap한다.</li>
+</ul>
+<p><strong>결과 : 0, 1번째 값(1, 2) 정렬</strong></p>
+<pre><code>[1, 2, 4, 3, 5] 
+</code></pre><hr>
+<ul>
+<li>2번째와 3~4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
+<li>최솟값 = 3, least_index = 3</li>
+<li>least_index 위치의 값과 2번째 값을 swap한다.</li>
+</ul>
+<p><strong>결과 : 0, 1, 2번째 값(1, 2, 3) 정렬</strong></p>
+<pre><code>[1, 2, 3, 4, 5] 
+</code></pre><hr>
+<ul>
+<li>3번째와 4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
+<li>최솟값 = 4, least_index = 3</li>
+<li>least_index 위치의 값과 3번째 값을 swap한다. (사실상 제자리)</li>
+</ul>
+<p><strong>결과 : 0, 1, 2, 3번째 값(1, 2, 3, 4) 정렬</strong></p>
+<pre><code>[1, 2, 3, 4, 5] 
+</code></pre><hr>
+<h3 id="source-code"><strong>Source Code</strong></h3>
+<pre><code>n = len(array) 
+
+for i in range(0, n-1):
+	least_index = i
+	for j in range(i+1, n):
+		if arr[j] &lt; arr[least_index]:
+			least_index = j
+
+	arr[i], arr[least_index] = arr[least_index], arr[i]
+</code></pre><hr>
+<h3 id="선택정렬의-성능"><strong>선택정렬의 성능</strong></h3>
+<ul>
+<li>외부 루프에서 n-1번, 내부 루프에서 n-1, n-2, &hellip;, 2, 1번의 비교가 일어난다.</li>
+</ul>
+<blockquote>
+<p>입력 크기 n에 대한 버블 정렬 알고리즘은 이중 루프로 구성되며, 바깥 루프는 i=0, &hellip;, (n-2)까지 (n-1)번 반복하며, 최솟값을 찾기 위한 안쪽 루프 j에 대해서는 i=0일 때(n-1)번의 인접한 두 값의 비교가 수행되고, i=1일때 (n-2)번 비교, i=2일때는 (n-3)번 비교, &hellip;, i=(n-2)일 때 1번의 비교를 수행한다. 따라서 총비교횟수는 (n-1)+(n-2)+(n-3)+&hellip;+2+1 = n(n-1)/2이므로, 버블정렬 알고리즘의 시간복잡도는 $O(n^2)$이 된다.</p>
+</blockquote>
 <hr>
-<h4 id="내일-할-일">내일 할 일</h4>
+<h3 id="선택정렬의-특징"><strong>선택정렬의 특징</strong></h3>
 <ul>
-<li>Apachi와 Django 연동 시키기</li>
-<li>생활코딩 Java Script 강의 듣기</li>
-<li>퀵 정렬 중앙을 피벗으로 한 형태의 코드를 구현하기</li>
+<li>비교 기반 정렬이다.</li>
+<li>데이터의 입력 상태에 민감하지 않다.</li>
 </ul>
+<blockquote>
+<p>주어진 데이터에서 최솟값을 찾는 과정이 데이터가 가지는 순서와 무관하게 항상 일정한 시간을 갖기 때문이다.</p>
+</blockquote>
+<ul>
+<li>제자리 정렬이다.</li>
+</ul>
+<blockquote>
+<p>입력 데이터가 저장된 공간 이외에 별도의 공간을 상수개(루프의 제어 변수 i와 j, 최솟값의 인덱스를 저장하기 위한 변수 least_index 그리고 데이터 교환을 위한 변수 하나)만을 사용한다. 따라서 선택 정렬은 제자리 정렬이다.</p>
+</blockquote>
+<ul>
+<li>안정적이지 않은 알고리즘이다.</li>
+</ul>
+<blockquote>
+<p>예를 들어 [10, 20, 40, 40, 30]이라는 배열 A가 주어지고 선택 정렬이 적용됨에 따라 10, 20까지 정렬되었다면, 그다음 단계에서는 A[2..4]에서 최솟값 30을 찾고, 미정렬 부분의 첫 번째 원소인 A[2]=40(A)와 위치를 교환한다. 그 뒤 i=3일 때 A[3..4]에서 최솟값 40(B)를 찾고, 첫 번째 원소 A[3]=40(b)와 위치를 교환한 후 알고리즘이 종료된다. 정렬이 끝난 후 동일한 값을 갖는 40의 순서는 B,A가 되어 정렬 전의 순서가 유지되지 못했기 때문에, 선택정렬은 불안정적 정렬이다.</p>
+</blockquote>
 
     
 </div>
