@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> 데이터베이스 기초 - 데이터베이스 모델링과 ER모델 | Rad Blog</title>
-    <meta name="description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델">
-    <meta itemprop="description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델">
-    <meta property="og:description" content="데이터베이스 기초 - 데이터베이스 모델링과 ER모델 - Bilberry Premium Theme for Hugo.">
+    <title> 20.07.14_TIL | Rad Blog</title>
+    <meta name="description" content="20.07.14_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.07.14_TIL">
+    <meta itemprop="description" content="20.07.14_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.07.14_TIL">
+    <meta property="og:description" content="20.07.14_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/database/database2-modeling-ermodel/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.07.14/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/database/database2-modeling-ermodel/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/database/database2-modeling-ermodel/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.14/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.14/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/database/database2-modeling-ermodel/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.14/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/database/database2-modeling-ermodel/">데이터베이스 기초 - 데이터베이스 모델링과 ER모델</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.14/">20.07.14_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-15</span>
+        <span class="date moment">2020-07-14</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/database/">database</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,88 +138,27 @@
     </div>
 
     
-    <blockquote>
-<p>데이터베이스에 대해 공부한 내용을 이해하고 정리한 글입니다. 첫 공부이므로 기초적인 내용을 다루며 추후 자세한 정보로 업데이트를 예정하고 있습니다.</p>
-</blockquote>
-<hr>
-<h3 id="모델링의-단계">모델링의 단계</h3>
-<ol>
-<li>사용자 요구사항 분석 (-&gt; 데이터 및 업무)</li>
-<li>개념적 데이터 모델링 (-&gt; ER 모델)</li>
-<li>논리적 데이터 모델링 (-&gt; 관계형 모델)</li>
-<li>물리적 데이터 모델링 (-&gt; 물리적 세부사항)</li>
-<li>내부 스키마</li>
-</ol>
-<hr>
-<h3 id="사용자-요구-사항-분석">사용자 요구 사항 분석</h3>
+    <h4 id="계획했던-일">계획했던 일</h4>
 <ul>
-<li>도출, 분석, 기록 단계로 수행</li>
-<li>국제 표준화 : IEEE-Std-830</li>
+<li><del>Django 인스타그램 클론 프로젝트 AtoZ 진행하기</del></li>
+<li><del>삽입 정렬에 대한 글 완료하기</del></li>
+<li>Apachi와 Django 연동 시키기</li>
 </ul>
-<h6 id="분석-과정">분석 과정</h6>
-<ol>
-<li>제안요청서 (-&gt; 도출)</li>
-<li>요구사항 명세서 (-&gt; 분석)</li>
-<li>요구사항 정의서 (-&gt; 기록)</li>
-</ol>
 <hr>
-<h3 id="er-모델">ER 모델</h3>
-<ol>
-<li>개체집합 : 속성을 공유하는 개체들의 모임</li>
-<li>관계집합 : 개체와 개체간의 연관성</li>
-<li>속성 : 개체의 특성</li>
-</ol>
-<blockquote>
-<p><strong>속성의 종류</strong><br>
-저장 속성 : 다른값으로부터 유추될수가 없는 속성<br>
-유도속성 : 다른값으로부터 유추될수가 있는 속성</p>
-<p>단순 속성 : 더 작은 구성요소로 나눌수 없는 속성<br>
-복합 속성 : 더 작은 구성요소로 나눌수 있는 속성</p>
-<p>단일값 속성 : 한 개체에 대해 단 하나의 값만 갖는 속성<br>
-다중값 속성 : 한 개체에 대해 여러 개의 값을 갖는 속성</p>
-</blockquote>
-<hr>
-<h3 id="제약-조건">제약 조건</h3>
-<h6 id="효과">효과</h6>
+<h4 id="오늘-한-일">오늘 한 일</h4>
 <ul>
-<li>정확성 향상</li>
+<li>Django 회원가입 기능을 구현했다.</li>
+<li>삽입 정렬에 대한 글 작성을 완료하고 포스팅했다.</li>
+<li>이전에 구현한 진법 변환 프로그램의 코드를 개선했다.</li>
+<li>도서 <a href="http://www.yes24.com/Product/Goods/59382266">파친코</a> 2권을 완독하여 전권을 다 읽었다.</li>
 </ul>
-<h6 id="종류">종류</h6>
-<ol>
-<li>사상수</li>
-<li>참가 제약조건</li>
-<li>키 속성</li>
-</ol>
-<blockquote>
-<h6 id="1-사상수">1. 사상수</h6>
-<p>일대일(1:1) : 마름모(관계) + 양 쪽 모두 화살표<br>
-일대다(1:N) : 마름모(관계) + 일 쪽만 화살표<br>
-다대일(N:1) : 마름모(관계) + 일 쪽만 화살표<br>
-다대다(N:N) : 마름모(관계) + 화살표 X</p>
-</blockquote>
-<blockquote>
-<h6 id="2-참가-제약조건">2. 참가 제약조건</h6>
-<ol>
-<li>전체적 참가<br>
--&gt; 어떤 개체 집합의 모든 개체가 관계 집합에 참여하는 조건 / <strong>두 줄</strong></li>
-<li>부분적 참가<br>
--&gt; 어떤 개체 집합의 일부 개체가 관계 집합에 참여하는 조건<br>
-예시) 교수와 강의하지 않는 교수, 그리고 과목</li>
-</ol>
-</blockquote>
-<blockquote>
-<h6 id="3-키-속성">3. 키 속성</h6>
-<p><strong>키</strong><br>
-각 개체를 구별하는데 사용되는 유일한 값을 가지는 속성의 집합<br>
-개체 및 관계 집합의 특정 관계를 찾는 역할</p>
-<p><strong>특수 속성과 관계</strong><br>
-관계 집합의 속성 : 두 개체 집합의 관계에서 생성되는 값을 저장하는 속성<br>
-재귀적 관계 : 한 개체 집합이 자기 자신과 관계 집합을 형성하는 관계<br>
-예시) &lsquo;과목&rsquo; 개체집합의 선수과목코드-&lt;선수과목&gt;-&gt; 과목코드</p>
-<p><strong>특수 관계</strong><br>
-약한 개체 집합 : 개체의 존재 유무가 관계를 맺고 있는 개체의 존재에 종속되는 개체 집합<br>
-강한 개체 집합 : 약한 개체 집합과 연결되는 일반 개체 집합</p>
-</blockquote>
+<hr>
+<h4 id="내일-할-일">내일 할 일</h4>
+<ul>
+<li>Django 인스타그램 클론 프로젝트 AtoZ 진행하기</li>
+<li>알고리즘 관련 블로그 포스팅 준비하기</li>
+<li>Apachi와 Django 연동 시키기</li>
+</ul>
 
     
 </div>
@@ -234,11 +173,7 @@
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/database/">database</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/ermodel/">ermodel</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>
