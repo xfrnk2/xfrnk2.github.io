@@ -5,10 +5,22 @@
     <link>https://xfrnk2.github.io/tags/sorting/</link>
     <description>Recent content in Sorting on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 10 Jul 2020 00:08:44 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2020 15:55:01 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>정렬 알고리즘 - 선택 정렬(Selection Sort)</title>
+      <link>https://xfrnk2.github.io/algorithm/selection_sort/</link>
+      <pubDate>Tue, 14 Jul 2020 15:55:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/algorithm/selection_sort/</guid>
+      <description>선택정렬의 원리와 특징 및 성능에 대해서 정리하는 글이다.
+ &amp;lt;학습 목표&amp;gt;
+ 선택정렬의 원리를 이해한다. 선택정렬의 특징을 파악한다. 선택정렬의 성능을 기억한다. 모든 과정을 설명할 수 있다. 선택정렬을 프로그래밍 언어로 구현할 수 있다.    선택정렬의 원리  비교 연산을 통해 주어진 배열의 최솟값을 탐색 배열의 가장 앞에있는 원소와 최솟값을 교환 나머지 미정렬 부분을 가지고 위의 과정을 반복   선택정렬의 정렬 과정 배열의 크기 = n = 5,
+최솟값의 인덱스 = least_index</description>
+    </item>
     
     <item>
       <title>정렬 알고리즘 - 버블 정렬(Bubble Sort)</title>
