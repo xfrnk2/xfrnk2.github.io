@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Jul 2020 23:26:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 23:48:27 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.19_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.19/</link>
+      <pubDate>Sun, 19 Jul 2020 23:48:27 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.19/</guid>
+      <description>계획했던 일  Django 인스타그램 클론 프로젝트 AtoZ 진행하기 알고리즘 관련 블로그 포스팅 준비하기 Apachi와 Django 연동 시키기 프로그래머스 문제 풀기(멀쩡한 사각형)   오늘 한 일  프로그래머스 lv2 문제 멀쩡한 사각형 문제를 풀었다. 브레센헴 알고리즘에 대해 충분히 이해하였으니 이제 포스팅을 하면 된다. 영어 회화 표현 6개를 공부하고 라이브 아카데미의 동영상을 보며 섀도잉과 스피킹 연습을 했다. 이전까지 묵혀두었던 계획한 일들에 더하여 현재 우선시 해야하는 일을 두고 순위를 매겨서 내일 할 일을 계획했다.</description>
+    </item>
     
     <item>
       <title>20.07.18_TIL</title>
