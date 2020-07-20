@@ -5,10 +5,21 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 19 Jul 2020 23:48:27 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 20 Jul 2020 23:46:32 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.20/</link>
+      <pubDate>Mon, 20 Jul 2020 23:46:32 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.20/</guid>
+      <description>계획했던 일  브레센헴 알고리즘 관련 포스팅 하기 어디에서나 서버 띄우는 것을 목표로 도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기   오늘 한 일   프로그래머스 lv2 문제 프린터를 풀었다.
+  코딩 테스트 연습문제를 풀면서 들었던 생각을 블로그에 포스팅했다.
+   도커를 학습하기 전 tdd에 대한 숙지와 이해를 가지고 시작해야겠다고 판단되어 이론적인 것을 보고, 그동안 pytest를 위해 만들고 방치해놓았던 파일들로부터 발생하는 오류를 해결하고 자동화를 위해 연결된 travis-ci에서 발생하는 에러도 해결하도록 했다.</description>
+    </item>
     
     <item>
       <title>20.07.19_TIL</title>
