@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jul 2020 23:46:32 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2020 02:06:57 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.21/</link>
+      <pubDate>Tue, 21 Jul 2020 02:06:57 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.21/</guid>
+      <description>계획했던 일  즐거운 마음으로 서울대입구역 알고리즘 스터디모임 첫참가 하기 어디에서나 서버 띄우는 것을 목표로 도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  프로그래머스 lv2 문제 프린터 문제를 풀었다. 사실상 스터디 모임 참가를 위해 알고리즘 문제를 푸는 일을 우선하다가 시간을 이미 사용해버려서 지하철 이동하면서 오가는 길에 도커가 무엇이고 컨테이너가 무엇인지 읽었다. 알고리즘 스터디 모임에 처음 참여했는데 생각이상으로 즐거웠고 모두 좋은 분들이었다.</description>
+    </item>
     
     <item>
       <title>20.07.20_TIL</title>
