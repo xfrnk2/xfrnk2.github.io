@@ -5,10 +5,22 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 22 Jul 2020 23:23:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 01:42:51 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>IT 용어 정리</title>
+      <link>https://xfrnk2.github.io/it-voca/it_voca/</link>
+      <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/it-voca/it_voca/</guid>
+      <description>새롭게 알게된 IT용어와 관련 영어 어휘들을 정리하기 위한 문서이며 계속해서 업데이트할 예정입니다. 기록한 시간 순서로 나열합니다.
+   GPU (Grapic Processing Unit) : 그래픽 처리 장치
+  container : 코드와 모든 종속성을 패키지화하는 표준 소프트웨어의 단위, 컨테이너 이미지는 런타임에 컨테이너가 된다. docker 컨테이너의 경우 docker 엔진에서 실행될 때 컨테이너가 된다.
+   특징 : (표준, 경량, 균일)     한 어플리케이션을 사용하기 위한 모든 것을 포함한다.</description>
+    </item>
     
     <item>
       <title>20.07.22_TIL</title>
