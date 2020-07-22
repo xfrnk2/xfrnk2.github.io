@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 21 Jul 2020 02:06:57 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 23:23:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.22/</link>
+      <pubDate>Wed, 22 Jul 2020 23:23:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.22/</guid>
+      <description>계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  Docker 공식문서의 튜토리얼을 50%(5/10단계) 진행했다. 영어공부는 덤.. 튜토리얼을 마치면 Django를 실행해볼 예정이다.   내일 할 일  도커(docker)를 설치하고 도커 사용법 익히기 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기  </description>
+    </item>
     
     <item>
       <title>20.07.21_TIL</title>
