@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 23 Jul 2020 01:42:51 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2020 23:09:07 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/tags/til/</link>
+      <pubDate>Thu, 23 Jul 2020 23:09:07 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>IT-Voca</title>
@@ -16,15 +25,6 @@
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Wed, 22 Jul 2020 23:23:07 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/til/</guid>
       <description></description>
     </item>
     

@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> Django - 관계를 표현하는 Model Field - ManyToManyField | Rad Blog</title>
-    <meta name="description" content="Django - 관계를 표현하는 Model Field - ManyToManyField - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="Django - 관계를 표현하는 Model Field - ManyToManyField">
-    <meta itemprop="description" content="Django - 관계를 표현하는 Model Field - ManyToManyField - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="Django - 관계를 표현하는 Model Field - ManyToManyField">
-    <meta property="og:description" content="Django - 관계를 표현하는 Model Field - ManyToManyField - Bilberry Premium Theme for Hugo.">
+    <title> 20.07.23_TIL | Rad Blog</title>
+    <meta name="description" content="20.07.23_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.07.23_TIL">
+    <meta itemprop="description" content="20.07.23_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.07.23_TIL">
+    <meta property="og:description" content="20.07.23_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/django/django_manytomanyfield/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.07.23/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/django/django_manytomanyfield/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_manytomanyfield/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.23/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.07.23/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_manytomanyfield/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.23/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_manytomanyfield/">Django - 관계를 표현하는 Model Field - ManyToManyField</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.23/">20.07.23_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-04</span>
+        <span class="date moment">2020-07-23</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,85 +138,26 @@
     </div>
 
     
-    <blockquote>
-<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
-</blockquote>
-<hr>
-<h3 id="manytomanyfield">ManyToManyField</h3>
-<h6 id="m--n-관계에서-어느쪽이라도-필드-지정-가능">M : N 관계에서 어느쪽이라도 필드 지정 가능</h6>
-<h6 id="manytomanyfieldto-blankflase">ManyToManyField(to, blank=Flase)</h6>
+    <h4 id="계획했던-일">계획했던 일</h4>
 <ul>
-<li>on_delete 옵션이 없고 blank라는 옵션을 <strong>유의미하게</strong> 사용<br>
-예 ) 태그 지정에 대한 유효성 검사</li>
-<li>ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,<br>
-ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)</li>
-</ul>
-<h6 id="방법-1-권장">방법 1 (권장)</h6>
-<pre><code>class Post(models.Model):
-	tag_set = models.ManyToManyField('Tag', blank=True)
-
-class Article(models.Model):
-	tag_set = models.ManyToManyField('Tag', blank=True)
-
-class Tag(models.Model):
-	name = models.CharField(max=length=100, unique=True)
-</code></pre><h6 id="방법-2">방법 2</h6>
-<pre><code>class Post(models.Model):
-    ...
-class Article(models.Model):
-    ...
-class Tag(models.Model):
-	name = models.CharField(max_length=100, unique = True)
-	post_set = models.ManyToManyField('Post', blank = True)
-	article_set = models.ManyToManyField('Article', blank = True)
-</code></pre><ul>
-<li>활용 당하는 쪽 보다는 활용하는 쪽에 ManyToManyField를 지정하는 것을 권장</li>
-</ul>
-<h6 id="공식-문서">공식 문서</h6>
-<p><a href="https://docs.djangoproject.com/en/3.0/ref/models/fields/#manytomanyfield">https://docs.djangoproject.com/en/3.0/ref/models/fields/#manytomanyfield</a></p>
-<hr>
-<h3 id="rdbms지만-db따라-nosql기능도-지원">RDBMS지만, DB따라 NoSQL기능도 지원</h3>
-<blockquote>
-<h6 id="하나의-post-안에-다수의-댓글-저장-가능">하나의 Post 안에 다수의 댓글 저장 가능</h6>
-<p>(NoSQL에서는 테이블이라기보다는 문서를 저장하는 개념)</p>
-</blockquote>
-<h6 id="djkochjsonfield">djkoch/jsonfield</h6>
-<ul>
-<li>대개의 DB엔진에서 사용 가능</li>
-<li>TextField/CharField를 래핑</li>
-<li>dict 등의 타입에 대한 저장을 직렬화하여 문자열로 저장</li>
-</ul>
-<blockquote>
-<p>내부 필드에 대해 쿼리 불가</p>
-</blockquote>
-<h6 id="djangocontribpostgresfieldsjsonfield">Django.contrib.postgres.fields.JSONField</h6>
-<ul>
-<li>내부적으로 postgreSQL의 jsonb 타입</li>
-<li>내부 필드에 대해 쿼리 지원</li>
-</ul>
-<h6 id="adamchainzdjango-mysql">adamchainz/django-mysql</h6>
-<ul>
-<li>MySQL 5.7 이상에서 json 필드 지원</li>
+<li><del><strong>도커(docker)를 설치하고 도커 사용법 익히기</strong></del></li>
+<li>만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기</li>
+<li>시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기</li>
 </ul>
 <hr>
-<h3 id="코드-예시">코드 예시</h3>
-<pre><code>post = Post.objects.get(title=&quot;첫번째 글&quot;)
+<h4 id="오늘-한-일">오늘 한 일</h4>
+<ul>
+<li>수강신청을 했다.</li>
+<li>Docker 공식문서의 튜토리얼 어제의 배운 내용을 복습하고 bind mount~multi container apps를 진행중이다.</li>
+</ul>
+<hr>
+<h4 id="내일-할-일">내일 할 일</h4>
+<ul>
+<li><strong>도커(docker)를 설치하고 도커 사용법 익히기</strong></li>
+<li>뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기</li>
+<li>시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기</li>
+</ul>
 
-Tag.objects.create(name = '파이썬') #Tag 객체를 추가
-Tag.objects.create(name = '장고')
-Tag.objects.create(name = '문서')
-Tag.objects.all()
-
-tag = Tag.objects.first() # '파이썬'
-
-#역추적 가능, 관계된 post객체들과 tag 객체들을 조회
-tag.post_set.all()
-post.tag_set.all()
-
-#리스트&amp;튜플과 같은 컨테이너형 변수 단위의 추가도 가능
-tag_qs = Tag.objects.all()
-post.tag_set.add(*tag_qs) # * unpacking
-</code></pre>
     
 </div>
 
@@ -230,7 +171,7 @@ post.tag_set.add(*tag_qs) # * unpacking
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>
