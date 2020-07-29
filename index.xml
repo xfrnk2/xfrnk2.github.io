@@ -4,15 +4,24 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Jul 2020 23:07:02 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 23:45:21 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Sabjil_recordings</title>
+      <link>https://xfrnk2.github.io/sabjil_recording/</link>
+      <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/sabjil_recording/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Mon, 27 Jul 2020 23:07:02 +0900</pubDate>
+      <pubDate>Wed, 29 Jul 2020 23:07:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
       <description></description>
