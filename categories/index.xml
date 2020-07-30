@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Jul 2020 23:45:21 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/categories/til/</link>
+      <pubDate>Thu, 30 Jul 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>수습한 삽질기록</title>
@@ -16,15 +25,6 @@
       <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/%EC%88%98%EC%8A%B5%ED%95%9C-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Wed, 29 Jul 2020 23:07:02 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
     </item>
     

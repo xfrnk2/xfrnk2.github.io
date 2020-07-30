@@ -136,7 +136,7 @@
     </div>
 
     
-    <p> Travis-ci에서 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서,  이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.</p>
+    <p> Travis-ci에서 python venv 실행시 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서,  이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.</p>
 <p> Windows는 나의 지정 경로에 python이 설치 되어 있었고, 내가 사용하지 않는 Linux에서는 python의 설치된 경로가 &lsquo;usr/local/python&rsquo; 인 것으로 알게 되었기 때문이다. 그래서 환경 변수를 dockerfile에서 어떻게 다루는가에 대해 알아보게 됬는데&hellip;</p>
 <p> 결론부터 말하면 Docker는 &lsquo;리눅스 커널에서 제공하는 컨테이너 기술을 이용&rsquo;, 리눅스 이기 때문에 Windows와 Linux를 가를 이유가 없었다.</p>
 <p>그래도 삽질한 만큼의 수확은 있었는데, 간단히나마 알게 된 점을 정리해보면..</p>
@@ -218,6 +218,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.07.30/">20.07.30_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/sabjil_recording/docker_is_based_on_linux/">Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까? &lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt;</a>
                 </li>
                 
@@ -239,10 +243,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.07.25/">20.07.25_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.24/">20.07.24_TIL</a>
                 </li>
                 
             </ul>
