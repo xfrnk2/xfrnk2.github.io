@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Jul 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.07.31_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.07.31/</link>
+      <pubDate>Fri, 31 Jul 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.07.31/</guid>
+      <description>계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  영어 공부 Docker와 Mysql의 연동을 성공했지만 이 방법 저 방법으로 시도해보아도 자주 나타났던 에러.  . django.db.utils.OperationalError: (2002, &amp;quot;Can&#39;t connect to MySQL server on &#39;127.0.0.1&#39; (115)&amp;quot;) 시행착오를 반복하다가 해결이 안되어 작은 것 부터 해보기로 생각을 간추렸다.
+ mysql과 django를 연동하는것은 무리가 없었다. mysql workbench 보는방법, 다루는 방법을 보다 자세하게 알기 mysql과 docker연동에 대해 무지함 -&amp;gt; mysql 컨테이너와 djnago 컨테이너를 연결하기.</description>
+    </item>
     
     <item>
       <title>20.07.30_TIL</title>
