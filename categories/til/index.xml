@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 31 Jul 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.01/</link>
+      <pubDate>Sat, 01 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.01/</guid>
+      <description>계획했던 일  에러 해결하기  django.db.utils.OperationalError: (2002, &amp;quot;Can&#39;t connect to MySQL server on &#39;127.0.0.1&#39; (115)&amp;quot;)  오늘 한 일  mysql workbench 사용법과 mysql 커맨드, docker run의 flag 등을 배우고 익혔다. 결국 docker 컨테이너 두 곳에 django과 mysql를 각각 실행시켜 놓고 각 docker끼리 연결시켜야 되는것이 아닌가 생각이 기울었다. 그러나 여전히 삽질중. 어제 간단히 간추렸던 생각들이 가리키는대로 차례로 따라서 해보았다. &amp;ndash;link는 예전 방식이기 때문에 &amp;ndash;network를 쓰라고 하는데 network에 관한 문서나 지금까지 찾아본 자료들로는 곧바로 적용시키는 것이 어려웠던 편이다.</description>
+    </item>
     
     <item>
       <title>20.07.31_TIL</title>
