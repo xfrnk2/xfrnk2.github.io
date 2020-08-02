@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.02_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.02/</link>
+      <pubDate>Sun, 02 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.02/</guid>
+      <description>계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  docker-compose를 이용해서 mysql container와 mysql django container를 올리는 작업에 성공했다.
+ &amp;lt;알게된 과정&amp;gt;  로컬의 mysql서버와 연동하는것은 이 이후의 작업들에 비해서 수고스럽지 않았다. docker container에 django 서버를 올려서 로컬의 mysql에 연동시켰다. docker container에 django 서버와 mysql 서버를 동시에 올리려고 하는데 방법을 몰라 찾아보는 시간이 길었던 것 같다. &amp;ndash;link 또는 &amp;ndash;network 기능을 사용해야되는것처럼 보여서 공식문서를 따라갔는데 습득과 적용이 잘 되지 않아 docker-compose를 배우는 쪽으로 방향을 틀었다.</description>
+    </item>
     
     <item>
       <title>20.08.01_TIL</title>
