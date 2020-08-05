@@ -26,10 +26,10 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
     
     <item>
       <title>[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</title>
-      <link>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container-%EB%B3%B5%EC%82%AC%EB%B3%B8/</link>
+      <link>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container-%EB%B3%B5%EC%82%AC%EB%B3%B8/</guid>
+      <guid>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/</guid>
       <description>1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
 ▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
 mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
