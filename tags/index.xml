@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>database</title>
+      <link>https://xfrnk2.github.io/tags/database/</link>
+      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://xfrnk2.github.io/tags/docker/</link>
+      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://xfrnk2.github.io/tags/mysql/</link>
+      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/mysql/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -20,11 +47,11 @@
     </item>
     
     <item>
-      <title>삽질</title>
-      <link>https://xfrnk2.github.io/tags/%EC%82%BD%EC%A7%88/</link>
+      <title>resolved problem</title>
+      <link>https://xfrnk2.github.io/tags/resolved-problem/</link>
       <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/tags/%EC%82%BD%EC%A7%88/</guid>
+      <guid>https://xfrnk2.github.io/tags/resolved-problem/</guid>
       <description></description>
     </item>
     
@@ -65,15 +92,6 @@
     </item>
     
     <item>
-      <title>database</title>
-      <link>https://xfrnk2.github.io/tags/database/</link>
-      <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/database/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>relationmodel</title>
       <link>https://xfrnk2.github.io/tags/relationmodel/</link>
       <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
@@ -92,6 +110,15 @@
     </item>
     
     <item>
+      <title>algorithm</title>
+      <link>https://xfrnk2.github.io/tags/algorithm/</link>
+      <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>BOJ</title>
       <link>https://xfrnk2.github.io/tags/boj/</link>
       <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
@@ -101,47 +128,20 @@
     </item>
     
     <item>
-      <title>알고리즘</title>
-      <link>https://xfrnk2.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <title>tree</title>
+      <link>https://xfrnk2.github.io/tags/tree/</link>
       <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
+      <guid>https://xfrnk2.github.io/tags/tree/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>트리순회</title>
-      <link>https://xfrnk2.github.io/tags/%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C/</link>
-      <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>정렬</title>
-      <link>https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/</link>
-      <pubDate>Thu, 14 May 2020 18:21:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>기타</title>
-      <link>https://xfrnk2.github.io/tags/%EA%B8%B0%ED%83%80/</link>
-      <pubDate>Thu, 14 May 2020 18:20:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/%EA%B8%B0%ED%83%80/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>문자열 처리</title>
-      <link>https://xfrnk2.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC/</link>
+      <title>string</title>
+      <link>https://xfrnk2.github.io/tags/string/</link>
       <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC/</guid>
+      <guid>https://xfrnk2.github.io/tags/string/</guid>
       <description></description>
     </item>
     
@@ -218,20 +218,11 @@
     </item>
     
     <item>
-      <title>정수판별</title>
-      <link>https://xfrnk2.github.io/tags/%EC%A0%95%EC%88%98%ED%8C%90%EB%B3%84/</link>
-      <pubDate>Tue, 21 Apr 2020 00:55:42 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/%EC%A0%95%EC%88%98%ED%8C%90%EB%B3%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Admin</title>
-      <link>https://xfrnk2.github.io/tags/admin/</link>
+      <title>Django-Admin</title>
+      <link>https://xfrnk2.github.io/tags/django-admin/</link>
       <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/tags/admin/</guid>
+      <guid>https://xfrnk2.github.io/tags/django-admin/</guid>
       <description></description>
     </item>
     

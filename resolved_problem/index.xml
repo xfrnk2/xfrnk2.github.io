@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resolved_problems on Rad Blog</title>
+    <link>https://xfrnk2.github.io/resolved_problem/</link>
+    <description>Recent content in Resolved_problems on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 29 Jul 2020 23:45:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/resolved_problem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까? &lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt;</title>
+      <link>https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/</link>
+      <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/</guid>
+      <description>Travis-ci에서 python venv 실행시 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서, 이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.
+ Windows는 나의 지정 경로에 python이 설치 되어 있었고, 내가 사용하지 않는 Linux에서는 python의 설치된 경로가 &amp;lsquo;usr/local/python&amp;rsquo; 인 것으로 알게 되었기 때문이다. 그래서 환경 변수를 dockerfile에서 어떻게 다루는가에 대해 알아보게 됬는데&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

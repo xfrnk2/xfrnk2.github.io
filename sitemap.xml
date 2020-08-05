@@ -3,27 +3,87 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xfrnk2.github.io/til/20.08.04/</loc>
-    <lastmod>2020-08-04T23:46:29+09:00</lastmod>
+    <loc>https://xfrnk2.github.io/docker/docker_connect_containers_network/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container-%EB%B3%B5%EC%82%AC%EB%B3%B8/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/docker/docker_connect_containers_compose/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/mysql/123/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2020-08-04T23:46:29+09:00</lastmod>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2020-08-04T23:46:29+09:00</lastmod>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/database/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/docker/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/docker/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/docker/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/mysql/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/mysql/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/mysql/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2020-08-04T23:46:29+09:00</lastmod>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2020-08-05T10:36:16+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/20.08.04/</loc>
     <lastmod>2020-08-04T23:46:29+09:00</lastmod>
   </url>
   
@@ -39,11 +99,6 @@
   
   <url>
     <loc>https://xfrnk2.github.io/til/</loc>
-    <lastmod>2020-08-04T23:46:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
     <lastmod>2020-08-04T23:46:29+09:00</lastmod>
   </url>
   
@@ -73,22 +128,22 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/sabjil_recording/docker_is_based_on_linux/</loc>
+    <loc>https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/</loc>
     <lastmod>2020-07-29T23:45:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/sabjil_recording/</loc>
+    <loc>https://xfrnk2.github.io/tags/resolved-problem/</loc>
     <lastmod>2020-07-29T23:45:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/%EC%82%BD%EC%A7%88/</loc>
+    <loc>https://xfrnk2.github.io/categories/resolved-problem/</loc>
     <lastmod>2020-07-29T23:45:21+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/categories/%EC%88%98%EC%8A%B5%ED%95%9C-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D/</loc>
+    <loc>https://xfrnk2.github.io/resolved_problem/</loc>
     <lastmod>2020-07-29T23:45:21+09:00</lastmod>
   </url>
   
@@ -538,11 +593,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/database/</loc>
-    <lastmod>2020-05-16T19:35:24+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/categories/database/</loc>
     <lastmod>2020-05-16T19:35:24+09:00</lastmod>
   </url>
@@ -588,6 +638,11 @@
   </url>
   
   <url>
+    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
+    <lastmod>2020-05-14T18:22:50+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xfrnk2.github.io/tags/boj/</loc>
     <lastmod>2020-05-14T18:22:50+09:00</lastmod>
   </url>
@@ -608,12 +663,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
-    <lastmod>2020-05-14T18:22:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/%ED%8A%B8%EB%A6%AC%EC%88%9C%ED%9A%8C/</loc>
+    <loc>https://xfrnk2.github.io/tags/tree/</loc>
     <lastmod>2020-05-14T18:22:50+09:00</lastmod>
   </url>
   
@@ -623,17 +673,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/%EC%A0%95%EB%A0%AC/</loc>
-    <lastmod>2020-05-14T18:21:50+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/boj/18870/</loc>
-    <lastmod>2020-05-14T18:20:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/%EA%B8%B0%ED%83%80/</loc>
     <lastmod>2020-05-14T18:20:50+09:00</lastmod>
   </url>
   
@@ -668,7 +708,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%B2%98%EB%A6%AC/</loc>
+    <loc>https://xfrnk2.github.io/tags/string/</loc>
     <lastmod>2020-05-09T00:48:07+09:00</lastmod>
   </url>
   
@@ -868,11 +908,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/%EC%A0%95%EC%88%98%ED%8C%90%EB%B3%84/</loc>
-    <lastmod>2020-04-21T00:55:42+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/til/20.04.20/</loc>
     <lastmod>2020-04-20T00:56:38+09:00</lastmod>
   </url>
@@ -883,7 +918,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/admin/</loc>
+    <loc>https://xfrnk2.github.io/tags/django-admin/</loc>
     <lastmod>2020-04-19T18:03:29+09:00</lastmod>
   </url>
   

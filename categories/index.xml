@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 04 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docker</title>
+      <link>https://xfrnk2.github.io/categories/docker/</link>
+      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysql</title>
+      <link>https://xfrnk2.github.io/categories/mysql/</link>
+      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/mysql/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -20,11 +38,11 @@
     </item>
     
     <item>
-      <title>수습한 삽질기록</title>
-      <link>https://xfrnk2.github.io/categories/%EC%88%98%EC%8A%B5%ED%95%9C-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D/</link>
+      <title>resolved problem</title>
+      <link>https://xfrnk2.github.io/categories/resolved-problem/</link>
       <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/categories/%EC%88%98%EC%8A%B5%ED%95%9C-%EC%82%BD%EC%A7%88%EA%B8%B0%EB%A1%9D/</guid>
+      <guid>https://xfrnk2.github.io/categories/resolved-problem/</guid>
       <description></description>
     </item>
     
