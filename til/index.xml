@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.06/</link>
+      <pubDate>Thu, 06 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.06/</guid>
+      <description>계획했던 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속   오늘 한 일  한의원에 다녀왔다. 레스토랑 시뮬레이션 코딩을 목표로 타이머 기능의 구현을 위해서 연습용 코드를 짰다.   내일 할 일  코딩하기 django 프로젝트 계획하기  </description>
+    </item>
     
     <item>
       <title>20.08.05_TIL</title>
