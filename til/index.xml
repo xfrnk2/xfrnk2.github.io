@@ -5,10 +5,21 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.07/</link>
+      <pubDate>Fri, 07 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.07/</guid>
+      <description>계획했던 일  코딩하기 django 프로젝트 계획하기   오늘 한 일  python 다른사람의 코드들을 읽었다. @abstractmethod, super()에 대한 내용을 이해했다. 아직 써본적이 없으니 이후 꼭 써보려고 한다. Sendgrid를 가지고 다수의 사람들에게 전체 메일을 보낼수 있도록 했다.
+“smtplib.SMTPServerDisconnected: Connection unexpectedly closed”.
+이런 에러가 있었는데 이것을 해결한 것에 대한 내용은 이외의 포스팅에서 다룰 예정이다. 이전에 배웠던 Django를 복습했다. Django를 다뤄본지 너무 오래 되서 기억이 날듯 말듯 했기 때문이다.   내일 할 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)  </description>
+    </item>
     
     <item>
       <title>20.08.06_TIL</title>
