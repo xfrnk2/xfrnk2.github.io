@@ -5,10 +5,30 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.08_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.08/</link>
+      <pubDate>Sat, 08 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.08/</guid>
+      <description>계획했던 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)   오늘 한 일  어제 겪던 에러의 상황과 해결한 내용에 대해서 포스팅했다.   내일 할 일  충분히 쉬기 Django 로그인과 회원가입 공부  </description>
+    </item>
+    
+    <item>
+      <title>Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</title>
+      <link>https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/</link>
+      <pubDate>Sat, 08 Aug 2020 23:25:41 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/</guid>
+      <description>발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
+ 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
+SENDGRID_API_KEY = os.getenv(&#39;SENDGRID_API_KEY&#39;) EMAIL_HOST = &#39;smtp.sendgrid.net&#39; EMAIL_HOST_USER = &#39;apikey&#39; # this is exactly the value &#39;apikey&#39; EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &amp;gt;&amp;gt;&amp;gt; from django.core.mail import send_mail &amp;gt;&amp;gt;&amp;gt; send_mail(&#39;Subject here&#39;, &#39;Here is the message.</description>
+    </item>
     
     <item>
       <title>20.08.07_TIL</title>

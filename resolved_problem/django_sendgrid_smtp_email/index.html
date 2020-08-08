@@ -1,0 +1,439 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed” | Rad Blog</title>
+    <meta name="description" content="Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed” - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”">
+    <meta itemprop="description" content="Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed” - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”">
+    <meta property="og:description" content="Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed” - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/resolved_problem/django_sendgrid_smtp_email/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/resolved_problem/django_sendgrid_smtp_email/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="발생한-에러">발생한 에러</h3>
+<p><a href="https://sendgrid.com/docs/for-developers/sending-email/django/">https://sendgrid.com/docs/for-developers/sending-email/django/</a></p>
+<ol>
+<li>위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.</li>
+</ol>
+<p>가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.</p>
+<pre><code>SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY')
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey'
+EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+</code></pre><ol start="2">
+<li>전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.</li>
+</ol>
+<pre><code>&gt;&gt;&gt; from django.core.mail import send_mail
+&gt;&gt;&gt; send_mail('Subject here', 'Here is the message.', 'from@example.com', ['to@example.com'], fail_silently=False)
+</code></pre><blockquote>
+<p>invalid outgoing mail server or port” followed by “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”.</p>
+</blockquote>
+<h3 id="해결-방법">해결 방법</h3>
+<p>sendgrid 홈페이지에서 로그인시 최초에 나오는 왼편의 사이드바- Settings &gt; Account details와 API Key의 세부 내용에 대한 설정을 하고 나니 제대로 이메일이 가는 것이 확인 되었다.</p>
+<h3 id="알게된-점">알게된 점</h3>
+<ul>
+<li>venv의 환경변수는 activate.bat 파일 내에서 선언할 수 있다.</li>
+<li>위의 과정에서 내가 환경변수로서 사용하고자했던 APIkey를 담은 변수 SENDGRID_API_KEY 경우, 아래와 같이 선언하니 정상적 적용되었다. 덧붙여서 :END 라인 이전 줄의 set 커맨드와 같은 라인에 끼워 넣었다.</li>
+</ul>
+<pre><code>set SENDGRID_API_KEY=APIKEY번호
+</code></pre><ul>
+<li>환경변수 호출시 Linux에서는 ($variable)이지만, Windows에서는 %variable%이다.</li>
+</ul>
+<h3 id="도움이-된-곳">도움이 된 곳</h3>
+<ul>
+<li><a href="https://stackoverflow.com/questions/46566536/how-can-you-set-environment-variables-in-a-virtualenv-in-windows">https://stackoverflow.com/questions/46566536/how-can-you-set-environment-variables-in-a-virtualenv-in-windows</a></li>
+<li><a href="https://discuss.erpnext.com/t/sendgrid-smtp-email/58865/6">https://discuss.erpnext.com/t/sendgrid-smtp-email/58865/6</a></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.08/">20.08.08_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.07/">20.08.07_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.06/">20.08.06_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.05/">20.08.05_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/database">Database
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/docker">Docker
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/database">Database
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

@@ -100,6 +100,81 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
+ 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net' EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey' EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &gt;&gt;&gt; from django.core.mail import send_mail &gt;&gt;&gt; send_mail('Subject here', 'Here is the message.
+
+    
+    <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -194,6 +269,14 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.08/">20.08.08_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.08.07/">20.08.07_TIL</a>
                 </li>
                 
@@ -211,14 +294,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a>
                 </li>
                 
             </ul>
@@ -261,7 +336,7 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/food-for-thought">Food for thought
+                    <a href="/categories/resolved-problem">Resolved problem
                         </a>
                 </li>
                 

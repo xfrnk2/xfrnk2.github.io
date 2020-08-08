@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 08 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.08_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.08/</link>
+      <pubDate>Sat, 08 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.08/</guid>
+      <description>계획했던 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)   오늘 한 일  어제 겪던 에러의 상황과 해결한 내용에 대해서 포스팅했다.   내일 할 일  충분히 쉬기 Django 로그인과 회원가입 공부  </description>
+    </item>
     
     <item>
       <title>20.08.07_TIL</title>
