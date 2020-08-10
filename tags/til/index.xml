@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.10_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.10/</link>
+      <pubDate>Mon, 10 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.10/</guid>
+      <description>계획했던 일  코딩하기 Django 공식문서 보기, 코딩하기   오늘 한 일  restaurant 코딩 조금. 커밋은 하지 않았다. abstractmethod 구현만 해 놓았다. Django login, logout, signup 기능을 추가하고 회원가입 후 바로 로그인 처리 될수 있도록 했다.(contrib.auth의 login 모듈)   내일 할 일  코딩하기 Django 공식문서 보기, 코딩하기  </description>
+    </item>
     
     <item>
       <title>20.08.09_TIL</title>
