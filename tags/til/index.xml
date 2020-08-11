@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 10 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.11_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.11/</link>
+      <pubDate>Tue, 11 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.11/</guid>
+      <description>계획했던 일  코딩하기 Django 공식문서 보기, 코딩하기   오늘 한 일  Django 공식문서를 번역해서 오픈소스에 기여할 수 있는 방법에 대해서 알아보았다. Django는 Transifex라는 온라인 도구를 사용하여 번역 기여를 상시 모집하고 있는 것 같아 보인다. Github를 통해 오픈소스에 기여하려면 Fork와 Pull Request를 사용하면 된다고 하는데, 사실 Pull Request는 늘 사용했지만 Fork는 사용해본적이 거의 드물다. 날을 잡아서 Fork를 연습해보면 좋을 것 같다. Django 프로필 수정 메뉴에서 이미지 파일을 업로드해서 아바타를 설정할수 있게 했다.</description>
+    </item>
     
     <item>
       <title>20.08.10_TIL</title>
