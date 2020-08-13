@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 12 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.13_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.13/</link>
+      <pubDate>Thu, 13 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.13/</guid>
+      <description>계획했던 일  프로젝트 진행하기   오늘 한 일  피로가 쌓인것 같아서 충분히 쉬었다. Docker 환경설정을 세팅했다. 그간 배워온 것들을 가지고 프로젝트를 진행하려고 하니 드문드문 그 지식만이 생각만 나고 쉽사리 손코딩을 할 수 없었다. 강의를 듣는것에 대한 회의감이 들어서 어느정도 문서를 읽을 수 있게 된 것 같으니 공식문서나 wikidocs등을 사용해 공부하고싶다는 생각이 들었다. 그래서 지금 수강중인 강의를 Instagram 클론하는 과정까지만을 마무리하고, 환불 처리를 요청하기로 결정했다. 우선은 남은 과정을 그대로 따라가보는 것이 좋겠다.</description>
+    </item>
     
     <item>
       <title>20.08.12_TIL</title>
