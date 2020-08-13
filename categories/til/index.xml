@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 11 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 12 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.12_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.12/</link>
+      <pubDate>Wed, 12 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.12/</guid>
+      <description>계획했던 일  코딩하기 Django 공식문서 보기, 코딩하기   오늘 한 일  일과 후 가족과 시간을 보냈다. Docker를 사용해서 Django와 Mysql의 서버를 컨테이너화 했다. 앞으로 인스타그램 클론 프로젝트는 도커를 사용한 환경에서 진행할 예정이다.   내일 할 일  프로젝트 진행하기  </description>
+    </item>
     
     <item>
       <title>20.08.11_TIL</title>
