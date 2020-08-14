@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.14/</link>
+      <pubDate>Fri, 14 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.14/</guid>
+      <description>계획했던 일  Django 로 Instagram 클론코딩 동영상 시청후 코딩하기   오늘 한 일  몸 상태가 좋지 않았다. 공부하는 시간 대부분을 레스토랑 시뮬레이션을 설계하기위해 고민하는데에 보냈다. 클래스의 형태와 대략적인 전체 윤곽을 고민한 것을 글로 옮기고 수정을 반복했다.   내일 할 일  코딩하기  </description>
+    </item>
     
     <item>
       <title>20.08.13_TIL</title>
