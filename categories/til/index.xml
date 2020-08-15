@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 14 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.15/</link>
+      <pubDate>Sat, 15 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.15/</guid>
+      <description>계획했던 일  코딩하기   오늘 한 일  웹 관련 자료를 찾다가 크롬 개발자 도구의 Network란 보는 방법에 대한 글을 읽었다. 코딩연습을 위해 다이아몬드 그리는 코드를 작성했다. 프로그래밍적 사고 능력을 기르기 위해 코딩은 반드시 필요한 것 같다.   내일 할 일  코딩하기  </description>
+    </item>
     
     <item>
       <title>20.08.14_TIL</title>
