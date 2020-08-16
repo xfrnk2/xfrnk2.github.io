@@ -8,14 +8,14 @@
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
     <meta name="generator" content="Hugo 0.69.0" />
-    <title> Django - Queryset의 정렬 및 범위조건 | Rad Blog</title>
-    <meta name="description" content="Django - Queryset의 정렬 및 범위조건 - Bilberry Premium Theme for Hugo.">
-    <meta itemprop="name" content="Django - Queryset의 정렬 및 범위조건">
-    <meta itemprop="description" content="Django - Queryset의 정렬 및 범위조건 - Bilberry Premium Theme for Hugo.">
-    <meta property="og:title" content="Django - Queryset의 정렬 및 범위조건">
-    <meta property="og:description" content="Django - Queryset의 정렬 및 범위조건 - Bilberry Premium Theme for Hugo.">
+    <title> 20.08.16_TIL | Rad Blog</title>
+    <meta name="description" content="20.08.16_TIL - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="20.08.16_TIL">
+    <meta itemprop="description" content="20.08.16_TIL - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="20.08.16_TIL">
+    <meta property="og:description" content="20.08.16_TIL - Bilberry Premium Theme for Hugo.">
     <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
-    <meta property="og:url" content="https://xfrnk2.github.io/django/django_queryset_sort/">
+    <meta property="og:url" content="https://xfrnk2.github.io/til/20.08.16/">
     <meta property="og:site_name" content="Rad Blog">
     <meta property="og:type" content="article">
 
@@ -23,8 +23,8 @@
 
 
     
-    <link href="/django/django_queryset_sort/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_queryset_sort/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.08.16/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/til/20.08.16/" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
     
@@ -100,19 +100,19 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_queryset_sort/">
-    <i class="fas fa-fw fa-code"></i>
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.16/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
 <article class="default article">
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_queryset_sort/">Django - Queryset의 정렬 및 범위조건</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.16/">20.08.16_TIL</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-05-06</span>
+        <span class="date moment">2020-08-16</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                 
             
         </span>
@@ -138,148 +138,23 @@
     </div>
 
     
-    <blockquote>
-<p>이진석 선생님의 <a href="https://educast.com/course/web/ZU53">리액트와 함께 장고 시작하기</a> 수강중 정리한 글입니다.</p>
-</blockquote>
-<hr>
-<h3 id="정렬-조건-추가">정렬 조건 추가</h3>
+    <h4 id="계획했던-일">계획했던 일</h4>
 <ul>
-<li>일관된 순서를 보장받기 위해 정렬 조건을 추가</li>
-<li>DB에서 다수 필드에 대한 정렬을 지원하나 가급적 단일 필드로 하는것이 성능에 이익</li>
-<li>시간순/역순 정렬이 필요할때는 id필드를 활용</li>
+<li><del>코딩하기</del></li>
 </ul>
 <hr>
-<h3 id="정렬-조건-지정-방법">정렬 조건 지정 방법</h3>
-<h6 id="1-추천-모델-클래스의-meta-속성으로-ordering-설정--list로-지정">1. (추천) 모델 클래스의 Meta 속성으로 ordering 설정 : list로 지정</h6>
-<h6 id="2-모든-queryset에-order_by에-지정">2. 모든 queryset에 order_by(&hellip;)에 지정</h6>
-<blockquote>
-<p>(주의) queryset코드에서 직접 order_by를 지정하면, Meta&gt;ordering 설정값이 무시된다</p>
-</blockquote>
+<h4 id="오늘-한-일">오늘 한 일</h4>
+<ul>
+<li>레스토랑 시뮬레이션을 작성하고 있다. 설계하는데 시간을 많이 쓴 것 같다.</li>
+<li>2시간정도 메모하며 생각했던 것을 단순한 설계도로 그려보고, 다시 새롭게 그리는 일을 반복했다.</li>
+<li>설계를 하고 코딩을 하니 한꺼번에 머리로 생각해서 코드를 작성하려고 했던 때보다 훨씬 스무스해진 것 같은 느낌이 든다.</li>
+</ul>
 <hr>
-<h6 id="django-extensions">django-extensions</h6>
+<h4 id="내일-할-일">내일 할 일</h4>
 <ul>
-<li>커스텀 확장 기능 제공 라이브러리</li>
-<li>Management Command, additional database fields, admin extensions 등을 지원</li>
+<li>코딩하기</li>
 </ul>
-<pre><code>&gt; python manage.py shell_plus --print-sql
-</code></pre><hr>
-<h3 id="정렬-지정하기-1">정렬 지정하기 #1</h3>
-<pre><code>class Item(Models.Model):
-	name = models.CharField(max_length=100)
-	desc = models.TextField(blank=True)
-	price = models.PositiveIntegerField()
-	created_at = models.DateTimeField(auto_now_add=True)
-	updated_at = models.DataTimeField(auto_now=True)
-	
-	class Meta:
-		ordering = ['id']
-</code></pre><h3 id="정렬-지정하기-2">정렬 지정하기 #2</h3>
-<pre><code>#1
-In [4]: Post.objects.all().order_by('id')
-Out[4]: SELECT &quot;blog1_post&quot;.&quot;id&quot;,
-       &quot;blog1_post&quot;.&quot;author_id&quot;,
-       &quot;blog1_post&quot;.&quot;title&quot;,
-       &quot;blog1_post&quot;.&quot;content&quot;,
-       &quot;blog1_post&quot;.&quot;created_at&quot;,
-       &quot;blog1_post&quot;.&quot;updated_at&quot;,
-       &quot;blog1_post&quot;.&quot;photo&quot;,
-       &quot;blog1_post&quot;.&quot;is_public&quot;
-  FROM &quot;blog1_post&quot;
- ORDER BY &quot;blog1_post&quot;.&quot;id&quot; ASC
- LIMIT 21
 
-Execution time: 0.000000s [Database: default]
-&lt;QuerySet [&lt;Post: 첫번째 제목&gt;, &lt;Post: 두번째 제목&gt;, &lt;Post: 세번째 제목&gt;]&gt;
-
-
-#2
-In [5]: Post.objects.all().order_by('-id')
-Out[5]: SELECT &quot;blog1_post&quot;.&quot;id&quot;,
-       &quot;blog1_post&quot;.&quot;author_id&quot;,
-       &quot;blog1_post&quot;.&quot;title&quot;,
-       &quot;blog1_post&quot;.&quot;content&quot;,
-       &quot;blog1_post&quot;.&quot;created_at&quot;,
-       &quot;blog1_post&quot;.&quot;updated_at&quot;,
-       &quot;blog1_post&quot;.&quot;photo&quot;,
-       &quot;blog1_post&quot;.&quot;is_public&quot;
-  FROM &quot;blog1_post&quot;
- ORDER BY &quot;blog1_post&quot;.&quot;id&quot; DESC
- LIMIT 21
-
-Execution time: 0.000000s [Database: default]
-&lt;QuerySet [&lt;Post: 세번째 제목&gt;, &lt;Post: 두번째 제목&gt;, &lt;Post: 첫번째 제목&gt;]&gt;
-
-#1과 2의 차이
-1 정순-&gt; ORDER BY &quot;blog1_post&quot;.&quot;id&quot; ASC
-2 역순-&gt;  ORDER BY &quot;blog1_post&quot;.&quot;id&quot; DESC
-</code></pre><hr>
-<h3 id="범위-조건">범위 조건</h3>
-<ul>
-<li>슬라이싱을 통해서 SELECT 쿼리에 &ldquo;OFFSET/LIMIT&rdquo; 추가 기능</li>
-<li>str/list/tuple에서의 슬라이싱과 거의 유사하나, <strong>음수 인덱스 접근 슬라이싱은 지원하지 않음
-(데이터베이스에서 지원하지 않기 때문)</strong></li>
-</ul>
-<h6 id="형태">형태</h6>
-<blockquote>
-<p><strong>객체[start:stop:step]</strong></p>
-<ul>
-<li>Offset -&gt; Start</li>
-<li>Limit -&gt; start</li>
-<li><strong>Step이 들어가는 순간 반환값의 타입이 queryset-&gt; list가 된다</strong><br>
--&gt; (쿼리에 대응되지 않으므로 사용을 비추천)</li>
-</ul>
-</blockquote>
-<h3 id="코드-예시">코드 예시</h3>
-<h6 id="음수-인덱스-접근시-에러-발생">음수 인덱스 접근시 에러 발생</h6>
-<pre><code>In [7]: Post.objects.all().order_by(&quot;-id&quot;)[:-1]
----------------------------------------------------------------------------
-AssertionError                            Traceback (most recent call last)
-&lt;ipython-input-7-b98dbbba47d0&gt; in &lt;module&gt;
-----&gt; 1 Post.objects.all().order_by(&quot;-id&quot;)[:-1]
-
-C:\Program Files\python\lib\site-packages\django\db\models\query.py in __getitem__(self, k)
-    288                 % type(k).__name__
-    289             )
---&gt; 290         assert ((not isinstance(k, slice) and (k &gt;= 0)) or
-    291                 (isinstance(k, slice) and (k.start is None or k.start &gt;= 0) and
-    292                  (k.stop is None or k.stop &gt;= 0))), \
-
-AssertionError: Negative indexing is not supported.
-</code></pre><h6 id="객체startstop--queryset-타입-반환">객체[start:stop] : Queryset 타입 반환</h6>
-<pre><code>In [9]: Post.objects.all().order_by(&quot;-id&quot;)[1:2]
-Out[9]: SELECT &quot;blog1_post&quot;.&quot;id&quot;,
-       &quot;blog1_post&quot;.&quot;author_id&quot;,
-       &quot;blog1_post&quot;.&quot;title&quot;,
-       &quot;blog1_post&quot;.&quot;content&quot;,
-       &quot;blog1_post&quot;.&quot;created_at&quot;,
-       &quot;blog1_post&quot;.&quot;updated_at&quot;,
-       &quot;blog1_post&quot;.&quot;photo&quot;,
-       &quot;blog1_post&quot;.&quot;is_public&quot;
-  FROM &quot;blog1_post&quot;
- ORDER BY &quot;blog1_post&quot;.&quot;id&quot; DESC
- LIMIT 1
-OFFSET 1
-
-Execution time: 0.000000s [Database: default]
-&lt;QuerySet [&lt;Post: 두번째 제목&gt;]&gt;		      
-</code></pre><h6 id="객체startstopstep--list-타입-반환">객체[start:stop:step] : list 타입 반환</h6>
-<pre><code>In [10]: Post.objects.all().order_by(&quot;-id&quot;)[1:2:1]
-SELECT &quot;blog1_post&quot;.&quot;id&quot;,
-       &quot;blog1_post&quot;.&quot;author_id&quot;,
-       &quot;blog1_post&quot;.&quot;title&quot;,
-       &quot;blog1_post&quot;.&quot;content&quot;,
-       &quot;blog1_post&quot;.&quot;created_at&quot;,
-       &quot;blog1_post&quot;.&quot;updated_at&quot;,
-       &quot;blog1_post&quot;.&quot;photo&quot;,
-       &quot;blog1_post&quot;.&quot;is_public&quot;
-  FROM &quot;blog1_post&quot;
- ORDER BY &quot;blog1_post&quot;.&quot;id&quot; DESC
- LIMIT 1
-OFFSET 1
-
-Execution time: 0.000000s [Database: default]
-Out[10]: [&lt;Post: 두번째 제목&gt;]
-</code></pre>
     
 </div>
 
@@ -293,15 +168,7 @@ Out[10]: [&lt;Post: 두번째 제목&gt;]
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/queryset/">Queryset</a>
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                 
                 
             </div>
