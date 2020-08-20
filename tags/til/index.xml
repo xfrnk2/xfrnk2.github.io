@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 18 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.20/</link>
+      <pubDate>Thu, 20 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.20/</guid>
+      <description>계획했던 일  코딩하기   오늘 한 일  staticmethod를 남용했던 상태에서 유기적인 구조로 만드는 것을 목표로 코드를 수정중이다. 초반에는 몰랐던 뒤늦게 안 사실이지만 이제 보이지 않을것 같았던 버그들이 드러나기 시작했다.   내일 할 일  코딩하기  </description>
+    </item>
+    
+    <item>
+      <title>20.08.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.21/</link>
+      <pubDate>Thu, 20 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.21/</guid>
+      <description>계획했던 일  코딩하기   오늘 한 일  버그를 찾고 수정했다. 수정 하고 다시 살펴보다보면 또다시 버그가 눈에 띄기 시작한다. 그래도 다양한 시도를 해보게 되서 유의미한 시간으로 느끼게 되서 좋다. 오늘 하루동안 최소 8시간은 넘게 붙잡고 있었다.   내일 할 일  코딩하기  </description>
+    </item>
+    
+    <item>
+      <title>20.08.19_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.19/</link>
+      <pubDate>Wed, 19 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.19/</guid>
+      <description>계획했던 일  코딩하기   오늘 한 일  staticmethod를 남용했던 상태에서 유기적인 구조로 만드는 것을 목표로 코드를 수정중이다. 초반에는 몰랐던 뒤늦게 안 사실이지만 이제 보이지 않을것 같았던 버그들이 드러나기 시작했다.   내일 할 일  코딩하기  </description>
+    </item>
     
     <item>
       <title>20.08.18_TIL</title>
