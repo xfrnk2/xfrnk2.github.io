@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 24 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.26_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.26/</link>
+      <pubDate>Wed, 26 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.26/</guid>
+      <description>계획했던 일  ~~이슈에 제기된 문제점을 해결하여 Merge해서 Pull Request 요청하기   오늘 한 일  레스토랑 저장소의 restaurant.py와 table.py 파일의 내용을 PEP8에 맞게 수정했다.   내일 할 일  이슈에 제기된 문제점을 해결하여 Merge해서 Pull Request 요청하기  </description>
+    </item>
+    
+    <item>
+      <title>20.08.25_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.25/</link>
+      <pubDate>Tue, 25 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.25/</guid>
+      <description>계획했던 일  ~~이슈에 제기된 문제점을 해결하여 Merge해서 Pull Request 요청하기   오늘 한 일  어제 Makefile을 만들고 travis-ci, codcov, coverall을 추가했는데 에러(쉘 스크립트 파일의 Permission denied)를 만지는데 시간을 많이 소비했다. 그래서 현재 문제점들을 해결하는게 급하기 때문에 최종적으로는 싸그리 초기화(&amp;hellip;)했다. 레스토랑 저장소의 restaurant.py와 table.py를 제외한 파일의 내용을 PEP8에 맞게 수정했다.   내일 할 일  이슈에 제기된 문제점을 해결하여 Merge해서 Pull Request 요청하기  </description>
+    </item>
     
     <item>
       <title>20.08.24_TIL</title>
