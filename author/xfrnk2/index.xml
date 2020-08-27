@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 27 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.27_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.27/</link>
+      <pubDate>Thu, 27 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.27/</guid>
+      <description>계획했던 일  이슈에 제기된 문제점을 해결하여 Merge해서 Pull Request 요청하기   오늘 한 일  코드리뷰에서 보완할 내용을 파악하고 관련 글들을 읽었다.   내일 할 일  코드리뷰를 참고해서 코드 수정하기. 금요일 밤 부터 주말 내내 연수가 있어서 조금 늦어질지도 모르겠다..  </description>
+    </item>
     
     <item>
       <title>20.08.26_TIL</title>
