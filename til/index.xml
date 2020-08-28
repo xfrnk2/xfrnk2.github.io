@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.28/</link>
+      <pubDate>Fri, 28 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.28/</guid>
+      <description>계획했던 일  코드리뷰를 참고해서 코드 수정하기   오늘 한 일  코드리뷰의 일부만 수정, PR를 신청했고 다시 피드백을 받았다. 개선해야할 것이 많아서 오히려 기쁘다. dataclass에 대해 공부하고 약간의 연습을 해보았다. travis-ci와 flake8 연동에 대해 고민했다. 그뿐이 아니고 travis-ci는 예전에 뭉텅이로 가져온(이미 구현된 내용물들에 이것저것 덧씌워서 차츰 만들어진 상태가 되었다) 초기 상태가 아니라 작은 것부터 차례대로 단계적인 구현이 필요하다고 느꼈다. 한꺼번에 많은 것을 건드려서 발생하게 된 에러에 많은 시간을 소비하기 보다는, 작은 것부터 하나씩 건드려서 발생하는 에러를 해결해 가는 편이 낫다는 생각이 들었다.</description>
+    </item>
     
     <item>
       <title>20.08.27_TIL</title>
