@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 28 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.29/</link>
+      <pubDate>Sat, 29 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.29/</guid>
+      <description>계획했던 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기   오늘 한 일  setup.cfg파일의 작성방법에 대한 글, setup.py의 작성방법에 대한 글, setuptools 공식문서를 읽었다.   내일 할 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기  </description>
+    </item>
     
     <item>
       <title>20.08.28_TIL</title>
