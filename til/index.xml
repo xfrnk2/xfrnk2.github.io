@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 29 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.08.31_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.31/</link>
+      <pubDate>Mon, 31 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.31/</guid>
+      <description>계획했던 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기 온라인 출석부 프로젝트 진행하기   오늘 한 일  온라인 출석부 프로젝트를 계속 진행하고 있다. 기능에 대한 구현은 모두 마쳤다. (Google Apps Script를 이용한 Googld Drive에 PDF파일로 저장, 해당 파일을 이메일로 자동 발송, 설문지 요청을 구글 스프레드 시트에 자동 기록하는 함수를 작성 완료) 리팩토링과 세세한 부분을 신경 써야 할 것 같다.   내일 할 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.</description>
+    </item>
+    
+    <item>
+      <title>20.08.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.08.30/</link>
+      <pubDate>Sun, 30 Aug 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.08.30/</guid>
+      <description>계획했던 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기   오늘 한 일  지인 분과 이야기를 하다가 우연히 만들고 싶은 것이 생겼다. 최대한 빠르게 배워보고 지금 해야하는 일을 하려고 한다. 구글 스프레드 시트에 온라인 출석부를 만들고, 구글 드라이브에 저장/이메일 발송, 설문 기록을 통해 출석부 갱신시키는 시스템을 구축하는 개인 프로젝트를 시작했다. 엑셀과 미묘하게 다른 구글 스프레드시트 사용방법을 익혔다. Javascript 기초와, Javascript와 일부 호환이 되는 Google Apps Script 를 처음 배웠다.</description>
+    </item>
     
     <item>
       <title>20.08.29_TIL</title>
