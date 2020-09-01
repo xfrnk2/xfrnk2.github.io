@@ -1,0 +1,468 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> React(리액트)_component 작성시 props와 javascript의 활용 | Rad Blog</title>
+    <meta name="description" content="React(리액트)_component 작성시 props와 javascript의 활용 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="React(리액트)_component 작성시 props와 javascript의 활용">
+    <meta itemprop="description" content="React(리액트)_component 작성시 props와 javascript의 활용 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="React(리액트)_component 작성시 props와 javascript의 활용">
+    <meta property="og:description" content="React(리액트)_component 작성시 props와 javascript의 활용 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/react/react_component/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/react/react_component/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/react/react_component/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/react/react_component/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/react/react_component/">React(리액트)_component 작성시 props와 javascript의 활용</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-09-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/react/">React</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="컴포넌트란">컴포넌트란?</h3>
+<ul>
+<li>부품</li>
+<li>재사용 가능</li>
+<li>일일히 바꾸어 줄 필요가 없도록 하기 위함</li>
+<li>일명 리액트 컴포넌트라고 부른다.</li>
+</ul>
+<h3 id="props란">props란?</h3>
+<ul>
+<li>자식 컴포넌트가 부모 컴포넌트에게 전달받은 데이터</li>
+</ul>
+<hr>
+<h3 id="javascript의-이상하고도-유용한-문법">javascript의 이상하고도 유용한 문법</h3>
+<pre><code>let sweats = [50, 30, 100];
+let apple = sweets[0];
+let banana = sweets[1];
+let berry = sweets[2];
+</code></pre><p>위의 문법을</p>
+<pre><code>let [apple, banana ,berry] = sweets;
+</code></pre><p>위처럼 쓸 수 있다.(이상하고 오묘하다)</p>
+<h3 id="훅스hooks-usestate">훅스(Hooks): useState</h3>
+<pre><code>import {usestate} from 'react';
+[state, setstate] = usestate(&quot;김철수&quot;)
+</code></pre><ul>
+<li>state는 변수, setstate는 함수이다.</li>
+<li>state = &ldquo;김덕배&quot;와 setstate(&ldquo;김만춘&rdquo;)를 한다고 하자. 전자는 랜더링이 내장되지 않아 있고 값만 바꾸게 된다. 후자는 렌더링이 내장되어 있어 리랜더링을 수행하고 바로 변경상황을 사용자에게 보여준다.</li>
+</ul>
+<h3 id="훅스hooks--useeffect">훅스(HOoks) : useEffect</h3>
+<pre><code>import {useEffect} from 'react';
+useEffect(fn, []) 
+</code></pre><ul>
+<li>fn는 함수, []안에는 변수가 온다.</li>
+<li>속해있는 함수가 호출되는 fn(함수)를 실행하고 싶을때 []를 빈칸으로 둘 수 있다.</li>
+<li>뒤에 있는 인자가 바뀔 때마다 fn을 실행한다. 최초 호출시 실행한다.</li>
+</ul>
+<h3 id="훅스hooks--useeffect-1">훅스(HOoks) : useEffect</h3>
+<pre><code>&lt;Fragment&gt;
+	&lt;div&gt;
+		&lt;button onClick={changeName}&gt;바꿔&lt;/button&gt;
+		{name}
+	&lt;/div&gt;
+	&lt;div&gt;
+		{num}
+		&lt;button onClick={AddNum}&gt;+&lt;/button&gt;
+		&lt;button onClick={MinNum}&gt;-&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/Fragment&gt;
+</code></pre><ul>
+<li>그냥 있는 그대로 퍼왔다. jsx를 쓸 땐 최상위 부모가 하나여야만 한다. return 안에. 현재는 최상위 부모가 div인데 Fragment를 사용해서 감싸둔 상태이다.</li>
+<li>1개 이상 쓰고 싶을때 <!-- raw HTML omitted -->를 선언하여 코드를 감싸면 된다.</li>
+</ul>
+<h3 id="번외---javascript의-map">번외 - javascript의 map</h3>
+<pre><code>return (
+	&lt;div&gt;
+		Parent
+		
+		{persons.map((person) =&gt; {
+			return &lt;Child person={person}&gt;&lt;/Child&gt;
+		})}
+	&lt;/div&gt;
+)
+</code></pre><ul>
+<li>일부를 가져온 셈 치자.</li>
+<li>javascript에서는 for문은 상당한 구식이라고 한다. 순회시 map을 주로 쓴다.</li>
+<li>persons가 배열이고, (person)은 인자를 나타낸다. Child는 person을 인자로 받고, (person)내부의 person이 전달된다.</li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/react/">React</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/react/react_component/">React(리액트)_component 작성시 props와 javascript의 활용</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/react/react_react/">React(리액트)_에 대해서</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.09.01/">20.09.01_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.31/">20.08.31_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.30/">20.08.30_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.29/">20.08.29_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.08.28/">20.08.28_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/database">Database
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/docker">Docker
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/react">React
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/database">Database
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

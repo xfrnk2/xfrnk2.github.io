@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 31 Aug 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.01/</link>
+      <pubDate>Tue, 01 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.01/</guid>
+      <description>계획했던 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기 리액트 일대일 과외 온라인 출석부 프로젝트 진행하기   오늘 한 일  온라인 출석부 프로젝트를 계속 진행하고 있다. 설정을 크고 작게 바꾸어 보며 테스팅 중이다. 에러도 일어나고 해결도 되고 이제 꽤 원만하고 원활해진 상태이다. 출석부 프로젝트 진행을 위해 필연적으로 Google Apps Script와 Javascript를 어느 정도나마 배웠다.(새롭게 배운 것 보다 사실 필요한 기능을 사용해서 코딩 한 것이 대부분이다.</description>
+    </item>
     
     <item>
       <title>20.08.31_TIL</title>
