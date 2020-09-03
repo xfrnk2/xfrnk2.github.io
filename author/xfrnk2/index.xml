@@ -5,10 +5,47 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Sep 2020 00:08:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 23:46:41 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React(리액트)_Event(이벤트)</title>
+      <link>https://xfrnk2.github.io/react/react_event/</link>
+      <pubDate>Thu, 03 Sep 2020 23:46:41 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/react/react_event/</guid>
+      <description>종류  onClick onChange onSubmit  형태? &amp;lt;태그 on이벤트명 = {(e) =&amp;gt; {호출할 함수(e)}}&amp;gt; (e는 event)
+&amp;lt;Fragment&amp;gt; &amp;lt;div&amp;gt; &amp;lt;form onSubmit={(event)=&amp;gt;{showForm(event)}}&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;title&amp;quot; onChange={(e) =&amp;gt; {changeForm(e)}}/&amp;gt; &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;reason&amp;quot; onChange={(e) =&amp;gt; {changeForm(e)}}/&amp;gt; &amp;lt;button&amp;gt;submit&amp;lt;/button&amp;gt; &amp;lt;/form&amp;gt; {foods.map((food) =&amp;gt; { return &amp;lt;div className=&amp;quot;food&amp;quot;&amp;gt;{food.title}&amp;lt;/div&amp;gt; })} &amp;lt;/div&amp;gt; &amp;lt;/Fragment&amp;gt; 이벤트 발생 방지  이벤트 자체를 막는 것. ex) &amp;ldquo;새로고침&amp;rdquo;  const showForm = (event) =&amp;gt; { event.preventDefault(); axios.post(&amp;quot;/posts&amp;quot;, form) .then((response) =&amp;gt; { console.log(response); }) .catch((error) =&amp;gt; { console.</description>
+    </item>
+    
+    <item>
+      <title>20.09.03_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.03/</link>
+      <pubDate>Thu, 03 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.03/</guid>
+      <description>계획했던 일  온라인 출석부 API 또는 Javascript 라이브러리 조사 &amp;amp; 적용하기 리액트 배우기  오늘 한 일  온라인 출석부-google apps script API, javascript 라이브러리로 편의를 위한 보다 나은 기능을 구현하고 싶었으나 실력과 방법적 한계로 포기하는 게 낫겠다는 판단을 내렸다. 최소한 지금까지의 과정으로도 무리는 없을 듯 싶었다. 현재 상태로 사용하게 해 볼 예정이다. 리액트 event, API에 대해서 학습했다. Javascript의 일부 문법에 대해 배우고, 코딩했다.   내일 할 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  </description>
+    </item>
+    
+    <item>
+      <title>Javascript Memo</title>
+      <link>https://xfrnk2.github.io/javascript/javascript_memo/</link>
+      <pubDate>Thu, 03 Sep 2020 00:12:09 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/javascript/javascript_memo/</guid>
+      <description>ES6은 무엇인가?  화살표 함수를 검색하다가 여기까지 오게되었다. 바스크립트는 ECMAScript + BOM(Browser Object Model) + DOM(Document Object Model)라는 1개의 코어와 2개의 모델로 이루어져 있다. this를 동적으로 바인딩하지 않는 화살표 함수의 문제점이 해결되었다.  </description>
+    </item>
+    
+    <item>
+      <title>20.09.02_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.02/</link>
+      <pubDate>Wed, 02 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.02/</guid>
+      <description>계획했던 일  PEP8설정을 pycharm에서 적용(max length), 해당 설정을 ci에 반영, README.md에 명확한 기록 남기기 리액트 복습&amp;amp; 실습 하기 온라인 출석부 프로젝트 진행하기  오늘 한 일  온라인 출석부를 완성했다. 스스로, 그리고 사용하실만한 분들을 거쳐 테스트를 여러번 해보니 무리 없이 작동하는 것을 알았다. javascript 라이브러리를 사용할 수 있는가, 가능하다면 어떠한 형태로 해야할까를 계속 고민하고 구글링 하는 중이다. 리액트-과제 작성을 통해 배웠던 것을 복습, 연습했다.   내일 할 일  온라인 출석부 API 또는 Javascript 라이브러리 조사 &amp;amp; 적용하기 리액트 배우기 학교 2학기가 시작되었다.</description>
+    </item>
     
     <item>
       <title>React(리액트)_component 작성시 props와 javascript의 활용</title>

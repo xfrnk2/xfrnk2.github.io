@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Javascripts on Rad Blog</title>
+    <link>https://xfrnk2.github.io/javascript/</link>
+    <description>Recent content in Javascripts on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Sep 2020 00:12:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript Memo</title>
+      <link>https://xfrnk2.github.io/javascript/javascript_memo/</link>
+      <pubDate>Thu, 03 Sep 2020 00:12:09 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/javascript/javascript_memo/</guid>
+      <description>ES6은 무엇인가?  화살표 함수를 검색하다가 여기까지 오게되었다. 바스크립트는 ECMAScript + BOM(Browser Object Model) + DOM(Document Object Model)라는 1개의 코어와 2개의 모델로 이루어져 있다. this를 동적으로 바인딩하지 않는 화살표 함수의 문제점이 해결되었다.  </description>
+    </item>
+    
+  </channel>
+</rss>

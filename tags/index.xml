@@ -5,7 +5,7 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Sep 2020 00:08:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 23:46:41 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,7 +13,7 @@
     <item>
       <title>React</title>
       <link>https://xfrnk2.github.io/tags/react/</link>
-      <pubDate>Wed, 02 Sep 2020 00:08:49 +0900</pubDate>
+      <pubDate>Thu, 03 Sep 2020 23:46:41 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/react/</guid>
       <description></description>
@@ -22,9 +22,18 @@
     <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Tue, 01 Sep 2020 23:46:29 +0900</pubDate>
+      <pubDate>Thu, 03 Sep 2020 23:46:29 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>https://xfrnk2.github.io/tags/javascript/</link>
+      <pubDate>Thu, 03 Sep 2020 00:12:09 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
