@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Sep 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.05_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.05/</link>
+      <pubDate>Sat, 05 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.05/</guid>
+      <description>계획했던 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  오늘 한 일  온라인 출석부를 계속 만들었다. 온라인 출석부 메뉴얼을 만들고 ppt를 제작했다. 슬라이드쉐어에 공유해서 모든 사람이 볼 수 있게 했다.   내일 할 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.05_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.06/</link>
+      <pubDate>Sat, 05 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.06/</guid>
+      <description>계획했던 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  오늘 한 일  온라인 출석부를 계속 만들었는데 이제 보완할 부분이 크게 보이지 않는 것 같다. 일주일동안 밥 먹는 시간 외에는 계속 매달렸던 것 같다. 당분간 휴식하려고 한다. 리액트를 공부했다. API통신-axios 라이브러리 사용, CRUD를 학습하고 코딩했다.   내일 할 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.04_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.04/</link>
+      <pubDate>Fri, 04 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.04/</guid>
+      <description>계획했던 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  오늘 한 일  온라인 출석부를 계속 만들었다. 가족들과 시간을 보냈다.   내일 할 일  학교 과제 진행하기 github 이슈 진행하기 리액트 복습하기  </description>
+    </item>
     
     <item>
       <title>20.09.03_TIL</title>
