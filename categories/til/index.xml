@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Sep 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.12_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.12/</link>
+      <pubDate>Sat, 12 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.12/</guid>
+      <description>계획했던 일  이슈해결하기 리액트 공부하기 django코딩하기  오늘 한 일  리액트 라우터와 Redux를 복습하고 좀더 자세한 내용을 학습했다. 코드리뷰를 유심히 참고해서 레스토랑 시뮬레이션 코드를 수정했다.   내일 할 일  django코딩하기 학교과제 알아보기 이슈해결하기  </description>
+    </item>
     
     <item>
       <title>20.09.11_TIL</title>
