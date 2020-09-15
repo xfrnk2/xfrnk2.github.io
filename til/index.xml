@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 13 Sep 2020 23:46:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2020 23:46:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.15/</link>
+      <pubDate>Tue, 15 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.15/</guid>
+      <description>계획했던 일  리액트 공부하기 학교 과제 알아보기   오늘 한 일  프로그래머스의 레벨체크에 나오는 문자열 관련 문제를 함께 풀어보자는 친구의 권유에 함께 풀어보고 풀어본 내용을 공유하였다. 리액트 Auth인증에 대해서 공부하고 코딩했다.   내일 할 일  학교 과제 알아보기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.14/</link>
+      <pubDate>Mon, 14 Sep 2020 23:46:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.14/</guid>
+      <description>계획했던 일  django코딩하기 학교과제 알아보기   오늘 한 일  django 튜토리얼을 일독했다.(1~7) https://qiita.com/kaki_k/items/511611cadac1d0c69c54 django 연습용 프로젝트를 만들었다. SECRET KEY를 json파일에 저장했다. django를 제대로 공부하지 못해온 것 같아 django마스터하기라는 책을 주문했다.   내일 할 일  리액트 공부하기 학교 과제 알아보기  </description>
+    </item>
     
     <item>
       <title>20.09.13_TIL</title>
