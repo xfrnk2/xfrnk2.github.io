@@ -105,6 +105,152 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.10/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.10/">20.08.10_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-10</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  코딩하기 Django 공식문서 보기, 코딩하기   오늘 한 일  restaurant 코딩 조금. 커밋은 하지 않았다. abstractmethod 구현만 해 놓았다. Django login, logout, signup 기능을 추가하고 회원가입 후 바로 로그인 처리 될수 있도록 했다.(contrib.auth의 login 모듈)   내일 할 일  코딩하기 Django 공식문서 보기, 코딩하기  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.09/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.09/">20.08.09_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-09</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  충분히 쉬기 Django 로그인과 회원가입 공부   오늘 한 일  Django에 Sendgrid로 전체 메일을 보내는것에 뒤늦게 알았으나 시행착오가 있었다. 그것을 수정하는 작업을 했다.   내일 할 일  코딩하기 Django 공식문서 보기, 코딩하기  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/20.08.08/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -477,166 +623,6 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
-docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
- 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
-docker network connect (network) (container) ▶ network 조회:
-docker network ls ▶ container 조회:
-docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.
-
-    
-    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
-▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
-mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
- 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
-docker exec -it (container id) bash ▶ 커맨드 입력
-mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
-
-    
-    <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -663,6 +649,14 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.09.17/">20.09.17_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.09.16/">20.09.16_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.09.15/">20.09.15_TIL</a>
                 </li>
                 
@@ -680,14 +674,6 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.09.11/">20.09.11_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.10/">20.09.10_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.09/">20.09.09_TIL</a>
                 </li>
                 
             </ul>
