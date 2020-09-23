@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Sep 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.23/</link>
+      <pubDate>Wed, 23 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.23/</guid>
+      <description>계획했던 일  학교 과제 진행하기   오늘 한 일  온라인 출석부 구글 스프레드 시트의 특정 범위부분만 Google Apps script를 사용한 web app으로 html 페이지에 보이게 하고 틀고정 시킬수 있는 방법을 계속 찾았다.   내일 할 일  학교 과제 진행하기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.22/</link>
+      <pubDate>Tue, 22 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.22/</guid>
+      <description>계획했던 일  학교 과제 진행하기   오늘 한 일  코드 리뷰를 참고해 레스토랑 시뮬레이션 코드를 개선했다. 온라인 출석부 구글 스프레드 시트의 특정 범위부분만 Google Apps script를 사용한 web app으로 html 페이지에 보이게 하고 틀고정 시킬수 있는 방법을 계속 찾았다.   내일 할 일  학교 과제 진행하기  </description>
+    </item>
     
     <item>
       <title>20.09.21_TIL</title>
