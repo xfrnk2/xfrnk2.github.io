@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Sep 2020 00:54:03 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.27_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.27/</link>
+      <pubDate>Sun, 27 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.27/</guid>
+      <description>계획했던 일  학교 과제 진행하기   오늘 한 일  레스토랑 시뮬레이션 코드 수정, 보완했다. graphviz를 이용해 처음으로 결정 트리와 구조도를 그려보았다.   내일 할 일  레스토랑 시뮬레이션 코드 수정, 보완하기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.26_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.26/</link>
+      <pubDate>Sat, 26 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.26/</guid>
+      <description>계획했던 일  학교 과제 진행하기 코드 리뷰 해결하기 온라인 출석부 stackoverflow에 올린 답변을 참고해서 진행해보기, 답변자분과 추가 질문과 쌍방 소통 이어하기   오늘 한 일  온라인 출석부 stackoverflow 답변자분과 쌍방 소통했다. 타결책이 필요한지, 최소한의 공수가 드는 작업을 통해 타협할 것인지에 대한 이야기가 오갔다. 레스토랑 시뮬레이션 코드를 수정, 보완했다.   내일 할 일  레스토랑 시뮬레이션 코드 수정, 보완하기  </description>
+    </item>
     
     <item>
       <title>서버 사이드 렌더링(Server Side Rendering: SSR) &amp; 클라이언트 사이드 렌더링(Client Side Rendering: CSR) 정리</title>
