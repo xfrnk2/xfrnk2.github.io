@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Sep 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.09.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.29/</link>
+      <pubDate>Tue, 29 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.29/</guid>
+      <description>계획했던 일  학교 과제 하기   오늘 한 일  생활법률 중간과제를 끝냈다. 뇌를 자극하는 윈도우즈 시스템 프로그래밍-윤성우을 읽기 시작해서 컴퓨터 구조와 프로그래밍 모델 파트를 읽고 이해했다.   내일 할 일  학교 과제 하기 개발 책 읽기 API 문서에 대해 아는것이 전혀 없으므로 무엇인지 알아보기  </description>
+    </item>
+    
+    <item>
+      <title>20.09.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.09.28/</link>
+      <pubDate>Mon, 28 Sep 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.09.28/</guid>
+      <description>계획했던 일  레스토랑 시뮬레이션 코드 수정, 보완하기   오늘 한 일  레스토랑 시뮬레이션 코드 수정, 보완했다.   내일 할 일  학교 과제 하기  </description>
+    </item>
     
     <item>
       <title>20.09.27_TIL</title>
