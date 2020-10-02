@@ -100,6 +100,86 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_secret_key/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_secret_key/">Django SECRET_KEY 분리방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-10-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    방법은 두 종류가 있는데, 환경 변수로 저장하거나, 파일에 따로 저장하는 방법이다.
+환경 변수로 저장시 아파치 등 웹 서버를 사용하는 경우 저장되지 않을 수 있으므로 후자의 방법을 선택했다.
+임의의 원하는 공간에 secrets.json 파일을 작성 한 뒤, 아래와 같이 입력하고 저장한다.
+딕셔너리 내에서 콤마는 후술(가장 뒤에 덧붙이지)하지 않는다.
+secrets.json
+{ &quot;SECRET_KEY&quot;: &quot;실제 SECRET_KEY&quot; }  그 다음 setting.py를 아래와 같이 변경한다.
+settings.py
+import os, json from django.core.exceptions import ImproperlyConfigured secret_file = os.path.join(BASE_DIR, 'config', 'secrets.
+
+    
+    <a href="https://xfrnk2.github.io/django/django_secret_key/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/django/django_queryset_sort/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -574,94 +654,6 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-    <div class="featured-image">
-        <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-            <img src="https://example.org/images/my-image.jpg" alt="">
-        </a>
-    </div>
-
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">Django debug-toolbar를 통한 SQL 디버깅</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
-
-    
-    <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/debug-toolbar/">debug-toolbar</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/sql/">SQL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -686,6 +678,10 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/django/django_secret_key/">Django SECRET_KEY 분리방법</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.10.01/">20.10.01_TIL</a>
                 </li>
                 
@@ -707,10 +703,6 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.09.26/">20.09.26_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/web/ssrandcsr/">서버 사이드 렌더링(Server Side Rendering: SSR) &amp; 클라이언트 사이드 렌더링(Client Side Rendering: CSR) 정리</a>
                 </li>
                 
             </ul>
