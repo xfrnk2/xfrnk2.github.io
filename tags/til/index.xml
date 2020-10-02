@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.02_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.02/</link>
+      <pubDate>Fri, 02 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.02/</guid>
+      <description>계획했던 일  학교 과제 하기 개발 책 읽기 API 문서에 대해 아는것이 전혀 없으므로 무엇인지 알아보기   오늘 한 일  Django SECRET_KEY 분리방법에 대한 글을 블로그에 올렸다. edwith에 올라와있는 [부스트코스] 모두를 위한 컴퓨터 과학 (CS50 2019) 강좌의 1. 컴퓨팅 사고, 2. C언어 수강을 완료했다. 마찬가지로 edwith의 [부스트코스] 비전공자를 위한 HTML/CSS 강좌의 1. HTML 이해하기를 수강 완료하고 2. HTML 태그 절반 분량의 강의를 수강했다. -&amp;gt; HTML/CSS강의 수강으로 기본기를 다지고 자신감을 키워서 실제 코드로 적용하고 경험해보고 싶다.</description>
+    </item>
     
     <item>
       <title>20.10.01_TIL</title>
