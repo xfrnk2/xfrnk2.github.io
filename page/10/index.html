@@ -105,6 +105,156 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.08/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.08/">20.08.08_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)   오늘 한 일  어제 겪던 에러의 상황과 해결한 내용에 대해서 포스팅했다.   내일 할 일  충분히 쉬기 Django 로그인과 회원가입 공부  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
+ 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net' EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey' EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &gt;&gt;&gt; from django.core.mail import send_mail &gt;&gt;&gt; send_mail('Subject here', 'Here is the message.
+
+    
+    <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/20.08.07/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -487,171 +637,6 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    ▶ docker-compose에 대한 공식 문서 링크
- 1. 파일 생성 및 작성 dockerfile,
-docker-compose.xml,
-requirements.txt
-각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
-기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
-▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
-
-    
-    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/mysql/">mysql</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    ▶ MySQL 8.0부터는 default_authentication_plugin 이 mysql_native_password 에서 caching_sha2_password 로 변경되었는데, 강화된 보안 체계로 인해 외부 어플리케이션에서 사용되는 mysql 관련 모듈이 mysql 8.x 의 기본 값으로 설정된 패스워드 보안 알고리즘을 맞추지 못하여 발생하는 에러이니 mysql 인스턴스 전체에 영향을 주지 않는 방법으로 사용자 단위로 패스워드 보안 정책을 변경하는 편이 가장 좋다고 한다.
-▶ stackoverflow를 검색해보면 바로 나오는 것들이지만 빠르게 찾아보기 용이하게 하기 위해 간단히 방법만을 기록해 둡니다. 아래 방법중 어느것인가를 사용하면 에러를 해결했던 것 같습니다.
-
-    
-    <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/database/">database</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/mysql/">mysql</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/error/">Error</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -678,6 +663,14 @@ requirements.txt
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/system/computer_structure_and_programming_model/">1. 컴퓨터 구조와 프로그래밍 모델 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.10.03/">20.10.03_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.10.02/">20.10.02_TIL</a>
                 </li>
                 
@@ -695,14 +688,6 @@ requirements.txt
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.09.29/">20.09.29_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.28/">20.09.28_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.27/">20.09.27_TIL</a>
                 </li>
                 
             </ul>
