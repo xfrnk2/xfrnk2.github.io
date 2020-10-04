@@ -4,10 +4,28 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Oct 2020 00:40:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 00:54:03 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Webs</title>
+      <link>https://xfrnk2.github.io/web/</link>
+      <pubDate>Mon, 05 Oct 2020 00:54:03 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tils</title>
+      <link>https://xfrnk2.github.io/til/</link>
+      <pubDate>Sun, 04 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Systems</title>
@@ -19,29 +37,11 @@
     </item>
     
     <item>
-      <title>Tils</title>
-      <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Sat, 03 Oct 2020 23:41:29 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/til/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Djangos</title>
       <link>https://xfrnk2.github.io/django/</link>
       <pubDate>Fri, 02 Oct 2020 18:22:52 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Webs</title>
-      <link>https://xfrnk2.github.io/web/</link>
-      <pubDate>Sat, 26 Sep 2020 00:54:03 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/web/</guid>
       <description></description>
     </item>
     

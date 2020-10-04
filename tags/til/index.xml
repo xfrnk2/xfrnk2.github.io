@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 03 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.04_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.04/</link>
+      <pubDate>Sun, 04 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.04/</guid>
+      <description>계획했던 일  Django로 서버를 띄워서, 템플릿을 적당히 무언가 따라해보기, Instagram UI 따라해보기 HTML/CSS 강의 일정량 듣기 리액트로 웹페이지 제작을 시작하기 전 API 문서에 대해 아는것이 전혀 없으므로 무엇인지 알아보기 학교 과제 하기   오늘 한 일  어제 배운 내용 복습 별도의 영어 공부 장고마스터하기 모델과 URLCONF, 폼 파트 일독, django 모델 생성, AbstractUser 공부 HTML 파트 요약한 내용을 블로그에 포스팅   내일 할 일  django 폼과 모델 작성하기 온라인 출석부 피드백에 맞게 개선하기 리액트로 웹페이지 제작을 시작하기 전 API 문서에 대해 아는것이 전혀 없으므로 무엇인지 알아보기 학교 과제 하기  </description>
+    </item>
     
     <item>
       <title>20.10.03_TIL</title>

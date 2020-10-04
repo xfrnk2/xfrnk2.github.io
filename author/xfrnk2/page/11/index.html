@@ -100,6 +100,162 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
+docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
+ 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
+docker network connect (network) (container) ▶ network 조회:
+docker network ls ▶ container 조회:
+docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.
+
+    
+    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
+▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
+mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
+ 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
+docker exec -it (container id) bash ▶ 커맨드 입력
+mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
+
+    
+    <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -479,153 +635,6 @@ requirements.txt
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.01/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.01/">20.08.01_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-01</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  에러 해결하기  django.db.utils.OperationalError: (2002, &quot;Can't connect to MySQL server on '127.0.0.1' (115)&quot;)  오늘 한 일  mysql workbench 사용법과 mysql 커맨드, docker run의 flag 등을 배우고 익혔다. 결국 docker 컨테이너 두 곳에 django과 mysql를 각각 실행시켜 놓고 각 docker끼리 연결시켜야 되는것이 아닌가 생각이 기울었다. 그러나 여전히 삽질중. 어제 간단히 간추렸던 생각들이 가리키는대로 차례로 따라서 해보았다. &ndash;link는 예전 방식이기 때문에 &ndash;network를 쓰라고 하는데 network에 관한 문서나 지금까지 찾아본 자료들로는 곧바로 적용시키는 것이 어려웠던 편이다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.08.01/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.31/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.31/">20.07.31_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-07-31</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  영어 공부 Docker와 Mysql의 연동을 성공했지만 이 방법 저 방법으로 시도해보아도 자주 나타났던 에러.  . django.db.utils.OperationalError: (2002, &quot;Can't connect to MySQL server on '127.0.0.1' (115)&quot;) 시행착오를 반복하다가 해결이 안되어 작은 것 부터 해보기로 생각을 간추렸다.
- mysql과 django를 연동하는것은 무리가 없었다. mysql workbench 보는방법, 다루는 방법을 보다 자세하게 알기 mysql과 docker연동에 대해 무지함 -&gt; mysql 컨테이너와 djnago 컨테이너를 연결하기.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.07.31/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -652,6 +661,14 @@ requirements.txt
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/web/html/">HTML 태그 요약</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.10.04/">20.10.04_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/system/computer_structure_and_programming_model/">1. 컴퓨터 구조와 프로그래밍 모델 정리</a>
                 </li>
                 
@@ -669,14 +686,6 @@ requirements.txt
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.10.01/">20.10.01_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.30/">20.09.30_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.09.29/">20.09.29_TIL</a>
                 </li>
                 
             </ul>
