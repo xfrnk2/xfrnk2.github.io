@@ -4,10 +4,19 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 18:58:11 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ffts</title>
+      <link>https://xfrnk2.github.io/fft/</link>
+      <pubDate>Tue, 06 Oct 2020 18:58:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/fft/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Tils</title>
@@ -96,15 +105,6 @@
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ffts</title>
-      <link>https://xfrnk2.github.io/fft/</link>
-      <pubDate>Mon, 20 Jul 2020 13:34:33 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/fft/</guid>
       <description></description>
     </item>
     

@@ -5,10 +5,23 @@
     <link>https://xfrnk2.github.io/tags/python/</link>
     <description>Recent content in Python on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jul 2020 13:34:33 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 18:58:11 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기</title>
+      <link>https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/</link>
+      <pubDate>Tue, 06 Oct 2020 18:58:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/</guid>
+      <description>filter 함수의 특이점 발견 동기  레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.
+(좋은 코드인지는 모르겠다.)
+ cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks] self.__cooks = list(filter(None, cooks))   else를 연산하는 과정에서 None이 원소로 들어가는 것을 확인,
+None 원소들을 제거해주기 위한 방법을 검색해봤다. list(filter(None, array))의 형태로 쓰란다. 그래서 형태를 모방한 코드를 작성했는데&amp;hellip;. 그런데..
+왜 이렇게 되지? 싶은, 크게 눈에 띈 부분이 있었다.    특이점 filter(적용시킬 함수, 적용시킬 요소들)의 형태로</description>
+    </item>
     
     <item>
       <title>FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자</title>
