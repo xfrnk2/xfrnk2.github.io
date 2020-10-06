@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Oct 2020 18:58:11 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.06/</link>
+      <pubDate>Tue, 06 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.06/</guid>
+      <description>계획했던 일  레스토랑 시뮬레이션 코드리뷰에 맞게 리팩토링 개발 도서 읽기 시뮬레이션 과목 공부   오늘 한 일  온라인 출석부 초안 전송 레스토랑 시뮬레이션 래픽토링을 고민했는데 큰 성과는 없었다. 블로그 포스팅 : &amp;ldquo;Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기&amp;rdquo; 시뮬레이션 과목 기말 과제를 조금 진행했다.   내일 할 일  실행 예정인 리액트 프로젝트 시작/착수하기 개발 도서 읽기  </description>
+    </item>
     
     <item>
       <title>Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기</title>
