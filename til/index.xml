@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.07/</link>
+      <pubDate>Wed, 07 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.07/</guid>
+      <description>계획했던 일  실행 예정인 리액트 프로젝트 시작/착수하기 개발 도서 읽기   오늘 한 일    약간의 독서, 뇌를 자극하는 윈도우즈 시스템 프로그래밍-윤성우   일본어 작문 연습 제플린(디자인)과 포스트맨(api) 사용법 학습 리액트 프로젝트에 대한 가이드라인을 이번 토요일에 도움 받아보기로 시간약속을 했다. 찬바람 영향인지 몸이 좋지 않아 퇴근 뒤 쉬었다.   내일 할 일  개발 도서 읽기 별도의 영어공부 학교 과제 하기 레스토랑 알고리즘 리팩토링  </description>
+    </item>
     
     <item>
       <title>20.10.06_TIL</title>
