@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programmers on Rad Blog</title>
+    <link>https://xfrnk2.github.io/categories/programmers/</link>
+    <description>Recent content in Programmers on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 13 Oct 2020 15:52:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>프로그래머스-정렬-가장 큰 수[정렬]</title>
+      <link>https://xfrnk2.github.io/programmers/the_biggest_number/</link>
+      <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/the_biggest_number/</guid>
+      <description>프로그래머스-정렬-가장 큰 수[정렬]문제 바로가기  나의 파이썬 풀이 def solution(numbers): numbers = map(str, numbers) answer = &#39;&#39;.join(sorted(numbers, reverse=True, key=lambda n: (n[0], n[1 % len(n)], n[2 % len(n)], n[3 % len(n)]))) return answer if int(answer) else &#39;0&#39;  Javascript 풀이 해석  친구 말로는 해당 문제의 블로그 등 온라인 상의 Javascript 풀이의 100% 아래와 같은 형태를 하고 있는데, sort 함수의 (b+a)-(a+b)가 이해가 어렵다고 하여 어떻게 설명할 수 있을지 알아보게 되었다.
+ function solution(numbers) { var answer = numbers.</description>
+    </item>
+    
+  </channel>
+</rss>
