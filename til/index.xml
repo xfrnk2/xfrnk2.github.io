@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.14/</link>
+      <pubDate>Wed, 14 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.14/</guid>
+      <description>계획했던 일  레스토랑 시뮬레이션 리팩토링 학교 과제 하기 JSP프로그래밍 배운내용 정리 -&amp;gt; 시험기간이 어느정도 안정세에 들어가고 해당 기말과제가 끝나면 하도록 한다.   오늘 한 일  토요일 시험준비를 위해 강의를 들으며 공부했다.(컴파일러 구성, 촘스키 4대 문법과 유한오토마타)   내일 할 일  오토마타의 입실론 전이 공부 레스토랑 시뮬레이션 리팩토링 학교 과제 하기  </description>
+    </item>
     
     <item>
       <title>20.10.13_TIL</title>
