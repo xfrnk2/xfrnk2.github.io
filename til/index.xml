@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.16/</link>
+      <pubDate>Fri, 16 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.16/</guid>
+      <description>계획했던 일  오토마타의 입실론 전이 공부 학교 과제 하기 레스토랑 시뮬레이션 리팩토링   오늘 한 일  레스토랑 시뮬레이션 리팩토링 오토마타의 입실론 전이, 입실론 클로저 공부, 관련 강의시청 제어단어에 대한 강의 절반정도 시청 虹色ほたる 도서 ~p.129 까지 읽음   내일 할 일  학교 컴파일러 구성 과목 출석 시험 보기, 시험 전 내용 복습 학교 과제 하기  </description>
+    </item>
     
     <item>
       <title>20.10.15_TIL</title>
