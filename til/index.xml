@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.17_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.17/</link>
+      <pubDate>Sat, 17 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.17/</guid>
+      <description>계획했던 일  학교 컴파일러 구성 과목 출석 시험 보기, 시험 전 내용 복습 학교 과제 하기   오늘 한 일  컴파일러 구성 과목을 복습하고 시험을 마쳤다. 컴퓨터 구조 중간 과제를 마무리했다.   내일 할 일  학교 과제 알아보기 HTML5 출석 수업 듣기  </description>
+    </item>
     
     <item>
       <title>20.10.16_TIL</title>
