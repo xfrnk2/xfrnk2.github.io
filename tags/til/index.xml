@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 28 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.10.31_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.31/</link>
+      <pubDate>Sat, 31 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.31/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  뮤직비디오 촬영 업무로 개발 공부는 하지 못했다. 이동하는동안 허락된 시간만큼 타이탄의 도구 책을 읽었다.   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.10.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.30/</link>
+      <pubDate>Fri, 30 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.30/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  HTML5 과목 과제를 일부 진행 travis-ci coverage가 0%로 표시되는 문제 해결 진행중   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.10.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.10.29/</link>
+      <pubDate>Thu, 29 Oct 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.10.29/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  HTML5 과목 과제를 일부 진행 travis-ci coverage가 0%로 표시되는 문제 해결 진행중   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>20.10.28_TIL</title>
