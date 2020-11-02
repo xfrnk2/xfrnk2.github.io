@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 31 Oct 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.01/</link>
+      <pubDate>Sun, 01 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.01/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  TDD 방법론에 대한 도서와 자료를 읽고 공부했다. 레스토랑 시뮬레이션에 TDD를 사용해서 테스트 케이스와 로직 함수를 추가했다.   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>20.10.31_TIL</title>
