@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.04_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.04/</link>
+      <pubDate>Wed, 04 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.04/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  HTML5 과목 과제 일부 진행 레스토랑 시뮬레이션 함수 최적화, 새로운 테스트 케이스 생성 레스토랑 시뮬레이션 : TDD방식으로 테스트 코드를 작성하려고 보니 이전의 로직을 더 나은 새로운 로직으로 변경하게 됨 영어 라이팅 공부   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>20.11.03_TIL</title>
