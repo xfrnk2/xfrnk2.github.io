@@ -196,7 +196,16 @@
 <li>12 기준 합계 : 189 + 783</li>
 </ul>
 <p>각각의 합계를 더해서 내림차순으로 정렬하면 9, 3, 12순서이기 때문에 9312가 된다.</p>
+<h6 id="위의-자바스크립트-풀이와-같은-방식으로-푼-파이썬-코드2020-11-11">위의 자바스크립트 풀이와 같은 방식으로 푼 파이썬 코드(2020-11-11)</h6>
+<pre><code>from functools import cmp_to_key
 
+def solution(numbers):
+    answer = ''.join(sorted(map(str, numbers), key=cmp_to_key(lambda x, y:int(y+x)-int(x+y))))
+    return answer if int(answer) else '0'
+</code></pre><p><strong>위의 cmp_to_key 안의 lambda 함수는 아래의 함수와 같다</strong></p>
+<pre><code>def ascending_order(x, y):
+    return int(y+x) - int(x+y)
+</code></pre>
     
 </div>
 
@@ -270,6 +279,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.10/">20.11.10_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.11.09/">20.11.09_TIL</a>
                 </li>
                 
@@ -291,10 +304,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.11.04/">20.11.04_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.11.03/">20.11.03_TIL</a>
                 </li>
                 
             </ul>
