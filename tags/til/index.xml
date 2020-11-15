@@ -5,10 +5,46 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Nov 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.15/</link>
+      <pubDate>Sun, 15 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.15/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  컴파일러 구성 과목 과제를 마무리 후 제출 컴퓨터 구조 과목 과제 일부 진행   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.11.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.14/</link>
+      <pubDate>Sat, 14 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.14/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  컴파일러 구성 canonical collection 구하는 방법 및 구문분석표 작성방법을 강의를 통해 학습   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.11.13_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.13/</link>
+      <pubDate>Fri, 13 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.13/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  컴파일러 구성 context-free 언어, 구문분석, PDA(푸시 다운 오토마타)에 대한 내용을 다루는 강의시청과 학습 레스토랑 시뮬레이션 테스트 코드와 테스트 케이스, 함수 로직을 구현(TDD)   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.11.12_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.12/</link>
+      <pubDate>Thu, 12 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.12/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  컴파일러 구성 context-free 언어, 구문분석, PDA(푸시 다운 오토마타)에 대한 내용을 다루는 강의시청과 학습 레스토랑 시뮬레이션 테스트 코드와 테스트 케이스, 함수 로직을 구현(TDD)   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>20.11.11_TIL</title>
