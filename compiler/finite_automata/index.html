@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 유한 오토마타 | Rad Blog</title>
+    <meta name="description" content="유한 오토마타 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="유한 오토마타">
+    <meta itemprop="description" content="유한 오토마타 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="유한 오토마타">
+    <meta property="og:description" content="유한 오토마타 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/compiler/finite_automata/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/compiler/finite_automata/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/compiler/finite_automata/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/compiler/finite_automata/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/compiler/finite_automata/">유한 오토마타</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-11-16</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/compiler/">compiler</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h2 id="공부-목표"><strong>공부 목표</strong></h2>
+<blockquote>
+<ol>
+<li>유한 오토마타를 이해할 수 있는지?</li>
+<li>정규표현 -&gt; 유한 오토마타로 변환할 수 있는지?</li>
+<li>입실론 클로저(ε-closure)를 구할 수 있는지?</li>
+<li>NFA를 DFA로 변환할 수 있는지?</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="용어-설명"><strong>용어 설명</strong></h2>
+<ul>
+<li><strong>유한 오토마타</strong> : 어떤 알파벳 T로부터 만들어지는 문자열의 특별한 것들을 받아들이는 시스템의 수학적 모델로서, 그 시스템이 변화할 수 있는 상태가 유한개인 것</li>
+<li><strong>비결정적 유한 오토마타</strong> : 어떤 상태에서 주어진 하나의 입력기호를 보고, 갈 수 있는 다음 상태가 두개 이상 존재할 수 있는 유한 오토
+마타</li>
+<li><strong>결정적 유한 오토마타</strong> : 하나의 입력문자열에 대하여 오직 하나의 다음 상태가 결정되는 것</li>
+<li><strong>상태전이도</strong> : transition diagram, 오토마타의 각 상태(state)를 노드(node)로 나타내며, 이동함수 δ(q,a) ＝p에 대해서는 태 q에서 p로 가는 레이블(label)이 a인 지시선(directed arc)으로 표기. 또한 종결상태들은 이중 원(double circle)으로 나타내고, 시작상태는 시작지시선으로 표시하는 유향 그래프(directed graph)</li>
+<li><strong>상태</strong> : 오토마타에서 입력기호에 의하여 전이된 것을 의미하고, 상태전이도에서 원으로 표현</li>
+</ul>
+<hr>
+<h2 id="내용-정리"><strong>내용 정리</strong></h2>
+<blockquote>
+<ol>
+<li>유한 오토마타는 입력으로 문자열을 받아서, 그 문자열이 그 언어의 문장이면 &ldquo;yes&quot;를 답하고 그렇지 않으면 &ldquo;no&quot;라고 답하는 프로그램으로 어휘분석기는 유한 오토마타의 대표적인 예이다.</li>
+<li>유한 오토마타를 표현하는 방법에는 두 가지가 있는데, 먼저 정의에 따라서 5가지의 구성원소들을 형식(formal)에 맞게 정확히 표현하는 방법이 있다. 다음으로는 상태전이도(transition diagram)를 사용하여 비형식적(informal)으로 표현하는 방법이다. 일반적으로 유한 오토마타를 설명할 때 상태전이도를 많이 사용한다.</li>
+<li>유한 오토마타는 결정적 유한 오토마타(Deterministic Finite Automata :DFA) 와 비결정적 유한오토마타(Nondeterministic Finite Automata; NFA)로 나뉘어진다.</li>
+<li>결정적 유한 오토마타(DFA)란 하나의 입력문자열에 대하여 오직 하나의 다음 상태가 결정되는 유한 오토마타이다.</li>
+<li>비결정적 유한 오토마타(NFA)란 두 가지가 있는데 먼저, ε 에 의한 전이가 있는 경우와 다음으로 어떤 상태에서 주어진 하나의 입력기호를 보고, 갈수 있는 다음 상태가 두 개 이상 존재할 수 있는 유한 오토마타이다.</li>
+<li>DFA 는 상태수를 최소로 줄일 수가 있다. 이렇게 해서 컴파일러의 효율을 높이는 것이다.</li>
+<li>정규 표현, 정규 문법, 유한 오토마타는 서로 동치관계에 있으며 서로 변환 가능하다.</li>
+</ol>
+</blockquote>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/compiler/">compiler</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/compiler/finite_automata/">유한 오토마타</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/compiler/formal_language_and_formal_grammar/">형식언어와 형식문법</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.15/">20.11.15_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.14/">20.11.14_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.13/">20.11.13_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.12/">20.11.12_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.11/">20.11.11_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/database">Database
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/docker">Docker
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/react">React
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/database">Database
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
