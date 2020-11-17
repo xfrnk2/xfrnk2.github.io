@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Nov 2020 17:39:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.16/</link>
+      <pubDate>Mon, 16 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.16/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  컴파일러 - 형식언어 형식문법, 그리고 유한오토마타에 대해 정리 레스토랑 시뮬레이션 리팩토링   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 컴파일러 배운내용 정리 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>유한 오토마타</title>
