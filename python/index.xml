@@ -5,22 +5,19 @@
     <link>https://xfrnk2.github.io/python/</link>
     <description>Recent content in Pythons on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Jul 2020 13:34:33 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 13:10:57 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자</title>
-      <link>https://xfrnk2.github.io/python/123/</link>
-      <pubDate>Mon, 20 Jul 2020 13:34:33 +0900</pubDate>
+      <title>Python - collections의 namedtuple과 typing의 NamedTuple 비교</title>
+      <link>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/</link>
+      <pubDate>Wed, 18 Nov 2020 13:10:57 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/python/123/</guid>
-      <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
-  생각해볼 거리를 정리해서 글로 올리자는 취지로 카테고리를 &amp;lsquo;Food For Thought&#39;라고 설정했다.ㅎㅎ
-&amp;lsquo;Food For Thought&#39;는 최근에 알게된 영어 표현으로 생각해볼 거리를 은유적으로 사용하는 범용적인 말이라고 한다.
-사실 블로그에 글을 올려야겠다 생각하면서도 지나고 나면 까먹기 때문에 이번만큼은 즉각 올리기로 마음먹고 글을 쓰는 중이다.
- 각설하고, 본론으로 들어가자면 Python으로 코딩 테스트 연습 문제를 풀던 중에, &amp;ldquo;원소 중 하나라도 크거나 작은 것이 있다면&amp;quot;이라는 조건이 붙었을때 어떻게 하면 좋을지 생각해봤다.</description>
+      <guid>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/</guid>
+      <description>코드 사용 예 - typing의 NamedTuple from typing import NamedTuple class Employee(NamedTuple): name: str id: int  코드 사용 예 - collections의 namedtuple from collections import namedtuple Employee = namedtuple(&#39;Employee&#39;, [&#39;name&#39;, &#39;id&#39;])   typing의 Namedtuple을 사용하는 편이 보다 자연스러운 인터페이스를 선언할 수 있다. collections의 namedtuple의 신버전이 typing의 NamedTuple이다.
+ typinng의 NamedTuple을 사용하면 좋은 점  type 이름을 두 번 반복 할 필요가 없다. ( 예시에서의 &amp;ldquo;Employee&amp;rdquo;) type을 사용자가 직접 정의 할 수 있다.</description>
     </item>
     
   </channel>

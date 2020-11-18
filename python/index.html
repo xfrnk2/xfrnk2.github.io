@@ -100,7 +100,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/python/123/">
+                <a class="bubble" href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -108,11 +108,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/123/">FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/">Python - collections의 namedtuple과 typing의 NamedTuple 비교</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2020-07-20</span>
+        <span class="date moment">2020-11-18</span>
         
         
 
@@ -122,7 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought</a>
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
                 
             
         </span>
@@ -138,14 +138,11 @@
     </div>
 
     
-    Foot For Thought : 생각할 거리, -를 줄여서 FFT-
-  생각해볼 거리를 정리해서 글로 올리자는 취지로 카테고리를 &lsquo;Food For Thought'라고 설정했다.ㅎㅎ
-&lsquo;Food For Thought'는 최근에 알게된 영어 표현으로 생각해볼 거리를 은유적으로 사용하는 범용적인 말이라고 한다.
-사실 블로그에 글을 올려야겠다 생각하면서도 지나고 나면 까먹기 때문에 이번만큼은 즉각 올리기로 마음먹고 글을 쓰는 중이다.
- 각설하고, 본론으로 들어가자면 Python으로 코딩 테스트 연습 문제를 풀던 중에, &ldquo;원소 중 하나라도 크거나 작은 것이 있다면&quot;이라는 조건이 붙었을때 어떻게 하면 좋을지 생각해봤다.
+    코드 사용 예 - typing의 NamedTuple from typing import NamedTuple class Employee(NamedTuple): name: str id: int  코드 사용 예 - collections의 namedtuple from collections import namedtuple Employee = namedtuple('Employee', ['name', 'id'])   typing의 Namedtuple을 사용하는 편이 보다 자연스러운 인터페이스를 선언할 수 있다. collections의 namedtuple의 신버전이 typing의 NamedTuple이다.
+ typinng의 NamedTuple을 사용하면 좋은 점  type 이름을 두 번 반복 할 필요가 없다. ( 예시에서의 &ldquo;Employee&rdquo;) type을 사용자가 직접 정의 할 수 있다.
 
     
-    <a href="https://xfrnk2.github.io/python/123/" class="more">Continue reading</a>
+    <a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/" class="more">Continue reading</a>
     
     
 </div>
@@ -164,7 +161,7 @@
                 
                 
                 
-                <a href="https://xfrnk2.github.io/tags/fft/">FFT</a>
+                <a href="https://xfrnk2.github.io/tags/immutable/">immutable</a>
                 
                 
             </div>
@@ -201,31 +198,31 @@
             <ul>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/python/123/">FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자</a>
+                    <a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/">Python - collections의 namedtuple과 typing의 NamedTuple 비교</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.19/">20.07.19_TIL</a>
+                    <a href="https://xfrnk2.github.io/til/20.11.17/">20.11.17_TIL</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.18/">20.07.18_TIL</a>
+                    <a href="https://xfrnk2.github.io/til/20.11.16/">20.11.16_TIL</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.17/">20.07.17_TIL</a>
+                    <a href="https://xfrnk2.github.io/compiler/finite_automata/">유한 오토마타</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.16/">20.07.16_TIL</a>
+                    <a href="https://xfrnk2.github.io/compiler/formal_language_and_formal_grammar/">형식언어와 형식문법</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.15/">20.07.15_TIL</a>
+                    <a href="https://xfrnk2.github.io/til/20.11.15/">20.11.15_TIL</a>
                 </li>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/til/20.07.14/">20.07.14_TIL</a>
+                    <a href="https://xfrnk2.github.io/til/20.11.14/">20.11.14_TIL</a>
                 </li>
                 
             </ul>
@@ -258,12 +255,17 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/algorithm">Algorithm
+                    <a href="/categories/docker">Docker
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/categories/food-for-thought">Food for thought
+                    <a href="/categories/react">React
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
                         </a>
                 </li>
                 
@@ -287,6 +289,11 @@
                 </li>
                 
                 <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
                     <a href="/tags/boj">Boj
                         </a>
                 </li>
@@ -297,17 +304,12 @@
                 </li>
                 
                 <li>
-                    <a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">알고리즘
+                    <a href="/tags/sorting">Sorting
                         </a>
                 </li>
                 
                 <li>
                     <a href="/tags/database">Database
-                        </a>
-                </li>
-                
-                <li>
-                    <a href="/tags/%EC%A0%95%EB%A0%AC">정렬
                         </a>
                 </li>
                 
