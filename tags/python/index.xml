@@ -5,17 +5,31 @@
     <link>https://xfrnk2.github.io/tags/python/</link>
     <description>Recent content in Python on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Nov 2020 13:10:57 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2020 14:10:57 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Python - namedtuple과 dataclass 비교 정리</title>
+      <link>https://xfrnk2.github.io/python/comparison_namedtuple_and_dataclass/</link>
+      <pubDate>Wed, 18 Nov 2020 14:10:57 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/python/comparison_namedtuple_and_dataclass/</guid>
+      <description> ＊namedtuple은 tuple을 상속받았으며 tuple 구조는 c로 작성되었다. 그러므로 해시나 비교 등의 메서드가 빠르다.
+  ＊dataclass는 dictionary에 기초하므로 장단점의 차이가 생긴다.
+  ＊예를 들면 공간 사용은 tuple이 더 작으나, 액세스 속도는 dataclass가 더 빠르다.
+  ＊따라서 원하는 데이터의 구조가 immutable하고, hashable, iterable, unpackable, comparable하다면 namedtuple을 사용하는 편이 좋다. 그리고 예를들어 상속의 가능성 등 복잡한 구조를 원한다면 dataclass를 사용하는 편이 좋다.
+  참고 링크
+https://stackoverflow.com/questions/51671699/data-classes-vs-typing-namedtuple-primary-use-cases  </description>
+    </item>
+    
+    <item>
       <title>Python - collections의 namedtuple과 typing의 NamedTuple 비교</title>
-      <link>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/</link>
+      <link>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/</link>
       <pubDate>Wed, 18 Nov 2020 13:10:57 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple/</guid>
+      <guid>https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/</guid>
       <description>코드 사용 예 - typing의 NamedTuple from typing import NamedTuple class Employee(NamedTuple): name: str id: int  코드 사용 예 - collections의 namedtuple from collections import namedtuple Employee = namedtuple(&#39;Employee&#39;, [&#39;name&#39;, &#39;id&#39;])   typing의 Namedtuple을 사용하는 편이 보다 자연스러운 인터페이스를 선언할 수 있다. collections의 namedtuple의 신버전이 typing의 NamedTuple이다.
  typinng의 NamedTuple을 사용하면 좋은 점  type 이름을 두 번 반복 할 필요가 없다. ( 예시에서의 &amp;ldquo;Employee&amp;rdquo;) type을 사용자가 직접 정의 할 수 있다.</description>
     </item>

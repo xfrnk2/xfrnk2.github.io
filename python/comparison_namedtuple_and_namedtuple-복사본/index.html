@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Python - collections의 namedtuple과 typing의 NamedTuple 비교 | Rad Blog</title>
+    <meta name="description" content="Python - collections의 namedtuple과 typing의 NamedTuple 비교 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Python - collections의 namedtuple과 typing의 NamedTuple 비교">
+    <meta itemprop="description" content="Python - collections의 namedtuple과 typing의 NamedTuple 비교 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Python - collections의 namedtuple과 typing의 NamedTuple 비교">
+    <meta property="og:description" content="Python - collections의 namedtuple과 typing의 NamedTuple 비교 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/">Python - collections의 namedtuple과 typing의 NamedTuple 비교</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-11-18</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h2 id="코드-사용-예---typing의-namedtuple">코드 사용 예 - typing의 NamedTuple</h2>
+<pre><code>from typing import NamedTuple
+
+class Employee(NamedTuple):
+    name: str
+    id: int
+</code></pre><hr>
+<h2 id="코드-사용-예---collections의-namedtuple">코드 사용 예 - collections의 namedtuple</h2>
+<pre><code>from collections import namedtuple
+
+Employee = namedtuple('Employee', ['name', 'id'])
+</code></pre><hr>
+<blockquote>
+<p>typing의 Namedtuple을 사용하는 편이 보다 자연스러운 인터페이스를 선언할 수 있다. collections의 namedtuple의 신버전이 typing의 NamedTuple이다.</p>
+</blockquote>
+<h2 id="typinng의-namedtuple을-사용하면-좋은-점">typinng의 NamedTuple을 사용하면 좋은 점</h2>
+<ul>
+<li>type 이름을 두 번 반복 할 필요가 없다. ( 예시에서의 &ldquo;Employee&rdquo;)</li>
+<li>type을 사용자가 직접 정의 할 수 있다. (예 : 독 스트링 또는 일부 메소드 추가) -&gt; NamedTuple의 하위 클래스가 아님</li>
+<li>상속이 가능하다.</li>
+<li>기본값 지정 가능(그러나 Python 3.7부터 collections의 namedtuple에도 default 키워드가 추가되었으므로 더이상 이점은 아니다)</li>
+</ul>
+<hr>
+<h2 id="namedtuple을-짧게-사용하는-사용예시">NamedTuple을 짧게 사용하는 사용예시</h2>
+<pre><code>PageDimensions = NamedTuple(&quot;PageDimensions&quot;, [('width', int), ('height', int)])
+</code></pre><hr>
+<h2 id="python37부터-추가된-collectionsnamedtuple의-_field_defaults-기본값-속성-용법">Python3.7부터 추가된 collections.namedtuple의 _field_defaults (기본값) 속성 용법</h2>
+<ol>
+<li>기존 사용방법과 같이 코드 작성</li>
+</ol>
+<pre><code>Account = namedtuple('Account', 'name num logincount')
+</code></pre><ol start="2">
+<li>뒤에 콤마(,) 후 default=[]괄호 안에 숫자를 입력</li>
+</ol>
+<pre><code>Account = namedtuple('Account', 'name num logincount', defaults=[1])
+</code></pre><blockquote>
+<p>가장 뒤에 선언된 속성부터 기본값이 매겨지게 되므로, 이후 Accounts._field_defaults를 출력하면 {&lsquo;logincount&rsquo; : 1}이 된다.</p>
+</blockquote>
+<blockquote>
+<p>이와 다르게 default=[1, 2]라고 입력한 뒤 출력하면 {&lsquo;num&rsquo; : 1, &lsquo;logincount&rsquo; : 2}의 결과가 나온다.</p>
+</blockquote>
+<blockquote>
+<p>만약 default=[1, 2, 3]을 입력한 뒤 출력하면 {&lsquo;name&rsquo; : 1, &lsquo;num&rsquo; : 2, &lsquo;logincount&rsquo; : 3}의 결과가 나온다.</p>
+</blockquote>
+<ul>
+<li>
+<p>참고링크<br>
+<a href="https://docs.python.org/3/library/collections.html">https://docs.python.org/3/library/collections.html</a><br>
+<a href="https://pythontic.com/containers/namedtuple/_field_defaults">https://pythontic.com/containers/namedtuple/_field_defaults</a></p>
+</li>
+<li>
+<p>typing의 NamedTuple과 collections의 namedtuple의 차이 비교<br>
+<a href="https://stackoverflow.com/questions/50766461/whats-the-difference-between-namedtuple-and-namedtuple">https://stackoverflow.com/questions/50766461/whats-the-difference-between-namedtuple-and-namedtuple</a></p>
+</li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/immutable/">immutable</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_dataclass/">Python - namedtuple과 dataclass 비교 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/python/comparison_namedtuple_and_namedtuple-%EB%B3%B5%EC%82%AC%EB%B3%B8/">Python - collections의 namedtuple과 typing의 NamedTuple 비교</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.17/">20.11.17_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.16/">20.11.16_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/compiler/finite_automata/">유한 오토마타</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/compiler/formal_language_and_formal_grammar/">형식언어와 형식문법</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.15/">20.11.15_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/database">Database
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/docker">Docker
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/react">React
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
