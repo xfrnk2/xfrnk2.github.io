@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Nov 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2020 23:41:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.22/</link>
+      <pubDate>Sun, 22 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.22/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  생활과법률 과목 과제 끝(이번학기 과제가 모두 끝났다.) 다음에 레스토랑 시뮬레이션에 적용하기 위한 비동기 프로그래밍 문서 일부 일람   내일 할 일  레스토랑 리팩토링, TDD 사용 개발 컴파일러 배운내용 정리 비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
+    
+    <item>
+      <title>20.11.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.21/</link>
+      <pubDate>Sat, 21 Nov 2020 23:41:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.21/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  생활과법률 과목 과제 일부 진행 컴퓨터 구조 과목 과제 끝   내일 할 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 컴파일러 배운내용 정리 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>20.11.20_TIL</title>
