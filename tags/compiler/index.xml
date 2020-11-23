@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/tags/compiler/</link>
     <description>Recent content in compiler on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 16 Nov 2020 17:39:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2020 22:39:02 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>LR, SLR, CLR 구문분석</title>
+      <link>https://xfrnk2.github.io/compiler/lr_syntax_analysis/</link>
+      <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/compiler/lr_syntax_analysis/</guid>
+      <description>공부 목표   LR 구문분석 방법의 특성을 이해할 수 있는지? Closure, Goto 함수를 구할 수 있는지? Canonical collection을 이해하고 Goto 그래프를 구성할 수 있는지? 파싱표를 구성하는 방법을 이해할 수 있는지? 파싱표를 보고 구문분석을 할 수 있는지? SLR 파싱표에서 충돌 문제를 이해할 수 있는지? LR(1) 항목에서 lookahead 정보를 계산할 수 있는지? lookahead 정보를 이용한 closure와 canonical collection을 이해 할 수 있는지?    용어 설명  LR : Left to right scanning and Right parse LR(k) 문법 : 모든 엔트리(entry)에 대해, 유일하게 정의되는 파싱표를 만들 수 있는 문법.</description>
+    </item>
+    
+    <item>
+      <title>구문분석</title>
+      <link>https://xfrnk2.github.io/compiler/syntax_analysis/</link>
+      <pubDate>Mon, 23 Nov 2020 17:39:02 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/compiler/syntax_analysis/</guid>
+      <description>공부 목표   top-down 방식과 bottom-up 방식의 구문분석을 정확히 이해할 수 있는지? shift-reduce 구문분석 과정을 설명할 수 있는지? 문법에서 FIRST와 FOLLOW 를 계산할 수 있는지?    용어 설명  구문 분석 : 주어진 문장이 문법규칙에 올바른지 아닌지를 검사하는 것. top-down 방식과 bottom-up 방식으로 나눠지는데 일반적으로는 비교적 문법의 제약이 없는 bottom-up 방식을 주로 사용 핸들(handle) : Bottom-up 구문분석에서 reduce 되는 부분 reduce : 유도과정을 거꾸로 적용한 것. 즉, S ‗⇒ αAw ‗⇒ αβ w의 유도과정이 존재할 때, 문장형태 αβw 에서 β를 A로 대체하는 것 shift : 입력기호를 스택에 넣는 것 follow : FOLLOW(A) ＝ {a ∈ VT ∪ {＄} | S ‗⇒ αAaβ, α, β ∈ V＊} 즉, 어떤 문장형태에 있어서, 논터미널 A 다음에 나타 나는 터미널 기호들의 집합.</description>
+    </item>
     
     <item>
       <title>유한 오토마타</title>

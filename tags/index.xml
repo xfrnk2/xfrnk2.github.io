@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 Nov 2020 23:41:29 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2020 22:39:02 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>compiler</title>
+      <link>https://xfrnk2.github.io/tags/compiler/</link>
+      <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/compiler/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>
@@ -34,15 +43,6 @@
       <pubDate>Wed, 18 Nov 2020 14:10:57 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>compiler</title>
-      <link>https://xfrnk2.github.io/tags/compiler/</link>
-      <pubDate>Mon, 16 Nov 2020 17:39:02 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/compiler/</guid>
       <description></description>
     </item>
     
