@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 23 Nov 2020 22:39:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2020 23:45:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.11.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.11.23/</link>
+      <pubDate>Mon, 23 Nov 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.11.23/</guid>
+      <description>계획했던 일  학교 과제 하기 레스토랑 리팩토링, TDD 사용 개발 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  영어 연습을 위한 대화 동영상 시청 레스토랑 시뮬레이션 리팩토링 dataclass에 대한 웹서핑 이전에 배운 컴파일러에 대해 포스팅(구문분석)   내일 할 일  레스토랑 리팩토링, TDD 사용 개발 배운내용 정리 비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기  </description>
+    </item>
     
     <item>
       <title>LR, SLR, CLR 구문분석</title>
