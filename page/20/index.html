@@ -105,6 +105,87 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    ▶ docker-compose에 대한 공식 문서 링크
+ 1. 파일 생성 및 작성 dockerfile,
+docker-compose.xml,
+requirements.txt
+각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
+기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
+▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
+
+    
+    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -563,79 +644,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.30/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.30/">20.07.30_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-07-30</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  영어 6문장과 그에 따른 문법 표현에 대해 공부했다. 그동안 영어를 배운 내용들을 메모장에 보기좋게 정리했다. Docker와 mysql 연동에는 성공 한 것 같았는데, 도커를 사용해서 띄우려 하니 에러가 자꾸 생겨서 여전히 해결하려고 하고 있고 아직 해결하지 못했다.   내일 할 일  오늘 발생한 에러 해결하기 Django 서버를 도커를 사용해서 띄우기  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -662,6 +670,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/20.11.26/">20.11.26_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/20.11.25/">20.11.25_TIL</a>
                 </li>
                 
@@ -683,10 +695,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/20.11.22/">20.11.22_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/20.11.21/">20.11.21_TIL</a>
                 </li>
                 
             </ul>
