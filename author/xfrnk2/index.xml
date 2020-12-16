@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 Dec 2020 23:45:29 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 16 Dec 2020 23:45:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.12.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.16/</link>
+      <pubDate>Wed, 16 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.16/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  리액트로 새로운 프로젝트 생성 후 TodoList화 같은 형식을 구현 가능한 family(Parent-Children-Child)의 골격을 구현   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
+    
+    <item>
+      <title>20.12.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.15/</link>
+      <pubDate>Tue, 15 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.15/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  별도의 영어 공부 리액트 - 이전에 배운 내용 복습   내일 할 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기.  </description>
+    </item>
     
     <item>
       <title>20.12.14_TIL</title>
@@ -17,15 +35,6 @@
       
       <guid>https://xfrnk2.github.io/til/20.12.14/</guid>
       <description>계획했던 일  레스토랑 리팩토링, TDD 사용 개발 배운내용 정리 비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  리액트 - 이전에 배운 내용 복습   내일 할 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기.  </description>
-    </item>
-    
-    <item>
-      <title>20.12.14_TIL</title>
-      <link>https://xfrnk2.github.io/til/20.12.15/</link>
-      <pubDate>Mon, 14 Dec 2020 23:45:29 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/til/20.12.15/</guid>
-      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기   오늘 한 일  별도의 영어 공부 리액트 - 이전에 배운 내용 복습   내일 할 일  비동기 프로그래밍 문서 보고 실습 제플린 샘플을 보고 HTML/CSS 연습하기.  </description>
     </item>
     
     <item>
