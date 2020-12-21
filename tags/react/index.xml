@@ -5,10 +5,23 @@
     <link>https://xfrnk2.github.io/tags/react/</link>
     <description>Recent content in React on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Sep 2020 23:46:41 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 Dec 2020 13:34:33 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/react/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FFT in React_props 서빙시 반드시 {}괄호를 사용하자!</title>
+      <link>https://xfrnk2.github.io/fft/react-props_serving/</link>
+      <pubDate>Mon, 21 Dec 2020 13:34:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/fft/react-props_serving/</guid>
+      <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
+  React(리액트)를 사용하여 Todo List를 만들었는데, 최종적으로 만들기 직전에 겪었던 문제에 대해서 간단히 정리하기 위해서 글을 쓴다.
+ 문제가 발생한 시점 Todo List로부터 Todo 데이터의 {todo.title}(제목)과 {todo.content}(내용)을 출력하려고 했는데, undefined 문구가 나오면서 출력할 수 없었다.
+ 문제가 있었던 부분 Todo 컴포넌트 선언시 props를 받아오는 부분에서 중괄호를 사용하지 않았던 것이 문제점이였다.
+const Todo = (todo, todos, setTodos) =&amp;gt; {.....}  문제를 개선한 모습 const Todo = ({todo, todos, setTodos}) =&amp;gt; {.</description>
+    </item>
     
     <item>
       <title>React(리액트)_Event(이벤트)</title>

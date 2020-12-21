@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Dec 2020 23:45:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 20 Dec 2020 23:45:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.12.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.20/</link>
+      <pubDate>Sun, 20 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.20/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  usedState와 useEffect를 사용한 crud 구현 진행   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
     
     <item>
       <title>20.12.19_TIL</title>

@@ -3,47 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xfrnk2.github.io/til/20.12.19/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/fft/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/fft/react-props_serving/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/fft/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/food-for-thought/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/props/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/react/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/til/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/til/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/til/</loc>
-    <lastmod>2020-12-19T23:45:29+09:00</lastmod>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2020-12-21T13:34:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/20.12.20/</loc>
+    <lastmod>2020-12-20T23:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/til/</loc>
+    <lastmod>2020-12-20T23:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/til/</loc>
+    <lastmod>2020-12-20T23:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/</loc>
+    <lastmod>2020-12-20T23:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/20.12.19/</loc>
     <lastmod>2020-12-19T23:45:29+09:00</lastmod>
   </url>
   
@@ -503,21 +538,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/fft/</loc>
-    <lastmod>2020-10-06T18:58:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/fft/</loc>
-    <lastmod>2020-10-06T18:58:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/food-for-thought/</loc>
-    <lastmod>2020-10-06T18:58:11+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/</loc>
     <lastmod>2020-10-06T18:58:11+09:00</lastmod>
   </url>
@@ -755,11 +775,6 @@
   <url>
     <loc>https://xfrnk2.github.io/til/20.09.04/</loc>
     <lastmod>2020-09-04T23:46:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/react/</loc>
-    <lastmod>2020-09-03T23:46:41+09:00</lastmod>
   </url>
   
   <url>
