@@ -1,0 +1,456 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> FFT in React_PreventDefault로 알아본 이벤트 핸들링 | Rad Blog</title>
+    <meta name="description" content="FFT in React_PreventDefault로 알아본 이벤트 핸들링 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="FFT in React_PreventDefault로 알아본 이벤트 핸들링">
+    <meta itemprop="description" content="FFT in React_PreventDefault로 알아본 이벤트 핸들링 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="FFT in React_PreventDefault로 알아본 이벤트 핸들링">
+    <meta property="og:description" content="FFT in React_PreventDefault로 알아본 이벤트 핸들링 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/fft/react-preventdefault/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/fft/react-preventdefault/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/fft/react-preventdefault/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/fft/react-preventdefault/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/fft/react-preventdefault/">FFT in React_PreventDefault로 알아본 이벤트 핸들링</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-12-25</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <blockquote>
+<p>Foot For Thought : 생각할 거리, -를 줄여서 FFT-</p>
+</blockquote>
+<p>  React(리액트)를 사용하여 TodoList를 구현하던 도중 예기치 않게 발생한 에러를 통해 이벤트 핸들링에 대해 알아보았다.</p>
+<hr>
+<h3 id="문제가-발생한-시점">문제가 발생한 시점</h3>
+<ul>
+<li><code>&lt;div&gt;</code> 내부에 <code>&lt;div&gt;</code>를 선언하여, 부모 레벨 <code>div</code>에서는 <code>onClick</code> 이벤트를, 자식 레벨 <code>div</code>에서는 form을 사용한 <code>onSubmit</code> 이벤트를 발생시키도록 했다.</li>
+<li>콘솔로 찍어 확인 한 결과 부모 레벨의 <code>div</code>의 <code>onClick</code> 이벤트만이 계속 나오는 것이 확인되었다.</li>
+</ul>
+<hr>
+<h3 id="문제가-있었던-부분">문제가 있었던 부분</h3>
+<ul>
+<li>SPA 방식에 기준하여 페이지의 전체 새로고침을 하지않고 특정 부분만을 갱신시키기 위해 preventDefault()를 남용한 것이 화근이었다.</li>
+<li>부모 레벨에서 발생시키는 함수 내부의 preventDefault()를 없애니 증상이 해결되었다.</li>
+</ul>
+<hr>
+<h3 id="문제를-개선한-모습">문제를 개선한 모습</h3>
+<p>부모레벨과 자식레벨에 각각 1, 2를 콘솔창에 찍도록 시험 해 본 결과, 해결 전에는 계속 1이 나왔고, 해결 뒤에는 적절히 1과 2가 나왔다.</p>
+<hr>
+<h3 id="비고">비고</h3>
+<p><code>preventDefault()</code> 말고도 <code>event.stopPropagation()</code> 또한 참고가 되었는데 문제 해결에 유효하진 않았던 것으로 보인다.</p>
+<ul>
+<li>mdn의 주의사항에 아래와 같이 명시되어 있다.</li>
+</ul>
+<blockquote>
+<p>Calling preventDefault() during any stage of event flow cancels the event, meaning that any default action normally taken by the implementation as a result of the event will not occur.</p>
+</blockquote>
+<ul>
+<li>보고 배운 사이트</li>
+</ul>
+<blockquote>
+<p><a href="https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/">https://joshua1988.github.io/web-development/javascript/event-propagation-delegation/</a></p>
+</blockquote>
+<ul>
+<li>결과적으로 이벤트가 겹치지 않는 형태로 짜는 편이 더 이상적일 것이라는 생각이 들었다.</li>
+</ul>
+<hr>
+<h3 id="추가-사항">추가 사항</h3>
+<ul>
+<li>탐색 순서가 bottom to top(내부-&gt;외부) / 탐색 순서가 top to bottom(외부-&gt;내부)</li>
+<li>기본적으로 브라우저가 웹페이지 로딩시에 페이지의 요소와 이벤트를 탐색하게 되는데, 이 때 읽어나가는 순서적인 관점에서 <code>이벤트 버블링</code>과 <code>이벤트 캡쳐링</code>의 개념이 발생하는 것으로 이해했다.</li>
+</ul>
+<blockquote>
+<p>“Event bubbling and capturing are two ways of event propagation in the HTML DOM API when an event occurs in an element inside another element, and both elements have registered a handler for that event. The event propagation mode determines in which order the elements receive the event.”</p>
+</blockquote>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/react/">React</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/fft/">FFT</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/props/">props</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.26/">20.12.26_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.25/">20.12.25_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/fft/react-preventdefault/">FFT in React_PreventDefault로 알아본 이벤트 핸들링</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.24/">20.12.24_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.23/">20.12.23_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.22/">20.12.22_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/20.12.21/">20.12.21_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/compiler">Compiler
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/database">Database
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/docker">Docker
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2020
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

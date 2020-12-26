@@ -5,10 +5,21 @@
     <link>https://xfrnk2.github.io/fft/</link>
     <description>Recent content in Ffts on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 21 Dec 2020 13:34:33 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Dec 2020 13:34:33 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/fft/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FFT in React_PreventDefault로 알아본 이벤트 핸들링</title>
+      <link>https://xfrnk2.github.io/fft/react-preventdefault/</link>
+      <pubDate>Fri, 25 Dec 2020 13:34:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/fft/react-preventdefault/</guid>
+      <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
+  React(리액트)를 사용하여 TodoList를 구현하던 도중 예기치 않게 발생한 에러를 통해 이벤트 핸들링에 대해 알아보았다.
+ 문제가 발생한 시점  &amp;lt;div&amp;gt; 내부에 &amp;lt;div&amp;gt;를 선언하여, 부모 레벨 div에서는 onClick 이벤트를, 자식 레벨 div에서는 form을 사용한 onSubmit 이벤트를 발생시키도록 했다. 콘솔로 찍어 확인 한 결과 부모 레벨의 div의 onClick 이벤트만이 계속 나오는 것이 확인되었다.   문제가 있었던 부분  SPA 방식에 기준하여 페이지의 전체 새로고침을 하지않고 특정 부분만을 갱신시키기 위해 preventDefault()를 남용한 것이 화근이었다.</description>
+    </item>
     
     <item>
       <title>FFT in React_props 서빙시 반드시 {}괄호를 사용하자!</title>
