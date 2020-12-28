@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Dec 2020 23:45:29 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Dec 2020 23:45:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20.12.27_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.27/</link>
+      <pubDate>Sun, 27 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.27/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  Redux 학습 및 복습   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
     
     <item>
       <title>20.12.26_TIL</title>
