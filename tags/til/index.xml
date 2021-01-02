@@ -5,10 +5,64 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Dec 2020 23:45:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 02 Jan 2021 23:45:29 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>블로그 시작 후 첫 회고, 지난 8개월 (2020/04/17~2020/12/31)</title>
+      <link>https://xfrnk2.github.io/til/2020%EB%85%84%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Sat, 02 Jan 2021 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/2020%EB%85%84%ED%9A%8C%EA%B3%A0/</guid>
+      <description>블로그 시작 후 첫 회고, 지난 8개월  블로그를 시작하여 첫 게시글을 올린것이 지난 2020년 4월 17일. 그 날 이후로, 글머리에 TIL을 붙이고, 그날 그날의 일과를 기록하기 시작했다. 이따금 새롭게 알게된 중요한 정보나 에러 해결 과정 등에 대해서 필요할 때 볼 수 있도록 별도로 포스팅하였다. 벌써 2020년이 끝나 2021년 새해를 맞이하게 되었다.   무엇이 변했나?  github의 기록을 이따금 돌아볼 때면 발자취를 엿볼수가 있어 뿌듯했고 성취감을 느낄 수 있었다. 공부에 좋은 동기부여가 되었다.</description>
+    </item>
+    
+    <item>
+      <title>21.01.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.01.01/</link>
+      <pubDate>Fri, 01 Jan 2021 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.01.01/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  휴식   내일 할 일  회고, 신년 계획 정리  </description>
+    </item>
+    
+    <item>
+      <title>20.12.31_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.31/</link>
+      <pubDate>Thu, 31 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.31/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  휴식   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
+    
+    <item>
+      <title>20.12.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.30/</link>
+      <pubDate>Wed, 30 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.30/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  42서울 테스트 풀기   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
+    
+    <item>
+      <title>20.12.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.29/</link>
+      <pubDate>Tue, 29 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.29/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  42서울 테스트 풀기   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
+    
+    <item>
+      <title>20.12.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/20.12.28/</link>
+      <pubDate>Mon, 28 Dec 2020 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/20.12.28/</guid>
+      <description>계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  Redux 구현   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  </description>
+    </item>
     
     <item>
       <title>20.12.27_TIL</title>
