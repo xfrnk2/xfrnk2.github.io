@@ -5,17 +5,53 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Feb 2021 12:39:03 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Apr 2021 11:20:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Python - Short Circuit Operator로서의 or, and 연산자</title>
+      <link>https://xfrnk2.github.io/python/python-operator_or_and_and/</link>
+      <pubDate>Mon, 05 Apr 2021 11:20:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/python/python-operator_or_and_and/</guid>
+      <description>   연산 수식     x or y if x is false, then y, else x   x and y if x is false, then x, else y     스위치를 이용해 값 병합할 때 사용 https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not  </description>
+    </item>
+    
+    <item>
+      <title>Python - Python의 변수 할당 매커니즘</title>
+      <link>https://xfrnk2.github.io/python/python-variables_machanism/</link>
+      <pubDate>Mon, 05 Apr 2021 11:19:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/python/python-variables_machanism/</guid>
+      <description>파이썬은 변수를 생성할 때 변수를 위한 메모리를 생성하는 방식이 아니라, 변수가 만들어지고 어떠한 값을 넣으면 변수가 그 값을 참조하는 형태이다. 변수에 상수 값을 할당하고자 해도 값이 변경되기 때문에 파이썬에서는 상수를 사용하지 않는다. 그 대신 클래스를 사용한 여러가지 방법으로 상수를 정의할 수는 있다.(FrozenSpace, SpaceFrozenValues, __slots__, property, metaclass 등, 또는 Python 3.8~ typing.Final(*그러나 재할당 가능))   from uuid import uuid4 class obj: def __init__(self): self.__data = uuid4() self.__is_changed = False @property def data(self): return self.</description>
+    </item>
+    
+    <item>
+      <title>Python - source.error(“incomplete escape %s” % escape, len(escape))</title>
+      <link>https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/</link>
+      <pubDate>Mon, 05 Apr 2021 11:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/</guid>
+      <description>문제 발생 상황 raise source.error(&amp;quot;incomplete escape %s&amp;quot; % escape, len(escape)) re.error: incomplete escape \U at position 72 (line 4, column 3)  PEP8을 따르도록 터미널에서 flake8을 입력하니 위와 같은 에러가 발생했다. 검색 결과 보통의 경우 위의 메세지는 파일 어딘가에 \U 문자열이 포함되어 있을때 발생 하는 것으로 나타났지만 \U는 없을 뿐더러 전혀 다른 경우였다.   에러 발생 원인  함수의 입력값으로서 파라미터를 Typing할 때. 추상메서드를 사용한 빈 객체 파라미터에 대한 타입을 명시할 때 발생하는 것이 확인되었다.</description>
+    </item>
+    
+    <item>
+      <title>Python - isort Error</title>
+      <link>https://xfrnk2.github.io/resolved_problem/python-flake8-isort/</link>
+      <pubDate>Mon, 05 Apr 2021 11:16:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/python-flake8-isort/</guid>
+      <description>문제 발생 상황  PEP8을 따르도록 수정하기 위해 command prompt에 flake8 file.py을 입력했다. isort error가 표시되었다.   문제 해결  https://pypi.org/project/isort/ isort는 python에서 import하는 라이브러리들을 자동으로 정렬해준다.  isort file.py  이후 나오는 질문에선 y를 입력하면 된다.  </description>
+    </item>
+    
+    <item>
       <title>Shell script에 권한을 주기 // Error message - make : command not found, Permission denied for linuxwindowsscript.sh file</title>
-      <link>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission/</link>
+      <link>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/</link>
       <pubDate>Wed, 17 Feb 2021 12:39:03 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission/</guid>
+      <guid>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/</guid>
       <description>Shell script에 권한을 주기 makefile의 한 부분 OsConf= ./LinuxWindowsScript.sh # (OS의 종류에 따라 다르게 동작하도록 하는 쉘 스크립트 파일) travis-ci Error log ./LinuxWindowsScript.sh make: ./LinuxWindowsScript.sh: Command not found Makefile:53: recipe for target &#39;lint&#39; failed make: *** [lint] Error 127 The command &amp;quot;make lint&amp;quot; exited with 2. 해결한 방법 git update-index --add --chmod=+x linuxshellscript.sh git commit -m &#39;Make linuxshellscript.sh executable&#39; git push  문제 원인 : script doesn&amp;rsquo;t have execute permissions Powershell 사용해서 커맨드 실행 (Windows) 후 정상 작동을 확인  　참고한 곳</description>
     </item>
     
