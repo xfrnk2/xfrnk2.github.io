@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shell on Rad Blog</title>
-    <link>/tags/shell/</link>
+    <link>https://xfrnk2.github.io/tags/shell/</link>
     <description>Recent content in Shell on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 29 Apr 2020 14:27:36 +0900</lastBuildDate>
     
-	<atom:link href="/tags/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/tags/shell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Django Shell</title>
-      <link>/django/django_shell/</link>
+      <link>https://xfrnk2.github.io/django/django_shell/</link>
       <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       
-      <guid>/django/django_shell/</guid>
+      <guid>https://xfrnk2.github.io/django/django_shell/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
   우선순위 : ipython 쉘, bpython 쉘, python 쉘

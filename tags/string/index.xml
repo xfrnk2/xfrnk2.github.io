@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>string on Rad Blog</title>
-    <link>/tags/string/</link>
+    <link>https://xfrnk2.github.io/tags/string/</link>
     <description>Recent content in string on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 09 May 2020 00:48:07 +0900</lastBuildDate>
     
-	<atom:link href="/tags/string/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/tags/string/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>BOJ-4949-균형잡힌 세상[문자열 처리]</title>
-      <link>/boj/4949/</link>
+      <link>https://xfrnk2.github.io/boj/4949/</link>
       <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
       
-      <guid>/boj/4949/</guid>
+      <guid>https://xfrnk2.github.io/boj/4949/</guid>
       <description>BOJ-4949-균형잡힌 세상 문제 바로가기  나의 풀이 def get_result(sentence: str) -&amp;gt; bool: bracket_stack = [] for s in sentence: if s.isalpha(): continue elif s == &amp;quot;(&amp;quot;: bracket_stack.append(1) elif s == &amp;quot;[&amp;quot;: bracket_stack.append(0) elif s == &amp;quot;)&amp;quot; or s == &amp;quot;]&amp;quot;: try: if bracket_stack[-1] == 0 and s == &amp;quot;)&amp;quot;: return False elif bracket_stack[-1] == 1 and s == &amp;quot;]&amp;quot;: return False bracket_stack.pop() except IndexError: return False return not bracket_stack if __name__ == &#39;__main__&#39;: sentence_list = [] while True: get_input = input() if get_input == &#39;.</description>
     </item>
     

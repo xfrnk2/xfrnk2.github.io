@@ -2,326 +2,326 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Rad Blog</title>
-    <link>/tags/</link>
+    <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 31 May 2021 23:20:30 +0900</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>TIL</title>
-      <link>/tags/til/</link>
+      <link>https://xfrnk2.github.io/tags/til/</link>
       <pubDate>Mon, 31 May 2021 23:20:30 +0900</pubDate>
       
-      <guid>/tags/til/</guid>
+      <guid>https://xfrnk2.github.io/tags/til/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://xfrnk2.github.io/tags/python/</link>
       <pubDate>Mon, 05 Apr 2021 11:20:34 +0900</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://xfrnk2.github.io/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>resolved problem</title>
-      <link>/tags/resolved-problem/</link>
+      <link>https://xfrnk2.github.io/tags/resolved-problem/</link>
       <pubDate>Mon, 05 Apr 2021 11:17:34 +0900</pubDate>
       
-      <guid>/tags/resolved-problem/</guid>
+      <guid>https://xfrnk2.github.io/tags/resolved-problem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>FFT</title>
-      <link>/tags/fft/</link>
+      <link>https://xfrnk2.github.io/tags/fft/</link>
       <pubDate>Fri, 25 Dec 2020 13:34:33 +0900</pubDate>
       
-      <guid>/tags/fft/</guid>
+      <guid>https://xfrnk2.github.io/tags/fft/</guid>
       <description></description>
     </item>
     
     <item>
       <title>props</title>
-      <link>/tags/props/</link>
+      <link>https://xfrnk2.github.io/tags/props/</link>
       <pubDate>Fri, 25 Dec 2020 13:34:33 +0900</pubDate>
       
-      <guid>/tags/props/</guid>
+      <guid>https://xfrnk2.github.io/tags/props/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>/tags/react/</link>
+      <link>https://xfrnk2.github.io/tags/react/</link>
       <pubDate>Fri, 25 Dec 2020 13:34:33 +0900</pubDate>
       
-      <guid>/tags/react/</guid>
+      <guid>https://xfrnk2.github.io/tags/react/</guid>
       <description></description>
     </item>
     
     <item>
       <title>compiler</title>
-      <link>/tags/compiler/</link>
+      <link>https://xfrnk2.github.io/tags/compiler/</link>
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
       
-      <guid>/tags/compiler/</guid>
+      <guid>https://xfrnk2.github.io/tags/compiler/</guid>
       <description></description>
     </item>
     
     <item>
       <title>immutable</title>
-      <link>/tags/immutable/</link>
+      <link>https://xfrnk2.github.io/tags/immutable/</link>
       <pubDate>Wed, 18 Nov 2020 14:10:57 +0900</pubDate>
       
-      <guid>/tags/immutable/</guid>
+      <guid>https://xfrnk2.github.io/tags/immutable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>algorithm</title>
-      <link>/tags/algorithm/</link>
+      <link>https://xfrnk2.github.io/tags/algorithm/</link>
       <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
       
-      <guid>/tags/algorithm/</guid>
+      <guid>https://xfrnk2.github.io/tags/algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programmers</title>
-      <link>/tags/programmers/</link>
+      <link>https://xfrnk2.github.io/tags/programmers/</link>
       <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
       
-      <guid>/tags/programmers/</guid>
+      <guid>https://xfrnk2.github.io/tags/programmers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sorting</title>
-      <link>/tags/sorting/</link>
+      <link>https://xfrnk2.github.io/tags/sorting/</link>
       <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
       
-      <guid>/tags/sorting/</guid>
+      <guid>https://xfrnk2.github.io/tags/sorting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HTML</title>
-      <link>/tags/html/</link>
+      <link>https://xfrnk2.github.io/tags/html/</link>
       <pubDate>Mon, 05 Oct 2020 00:54:03 +0900</pubDate>
       
-      <guid>/tags/html/</guid>
+      <guid>https://xfrnk2.github.io/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
       <title>web</title>
-      <link>/tags/web/</link>
+      <link>https://xfrnk2.github.io/tags/web/</link>
       <pubDate>Mon, 05 Oct 2020 00:54:03 +0900</pubDate>
       
-      <guid>/tags/web/</guid>
+      <guid>https://xfrnk2.github.io/tags/web/</guid>
       <description></description>
     </item>
     
     <item>
       <title>system</title>
-      <link>/tags/system/</link>
+      <link>https://xfrnk2.github.io/tags/system/</link>
       <pubDate>Sun, 04 Oct 2020 00:40:00 +0900</pubDate>
       
-      <guid>/tags/system/</guid>
+      <guid>https://xfrnk2.github.io/tags/system/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Django</title>
-      <link>/tags/django/</link>
+      <link>https://xfrnk2.github.io/tags/django/</link>
       <pubDate>Fri, 02 Oct 2020 18:22:52 +0900</pubDate>
       
-      <guid>/tags/django/</guid>
+      <guid>https://xfrnk2.github.io/tags/django/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rendering</title>
-      <link>/tags/rendering/</link>
+      <link>https://xfrnk2.github.io/tags/rendering/</link>
       <pubDate>Sat, 26 Sep 2020 00:54:03 +0900</pubDate>
       
-      <guid>/tags/rendering/</guid>
+      <guid>https://xfrnk2.github.io/tags/rendering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>/tags/javascript/</link>
+      <link>https://xfrnk2.github.io/tags/javascript/</link>
       <pubDate>Thu, 03 Sep 2020 00:12:09 +0900</pubDate>
       
-      <guid>/tags/javascript/</guid>
+      <guid>https://xfrnk2.github.io/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>database</title>
-      <link>/tags/database/</link>
+      <link>https://xfrnk2.github.io/tags/database/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
       
-      <guid>/tags/database/</guid>
+      <guid>https://xfrnk2.github.io/tags/database/</guid>
       <description></description>
     </item>
     
     <item>
       <title>docker</title>
-      <link>/tags/docker/</link>
+      <link>https://xfrnk2.github.io/tags/docker/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
       
-      <guid>/tags/docker/</guid>
+      <guid>https://xfrnk2.github.io/tags/docker/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Error</title>
-      <link>/tags/error/</link>
+      <link>https://xfrnk2.github.io/tags/error/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
       
-      <guid>/tags/error/</guid>
+      <guid>https://xfrnk2.github.io/tags/error/</guid>
       <description></description>
     </item>
     
     <item>
       <title>mysql</title>
-      <link>/tags/mysql/</link>
+      <link>https://xfrnk2.github.io/tags/mysql/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
       
-      <guid>/tags/mysql/</guid>
+      <guid>https://xfrnk2.github.io/tags/mysql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>IT-Voca</title>
-      <link>/tags/it-voca/</link>
+      <link>https://xfrnk2.github.io/tags/it-voca/</link>
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
-      <guid>/tags/it-voca/</guid>
+      <guid>https://xfrnk2.github.io/tags/it-voca/</guid>
       <description></description>
     </item>
     
     <item>
       <title>relationmodel</title>
-      <link>/tags/relationmodel/</link>
+      <link>https://xfrnk2.github.io/tags/relationmodel/</link>
       <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
       
-      <guid>/tags/relationmodel/</guid>
+      <guid>https://xfrnk2.github.io/tags/relationmodel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ermodel</title>
-      <link>/tags/ermodel/</link>
+      <link>https://xfrnk2.github.io/tags/ermodel/</link>
       <pubDate>Fri, 15 May 2020 23:52:57 +0900</pubDate>
       
-      <guid>/tags/ermodel/</guid>
+      <guid>https://xfrnk2.github.io/tags/ermodel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>BOJ</title>
-      <link>/tags/boj/</link>
+      <link>https://xfrnk2.github.io/tags/boj/</link>
       <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
       
-      <guid>/tags/boj/</guid>
+      <guid>https://xfrnk2.github.io/tags/boj/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tree</title>
-      <link>/tags/tree/</link>
+      <link>https://xfrnk2.github.io/tags/tree/</link>
       <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
       
-      <guid>/tags/tree/</guid>
+      <guid>https://xfrnk2.github.io/tags/tree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>string</title>
-      <link>/tags/string/</link>
+      <link>https://xfrnk2.github.io/tags/string/</link>
       <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
       
-      <guid>/tags/string/</guid>
+      <guid>https://xfrnk2.github.io/tags/string/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Model</title>
-      <link>/tags/model/</link>
+      <link>https://xfrnk2.github.io/tags/model/</link>
       <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
       
-      <guid>/tags/model/</guid>
+      <guid>https://xfrnk2.github.io/tags/model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Queryset</title>
-      <link>/tags/queryset/</link>
+      <link>https://xfrnk2.github.io/tags/queryset/</link>
       <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
       
-      <guid>/tags/queryset/</guid>
+      <guid>https://xfrnk2.github.io/tags/queryset/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Migrate</title>
-      <link>/tags/migrate/</link>
+      <link>https://xfrnk2.github.io/tags/migrate/</link>
       <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
       
-      <guid>/tags/migrate/</guid>
+      <guid>https://xfrnk2.github.io/tags/migrate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Migration</title>
-      <link>/tags/migration/</link>
+      <link>https://xfrnk2.github.io/tags/migration/</link>
       <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
       
-      <guid>/tags/migration/</guid>
+      <guid>https://xfrnk2.github.io/tags/migration/</guid>
       <description></description>
     </item>
     
     <item>
       <title>debug-toolbar</title>
-      <link>/tags/debug-toolbar/</link>
+      <link>https://xfrnk2.github.io/tags/debug-toolbar/</link>
       <pubDate>Sat, 02 May 2020 22:12:14 +0900</pubDate>
       
-      <guid>/tags/debug-toolbar/</guid>
+      <guid>https://xfrnk2.github.io/tags/debug-toolbar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SQL</title>
-      <link>/tags/sql/</link>
+      <link>https://xfrnk2.github.io/tags/sql/</link>
       <pubDate>Sat, 02 May 2020 22:12:14 +0900</pubDate>
       
-      <guid>/tags/sql/</guid>
+      <guid>https://xfrnk2.github.io/tags/sql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Shell</title>
-      <link>/tags/shell/</link>
+      <link>https://xfrnk2.github.io/tags/shell/</link>
       <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       
-      <guid>/tags/shell/</guid>
+      <guid>https://xfrnk2.github.io/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Django-Admin</title>
-      <link>/tags/django-admin/</link>
+      <link>https://xfrnk2.github.io/tags/django-admin/</link>
       <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
       
-      <guid>/tags/django-admin/</guid>
+      <guid>https://xfrnk2.github.io/tags/django-admin/</guid>
       <description></description>
     </item>
     

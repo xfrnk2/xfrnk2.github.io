@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Djangos on Rad Blog</title>
-    <link>/django/</link>
+    <link>https://xfrnk2.github.io/django/</link>
     <description>Recent content in Djangos on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 02 Oct 2020 18:22:52 +0900</lastBuildDate>
     
-	<atom:link href="/django/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://xfrnk2.github.io/django/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Django SECRET_KEY 분리방법</title>
-      <link>/django/django_secret_key/</link>
+      <link>https://xfrnk2.github.io/django/django_secret_key/</link>
       <pubDate>Fri, 02 Oct 2020 18:22:52 +0900</pubDate>
       
-      <guid>/django/django_secret_key/</guid>
+      <guid>https://xfrnk2.github.io/django/django_secret_key/</guid>
       <description>방법은 두 종류가 있는데, 환경 변수로 저장하거나, 파일에 따로 저장하는 방법이다.
 환경 변수로 저장시 아파치 등 웹 서버를 사용하는 경우 저장되지 않을 수 있으므로 후자의 방법을 선택했다.
 임의의 원하는 공간에 secrets.json 파일을 작성 한 뒤, 아래와 같이 입력하고 저장한다.
@@ -28,30 +28,30 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
     
     <item>
       <title>Django - Queryset의 정렬 및 범위조건</title>
-      <link>/django/django_queryset_sort/</link>
+      <link>https://xfrnk2.github.io/django/django_queryset_sort/</link>
       <pubDate>Wed, 06 May 2020 12:55:27 +0900</pubDate>
       
-      <guid>/django/django_queryset_sort/</guid>
+      <guid>https://xfrnk2.github.io/django/django_queryset_sort/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   정렬 조건 추가  일관된 순서를 보장받기 위해 정렬 조건을 추가 DB에서 다수 필드에 대한 정렬을 지원하나 가급적 단일 필드로 하는것이 성능에 이익 시간순/역순 정렬이 필요할때는 id필드를 활용   정렬 조건 지정 방법 1. (추천) 모델 클래스의 Meta 속성으로 ordering 설정 : list로 지정 2. 모든 queryset에 order_by(&amp;hellip;)에 지정  (주의) queryset코드에서 직접 order_by를 지정하면, Meta&amp;gt;ordering 설정값이 무시된다</description>
     </item>
     
     <item>
       <title>Django - Migration을 통한 database 스키마 관리</title>
-      <link>/django/django_migartion/</link>
+      <link>https://xfrnk2.github.io/django/django_migartion/</link>
       <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
       
-      <guid>/django/django_migartion/</guid>
+      <guid>https://xfrnk2.github.io/django/django_migartion/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Migrations  모델의 변경내역을 &amp;ldquo;데이터베이스 스키마&amp;quot;로 반영시키는 효율적인 방법 제공  관련 명령: 마이그레이션 파일 생성 &amp;gt; python manage.py makemigrations &amp;lt;앱이름&amp;gt; 지정 데이터베이스에 마이그레이션 적용 &amp;gt; python manage.py migrate &amp;lt;앱이름&amp;gt; 마이그레이션 적용 현황 출력 &amp;gt; python manage.py showmigrations &amp;lt;앱이름&amp;gt; 지정 마이그레이션의 SQL 내역 출력 &amp;gt; python manage.py sqlmigrate &amp;lt;앱이름&amp;gt; &amp;lt;Migration 이름&amp;gt;  Migration File 기능  모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능  주의할 점  같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨   의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요</description>
     </item>
     
     <item>
       <title>Django - 관계를 표현하는 Model Field - ManyToManyField</title>
-      <link>/django/django_manytomanyfield/</link>
+      <link>https://xfrnk2.github.io/django/django_manytomanyfield/</link>
       <pubDate>Mon, 04 May 2020 12:24:08 +0900</pubDate>
       
-      <guid>/django/django_manytomanyfield/</guid>
+      <guid>https://xfrnk2.github.io/django/django_manytomanyfield/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
 예 ) 태그 지정에 대한 유효성 검사 ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,
@@ -60,10 +60,10 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     
     <item>
       <title>Django - 관계를 표현하는 Model Field - OneToOneField</title>
-      <link>/django/django_onetoonefield/</link>
+      <link>https://xfrnk2.github.io/django/django_onetoonefield/</link>
       <pubDate>Mon, 04 May 2020 11:11:59 +0900</pubDate>
       
-      <guid>/django/django_onetoonefield/</guid>
+      <guid>https://xfrnk2.github.io/django/django_onetoonefield/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능  User:Profile  ForeignKey(unique_True)와 유사하지만, reverse 차이  User:Profile를 ForeignKey로 지정한다면 -&amp;gt; profile.user_set.first() -&amp;gt; user User:Profile를 OneToOneField로 지정한다면 -&amp;gt; profile.user -&amp;gt; user  OneToOneField(to, on_delete) #django/contrib/auth/models.py class User(abstractBaseUser): ... # accounts/models.py class Profile(models.Model): author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
  OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&amp;gt; 모델명소문자 accounts/models.py class Profile(models.</description>
@@ -71,10 +71,10 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     
     <item>
       <title>Django - Model Field</title>
-      <link>/django/django_model_field/</link>
+      <link>https://xfrnk2.github.io/django/django_model_field/</link>
       <pubDate>Sat, 02 May 2020 23:19:28 +0900</pubDate>
       
-      <guid>/django/django_model_field/</guid>
+      <guid>https://xfrnk2.github.io/django/django_model_field/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   ORM  ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음   보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
   RDMBS에서의 관계 예시 1 : N 관계 -&amp;gt; Foreign Key  1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment)  1 : 1 관계 -&amp;gt; models.</description>
@@ -82,30 +82,30 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     
     <item>
       <title>Django - 관계를 표현하는 Model Field - Foreign Key</title>
-      <link>/django/django_foreignkey/</link>
+      <link>https://xfrnk2.github.io/django/django_foreignkey/</link>
       <pubDate>Sat, 02 May 2020 23:07:21 +0900</pubDate>
       
-      <guid>/django/django_foreignkey/</guid>
+      <guid>https://xfrnk2.github.io/django/django_foreignkey/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &amp;lsquo;self&amp;rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.</description>
     </item>
     
     <item>
       <title>Django debug-toolbar를 통한 SQL 디버깅</title>
-      <link>/django/django_debug_toolbar_sql/</link>
+      <link>https://xfrnk2.github.io/django/django_debug_toolbar_sql/</link>
       <pubDate>Sat, 02 May 2020 22:12:14 +0900</pubDate>
       
-      <guid>/django/django_debug_toolbar_sql/</guid>
+      <guid>https://xfrnk2.github.io/django/django_debug_toolbar_sql/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &amp;ldquo;/body&amp;rdquo;)</description>
     </item>
     
     <item>
       <title>Django Model을 통한 조회 (기초)</title>
-      <link>/django/django_model_basic/</link>
+      <link>https://xfrnk2.github.io/django/django_model_basic/</link>
       <pubDate>Thu, 30 Apr 2020 11:59:38 +0900</pubDate>
       
-      <guid>/django/django_model_basic/</guid>
+      <guid>https://xfrnk2.github.io/django/django_model_basic/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Model Manager SELECT * FROM app_model;
 ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
@@ -118,10 +118,10 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
     
     <item>
       <title>Django Shell</title>
-      <link>/django/django_shell/</link>
+      <link>https://xfrnk2.github.io/django/django_shell/</link>
       <pubDate>Wed, 29 Apr 2020 14:27:36 +0900</pubDate>
       
-      <guid>/django/django_shell/</guid>
+      <guid>https://xfrnk2.github.io/django/django_shell/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
   우선순위 : ipython 쉘, bpython 쉘, python 쉘
@@ -130,20 +130,20 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
     
     <item>
       <title>Django Static &amp; Media 파일</title>
-      <link>/django/django_static_media_file/</link>
+      <link>https://xfrnk2.github.io/django/django_static_media_file/</link>
       <pubDate>Tue, 28 Apr 2020 23:25:41 +0900</pubDate>
       
-      <guid>/django/django_static_media_file/</guid>
+      <guid>https://xfrnk2.github.io/django/django_static_media_file/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   Static &amp;amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&amp;gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest.</description>
     </item>
     
     <item>
       <title>Django의 Admin 기능</title>
-      <link>/django/django_admin/</link>
+      <link>https://xfrnk2.github.io/django/django_admin/</link>
       <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
       
-      <guid>/django/django_admin/</guid>
+      <guid>https://xfrnk2.github.io/django/django_admin/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
   1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin.</description>
     </item>
