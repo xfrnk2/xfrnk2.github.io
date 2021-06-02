@@ -5,10 +5,30 @@
     <link>https://xfrnk2.github.io/tags/python/</link>
     <description>Recent content in Python on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Apr 2021 11:20:34 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 02:20:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Python - 딕셔너리 원소의 갯수를 보다 효율적으로 counting하는 방법</title>
+      <link>https://xfrnk2.github.io/python/python-counting_dictionary_elements_efficially/</link>
+      <pubDate>Wed, 02 Jun 2021 02:20:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/python/python-counting_dictionary_elements_efficially/</guid>
+      <description>Dictionary의 get 메소드를 활용하자. counts = dict() for i in items: counts[i] = counts.get(i, 0) + 1  시간복잡도적 측면에서 collections의 Counter보다 더 낫다. 출처 : 링크  </description>
+    </item>
+    
+    <item>
+      <title>Python - 많은 양의 데이터를 효율적으로 입력받는 방법</title>
+      <link>https://xfrnk2.github.io/python/python-sys_stdin_readline/</link>
+      <pubDate>Wed, 02 Jun 2021 02:19:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/python/python-sys_stdin_readline/</guid>
+      <description>sys.stdin.readline() 많은 데이터 입력을 받고자 할 때는 sys.stdin.readline()을 사용하는 것이 유리하다.
+(자바에서 Scanner보다 BufferedReader가 빠른것과 같은 맥락에서)
+import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, 위 코드에서 raw_input()은 함수를 담은 변수의 이름에 불과한데, Python 3부터는 raw_input이 없어지고 이것이 input()으로 이름이 바뀌었다.  </description>
+    </item>
     
     <item>
       <title>Python - Short Circuit Operator로서의 or, and 연산자</title>

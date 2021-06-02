@@ -5,26 +5,26 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 02:20:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Tue, 01 Jun 2021 01:20:30 +0900</pubDate>
+      <title>Python</title>
+      <link>https://xfrnk2.github.io/categories/python/</link>
+      <pubDate>Wed, 02 Jun 2021 02:20:34 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/categories/til/</guid>
+      <guid>https://xfrnk2.github.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://xfrnk2.github.io/categories/python/</link>
-      <pubDate>Mon, 05 Apr 2021 11:20:34 +0900</pubDate>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/categories/til/</link>
+      <pubDate>Wed, 02 Jun 2021 01:20:30 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/categories/python/</guid>
+      <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
     </item>
     
