@@ -105,6 +105,83 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_url_name_not_found/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_url_name_not_found/">Django - NoReverseMatch 에러, Reverse not found 해결방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    Error  NoReverseMatch at /polls/ Reverse for &lsquo;detail&rsquo; not found. &lsquo;detail&rsquo; is not a valid view function or pattern name.
+  \polls/templates/polls
+&lt;li&gt;&lt;a href=&quot;{% url 'detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt; 'detail' &raquo; 'polls:detail'으로 변경.
+&lt;li&gt;&lt;a href=&quot;{% url 'polls:detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt;   polls 앱의 urls.py는 settings.py과 같은 레벨에 위치한 urls.py 파일의 urlpatterns에 포함되어 있기 때문이다.
+ urlpatterns = [ ... path('', include('polls.url', name='polls') ] 
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/210603/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -143,25 +220,10 @@
     </div>
 
     
-    <h4 id="계획했던-일">계획했던 일</h4>
-<ul>
-<li>장고 웹사이트개발 참고서 따라가기</li>
-</ul>
-<hr>
-<h4 id="오늘-한-일">오늘 한 일</h4>
-<ul>
-<li>이전에 만든 앱들을 하나의 프로젝트로 합치기</li>
-<li>부트스트랩 적용, 아직 html과 css를 적절히 다룰줄 모르기 때문에 따라 치는 것만으로도 공부가 된다.<br>
-개념은 알고 있으니, 일일히 외울 필요는 없을 것 같지만, 세부적인것은 앞으로 적극 직접 더 찾아보도록 하면 좋겠다.</li>
-<li>{% block %}태크와 {% url %} 태그를 적극적으로 활용해보기</li>
-</ul>
-<hr>
-<h4 id="내일-할-일">내일 할 일</h4>
-<ul>
-<li>장고 웹사이트개발 참고서 따라가기</li>
-<li>밤의 독서모임 사회를 대비하여 충분히 쉬기</li>
-</ul>
+    계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  이전에 만든 앱들을 하나의 프로젝트로 합치기 부트스트랩 적용, 아직 html과 css를 적절히 다룰줄 모르기 때문에 따라 치는 것만으로도 공부가 된다.
+개념은 알고 있으니, 일일히 외울 필요는 없을 것 같지만, 세부적인것은 앞으로 적극 직접 더 찾아보도록 하면 좋겠다. {% block %}태크와 {% url %} 태그를 적극적으로 활용해보기   내일 할 일  장고 웹사이트개발 참고서 따라가기 밤의 독서모임 사회를 대비하여 충분히 쉬기  
 
+    
     
 </div>
 
@@ -565,79 +627,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/python/python-operator_or_and_and/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-operator_or_and_and/">Python - Short Circuit Operator로서의 or, and 연산자</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-04-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-       연산 수식     x or y if x is false, then y, else x   x and y if x is false, then x, else y     스위치를 이용해 값 병합할 때 사용 https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -662,6 +651,10 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/django/django_url_name_not_found/">Django - NoReverseMatch 에러, Reverse not found 해결방법</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210603/">21.06.03_TIL</a>
                 </li>
                 
@@ -683,10 +676,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210531_til%EC%8B%9C%EC%9E%91/">21.05.31_TIL 다시쓰기 &#43; 간단한 포부</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/python/python-operator_or_and_and/">Python - Short Circuit Operator로서의 or, and 연산자</a>
                 </li>
                 
             </ul>
