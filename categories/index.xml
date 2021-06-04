@@ -11,9 +11,18 @@
     
     
     <item>
+      <title>Django</title>
+      <link>https://xfrnk2.github.io/categories/django/</link>
+      <pubDate>Fri, 04 Jun 2021 01:44:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Fri, 04 Jun 2021 01:44:11 +0900</pubDate>
+      <pubDate>Fri, 04 Jun 2021 01:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
@@ -79,15 +88,6 @@
       <pubDate>Sun, 04 Oct 2020 00:40:00 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/system/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Django</title>
-      <link>https://xfrnk2.github.io/categories/django/</link>
-      <pubDate>Fri, 02 Oct 2020 18:22:52 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/django/</guid>
       <description></description>
     </item>
     

@@ -5,10 +5,23 @@
     <link>https://xfrnk2.github.io/tags/django/</link>
     <description>Recent content in Django on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Oct 2020 18:22:52 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 04 Jun 2021 01:44:11 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/django/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django - NoReverseMatch 에러, Reverse not found 해결방법</title>
+      <link>https://xfrnk2.github.io/django/django_url_name_not_found/</link>
+      <pubDate>Fri, 04 Jun 2021 01:44:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_url_name_not_found/</guid>
+      <description>Error  NoReverseMatch at /polls/ Reverse for &amp;lsquo;detail&amp;rsquo; not found. &amp;lsquo;detail&amp;rsquo; is not a valid view function or pattern name.
+  \polls/templates/polls
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{% url &#39;detail&#39; question.id %}&amp;quot;&amp;gt;{{ question.question_text }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt; &#39;detail&#39; &amp;raquo; &#39;polls:detail&#39;으로 변경.
+&amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;{% url &#39;polls:detail&#39; question.id %}&amp;quot;&amp;gt;{{ question.question_text }}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;   polls 앱의 urls.py는 settings.py과 같은 레벨에 위치한 urls.py 파일의 urlpatterns에 포함되어 있기 때문이다.
+ urlpatterns = [ ... path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;polls&#39;) ] </description>
+    </item>
     
     <item>
       <title>Django SECRET_KEY 분리방법</title>
