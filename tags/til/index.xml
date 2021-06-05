@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 04 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 05 Jun 2021 01:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.05_TIL</title>
+      <link>https://xfrnk2.github.io/til/210605/</link>
+      <pubDate>Sat, 05 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210605/</guid>
+      <description>계획했던 일  영어 단어 암기하기   오늘 한 일  최근 일주일 내 암기한 500개의 영어단어를 짝 맞추기 퀴즈를 통해서 복습   내일 할 일  장고 웹사이트개발 참고서 따라가기  </description>
+    </item>
     
     <item>
       <title>21.06.04_TIL</title>
