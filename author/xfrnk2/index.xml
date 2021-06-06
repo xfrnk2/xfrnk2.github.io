@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 06 Jun 2021 01:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/210606/</link>
+      <pubDate>Sun, 06 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210606/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  정렬 문제 풀이 파이썬 기본 문법 연습 파이썬 효율성 탐구(flatten, 2차원 리스트의 모든 원소를 1차원 리스트에 넣기)   numpy. reshape &amp;gt; numpy.flatten &amp;raquo; itertools.chain.from_iterable &amp;gt; itertools.chain + * &amp;gt; list comprehension &amp;raquo; sum +꺽쇠 2개는 백~수백배 자릿수 단위 차이
+  내일 할 일    장고 웹사이트개발 참고서 따라가기    </description>
+    </item>
     
     <item>
       <title>21.06.05_TIL</title>
