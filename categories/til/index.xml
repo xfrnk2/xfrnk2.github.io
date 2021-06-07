@@ -5,10 +5,22 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 07 Jun 2021 01:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/210607/</link>
+      <pubDate>Mon, 07 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210607/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  이진탐색 문제 풀이 장고 웹사이트개발 참고서 - 베이스 템플릿을 상속하여 모든 앱에 적용시키기   템플릿 상속을 연습을 거듭한 결과 어느정도 손에 익어가는 것 같다.
+장고 ImproperlyConfigured 에러를 해결했다. 오타가 문제였다!
+이진탐색 알고리즘 문제를 푸는데 습관적으로 재귀를 타이핑 하고 있었다. 문제를 잘 읽도록 습관을 들여야 할 것 같다.
+  내일 할 일  장고 웹사이트개발 참고서 따라가기   TIL이 아닌 별도의 회고록을 1달이나 1주일 단위로 작성할수 있도록 하면 더 좋을 것 같다.</description>
+    </item>
     
     <item>
       <title>21.06.06_TIL</title>
