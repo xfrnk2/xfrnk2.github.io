@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 09 Jun 2021 01:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.09_TIL</title>
+      <link>https://xfrnk2.github.io/til/210609/</link>
+      <pubDate>Wed, 09 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210609/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기 새로 암기한 영어 단어 숙달을 위해 한 단어당 한개 이상의 작문을 한 후 기록하기   오늘 한 일  이진탐색 문제 풀이 그동안 암기한 영어 단어를 가지고 작문후 바른 문장인지 확인 받음   오늘은 가족이 공통 휴일이라 가족과의 시간을 보내고, 평소 공부를 하던 밤 시간에는 오랜만의 친구와 이야기를 하느라 시간이 갔으므로 공부를 쉬기로 한다.
+내일은 온전히 공부를 위한 시간을 만들고, 토요일에 출석하여 치르는 시험이 있으니, 반드시 단단히 준비해서 임하도록 하자!</description>
+    </item>
     
     <item>
       <title>21.06.08_TIL</title>
