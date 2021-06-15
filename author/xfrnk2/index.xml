@@ -5,10 +5,45 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Jun 2021 01:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 16 Jun 2021 02:02:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>github blog, hugo sitemap couldn&#39;t fetch error / 깃허브 블로그, 휴고 사이트맵 가져올수 없음 에러</title>
+      <link>https://xfrnk2.github.io/blog/hugo_sitemap_error/</link>
+      <pubDate>Wed, 16 Jun 2021 02:02:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/blog/hugo_sitemap_error/</guid>
+      <description>  그동안 기록해 온 글을 구글에 노출시키기 위해 Google search console에 사이트맵을 등록했는데, 제대로 반영되지 않았다.
+  hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public 폴더 내에 있는 파일을 그대로 이용하면 된다.
+  문제 : sitemap.xml이라고 추가했는데 불구하고, 가져올 수 없음(couldn&amp;rsquo;t fetch, invalid)인 채로 열흘 지속됨.
+  해결 : 뒤의 확장자(.xml)을 제외하고 sitemap을 입력하여 제출했더니 곧바로 성공 초록 문구가 나타나며 해결.
+  </description>
+    </item>
+    
+    <item>
+      <title>21.06.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/210615/</link>
+      <pubDate>Tue, 15 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210615/</guid>
+      <description>계획했던 일  만들고자 하는 것을 명확하게 해서 방학 기간동안 프로젝트를 완성한다!
+  장고 웹사이트개발 참고서 따라가기   오늘 한 일  장고 웹사이트개발 참고서 따라가기 - django-taggit, django-taggit-templatetags2를 사용한 Tag 달기_Blog 앱 확장   방학 기간동안 완성할 프로젝트 ?
+크롤링으로 유료 강의 가격 비교 사이트를 만들어 보는게 좋을거라 생각이 든다.
+(얼마전 만난 물리학과에 재학중인 친한 동생과 사교육과 과외 이야기를 하면서 인사이트를 얻었다.^^)
+   블로그 포스팅 - 간단한 문제 해결 기록, 회고 정리 블로그에 포스팅 하기 전에 노션에 미리 기록하고 도서를 리뷰하기로 결정했다.</description>
+    </item>
+    
+    <item>
+      <title>21.06.10~21.06.14_TIL</title>
+      <link>https://xfrnk2.github.io/til/210610~210614/</link>
+      <pubDate>Mon, 14 Jun 2021 01:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210610~210614/</guid>
+      <description>계획했던 일  학교 시험 준비, 공부   21.06.10~ 21.06.11 TIL  학교 시험 준비, 공부   21.06.12 TIL  오전중 학교 방문 후 시험을 치른 뒤 저녁에 오랜만에 친구들을 만났다. 집에 돌아와서 이전에 암기한 영어 단어 중 자주 틀리는 영어단어들을 복습했다.(약 100개 이상)   21.06.13~ 21.06.14 TIL  가족 제사를 위한 준비, 성묘를 위한 이동에 바삐 움직였던 이틀이었다. 가족과 함께 시간을 보냈다. TIL을 쓰고 있는 지금 바로 직전에, 이전에 풀었던 이진 탐색 문제를 새롭게 풀었다.</description>
+    </item>
     
     <item>
       <title>21.06.09_TIL</title>
@@ -18,15 +53,6 @@
       <guid>https://xfrnk2.github.io/til/210609/</guid>
       <description>계획했던 일  장고 웹사이트개발 참고서 따라가기 새로 암기한 영어 단어 숙달을 위해 한 단어당 한개 이상의 작문을 한 후 기록하기   오늘 한 일  이진탐색 문제 풀이 그동안 암기한 영어 단어를 가지고 작문후 바른 문장인지 확인 받음   오늘은 가족이 공통 휴일이라 가족과의 시간을 보내고, 평소 공부를 하던 밤 시간에는 오랜만의 친구와 이야기를 하느라 시간이 갔으므로 공부를 쉬기로 한다.
 내일은 온전히 공부를 위한 시간을 만들고, 토요일에 출석하여 치르는 시험이 있으니, 반드시 단단히 준비해서 임하도록 하자!</description>
-    </item>
-    
-    <item>
-      <title>21.06.10~21.06.14_TIL</title>
-      <link>https://xfrnk2.github.io/til/210610~210614/</link>
-      <pubDate>Wed, 09 Jun 2021 01:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/til/210610~210614/</guid>
-      <description>계획했던 일  학교 시험 준비, 공부   21.06.10~ 21.06.11 TIL  학교 시험 준비, 공부   21.06.12 TIL  오전중 학교 방문 후 시험을 치른 뒤 저녁에 오랜만에 친구들을 만났다. 집에 돌아와서 이전에 암기한 영어 단어 중 자주 틀리는 영어단어들을 복습했다.(약 100개 이상)   21.06.13~ 21.06.14 TIL  가족 제사를 위한 준비, 성묘를 위한 이동에 바삐 움직였던 이틀이었다. 가족과 함께 시간을 보냈다. TIL을 쓰고 있는 지금 바로 직전에, 이전에 풀었던 이진 탐색 문제를 새롭게 풀었다.</description>
     </item>
     
     <item>
@@ -155,6 +181,20 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
     </item>
     
     <item>
+      <title>지난 6개월간 TIL을 쉬면서 - 21.05.31_TIL 다시쓰기 &#43; 간단한 포부</title>
+      <link>https://xfrnk2.github.io/review/210531_til%EC%8B%9C%EC%9E%91/</link>
+      <pubDate>Mon, 31 May 2021 23:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/review/210531_til%EC%8B%9C%EC%9E%91/</guid>
+      <description>여담 (지금 드는 생각과 간단한 포부) &amp;hellip;
+지난해 상반기, 약 반년동안 TIL을 썼다. 뭘 했는지 자신의 일거수 일투족을 기록하고자 썼다.
+쓰고 보니 얻는게 많았지만, 그와 함께 무엇이 필요한지도 명확하게 보였다. 따라서 나는,
+21.01.01의 회고를 적으면서 CS이론에 집중하기로 다짐하였고, 이후 kocw의 강의를 들으며 운영체제, 네트워크를 공부했다.
+중간중간 코딩도 해왔다. master branch에 하지 않고, pull request를 위한 dev branch에 올렸기에 나의 깃허브 레퍼지토리에 기록이 나타나진 않는다.
+(resaurant simulation과 puyopuyo 코딩을 했다. puyopuyo는 그마저도 아직 보완할 부분이 많다.</description>
+    </item>
+    
+    <item>
       <title>Python - Short Circuit Operator로서의 or, and 연산자</title>
       <link>https://xfrnk2.github.io/python/python-operator_or_and_and/</link>
       <pubDate>Mon, 05 Apr 2021 11:20:34 +0900</pubDate>
@@ -197,6 +237,15 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
       
       <guid>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/</guid>
       <description>Shell script에 권한을 주기 makefile의 한 부분 OsConf= ./LinuxWindowsScript.sh # (OS의 종류에 따라 다르게 동작하도록 하는 쉘 스크립트 파일) travis-ci Error log ./LinuxWindowsScript.sh make: ./LinuxWindowsScript.sh: Command not found Makefile:53: recipe for target &#39;lint&#39; failed make: *** [lint] Error 127 The command &amp;quot;make lint&amp;quot; exited with 2. 해결한 방법 git update-index --add --chmod=+x linuxshellscript.sh git commit -m &#39;Make linuxshellscript.sh executable&#39; git push  문제 원인 : script doesn&amp;rsquo;t have execute permissions Powershell 사용해서 커맨드 실행 (Windows) 후 정상 작동을 확인  　참고한 곳</description>
+    </item>
+    
+    <item>
+      <title>블로그 시작 후 첫 회고, 지난 8개월 (2020/04/17~2020/12/31)</title>
+      <link>https://xfrnk2.github.io/review/2020%EB%85%84%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Sat, 02 Jan 2021 23:45:29 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/review/2020%EB%85%84%ED%9A%8C%EA%B3%A0/</guid>
+      <description>블로그 시작 후 첫 회고, 지난 8개월  블로그를 시작하여 첫 게시글을 올린것이 지난 2020년 4월 17일. 그 날 이후로, 글머리에 TIL을 붙이고, 그날 그날의 일과를 기록하기 시작했다. 이따금 새롭게 알게된 중요한 정보나 에러 해결 과정 등에 대해서 필요할 때 볼 수 있도록 별도로 포스팅하였다. 벌써 2020년이 끝나 2021년 새해를 맞이하게 되었다.   무엇이 변했나?  github의 기록을 이따금 돌아볼 때면 발자취를 엿볼 수 있어 성취감을 느낄 수 있었다. 공부에 좋은 동기부여가 되었다.</description>
     </item>
     
     <item>
