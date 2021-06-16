@@ -5,15 +5,42 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Jun 2021 02:02:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>독서 목록</title>
+      <link>https://xfrnk2.github.io/book_list/book_list/</link>
+      <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/book_list/book_list/</guid>
+      <description>독서목록 (2021-06-16부터 기록 시작) 전공서   컴퓨터과학이 여는 세계 - 이광근 2021-06-15 ~129p 일독
+2021-06-16 전체 일독
+  쉽게 배우고 이해하는 컴퓨터 개론 - 김두진
+2021-06-15 ~61p 일독, 보수 뺄셈과 부동소수점 정독
+2021-06-16 ~61p 일독, 복습
+  IT 전문가로 사는법 - 장동인
+2021-06-16 전체 일독
+  비전공자를 위한 이해할 수 있는 IT지식 - 최원영
+2021-06-16 전체 일독
+  그 외(인문학 등)  동사의삶 - 최준영</description>
+    </item>
+    
+    <item>
+      <title>21.06.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/210616/</link>
+      <pubDate>Wed, 16 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210616/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기 적극적으로 기록하기 영어 단어 학습하기   오늘 한 일  장고 웹사이트개발 참고서 따라가기 - disqus 댓글, Q객체이용 검색 기능 추가 동적 프로그래밍 문제 4개 풀이(4개 유형 문제 모두 대안이 떠오르지 않아 종국에는 해답 코드를 보고 이해했다-&amp;gt; 많이 풀어야겠다.) 파이썬 기본연산과 자료형별 시간복잡도 검색해 들여다보았다. 이전까지 얄팍한 지식으로 문제를 풀어온 자신이 부끄러웠다. 코드잇의 대학생 코딩 캠프 7기에 신청했다.   6월 23일부터 시작이라고 한다.</description>
+    </item>
+    
+    <item>
       <title>github blog, hugo sitemap couldn&#39;t fetch error / 깃허브 블로그, 휴고 사이트맵 가져올수 없음 에러</title>
       <link>https://xfrnk2.github.io/blog/hugo_sitemap_error/</link>
-      <pubDate>Wed, 16 Jun 2021 02:02:16 +0900</pubDate>
+      <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/blog/hugo_sitemap_error/</guid>
       <description>  그동안 기록해 온 글을 구글에 노출시키기 위해 Google search console에 사이트맵을 등록했는데, 제대로 반영되지 않았다.

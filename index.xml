@@ -4,26 +4,35 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Jun 2021 02:02:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blogs</title>
-      <link>https://xfrnk2.github.io/blog/</link>
-      <pubDate>Wed, 16 Jun 2021 02:02:16 +0900</pubDate>
+      <title>Book_lists</title>
+      <link>https://xfrnk2.github.io/book_list/</link>
+      <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/blog/</guid>
+      <guid>https://xfrnk2.github.io/book_list/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Tue, 15 Jun 2021 01:20:30 +0900</pubDate>
+      <pubDate>Wed, 16 Jun 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogs</title>
+      <link>https://xfrnk2.github.io/blog/</link>
+      <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/blog/</guid>
       <description></description>
     </item>
     

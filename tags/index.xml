@@ -5,15 +5,33 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Jun 2021 02:02:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>BookList</title>
+      <link>https://xfrnk2.github.io/tags/booklist/</link>
+      <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/booklist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/tags/til/</link>
+      <pubDate>Wed, 16 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>blog</title>
       <link>https://xfrnk2.github.io/tags/blog/</link>
-      <pubDate>Wed, 16 Jun 2021 02:02:16 +0900</pubDate>
+      <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/blog/</guid>
       <description></description>
@@ -22,18 +40,9 @@
     <item>
       <title>hugo</title>
       <link>https://xfrnk2.github.io/tags/hugo/</link>
-      <pubDate>Wed, 16 Jun 2021 02:02:16 +0900</pubDate>
+      <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Tue, 15 Jun 2021 01:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/til/</guid>
       <description></description>
     </item>
     
