@@ -5,18 +5,39 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jun 2021 01:39:12 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>21.06.18~21.06.19_TIL</title>
-      <link>https://xfrnk2.github.io/til/210618~19/</link>
+      <title>Codility - lesson2_arrays_OddOccurrencesInArray</title>
+      <link>https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/</link>
+      <pubDate>Tue, 22 Jun 2021 01:39:12 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/</guid>
+      <description>문제 링크 https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+풀이 코딜리티에서 처음 풀어본 문제 두번의 시도를 했는데, 각각 O(N^2)과 O(N) or O(N*log n)이 나왔다. 아래와 같이 reduce를 사용하니 시간복잡도가 개선되었다.
+from functools import reduce def solution(A): return reduce(lambda acc, cur : acc ^ cur, A, 0)  첫 번째로 작성했던 지저분한 코드
+def solution(A): return eval(&#39;^&#39;.join(list(map(str, A)))) </description>
+    </item>
+    
+    <item>
+      <title>21.06.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/210621/</link>
+      <pubDate>Mon, 21 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210621/</guid>
+      <description>계획했던 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이   오늘 한 일  글짓기 공모전 제출 가능 형태로 원고 마무리 동적프로그래밍 이전에 해결한 문제 다시 풀어보기 (3문항) 코딜리티 회원가입 후 배열 문제 한개 풀고 난 뒤 블로그에 포스팅 파이썬 자료구조와 메소드별 시간복잡도 성능 분석글 일독 네이버 부스트캠프 신청 완료, 6/24 오후 7:00에 1차 코딩테스트 도전   내일 할 일  효과적인 시간복잡도 성능 개선 탐구 코딩테스트 대비 문제 풀이  </description>
+    </item>
+    
+    <item>
+      <title>21.06.18~21.06.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/210618~20/</link>
       <pubDate>Fri, 18 Jun 2021 00:20:30 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/til/210618~19/</guid>
-      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   21.06.18~21.06.19 TIL  글짓기 공모전 원고 작성   내일 할 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이  </description>
+      <guid>https://xfrnk2.github.io/til/210618~20/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   21.06.18~21.06.20 TIL  글짓기 공모전 원고 작성   내일 할 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이  </description>
     </item>
     
     <item>

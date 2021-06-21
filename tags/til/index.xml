@@ -5,18 +5,27 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 18 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>21.06.18~21.06.19_TIL</title>
-      <link>https://xfrnk2.github.io/til/210618~19/</link>
+      <title>21.06.21_TIL</title>
+      <link>https://xfrnk2.github.io/til/210621/</link>
+      <pubDate>Mon, 21 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210621/</guid>
+      <description>계획했던 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이   오늘 한 일  글짓기 공모전 제출 가능 형태로 원고 마무리 동적프로그래밍 이전에 해결한 문제 다시 풀어보기 (3문항) 코딜리티 회원가입 후 배열 문제 한개 풀고 난 뒤 블로그에 포스팅 파이썬 자료구조와 메소드별 시간복잡도 성능 분석글 일독 네이버 부스트캠프 신청 완료, 6/24 오후 7:00에 1차 코딩테스트 도전   내일 할 일  효과적인 시간복잡도 성능 개선 탐구 코딩테스트 대비 문제 풀이  </description>
+    </item>
+    
+    <item>
+      <title>21.06.18~21.06.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/210618~20/</link>
       <pubDate>Fri, 18 Jun 2021 00:20:30 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/til/210618~19/</guid>
-      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   21.06.18~21.06.19 TIL  글짓기 공모전 원고 작성   내일 할 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이  </description>
+      <guid>https://xfrnk2.github.io/til/210618~20/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기   21.06.18~21.06.20 TIL  글짓기 공모전 원고 작성   내일 할 일  글짓기 공모전 원고 마무리 코딩테스트 대비 문제 풀이  </description>
     </item>
     
     <item>
