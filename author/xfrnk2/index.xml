@@ -23,6 +23,15 @@ def solution(A): return eval(&#39;^&#39;.join(list(map(str, A)))) </description>
     </item>
     
     <item>
+      <title>21.06.22_TIL</title>
+      <link>https://xfrnk2.github.io/til/210622/</link>
+      <pubDate>Tue, 22 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210622/</guid>
+      <description>계획했던 일  효과적인 시간복잡도 성능 개선 탐구 코딩테스트 대비 문제 풀이   오늘 한 일  파이썬 연산의 시간복잡도 성능 조사 카카오 2020 인턴쉽 코딩테스트 문제 (키패드)를 풀었으나 20개중 6개 테스트케이스가 실패한다.   내일 할 일  실패하는 테스트케이스를 해결할 수 있는 새로운 풀이 시도 독서 장고 웹사이트개발 참고서 따라가기 코드잇 대학생 코딩 캠프 시작 일정 따라가기  </description>
+    </item>
+    
+    <item>
       <title>21.06.21_TIL</title>
       <link>https://xfrnk2.github.io/til/210621/</link>
       <pubDate>Mon, 21 Jun 2021 00:20:30 +0900</pubDate>
