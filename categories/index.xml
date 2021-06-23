@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Jun 2021 01:39:12 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jun 2021 01:13:19 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Algorithm</title>
+      <link>https://xfrnk2.github.io/categories/algorithm/</link>
+      <pubDate>Thu, 24 Jun 2021 01:13:19 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/categories/til/</link>
+      <pubDate>Wed, 23 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Codility</title>
@@ -16,15 +34,6 @@
       <pubDate>Tue, 22 Jun 2021 01:39:12 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/codility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Tue, 22 Jun 2021 00:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
     </item>
     
@@ -169,15 +178,6 @@
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithm</title>
-      <link>https://xfrnk2.github.io/categories/algorithm/</link>
-      <pubDate>Tue, 14 Jul 2020 15:55:01 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/algorithm/</guid>
       <description></description>
     </item>
     

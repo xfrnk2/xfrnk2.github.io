@@ -34,7 +34,7 @@
 
     
     
-    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr.css">
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
     
     
 </head>
@@ -70,7 +70,7 @@
         <div class="logo">
             <a id="siteBaseUrl" href="/" class="logo">
                 
-                <img src="/customImage2.jpg" alt="">
+                <img src="/mugen.png" alt="">
                 
 
                 <span class="overlay"><i class="fa fa-home"></i></span>
@@ -100,7 +100,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/code/installing-bilberry-theme/">
+                <a class="bubble" href="https://xfrnk2.github.io/codeitquiz/palindrome_check/">
     <i class="fas fa-fw fa-code"></i>
 </a>
 
@@ -108,11 +108,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/code/installing-bilberry-theme/">Installing Bilberry Theme</a></h1>
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/codeitquiz/palindrome_check/">알고리즘 - 팰린드롬 문자열 판별하기(파이썬)</a></h1>
     <div class="meta">
         
         
-        <span class="date moment">2017-11-01</span>
+        <span class="date moment">2021-06-24</span>
         
         
 
@@ -122,11 +122,7 @@
         <span class="categories">
             
                 
-                <a href="https://xfrnk2.github.io/categories/code/">Code</a>
-                
-            
-                
-                <a href="https://xfrnk2.github.io/categories/tutorials/">Tutorials</a>
+                <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm</a>
                 
             
         </span>
@@ -135,38 +131,18 @@
         
         <span class="author">
             
-            <a href="https://xfrnk2.github.io/author/lednerb/">Lednerb</a>
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
             
         </span>
         
     </div>
 
     
-    <p>You will find all information to setup this theme with your hugo site
-on the official <!-- raw HTML omitted --> <a href="https://github.com/Lednerb/bilberry-hugo-theme">Github Repository</a>.</p>
-<p><strong>If you want to install this theme, follow these steps:</strong></p>
-<ul>
-<li>Install Hugo and create a new site:</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">hugo new site my-new-blog
-</code></pre></div><ul>
-<li>Switch to your <code>theme</code> folder and import the latest version of the Bilberry Theme</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cd my-new-blog/themes
-git clone https://github.com/Lednerb/bilberry-hugo-theme.git
-</code></pre></div><ul>
-<li>Copy the example content to your new site</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cp -r bilberry-hugo-theme/exampleSite/* ../
-</code></pre></div><ul>
-<li>Test the installation</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-plaintext" data-lang="plaintext">cd ../
-hugo server -D
-</code></pre></div><ul>
-<li>Configure the <code>config.toml</code> file according to your needs</li>
-<li>Start blogging</li>
-</ul>
+     수강중인 강의로부터 수행한 선수 과제의 일부이다.
+예전에 팰린드롬을 판별하는 문제를 가지고 고전했던 기억이 떠올라서 별도의 기록으로 남기면 좋겠다는 생각으로 작성하였다.
+ def is_palindrome(word): pivot = len(word)//2 for i in range(1, pivot+1): if word[pivot-i] != word[pivot+i]: return False return True # 테스트 print(is_palindrome(&quot;racecar&quot;)) print(is_palindrome(&quot;stars&quot;)) print(is_palindrome(&quot;토마토&quot;)) print(is_palindrome(&quot;kayak&quot;)) print(is_palindrome(&quot;hello&quot;))  정렬을 직접 구현해보는 연습을 통해 pivot이라는 개념을 사용하는데 익숙해졌나보다. 비교적 쉬운 편에 속했다.  
+
+    
     
 </div>
 
@@ -180,11 +156,7 @@ hugo server -D
             <div class="links">
                 
                 
-                <a href="https://xfrnk2.github.io/tags/hugo/">Hugo</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/bilberry-theme/">Bilberry Theme</a>
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
                 
                 
             </div>
@@ -221,7 +193,31 @@ hugo server -D
             <ul>
                 
                 <li>
-                    <a href="https://xfrnk2.github.io/code/installing-bilberry-theme/">Installing Bilberry Theme</a>
+                    <a href="https://xfrnk2.github.io/codeitquiz/palindrome_check/">알고리즘 - 팰린드롬 문자열 판별하기(파이썬)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210623/">21.06.23_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/">Codility - lesson2_arrays_OddOccurrencesInArray</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210622/">21.06.22_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210621/">21.06.21_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210618~20/">21.06.18~21.06.20_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/book_list/book_list/">독서 목록</a>
                 </li>
                 
             </ul>
@@ -234,12 +230,37 @@ hugo server -D
             <ul>
                 
                 <li>
-                    <a href="/categories/code">Code
+                    <a href="/categories/til">Til
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/categories/tutorials">Tutorials
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/compiler">Compiler
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
                         </a>
                 </li>
                 
@@ -253,12 +274,37 @@ hugo server -D
             <ul>
                 
                 <li>
-                    <a href="/tags/bilberry-theme">Bilberry theme
+                    <a href="/tags/til">Til
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/hugo">Hugo
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
                         </a>
                 </li>
                 
@@ -290,7 +336,7 @@ hugo server -D
             <a href="https://github.com/xfrnk2" target="_blank">
                 &copy;
                 
-                2020
+                2021
                 
                 by xfrnk2
             </a>
@@ -306,6 +352,16 @@ hugo server -D
 
 
     
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
 
     
 

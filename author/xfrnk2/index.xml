@@ -5,10 +5,30 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Jun 2021 01:39:12 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 24 Jun 2021 01:13:19 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>알고리즘 - 팰린드롬 문자열 판별하기(파이썬)</title>
+      <link>https://xfrnk2.github.io/codeitquiz/palindrome_check/</link>
+      <pubDate>Thu, 24 Jun 2021 01:13:19 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/codeitquiz/palindrome_check/</guid>
+      <description> 수강중인 강의로부터 수행한 선수 과제의 일부이다.
+예전에 팰린드롬을 판별하는 문제를 가지고 고전했던 기억이 떠올라서 별도의 기록으로 남기면 좋겠다는 생각으로 작성하였다.
+ def is_palindrome(word): pivot = len(word)//2 for i in range(1, pivot+1): if word[pivot-i] != word[pivot+i]: return False return True # 테스트 print(is_palindrome(&amp;quot;racecar&amp;quot;)) print(is_palindrome(&amp;quot;stars&amp;quot;)) print(is_palindrome(&amp;quot;토마토&amp;quot;)) print(is_palindrome(&amp;quot;kayak&amp;quot;)) print(is_palindrome(&amp;quot;hello&amp;quot;))  정렬을 직접 구현해보는 연습을 통해 pivot이라는 개념을 사용하는데 익숙해졌나보다. 비교적 쉬운 편에 속했다.  </description>
+    </item>
+    
+    <item>
+      <title>21.06.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/210623/</link>
+      <pubDate>Wed, 23 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210623/</guid>
+      <description>계획했던 일  실패하는 테스트케이스를 해결할 수 있는 새로운 풀이 시도 독서 장고 웹사이트개발 참고서 따라가기 코드잇 대학생 코딩 캠프 시작 일정 따라가기   오늘 한 일  코드잇 대학생 코딩 캠프 1일차 출석 인증, 랜선 스터디 15분 이상 참여 코드잇 알고리즘 강좌 1장 완강, 실습 문제 - 1d1c 깃허브 저장소에 푸시(팰린드롬, 선형탐색, 이진탐색)   오늘의 독서  쉽게 배우고 이해하는 컴퓨터 개론 - 김두진 - ~92p 일독, 새롭게 읽은 Part3을 정독해서 반가(&amp;amp;감)산기, 전가(&amp;amp;감)산기, 플립플롭을 이해   내일 할 일  네이버부트캠프 1차코딩테스트응시(오후7:00부터 100분간진행) 장고 웹사이트개발 참고서 따라가기(조금이라도 좋으니) 코드잇 수강하기 ( 자료구조 또는 알고리즘 ㄱㄱ )   앞으로 30일(+30일 총 60일)챌린지에 하루도 빠짐없이 출석할수있도록 힘내자!</description>
+    </item>
     
     <item>
       <title>Codility - lesson2_arrays_OddOccurrencesInArray</title>
@@ -59,12 +79,11 @@ def solution(A): return eval(&#39;^&#39;.join(list(map(str, A)))) </description>
 2021-06-16 전체 일독
   쉽게 배우고 이해하는 컴퓨터 개론 - 김두진
 2021-06-15 ~61p 일독, 보수 뺄셈과 부동소수점 정독
-2021-06-16 ~61p 일독, 복습
+2021-06-16 ~61p 일독, 복습 2021-06-23 ~92p 일독, 새롭게 읽은 Part3을 정독해서 반가(&amp;amp;감)산기, 전가(&amp;amp;감)산기, 플립플롭을 이해
   IT 전문가로 사는법 - 장동인
 2021-06-16 전체 일독
   비전공자를 위한 이해할 수 있는 IT지식 - 최원영
-2021-06-16 전체 일독
-  그 외(인문학 등)  동사의삶 - 최준영</description>
+2021-06-16 전체 일독</description>
     </item>
     
     <item>
