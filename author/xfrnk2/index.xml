@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 24 Jun 2021 01:13:19 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Jun 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.25_TIL</title>
+      <link>https://xfrnk2.github.io/til/210625/</link>
+      <pubDate>Fri, 25 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210625/</guid>
+      <description>계획했던 일  이전에 암기한 영어 단어 복습하기 장고 웹사이트개발 참고서 따라가기(조금이라도 좋으니) 코드잇 수강하기   오늘 한 일  이전에 암기한 영어 단어 500개 복습   내일 할 일  장고 웹사이트개발 참고서 따라가기(조금이라도 좋으니) 코드잇 수강하기  </description>
+    </item>
     
     <item>
       <title>알고리즘 - 팰린드롬 문자열 판별하기(파이썬)</title>
