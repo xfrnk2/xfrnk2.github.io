@@ -4,15 +4,24 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jun 2021 01:44:11 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Djangos</title>
+      <link>https://xfrnk2.github.io/django/</link>
+      <pubDate>Sat, 26 Jun 2021 01:44:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Fri, 25 Jun 2021 00:20:30 +0900</pubDate>
+      <pubDate>Sat, 26 Jun 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
       <description></description>
@@ -51,15 +60,6 @@
       <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Djangos</title>
-      <link>https://xfrnk2.github.io/django/</link>
-      <pubDate>Fri, 04 Jun 2021 01:44:11 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/django/</guid>
       <description></description>
     </item>
     

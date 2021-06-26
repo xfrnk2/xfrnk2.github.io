@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jun 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.26_TIL</title>
+      <link>https://xfrnk2.github.io/til/210626/</link>
+      <pubDate>Sat, 26 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210626/</guid>
+      <description>계획했던 일  장고 웹사이트개발 참고서 따라가기(조금이라도 좋으니) 코드잇 수강하기   오늘 한 일  장고 웹사이트 개발 참고서 따라가기 - 포토 앱 만들기   위의 과정중 발생한 에러의 해결방법을 포스팅
+  코드잇 자료구조 수강 시작, 앞부분 (1챕터의 1파트) 조금 들음. 컴퓨터가 데이터를 저장하는 법 코딩테스트 대비 동적프로그래밍 문제 풀이 이틀 전 부스트캠프에 출제되었던 풀지 못했던 문제를 기억에 최대한 의존하여 풀어보았음.   내일 할 일  코드잇 진득하게 수강하고 공부하기 독서하기 영어 단어 복습하기  </description>
+    </item>
     
     <item>
       <title>21.06.25_TIL</title>

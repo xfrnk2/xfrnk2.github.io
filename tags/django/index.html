@@ -100,6 +100,83 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/">Django - takes 1 positional argument but 2 were given 해결</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-26</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    Error  TypeError at /photo/
+_add_thumb() takes 1 positional argument but 2 were given
+  blog/photo/fields.py의
+class ThumbnailImageFieldFile(ImageFieldFile): 내부 함수
+ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 변경.  에러 발생의 이유  That message has umpteen causes; the specific reason here is that all instance methods expect a first arg which by custom we call self. So declaring def method(arg): is wrong for a method, it should be def method(self, arg):.
+
+    
+    <a href="https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/django/django_url_name_not_found/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -575,84 +652,6 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_foreignkey/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_foreignkey/">Django - 관계를 표현하는 Model Field - Foreign Key</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.
-
-    
-    <a href="https://xfrnk2.github.io/django/django_foreignkey/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -677,6 +676,14 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/">Django - takes 1 positional argument but 2 were given 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210626/">21.06.26_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210625/">21.06.25_TIL</a>
                 </li>
                 
@@ -694,14 +701,6 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
                 
                 <li>
                     <a href="https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/">Codility - lesson2_arrays_OddOccurrencesInArray</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210622/">21.06.22_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210621/">21.06.21_TIL</a>
                 </li>
                 
             </ul>

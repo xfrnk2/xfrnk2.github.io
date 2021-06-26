@@ -5,15 +5,24 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 26 Jun 2021 01:44:11 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Django</title>
+      <link>https://xfrnk2.github.io/tags/django/</link>
+      <pubDate>Sat, 26 Jun 2021 01:44:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/tags/til/</link>
-      <pubDate>Fri, 25 Jun 2021 00:20:30 +0900</pubDate>
+      <pubDate>Sat, 26 Jun 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/til/</guid>
       <description></description>
@@ -61,15 +70,6 @@
       <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Django</title>
-      <link>https://xfrnk2.github.io/tags/django/</link>
-      <pubDate>Fri, 04 Jun 2021 01:44:11 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/django/</guid>
       <description></description>
     </item>
     

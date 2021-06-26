@@ -3,47 +3,72 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xfrnk2.github.io/til/210625/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/django/</loc>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/django/</loc>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/</loc>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/django/</loc>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/til/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/til/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/til/</loc>
-    <lastmod>2021-06-25T00:20:30+09:00</lastmod>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2021-06-26T01:44:11+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/210626/</loc>
+    <lastmod>2021-06-26T00:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/til/</loc>
+    <lastmod>2021-06-26T00:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/til/</loc>
+    <lastmod>2021-06-26T00:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/</loc>
+    <lastmod>2021-06-26T00:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/til/210625/</loc>
     <lastmod>2021-06-25T00:20:30+09:00</lastmod>
   </url>
   
@@ -203,22 +228,7 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/django/</loc>
-    <lastmod>2021-06-04T01:44:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/django/</loc>
-    <lastmod>2021-06-04T01:44:11+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/django/django_url_name_not_found/</loc>
-    <lastmod>2021-06-04T01:44:11+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/django/</loc>
     <lastmod>2021-06-04T01:44:11+09:00</lastmod>
   </url>
   
