@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Jun 2021 01:44:11 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 23:22:06 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>독서 리뷰 - &#39;우리를 인간이게 하는것, 거울 - 최정원&#39;을 읽고</title>
+      <link>https://xfrnk2.github.io/book/mirror/</link>
+      <pubDate>Sun, 27 Jun 2021 23:22:06 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/book/mirror/</guid>
+      <description>도서 바로가기 책을 읽게 된 동기  얼마 전 도서관에 갔다가 우연히 펼쳐보았던 책, 그런데 거울이라는 소재를 가지고 다양한 해석이 될 수 있다는 점에서 흥미를 느껴서, 이후에 읽어보자고 마음을 먹었는데 도서관을 재방문 한 뒤 좀처럼 눈에 띄지 않았다. 사실 최근에 준비를 하던 시 짓기 공모에 거울이라는 소재를 다루고 싶었다. 그래서 거울을 어떻게 표현할 수 있을까 고민을 많이 하던 시기를 막 지나온 참이었다. 책을 만난것은 우연이었고, 곧바로 흥미가 생긴것이 발단이 되었다. 2021-06-27 인 오늘에야 인연이 닿아 읽어보게 된 책을 나의 주관적인 스타일으로 리뷰해 본다.</description>
+    </item>
+    
+    <item>
+      <title>21.06.27_TIL</title>
+      <link>https://xfrnk2.github.io/til/210627/</link>
+      <pubDate>Sun, 27 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210627/</guid>
+      <description>계획했던 일  코드잇 진득하게 수강하고 공부하기 독서하기 영어 단어 복습하기   오늘 한 일  코드잇 자료구조와 알고리즘 일부 강의 진행 오랜만에 만나는 친구와 식사 첫 독서 후 리뷰 포스팅  오늘의 독서  우리를 인간이게 하는 것, 거울 - 최정원 저 전체 일독   내일 할 일  영어 단어 복습하기 독서하기 코드잇 진득하게 수강하고 공부하기(자료구조 진도 빼고, 알고리즘 더 할수있으면 더 진행, 이후 자바스크립트 시작 예정중) 장고 웹사이트개발 참고서 따라가기(인증)  </description>
+    </item>
     
     <item>
       <title>Django - takes 1 positional argument but 2 were given 해결</title>

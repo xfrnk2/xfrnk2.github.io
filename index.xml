@@ -4,10 +4,28 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 26 Jun 2021 01:44:11 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 27 Jun 2021 23:22:06 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Books</title>
+      <link>https://xfrnk2.github.io/book/</link>
+      <pubDate>Sun, 27 Jun 2021 23:22:06 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/book/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tils</title>
+      <link>https://xfrnk2.github.io/til/</link>
+      <pubDate>Sun, 27 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Djangos</title>
@@ -15,15 +33,6 @@
       <pubDate>Sat, 26 Jun 2021 01:44:11 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/django/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tils</title>
-      <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Sat, 26 Jun 2021 00:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/til/</guid>
       <description></description>
     </item>
     
@@ -42,15 +51,6 @@
       <pubDate>Tue, 22 Jun 2021 01:39:12 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/codility/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book_lists</title>
-      <link>https://xfrnk2.github.io/book_list/</link>
-      <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/book_list/</guid>
       <description></description>
     </item>
     
