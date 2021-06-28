@@ -5,10 +5,32 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Jun 2021 23:22:06 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jun 2021 23:44:11 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결</title>
+      <link>https://xfrnk2.github.io/django/django_password_change_form_applyment/</link>
+      <pubDate>Mon, 28 Jun 2021 23:44:11 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/django/django_password_change_form_applyment/</guid>
+      <description>문제  비밀번호 변경 기능을 추가하고 싶었다.
+어떻게? Django에서 기본 제공하는 PasswordChangeForm, password_change_form.html을 사용 &amp;lt; click
+직접 작성한 템플릿에 의해 비밀번호 변경 페이지가 렌더링 되게 하고싶었는데, 원하던 템플릿이 아니라, Django Administration에서 제공하는 페이지가 렌더링 되었다.
+  내가 원했던 화면은 이게 아닌데&amp;hellip;?  관련 실마리  Django 공식 문서의 Installed_apps settings: &amp;lt; click
+ When several applications provide different versions of the same resource (template, static file, management command, translation), the application listed first in INSTALLED_APPS has precedence.</description>
+    </item>
+    
+    <item>
+      <title>21.06.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/210628/</link>
+      <pubDate>Mon, 28 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210628/</guid>
+      <description>계획했던 일  영어 단어 복습하기 독서하기 코드잇 진득하게 수강하고 공부하기(자료구조 진도 빼고, 알고리즘 더 할수있으면 더 진행, 이후 자바스크립트 시작 예정중) 장고 웹사이트개발 참고서 따라가기(인증)   오늘 한 일  코드잇 자료구조 1챕터 완강(정적배열과 동적배열, 접근/탐색/삽입/삭제의 시간복잡도 등을 다룸) 이전에 암기한 영어 단어 600개 복습 장고 웹사이트개발 참고서 따라가기 - 인증 기능 추가 인증 기능 추가중 궁금했고 해결하게 된 점에대하여 포스팅  오늘의 독서  쉽게 배우고 이해하는 컴퓨터 개론 - 김두진 - ~121p 일독, 복습 후 Part5 컴퓨터 구조를 새롭게 읽었음   내일 할 일  코딩테스트 대비 문제 풀기 코드잇 알고리즘 수강하고 진도나가기, 자바스크립트 1챕터의 최소 1파트는 완강하기  </description>
+    </item>
     
     <item>
       <title>독서 리뷰 - &#39;우리를 인간이게 하는것, 거울 - 최정원&#39;을 읽고</title>
@@ -140,10 +162,10 @@ def solution(A): return eval(&#39;^&#39;.join(list(map(str, A)))) </description>
 2021-06-15 ~61p 일독, 보수 뺄셈과 부동소수점 정독
 2021-06-16 ~61p 일독, 복습
 2021-06-23 ~92p 일독, 새롭게 읽은 Part3을 정독해서 반가(&amp;amp;감)산기, 전가(&amp;amp;감)산기, 플립플롭을 이해
+2021-06-29 ~121p 일독, 복습 후 Part5 컴퓨터 구조를 새롭게 읽었음
   IT 전문가로 사는법 - 장동인
 2021-06-16 전체 일독
-  비전공자를 위한 이해할 수 있는 IT지식 - 최원영
-2021-06-16 전체 일독</description>
+  비전공자를 위한 이해할 수 있는 IT지식 - 최원영</description>
     </item>
     
     <item>

@@ -1,0 +1,461 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결 | Rad Blog</title>
+    <meta name="description" content="Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결">
+    <meta itemprop="description" content="Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결">
+    <meta property="og:description" content="Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/django/django_password_change_form_applyment/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/django/django_password_change_form_applyment/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/django/django_password_change_form_applyment/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_password_change_form_applyment/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_password_change_form_applyment/">Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-28</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h4 id="문제">문제</h4>
+<blockquote>
+<p>비밀번호 변경 기능을 추가하고 싶었다.<br>
+어떻게? Django에서 기본 제공하는 PasswordChangeForm, <a href="https://github.com/django/django/blob/b9cf764be62e77b4777b3a75ec256f6209a57671/django/contrib/admin/templates/registration/password_change_form.html"><code>password_change_form.html</code></a>을 사용 <code>&lt; click</code></p>
+<p>직접 작성한 템플릿에 의해 비밀번호 변경 페이지가 렌더링 되게 하고싶었는데,
+원하던 템플릿이 아니라, Django <strong>Administration</strong>에서 제공하는 페이지가 렌더링 되었다.</p>
+</blockquote>
+<hr>
+<h5 id="내가-원했던-화면은-이게-아닌데">내가 원했던 화면은 이게 아닌데&hellip;?</h5>
+<h2 id="k-007httpsuser-imagesgithubusercontentcom34790699123660115-55a7e200-d86e-11eb-8f07-5e8f388b9d76png"><img src="https://user-images.githubusercontent.com/34790699/123660115-55a7e200-d86e-11eb-8f07-5e8f388b9d76.png" alt="K-007"></h2>
+<h4 id="관련-실마리">관련 실마리</h4>
+<blockquote>
+<p><strong><a href="https://docs.djangoproject.com/en/3.0/ref/settings/#installed-apps">Django 공식 문서의 Installed_apps settings:</a></strong>  <code>&lt; click</code></p>
+<ul>
+<li><strong>When several applications provide different versions of the same resource (template, static file, management command, translation), the application listed first in INSTALLED_APPS has precedence.</strong></li>
+<li><em>번역 : 여러 애플리케이션이 동일한 리소스 (템플릿, 정적 파일, 관리 명령, 번역)의 다른 버전을 제공하는 경우 INSTALLED_APPS에 첫 번째로 나열된 애플리케이션을 우선시 한다.)</em></li>
+</ul>
+</blockquote>
+<hr>
+<h4 id="해결-방법">해결 방법</h4>
+<blockquote>
+<p>Installed_apps 내에서 admin보다 나의 애플리케이션을 우선 오게 만드니 해결되었다!</p>
+</blockquote>
+<p><strong>Before</strong></p>
+<pre><code>INSTALLED_APPS = [
+    # Default App
+    'django.contrib.auth',
+    'django.contrib.admin',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    
+    # My App
+    'blog'
+	...
+]
+</code></pre><hr>
+<p><strong>After</strong></p>
+<pre><code>INSTALLED_APPS = [
+
+    # My App
+    'blog'
+	...
+
+    # Default App
+    'django.contrib.auth',
+    'django.contrib.admin',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    
+
+]
+</code></pre><hr>
+<h5 id="원했던-화면-직접-작성한-템플릿을-통해-정상적으로-출력된다">원했던 화면, 직접 작성한 템플릿을 통해 정상적으로 출력된다.</h5>
+<p><img src="https://user-images.githubusercontent.com/34790699/123660129-58a2d280-d86e-11eb-8c6a-28463847f875.png" alt="K-008"></p>
+<h4 id="알게된-곳httpsstackoverflowcomquestions58496482django-custom-template-is-not-rendering-for-password-change-form-html"><a href="https://stackoverflow.com/questions/58496482/django-custom-template-is-not-rendering-for-password-change-form-html">알게된 곳</a></h4>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_password_change_form_applyment/">Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210628/">21.06.28_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/book/mirror/">독서 리뷰 - &#39;우리를 인간이게 하는것, 거울 - 최정원&#39;을 읽고</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210627/">21.06.27_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/django/django_typeerror_positional_-argument_but_2_were_given/">Django - takes 1 positional argument but 2 were given 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210626/">21.06.26_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210625/">21.06.25_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/compiler">Compiler
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2021
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
