@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 29 Jun 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/210629/</link>
+      <pubDate>Tue, 29 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210629/</guid>
+      <description>계획했던 일  코딩테스트 대비 문제 풀기 코드잇 알고리즘 수강하고 진도나가기, 자바스크립트 1챕터의 최소 1파트는 완강하기   오늘 한 일  코드잇 - 알고리즘 패러다임, 실습 문제 2개 풀이(각각 bruth force, 나중 한 문제는 비효율적으로 작성했으니 다시 작성하여 개선 필요), 자바스크립트 강의 첫부분 일부분 수강 영어 단어 암기 100개 평범한 영어 참고서 가볍게 읽고 자막 달린 인문학 강의 동영상 시청하기   카드 신청, 기타 조회 업무가 많았던 하루였다.</description>
+    </item>
     
     <item>
       <title>21.06.28_TIL</title>
