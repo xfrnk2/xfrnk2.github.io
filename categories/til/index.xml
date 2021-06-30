@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 30 Jun 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.06.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/210630/</link>
+      <pubDate>Wed, 30 Jun 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210630/</guid>
+      <description>계획했던 일  코드잇 진도 나가기 독서하기   오늘 한 일  개인적인 이유로 알고리즘에 집중하려고 한다. 관련된 이야기는 나중에 후기로 남기고 싶다.
+  코딩테스트에 자주 사용되는 파이썬 문법 연습과 이해하기 프로그래머스 카카오 블라인드채용 구현 문제(기둥과 보)를 1시간 풀었다. 테스트 케이스 2개만 성공하고 실패했다. 구현문제를 잘 풀수있는 역량이 곧 컴퓨터적 사고 능력이지 않을까.   내일 할 일  알고리즘 문제 풀기 풀던 문제 마저 해결하고, 다른 문제 풀어보기  </description>
+    </item>
     
     <item>
       <title>21.06.29_TIL</title>
