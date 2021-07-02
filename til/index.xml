@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Jun 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 01 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.01_TIL</title>
+      <link>https://xfrnk2.github.io/til/210701/</link>
+      <pubDate>Thu, 01 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210701/</guid>
+      <description>계획했던 일  알고리즘 문제 풀기 풀던 문제 마저 해결하고, 다른 문제 풀어보기   오늘 한 일  카카오 블라인드 채용 기출문제 - 기둥과 보_시뮬레이션 문제 풀이, 해답을 보고 이해 카카오 2020 신입 공채 - 문자열 압축 문제 풀이, 아직 지저분한 코드 brute force rain 강남역 폭우 문제 새롭게 풀어보기, 풀이가 더 간단해졌는데 곰곰이 생각해보니 문제의 조건에 부합하지 않아 보인다.   오늘의 독서  마음의 탄생 : 알파고는 어떻게 인간의 마음을 훔쳤는가?</description>
+    </item>
     
     <item>
       <title>21.06.30_TIL</title>
