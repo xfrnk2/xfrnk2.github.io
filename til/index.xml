@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 05 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.05_TIL</title>
+      <link>https://xfrnk2.github.io/til/210705/</link>
+      <pubDate>Mon, 05 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210705/</guid>
+      <description>계획했던 일  코드잇 수강하기 장고 웹사이트개발 참고서 따라가기 독서하기   오늘 한 일  코드잇 알고리즘 강의 - 시간관계상 오로지 두편만큼의 진도만 장고 웹사이트개발 참고서 따라가기 - bookmarkapp과 blogapp에 CRUD(생성, 리스트, 수정, 삭제) 기능 추가   오늘의 독서  쉽게 배우고 이해하는 컴퓨터 개론 - 김두진 - 122p~156p 일독 - Part6 운영체제를 새롭게 읽었음   내일 할 일  독서하기 코딩테스트 대비 문제 풀기 장고 웹사이트 개발 참고서 따라가기 시간 나면 영어 단어 암기 &amp;amp; 복습하기  </description>
+    </item>
     
     <item>
       <title>21.07.04_TIL</title>
