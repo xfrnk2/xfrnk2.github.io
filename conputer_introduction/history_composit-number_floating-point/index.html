@@ -1,0 +1,466 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 컴퓨터의 역사, 보수연산, 부동소수점 | Rad Blog</title>
+    <meta name="description" content="컴퓨터의 역사, 보수연산, 부동소수점 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="컴퓨터의 역사, 보수연산, 부동소수점">
+    <meta itemprop="description" content="컴퓨터의 역사, 보수연산, 부동소수점 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="컴퓨터의 역사, 보수연산, 부동소수점">
+    <meta property="og:description" content="컴퓨터의 역사, 보수연산, 부동소수점 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/conputer_introduction/history_composit-number_floating-point/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/conputer_introduction/history_composit-number_floating-point/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/">컴퓨터의 역사, 보수연산, 부동소수점</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-07-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/computer_instruction/">COMPUTER_INSTRUCTION</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <blockquote>
+<p>스스로 학습한 내용을 기록합니다.</p>
+</blockquote>
+<hr>
+<h1 id="컴퓨터의-기원">컴퓨터의 기원</h1>
+<ul>
+<li>어원 : Compute, 어원적 의미 : 계산을 하기 위한 도구, 굳이 형태로 따지자면 주판 정도</li>
+<li>최초의 컴퓨터 : 포탄, 미사일의 복잡한 탄도를 빠르고 정확하게 계산하기 위한 목적으로 만들어짐</li>
+<li>1939년 콜로서스 : 독일의 에니그마, 통신 암호체제에 대응, 앨런 튜링 발명</li>
+<li>앨런 튜링 : 동성애자, 1936년 베를린 올림픽 손기정 선수 출전시 같이 뜀, 영국 동성애 금지법에 의해 화학적 거세를 당한 후 독을 주입한 독사과를 스스로 먹고 자살, 1935년, 괴델의 정리를 바탕으로 튜링 증명</li>
+<li>1946년 애니악 : 제 2차 세계대전(1939.09.01~1945.09.02)중에도 끝내 만들어지지 못하고, 끝난 뒤 만들어짐. 탄도 계산 목적, 집채만한 크기, 안정성 문제</li>
+<li>이후 애드박, 애드삭(Electronic delay <code>storage</code> automatic calculator → 스토리지 개념 사용), 군사적 통계와 탄도 계산 목적</li>
+<li>1946년 폰 노이만 아키텍쳐 : 지금 CPU의 내장형 프로그램을 처음 고안한 것
+(일화, 시대의 천재, 아이큐 250-300추정, 오른쪽에서 네번째자리수가 7인 2의지수중 가장 작은것?2의 21승, 그 외에도 무한급수 문제 있으나 생략)</li>
+</ul>
+<hr>
+<h1 id="컴퓨터-세대">컴퓨터 세대</h1>
+<ul>
+<li>1세대 (1951-1958): 연산 속도는 MS(밀리 세컨드), 주기억장치로 자기드럼 사용됨, 진공관 소자,  고장과 발열 문제로 관리 및 운용이 힘듦</li>
+<li>2세대 (1958-1963): 연산 속도 MS(마이크로 세컨드), 트랜지스터 소자, 운영체제 개념 도입, 주기억장치로 자기드럼을, 보조기억장치로 자기디스크 사용</li>
+<li>3세대 (1964-1970): 연산 속도 NS(나노 세컨드), IC소자, 다양한 입출력 등장으로 인간과 상호작용이 시각적으로 가능해짐</li>
+<li>4세대 (1971-1983): 초대형 컴퓨터 기준 연산속도 Pico 단위, LSI 소자(Large Scale Intergration), 인터넷 등장</li>
+</ul>
+<hr>
+<h1 id="하드웨어-종류">하드웨어 종류</h1>
+<ul>
+<li>입/출력장치, 중앙처리장치(CPU), 기억장치</li>
+</ul>
+<hr>
+<h1 id="보수-연산">보수 연산</h1>
+<ul>
+<li>1의 보수 : 2진수 거꾸로</li>
+<li>2의 보수 : 2진수 거꾸로 후 1 더함</li>
+<li>1의 보수 뺄셈 : 자리올림(가장 좌측)이 생기면 나중에 1을 더함, 안생기면 부호로서 (-)를 붙여줌</li>
+<li>2의 보수 뺄셈 : 자리올림이 생기면 1을 제외(자리올림 제외), 안생기면 부호로서 (-)를 붙여줌</li>
+</ul>
+<hr>
+<h1 id="부동소수점">부동소수점</h1>
+<ul>
+<li>고정소수점은 32비트의 공간에서 정수를 16비트, 소수를 16비트 저장</li>
+<li>부동소수점은 소수점 위치를 나타내는 수를 따로 적는 방식 (IEEE 754 방식)</li>
+<li>부호, 지수, 가수로 나뉘어짐. 지수는 소숫점 위치를 나타내고, 가수는 유효숫자.</li>
+<li>정수부 2진수 변환, 소수부 2진수 변환하여 합침 → 소수점을 왼쪽으로 이동시켜 1 하나만 남도록 하고 이동한 횟수를 기억 → 소수점을 이동시켜 만든 수를 <code>정규화</code> 된 부동 소수점 수라고 함. 뒤에 공간이 남으면 0을 삽입하고, 공간이 부족하면 잘리게 되므로 이 경우 오차가 발생할 수 있음.</li>
+<li>지수부는 8bit로 표현할 수 있고 0~255까지이지만 <code>지수는 음수를 지원하며 지수가 음수가 될 수도 있기에</code> -128~+127이 범위가 됨. 소수점이 왼쪽으로 이동한 횟수에다가 가장 중간값인 127( = 기준이 되는 지수값(Bias))를 더한 값이 최종 지수값이 됨.</li>
+<li>부동소수점 10진수로 되돌리기 : 각 자릿수에 가중치(<code>2^n</code>)을 곱하며 이 가중치는 자릿수가 소수인 경우 2의 -1승, -2승의 형태로 이루어짐.
+ex) 1.01101101 × 2^5 → (1x2^5) +(0x2^4)+(1x2^3)+(1x2^2)+(0x2^1)+(1x2^0)+(1x2^-1)+(0x2^-2)+(1x2^-3) <code>단, 순환소수의 경우 근사값을 구하게 되고 오차가 발생</code></li>
+</ul>
+<hr>
+<h1 id="부동소수점-간의-연산">부동소수점 간의 연산</h1>
+<ul>
+<li>덧셈과 뺄셈 : 두 수의 지수를 큰 쪽에 맞추어 같게 조정하고 가수에 대해 덧셈과 뺄셈을 하고, 가수를 <code>정규화</code> 하고 이에 맞게 지수를 조정함.
+ex ) (1.0101 × 2^2) + (1.0010 × 2^3)의 경우, (0.10101 × 2^3) + (1.0010 × 2^3) → 가수를 서로 더함 → (1.11001 × 2^3)</li>
+<li>곱셈 :  가수끼리 곱하고, 지수끼리 더한 후 가수를 <code>정규화</code>.
+ex) (1.0101 × 2^2) × (1.0010 × 2^3)의 경우, 가수끼리의 곱은 1.01111010이며, 지수는 5. → (1.01111010 × 2^5)</li>
+<li>나눗셈 : 가수끼리 나누고, 지수끼리 뺀 후 가수를 <code>정규화</code></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/computer_instruction/">COMPUTER_INSTRUCTION</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/composite_number/">composite_number</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/floating_point/">floating_point</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/">컴퓨터의 역사, 보수연산, 부동소수점</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/algorithm/fib_dynamic_programming/">피보나치 수열로 본 동적 프로그래밍(Dynamic Programming)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210707/">21.07.07_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210706/">21.07.06_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210705/">21.07.05_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210704/">21.07.04_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210703/">21.07.03_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/compiler">Compiler
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/sorting">Sorting
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2021
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

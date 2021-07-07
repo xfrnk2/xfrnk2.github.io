@@ -4,15 +4,33 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jul 2021 01:17:57 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Conputer_introductions</title>
+      <link>https://xfrnk2.github.io/conputer_introduction/</link>
+      <pubDate>Thu, 08 Jul 2021 01:17:57 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/conputer_introduction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithms</title>
+      <link>https://xfrnk2.github.io/algorithm/</link>
+      <pubDate>Wed, 07 Jul 2021 15:55:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Mon, 05 Jul 2021 00:20:30 +0900</pubDate>
+      <pubDate>Wed, 07 Jul 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
       <description></description>
@@ -177,15 +195,6 @@
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Algorithms</title>
-      <link>https://xfrnk2.github.io/algorithm/</link>
-      <pubDate>Tue, 14 Jul 2020 15:55:01 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/algorithm/</guid>
       <description></description>
     </item>
     

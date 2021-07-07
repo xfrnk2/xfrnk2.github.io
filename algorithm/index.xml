@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/algorithm/</link>
     <description>Recent content in Algorithms on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 14 Jul 2020 15:55:01 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jul 2021 15:55:01 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/algorithm/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>피보나치 수열로 본 동적 프로그래밍(Dynamic Programming)</title>
+      <link>https://xfrnk2.github.io/algorithm/fib_dynamic_programming/</link>
+      <pubDate>Wed, 07 Jul 2021 15:55:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/algorithm/fib_dynamic_programming/</guid>
+      <description>차례  Memoization Tabluation 공간 최적화   1. Memoization &amp;gt; 특징  재귀함수를 사용한다. 필요한 만큼만, 불필요한 경우는 제외하여 구한다. 필요한 계산을 요구, 필요하지 않은 경우는 요구하지 않응. 단, 최대 재귀호출 깊이에 제한을 받을 수 있음.  Code def fib_memo(n, cache): if n &amp;lt; 3: return 1 # 이미 n번째 피보나치를 계산했으면 저장된 값을 바로 리턴한다. if n in cache: return cache[n] cache[n] = fib_memo(n - 1, cache) + fib_memo(n - 2, cache) return cache[n] def fib(n): # n번째 피보나치 수를 담는 사전 fib_cache = {} return fib_memo(n, fib_cache) # test print(fib(10)) print(fib(50)) print(fib(100))  2.</description>
+    </item>
     
     <item>
       <title>정렬 알고리즘 - 선택 정렬(Selection Sort)</title>

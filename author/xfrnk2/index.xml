@@ -5,10 +5,48 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jul 2021 01:17:57 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>컴퓨터의 역사, 보수연산, 부동소수점</title>
+      <link>https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/</link>
+      <pubDate>Thu, 08 Jul 2021 01:17:57 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/</guid>
+      <description>스스로 학습한 내용을 기록합니다.
+  컴퓨터의 기원  어원 : Compute, 어원적 의미 : 계산을 하기 위한 도구, 굳이 형태로 따지자면 주판 정도 최초의 컴퓨터 : 포탄, 미사일의 복잡한 탄도를 빠르고 정확하게 계산하기 위한 목적으로 만들어짐 1939년 콜로서스 : 독일의 에니그마, 통신 암호체제에 대응, 앨런 튜링 발명 앨런 튜링 : 동성애자, 1936년 베를린 올림픽 손기정 선수 출전시 같이 뜀, 영국 동성애 금지법에 의해 화학적 거세를 당한 후 독을 주입한 독사과를 스스로 먹고 자살, 1935년, 괴델의 정리를 바탕으로 튜링 증명 1946년 애니악 : 제 2차 세계대전(1939.</description>
+    </item>
+    
+    <item>
+      <title>피보나치 수열로 본 동적 프로그래밍(Dynamic Programming)</title>
+      <link>https://xfrnk2.github.io/algorithm/fib_dynamic_programming/</link>
+      <pubDate>Wed, 07 Jul 2021 15:55:01 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/algorithm/fib_dynamic_programming/</guid>
+      <description>차례  Memoization Tabluation 공간 최적화   1. Memoization &amp;gt; 특징  재귀함수를 사용한다. 필요한 만큼만, 불필요한 경우는 제외하여 구한다. 필요한 계산을 요구, 필요하지 않은 경우는 요구하지 않응. 단, 최대 재귀호출 깊이에 제한을 받을 수 있음.  Code def fib_memo(n, cache): if n &amp;lt; 3: return 1 # 이미 n번째 피보나치를 계산했으면 저장된 값을 바로 리턴한다. if n in cache: return cache[n] cache[n] = fib_memo(n - 1, cache) + fib_memo(n - 2, cache) return cache[n] def fib(n): # n번째 피보나치 수를 담는 사전 fib_cache = {} return fib_memo(n, fib_cache) # test print(fib(10)) print(fib(50)) print(fib(100))  2.</description>
+    </item>
+    
+    <item>
+      <title>21.07.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/210707/</link>
+      <pubDate>Wed, 07 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210707/</guid>
+      <description>21.07.07 TIL 계획했던 일  독서하기 코딩테스트 대비 문제 풀기 장고 웹사이트 개발 참고서 따라가기 시간 나면 영어 단어 암기 &amp;amp; 복습하기   오늘 한 일  코드잇 수강 - 알고리즘 - 동적 프로그래밍, 배운 내용 정리후 블로그 포스팅 장고 웹사이트 개발 참고서 따라가기   Album과 Photo 편집기능 추가(CRUD), 그런데 ALBUM과 PHOTO Listview가 구분되지 않고 같은 내용을 출력하는 문제 발생.(template상에는 차이가 나타나지만 view딴에 문제가 있는 것으로 보임).
+  식사시간에 영어 단어 20개가량 암기   오늘의 독서  쉽게 배우고 이해하는 컴퓨터 개론 - 김두진 - ~64p 복습 - 복습 후 내용 정리, notion에 정리.</description>
+    </item>
+    
+    <item>
+      <title>21.07.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/210706/</link>
+      <pubDate>Tue, 06 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210706/</guid>
+      <description>21.07.06 TIL 계획했던 일  독서하기 코딩테스트 대비 문제 풀기 장고 웹사이트 개발 참고서 따라가기 시간 나면 영어 단어 암기 &amp;amp; 복습하기   오늘 한 일  피로가 쌓여 충분한 걷기와 운동을 하고 it뉴스나 손에 잡히는 읽을거리들을 찾아 읽고는 휴식을 취한 뒤 일찍 잤다.   내일 할 일  오늘 하지 못했던 것 하기  </description>
+    </item>
     
     <item>
       <title>21.07.05_TIL</title>
@@ -228,8 +266,7 @@ def solution(A): return eval(&#39;^&#39;.join(list(map(str, A)))) </description>
 2021-06-16 ~61p 일독, 복습
 2021-06-23 ~92p 일독, 새롭게 읽은 Part3을 정독해서 반가(&amp;amp;감)산기, 전가(&amp;amp;감)산기, 플립플롭을 이해
 2021-06-29 ~121p 일독, 복습 후 Part5 컴퓨터 구조를 새롭게 읽었음
-2021-07-06 122p~156p 일독 - Part6 운영체제를 새롭게 읽었음
-  IT 전문가로 사는법 - 장동인</description>
+2021-07-06 122p~156p 일독 - Part6 운영체제를 새롭게 읽었음 2021-07-08 ~64p 복습 후 내용 정리</description>
     </item>
     
     <item>
