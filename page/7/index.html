@@ -105,6 +105,81 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/python/python-sys_stdin_readline/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-sys_stdin_readline/">Python - 많은 양의 데이터를 효율적으로 입력받는 방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    sys.stdin.readline() 많은 데이터 입력을 받고자 할 때는 sys.stdin.readline()을 사용하는 것이 유리하다.
+(자바에서 Scanner보다 BufferedReader가 빠른것과 같은 맥락에서)
+import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, 위 코드에서 raw_input()은 함수를 담은 변수의 이름에 불과한데, Python 3부터는 raw_input이 없어지고 이것이 input()으로 이름이 바뀌었다.  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/210602/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -572,81 +647,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">Python - source.error(“incomplete escape %s” % escape, len(escape))</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-04-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    문제 발생 상황 raise source.error(&quot;incomplete escape %s&quot; % escape, len(escape)) re.error: incomplete escape \U at position 72 (line 4, column 3)  PEP8을 따르도록 터미널에서 flake8을 입력하니 위와 같은 에러가 발생했다. 검색 결과 보통의 경우 위의 메세지는 파일 어딘가에 \U 문자열이 포함되어 있을때 발생 하는 것으로 나타났지만 \U는 없을 뿐더러 전혀 다른 경우였다.   에러 발생 원인  함수의 입력값으로서 파라미터를 Typing할 때. 추상메서드를 사용한 빈 객체 파라미터에 대한 타입을 명시할 때 발생하는 것이 확인되었다.
-
-    
-    <a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -673,6 +673,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/210709/">21.07.09_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/conputer_introduction/history_composit-number_floating-point/">컴퓨터의 역사, 보수연산, 부동소수점</a>
                 </li>
                 
@@ -694,10 +698,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210705/">21.07.05_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210704/">21.07.04_TIL</a>
                 </li>
                 
             </ul>
@@ -832,6 +832,17 @@
 
 
     
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WTESZLPSEQ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
 
     
     

@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 08 Jul 2021 01:17:57 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TIL</title>
+      <link>https://xfrnk2.github.io/categories/til/</link>
+      <pubDate>Fri, 09 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/til/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>COMPUTER_INSTRUCTION</title>
@@ -16,15 +25,6 @@
       <pubDate>Thu, 08 Jul 2021 01:17:57 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/computer_instruction/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TIL</title>
-      <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Thu, 08 Jul 2021 00:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
     </item>
     
