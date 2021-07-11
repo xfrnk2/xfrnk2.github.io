@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 10 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 11 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.11_TIL</title>
+      <link>https://xfrnk2.github.io/til/210711/</link>
+      <pubDate>Sun, 11 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210711/</guid>
+      <description>계획했던 일  의자 보러 다녀오기 장고 웹사이트 개발 참고서 따라가기   오늘 한 일  며칠전 복습한 내용(네트워크, 운영체제)을 일독했다.(이케아 출발 전에..) 이케아에 가서 의자를 앉아보고 왔다. 집에 와서 구매했다. 비교하는데 시간을 꽤 썼다. 편한 의자를 고를 수 있어서 좋았다.   내일 할 일  장고 웹사이트 개발 참고서 따라가기  </description>
+    </item>
     
     <item>
       <title>21.07.10_TIL</title>
