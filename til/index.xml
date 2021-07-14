@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 12 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 13 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.13_TIL</title>
+      <link>https://xfrnk2.github.io/til/210713/</link>
+      <pubDate>Tue, 13 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210713/</guid>
+      <description>계획했던 일  장고를 통해 만들고싶은 프로젝트 고안 코드잇 강의 수강 체기를 없애줄 충분한 움직임과 휴식   오늘 한 일  장고를 통해 만들고 싶은 프로젝트 고안 - 칼로리 계산기-음식물의 정량적 칼로리 보다는 그람을 직접 입력받는 형태로, 인터넷강의 크롤링 모아 보여주기(가격비교 등), 지도위에 나의 감성을 어필하기. SSAC 3기 풀스택 개발자 양성과정 시험 응시(중급 개발자 이상)   아니나 다를까 난이도가 제법 높았고, Javascript의 비중이 컸다. 좋은 경험으로 생각하려고 한다.</description>
+    </item>
     
     <item>
       <title>21.07.12_TIL</title>

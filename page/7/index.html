@@ -105,6 +105,83 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_url_name_not_found/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_url_name_not_found/">Django - NoReverseMatch 에러, Reverse not found 해결방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    Error  NoReverseMatch at /polls/ Reverse for &lsquo;detail&rsquo; not found. &lsquo;detail&rsquo; is not a valid view function or pattern name.
+  \polls/templates/polls
+&lt;li&gt;&lt;a href=&quot;{% url 'detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt; 'detail' &raquo; 'polls:detail'으로 변경.
+&lt;li&gt;&lt;a href=&quot;{% url 'polls:detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt;   polls 앱의 urls.py는 settings.py과 같은 레벨에 위치한 urls.py 파일의 urlpatterns에 포함되어 있기 때문이다.
+ urlpatterns = [ ... path('', include('polls.url', name='polls') ] 
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/210604/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -546,94 +623,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/210531_til%EC%8B%9C%EC%9E%91/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/210531_til%EC%8B%9C%EC%9E%91/">21.05.31_TIL 다시쓰기 &#43; 간단한 포부</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-05-31</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-                
-                <a href="https://xfrnk2.github.io/categories/review/">review</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    여담 (지금 드는 생각과 간단한 포부) &hellip;
-지난해 상반기, 약 반년동안 TIL을 썼다. 뭘 했는지 자신의 일거수 일투족을 기록하고자 썼다.
-쓰고 보니 얻는게 많았지만, 그와 함께 무엇이 필요한지도 명확하게 보였다. 따라서 나는,
-21.01.01의 회고를 적으면서 CS이론에 집중하기로 다짐하였고, 이후 kocw의 강의를 들으며 운영체제, 네트워크를 공부했다.
-중간중간 코딩도 해왔다. master branch에 하지 않고, pull request를 위한 dev branch에 올렸기에 나의 깃허브 레퍼지토리에 기록이 나타나진 않는다.
-(resaurant simulation과 puyopuyo 코딩을 했다. puyopuyo는 그마저도 아직 보완할 부분이 많다.
-
-    
-    <a href="https://xfrnk2.github.io/til/210531_til%EC%8B%9C%EC%9E%91/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/review/">review</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -660,6 +649,10 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/210713/">21.07.13_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210712/">21.07.12_TIL</a>
                 </li>
                 
@@ -681,10 +674,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210708/">21.07.08_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/algorithm/fib_dynamic_programming/">피보나치 수열로 본 동적 프로그래밍(Dynamic Programming)</a>
                 </li>
                 
             </ul>
