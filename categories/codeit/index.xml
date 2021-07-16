@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>codeit on Rad Blog</title>
+    <link>https://xfrnk2.github.io/categories/codeit/</link>
+    <description>Recent content in codeit on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 16 Jul 2021 00:18:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/categories/codeit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>코드잇 - 알고리즘 완강</title>
+      <link>https://xfrnk2.github.io/codeit/codeit_finishing_algorythm/</link>
+      <pubDate>Fri, 16 Jul 2021 00:18:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/codeit/codeit_finishing_algorythm/</guid>
+      <description>코드잇 대학생 코딩 캠프 멤버쉽을 시작한지 23일이 지났다.
+매일마다 출석 인증하고, 강의를 듣고 실습 과제를 하는 것이 무의식적이라고 체감 될 정도로 익숙해지던 참이었는데, 어느새 알고리즘의 정석 강의를 완강&amp;amp;수료하게 되었다.
+전반적으로 알고리즘 내부의 중요한 사항들에 대해서 배울 수 있었던 강의였던 것 같다.
+사실 그동안 일과 학업을 병행하다보니 방송통신대학교 컴퓨터 과학과에 들어서도 제대로 공부했다기보다는, 얕게 이해하고 넘어가는 경우가 많았기에, 이참에 기초를 좀 더 다지고자 하는 마음으로 시작하게 되었던 거였는데, 생각 이상으로 알고리즘의 맥을 잡아주었다는 느낌을 받아 참 감사하게 생각하고 있다.</description>
+    </item>
+    
+  </channel>
+</rss>

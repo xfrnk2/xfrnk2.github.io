@@ -100,6 +100,167 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    ▶ docker-compose에 대한 공식 문서 링크
+ 1. 파일 생성 및 작성 dockerfile,
+docker-compose.xml,
+requirements.txt
+각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
+기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
+▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
+
+    
+    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/mysql/">mysql</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    ▶ MySQL 8.0부터는 default_authentication_plugin 이 mysql_native_password 에서 caching_sha2_password 로 변경되었는데, 강화된 보안 체계로 인해 외부 어플리케이션에서 사용되는 mysql 관련 모듈이 mysql 8.x 의 기본 값으로 설정된 패스워드 보안 알고리즘을 맞추지 못하여 발생하는 에러이니 mysql 인스턴스 전체에 영향을 주지 않는 방법으로 사용자 단위로 패스워드 보안 정책을 변경하는 편이 가장 좋다고 한다.
+▶ stackoverflow를 검색해보면 바로 나오는 것들이지만 빠르게 찾아보기 용이하게 하기 위해 간단히 방법만을 기록해 둡니다. 아래 방법중 어느것인가를 사용하면 에러를 해결했던 것 같습니다.
+
+    
+    <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/database/">database</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/mysql/">mysql</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/error/">Error</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/til/20.08.04/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -465,151 +626,6 @@
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.30/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.07.30/">20.07.30_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-07-30</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  영어 6문장과 그에 따른 문법 표현에 대해 공부했다. 그동안 영어를 배운 내용들을 메모장에 보기좋게 정리했다. Docker와 mysql 연동에는 성공 한 것 같았는데, 도커를 사용해서 띄우려 하니 에러가 자꾸 생겨서 여전히 해결하려고 하고 있고 아직 해결하지 못했다.   내일 할 일  오늘 발생한 에러 해결하기 Django 서버를 도커를 사용해서 띄우기  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/">Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까? &lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt;</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-07-29</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    Travis-ci에서 python venv 실행시 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서, 이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.
- Windows는 나의 지정 경로에 python이 설치 되어 있었고, 내가 사용하지 않는 Linux에서는 python의 설치된 경로가 &lsquo;usr/local/python&rsquo; 인 것으로 알게 되었기 때문이다. 그래서 환경 변수를 dockerfile에서 어떻게 다루는가에 대해 알아보게 됬는데&hellip;
-
-    
-    <a href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -636,6 +652,14 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/210716/">21.07.16_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/codeit/codeit_finishing_algorythm/">코드잇 - 알고리즘 완강</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210715/">21.07.15_TIL</a>
                 </li>
                 
@@ -653,14 +677,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210711/">21.07.11_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210710/">21.07.10_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210709/">21.07.09_TIL</a>
                 </li>
                 
             </ul>

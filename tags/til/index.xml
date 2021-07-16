@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 16 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/210716/</link>
+      <pubDate>Fri, 16 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210716/</guid>
+      <description>계획했던 일  코드잇 알고리즘 완강 후 수기 작성 정처기(1달뒤 시험) 필기 교재 훑어보기 코딩테스트 대비 문제 풀기 이전에 배웠던 내용 복습하기 영어 단어 암기하기   오늘 한 일  알고리즘 완강 후 수기 작성 - 첫 완강이다! 코드잇 대코캠 서포터즈 활동 - 공부 인증글 올리기, 후기 작성, 정보 공유글 작성 영어 단어 53개 암기 정처기(1달뒤 시험) 필기 교재 훑어보기   내일 할 일  정처기 공부 시작하기 Javascript 수강하기 리눅스 관련과목 수강하기  </description>
+    </item>
     
     <item>
       <title>21.07.15_TIL</title>
