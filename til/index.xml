@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 17 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.17_TIL</title>
+      <link>https://xfrnk2.github.io/til/210717/</link>
+      <pubDate>Sat, 17 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210717/</guid>
+      <description>계획했던 일  정처기 공부 시작하기 Javascript 수강하기 리눅스 관련과목 수강하기   오늘 한 일  정처기 공부 코드잇 Javascript 수강 코드잇 유닉스 커맨드라인 수강 시작   내일 할 일  정처기 공부하기 코딩테스트 대비 문제 풀기 파이썬 크롤링 공부하기  </description>
+    </item>
     
     <item>
       <title>21.07.16_TIL</title>
