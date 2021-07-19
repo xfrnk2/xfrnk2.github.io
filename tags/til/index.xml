@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 19 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.19_TIL</title>
+      <link>https://xfrnk2.github.io/til/210719/</link>
+      <pubDate>Mon, 19 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210719/</guid>
+      <description>계획했던 일  정처기 공부하기   오늘 한 일  정처기 공부 - 소프트웨어 설계 1/3   내일 할 일  정처기 공부하기 자바스크립트 궁금한 강의 듣고 배우기  </description>
+    </item>
     
     <item>
       <title>21.07.18_TIL</title>
