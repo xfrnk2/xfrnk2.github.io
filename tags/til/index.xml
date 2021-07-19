@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.18_TIL</title>
+      <link>https://xfrnk2.github.io/til/210718/</link>
+      <pubDate>Sun, 18 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210718/</guid>
+      <description>계획했던 일  정처기 공부하기 코딩테스트 대비 문제 풀기 파이썬 크롤링 공부하기   오늘 한 일  코딩테스트 대비 문제 풀기 - 개선된 다익스트라 알고리즘, 플로이드 워셜 알고리즘 이해 공부에 앞서 건강을 먼저 챙겨야겠다는 생각이 들어 등산, 운동을 다녀왔다.   내일 할 일  정처기 공부하기  </description>
+    </item>
     
     <item>
       <title>21.07.17_TIL</title>
