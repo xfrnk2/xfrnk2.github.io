@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 23 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.23_TIL</title>
+      <link>https://xfrnk2.github.io/til/210723/</link>
+      <pubDate>Fri, 23 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210723/</guid>
+      <description>계획했던 일  코딩테스트 대비 문제 풀이 운영체제 강의 듣기 정처기 공부하기   오늘 한 일  온라인 출석부 - 메인 페이지를 만들기 위해 식사 시간 말고는 코딩만 한 것 같다. 오랜만에 집중해서 할 수 있었던 시간이여서 좋았다. bootstrap과 css를 이리 저리 만져보았다. F12 개발자 도구로 html, css 로부터 샘플을 따오는 일을 주로 하고, 보여질 페이지에 적게나마 잡다한 javascript 함수를 사용해보았다.   내일 할 일  온라인 출석부 마저 이어가기 정처기 공부하기  </description>
+    </item>
     
     <item>
       <title>21.07.22_TIL</title>
