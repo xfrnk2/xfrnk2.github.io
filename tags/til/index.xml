@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 23 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 24 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.24_TIL</title>
+      <link>https://xfrnk2.github.io/til/210724/</link>
+      <pubDate>Sat, 24 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210724/</guid>
+      <description>계획했던 일  온라인 출석부 마저 이어가기 정처기 공부하기   오늘 한 일  온라인 출석부를 위한 웹앱 만들기   HTML, CSS, JAVASCRIPT 코드 사용의 연속이다. 잠 잘 시간 줄이고 밥 먹으면서까지 보고 있으니 적당히 해야 할 것 같다.
+  내일 할 일  휴식 온라인 출석부 이어가기  </description>
+    </item>
     
     <item>
       <title>21.07.23_TIL</title>
