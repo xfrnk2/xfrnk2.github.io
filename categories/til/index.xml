@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.25_TIL</title>
+      <link>https://xfrnk2.github.io/til/210725/</link>
+      <pubDate>Sun, 25 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210725/</guid>
+      <description>계획했던 일  온라인 출석부 마저 이어가기 정처기 공부하기   오늘 한 일  온라인 출석부를 위한 웹앱 만들기   하루 열두시간 이상, 약 사흘동안 온종일 붙잡고 있었다. 배도 고프지 않고, 잠도 오지 않고, 밤은 계속 버렸고, 뭐가 그렇게 재미있는지.. 육신 건사를 위해 당분간 휴식, 정보처리기사가 20일 목전으로 다가왔으니, 빠르게 정보처리기사 시험공부에 착수하여 꾸준히 진행하도록 한다.
+  내일 할 일  휴식 정보처리기사 공부하기  </description>
+    </item>
     
     <item>
       <title>21.07.24_TIL</title>
