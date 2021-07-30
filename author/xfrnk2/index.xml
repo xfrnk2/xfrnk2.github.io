@@ -5,10 +5,29 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 26 Jul 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jul 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.07.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/210728/</link>
+      <pubDate>Wed, 28 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210728/</guid>
+      <description>계획했던 일  정보처리기사 공부 선린 백준 알고리즘 스터디 참여   오늘 한 일  정보처리기사 공부 선린 백준 알고리즘 스터디 참여, 어려움과 쉬움이 공존하는 난이도 백준 문제 풀이. 3시간 내리 알고리즘 문제를 풀 수 있어서 즐거웠다. 빠른 시간 안에 효율적인 코드를 작성하는 것은 또다른 문제겠지만. 자력으로 푼 문제는 5개, 오늘 주어진 문제는 약 7개. 완전탐색이라고 의식을 하니 해답이 보였던 문제가 몇개. 그냥 생각하고 고민해서 풀기 보다는, 어떤 방법을 쓰면 좋을까?</description>
+    </item>
+    
+    <item>
+      <title>21.07.27_TIL</title>
+      <link>https://xfrnk2.github.io/til/210727/</link>
+      <pubDate>Tue, 27 Jul 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210727/</guid>
+      <description>계획했던 일  휴식 정보처리기사 공부하기   오늘 한 일  정보처리기사 소프트웨어개발 극히 일부 공부, 작은 단원 하나 C++ STL 자료구조 대강 파악 장시간 온라인 출석부 코딩   html 호스팅을 위해 drive to web이라는 앱을 썼다가, 접속이 먹통되는 순간을 겪고 나서 다른 방법을 찾다가 새로운 계정을 파서, 새로운 레퍼지토리에 html파일을 올려서 웹 호스팅을 성공했다.
+사실 부끄러운 이야기지만 HTML 과 CSS, Javascript 코딩을 한 경험이 거의 없다. 이번 기회로 직접 짜진 않더라도 복사 &amp;amp; 붙여넣기를 한 시간에 감사하다.</description>
+    </item>
     
     <item>
       <title>21.07.26_TIL</title>
@@ -59,11 +78,23 @@
     </item>
     
     <item>
-      <title>코드잇 - 컴퓨터개론 완강</title>
-      <link>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction/</link>
+      <title>코드잇 - 자바스크립트 기초 공부</title>
+      <link>https://xfrnk2.github.io/codeit/codeit_learning_basic_javascript/</link>
       <pubDate>Thu, 22 Jul 2021 00:18:15 +0900</pubDate>
       
-      <guid>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction/</guid>
+      <guid>https://xfrnk2.github.io/codeit/codeit_learning_basic_javascript/</guid>
+      <description>요즘은 배웠던 자바스크립트, 그리고 HTML 과 CSS를 가지고 웹 페이지를 만들어서 호스팅 후 확인해보는 것을 일삼으며 지내곤 하는데, 시간이 날 때마다 자바스크립트 기초 강의를 클릭, 클릭, 코딩, 코딩.. 하다 보니 빠르진 않으나 어느덧 절반 가까이 수강했다.
+지난 수년간 파이썬을 가지고 이것 저것 만들어 보면서 프로그래밍의 본질은 알고 있었지만, 다른 도구를 손에 잡으니 어딘가 2% 부족하고, 잘 모르는 듯한 느낌을 지울 수가 없었다. 그 주인공이 바로 자바스크립트.
+​
+강의내용은 사실 쉬운 편에 속하는 것 같다.</description>
+    </item>
+    
+    <item>
+      <title>코드잇 - 컴퓨터개론 완강</title>
+      <link>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction-%EB%B3%B5%EC%82%AC%EB%B3%B8/</link>
+      <pubDate>Thu, 22 Jul 2021 00:18:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction-%EB%B3%B5%EC%82%AC%EB%B3%B8/</guid>
       <description>코드잇 대학생 코딩 캠프 멤버쉽을 시작한지 29일이 지났다.
 이따금 휴식을 위한 시간으로 들어왔던 컴퓨터 개론 과목을 수료했다.
 기본 지식을 되짚어 볼 수 있어서 좋았다.
