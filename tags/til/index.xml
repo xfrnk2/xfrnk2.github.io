@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 01 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 02 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.02_TIL</title>
+      <link>https://xfrnk2.github.io/til/210802/</link>
+      <pubDate>Mon, 02 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210802/</guid>
+      <description>계획했던 일  정보처리기사 공부 코딩테스트 대비 문제 풀이 대외활동 검색   오늘 한 일  정보처리기사 공부 - 데이터베이스 구축 대외활동 검색, 그동안 계속 실패해온 42Seoul의 3회차 Piscine 신청에 시도했으나 결국 대기자 50번대가 되어 불발되었다. 온라인 출석부 호스팅, 사용 가능한 상태로 만들기까지 99% 완료. 깃허브 잔디가 안깔리던 문제 해결.   내일 할 일  정보처리기사 공부 코드잇 SQL 강의 수강 코딩테스트 대비 문제 풀이 대외활동 검색  </description>
+    </item>
     
     <item>
       <title>21.08.01_TIL</title>
