@@ -5,15 +5,24 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 03 Aug 2021 11:17:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>resolved problem</title>
+      <link>https://xfrnk2.github.io/categories/resolved-problem/</link>
+      <pubDate>Tue, 03 Aug 2021 11:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/resolved-problem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>TIL</title>
       <link>https://xfrnk2.github.io/categories/til/</link>
-      <pubDate>Mon, 02 Aug 2021 00:20:30 +0900</pubDate>
+      <pubDate>Tue, 03 Aug 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/til/</guid>
       <description></description>
@@ -106,15 +115,6 @@
       <pubDate>Mon, 31 May 2021 23:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>resolved problem</title>
-      <link>https://xfrnk2.github.io/categories/resolved-problem/</link>
-      <pubDate>Mon, 05 Apr 2021 11:17:34 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/resolved-problem/</guid>
       <description></description>
     </item>
     
