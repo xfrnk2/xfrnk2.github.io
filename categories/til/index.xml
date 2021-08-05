@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 05 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.05_TIL</title>
+      <link>https://xfrnk2.github.io/til/210805/</link>
+      <pubDate>Thu, 05 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210805/</guid>
+      <description>계획했던 일  정보처리기사 데이터베이스 구축 과목 끝내기 코딩테스트 대비 문제 최소 3문제 이상 풀기.   오늘 한 일  정보처리기사 데이터베이스 구축 과목 마무리 코딩테스트 대비 문제 - 이분탐색, 1문제 풀이   왜? ppt 자료 보다가, 이분탐색 lower bound, upper bound를 잘 몰라서 이해하느라, 그런데 알고보니 bisect_right, bisect_lieft와 각각 상통하는 것이었다. 아무튼 라이브러리를 사용하지 않고 구현했는데 시간 초과가 나서, 재귀로 풀었더니 통과되었다. 백준 1920번 문제. 과거에 푼 적이 있었는데 이분탐색 아닌 다른 것으로 풀었다.</description>
+    </item>
     
     <item>
       <title>21.08.04_TIL</title>
