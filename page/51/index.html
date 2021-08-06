@@ -105,6 +105,164 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/boj/10814/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/10814/">BOJ-10814-나이순 정렬[정렬]</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-14</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    BOJ-10814-나이순 정렬 문제 바로가기  나의 풀이 from operator import itemgetter arr = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split()))+[i] for i in range(int(input()))] arr.sort(key=itemgetter(0, 2)) for x in arr: print(f&quot;{x[0]} {x[1]}&quot;) 순서  정수인지 확인해서 정수인 경우 int와 매핑 인덱스를 값 후열에 추가 1순위를 나이 기준, 2순위를 생성된 순서(=인덱스)로 정렬 나이와 이름 출력  방법  정수 확인을 isdecimal()을 사용 -&gt;[참고링크 바로가기] operator.itemgetter를 사용, lambda 함수도 사용 가능  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/sorting/">Sorting</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/boj/18870/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/18870/">BOJ-18870-좌표압축[알고리즘]</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-14</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    BOJ-18870-좌표압축 문제 바로가기  나의 풀이 input() arr = list(map(int, input().split())) values_by_key = {} for i,j in enumerate(sorted(set(arr))): values_by_key[j] = i for x in arr: print(values_by_key[x], end=' ') 생각  중복값을 제거하고 컨테이너로 어떻게 전달할까?  순서  중복값 제거한 오름차순 정렬이 된 리스트를 순회 값을 키로, 인덱스를 해당 값의 값으로 저장 초기 리스트 순회하여 저장한 컨테이너로부터 찾아내서 출력  방법  set()으로 중복값 제거, list로 형변환 딕셔너리 사용  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/20.05.13/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -469,162 +627,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/boj/4949/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/4949/">BOJ-4949-균형잡힌 세상[문자열 처리]</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-09</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    BOJ-4949-균형잡힌 세상 문제 바로가기  나의 풀이 def get_result(sentence: str) -&gt; bool: bracket_stack = [] for s in sentence: if s.isalpha(): continue elif s == &quot;(&quot;: bracket_stack.append(1) elif s == &quot;[&quot;: bracket_stack.append(0) elif s == &quot;)&quot; or s == &quot;]&quot;: try: if bracket_stack[-1] == 0 and s == &quot;)&quot;: return False elif bracket_stack[-1] == 1 and s == &quot;]&quot;: return False bracket_stack.pop() except IndexError: return False return not bracket_stack if __name__ == '__main__': sentence_list = [] while True: get_input = input() if get_input == '.
-
-    
-    <a href="https://xfrnk2.github.io/boj/4949/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/string/">string</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.05.08/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.05.08/">20.05.08_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-08</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  어버이날 기념 할머니 찾아뵙기 데이터베이스 시스템 공부와 학교 과제 이어서하기 행렬 덧셈과 곱셈 코드로 구현하기   오늘 한 일  어버이날 기념 할머니를 찾아뵙고 함께 식사했다. 행렬 덧셈과 곱셈을 Python 코드로 구현했다. 데이터베이스 시스템 과목 과제를 위해 데이터베이스 강의를 2편(2시간분)을 수강하고 중요한 내용을 노트에 정리하였다. 이 또한 블로그에 포스팅 해보는 것은 어떨까 싶은 생각이 들었다. 도서 &lsquo;죽고 싶지만 떡볶이는 먹고싶어&rsquo; 를 완독했다. 에세이라 술술 읽혔다.   내일 할 일  데이터베이스 시스템 공부하기 데이터베이스 시스템 과목 과제 하기 독서하기 지나간 공부했던 내용들 복습하기(알고리즘 등)  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -651,6 +653,14 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/210806/">21.08.06_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/codeit/codeit_learning_data_structure/">코드잇 - 자료구조 공부</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210805/">21.08.05_TIL</a>
                 </li>
                 
@@ -668,14 +678,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210802/">21.08.02_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210801/">21.08.01_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210731/">21.07.31_TIL</a>
                 </li>
                 
             </ul>
@@ -718,7 +720,7 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/compiler">Compiler
+                    <a href="/categories/codeit">Codeit
                         </a>
                 </li>
                 

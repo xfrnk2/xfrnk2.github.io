@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/210806/</link>
+      <pubDate>Fri, 06 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210806/</guid>
+      <description>계획했던 일  정보처리기사 공부 학교 수강신청 번복 문의 코드잇 sql 강의 듣기 코드잇 서포터즈 활동하기 코딩테스트 대비 문제 최소 2문제 이상 풀기. lower_bound와 upper_bound 정리글 블로그에 올리기. 오늘 얼핏 지나다 본 응용 문제가 있었는데 되게 새로웠다. 응용 푼제 풀어보기.   오늘 한 일  학교 수강신청 번복 문의하기 완료 정보처리기사 공부하기 코드잇 sql 강의 듣기 - 이전에 설치한 mysql에 오류가 있는지 유순한 진행이 되지 않았다. 재설치를 해야 하나보다. 코드잇 서포터즈 활동하기 python bisect에 대한 공식 문서 읽고 소스 코드 이해하기, 예제 조사, 예제 풀기 이분탐색 2문제 풀이   몸의 피로감이 크기 때문에 휴식을 취해야겠다.</description>
+    </item>
     
     <item>
       <title>21.08.05_TIL</title>

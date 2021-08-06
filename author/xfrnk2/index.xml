@@ -5,10 +5,34 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.06_TIL</title>
+      <link>https://xfrnk2.github.io/til/210806/</link>
+      <pubDate>Fri, 06 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210806/</guid>
+      <description>계획했던 일  정보처리기사 공부 학교 수강신청 번복 문의 코드잇 sql 강의 듣기 코드잇 서포터즈 활동하기 코딩테스트 대비 문제 최소 2문제 이상 풀기. lower_bound와 upper_bound 정리글 블로그에 올리기. 오늘 얼핏 지나다 본 응용 문제가 있었는데 되게 새로웠다. 응용 푼제 풀어보기.   오늘 한 일  학교 수강신청 번복 문의하기 완료 정보처리기사 공부하기 코드잇 sql 강의 듣기 - 이전에 설치한 mysql에 오류가 있는지 유순한 진행이 되지 않았다. 재설치를 해야 하나보다. 코드잇 서포터즈 활동하기 python bisect에 대한 공식 문서 읽고 소스 코드 이해하기, 예제 조사, 예제 풀기 이분탐색 2문제 풀이   몸의 피로감이 크기 때문에 휴식을 취해야겠다.</description>
+    </item>
+    
+    <item>
+      <title>코드잇 - 자료구조 공부</title>
+      <link>https://xfrnk2.github.io/codeit/codeit_learning_data_structure/</link>
+      <pubDate>Fri, 06 Aug 2021 00:18:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/codeit/codeit_learning_data_structure/</guid>
+      <description>그동안 제대로 좀 짚어가고 싶었던 자료구조이다.
+어떤 상황에서 데이터를 효과적으로 관리하거나, 서빙하기 위한 자료구조는 무엇일까?
+자료구조의 선택에 따라 운영의 비용 내지는 효율이 크게 좌우된다고 익히 들은 바가 있다.
+자료구조를 코드로 직접 구현해봄으로서 해당 자료구조가 어떻게 동작하는지를 배우고 익히고,
+그냥 개념으로 알고만 넘어갈 것이 아닌, 직접 구현해보는 과정을 거침으로서 누군가에게 자료구조에 대해서
+정확하고, 명확하게, 그리고 확실하게 설명할 수 있는 강의가 되는 것 같다.
+​프로그래밍을 깊이 있게 공부하고 싶은 분께는 꼭 자료구조 과목을 추천하고 싶다.</description>
+    </item>
     
     <item>
       <title>21.08.05_TIL</title>

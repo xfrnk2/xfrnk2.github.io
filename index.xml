@@ -4,7 +4,7 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 05 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 06 Aug 2021 00:20:30 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -12,9 +12,18 @@
     <item>
       <title>Tils</title>
       <link>https://xfrnk2.github.io/til/</link>
-      <pubDate>Thu, 05 Aug 2021 00:20:30 +0900</pubDate>
+      <pubDate>Fri, 06 Aug 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Codes</title>
+      <link>https://xfrnk2.github.io/code/</link>
+      <pubDate>Fri, 06 Aug 2021 00:18:15 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/code/</guid>
       <description></description>
     </item>
     
@@ -24,15 +33,6 @@
       <pubDate>Tue, 03 Aug 2021 11:17:34 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/resolved_problem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Codes</title>
-      <link>https://xfrnk2.github.io/code/</link>
-      <pubDate>Thu, 22 Jul 2021 00:18:15 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/code/</guid>
       <description></description>
     </item>
     
