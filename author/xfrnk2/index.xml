@@ -5,10 +5,29 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 08 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.08_TIL</title>
+      <link>https://xfrnk2.github.io/til/210808/</link>
+      <pubDate>Sun, 08 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210808/</guid>
+      <description>계획했던 일  정보처리기사 공부하기 코딩테스트 문제 풀기   오늘 한 일  정보처리기사 공부 - 약 50페이지만 더 공부하면, 전체 1회독이 끝이난다. 코딩테스트 문제 1문제 풀이   내일 할 일  정보처리기사 공부하기 코딩테스트 문제 풀기  </description>
+    </item>
+    
+    <item>
+      <title>21.08.07_TIL</title>
+      <link>https://xfrnk2.github.io/til/210807/</link>
+      <pubDate>Sat, 07 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210807/</guid>
+      <description>계획했던 일  정보처리기사 공부하기 코딩테스트 대비 문제 최소 2문제 이상 풀기. lower_bound와 upper_bound 정리글 블로그에 올리기 sql 재설치하기   오늘 한 일  정보처리기사 공부 코딩테스트 문제 1문제 풀이   현재 정보처리기사 시험이 목전이고, 최근 체력소모가 커서 문제풀이나 복잡한 작업이 다소 부담이 된다. 코테 문제는 매일 풀되, 정리하는것은 계속 기억해 두다가, 정보처리기사 마무리 한 후, sql 재설치와 함께 실행에 옮기려고 한다.
+  내일 할 일  정보처리기사 공부하기 코딩테스트 문제 풀기  </description>
+    </item>
     
     <item>
       <title>21.08.06_TIL</title>
