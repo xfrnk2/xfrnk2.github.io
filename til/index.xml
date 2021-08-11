@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 10 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.10_TIL</title>
+      <link>https://xfrnk2.github.io/til/210810/</link>
+      <pubDate>Tue, 10 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210810/</guid>
+      <description>계획했던 일  정보처리기사 공부하기   오늘 한 일  정보처리기사 공부 - 2회독 50% 완료   내일 할 일  정보처리기사 공부하기  </description>
+    </item>
+    
+    <item>
+      <title>21.08.09_TIL</title>
+      <link>https://xfrnk2.github.io/til/210809/</link>
+      <pubDate>Mon, 09 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210809/</guid>
+      <description>계획했던 일  정보처리기사 공부하기   오늘 한 일  정보처리기사 공부하기 - 1회독 마무리, 2회 시작 호스팅중이던 웹 페이지 코딩 4시간   내일 할 일  정보처리기사 공부하기  </description>
+    </item>
     
     <item>
       <title>21.08.08_TIL</title>
