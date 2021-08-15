@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/categories/resolved-problem/</link>
     <description>Recent content in resolved problem on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Aug 2021 11:17:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 Aug 2021 11:17:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/resolved-problem/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>깃허브 토큰 인증 로그인 해결 - Support for password authentication was removed. Please use a personal access token instead 에러 해결</title>
+      <link>https://xfrnk2.github.io/resolved_problem/git_token_authentication_from_20210813/</link>
+      <pubDate>Sun, 15 Aug 2021 11:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/git_token_authentication_from_20210813/</guid>
+      <description>문제 발생 상황  push를 했더니 아래와 같은 문구가 나왔다.   remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead. remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information. fatal: unable to access &amp;ldquo;&amp;hellip;&amp;rdquo; : The requested URL returned error: 403
+ 해결 방법  8월 13일을 기점으로 유저 이름과 비밀번호로 인증을 하던 형태에서, 개인 인증 토큰을 비밀번호 대신 사용해야 git에 접근할 수 있는 형태로 바뀌었다.</description>
+    </item>
     
     <item>
       <title>Github의 잔디가 심어지지 않던 문제와 해결</title>
