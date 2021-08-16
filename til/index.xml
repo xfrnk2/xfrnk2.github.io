@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 15 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.15_TIL</title>
+      <link>https://xfrnk2.github.io/til/210815/</link>
+      <pubDate>Sun, 15 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210815/</guid>
+      <description>계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  운영체제 메모리 관리 기법 강의를 듣고 독서를 통해 페이징의 개념을 비교적 자세하게 공부했다. 코테 대비 문제 그리디&amp;amp;스택 1문제 풀고, 나머지 하나는 풀지 못했다. 출석부 작업   내일 할 일  CS 공부 코딩테스트 대비 문제풀이  </description>
+    </item>
     
     <item>
       <title>21.08.14_TIL</title>
