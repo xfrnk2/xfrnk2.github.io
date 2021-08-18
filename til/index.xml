@@ -5,10 +5,37 @@
     <link>https://xfrnk2.github.io/til/</link>
     <description>Recent content in Tils on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 18 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.18_TIL</title>
+      <link>https://xfrnk2.github.io/til/210818/</link>
+      <pubDate>Wed, 18 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210818/</guid>
+      <description>계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 동적계획법 3문제 풀이 운영체제 도서의 주소바인딩 챕터를 읽었다.   내일 할 일  외출 코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기  </description>
+    </item>
+    
+    <item>
+      <title>21.08.17_TIL</title>
+      <link>https://xfrnk2.github.io/til/210817/</link>
+      <pubDate>Tue, 17 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210817/</guid>
+      <description>계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 (그리디&amp;amp;스택 풀기 어려웠던 1문제 풀이) KOCW에서 네트워크의 TCP챕터 강의를 찾아 들었다. 도서관에서 여러 책을 읽었다.   내일 할 일  CS 공부 코딩테스트 대비 문제풀이  </description>
+    </item>
+    
+    <item>
+      <title>21.08.16_TIL</title>
+      <link>https://xfrnk2.github.io/til/210816/</link>
+      <pubDate>Mon, 16 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210816/</guid>
+      <description>계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 (그리디&amp;amp;스택 2문제) KOCW에서 네트워크의 TCP챕터 강의를 찾아 들었다.   내일 할 일  CS 공부 코딩테스트 대비 문제풀이  </description>
+    </item>
     
     <item>
       <title>21.08.15_TIL</title>
