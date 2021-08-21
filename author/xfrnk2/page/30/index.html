@@ -100,6 +100,159 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.10.02/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.10.02/">20.10.02_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-10-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  학교 과제 하기 개발 책 읽기 API 문서에 대해 아는것이 전혀 없으므로 무엇인지 알아보기   오늘 한 일  Django SECRET_KEY 분리방법에 대한 글을 블로그에 올렸다. edwith에 올라와있는 [부스트코스] 모두를 위한 컴퓨터 과학 (CS50 2019) 강좌의 1. 컴퓨팅 사고, 2. C언어 수강을 완료했다. 마찬가지로 edwith의 [부스트코스] 비전공자를 위한 HTML/CSS 강좌의 1. HTML 이해하기를 수강 완료하고 2. HTML 태그 절반 분량의 강의를 수강했다. -&gt; HTML/CSS강의 수강으로 기본기를 다지고 자신감을 키워서 실제 코드로 적용하고 경험해보고 싶다.
+
+    
+    <a href="https://xfrnk2.github.io/til/20.10.02/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_secret_key/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_secret_key/">Django SECRET_KEY 분리방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-10-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    방법은 두 종류가 있는데, 환경 변수로 저장하거나, 파일에 따로 저장하는 방법이다.
+환경 변수로 저장시 아파치 등 웹 서버를 사용하는 경우 저장되지 않을 수 있으므로 후자의 방법을 선택했다.
+임의의 원하는 공간에 secrets.json 파일을 작성 한 뒤, 아래와 같이 입력하고 저장한다.
+딕셔너리 내에서 콤마는 후술(가장 뒤에 덧붙이지)하지 않는다.
+secrets.json
+{ &quot;SECRET_KEY&quot;: &quot;실제 SECRET_KEY&quot; }  그 다음 setting.py를 아래와 같이 변경한다.
+settings.py
+import os, json from django.core.exceptions import ImproperlyConfigured secret_file = os.path.join(BASE_DIR, 'config', 'secrets.
+
+    
+    <a href="https://xfrnk2.github.io/django/django_secret_key/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/til/20.10.01/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -453,155 +606,6 @@
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.09.26/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.09.26/">20.09.26_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-09-26</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  학교 과제 진행하기 코드 리뷰 해결하기 온라인 출석부 stackoverflow에 올린 답변을 참고해서 진행해보기, 답변자분과 추가 질문과 쌍방 소통 이어하기   오늘 한 일  온라인 출석부 stackoverflow 답변자분과 쌍방 소통했다. 타결책이 필요한지, 최소한의 공수가 드는 작업을 통해 타협할 것인지에 대한 이야기가 오갔다. 레스토랑 시뮬레이션 코드를 수정, 보완했다.   내일 할 일  레스토랑 시뮬레이션 코드 수정, 보완하기  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/web/ssrandcsr/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/web/ssrandcsr/">서버 사이드 렌더링(Server Side Rendering: SSR) &amp; 클라이언트 사이드 렌더링(Client Side Rendering: CSR) 정리</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-09-26</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/web/">web</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    최근 용어 &lsquo;서버 사이드 렌더링(Server Side Rendering)&lsquo;을 알게 되었는데, 리액트를 공부하며 배우게 된 SPA방식과 관계가 있다고 생각했다. 궁금해서 찾아본 내용(서버 사이드 렌더링((Server Side Rendering))과 클라이언트 사이드 렌더링(Client Side Rendering))을 간단하게 정리해 보았다.
-  Server Side Rendering  전통적인 웹 어플리케이션 렌더링 방식 검색엔진 최적화 용이 서버에서 view를 렌더링해서 가져오므로 view를 보기까지 초기 구동속도가 빠름 HTML에 모든 컨텐츠가 저장되어 있으므로 검색엔진 노출에 문제가 되지 않음 사용자가 처음으로 보는 컨텐츠의 시점을 앞당길 수 있음 사용자 정보를 서버측에서 세션 관리   Client Side Rendering  SPA 방식(Single Page Application) HTML을 다운로드 받고, JS를 다운로드 받아서, JS가 동작하면서 데이터만 주고받아서 클라이언트 쪽에서 렌더링 하는 방식 브라우저가 없으므로 HTML만 가져와서는 검색에 나오지 않음.
-
-    
-    <a href="https://xfrnk2.github.io/web/ssrandcsr/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/web/">web</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/rendering/">rendering</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -628,6 +632,14 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/til/210820/">21.08.20_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210819/">21.08.19_TIL</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210818/">21.08.18_TIL</a>
                 </li>
                 
@@ -645,14 +657,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210815/">21.08.15_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/review/210814_%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC3%ED%9A%8C%ED%95%84%EA%B8%B0%EC%8B%9C%ED%97%98_%ED%9B%84%EA%B8%B0/">2021 정보처리기사 3회차 필기시험 첫 응시와 후기</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210814/">21.08.14_TIL</a>
                 </li>
                 
             </ul>

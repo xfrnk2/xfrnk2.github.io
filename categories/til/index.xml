@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/categories/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 18 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 20 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.20_TIL</title>
+      <link>https://xfrnk2.github.io/til/210820/</link>
+      <pubDate>Fri, 20 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210820/</guid>
+      <description>계획했던 일  코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기   오늘 한 일  코딩테스트 문제풀이 동적계획법 1문제 풀이 크롤링 페이지를 위한 깃허브 액션 사용법과 돔 객체를 어떻게 다루는지에 대한 자료들을 찾아보고 읽었다.   내일 할 일  8/21-8/22 연수  </description>
+    </item>
+    
+    <item>
+      <title>21.08.19_TIL</title>
+      <link>https://xfrnk2.github.io/til/210819/</link>
+      <pubDate>Thu, 19 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210819/</guid>
+      <description>계획했던 일  외출 코딩테스트 대비 문제 풀기   오늘 한 일  코딩테스트 문제풀이 동적계획법 1문제 풀이 최근에 운영체제, 네트워크 배운 내용 노션에 정리   내일 할 일  코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기  </description>
+    </item>
     
     <item>
       <title>21.08.18_TIL</title>
