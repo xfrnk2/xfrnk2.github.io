@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 20 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.21-21.08.24_TIL</title>
+      <link>https://xfrnk2.github.io/til/210823/</link>
+      <pubDate>Tue, 24 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210823/</guid>
+      <description>21.08.21-21.08.22 TIL  오늘 한 일  연수   21.08.23 TIL 오늘 한 일  아르바이트 면접 2곳 동적계획법 풀이 2문제 깃허브 액션과 크롤링 예제 프로젝트를 웹서핑을 통해 찾아봄   내일 할 일  아르바이트 출근 코딩테스트 대비 문제 풀이 크롤링 도구 알아보기   21.08.24 TIL  아르바이트 첫 출근 동적계획법 풀이 2문제, 1문제는 풀이 후 실패하여 다시 봐야 한다.&amp;ldquo;카탈린 수&amp;quot;가 나오는데 아직은 복잡하여 내일 다시 볼 예정이다.</description>
+    </item>
     
     <item>
       <title>21.08.20_TIL</title>
