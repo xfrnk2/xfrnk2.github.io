@@ -5,10 +5,38 @@
     <link>https://xfrnk2.github.io/tags/til/</link>
     <description>Recent content in TIL on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 30 Aug 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/til/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.30_TIL</title>
+      <link>https://xfrnk2.github.io/til/210830/</link>
+      <pubDate>Mon, 30 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210830/</guid>
+      <description>계획했던 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상   오늘 한 일  코딩테스트 대비 문제를 3문제 풀었다.   동적계획법을 여러번 풀다보니 이도 저도 아닌 수준에 온 것 같다. 더 꾸준히 풀어봐야겠다.
+  &amp;ldquo;DATA STRUCTURES AND ALGORITHMS USING PYTHON&amp;quot;의 추상 자료형 (챕터1)을 읽었다. Github actions - workflow 적용후 간단히 테스트 해보았다.   내일 할 일  출석부 코딩 / 자동화 작업하기 Github action 다루기  </description>
+    </item>
+    
+    <item>
+      <title>21.08.29_TIL</title>
+      <link>https://xfrnk2.github.io/til/210829/</link>
+      <pubDate>Sun, 29 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210829/</guid>
+      <description>계획했던 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상   오늘 한 일  코딩테스트 대비 문제를 2문제 풀었다. &amp;ldquo;DATA STRUCTURES AND ALGORITHMS USING PYTHON&amp;quot;의 추상 자료형 (챕터1)을 읽었다.   내일 할 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상  </description>
+    </item>
+    
+    <item>
+      <title>21.08.28_TIL</title>
+      <link>https://xfrnk2.github.io/til/210828/</link>
+      <pubDate>Sat, 28 Aug 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210828/</guid>
+      <description>계획했던 일  깃허브 액션 공부 코딩테스트 대비 문제풀이   오늘 한 일  아버지 생신으로 아르바이트 후 외출을 다녀오는 바람에 시간이 나지 않아 공부는 하지 못했다.   내일 할 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상  </description>
+    </item>
     
     <item>
       <title>21.08.27_TIL</title>
