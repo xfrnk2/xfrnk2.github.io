@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Aug 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 08 Sep 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.08.31-21.09.08_TIL -&gt; 다음 게시글부터 WIL(Weekly I Learned)카테고리에 올릴 예정.</title>
+      <link>https://xfrnk2.github.io/til/210831-210908/</link>
+      <pubDate>Wed, 08 Sep 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/til/210831-210908/</guid>
+      <description>계획했던 일  출석부 코딩 / 자동화 작업하기 Github action 다루기   지난 한 주 동안 한 일  코딩테스트 대비 동적계획법 문제를 5개 풀었고, 이해만 하고 넘긴것도 2문제정도 있다. 동적계획법이 생각보다 난이도가 높게 느껴졌다. Github actions 문서를 읽고 workflow를 어떻게 구성하면 좋을지 찾아보는 시간을 보냈다. 출석부 (Google apps script 사용)의 자동화와 배포를 손수 하는데 시간을 많이 썼다.   이제는 현업에서 사용되는 언어나 프레임워크를 사용해서 나의 프로젝트를 만듦에 집중해야 할 것이다.</description>
+    </item>
     
     <item>
       <title>21.08.30_TIL</title>
