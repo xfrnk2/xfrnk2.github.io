@@ -100,6 +100,77 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/python/python-counting_dictionary_elements_efficially/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-counting_dictionary_elements_efficially/">Python - 딕셔너리 원소의 갯수를 보다 효율적으로 counting하는 방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-06-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    Dictionary의 get 메소드를 활용하자. counts = dict() for i in items: counts[i] = counts.get(i, 0) + 1  시간복잡도적 측면에서 collections의 Counter보다 더 낫다. 출처 : 링크  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/python/python-sys_stdin_readline/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -556,79 +627,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/python/python-variables_machanism/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-variables_machanism/">Python - Python의 변수 할당 매커니즘</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-04-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    파이썬은 변수를 생성할 때 변수를 위한 메모리를 생성하는 방식이 아니라, 변수가 만들어지고 어떠한 값을 넣으면 변수가 그 값을 참조하는 형태이다. 변수에 상수 값을 할당하고자 해도 값이 변경되기 때문에 파이썬에서는 상수를 사용하지 않는다. 그 대신 클래스를 사용한 여러가지 방법으로 상수를 정의할 수는 있다.(FrozenSpace, SpaceFrozenValues, __slots__, property, metaclass 등, 또는 Python 3.8~ typing.Final(*그러나 재할당 가능))   from uuid import uuid4 class obj: def __init__(self): self.__data = uuid4() self.__is_changed = False @property def data(self): return self.
-
-    
-    <a href="https://xfrnk2.github.io/python/python-variables_machanism/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -655,6 +653,10 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/wil/210909-210930/">21.09.09-21.09.30_WIL(3 Weeks)</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/til/210831-210908/">21.08.31-21.09.08_TIL -&gt; 다음 게시글부터 WIL(Weekly I Learned)카테고리에 올릴 예정.</a>
                 </li>
                 
@@ -676,10 +678,6 @@ import sys raw_input = sys.stdin.readline N = int(raw_input())  덧붙여서, �
                 
                 <li>
                     <a href="https://xfrnk2.github.io/til/210826/">21.08.26_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210823/">21.08.26_TIL</a>
                 </li>
                 
             </ul>

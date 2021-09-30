@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 08 Sep 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Sep 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WIL</title>
+      <link>https://xfrnk2.github.io/tags/wil/</link>
+      <pubDate>Thu, 30 Sep 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/wil/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>TIL</title>

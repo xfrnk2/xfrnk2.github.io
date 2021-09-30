@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>WIL on Rad Blog</title>
+    <link>https://xfrnk2.github.io/categories/wil/</link>
+    <description>Recent content in WIL on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 30 Sep 2021 00:20:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/categories/wil/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>21.09.09-21.09.30_WIL(3 Weeks)</title>
+      <link>https://xfrnk2.github.io/wil/210909-210930/</link>
+      <pubDate>Thu, 30 Sep 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/wil/210909-210930/</guid>
+      <description>계획했던 일  Github action workflow 구성을 실제로 적용하여 fork와 pull request, 함수를 실행하는 작업을 구현해보기. 크롤링 데이터를 취합해서 어떻게 다룰 것인지 고민해보기 SQL 배우기(코드잇에서 강의 따라가기, 9월 25일이 수강 멤버쉽 만기일이므로) 한주에 2개 이상 코딩테스트 대비 문제 풀기.   지난 3 Weeks 동안 한 일  코딩테스트 대비 문제를 12개 풀이했다. 학교수업 - 중간고사로서의 과제 2개 (이번에 전공 학점 이수를 모두 마쳐서 통계 과목을 듣는데, 빅데이터의 이해와 재테크와 금융투자 과목)를 마치고 제출했다.</description>
+    </item>
+    
+  </channel>
+</rss>
