@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Sep 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Oct 2021 14:52:46 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programmers</title>
+      <link>https://xfrnk2.github.io/categories/programmers/</link>
+      <pubDate>Sun, 24 Oct 2021 14:52:46 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/programmers/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>WIL</title>
@@ -142,15 +151,6 @@
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/compiler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmers</title>
-      <link>https://xfrnk2.github.io/categories/programmers/</link>
-      <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/programmers/</guid>
       <description></description>
     </item>
     

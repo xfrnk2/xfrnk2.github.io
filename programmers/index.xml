@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/programmers/</link>
     <description>Recent content in Programmers on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Oct 2020 15:52:46 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Oct 2021 14:52:46 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/programmers/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스 스킬체크 Lv2_211024</title>
+      <link>https://xfrnk2.github.io/programmers/skillchecklv2/</link>
+      <pubDate>Sun, 24 Oct 2021 14:52:46 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/skillchecklv2/</guid>
+      <description>1번 문제 성공 실패 결정 요인: 좌표1=(x1, y1) &amp;lt; 좌표2=(x2, y2)가 보장되어야 하고, * 집합은 ((0, 0), (1, 1))과 ((1, 1), (0, 0))을 다른 요소로 취급한다. def solution(dirs): curX = 0 curY = 0 visits = set() for d in dirs: if d == &#39;U&#39; and curY &amp;lt; 5: visits.add(((curY, curX),(curY + 1, curX))) curY += 1 elif d == &#39;D&#39; and curY &amp;gt; -5: visits.add(((curY - 1, curX),(curY, curX))) curY -= 1 elif d == &#39;R&#39; and curX &amp;lt; 5: visits.</description>
+    </item>
     
     <item>
       <title>프로그래머스-정렬-가장 큰 수[정렬]</title>

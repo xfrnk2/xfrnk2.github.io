@@ -1,0 +1,447 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 프로그래머스 스킬체크 Lv2_211024 | Rad Blog</title>
+    <meta name="description" content="프로그래머스 스킬체크 Lv2_211024 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="프로그래머스 스킬체크 Lv2_211024">
+    <meta itemprop="description" content="프로그래머스 스킬체크 Lv2_211024 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="프로그래머스 스킬체크 Lv2_211024">
+    <meta property="og:description" content="프로그래머스 스킬체크 Lv2_211024 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/programmers/skillchecklv2/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/programmers/skillchecklv2/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/programmers/skillchecklv2/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/programmers/skillchecklv2/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/skillchecklv2/">프로그래머스 스킬체크 Lv2_211024</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-10-24</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h1 id="1번-문제">1번 문제</h1>
+<h3 id="성공-실패-결정-요인-좌표1x1-y1--좌표2x2-y2가-보장되어야-하고--집합은-0-0-1-1과-1-1-0-0을-다른-요소로-취급한다">성공 실패 결정 요인: 좌표1=(x1, y1) &lt; 좌표2=(x2, y2)가 보장되어야 하고, * 집합은 ((0, 0), (1, 1))과 ((1, 1), (0, 0))을 다른 요소로 취급한다.</h3>
+<pre><code>def solution(dirs):
+
+    curX = 0
+    curY = 0
+
+    visits = set()
+    
+    for d in dirs:
+        
+        if d == 'U' and curY &lt; 5:
+            visits.add(((curY, curX),(curY + 1, curX)))
+            curY += 1
+        elif d == 'D' and curY &gt; -5:
+            visits.add(((curY - 1, curX),(curY, curX)))
+            curY -= 1
+        elif d == 'R' and curX &lt; 5:
+            visits.add(((curY, curX),(curY, curX + 1)))
+            curX += 1
+        elif d == 'L' and curX &gt; -5:
+            visits.add(((curY, curX - 1),(curY, curX)))
+            curX -= 1
+    return len(visits)
+</code></pre><h1 id="2번-문제">2번 문제</h1>
+<pre><code>def solution(n):
+    prev = 1
+    cur = 1
+    
+    for _ in range(n - 2):
+        temp = prev + cur 
+        prev, cur = cur, temp
+    
+    return cur % 1234567
+</code></pre>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/skillchecklv2/">프로그래머스 스킬체크 Lv2_211024</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/wil/210909-210930/">21.09.09-21.09.30_WIL(3 Weeks)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210831-210908/">21.08.31-21.09.08_TIL -&gt; 다음 게시글부터 WIL(Weekly I Learned)카테고리에 올릴 예정.</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210830/">21.08.30_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210829/">21.08.29_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210828/">21.08.28_TIL</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/til/210827/">21.08.27_TIL</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/review">Review
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/model">Model
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2021
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WTESZLPSEQ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

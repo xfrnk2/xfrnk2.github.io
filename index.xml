@@ -4,10 +4,19 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 30 Sep 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 24 Oct 2021 14:52:46 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Programmers</title>
+      <link>https://xfrnk2.github.io/programmers/</link>
+      <pubDate>Sun, 24 Oct 2021 14:52:46 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Wils</title>
@@ -132,15 +141,6 @@
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmers</title>
-      <link>https://xfrnk2.github.io/programmers/</link>
-      <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/</guid>
       <description></description>
     </item>
     
