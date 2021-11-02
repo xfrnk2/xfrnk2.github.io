@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DFS/BFS on Rad Blog</title>
+    <link>https://xfrnk2.github.io/tags/dfs/bfs/</link>
+    <description>Recent content in DFS/BFS on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/dfs/bfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>프로그래머스 DFS/BFS - 문자열 변환</title>
+      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</link>
+      <pubDate>Tue, 02 Nov 2021 15:53:47 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</guid>
+      <description>from collections import deque def solution(begin, target, words): def check(s1, s2): res = 0 for i in range(len(s1)): if s1[i] == s2[i]: res += 1 if res &amp;gt;= len(s1) - 1: return True return False queue = deque() queue.append([begin, words, 0]) while queue: value, path, c = queue.popleft() if value == target: return c for i, j in enumerate(path): if check(value, j): new_path = path[:] new_value = new_path.pop(i) queue.append([new_value, new_path, c + 1]) return ans 한마디  이틀이나 잡아먹은 문제이다.</description>
+    </item>
+    
+    <item>
+      <title>프로그래머스 DFS/BFS - 여행 경로</title>
+      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</link>
+      <pubDate>Tue, 02 Nov 2021 15:52:45 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</guid>
+      <description>from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].append(destination) return graph def dfs(): stack = [&#39;ICN&#39;] path = [] while len(stack) &amp;gt; 0: top = stack[-1] if top not in routes or len(routes[top]) == 0: path.append(stack.pop()) else: stack.append(routes[top].pop(0)) return path[::-1] routes = init_graph() for r in routes: routes[r].sort() answer = dfs() return answer # 재귀를 사용한 풀이 - 조금의 비교(참고 코드)를 거쳐 가며 손코딩 from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].</description>
+    </item>
+    
+    <item>
+      <title>프로그래머스 DFS/BFS - 타겟 넘버</title>
+      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</link>
+      <pubDate>Tue, 02 Nov 2021 15:52:44 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</guid>
+      <description># lv2 # dfs def solution(numbers, target): ans = 0 def func(num, level): nonlocal ans if level == len(numbers): if target == num: ans += 1 return if level == 1: func(- num + numbers[level], level + 1) func(- num - numbers[level], level + 1) func(num + numbers[level], level + 1) func(num - numbers[level], level + 1) func(numbers[0], 1) return ans # bfs from collections import deque def solution(numbers, target): ans = 0 queue = deque() queue.</description>
+    </item>
+    
+    <item>
+      <title>프로그래머스 DFS/BFS - 네트워크</title>
+      <link>https://xfrnk2.github.io/programmers/dfsbfs_network/</link>
+      <pubDate>Tue, 02 Nov 2021 15:52:43 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/dfsbfs_network/</guid>
+      <description># lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 </description>
+    </item>
+    
+  </channel>
+</rss>

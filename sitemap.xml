@@ -3,27 +3,87 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xfrnk2.github.io/wil/211001-211031/</loc>
-    <lastmod>2021-10-31T00:20:30+09:00</lastmod>
+    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2021-10-31T00:20:30+09:00</lastmod>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2021-10-31T00:20:30+09:00</lastmod>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/programmers/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/programmers/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2021-10-31T00:20:30+09:00</lastmod>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</loc>
+    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/bruteforce/</loc>
+    <lastmod>2021-11-02T15:52:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/brute_force_mock_test/</loc>
+    <lastmod>2021-11-02T15:52:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</loc>
+    <lastmod>2021-11-02T15:52:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</loc>
+    <lastmod>2021-11-02T15:52:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/dfsbfs_network/</loc>
+    <lastmod>2021-11-02T15:52:43+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/programmers/brute_force_decimal_search/</loc>
+    <lastmod>2021-11-02T15:52:40+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/wil/211001-211031/</loc>
     <lastmod>2021-10-31T00:20:30+09:00</lastmod>
   </url>
   
@@ -40,26 +100,6 @@
   <url>
     <loc>https://xfrnk2.github.io/wil/</loc>
     <lastmod>2021-10-31T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
-    <lastmod>2021-10-31T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/programmers/</loc>
-    <lastmod>2021-10-24T14:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/programmers/</loc>
-    <lastmod>2021-10-24T14:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/</loc>
-    <lastmod>2021-10-24T14:52:46+09:00</lastmod>
   </url>
   
   <url>
@@ -590,11 +630,6 @@
   <url>
     <loc>https://xfrnk2.github.io/til/210625/</loc>
     <lastmod>2021-06-25T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
-    <lastmod>2021-06-24T01:13:19+09:00</lastmod>
   </url>
   
   <url>
@@ -2625,6 +2660,10 @@
   <url>
     <loc>https://xfrnk2.github.io/gallery/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/dfs/bfs/</loc>
   </url>
   
 </urlset>

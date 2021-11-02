@@ -100,6 +100,442 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.09/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.09/">20.08.09_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-09</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  충분히 쉬기 Django 로그인과 회원가입 공부   오늘 한 일  Django에 Sendgrid로 전체 메일을 보내는것에 뒤늦게 알았으나 시행착오가 있었다. 그것을 수정하는 작업을 했다.   내일 할 일  코딩하기 Django 공식문서 보기, 코딩하기  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.08/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.08/">20.08.08_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)   오늘 한 일  어제 겪던 에러의 상황과 해결한 내용에 대해서 포스팅했다.   내일 할 일  충분히 쉬기 Django 로그인과 회원가입 공부  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-08</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
+ 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net' EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey' EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &gt;&gt;&gt; from django.core.mail import send_mail &gt;&gt;&gt; send_mail('Subject here', 'Here is the message.
+
+    
+    <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.07/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.07/">20.08.07_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-07</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  코딩하기 django 프로젝트 계획하기   오늘 한 일  python 다른사람의 코드들을 읽었다. @abstractmethod, super()에 대한 내용을 이해했다. 아직 써본적이 없으니 이후 꼭 써보려고 한다. Sendgrid를 가지고 다수의 사람들에게 전체 메일을 보낼수 있도록 했다.
+“smtplib.SMTPServerDisconnected: Connection unexpectedly closed”.
+이런 에러가 있었는데 이것을 해결한 것에 대한 내용은 이외의 포스팅에서 다룰 예정이다. 이전에 배웠던 Django를 복습했다. Django를 다뤄본지 너무 오래 되서 기억이 날듯 말듯 했기 때문이다.   내일 할 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.06/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.06/">20.08.06_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-06</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속   오늘 한 일  한의원에 다녀왔다. 레스토랑 시뮬레이션 코딩을 목표로 타이머 기능의 구현을 위해서 연습용 코드를 짰다.   내일 할 일  코딩하기 django 프로젝트 계획하기  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.05/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.05/">20.08.05_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  docker를 배운 내용을 블로그에 포스팅하기위한 과정 정리해서 글 쓰기   오늘 한 일  승모근에 담이 왔는데 그 통증이 심해서 한의원에 가서 침을 맞았다. 그동안 docker를 공부하면서 해왔던 것들에 대해서 정리한 글을 썼다.
+▶ [MYSQL] ERROR: AUTHENTICATION PLUGIN ‘CACHING_SHA2_PASSWORD’ CANNOT BE LOADED 해결
+▶ [DOCKER]DOCKER-COMPOSE을 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동
+▶ [DOCKER] 컨테이너 내 MYSQL서버에 접근하는 방법
+▶ [DOCKER] NETWORK를 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동   내일 할 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -176,465 +612,6 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
-▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
-mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
- 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
-docker exec -it (container id) bash ▶ 커맨드 입력
-mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
-
-    
-    <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    ▶ docker-compose에 대한 공식 문서 링크
- 1. 파일 생성 및 작성 dockerfile,
-docker-compose.xml,
-requirements.txt
-각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
-기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
-▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
-
-    
-    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-05</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/mysql/">mysql</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    ▶ MySQL 8.0부터는 default_authentication_plugin 이 mysql_native_password 에서 caching_sha2_password 로 변경되었는데, 강화된 보안 체계로 인해 외부 어플리케이션에서 사용되는 mysql 관련 모듈이 mysql 8.x 의 기본 값으로 설정된 패스워드 보안 알고리즘을 맞추지 못하여 발생하는 에러이니 mysql 인스턴스 전체에 영향을 주지 않는 방법으로 사용자 단위로 패스워드 보안 정책을 변경하는 편이 가장 좋다고 한다.
-▶ stackoverflow를 검색해보면 바로 나오는 것들이지만 빠르게 찾아보기 용이하게 하기 위해 간단히 방법만을 기록해 둡니다. 아래 방법중 어느것인가를 사용하면 에러를 해결했던 것 같습니다.
-
-    
-    <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/database/">database</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/mysql/">mysql</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/error/">Error</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.04/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.04/">20.08.04_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-04</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  어제 진행중이던 것 마저 해결하기 docker를 배운 내용을 블로그에 포스팅하기위한 과정 정리해서 글 쓰기   오늘 한 일  osi 7계층 관련 정보(위키백과, 나무위키, 블로그 등) 읽기 CLI를 이용해서 Git을 사용하는 연습을 했다. commit, reset, revert, merge, rebase 커맨드를 이용한 작업을 연습했고, merge와 rebase 사용시 conflict가 일어날 수 있는 경우도 실험하고 연습했다. rebase의 경우 conflict가 일어나면 현재 변경사항과 수신 변경사항의 위치가 역전되는것을 보고 의아해 했는데, 이것은 rebase 도중에 rebase의 기준이 되는 master 브랜치로 head가 옮겨지면서 나타나는 현상임을 인터넷 검색을 통해 알았고 납득이 되었다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.08.04/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.03/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.03/">20.08.03_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-03</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  앞으로 4개월간 단기 아르바이트를 시작하여 오늘 첫 출근이었다. 집에서 거리가 멀어 제법 시간이 소요되었다. 빅터 프랭클의 죽음의 수용소에서를 틈틈이 읽어서 현재 50%정도 읽었다. &ndash;network 기능을 공부했고, 하나의 network 안에 mysql container와 django의 container를 넣어서 연동하는 작업을 무사히 성공시켰다.   일단은 성공한 상태인데 포트의 충돌이 원인인지, 어떤 이유인진 몰라도 mysql workbench가 정상실행되지 않는다. 정상실행되도록 하여 커넥션에 추가하여 연결하고 정상적으로 migration이 되었는지 확인만 하면 진짜 마무리가 된다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.08.03/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.02/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.02/">20.08.02_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  docker-compose를 이용해서 mysql container와 mysql django container를 올리는 작업에 성공했다.
- &lt;알게된 과정&gt;  로컬의 mysql서버와 연동하는것은 이 이후의 작업들에 비해서 수고스럽지 않았다. docker container에 django 서버를 올려서 로컬의 mysql에 연동시켰다. docker container에 django 서버와 mysql 서버를 동시에 올리려고 하는데 방법을 몰라 찾아보는 시간이 길었던 것 같다. &ndash;link 또는 &ndash;network 기능을 사용해야되는것처럼 보여서 공식문서를 따라갔는데 습득과 적용이 잘 되지 않아 docker-compose를 배우는 쪽으로 방향을 틀었다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.08.02/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -661,31 +638,31 @@ requirements.txt
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/">프로그래머스 DFS/BFS - 문자열 변환</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/brute_force_mock_test/">프로그래머스 완전탐색 - 모의 고사</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">프로그래머스 DFS/BFS - 여행 경로</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">프로그래머스 DFS/BFS - 타겟 넘버</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">프로그래머스 완전탐색 - 소수 찾기</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/wil/211001-211031/">21.10.01-21.10.31_WIL(4 Weeks)</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/skillchecklv2/">프로그래머스 스킬체크 Lv2_211024</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/wil/210909-210930/">21.09.09-21.09.30_WIL(3 Weeks)</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210831-210908/">21.08.31-21.09.08_TIL -&gt; 다음 게시글부터 WIL(Weekly I Learned)카테고리에 올릴 예정.</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210830/">21.08.30_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210829/">21.08.29_TIL</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/til/210828/">21.08.28_TIL</a>
                 </li>
                 
             </ul>
@@ -704,6 +681,11 @@ requirements.txt
                 
                 <li>
                     <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programmers">Programmers
                         </a>
                 </li>
                 
@@ -727,11 +709,6 @@ requirements.txt
                         </a>
                 </li>
                 
-                <li>
-                    <a href="/categories/algorithm">Algorithm
-                        </a>
-                </li>
-                
             </ul>
         </div>
         
@@ -747,6 +724,11 @@ requirements.txt
                 </li>
                 
                 <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
                     <a href="/tags/django">Django
                         </a>
                 </li>
@@ -757,7 +739,7 @@ requirements.txt
                 </li>
                 
                 <li>
-                    <a href="/tags/algorithm">Algorithm
+                    <a href="/tags/programmers">Programmers
                         </a>
                 </li>
                 
@@ -768,11 +750,6 @@ requirements.txt
                 
                 <li>
                     <a href="/tags/boj">Boj
-                        </a>
-                </li>
-                
-                <li>
-                    <a href="/tags/model">Model
                         </a>
                 </li>
                 
