@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 24 Oct 2021 14:52:46 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Oct 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>21.10.01-21.10.31_WIL(4 Weeks)</title>
+      <link>https://xfrnk2.github.io/wil/211001-211031/</link>
+      <pubDate>Sun, 31 Oct 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/wil/211001-211031/</guid>
+      <description>계획했던 일  CS 이론 학습 문제 해결과 알고리즘 풀이 SQL 문법 숙달을 위한 실습   지난 4 Weeks 동안 한 일  정보처리기사 실기를 약 10일동안 준비했다. 가채점 결과 합격 예상! 학교 과제를 여전히 하고 있으며 실용적 배움을 위해 새롭게 듣게된 데이터통계학과 과목 실습에 예상이상의 시간이 소요되고 있다. 특히 R과 파이썬으로 통계 시각화하는 작업. 문제 풀이와 알고리즘 학습을 dps/bps 위주로 진행하였고 최단경로 알고리즘 또한 문제를 풀이했다. 출결관리 웹페이지의 access token 생성 후 인증 절차를 만들어서 기밀성을 높였다.</description>
+    </item>
     
     <item>
       <title>프로그래머스 스킬체크 Lv2_211024</title>
