@@ -100,6 +100,84 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-08-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
+docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
+ 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
+docker network connect (network) (container) ▶ network 조회:
+docker network ls ▶ container 조회:
+docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.
+
+    
+    <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -557,79 +635,6 @@ requirements.txt
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.01/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.08.01/">20.08.01_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-08-01</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  에러 해결하기  django.db.utils.OperationalError: (2002, &quot;Can't connect to MySQL server on '127.0.0.1' (115)&quot;)  오늘 한 일  mysql workbench 사용법과 mysql 커맨드, docker run의 flag 등을 배우고 익혔다. 결국 docker 컨테이너 두 곳에 django과 mysql를 각각 실행시켜 놓고 각 docker끼리 연결시켜야 되는것이 아닌가 생각이 기울었다. 그러나 여전히 삽질중. 어제 간단히 간추렸던 생각들이 가리키는대로 차례로 따라서 해보았다. &ndash;link는 예전 방식이기 때문에 &ndash;network를 쓰라고 하는데 network에 관한 문서나 지금까지 찾아본 자료들로는 곧바로 적용시키는 것이 어려웠던 편이다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.08.01/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -656,6 +661,10 @@ requirements.txt
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/">프로그래머스 DFS/BFS - 문자열 변환</a>
                 </li>
                 
@@ -677,10 +686,6 @@ requirements.txt
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">프로그래머스 완전탐색 - 소수 찾기</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/wil/211001-211031/">21.10.01-21.10.31_WIL(4 Weeks)</a>
                 </li>
                 
             </ul>
@@ -723,7 +728,7 @@ requirements.txt
                 </li>
                 
                 <li>
-                    <a href="/categories/review">Review
+                    <a href="/categories/food-for-thought">Food for thought
                         </a>
                 </li>
                 

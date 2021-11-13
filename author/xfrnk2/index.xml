@@ -5,10 +5,25 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 02 Nov 2021 15:53:47 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 13 Nov 2021 13:34:33 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>버스 지수(Bus Factor)</title>
+      <link>https://xfrnk2.github.io/fft/bus_factor/</link>
+      <pubDate>Sat, 13 Nov 2021 13:34:33 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/fft/bus_factor/</guid>
+      <description>여는 글  1인 개발과 버스팩터 및 위험요소를 고려하지 않고 개발했던 지난 시간을 회고하며 제대로 기억하고 무엇을 개선할 필요가 있는지 분명히 인식하기 위해서 정리하는 글을 쓴다.
+ 읽기 전에    Software engineering at google 책에는
+문제의 발견을 타임라인의 왼쪽으로 이동하라는 내용이 나온다.
+  문제를 해결하려면 뒤가 아니라 앞으로 가서 상황에 개입해야 한다.
+&amp;lsquo;업스트림&#39;이라는 새로운 행동모델을 설계한 댄 히스. https://biz.chosun.com/notice/interstellar/2021/10/02/EBEMJTVYYNB25NLYVL3JWLNXUI/)
+  문제 해결 비용은 타임 라인에서
+왼쪽으로 갈수록 저렴해지고, 오른쪽으로 갈수록 비싸진다.</description>
+    </item>
     
     <item>
       <title>프로그래머스 DFS/BFS - 문자열 변환</title>
