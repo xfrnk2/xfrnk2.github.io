@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 13 Nov 2021 13:34:33 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Dec 2021 00:20:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>review</title>
+      <link>https://xfrnk2.github.io/categories/review/</link>
+      <pubDate>Sat, 18 Dec 2021 00:20:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Food For Thought</title>
@@ -43,15 +52,6 @@
       <pubDate>Sun, 15 Aug 2021 11:17:34 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/resolved-problem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://xfrnk2.github.io/categories/review/</link>
-      <pubDate>Sun, 15 Aug 2021 00:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/review/</guid>
       <description></description>
     </item>
     

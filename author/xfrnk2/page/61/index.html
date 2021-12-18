@@ -100,6 +100,87 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/boj/10825/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/10825/">BOJ-10825-국영수[정렬]</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-21</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    BOJ-10825-국영수 문제 바로가기  나의 풀이 student_list = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split())) for _ in range(int(input()))] student_list.sort(key=lambda student: (-student[1], student[2], -student[3], student[0])) for x in student_list: print(x[0]) 생각  operator.itemgetter도 이용할수 있을까? 정수판별을 위해서 어떤 함수를 사용하는게 적절할까?  순서  input값의 문자열이 정수일 경우 정수화 정렬 실행 0번째 인덱스에 위치한 학생의 이름을 출력  방법  정수 판별을 위해 isdecimal 이용 lambda함수를 이용 정렬하고자 하는 인덱스를 역순으로 정렬하기 위해 머리부분에 -를 붙임.
+
+    
+    <a href="https://xfrnk2.github.io/boj/10825/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/sorting/">Sorting</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/til/20.04.20/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -584,6 +665,10 @@ makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 �
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
                 </li>
                 
@@ -605,10 +690,6 @@ makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 �
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">프로그래머스 완전탐색 - 소수 찾기</a>
                 </li>
                 
             </ul>
@@ -651,7 +732,7 @@ makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 �
                 </li>
                 
                 <li>
-                    <a href="/categories/food-for-thought">Food for thought
+                    <a href="/categories/review">Review
                         </a>
                 </li>
                 
