@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 18 Dec 2021 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 26 Jan 2022 19:15:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>123</title>
+      <link>https://xfrnk2.github.io/123/</link>
+      <pubDate>Wed, 26 Jan 2022 19:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/123/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>프로그래머스-해시-완주하지 못한 선수</title>
+      <link>https://xfrnk2.github.io/programmers/hash_marathon_lv1/</link>
+      <pubDate>Wed, 26 Jan 2022 19:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/hash_marathon_lv1/</guid>
+      <description>프로그래머스-해시-완주하지 못한 선수로 이동  첫 성공시도 def solution(participant, completion): answer = &amp;quot;&amp;quot; counts = dict() for i in completion: counts[i] = counts.get(i, 0) + 1 for name in participant: value = counts.get(name) if value == None or value &amp;lt;= 0: answer = name break counts[name] -= 1 return answer 셀프 피드백  복잡하다. 더 간단히 할 수는 없을까?   두번째 성공시도 from collections import Counter def solution(participant, completion): i = iter((Counter(participant) - Counter(completion)).</description>
+    </item>
     
     <item>
       <title>2021 우아한 테크코스 4기 프리코스 후기</title>

@@ -48,6 +48,10 @@
         <ul class="topnav">
             
             
+            <li><a href="https://xfrnk2.github.io/123/">123</a></li>
+            
+            
+            
             <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
             
             
@@ -100,6 +104,89 @@
 
 
     
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/">Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-10-06</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    filter 함수의 특이점 발견 동기  레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.
+(좋은 코드인지는 모르겠다.)
+ cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks] self.__cooks = list(filter(None, cooks))   else를 연산하는 과정에서 None이 원소로 들어가는 것을 확인,
+None 원소들을 제거해주기 위한 방법을 검색해봤다. list(filter(None, array))의 형태로 쓰란다. 그래서 형태를 모방한 코드를 작성했는데&hellip;. 그런데..
+왜 이렇게 되지? 싶은, 크게 눈에 띈 부분이 있었다.    특이점 filter(적용시킬 함수, 적용시킬 요소들)의 형태로
+
+    
+    <a href="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/fft/">FFT</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
 
     
         
@@ -554,88 +641,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_secret_key/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_secret_key/">Django SECRET_KEY 분리방법</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-10-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    방법은 두 종류가 있는데, 환경 변수로 저장하거나, 파일에 따로 저장하는 방법이다.
-환경 변수로 저장시 아파치 등 웹 서버를 사용하는 경우 저장되지 않을 수 있으므로 후자의 방법을 선택했다.
-임의의 원하는 공간에 secrets.json 파일을 작성 한 뒤, 아래와 같이 입력하고 저장한다.
-딕셔너리 내에서 콤마는 후술(가장 뒤에 덧붙이지)하지 않는다.
-secrets.json
-{ &quot;SECRET_KEY&quot;: &quot;실제 SECRET_KEY&quot; }  그 다음 setting.py를 아래와 같이 변경한다.
-settings.py
-import os, json from django.core.exceptions import ImproperlyConfigured secret_file = os.path.join(BASE_DIR, 'config', 'secrets.
-
-    
-    <a href="https://xfrnk2.github.io/django/django_secret_key/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -662,6 +667,10 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
                 </li>
                 
@@ -679,14 +688,6 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">프로그래머스 DFS/BFS - 여행 경로</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">프로그래머스 DFS/BFS - 타겟 넘버</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a>
                 </li>
                 
             </ul>
@@ -758,12 +759,12 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
                 </li>
                 
                 <li>
-                    <a href="/tags/python">Python
+                    <a href="/tags/programmers">Programmers
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/programmers">Programmers
+                    <a href="/tags/python">Python
                         </a>
                 </li>
                 
@@ -805,7 +806,7 @@ import os, json from django.core.exceptions import ImproperlyConfigured secret_f
             <a href="https://github.com/xfrnk2" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by xfrnk2
             </a>

@@ -48,6 +48,10 @@
         <ul class="topnav">
             
             
+            <li><a href="https://xfrnk2.github.io/123/">123</a></li>
+            
+            
+            
             <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
             
             
@@ -100,6 +104,89 @@
 
 
     
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-01-26</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    프로그래머스-해시-완주하지 못한 선수로 이동  첫 성공시도 def solution(participant, completion): answer = &quot;&quot; counts = dict() for i in completion: counts[i] = counts.get(i, 0) + 1 for name in participant: value = counts.get(name) if value == None or value &lt;= 0: answer = name break counts[name] -= 1 return answer 셀프 피드백  복잡하다. 더 간단히 할 수는 없을까?   두번째 성공시도 from collections import Counter def solution(participant, completion): i = iter((Counter(participant) - Counter(completion)).
+
+    
+    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/hash/">Hash</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
 
     
         
@@ -599,87 +686,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_network/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-11-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    # lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -704,6 +710,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
                 </li>
                 
@@ -721,14 +731,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">프로그래머스 DFS/BFS - 여행 경로</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">프로그래머스 DFS/BFS - 타겟 넘버</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a>
                 </li>
                 
             </ul>
@@ -800,12 +802,12 @@
                 </li>
                 
                 <li>
-                    <a href="/tags/python">Python
+                    <a href="/tags/programmers">Programmers
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/tags/programmers">Programmers
+                    <a href="/tags/python">Python
                         </a>
                 </li>
                 
@@ -847,7 +849,7 @@
             <a href="https://github.com/xfrnk2" target="_blank">
                 &copy;
                 
-                2021
+                2022
                 
                 by xfrnk2
             </a>
