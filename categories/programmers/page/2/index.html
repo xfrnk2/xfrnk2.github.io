@@ -48,10 +48,6 @@
         <ul class="topnav">
             
             
-            <li><a href="https://xfrnk2.github.io/123/">123</a></li>
-            
-            
-            
             <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
             
             
@@ -101,6 +97,87 @@
     <div class="main container">
         
     
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">프로그래머스 완전탐색 - 소수 찾기</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-11-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    from itertools import permutations def solution(numbers): ans = 0 container = [] for i in range(1, len(numbers) + 1): dp = ((permutations(numbers, i))) for d in dp: container.append(int(''.join(d))) container = set(container) def check(n): if n &lt;= 1: return True t = 2 t2 = n ** 0.5 while t &lt;= t2: if n % t == 0: return True t += 1 return False for n in container: if not check(n): ans += 1 return ans 한마디  배울 수 있었던 것 : 조합을 구하는 방법과 처리 (여러번을 해도 숙달되지 않은 상황이다.
+
+    
+    <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/bruteforce/">bruteForce</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
     
         <div class="article-wrapper u-cf">
             
@@ -279,6 +356,10 @@
         <div class="recent-posts">
             <a href="/"><strong>Latest posts</strong></a>
             <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
+                </li>
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>

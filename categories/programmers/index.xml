@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/programmers/</link>
     <description>Recent content in Programmers on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 26 Jan 2022 19:15:16 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 27 Jan 2022 14:15:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/programmers/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스-해시-전화번호 목록</title>
+      <link>https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/</link>
+      <pubDate>Thu, 27 Jan 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/</guid>
+      <description>프로그래머스-해시-전화번호 목록(으)로 이동  실패한 첫 시도 phone_book.sort(key=len) for i in range(len(phone_book)): for j in range(i+1, len(phone_book): ... 셀프 피드백  막연한 생각으로 len 기준으로 정렬을 사용했다. for문이 2중이기 때문에 효율성 실패가 나왔다.   고민 끝에 다른 풀이를 참고하도록 했다.  hash() 함수 또는 해시 자료구조(dictionary)를 쓰기위해 고민했는데 좀처럼 좋은 방법을 찾지 못했다.   문자열을 소팅했을때 일어나는 변화 &amp;gt;&amp;gt;&amp;gt; a = [&amp;quot;1225&amp;quot;, &amp;quot;123&amp;quot;, &amp;quot;12348&amp;quot;, &amp;quot;012&amp;quot;, &amp;quot;012222&amp;quot;, &amp;quot;12448&amp;quot;] &amp;gt;&amp;gt;&amp;gt; a.</description>
+    </item>
     
     <item>
       <title>프로그래머스-해시-완주하지 못한 선수</title>
