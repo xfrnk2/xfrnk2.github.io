@@ -5,10 +5,21 @@
     <link>https://xfrnk2.github.io/tags/resolved-problem/</link>
     <description>Recent content in resolved problem on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Aug 2021 11:17:34 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Feb 2022 21:17:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/resolved-problem/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</title>
+      <link>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</link>
+      <pubDate>Tue, 01 Feb 2022 21:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</guid>
+      <description>문제 발생 상황 https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396
+ 위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제  ./node_modules/.bin/webpack --config webpack.config.js 해결 방법  아래는 해결 방법의 원문(영문)을 옮긴 글이다.   That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
+ If you are using yarn, follow the below one: Step 1: Remove the old packages</description>
+    </item>
     
     <item>
       <title>깃허브 토큰 인증 로그인 해결 - Support for password authentication was removed. Please use a personal access token instead 에러 해결</title>

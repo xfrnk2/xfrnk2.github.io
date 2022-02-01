@@ -5,10 +5,41 @@
     <link>https://xfrnk2.github.io/author/xfrnk2/</link>
     <description>Recent content in xfrnk2 on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Jan 2022 14:15:16 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Feb 2022 21:18:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</title>
+      <link>https://xfrnk2.github.io/terminal/mkdir_p_option/</link>
+      <pubDate>Tue, 01 Feb 2022 21:18:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/terminal/mkdir_p_option/</guid>
+      <description>mkdir -p 옵션을 사용할 경우  존재하지 않는 중간의 디렉토리를 에러(No such file or directory) 없이 안전하게 파일 경로를 생성해 준다. [ex) f1/f2/f3], -p옵션 없을시 연속된 폴더 입력하면 에러발생  </description>
+    </item>
+    
+    <item>
+      <title>index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</title>
+      <link>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</link>
+      <pubDate>Tue, 01 Feb 2022 21:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</guid>
+      <description>문제 발생 상황 https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396
+ 위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제  ./node_modules/.bin/webpack --config webpack.config.js 해결 방법  아래는 해결 방법의 원문(영문)을 옮긴 글이다.   That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
+ If you are using yarn, follow the below one: Step 1: Remove the old packages</description>
+    </item>
+    
+    <item>
+      <title>npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</title>
+      <link>https://xfrnk2.github.io/web/npm_-save_and_-save-dev/</link>
+      <pubDate>Tue, 01 Feb 2022 20:45:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/web/npm_-save_and_-save-dev/</guid>
+      <description>npm install (plugin) &amp;ndash;save란?  패키지(plugin)를 ./node_moduels 디렉터리에 설치하고 ./package.json 파일의 dependencies 항목에 플러그인 정보가 저장 된다. &amp;ndash;production 빌드시 해당 플러그인이 포함된다.   npm install (plugin) &amp;ndash;save-dev란?   패키지(plugin)를 ./node_moduels 디렉터리에 설치하고 ./package.json 파일의 devDependencies 항목에 플러그인 정보가 저장 된다.
+  --production 빌드시 해당 플러그인이 포함되지 않는다.
+  한 가지 더 다른 점은, devDependencies 의 경우 dependencies 와 다르게 --production으로 빌드 시 해당 플러그인이 포함되지 않는다.</description>
+    </item>
     
     <item>
       <title>프로그래머스-해시-전화번호 목록</title>

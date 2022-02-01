@@ -105,6 +105,229 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/python/python-operator_or_and_and/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-operator_or_and_and/">Python - Short Circuit Operator로서의 or, and 연산자</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-04-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+       연산 수식     x or y if x is false, then y, else x   x and y if x is false, then x, else y     스위치를 이용해 값 병합할 때 사용 https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not  
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/python/python-variables_machanism/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/python/python-variables_machanism/">Python - Python의 변수 할당 매커니즘</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-04-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/python/">Python</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    파이썬은 변수를 생성할 때 변수를 위한 메모리를 생성하는 방식이 아니라, 변수가 만들어지고 어떠한 값을 넣으면 변수가 그 값을 참조하는 형태이다. 변수에 상수 값을 할당하고자 해도 값이 변경되기 때문에 파이썬에서는 상수를 사용하지 않는다. 그 대신 클래스를 사용한 여러가지 방법으로 상수를 정의할 수는 있다.(FrozenSpace, SpaceFrozenValues, __slots__, property, metaclass 등, 또는 Python 3.8~ typing.Final(*그러나 재할당 가능))   from uuid import uuid4 class obj: def __init__(self): self.__data = uuid4() self.__is_changed = False @property def data(self): return self.
+
+    
+    <a href="https://xfrnk2.github.io/python/python-variables_machanism/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">Python - source.error(“incomplete escape %s” % escape, len(escape))</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-04-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    문제 발생 상황 raise source.error(&quot;incomplete escape %s&quot; % escape, len(escape)) re.error: incomplete escape \U at position 72 (line 4, column 3)  PEP8을 따르도록 터미널에서 flake8을 입력하니 위와 같은 에러가 발생했다. 검색 결과 보통의 경우 위의 메세지는 파일 어딘가에 \U 문자열이 포함되어 있을때 발생 하는 것으로 나타났지만 \U는 없을 뿐더러 전혀 다른 경우였다.   에러 발생 원인  함수의 입력값으로서 파라미터를 Typing할 때. 추상메서드를 사용한 빈 객체 파라미터에 대한 타입을 명시할 때 발생하는 것이 확인되었다.
+
+    
+    <a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/python-flake8-isort/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -416,225 +639,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/21.01.01/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/21.01.01/">21.01.01_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-01-01</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  휴식   내일 할 일  회고, 신년 계획 정리  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.12.31/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.12.31/">20.12.31_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-12-31</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  휴식   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.12.30/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.12.30/">20.12.30_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-12-30</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  42서울 테스트 풀기   내일 할 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -661,6 +665,18 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
                 </li>
                 
@@ -674,18 +690,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/">프로그래머스 DFS/BFS - 문자열 변환</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/brute_force_mock_test/">프로그래머스 완전탐색 - 모의 고사</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">프로그래머스 DFS/BFS - 여행 경로</a>
                 </li>
                 
             </ul>

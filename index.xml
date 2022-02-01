@@ -4,10 +4,37 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Jan 2022 14:15:16 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Feb 2022 21:18:34 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Terminals</title>
+      <link>https://xfrnk2.github.io/terminal/</link>
+      <pubDate>Tue, 01 Feb 2022 21:18:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/terminal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Resolved_problems</title>
+      <link>https://xfrnk2.github.io/resolved_problem/</link>
+      <pubDate>Tue, 01 Feb 2022 21:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/resolved_problem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webs</title>
+      <link>https://xfrnk2.github.io/web/</link>
+      <pubDate>Tue, 01 Feb 2022 20:45:21 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/web/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Programmers</title>
@@ -42,15 +69,6 @@
       <pubDate>Sun, 31 Oct 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Resolved_problems</title>
-      <link>https://xfrnk2.github.io/resolved_problem/</link>
-      <pubDate>Sun, 15 Aug 2021 11:17:34 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/resolved_problem/</guid>
       <description></description>
     </item>
     
@@ -132,15 +150,6 @@
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Webs</title>
-      <link>https://xfrnk2.github.io/web/</link>
-      <pubDate>Mon, 05 Oct 2020 00:54:03 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/web/</guid>
       <description></description>
     </item>
     

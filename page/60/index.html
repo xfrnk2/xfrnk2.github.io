@@ -105,6 +105,253 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_model_basic/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_model_basic/">Django Model을 통한 조회 (기초)</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-30</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Model Manager SELECT * FROM app_model;
+ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
+ModelCls.objects.all().order_by('-id')[:10] INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);
+ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet
+ Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
+실제로 데이터가 필요한 시점에 접근
+ 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;
+
+    
+    <a href="https://xfrnk2.github.io/django/django_model_basic/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/queryset/">Queryset</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.04.29/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.29/">20.04.29_TIL</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-29</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    오늘 한 일  어제에 이어서 영어 표현들을 복습했다. Django 쉘을 다룬 내용을 복습하고 정리해서 글을 올렸다. 백준 알고리즘 문제를 풀었다. (2748번 피보나치 수2) 1904번 문제(01타일)을 풀었는데 시간초과가 나왔다. 앞의 문제와 마찬가지로 동적 프로그래밍을 사용하는 문제였다. 관련 자료들을 검색하다보니 수열과 조합, 등차수열을 배워야 할 것만 같았다. 부자의 독서 책을 약 50% 읽었다. 이따금 접속하던 Okky 사이트의 모바일 앱을 설치했다. 주로 신입 개발자의 직장생활 고충과 그에 관한 팁들을 다루는 내용의 글들을 읽었다.
+
+    
+    <a href="https://xfrnk2.github.io/til/20.04.29/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_shell/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_shell/">Django Shell</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-04-29</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
+  우선순위 : ipython 쉘, bpython 쉘, python 쉘
+  옵션 :   -i (&ndash;interface) : 인터프리터 인터페이스 커스텀 지정
+
+    
+    <a href="https://xfrnk2.github.io/django/django_shell/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/shell/">Shell</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/django/django_static_media_file/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -401,225 +648,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.04.25/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.25/">20.04.25_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-25</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-     몸상태가 좋지 않아 쉬는 시간을 가졌다. 아무것도 안할 수는 없으니 백준 알고리즘 문제를 하나 풀었다.   내일 할 일  내일은 약속이 있어 외출을 하지만 이동중 객체지향의 사실과 오해 책을 읽겠다.   
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.04.24/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.24/">20.04.24_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-24</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-     Django 강의 수강이후로 배웠던 내용들을 한꺼번에 복습하였다.   내일 할 일  그간 학습한 내용을 정리하고 구조화 하기. 그간의 학습 내용을 가지고 Django를 통해 직접 코드를 작성해서 구현한 나만의 사이트 만들기.   
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.04.23/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.04.23/">20.04.23_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-04-23</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-     Django 관계를 표현하는 모델 필드(ForeignKey, OneToOneField)에 대한 강의를 들었다. 어제 풀지 못한 알고리즘 문제를 풀었다. 백준 온라인 저지 알고리즘 문제를 2가지 풀었다.   내일 할 일  오늘 학습한 내용을 정리하고 구조화 하기. 블로그 사용법 분명하게 익히기. 배웠던 내용을 가지고 Django 연습하기.   
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -646,6 +674,18 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
                 </li>
                 
@@ -659,18 +699,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/">프로그래머스 DFS/BFS - 문자열 변환</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/brute_force_mock_test/">프로그래머스 완전탐색 - 모의 고사</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">프로그래머스 DFS/BFS - 여행 경로</a>
                 </li>
                 
             </ul>

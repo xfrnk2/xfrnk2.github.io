@@ -3,17 +3,102 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/terminal/mkdir_p_option/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/terminal/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/terminal/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/terminal/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2022-02-01T21:18:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/babel/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/resolved-problem/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/resolved-problem/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/resolved_problem/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/web/</loc>
+    <lastmod>2022-02-01T21:17:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/web/npm_-save_and_-save-dev/</loc>
+    <lastmod>2022-02-01T20:45:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/web/</loc>
+    <lastmod>2022-02-01T20:45:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/web-npm/</loc>
+    <lastmod>2022-02-01T20:45:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/web/</loc>
+    <lastmod>2022-02-01T20:45:21+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
     <lastmod>2022-01-27T14:15:16+09:00</lastmod>
   </url>
   
@@ -34,21 +119,6 @@
   
   <url>
     <loc>https://xfrnk2.github.io/programmers/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
     <lastmod>2022-01-27T14:15:16+09:00</lastmod>
   </url>
   
@@ -230,21 +300,6 @@
   <url>
     <loc>https://xfrnk2.github.io/til/210816/</loc>
     <lastmod>2021-08-16T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/resolved-problem/</loc>
-    <lastmod>2021-08-15T11:17:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/resolved-problem/</loc>
-    <lastmod>2021-08-15T11:17:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/resolved_problem/</loc>
-    <lastmod>2021-08-15T11:17:34+09:00</lastmod>
   </url>
   
   <url>
@@ -1414,21 +1469,6 @@
   
   <url>
     <loc>https://xfrnk2.github.io/web/html/</loc>
-    <lastmod>2020-10-05T00:54:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/web/</loc>
-    <lastmod>2020-10-05T00:54:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/web/</loc>
-    <lastmod>2020-10-05T00:54:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/web/</loc>
     <lastmod>2020-10-05T00:54:03+09:00</lastmod>
   </url>
   
