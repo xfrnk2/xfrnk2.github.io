@@ -100,6 +100,166 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">프로그래머스 DFS/BFS - 타겟 넘버</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-11-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    # lv2 # dfs def solution(numbers, target): ans = 0 def func(num, level): nonlocal ans if level == len(numbers): if target == num: ans += 1 return if level == 1: func(- num + numbers[level], level + 1) func(- num - numbers[level], level + 1) func(num + numbers[level], level + 1) func(num - numbers[level], level + 1) func(numbers[0], 1) return ans # bfs from collections import deque def solution(numbers, target): ans = 0 queue = deque() queue.
+
+    
+    <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_network/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-11-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    # lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -358,6 +518,18 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/">프로그래머스-해시-베스트 앨범</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/">프로그래머스-해시-위장</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
                 </li>
                 
@@ -371,18 +543,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
                 </li>
                 
             </ul>

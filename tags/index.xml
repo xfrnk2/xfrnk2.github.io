@@ -5,10 +5,55 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Feb 2022 21:18:34 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 14 Feb 2022 14:15:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>algorithm</title>
+      <link>https://xfrnk2.github.io/tags/algorithm/</link>
+      <pubDate>Mon, 14 Feb 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/algorithm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hash</title>
+      <link>https://xfrnk2.github.io/tags/hash/</link>
+      <pubDate>Mon, 14 Feb 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programmers</title>
+      <link>https://xfrnk2.github.io/tags/programmers/</link>
+      <pubDate>Mon, 14 Feb 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/programmers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>developement</title>
+      <link>https://xfrnk2.github.io/tags/developement/</link>
+      <pubDate>Sun, 13 Feb 2022 11:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/developement/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server</title>
+      <link>https://xfrnk2.github.io/tags/server/</link>
+      <pubDate>Sun, 13 Feb 2022 11:17:34 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/server/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>terminal</title>
@@ -52,33 +97,6 @@
       <pubDate>Tue, 01 Feb 2022 20:45:21 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/web-npm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>algorithm</title>
-      <link>https://xfrnk2.github.io/tags/algorithm/</link>
-      <pubDate>Thu, 27 Jan 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/algorithm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hash</title>
-      <link>https://xfrnk2.github.io/tags/hash/</link>
-      <pubDate>Thu, 27 Jan 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/hash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Programmers</title>
-      <link>https://xfrnk2.github.io/tags/programmers/</link>
-      <pubDate>Thu, 27 Jan 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/programmers/</guid>
       <description></description>
     </item>
     

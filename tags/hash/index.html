@@ -100,6 +100,168 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/">프로그래머스-해시-베스트 앨범</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-02-14</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    [프로그래머스-해시-베스트 앨범(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42579  실패한 첫 시도 from collections import defaultdict def solution(genres, plays): d = defaultdict(list) for i in range(len(genres)): d[genres[i]].append((plays[i], i)) for i in d.keys(): d[i].sort(key=lambda x : (-x[0], x[1])) nd = sorted(list(d.keys()), key = lambda c: list(map(lambda i: i[0], d[c])), reverse=True) return [y[1] for x in [d[g][:2] for g in nd] for y in x] 셀프 피드백  defaultdict를 사용했다. nd 변수 라인의 가독성이 떨어진다. 5~14번 테스트 케이스가 실패한다.
+
+    
+    <a href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/hash/">Hash</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/">프로그래머스-해시-위장</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-02-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    [프로그래머스-해시-위장(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42578  실패한 첫 시도  첫 시도에 방법이 떠오르지 않아 1-2시간 가량 고민 후 검색해 나온 결과를 참고하였다.  첫번째로 작성한 통과 코드 def solution(clothes): answer = 1 clothes_count = {} for item, category in clothes: if category not in clothes_count: clothes_count[category] = 2 continue clothes_count[category] += 1 for num in clothes_count.values(): answer *= num return answer - 1  각 종류별 옷을 착용하지 않는 경우를 생각해서 1을 더해주었고, 최종적으로 모두 입지 않는 경우를 제하기 위해 1을 빼 주었다.
+
+    
+    <a href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/hash/">Hash</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -282,6 +444,18 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/">프로그래머스-해시-베스트 앨범</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/">프로그래머스-해시-위장</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
                 </li>
                 
@@ -295,18 +469,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
                 </li>
                 
             </ul>

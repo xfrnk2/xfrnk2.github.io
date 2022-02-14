@@ -100,6 +100,239 @@
     
         <div class="article-wrapper u-cf">
             
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_network/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">프로그래머스 DFS/BFS - 네트워크</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-11-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    # lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 
+
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">프로그래머스 완전탐색 - 소수 찾기</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-11-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    from itertools import permutations def solution(numbers): ans = 0 container = [] for i in range(1, len(numbers) + 1): dp = ((permutations(numbers, i))) for d in dp: container.append(int(''.join(d))) container = set(container) def check(n): if n &lt;= 1: return True t = 2 t2 = n ** 0.5 while t &lt;= t2: if n % t == 0: return True t += 1 return False for n in container: if not check(n): ans += 1 return ans 한마디  배울 수 있었던 것 : 조합을 구하는 방법과 처리 (여러번을 해도 숙달되지 않은 상황이다.
+
+    
+    <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/bruteforce/">bruteForce</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/211001-211031/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/211001-211031/">21.10.01-21.10.31_WIL(4 Weeks)</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2021-10-31</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    계획했던 일  CS 이론 학습 문제 해결과 알고리즘 풀이 SQL 문법 숙달을 위한 실습   지난 4 Weeks 동안 한 일  정보처리기사 실기를 약 10일동안 준비했다. 가채점 결과 합격 예상! 학교 과제를 여전히 하고 있으며 실용적 배움을 위해 새롭게 듣게된 데이터통계학과 과목 실습에 예상이상의 시간이 소요되고 있다. 특히 R과 파이썬으로 통계 시각화하는 작업. 문제 풀이와 알고리즘 학습을 dps/bps 위주로 진행하였고 최단경로 알고리즘 또한 문제를 풀이했다. 출결관리 웹페이지의 access token 생성 후 인증 절차를 만들어서 기밀성을 높였다.
+
+    
+    <a href="https://xfrnk2.github.io/til/211001-211031/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
                 <a class="bubble" href="https://xfrnk2.github.io/programmers/skillchecklv2/">
     <i class="fas fa-fw fa-code"></i>
 </a>
@@ -389,219 +622,6 @@
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210829/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/210829/">21.08.29_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-08-29</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상   오늘 한 일  코딩테스트 대비 문제를 2문제 풀었다. &ldquo;DATA STRUCTURES AND ALGORITHMS USING PYTHON&quot;의 추상 자료형 (챕터1)을 읽었다.   내일 할 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210828/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/210828/">21.08.28_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-08-28</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  깃허브 액션 공부 코딩테스트 대비 문제풀이   오늘 한 일  아버지 생신으로 아르바이트 후 외출을 다녀오는 바람에 시간이 나지 않아 공부는 하지 못했다.   내일 할 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210827/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/210827/">21.08.27_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2021-08-27</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  깃허브 액션 공부 코딩테스트 대비 문제풀이   오늘 한 일  깃허브 액션 문서 읽기   내일 할 일  깃허브 액션 적용하기 코딩테스트 대비 문제풀이 최소 2문제 이상  
-
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -628,6 +648,18 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/">프로그래머스-해시-베스트 앨범</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/programmers/hash_camouflage_lv2/">프로그래머스-해시-위장</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
                 </li>
                 
@@ -641,18 +673,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/">프로그래머스-해시-전화번호 목록</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/programmers/hash_marathon_lv1/">프로그래머스-해시-완주하지 못한 선수</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/fft/bus_factor/">버스 지수(Bus Factor)</a>
                 </li>
                 
             </ul>

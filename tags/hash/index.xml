@@ -5,10 +5,28 @@
     <link>https://xfrnk2.github.io/tags/hash/</link>
     <description>Recent content in Hash on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 27 Jan 2022 14:15:16 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 14 Feb 2022 14:15:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/hash/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>프로그래머스-해시-베스트 앨범</title>
+      <link>https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/</link>
+      <pubDate>Mon, 14 Feb 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/</guid>
+      <description>[프로그래머스-해시-베스트 앨범(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42579  실패한 첫 시도 from collections import defaultdict def solution(genres, plays): d = defaultdict(list) for i in range(len(genres)): d[genres[i]].append((plays[i], i)) for i in d.keys(): d[i].sort(key=lambda x : (-x[0], x[1])) nd = sorted(list(d.keys()), key = lambda c: list(map(lambda i: i[0], d[c])), reverse=True) return [y[1] for x in [d[g][:2] for g in nd] for y in x] 셀프 피드백  defaultdict를 사용했다. nd 변수 라인의 가독성이 떨어진다. 5~14번 테스트 케이스가 실패한다.</description>
+    </item>
+    
+    <item>
+      <title>프로그래머스-해시-위장</title>
+      <link>https://xfrnk2.github.io/programmers/hash_camouflage_lv2/</link>
+      <pubDate>Fri, 04 Feb 2022 14:15:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/programmers/hash_camouflage_lv2/</guid>
+      <description>[프로그래머스-해시-위장(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42578  실패한 첫 시도  첫 시도에 방법이 떠오르지 않아 1-2시간 가량 고민 후 검색해 나온 결과를 참고하였다.  첫번째로 작성한 통과 코드 def solution(clothes): answer = 1 clothes_count = {} for item, category in clothes: if category not in clothes_count: clothes_count[category] = 2 continue clothes_count[category] += 1 for num in clothes_count.values(): answer *= num return answer - 1  각 종류별 옷을 착용하지 않는 경우를 생각해서 1을 더해주었고, 최종적으로 모두 입지 않는 경우를 제하기 위해 1을 빼 주었다.</description>
+    </item>
     
     <item>
       <title>프로그래머스-해시-전화번호 목록</title>
