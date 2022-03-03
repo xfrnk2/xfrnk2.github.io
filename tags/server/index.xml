@@ -5,25 +5,15 @@
     <link>https://xfrnk2.github.io/tags/server/</link>
     <description>Recent content in server on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 02 Mar 2022 11:17:34 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 25 Feb 2022 11:17:34 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/server/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</title>
-      <link>https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_server_installation_on_aws/</link>
-      <pubDate>Wed, 02 Mar 2022 11:17:34 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_server_installation_on_aws/</guid>
-      <description>목표  에러와 해결했던 내용을 기록하기 리눅스 환경에 익숙해지기 새롭게 알게된 것들을 알아보고 기록하기  자동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 phpMyAdmin 설치  수동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 PHP Admin 설치   Common   지켜야 하는 것 필수 패키지는 Compile 설치하지 않는다. 필수 패키지는 apt-get을 사용해서 설치한다.
-  apt-get 다루는 방법 apt-get install [package-name] 명령을 사용한다.</description>
-    </item>
-    
-    <item>
-      <title>소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</title>
       <link>https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/</link>
-      <pubDate>Sun, 13 Feb 2022 11:17:34 +0900</pubDate>
+      <pubDate>Fri, 25 Feb 2022 11:17:34 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/</guid>
       <description>목표  에러와 해결했던 내용을 기록하기 리눅스 환경에 익숙해지기 새롭게 알게된 것들을 알아보고 기록하기  자동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 phpMyAdmin 설치  수동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 PHP Admin 설치   Common   지켜야 하는 것 필수 패키지는 Compile 설치하지 않는다. 필수 패키지는 apt-get을 사용해서 설치한다.
