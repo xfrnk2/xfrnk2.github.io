@@ -1,0 +1,612 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리 | Rad Blog</title>
+    <meta name="description" content="자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리">
+    <meta itemprop="description" content="자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리">
+    <meta property="og:description" content="자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/java/java-http-request-and-controller-annotation/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/java/java-http-request-and-controller-annotation/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-04-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/java/">Java</a>
+                
+            
+                
+                <a href="https://xfrnk2.github.io/categories/spring/">Spring</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="개요">개요</h3>
+<ul>
+<li>본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다.</li>
+<li>외부 API를 사용하면서 어떻게 하면 HTTP 요청을 외부 API로 보내고, 응답을 받아 올 수 있는지 공부해볼 수 있었다.</li>
+<li>깊이가 있다고는 말할 수 없지만, 이해하며 기록해 왔던 내용을 아래에 정리해 본다.</li>
+<li>물론 세부적인 내용은 대부분 공식문서를 참고했으며, 자주 사용되어 꼭 알아야 했었던 개념 위주로 정리한다.</li>
+</ul>
+<hr>
+<h3 id="body">Body</h3>
+<p>Body는 보통 key, value의 쌍으로 이루어지기 때문에 자바에서 제공해주는 MultiValueMap 타입을 사용해야한다.</p>
+<pre><code>MultiValueMap&lt;String, String&gt; params =new LinkedMultiValueMap&lt;&gt;();
+params.add('')
+</code></pre><p>MultiValueMap 타입으로 만들어준 변수에 add()를 사용해 보낼 데이터를 추가해준다.</p>
+<h3 id="header">Header</h3>
+<p>HTTP POST를 요청할때 보내는 데이터(Body)를 설명해주는 헤더(Header)도 만들어서 같이 보내줘야 한다.</p>
+<pre><code>HttpHeaders headers =new HttpHeaders();
+headers.add(&quot;&quot;);
+</code></pre><p>Spring Framework에서 제공해주는 HttpHeaders 클래스는 Header를 만들어준다.</p>
+<p>add()를 사용해 Header에 들어갈 내용을 추가해주자.</p>
+<h3 id="body와-header-결합">Body와 Header 결합</h3>
+<pre><code>HttpEntity&lt;MultiValueMap&lt;String, String&gt;&gt; entity =new HttpEntity&lt;&gt;(params, headers);
+</code></pre><p>Spring Framework에서 제공해주는 HttpEntity 클래스는 Header와 Body를 합쳐준다.</p>
+<h3 id="post-요청">Post 요청</h3>
+<pre><code>RestTemplate rt =new RestTemplate();
+
+ResponseEntity&lt;String&gt; response = rt.exchange(
+                &quot;https://{요청할 서버 주소}&quot;,//{요청할 서버 주소}
+                HttpMethod.POST,//{요청할 방식}
+                entity,// {요청할 때 보낼 데이터}
+                String.class {요청시 반환되는 데이터 타입}
+);
+</code></pre><p>Spring Framework에서는 서버에 요청을 편하게 하기 위한 RestTemplate 클래스를 제공해준다.</p>
+<h2 id="resttemplate">RestTemplate</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>HTTP 메소드에 의한 평범한 기능 템플릿을 제공해주고, 더 나아가 특별한 케이스를 지원하는 exchange와 execute 메소드를 제공해준다.</p>
+<p>exchage() : 모든 HTTP 요청 메소드를 지원하며 원하는 서버에 요청시켜주는 메소드</p>
+<p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html">https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html</a></p>
+<p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html">RestTemplate (Spring Framework 5.2.9.RELEASE API)
+Synchronous client to perform HTTP requests, exposing a simple, template method API over underlying HTTP client libraries such as the JDK HttpURLConnection, Apache HttpComponents, and others. The RestTemplate offers templates for common scenarios by HTTP m
+docs.spring.io</a></p>
+<p>response에 서버에서 응답해준 데이터가 저장됨</p>
+<h3 id="requestbody와-responsebody-차이">RequestBody와 ResponseBody 차이</h3>
+<ul>
+<li><strong>@RequestBody 어노테이션을 이용하면 HTTP 요청 Body를 자바 객체로 전달받을 수 있다.</strong></li>
+<li><strong>@ResponseBody을 이용하면 자바 객체를 HTTP 응답 body로 전송할 수 있다.</strong></li>
+</ul>
+<h2 id="consumes와-produces-차이">consumes와 produces 차이</h2>
+<p>받고싶은 데이터를 강제를 함으로써 오류상황을 줄여서 매핑</p>
+<p>consumes는 들어오는 데이터 타입을 정의할때 이용</p>
+<p>produces는 그 반대</p>
+<p>출처 : [https://mungto.tistory.com/438<a href="https://codechacha.com/ko/java-parse-json/"></a>](<a href="https://mungto.tistory.com/438">https://mungto.tistory.com/438</a>)</p>
+<h2 id="json-parsing-simple하다">JSON Parsing (Simple하다)</h2>
+<p>링크 참조 : [https://codechacha.com/ko/java-parse-json/<a href="https://a1010100z.tistory.com/5"></a>](<a href="https://codechacha.com/ko/java-parse-json/">https://codechacha.com/ko/java-parse-json/</a>)</p>
+<h2 id="response-entity의-json화">RESPONSE ENTITY의 JSON화</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">JSONParser jsonParser <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSONParser<span style="color:#f92672">();</span> 
+JSONObject jsonObject <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>JSONObject<span style="color:#f92672">)</span> jsonParser<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span> 
+</code></pre></div><ul>
+<li>Body 부분만 사용하는 경우에 해당</li>
+<li>헤더가 필요하면 getBody()는 필요 없음</li>
+</ul>
+<p>참고 : [https://a1010100z.tistory.com/5<a href="https://github.com/google/gson"></a>](<a href="https://a1010100z.tistory.com/5">https://a1010100z.tistory.com/5</a>)</p>
+<h2 id="json-vs-gson">JSON VS GSON</h2>
+<p>서버에서 API를 통해 JSON 값들을 내려받으면 클라이언트인 안드로이드는 이를 파싱해서 필요한 곳에 알맞게 값들을 넣어주거나 표시해야 한다.</p>
+<p>그러나 매번 JSONObject, JSONArray를 일일이 선언해서 파싱할 수는 없다. 귀찮다.</p>
+<p>이 귀찮음을 해소하기 위해 존재하는 라이브러리가 바로 Gson이라는 라이브러리다. 이걸 쓰면 귀찮아서 숨 넘어갈 것 같은 JSON 파싱 과정을 매우 많이 단축시켜준다.</p>
+<p><strong>주의할 것은 JSON 파싱을 수작업으로 해본 적 없이 이 라이브러리를 먼저 사용하지 않는 것이다.</strong> 최소한 내가 받은 JSON이 어떤 구조인지 대충 짐작할 수 있고 로직이 어찌저찌 생각나는 정도가 되고 나서야 사용하면 좋다. 단순한 구조의 JSON이라면 Gson을 쓰는 것보다 수작업으로 파싱 때리는 게 더 나을 수도 있다.
+[https://github.com/google/gson<a href="https://onlyfor-me-blog.tistory.com/451"></a>](<a href="https://github.com/google/gson">https://github.com/google/gson</a>)
+한줄설명 : 자바 객체 &lt;-&gt; JSON 변환할 때 사용할 수 있는 자바 라이브러리
+출처 : <a href="https://onlyfor-me-blog.tistory.com/451">https://onlyfor-me-blog.tistory.com/451</a></p>
+<hr>
+<h2 id="spring-43부터-사용-가능해진-spring-mvc-컨트롤러-메소드를-위한새-어노테이션">Spring 4.3부터 사용 가능해진 Spring MVC 컨트롤러 메소드를 위한 새 어노테이션</h2>
+<p><a href="https://jira.spring.io/browse/SPR-13442">https://jira.spring.io/browse/SPR-13442</a></p>
+<ul>
+<li>@PostMapping</li>
+<li>@GetMapping</li>
+<li>@PutMapping</li>
+<li>@DeleteMapping</li>
+<li>@PatchMapping</li>
+</ul>
+<p>→  기존 RequestMapping을 간결하게 사용할 수 있게 도와준다.</p>
+<p>→ 어떤 HttpMethods로 매핑시킬지 명확하고 코드 수도 짧아졌다.</p>
+<p>예)
+Before</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">@RequestMapping<span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/getList&#34;</span>, method <span style="color:#f92672">=</span> <span style="color:#f92672">{</span> RequestMethod.POST <span style="color:#f92672">})</span>
+</code></pre></div><p>After</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">@PostMapping<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/getList&#34;</span><span style="color:#f92672">)</span>
+</code></pre></div><p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html"></a></p>
+<hr>
+<h3 id="contents-type에-따른-차이">Contents-type에 따른 차이</h3>
+<p><strong>1. @RequestBody Person person</strong></p>
+<p>model 객체 앞에 @RequestBody 어노테이션을 붙이면, AnnotationMethodHandlerAdapter에 의해 MappingJacksonHttpMessageConverter가 등록되게 된다. MappingJackson2HttpMessageConverter는 HttpMessageConverter의 구현체로 JSON 형식의 데이터가 들어오면 (당연히 content-type은 application/json) 해당 json 데이터를 jackson 라이브러리를 사용하여 model 객체로 변환해주게 된다.</p>
+<ul>
+<li>Content-Type : application/json 이고 json 타입의 데이터</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestBody</span> Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;person :: {}&#34;</span><span style="color:#f92672">,</span> person<span style="color:#f92672">);</span>
+	<span style="color:#66d9ef">return</span> person<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p><strong>2. @RequestBody MulityValueMap&lt;String, String&gt; map</strong></p>
+<p>MultiValueMap 과 함께 @RequestBody 어노테이션을 붙이면, AnnotationMethodHandlerAdapter에 의해 FormHttpMessageConverter가 등록되게 된다. FormHttpMessageConverter는 미디어 타입이 application/x-www-form-urlencodede로 정의된 폼 데이터를 주고 받을 때 사용하게 된다.</p>
+<ul>
+<li>Content-Type : application/x-www-form-urlencoded 이고 key1=value1 타입의 데이터</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestBody</span> MultiValueMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> data<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;data :: {}&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
+	<span style="color:#66d9ef">return</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>물론 이론상으로는 2번 방법이 가능하지만, FormHttpMessageConverter를 더 효율적으로 사용하려면 아래 3번 방법이 더 낫다.</p>
+<p><strong>3. @ModelAttribute Person person</strong></p>
+<p>model 객체와 함께 @ModelAttribute를 사용하면 2번과 같이 FormHttpMessageConverter가 등록되어 key=value를 model로 converting 하게 된다. 앞에 아무런 어노테이션도 안붙이고 Person person 으로 선언하면 @ModelAttribute가 암묵적으로 사용된다.</p>
+<ul>
+<li>Content-Type : application/x-www-form-urlencoded 이고 key1=value1 타입의 데이터</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
+<span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span>Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;data :: {}&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
+	<span style="color:#66d9ef">return</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><hr>
+<h3 id="리턴-타입--jsonarray-vs-jsonobject">리턴 타입 : JSONArray vs JSONObject</h3>
+<h3 id="예시코드">예시코드</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/test&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">testList</span><span style="color:#f92672">(</span>testVo testVo<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://testurl.com&#34;</span><span style="color:#f92672">;</span> <span style="color:#75715e">// api url
+</span><span style="color:#75715e"></span>
+  <span style="color:#75715e">//get parameter 담아주기
+</span><span style="color:#75715e"></span>        UriComponentsBuilder builder <span style="color:#f92672">=</span> UriComponentsBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">fromHttpUrl</span><span style="color:#f92672">(</span>url<span style="color:#f92672">)</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">queryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test1&#34;</span><span style="color:#f92672">,</span> testVo<span style="color:#f92672">.</span><span style="color:#a6e22e">getUserId</span><span style="color:#f92672">())</span>
+                <span style="color:#f92672">.</span><span style="color:#a6e22e">queryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test2&#34;</span><span style="color:#f92672">,</span> testVo<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">());</span>
+       HttpComponentsClientHttpRequestFactory httpRequestFactory <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpComponentsClientHttpRequestFactory<span style="color:#f92672">();</span>
+        httpRequestFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">setConnectTimeout</span><span style="color:#f92672">(</span>30000<span style="color:#f92672">);</span> <span style="color:#75715e">// 연결시간 초과
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//Rest template setting
+</span><span style="color:#75715e"></span>        RestTemplate restTpl <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RestTemplate<span style="color:#f92672">(</span>httpRequestFactory<span style="color:#f92672">);</span>
+        HttpHeaders headers  <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpHeaders<span style="color:#f92672">();</span> <span style="color:#75715e">// 담아줄 header
+</span><span style="color:#75715e"></span>        HttpEntity entity <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpEntity<span style="color:#f92672">&lt;&gt;(</span>headers<span style="color:#f92672">);</span> <span style="color:#75715e">// http entity에 header 담아줌
+</span><span style="color:#75715e"></span>
+        ResponseEntity<span style="color:#f92672">&lt;</span>JSONArray<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl<span style="color:#f92672">.</span><span style="color:#a6e22e">exchange</span><span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> HttpMethod<span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> entity<span style="color:#f92672">,</span> JSONArray<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+        L<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;responseEntity.getBody()&#34;</span> <span style="color:#f92672">+</span> responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">());</span>
+        List result <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>List<span style="color:#f92672">)</span> responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">();</span>
+
+        <span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+</code></pre></div><p>HttpComponentsClientHttpRequestFactory :  RestTemplate 는 ClientHttpRequestFactory 로 부터 ClientHttpRequest 를 가져와서 요청을 보낸다.</p>
+<p>RestTemplate template = new RestTemplate(new HttpComponentsClientHttpRequestFactory());이렇게 써도 가능하나 다양한 설정을 추가하지 못한다.</p>
+<p>POST 방법으로 하고 싶으면 HttpEntity를 선언할때 body부 를 넣어주면된다.</p>
+<p>String body =~~; // 보통 map형식</p>
+<p>HttpEntity entity = new HttpEntity(body,headers);</p>
+<p><strong>그리고 여기서는 return을 List로 받고싶어서 JSONArray를 썼는데,</strong></p>
+<p><strong>List<!-- raw HTML omitted --> 형태가 아닌 다양한 JSon 형태라면 JSONObject로 리턴받아 해당 값을 get해도 된다.</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">ResponseEntity<span style="color:#f92672">&lt;</span>JSONObject<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl<span style="color:#f92672">.</span><span style="color:#a6e22e">exchange</span><span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> HttpMethod<span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> entity<span style="color:#f92672">,</span> JSONObject<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+
+responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+</code></pre></div><h3 id="참조-문서">참조 문서</h3>
+<p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html">https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html</a></p>
+<hr>
+<h3 id="requestparam과-requestbody의-차이">RequestParam과 RequestBody의 차이</h3>
+<p>@RequestBody 로 데이터를 받을 때는 메서드의 변수명이 상관이 없었지만, <strong>@RequestParam 으로 데이터를 받을때는 데이터를 저장하는 이름으로 메서드의 변수명을 설정</strong>
+해주어야 한다.</p>
+<ul>
+<li>RequestBody는 날것의 데이터를 넣지 말고 자바 객체가 맵핑 되는점 주의</li>
+</ul>
+<h3 id="만약에">만약에&hellip;</h3>
+<p>기존에 json 방식으로 요청을 날리던 유저들에게는 그대로 제공하되 추가적으로 x-www-url-encoded 방식도 제공을 해야하는 상황이다.</p>
+<p>@PostMapping(value = &ldquo;/add&rdquo;, consumes = MediaType.APPLICATION_JSON_VALUE)
+public String postHanlderForJsonRequest(@RequestBody Person person) {
+[<a href="http://log.info/">log.info</a>](http://<a href="http://log.info/">log.info</a>/)(&ldquo;&raquo; json type :: person :: {}&quot;, person);
+return person.toString();
+}</p>
+<p>@PostMapping(value = &ldquo;/add&rdquo;, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+public String postHanlderForFormRequest(Person person) {
+<a href="http://log.info/">log.info</a>(&ldquo;&raquo; form type :: person :: {}&quot;, person);
+return person.toString();
+}
+위와 같이 두개의 method를 만들어주면 된다. 첫번째 method는 json 타입을, 두번째 method는 form-urlencoded 타입을 받게 된다.</p>
+<hr>
+<h3 id="httpservletrequest"><strong>HttpServletRequest</strong></h3>
+<p>HttpServletRequest를 사용하면,  값을 받아올 수 있다.</p>
+<p>예를들어, 아이디, 비밀번호 등의 데이터를 컨트롤러로 보냈을때,</p>
+<p>HttpServletRequest 객체안에 모든 데이터들이 들어가게 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/board/confirmId&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">confirmId</span><span style="color:#f92672">(</span>HttpServletRequest httpServletRequest<span style="color:#f92672">,</span> Model model<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        String id <span style="color:#f92672">=</span> httpServletRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameter</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">);</span>
+        String pwd <span style="color:#f92672">=</span> httpServletRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameter</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pwd&#34;</span><span style="color:#f92672">);</span>
+        model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">,</span> id<span style="color:#f92672">);</span>
+        model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pwd&#34;</span><span style="color:#f92672">,</span> pwd<span style="color:#f92672">);</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;board/confirmId&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>id와 pwd를 HttpServletRquest 객체를 통해 받아오고,
+Model 객체를 이용해서 뷰로 값을 넘기고 있다.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/java-spring/">Java, Spring</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/mysql/mysql_/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/review">Review
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2022
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WTESZLPSEQ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

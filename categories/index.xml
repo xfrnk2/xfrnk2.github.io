@@ -5,15 +5,60 @@
     <link>https://xfrnk2.github.io/categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Feb 2022 11:17:34 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2022 23:36:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>mysql</title>
+      <link>https://xfrnk2.github.io/categories/mysql/</link>
+      <pubDate>Wed, 06 Apr 2022 23:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>https://xfrnk2.github.io/categories/java/</link>
+      <pubDate>Sat, 02 Apr 2022 23:49:45 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>https://xfrnk2.github.io/categories/regex/</link>
+      <pubDate>Sat, 02 Apr 2022 23:49:45 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/regex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://xfrnk2.github.io/categories/spring/</link>
+      <pubDate>Sat, 02 Apr 2022 23:47:45 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>https://xfrnk2.github.io/categories/database/</link>
+      <pubDate>Sat, 02 Apr 2022 19:35:24 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>developement</title>
       <link>https://xfrnk2.github.io/categories/developement/</link>
-      <pubDate>Tue, 22 Feb 2022 11:17:34 +0900</pubDate>
+      <pubDate>Mon, 28 Feb 2022 11:17:34 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/developement/</guid>
       <description></description>
@@ -22,7 +67,7 @@
     <item>
       <title>server</title>
       <link>https://xfrnk2.github.io/categories/server/</link>
-      <pubDate>Tue, 22 Feb 2022 11:17:34 +0900</pubDate>
+      <pubDate>Mon, 28 Feb 2022 11:17:34 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/server/</guid>
       <description></description>
@@ -218,29 +263,11 @@
     </item>
     
     <item>
-      <title>mysql</title>
-      <link>https://xfrnk2.github.io/categories/mysql/</link>
-      <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/mysql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>IT-Voca</title>
       <link>https://xfrnk2.github.io/categories/it-voca/</link>
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/categories/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>database</title>
-      <link>https://xfrnk2.github.io/categories/database/</link>
-      <pubDate>Sat, 16 May 2020 19:35:24 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/categories/database/</guid>
       <description></description>
     </item>
     

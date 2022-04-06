@@ -5,10 +5,29 @@
     <link>https://xfrnk2.github.io/tags/database/</link>
     <description>Recent content in database on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2022 23:36:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</title>
+      <link>https://xfrnk2.github.io/mysql/mysql_/</link>
+      <pubDate>Wed, 06 Apr 2022 23:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/mysql/mysql_/</guid>
+      <description>AWS RDS의 데이터 이관중 트러블슈팅   Mysql Server &amp;gt; Data Export 시 Export Option을 Self-Contained File로 지정하여 sql 파일 추출 Mysql Server &amp;gt; Data Export 실행하니 아래와 같은 에러가 등장.  ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation   인터넷에 돌아다니는 방법을 사용해 봤는데도 변화가 없었다.
+   https://aws.amazon.com/ko/premiumsupport/knowledge-center/definer-error-mysqldump/     https://aws.</description>
+    </item>
+    
+    <item>
+      <title>Mysql Procedure 공부와 실제 데이터 연산에 적용하기</title>
+      <link>https://xfrnk2.github.io/database/database-mysql-procedure/</link>
+      <pubDate>Sat, 02 Apr 2022 19:35:24 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/database/database-mysql-procedure/</guid>
+      <description>개요  본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 방대한 양의 데이터를 어떻게 핸들링 할 수 있을까 고민하다가, Mysql에도 For, While 문 등 여러가지 연산을 가능하게 해주는 문법이 있다는 정보를 입수했다. 구글링을 거듭하다 보니, 보통의 프로그래밍 언어의 함수처럼 간단한 기능이라면 실제로 사용이 가능한 듯 보였다. 방대한 양의 데이터를 일련의 일정한 규칙을 따라 insert하기 위해서, 다음과 같이 공부하며 직접 코드를 작성해 보았다. 작성했던 코드의 일부를 먼저 첨부한다.</description>
+    </item>
     
     <item>
       <title>[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</title>

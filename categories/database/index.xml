@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/categories/database/</link>
     <description>Recent content in database on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 May 2020 19:35:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 02 Apr 2022 19:35:24 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/categories/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mysql Procedure 공부와 실제 데이터 연산에 적용하기</title>
+      <link>https://xfrnk2.github.io/database/database-mysql-procedure/</link>
+      <pubDate>Sat, 02 Apr 2022 19:35:24 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/database/database-mysql-procedure/</guid>
+      <description>개요  본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 방대한 양의 데이터를 어떻게 핸들링 할 수 있을까 고민하다가, Mysql에도 For, While 문 등 여러가지 연산을 가능하게 해주는 문법이 있다는 정보를 입수했다. 구글링을 거듭하다 보니, 보통의 프로그래밍 언어의 함수처럼 간단한 기능이라면 실제로 사용이 가능한 듯 보였다. 방대한 양의 데이터를 일련의 일정한 규칙을 따라 insert하기 위해서, 다음과 같이 공부하며 직접 코드를 작성해 보았다. 작성했던 코드의 일부를 먼저 첨부한다.</description>
+    </item>
     
     <item>
       <title>데이터베이스 기초 - 관계형 모델</title>

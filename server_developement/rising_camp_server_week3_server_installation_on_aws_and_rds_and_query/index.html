@@ -1,0 +1,1193 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기 | Rad Blog</title>
+    <meta name="description" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기">
+    <meta itemprop="description" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기">
+    <meta property="og:description" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-02-28</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/server/">server</a>
+                
+            
+                
+                <a href="https://xfrnk2.github.io/categories/developement/">developement</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h1 id="목표">목표</h1>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> MYSQL 쿼리문 작성에 익숙해지기</li>
+<li><input checked="" disabled="" type="checkbox"> DB 설계의 기본과 기초를 배우고 익히기</li>
+<li><input checked="" disabled="" type="checkbox"> 새로 배운 내용을 공부하고 기록하기</li>
+</ul>
+<h1 id="진행-상황">진행 상황</h1>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> AWS RDS 구축</li>
+<li><input checked="" disabled="" type="checkbox"> 실제 Product App을 하나 선정해서 DB 설계하기</li>
+<li><input checked="" disabled="" type="checkbox"> 위에서 설계한 DB를 바탕으로 App의 특정 화면을 여러 개 정해서 각 화면에 대한 한 방 쿼리 작성하기</li>
+</ul>
+<h1 id="aws-rds-구축">AWS RDS 구축</h1>
+<h3 id="rds란-">RDS란 ?</h3>
+<ul>
+<li>Amazon Relational Database Service(Amazon RDS)</li>
+<li>AWS 클라우드에서 관계형 데이터베이스를 더 쉽게 설치, 운영 및 확장할 수 있는 웹 서비스</li>
+</ul>
+<h3 id="rds의-특징">RDS의 특징</h3>
+<ul>
+<li>데이터베이스의 백엔드(Backend)에 대한 관리 및 구축을 지원하면서 기업의 시스템 관리를 간소화</li>
+<li>클라우드에서 관계형 데이터베이스를 간편하게 설정, 운영 및 확장 가능</li>
+<li>시간 소모적인 데이터베이스 관리 작업을 관리하는 한편, 효율적인 비용으로 크기를 조정할 수 있는 용량을 제공하므로 고객은 애플리케이션과 비즈니스에 좀 더 집중할 수 있음</li>
+<li>Amazon Aurora, Oracle, Microsoft SQL Server, PostgreSQL, MySQL 및MariaDB 중에서 선택할 수 있도록6개의 익숙한 데이터베이스 엔진을 제공</li>
+</ul>
+<h3 id="상세rds는-다음과-같은-장점들을-가지고-있습니다">(상세)<strong>RDS는 다음과 같은 장점들을 가지고 있습니다.</strong></h3>
+<p><strong>1. 관리 용이성</strong></p>
+<p>Amazon RDS를 사용하면 프로젝트 개념 정립부터 배포까지 모든 작업을 쉽게 처리할 수 있습니다. AWS Management Console, AWS RDS 명령줄 인터페이스 또는 간단한 API 호출을 통해 몇 분이면 프로덕션용 관계형 데이터베이스의 성능을 활용할 수 있습니다. 인프라를 프로비저닝하고 데이터베이스 소프트웨어를 설치 및 유지 관리할 필요가 없습니다.</p>
+<p><strong>2. 확장 가능</strong></p>
+<p>대부분의 경우 가동을 중단하지 않고 마우스 클릭 몇 번 또는API 호출만으로도 데이터베이스의 컴퓨팅 및 스토리지 리소스를 확장할 수 있습니다. 많은Amazon RDS 엔진 유형에서 하나 이상의 읽기 전용 복제본을 시작하여 기본 데이터베이스 인스턴스에서 읽기 트래픽을 오프로드하도록 지원합니다.</p>
+<p><strong>3. 가용성 및 내구성</strong></p>
+<p>Amazon RDS는 다른Amazon Web Services에서 사용하는 것과 동일한 안정성이 뛰어난 인프라에서 실행됩니다. 다중AZ DB 인스턴스를 프로비저닝하는 경우Amazon RDS에서 다른 가용 영역(AZ)에 있는 예비 인스턴스에 데이터를 동기식으로 복제합니다. Amazon RDS에는 자동화 백업, 데이터베이스 스냅샷, 자동 호스팅 대체를 비롯해 중요한 프로덕션 데이터베이스의 안정성을 높여주는 여러 가지 기능이 있습니다.</p>
+<p><strong>4. 내구성</strong></p>
+<p>Amazon RDS에서는 다양한 애플리케이션 성능 요구 사항에 맞게 최대32개의vCPU 및244GiB 규모의 데이터베이스 및 스토리지를 선택할 수 있습니다. 고성능OLTP 애플리케이션 또는 비용 효과적인 범용 사용에 최적화된SSD 지원 스토리지를 선택할 수 있습니다. 또한, 자주 액세스하지 않는 데이터의 워크로드를 위해 마그네틱 스토리지를 선택할 수도 있습니다.</p>
+<p><strong>5. 보안</strong></p>
+<p>Amazon RDS를 사용하면 데이터베이스에 대한 네트워크 액세스를 손쉽게 제어할 수 있습니다. 또한, Amazon Virtual Private Cloud(VPC)에서 데이터베이스 인스턴스를 실행할 수 있으므로 데이터베이스 인스턴스를 격리하고 업계 표준 암호화IPsec VPN을 통해 기존IT 인프라에 연결할 수 있습니다. 많은Amazon RDS 엔진 유형에서 저장 중 암호화 및 전송 중 암호화를 지원합니다.</p>
+<p><strong>6. 저렴한 비용</strong></p>
+<p>매우 저렴한 요금으로 실제로 소비한 리소스에 대해서만 비용을 지불합니다. 또한, 선수금이나 장기 약정이 없는 온디맨드 요금 옵션이나, 훨씬 저렴한 시간당 요금이 적용되는 예약 요금 옵션을 활용할 수도 있습니다.</p>
+<h2 id="aws-rds-구축을-위한-인스턴스-생성">AWS RDS 구축을 위한 인스턴스 생성</h2>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435083-34fad9af-9d74-40b3-88b7-5eae99eac4c6.png" alt="Untitled (58)"></p>
+<p>AWS 웹 사이트 → 서비스 → RDS → 생성 순으로 접근한다.</p>
+<p>필자의 초기 세팅은 아래와 같다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435126-078c9957-d2f5-4615-87bb-1decdb153030.png" alt="Untitled (59)"></p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435129-5ddaeecd-8af1-4d57-884c-c950f5b653cf.png" alt="Untitled (60)"></p>
+<p>AWS의 RDS는 표준, 메모리 최적화 및 버스트 성능의 3가지 인스턴스 클래스 유형을 지원( 버스트 : 특정 기준에 따라 한 단위로서 취급되는 연속된 신호나 데이터의 모임 )</p>
+<p><strong>db.t2 :</strong> CPU 사용률을 최대로 버스트할 수 있는 기능을 통해 기준 성능 수준을 제공하는 현재 세대 인스턴스 클래스</p>
+<p>다른 클래스에 대한 설명 링크 : <a href="https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html">docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html</a></p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435132-0b5ed6b6-e39e-4bf3-858a-81bcc127456e.png" alt="Untitled (61)"></p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435134-b9f094d0-fb32-4c78-ae71-89fd2d47cd45.png" alt="Untitled (62)"></p>
+<p>CLI로 mysql에 접근할 것이므로, 퍼블릭 액세스를 “예’로 설정한다.</p>
+<p>새로운 VPC 보안 그룹을 생성해서 암호 인증을 선택했다.</p>
+<p>초기 데이터베이스 이름을 지정하기 위한 추가 구성 세팅은 아래와 같다.</p>
+<p>아래의 캡쳐 이미지 이외의 추가 구성은 생략하고 넘어간다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435137-02c59691-b01f-43a4-9c89-5599882a4103.png" alt="Untitled (63)"></p>
+<p>“데이터 베이스 생성” 버튼을 눌러서, 데이터 베이스 구축을 완료 시킨다.</p>
+<p>완료되기까지는 몇 분 정도 걸릴 수 있다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435138-a33a4791-7414-4de7-a4e2-5d9f2b54a454.png" alt="Untitled (64)"></p>
+<p>“사용 가능” 확인</p>
+<h2 id="rds-와-ec2-연결하기">RDS 와 EC2 연결하기</h2>
+<p>EC2 → 보안 그룹 → 생성한 VPC 보안 그룹의 ID 클릭</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435229-9b376a8e-46b0-432d-bc11-19392ecee161.png" alt="Untitled (65)"></p>
+<p>인바운드 규칙 추가</p>
+<ol>
+<li>새로운 인바운드 규칙 추가 후 mysql 선택</li>
+<li>EC2 보안 그룹의 코드를 보관</li>
+<li>2에서 보관한 코드를 새로운 인바운드 규칙 소스 칸에 삽입</li>
+</ol>
+<p>→ EC2 → RDS 접근이 가능해진다.</p>
+<p>위 과정을 마친 화면은 아래와 같다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435228-fac2147d-0bec-47e9-bdf7-5d0b602c46e7.png" alt="Untitled (66)"></p>
+<p>AWS RDS의 엔드포인트를 확인하기 위해 웹 사이트상에서 다음과 같은 경로로 접근한다.</p>
+<p>RDS &gt; 데이터베이스 &gt; [자신의 db 이름]</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435225-23e6b5d3-0bbe-49bd-873e-7eb96230a3d9.png" alt="Untitled (67)"></p>
+<p>연결&amp; 보안 아래에 엔드포인트가 있고, 그 아래 엔드포인트가 있는데 이것을 잘 기억해 둔다.</p>
+<p>이 엔드포인트를 통해 외부로부터 RDS에 접근할 수 있다.</p>
+<p>필자는 mysql을 사용해서 위 엔드포인트를 Host 란에 입력했다.</p>
+<p>잘 접속이 되는것이 확인된다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435222-7dd98278-e821-4eff-bce0-5937744e260c.png" alt="Untitled (68)"></p>
+<p><code>show variables like ‘c%’</code> 명령어를 입력해 본다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435231-05d50553-e73e-46f2-9285-eb34b14b07be.png" alt="Untitled (69)"></p>
+<p><a href="https://www.notion.so/81765173cdce4bd781409da2fa9aa9b0">(mysql&gt; SHOW VARIABLES LIKE &lsquo;c%';) (1)</a></p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435296-7d9687e6-fdd9-4731-8a70-285c6229c405.png" alt="K-008 (1)"></p>
+<p>위 테이블의 모든 항목은 MySQL의 캐릭터셋 환경 변수이다.</p>
+<p>자세한 설명은 아래를 확인하자.</p>
+<h3 id="mysql-캐릭터셋-환경-변수-설명">MySQL 캐릭터셋 환경 변수 설명</h3>
+<p>character_set_client</p>
+<ul>
+<li>MySQL Client의 Default Character set</li>
+<li>Client로부터 전송되는 쿼리문장의 문자집합을 말함</li>
+<li>각 커넥션에서 임의의 문자집합으로 변경해서 사용 가능</li>
+</ul>
+<p>character_set_connection</p>
+<ul>
+<li>
+<p>MySQL Server가 Client로부터 전달받은 쿼리 문장에서 인트로듀서(Introducer)가 없는</p>
+<p>리터럴(literal) 또는 숫자(number)값을 문자(String)열로 변환할 때 사용하는 Character set</p>
+</li>
+<li>
+<p>각 커넥션에서 임의의 문자집합으로 변경해서 사용 가능</p>
+</li>
+</ul>
+<p>character_set_database</p>
+<ul>
+<li>
+<p>MySQL Database의 Default Character set</p>
+</li>
+<li>
+<p>이 변수가 지정되지 않았다면 character_set_server와 같은 값을 가짐</p>
+</li>
+<li>
+<p>각 DB, TABLE, COLUMN은 기본 문자셋과 관계없이 개별적인 문자집합을 가질 수 있으며</p>
+<p>DB를 생성할 때 아무런 문자집합이 명시되지 않았다면, 이 변수의 값이 기본값으로 사용됨</p>
+</li>
+</ul>
+<p>character_set_filesystem</p>
+<ul>
+<li>
+<p>LOAD DATA INFILE &hellip; 또는 SELECT &hellip; INTO OUTFILE 문장이 실행될 때 파일의 읽고 쓰기에</p>
+<p>사용되는 Character set</p>
+</li>
+<li>
+<p>데이터 파일의 내용을 읽을 때 사용하는 문자집합이 아닌, 파일의 이름을 찾을 때 사용하는 문자</p>
+<p>집합</p>
+</li>
+<li>
+<p>파일을 오픈하려는 시도가 있기 전에 character_set_client에서 character_set_filesystem으로</p>
+<p>변환</p>
+</li>
+<li>
+<p>기본값은 binary인데, 이것은 아무런 변환이 없다는 것을 의미</p>
+</li>
+<li>
+<p>멀티 바이트 파일 이름을 사용할 수 있는 시스템에서는 서로 다른 값을 사용하도록 함</p>
+</li>
+<li>
+<p>예를 들면 시스템이 UTF8로 파일이름을 표시한다면, character_set_filesystem을 &lsquo;utf8'로 설정</p>
+</li>
+<li>
+<p>이 변수는 MySQL 5.1.6에서 추가</p>
+</li>
+<li>
+<p>각 커넥션에서 임의의 문자집합으로 변경해서 사용 가능</p>
+</li>
+</ul>
+<p>character_set_results</p>
+<ul>
+<li>MySQL Server가 쿼리의 처리 결과 또는 error 를 Client로 retuen 할 때 사용하는 Character set</li>
+<li>각 커넥션에서의 임의의 문자집합으로 변경해서 사용 가능</li>
+</ul>
+<p>character_set_server</p>
+<ul>
+<li>
+<p>MySQL Server의 Default Character set</p>
+</li>
+<li>
+<p>DB나 TABLE 또는 COLUMN에 아무런 문자집합이 설정되지 않았을 때, 이 변수의 값이</p>
+<p>기본값으로 사용됨</p>
+</li>
+<li>
+<p>각 커넥션에서의 임의의 문자집합으로 변경해서 사용 가능</p>
+</li>
+</ul>
+<p>character_set_system</p>
+<ul>
+<li>
+<p>MySQL Server가 T 식별자(Identifier, 테이블명이나 컬럼명 등)를 저장하기 위해 사용하는</p>
+<p>캐릭터셋</p>
+</li>
+<li>
+<p>항상 utf8로 설정되어있으며, 사용자가 설정하거나 변경할 수 없음</p>
+</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435375-5bbdeaf7-17bd-4f13-b987-2486c0e3f583.png" alt="Untitled (70)"></p>
+<p>DB 설치 후 <strong>Default Character Set &gt; UTF-8로 인코딩</strong> 설정을 하도록 한다.</p>
+<p>우선 인코딩 설정은 시간이 걸릴 수 있기 때문에 타임존 설정을 먼저 하겠다.</p>
+<h3 id="타임존-설정">타임존 설정</h3>
+<p>RDS &gt; 파라미터 그룹 메뉴로 접근한다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435374-437881d5-fad4-449c-aeb1-043bd4216de5.png" alt="Untitled (71)"></p>
+<p><strong>default 파라미터 그룹은 수정이 불가능하니 새로운 그룹을 만든다.</strong></p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435372-573576be-891f-4dbd-a458-75e62e9655b8.png" alt="Untitled (72)"></p>
+<p>생성한 파라미터 그룹을 클릭하여 들어가서</p>
+<p><strong>time_zone</strong> 이라고 검색</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435371-d72c2f09-011a-4043-9c35-646c284eac6b.png" alt="Untitled (73)"></p>
+<p>우상단의 파라미터 편집 버튼을 누르고 Asia/Seoul로 설정해주고 변경 사항 저장</p>
+<h3 id="인코딩-설정-characater-set--utf-8-">인코딩 설정 (<strong><strong>Characater set → utf-8 )</strong></strong></h3>
+<p>utf-8 인코더 설정을 통해서 한글 데이터를 깨지지 않은 형태로 출력시킬 수 있다.</p>
+<p>한글이 깨지지 않으려면 반드시 해 주어야 하는 설정이다.</p>
+<p>앞의 타임존 설정과 같이 RDS &gt; 파라미터 그룹 메뉴로 접근한다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435380-764bc4d5-c0a8-418b-ab89-fb8bea31bae7.png" alt="Untitled (74)"></p>
+<p>검색 키워드를 character_set으로 하고 해당 요소들을 모두 utf8mb4로 설정해준다.</p>
+<p>utf8로 설정해도 괜찮지만,  utf8은 emoji 문자를 입력할 수 없다.</p>
+<p>MySQL, MariaDB는 utf8로 세팅하는 경우 emoji문자가 입력되지 않는다. 이런 문제점을 해결하기 위해 utf8mb4 라는 charset이 나오게 되었다.</p>
+<p>utf8은 가변 3바이트를 사용하는데 반해서,</p>
+<p>utf8mb4는 내부적으로 한 문자를 표현하는데 4바이트를 사용한다.</p>
+<p>3바이트만 사용하는 utf8은 이모지를 저장할 수 없다.</p>
+<p><a href="https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql">stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql</a>
+ </p>
+<h3 id="collation"><strong>collation</strong></h3>
+<p>이번에는 collation을 검색하여 collation부분을 모두 utf8mb4_general_ci로 바꿔준다.</p>
+<p>선택적으로 <strong>max connections</strong>을 설정 가능</p>
+<p>최대 동시 데이터베이스 연결 수는 DB 엔진 유형과 DB 인스턴스 클래스의 메모리 할당에 따라 다릅니다.</p>
+<p>( <a href="https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/CHAP_Limits.html">docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/CHAP_Limits.html</a> )</p>
+<p>위의 파라미터 그룹 설정을 새로 만든 파라미터 그룹에 설정을 한 것이다.</p>
+<p>RDS의 파라미터 그룹은 default가 기본으로 설정되어 있으므로</p>
+<p>RDS의 파라미터 그룹을 &lsquo;bon-db-group1'로 설정이 필요하다.</p>
+<p>데이터 베이스 선택 화면으로 가서 데이터 베이스를 선택해주고,</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435378-72b062b8-71b8-4983-a4bc-1a0dc30bfeb8.png" alt="Untitled (75)"></p>
+<p>상단의 수정 버튼을 누른다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435454-ceee1e8e-b9c9-4bac-ae1b-609f70550a42.png" alt="Untitled (76)"></p>
+<p>데이터베이스 옵션 부분에서 DB 파라미터 그룹을 default에서 수정해준다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435453-b963f47f-cfcd-4d32-8980-82a588ce716f.png" alt="Untitled (77)"></p>
+<p>계속 버튼을 누르고 수정사항을 즉시 적용시켜준다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435451-65f17dae-c635-4448-ab08-9f34e6702b61.png" alt="Untitled (78)"></p>
+<p>수정되는데 약간의 시간이 걸릴 수 있다.</p>
+<p>수정이 완료되었다면 수정사항을 적용시키기 위해서 재부팅 한다.</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435458-342d23a9-9ec0-4a24-83b4-2dfd63201b8f.png" alt="Untitled (79)"></p>
+<h3 id="세팅-결과-확인">세팅 결과 확인</h3>
+<ul>
+<li>
+<p>타임존</p>
+<pre><code>    정상적으로 나타나고 있다.
+</code></pre>
+</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435457-c862161d-dbfa-4742-89c0-f004c78c5182.png" alt="Untitled (80)"></p>
+<ul>
+<li>인코딩 설정</li>
+</ul>
+<p>utf8mb4로 변경했음에도 불구하고 아직 바뀌지 않은 값이 있다.</p>
+<p>(예 : character_set_system)</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/161435455-c057122d-1d8e-4f37-8642-95c646d77414.png" alt="Untitled (81)"></p>
+<p>앞으로 원하는 값으로 변경하고자 할 때는 아래 형식의 명령어를 통해 강제로 변환 시키면 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">DATABASE</span> DB이름
+CHARACTER <span style="color:#66d9ef">SET</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4&#39;</span>
+<span style="color:#66d9ef">COLLATE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4_general_ci&#39;</span>;
+</code></pre></div><p>하지만 위에서 언급한 <code>character_set_system</code> 는</p>
+<p>항상 utf8로 설정되어있으며, 사용자가 설정하거나 변경할 수 없다.</p>
+<p>그러니 현재로선 무의미하고, 강제적으로 변경해야할 일이 있다면 위의 명령어를 참고하도록 하자.</p>
+<h3 id="인코딩-설정-후-한글이-나오는지-테스트">인코딩 설정 후 한글이 나오는지 테스트</h3>
+<p>테스트를 위한 임시 테이블을 생성해 본다.</p>
+<p>Mysql에서 왼쪽 UI &gt; schema &gt; Table &gt; Create Table 순으로 접근하면 아래와 같은</p>
+<p>화면이 나오고, 직접 세팅 할 수 있다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/59bedbae-c16d-465f-9f63-82df2480db76/Untitled.png" alt="Untitled"></p>
+<h3 id="engine-">Engine ?</h3>
+<p><strong>데이터베이스 엔진</strong>(database engine) 또는 <strong>스토리지 엔진</strong>(storage engine)은 <a href="https://ko.wikipedia.org/wiki/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4_%EA%B4%80%EB%A6%AC_%EC%8B%9C%EC%8A%A4%ED%85%9C">데이터베이스 관리 시스템</a>(DBMS)이 데이터베이스에 대해 데이터를 삽입, 추출, 업데이트 및 삭제(CRUD 참조)하는 데 사용하는 기본 소프트웨어 컴포넌트이다. 데이터베이스 엔진을 조작할 때 DBMS 고유의 사용자 인터페이스를 이용하는 방법과 포트 번호를 통해하는 방법이 있다. 대부분의 데이터베이스 관리시스템은 DBMS 의 사용자 인터페이스를 통하지 않고, 사용자가 내장된 엔진과 상호작용을 할 수 있는 자신만의 <a href="https://ko.wikipedia.org/wiki/%EC%95%A0%ED%94%8C%EB%A6%AC%EC%BC%80%EC%9D%B4%EC%85%98_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D_%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4">애플리케이션 프로그래밍 인터페이스</a>(API)를 포함하고 있다.</p>
+<p>데이터베이스 엔진이라는 용어는 종종 데이터베이스 서버 또는 데이터베이스 관리 시스템이라는 용어와 서로 바꾸어 사용된다.</p>
+<p>현대의 많은 DBMS가 동일한 DB 내에 다중 저장 엔진을 지원한다. 예를 들어, <a href="https://ko.wikipedia.org/wiki/MySQL">MySQL</a>은 <a href="https://ko.wikipedia.org/wiki/MyISAM">MyISAM</a> 뿐만 아니라 <a href="https://ko.wikipedia.org/wiki/InnoDB">InnoDB</a>도 지원한다.</p>
+<p>엔진의 종류와 특성에 대해 알아보기엔 적절하지 않은 듯 하니 그냥 넘어가도록 한다.</p>
+<p>위와 같은 상태로 세팅 후 우하단에 Apply를 누르면 아래와 같은 화면이 된다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/548ee020-5899-4cb5-a7c9-70d2e92f7acf/Untitled.png" alt="Untitled"></p>
+<p>그대로 Apply를 눌러 진행한다.</p>
+<p>결과</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/69ca0140-1be5-4aa7-b248-ec48f47ca0e1/Untitled.png" alt="Untitled"></p>
+<p>한글이 잘 나오는지 확인해 본다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9039c2f4-3f80-43ca-adef-f1cb42a87ffa/Untitled.png" alt="Untitled"></p>
+<p>한글이 깨지지 않고 잘 나오고 있다.</p>
+<h1 id="what-i-learned">What I learned</h1>
+<h3 id="mysql-workbench-테이블-편집기의-열-플레그">MySQL Workbench 테이블 편집기의 열 플레그</h3>
+<!-- raw HTML omitted -->
+<p><a href="https://dev.mysql.com/doc/workbench/en/wb-table-editor-columns-tab.html">https://dev.mysql.com/doc/workbench/en/wb-table-editor-columns-tab.html</a></p>
+<p>PK-기본 키</p>
+<p>NN-Null 아님</p>
+<p>BIN-이진 (데이터를 이진 문자열로 저장합니다. 문자 집합이 없으므로 정렬 및 비교는 값에있는 바이트의 숫자 값을 기반으로합니다.)</p>
+<p>UN-부호 없음 (음수가 아닌 숫자 만 해당. 범위가 -500 ~ 500 인 경우 대신 0 ~ 1000 인 경우 범위는 동일하지만 0에서 시작)</p>
+<p>UQ-고유 키 생성 / 제거</p>
+<p>ZF-0으로 채워짐 (길이가 INT (5)와 같이 5 인 경우 모든 필드는 5 번째 자리까지 0으로 채워집니다. 12 = 00012, 400 = 00400 등)</p>
+<p>AI-자동 증가</p>
+<p>G-생성 된 열. 즉, 다른 열을 기반으로하는 수식에 의해 생성 된 값</p>
+<p>→ G는 무엇인가? Generated Column</p>
+<p>다른 컬럼의 값을 이용해서</p>
+<p>계산되어 표기되는 가상 컬럼과도 같다.</p>
+<p>단가, 수량 이라는 컬럼이 있을때</p>
+<p>합 = 단가 * 수량</p>
+<p>이런식으로 컬럼 정의할때 선언할 수 있다.</p>
+<!-- raw HTML omitted -->
+<p>참조 페이지 <a href="https://stackoverflow.com/questions/3663952">https://stackoverflow.com/questions/3663952</a></p>
+<h3 id="트랜잭션의-특성-acid-심화-학습">트랜잭션의 특성, ACID 심화 학습</h3>
+<ul>
+<li>무엇인지 알고있고 이름은 나오는데 제대로 명쾌히 설명할 수 없는 아이러니를 극복하기 위해서 아래에 정리하도록 한다.</li>
+<li>원자성/<strong>Atomicity</strong> : All or Noting</li>
+<li>일관성/<strong>Consistency</strong> : 중간에 변경 불가, 트랜잭션 완료시 일관된 DB 상태를 유지</li>
+<li>고립성/<strong>Isolation</strong> : 작업을 수행중인 트랜잭션 간 간섭 불가</li>
+<li>영속성/<strong>Durability</strong> : 작업 수행을 성공한 트랜잭션은 영원히 반영</li>
+</ul>
+<h1 id="solved-error">Solved Error</h1>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ce80b739-133d-4274-8292-6f260eade1d6/Untitled.png" alt="Untitled"></p>
+<p>도움 받은 곳 링크 : <a href="https://stackoverflow.com/questions/35800555/bigint-datatype-in-mysql-giving-error-at-the-time-of-creating-table">https://stackoverflow.com/questions/35800555/bigint-datatype-in-mysql-giving-error-at-the-time-of-creating-table</a></p>
+<p>배경 : Datatype를 BIGINT()로 변경시 위와 같은 에러 발생</p>
+<p>원인 : Bracket</p>
+<p>결과 :  <code>BIGINT() → BIGINT</code>, Bracket을 지움으로서 해결</p>
+<h1 id="실제-product-app을-하나-선정해서-db-설계하기">실제 Product App을 하나 선정해서 DB 설계하기</h1>
+<h2 id="초안">초안</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ef60ebdd-40dc-4fa6-8643-af3034097d0d/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d816e68b-9fdb-4498-9e80-4c3e7a7858bd/Untitled.png" alt="Untitled"></p>
+<h3 id="mysql-workbench로-erd-다이어그램-모델링하기">Mysql Workbench로 ERD 다이어그램 모델링하기</h3>
+<p><a href=""></a></p>
+<h2 id="heading"></h2>
+<!-- raw HTML omitted -->
+<ol>
+<li>quick dbd trial version으로 테이블을 만든 후 sql 파일로 추출 후 저장한다.</li>
+<li>mysql workbench에서 file &gt; import를 통해 해당 파일을 사용할 db로 불러와서 적용시킨다.</li>
+<li>mysql workbench에서 database &gt; forward engineer 메뉴를 통해 쿼리를 추출한다.</li>
+<li>기존에 만들어 둔 ERD 설계 구조를 수정하고 보완하는 작업을 계속한다.</li>
+</ol>
+<!-- raw HTML omitted -->
+<h3 id="sql-to-erd">SQL TO ERD</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32033513-7efd-4aab-abce-939a6b6fa23a/Untitled.png" alt="Untitled"></p>
+<p>접속 후 상단에서 Database → Reverse Engineer를 클릭한다. (Ctrl + R)</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8989d8b4-525d-483c-a269-8eea4079386d/Untitled.png" alt="Untitled"></p>
+<p>가장 위의 <code>Stored Connection</code> 란을 통해서 기존의 저장되어 있는 DB를 선택 할 수 있다.</p>
+<p>Next를 계속 눌러 진행해 보자.</p>
+<p>중간 단계에서 원하는 옵션을 선택하면 다이어그램 창이 나타난다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a41760b3-9207-49af-8320-ddb8ae258d5f/Untitled.png" alt="Untitled"></p>
+<h3 id="그-반대">(그 반대)</h3>
+<h3 id="erd-to-sql">ERD TO SQL</h3>
+<ol>
+<li>
+<p>미리 만들어 놓은 ERD를 실행 (.mwb file)</p>
+</li>
+<li>
+<p>File &gt; Export &gt; Forward Engineer SQL Create Script..</p>
+</li>
+<li>
+<p>원하는 옵션을 선택해서 진행하면 쿼리문이 나온다.</p>
+<p><a href=""></a></p>
+</li>
+<li>
+<p>파일 또는 클립보드로 SQL을 추출하면 된다.</p>
+</li>
+<li>
+<p><strong>또는 쿼리문이 상태에서 Next를 누르면 현 db에 적용</strong>된다.</p>
+</li>
+</ol>
+<p>또는 아래와 같은 방법도 있다. (모델 생성 → 현 db에 반영하는 식)
+<a href="https://olidang.tistory.com/95">https://olidang.tistory.com/95</a></p>
+<p>테이블 설계시 작성이 편리한 quickdbd를 이용한다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a4b4f21d-8121-4577-b875-165036098a46/Untitled.png" alt="Untitled"></p>
+<p><strong><strong>MySQL - Table (create, 필드타입)</strong></strong></p>
+<p><a href="https://wayhome25.github.io/mysql/2017/03/19/mysql-04-mysql-table/">https://wayhome25.github.io/mysql/2017/03/19/mysql-04-mysql-table/</a></p>
+<p>→ I’ll make sure writing this information as my own sentences.</p>
+<p><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=classe82&amp;logNo=20145844000">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=classe82&amp;logNo=20145844000</a></p>
+<p>quickdbd를 무료로 사용하되 최대한 활용한다. 작성이 얼마나 편리하던지.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/57955caf-e778-42ad-8f1e-c4b4a8152265/K-002.png" alt="K-002.png"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96d469ac-20dd-4881-b8fd-7e5f69dabee4/K-003.png" alt="K-003.png"></p>
+<p>위 이미지를 보자.</p>
+<p>EXPORT한 파일을 열어본다. 초안 치곤 제법 괜찮아 보인다.</p>
+<p>이제 이걸 MYSQL로 불러와서,</p>
+<p>GUI를 통해 세부 설정 해주기로 한다. (테이플 편집기의 7개의 열 플래그)</p>
+<p>아주 잘 적용되서 불러와진 상태이다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55c52467-3096-4ada-a035-88040b8a2695/K-004.png" alt="K-004.png"></p>
+<p>그런데 우측 상단을 보자.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c243ea5-1742-491c-8aee-6d05abaff861/K-005.png" alt="K-005.png"></p>
+<p>timestamps가 Modeling Additions에 default 값으로 들어가 있다. 이걸 누르니 자동으로 생성되는데&hellip;</p>
+<p>필자는 기존에 생성시간과 갱신시간을 필드로 생성하고 DATETIME 속성을 부여했다.</p>
+<p>위 화면에서 Manners 테이블의 컬럼의 값으로도 확인이 되고 있다.</p>
+<p>그런데 문득 <strong><strong>Datetime, Timestamp 의 차이가 무엇인지 궁금증이 들기 시작했다.</strong></strong></p>
+<h3 id="둘의-차이는">둘의 차이는?</h3>
+<p>timestamp는 time_zone의 의존한다.</p>
+<p>즉 <code>time_zone</code> 설정이 바뀌면, timestamp도 따라서 바뀌게 된다.</p>
+<h3 id="그렇다면-datetime만-사용하면-되는거-아닌가"><strong>그렇다면 Datetime만 사용하면 되는거 아닌가?</strong></h3>
+<ul>
+<li>글로벌 서비스를 하면 여러 지역에 DB를 Clustering 해야 한다.
+<ul>
+<li><a href="https://github.blog/2018-10-30-oct21-post-incident-analysis/">Github의 MySQL Clustering</a></li>
+</ul>
+</li>
+<li>Datetime을 사용하는 경우 <code>time_zone</code>이 반영되지 않기 때문에 아래와 같은 상황에서 문제가 발생한다.
+<ul>
+<li>서울 오전 9시에 작성한 글이 미국으로 Replication하는 경우 여전히 오전 9시로 반영되는 상황이 벌어지게 된다.</li>
+<li>이런 경우에는 UTC 지원 가능한 timestamp를 사용하는 것이 더 좋아보인다.</li>
+</ul>
+</li>
+</ul>
+<h3 id="datetime"><strong>Datetime</strong></h3>
+<ul>
+<li><code>1000-01-01 00:00:00</code>부터 <code>9999-12-31 23:59:59</code>까지 지원</li>
+</ul>
+<h3 id="timestamp"><strong>Timestamp</strong></h3>
+<ul>
+<li><code>1970-01-01 00:00:01</code>부터 <code>2038-01-19 03:14:07</code>까지 지원</li>
+<li>Index가 더 빠르게 생성된다.</li>
+</ul>
+<p>직접 실험해 보자.</p>
+<h3 id="현재시간-넣기">현재시간 넣기</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">`</span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> datedemo
+(
+ mydatetime datetime,
+ mytimestamp <span style="color:#66d9ef">timestamp</span>
+);
+
+<span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">현재</span> <span style="color:#960050;background-color:#1e0010">시간을</span> <span style="color:#960050;background-color:#1e0010">넣어보면</span> <span style="color:#960050;background-color:#1e0010">같은</span> <span style="color:#960050;background-color:#1e0010">결과가</span> <span style="color:#960050;background-color:#1e0010">나온다</span>.
+
+<span style="color:#f92672">`</span><span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> datedemo <span style="color:#66d9ef">values</span> ((now()), (now()));<span style="color:#f92672">`</span>
+
+</code></pre></div><h3 id="타임존-변경하기">타임존 변경하기</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">그런데</span> <span style="color:#960050;background-color:#1e0010">시스템의</span> <span style="color:#960050;background-color:#1e0010">타임존을</span> <span style="color:#960050;background-color:#1e0010">변경하면</span><span style="color:#f92672">?</span>
+
+<span style="color:#f92672">`</span><span style="color:#66d9ef">SET</span> TIME_ZONE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;america/new_york&#34;</span>;
+
+Query OK, <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">rows</span> affected (<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">00</span> sec)<span style="color:#f92672">`</span>
+
+<span style="color:#f92672">##</span> timestamp값이 <span style="color:#960050;background-color:#1e0010">변경된다</span>.
+
+</code></pre></div><p>필드 타입별 적절한 사용예에 대해 공부할 수 있는 글
+→ <a href="https://audgnssweet.tistory.com/66">https://audgnssweet.tistory.com/66</a></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf6cce60-3050-45eb-aa3a-d2d0d5298247/K-006.png" alt="K-006.png"></p>
+<p>테이블 오른쪽 마우스 클릭</p>
+<p>→ Alter Table을 클릭</p>
+<p>→ 원하는 조건에 맞게 테이블 필드 타입과 열 플래그를 조정한다.</p>
+<h3 id="erd-diagram--db에-적용">ERD Diagram → db에 적용</h3>
+<p>반대로 ERD diagram으로 변경을  한 후 db에 적용하고 싶다면,</p>
+<p>두개의 방법이 있는데,</p>
+<ol>
+<li>Database &gt; Forward Engineer</li>
+<li>Database &gt; Synchronize Model</li>
+</ol>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2af218b7-e273-477b-a73e-c71dff83d023/K-008.png" alt="K-008.png"></p>
+<p>필자의 경우 위 두 방법 중 1번째 방법이 ERD Digram상에서 Foreign Key를 추가한 내역이 반영이 되지 않아서, 2번째 방법을 사용해서 해결했다. 테이블 생성 및 컬럼 변경에 대한 부분은 1번 방법 또한 문제가 없었다.</p>
+<h3 id="자주-발생했던-에러">자주 발생했던 에러</h3>
+<p>mysql workbench erd diagram 변경내역을 저장하고 현 db에 반영하고자 하는데 아래와 같은 오류가 나왔는데, 그 원인은 외래키가 추가된 이후 기존 테이블의 컬럼의 값을 수정했기 때문인 것으로 판단된다.</p>
+<p><a href="https://stackoverflow.com/questions/45044629/cannot-drop-column-needed-in-a-foreign-key-constraint">https://stackoverflow.com/questions/45044629/cannot-drop-column-needed-in-a-foreign-key-constraint</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p><strong>Remove</strong> the foreign key before modifying a primary key field:</p>
+<p>PK 필드를 수정하기 전에 외래키를 지운다.</p>
+<p>외래키를 지운 뒤 다시 만들고 적용하면 잘 작동하게 된다.</p>
+<h2 id="쟁점">쟁점</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/719ad4aa-7444-4aab-9d3e-3ac8e509c1b0/Untitled.png" alt="Untitled"></p>
+<p>체크박스가 여럿 있고,</p>
+<p>카테고리 북마크를 여러개 고를 수 있는 화면이 있다면,</p>
+<p>테이블을 생성할 때 모든 것을 CHAR(1)로 해서 체크 플래그로 사용해서 1:1 관계가 좋겠는가?</p>
+<p>그게 아니면 하나의 카테고리 북마크를 일일히 생성하여 해당 프로필과 N:M 관계를 유지하는게 좋겠는가?</p>
+<p>→ N:M이 나은 것 같다.</p>
+<p>예를 들어 보자.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f4aa57c5-44ff-42cc-b97f-34a92b3de68b/Untitled.png" alt="Untitled"></p>
+<p>위 사진과 같이 설계하면 프로필과 1:1 관계가 된다고 치자.</p>
+<p>만약 쿼리 작성해서 불러와야 하는 경우, 어떻게 검색할 것인가?</p>
+<p>그리고 테이블 내 컬럼은, 어떤 조건으로 가릴 것인가?</p>
+<p>어떤 조건으로 가릴 수 없기 때문에, 이름에 option_digitalDevice, option_firniture 와 같이,</p>
+<p>구분자를 모든 카테고리 별로 넣어주어야 할 것이다. 그래야만 option 문자열을 포함하는</p>
+<p>컬럼만을 불러 올 수 있을 테니&hellip;</p>
+<p>이는 N:M보다는 비효율적이여 보인다.</p>
+<p>N:M은 id만으로 가져오면 되는 반면, 위 방법은 각 컬럼명에 option이 포함되는가를 묻는 조건문이 또 한번 사용되어야 하기 때문이다.</p>
+<p>차라리 브라우저 또는 어플리케이션 상에서 어떤 북마크를 설정하고자 할 때, 그 이름으로 북마크에 대한 db를 생성하는게 나아 보인다.</p>
+<p>그러므로 나는 아래와 같은 구조를 선택했다.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f445f52-ac0a-4ffe-b01f-56f681edf9a7/Untitled.png" alt="Untitled"></p>
+<h1 id="heading-1"></h1>
+<h2 id="q--a">Q &amp; A</h2>
+<h3 id="닉에게-질문답변한-내용이다">닉에게 질문&amp;답변한 내용이다.</h3>
+<ul>
+<li>Q : 데이터가 유한한(카테고리 종류와 같은) 테이블의 경우 N:M 관계를 하기에 필요 이상이란 생각이 든다. 어떻게 하는게 더 좋은 대안인가?</li>
+<li>A : 따로 나누지 않고 한 테이블 안에 별도의 컬럼으로 할 수도 있다. 또는 PK를 두개로 주기도 한다. 예를 들면 꼭 필요한 데이터지만 유한한 조건이라면 추가 컬럼을 2개 이상으로 기존 테이블에 추가할 수도 있다. 옵션을 여러개 부여하고 해당 없는 옵션에는 null값을 줄수 있다는 얘기다.</li>
+</ul>
+<h2 id="-테이블-내에-카테고리에-대한-별도의-컬럼을-하나-더-생성하고-데이터의-갯수가-유한한-기존-카테고리-테이블을-삭제했다">⇒ 테이블 내에 카테고리에 대한 별도의 컬럼을 하나 더 생성하고, 데이터의 갯수가 유한한 기존 카테고리 테이블을 삭제했다.</h2>
+<ul>
+<li>Q :
+<ol>
+<li>모든 테이블 관계 중 N:M 관계가 빈번하게 발생한다. 고유 id번호를 주고 받는 과정이 많은데 제대로 하는게 맞는지 의문이 들기도 한다.</li>
+<li>그리고 당근마켓의 해쉬코드와 같은 것은 Auto Increasement 속성을 부여해야 하는가? 어떻게 설정하면 좋은가?</li>
+</ol>
+</li>
+<li>A : 1) 지극히 정상적인 일이다.
+2) db가 아닌 외부 API에서 난수 생성 및 부여 작업을 한다.</li>
+</ul>
+<h2 id="heading-2"></h2>
+<h2 id="heading-3"></h2>
+<h2 id="한방-쿼리-작성하기">한방 쿼리 작성하기</h2>
+<h3 id="goal">Goal</h3>
+<ul>
+<li>각각의 화면에 해당하는 한방 쿼리를 작성해 본다.</li>
+</ul>
+<h3 id="1-홈">1) 홈</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe08ce4e-570d-4872-b037-350e1745cdcc/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.title, P.price, T.name, PHOTO.url,
+	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
+ <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PC
+<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> PC.productId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PC.townId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PHOTO
+<span style="color:#66d9ef">on</span> PHOTO.productId <span style="color:#f92672">=</span> P.id
+;
+</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d4027e5f-5a9b-4d4a-a229-53efc21facd4/Untitled.png" alt="Untitled"></p>
+<p>채팅 수, 관심 수를 추가하고자 했으나, select문과 join을 어떻게 합쳐서 count 함수를 적용하면 좋을지, 그리고 grouby를 어떻게 사용 해야하는지 아직 시도 중.</p>
+<h1 id="실제-product-app을-하나-선정해서-db-설계하기-1">실제 Product App을 하나 선정해서 DB 설계하기</h1>
+<h3 id="20220228-개선-완료">2022/02/28 개선 완료</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.title, P.contents, P.price, 
+	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+		<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
+		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
+<span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(PL.productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber,
+<span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(<span style="color:#66d9ef">distinct</span> CC.chattingRoomId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber,
+<span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
+<span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
+<span style="color:#66d9ef">on</span> PPS.productId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductLike <span style="color:#66d9ef">as</span> PL
+<span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+<span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingConnection <span style="color:#66d9ef">as</span> CC
+<span style="color:#66d9ef">on</span> CC.productId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> PPS.id, P.id;
+</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51b667c0-73a4-4b28-a3da-74c3600e2a36/Untitled.png" alt="Untitled"></p>
+<h3 id="-감-잡았다">→ 감 잡았다!</h3>
+<p>group by의 사용법을 자세히 익히기 위해서 참고한 곳</p>
+<p><a href="https://nittaku.tistory.com/431">https://nittaku.tistory.com/431</a></p>
+<p>내가 자주 사용한 문법 (반복)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> p
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> pc
+<span style="color:#66d9ef">on</span> p.id <span style="color:#f92672">=</span> pc.productId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> t
+<span style="color:#66d9ef">on</span> t.id <span style="color:#f92672">=</span> pc.townId;
+</code></pre></div><p>도움 받은 곳 : <a href="https://happyguy81.tistory.com/116">https://happyguy81.tistory.com/116</a></p>
+<h3 id="20220302-2차-개선-완료">2022/03/02 2차 개선 완료</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingRoom;
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ProductLike;
+<span style="color:#66d9ef">select</span> P.title, P.price, T.name <span style="color:#66d9ef">as</span> town,
+	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+				<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
+		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
+		PL.likeNumber,
+				CR.chattingNumber,
+		<span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
+ <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+ <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
+ <span style="color:#66d9ef">on</span> PPS.id <span style="color:#f92672">=</span> P.productPhotosId
+ <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+ <span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
+  <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> ProductLike) <span style="color:#66d9ef">as</span> PL
+ <span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber <span style="color:#66d9ef">from</span> ChattingRoom) <span style="color:#66d9ef">as</span> CR
+<span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PTC
+ <span style="color:#66d9ef">on</span> PTC.productId <span style="color:#f92672">=</span> P.id
+ <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+ <span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
+ <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> P.id
+ ;
+</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22f224e0-4fc8-4283-ab5b-88152d797bd2/Untitled.png" alt="Untitled"></p>
+<h2 id="select-및-join-문을-자유롭게-구사하기-하기-위한-쿼리문-지식">select 및 join 문을 자유롭게 구사하기 하기 위한 쿼리문 지식</h2>
+<p>nullif(expr1, expr2)
+expr1과 expr2이 같지 않은 경우 null 값을 리턴한다.</p>
+<p>중복을 제거하고자 할 때 데이터의 경우 distinct
+테이블의 경우 group by를 사용할 수 있다.</p>
+<p>distinct는 컬럼명 머리에 붙이고
+groub by는 select 문 제일 나중에 위치하도록 한다.
+튜플마다 다른 count 값을 얻으려면 group by를 반드시 사용한다.(단일 값에 대한 count를 구할땐 group by가 필요 없다.)</p>
+<p>(inner)join과 left join의 차이점은
+(inner)join의 경우 매칭이 가능한 경우에만 join을 하는 것이다.
+예를 들면 두 테이블이 있을 때, 각 테이블 별 튜플이 서로 조건을 성립 할 때 join 된다.
+left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이블 기준으로 오른쪽 테이블의 데이터를 붙인다. 해당에 없는 오른쪽 테이블 값은 null로 표시된다. 즉 왼쪽 테이블의 데이터는 모두 등장하는 것이다.</p>
+<p>튜플의 특정 컬럼값을 수정해주고 싶을때는 udpate를 이용한다.</p>
+<p>update문의 사용법은 update 테이블명 set 컬럼명 = 바꿀 값 where 조건 (A = B와 같은 형태);</p>
+<p>ex) update Product set updatedAt = current_timestamp() where id = 5</p>
+<p>group by에는 여러 값을 넣을 수 있다. group by val1, val2, val3 (&hellip;) ;</p>
+<p>컬럼 내 모든 문자열을 합칠 수도 있다. (콤마 기준)</p>
+<p>group_concat(해당 컬럼 (예 ) Profile.id))</p>
+<h3 id="2-동네-생활">2) 동네 생활</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa350fc0-1151-4f79-85a1-e5aa87b44e98/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhotos;
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhoto;
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPost;
+
+<span style="color:#66d9ef">select</span> LP.contents, LP.category, P.nickname, T.name,
+		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+		   likeNumber,
+		   commentNumber,
+		   LP.latitude,
+		   LP.longitude,
+		   <span style="color:#66d9ef">min</span>(LPP.url) <span style="color:#66d9ef">as</span> thumbnail
+<span style="color:#66d9ef">from</span> LivingPost <span style="color:#66d9ef">as</span> LP
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> LP.townId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> LP.profileId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(LivingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> LivingPostLike) <span style="color:#66d9ef">as</span> LPL
+<span style="color:#66d9ef">on</span> LPL.livingPostId <span style="color:#f92672">=</span> LP.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(livingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> commentNumber <span style="color:#66d9ef">from</span> LivingComment) <span style="color:#66d9ef">as</span> LC
+<span style="color:#66d9ef">on</span> LC.livingPostId <span style="color:#f92672">=</span> LP.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> LivingPostPhoto <span style="color:#66d9ef">as</span> LPP
+<span style="color:#66d9ef">on</span> LPP.livingPostPhotosId <span style="color:#f92672">=</span> LP.id
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> LP.id
+;
+</code></pre></div><p>위도, 경도표현은 decimal(10, 7)을 사용했다.</p>
+<p>참고사이트 : <a href="https://blog.naver.com/PostView.nhn?blogId=darkchrno&amp;logNo=221356051245&amp;parentCategoryNo=&amp;categoryNo=37&amp;viewDate=&amp;isShowPopularPosts=true&amp;from=search">https://blog.naver.com/PostView.nhn?blogId=darkchrno&amp;logNo=221356051245&amp;parentCategoryNo=&amp;categoryNo=37&amp;viewDate=&amp;isShowPopularPosts=true&amp;from=search</a></p>
+<h2 id="결과">결과</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76e7de0b-2a23-40bd-8946-a1a66c9e7bbd/Untitled.png" alt="Untitled"></p>
+<h3 id="3-채팅">3) 채팅</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7ae55840-a84e-4d1c-8212-a9fea50f2cb5/Untitled.png" alt="Untitled"></p>
+<ul>
+<li>현재 데이터베이스에 등록된 튜플의 예시가 장기동을 다루므로 지역이 다른 위 채팅 내역과는 무관하게 동일한 형태의 한방 쿼리를 구축하는 것을 목표로 한다.</li>
+</ul>
+<h2 id="group-by한-데이터들의-최신-값만-가지고-오기">group by한 데이터들의 최신 값만 가지고 오기</h2>
+<ol>
+<li><em><strong>max함수를 통해 마지막 날짜 조회 후 group by를 하고 해당하는 데이터를 조건문에 처리(where 조건문 in절부분)하여 최신 데이터 순으로 order by를 통해 다시 한번 정렬을 한다.. order by desc를 통해 select를 해온다.</strong></em></li>
+<li><em><strong>2. select된 데이터를 한번 더 group by를 한다.</strong></em></li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">조회에</span> <span style="color:#960050;background-color:#1e0010">성공한</span> <span style="color:#960050;background-color:#1e0010">쿼리</span>
+<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingMessage 
+<span style="color:#66d9ef">where</span> updatedAt <span style="color:#66d9ef">in</span> 
+( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CM.updatedAt)
+<span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CM <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
+)
+</code></pre></div><p>참고한 곳 : <a href="https://myhappyman.tistory.com/76">https://myhappyman.tistory.com/76</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> CR.id, PP.url <span style="color:#66d9ef">as</span> productThumbnail, P.photo <span style="color:#66d9ef">as</span> profileThumbnail, P.nickname, T.name, CM.contents,
+		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+		   <span style="color:#66d9ef">when</span> timestampdiff(hour , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, CM.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
+ <span style="color:#66d9ef">from</span> ChattingRoom <span style="color:#66d9ef">as</span> CR
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Product <span style="color:#66d9ef">as</span> PD
+<span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> PD.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+<span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PD.productPhotosId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> CR.buyerProfileId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProfileAndTownConnection <span style="color:#66d9ef">as</span> PTC
+<span style="color:#66d9ef">on</span> PTC.profileId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingMessage <span style="color:#66d9ef">as</span> CM
+<span style="color:#66d9ef">on</span> CM.chattingRoomId <span style="color:#f92672">=</span> CR.id
+<span style="color:#66d9ef">where</span> CM.updatedAt <span style="color:#66d9ef">in</span> 
+( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CMTemp.updatedAt)
+<span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CMTemp <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
+)
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> CR.id
+;
+</code></pre></div><ul>
+<li>아래와 같이 ChattingMessage 레코드를 여러개 있는 가운데 최신 메세지만을 불러오고 있다.</li>
+</ul>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92f33a95-febb-4104-b38a-5725561ad6c6/Untitled.png" alt="Untitled"></p>
+<h2 id="결과-1">결과</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55befa7a-4967-405d-9c5c-e3e60090ea23/Untitled.png" alt="Untitled"></p>
+<h2 id="4-프로필">4) 프로필</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/311ecadf-8d0d-445c-b0ae-8dc80a5f5198/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.nickname, P.profileNumber, M.temperature, M.retradeWantRatio, M.answerRatio, B.badgeNumber, PD.productNumber <span style="color:#66d9ef">from</span> TownAndProfileConnection <span style="color:#66d9ef">as</span> TPC
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> TPC.profileId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Manners <span style="color:#66d9ef">as</span> M
+<span style="color:#66d9ef">on</span> M.id <span style="color:#f92672">=</span> P.mannersId
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> productNumber <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> PD
+<span style="color:#66d9ef">on</span> PD.profileId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> badgeNumber <span style="color:#66d9ef">from</span> Badge <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> B
+<span style="color:#66d9ef">on</span> B.profileId <span style="color:#f92672">=</span> P.id
+<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> TPC.profileId;
+</code></pre></div><h2 id="product">Product</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b038a91-c5f4-431b-b708-a457334f655c/Untitled.png" alt="Untitled"></p>
+<h2 id="manners">Manners</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67c14781-0329-4ee3-b9b5-36b7cfc71871/Untitled.png" alt="Untitled"></p>
+<h3 id="badge">Badge</h3>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/741e474f-090e-46e5-b08b-40a76e96725a/Untitled.png" alt="Untitled"></p>
+<h2 id="결과-2">결과</h2>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/32cdac76-5831-4833-ab4a-174f435f96da/Untitled.png" alt="Untitled"></p>
+<h1 id="회고">회고</h1>
+<p>이따금 1:N 관계에서 left join 사용시 튜플이 두배, 세배 등으로 늘어나는 경우가 발생한다.</p>
+<p>필자의 경우 원본 복사 후 함수를 사용해서 별도의 서브쿼리를 작성해서 활용하는 방법으로 해결하였다.</p>
+<p>db설계와 쿼리문 작성에 재미를 느끼기 시작했다.</p>
+<p>현 상태 그대로 마무리 짓기에는 아쉬운 마음이 남는다.</p>
+<p>마음 같아선 조금 더 완벽한 모습을 추구 하고 싶다는 바램이다.</p>
+<p>앞으로 수정, 보완해 갈 시간이 남아 있으니 지금의 허전함은 여백의 미로 남겨두도록 하자.</p>
+<p>(노션이 너무 무겁다. -_- ;;)</p>
+<h3 id="정리">정리</h3>
+<ul>
+<li>나만의 색을 입히는 연습 필요 (설계 하기 나름, 도구도 쓰기 나름)</li>
+</ul>
+<h3 id="what-i-learned-1">What I learned</h3>
+<p>uuid : 총 32개의 16진수 문자열과 4개의 ‘-’ 를 사용해 연결되어 있다.</p>
+<p>INT VS BIGINT VS UUID VS GUID</p>
+<p><a href="https://www.percona.com/blog/2019/11/22/uuids-are-popular-but-bad-for-performance-lets-discuss/">https://www.percona.com/blog/2019/11/22/uuids-are-popular-but-bad-for-performance-lets-discuss/</a></p>
+<p>인덱스 사용은 언제 어떻게?</p>
+<p><a href="https://dncjf64.tistory.com/388">https://dncjf64.tistory.com/388</a></p>
+<p>uuid 가공하여 인덱싱 용도로 쓰기</p>
+<p><a href="https://sddev.tistory.com/80?category=875211">https://sddev.tistory.com/80?category=875211</a></p>
+<p>uuid 최적화</p>
+<p><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=parkjy76&amp;logNo=221104640333">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=parkjy76&amp;logNo=221104640333</a></p>
+<p>uuid 최적화2</p>
+<p><a href="https://gafani.tistory.com/entry/MariaDBmysql-UUID-%EB%A1%9C-PK-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0">https://gafani.tistory.com/entry/MariaDBmysql-UUID-로-PK-사용하기</a></p>
+<p>GUID vs BIGINT 쟁점</p>
+<p><a href="https://stackoverflow.com/questions/504905/is-it-better-to-use-an-uniqueidentifierguid-or-a-bigint-for-an-identity-column">https://stackoverflow.com/questions/504905/is-it-better-to-use-an-uniqueidentifierguid-or-a-bigint-for-an-identity-column</a></p>
+<ul>
+<li>메모리 크기 : GUID &gt; BIGINT</li>
+<li>정합성 : GUID &gt; BIGINT</li>
+<li>분산 데이터베이스 : GUID &gt; BIGINT</li>
+<li>그러면 GUID와 BIGINT를 꼭 비교 또는 택일만 하는가? → 컬럼 갯수가 무한히 늘어날 수는 있다. 무한히 늘어나기에 int만으로는 부족할것을 인지하시기만 하면 된다!</li>
+</ul>
+<hr>
+<h2 id="what-i-learned-temp">What I Learned (Temp)</h2>
+<p>자연키와 인조키</p>
+<p><a href="https://multifrontgarden.tistory.com/180">https://multifrontgarden.tistory.com/180</a>
+<a href="https://okky.kr/article/257331">https://okky.kr/article/257331</a></p>
+<p><strong>자연키와 인조키</strong></p>
+<p>비즈니스 모델에서 자연히 얻게되는 자연키와 기본키만을 위한 인조키 중 어떤걸 사용하는게 더 좋을까? 앞선 내용에서 알아본것처럼 자연키가 있으면 자연키를 사용하고, 없으면 인조키를 사용하는 선자연키 후인조키 전략이 좋은걸까?</p>
+<p>각각의 비즈니스에 따라 갈리는게 당연한일이므로 명확한 정답이 있는건 아니지만 보통의 경우 자연키보다는 인조키를 사용하는게 좋고, 그렇게 권장한다.</p>
+<p>기본키는 최대한 변하지않는 값이어야하는데(실제 값이 변하지않는 측면에서도 그렇지만 그 값이 의미하는 바도 변하지않는게 좋다.) 비즈니스 모델에서 추출한 자연키는 비즈니스 규칙에 의해 값 혹은 그 의미가 변할 여지가 다분하다.</p>
+<p>간단한 예로 대한민국 국민은 기본키를 부여받고 살아가게된다. 바로 주민번호다. 지금이야 상상할수도 없지만 이전에는 별 시덥잖은 사이트에 가입할때도 필수적으로 주민번호를 입력해야했다. 만약 그때 주민번호를 기본키로 잡아놨다면 그 사이트는 정부의 대대적인 보안정책으로 인해 피똥싸는 수정을 했어야할것이다. 주민번호가 갖는 그 고유한 특성 자체는 변하지않았지만 그 값이 갖는 의미가 변했기때문에 더이상 데이터베이스에 영구히 보관할수가 없어진 탓이다.</p>
+<p>단순히 회원 테이블의 기본키로만 쓰인게 아니라 여기저기 외래키로도 사용됐다면 그 사이트는 시스템 전체를 들었다놔야하는 상황을 맞이할수도 있었을것이다(아마&hellip; 꽤나 많은 사이트들이 이런 사태를 맞지않았을까 예상해본다.).</p>
+<h3 id="pk와-fk의-차이">PK와 FK의 차이</h3>
+<p><a href="https://www.happyjung.com/lecture/1598">https://www.happyjung.com/lecture/1598</a></p>
+<p>유니크키는 널 값을 허용</p>
+<p>먼저 PK Index와 Unique Index의 차이는 간단하게 Nullable의 차이라고 하겠습니다.</p>
+<p>쉽게 말해서 PK Index라는 것은 Unique Index + Not Null을 의미합니다. -&gt; 뒷부분에서 근본적으로 차이가 있다라고 설명합니다.</p>
+<p>반대로 Unique Index는 인덱스가 걸리는 필드에 대해서도 Null을 허용하죠.</p>
+<p>즉, 특정 테이블의 컬럼에 대해 Unique 인덱스가 있다고 해서, 해당 필드에 Null 값을 Insert 못하지는 않습니다. 하지만, PK Index가 설정되어 있다고 한다면 자동으로 해당 필드에 대한 Not null 제약조건이 생기기 때문에 Null을 insert할 수 없죠.</p>
+<p>좋아요 테이블</p>
+<p><a href="https://mcpejs.tistory.com/29">https://mcpejs.tistory.com/29</a></p>
+<p><strong>후보키(candidate key)란 테이블에서 각 튜플들을 구별하는 데 기준이 되는 하나 혹은 그 이상의 칼럼들의 집합</strong></p>
+<p><strong>복합키는 각 튜플들을 식별할 수 있는 두개 또는 그 이상의 속성들로 구성된 후보키, 새로운 튜플의 후보키 값이 기존의 튜플들의 후보키 값과 동일한지 여부를 비교하여 중복 여부를 확인</strong></p>
+<p>슈퍼키 : 유일성과 최소성 만족, 특정 튜플을 고유하게 식별할 수만 있으면 되고, 후보키와 가장 큰 차이점은 최소성</p>
+<p><strong>유일성: 하나의 키 값으로 하나의 튜플을 유일하게 식별할 수 있어야 하는 것</strong></p>
+<p><strong>최소성: 키를 구성하는 속성 하나를 제거하면 유일하게 식별할 수 없도록 꼭 필요한 최소의 속성으로 구성되어야 한다는 것.</strong></p>
+<p><a href="https://jhnyang.tistory.com/71">https://jhnyang.tistory.com/71</a></p>
+<p>다대다</p>
+<p><a href="https://fmhelp.filemaker.com/help/16/fmp/ko/index.html#page/FMP_Help/many-to-many-relationships.html">https://fmhelp.filemaker.com/help/16/fmp/ko/index.html#page/FMP_Help/many-to-many-relationships.html</a></p>
+<p>Decimal(3, 1)</p>
+<p>유저 프로필 1개 vs 유저 프로필 2개 vs 유저 프로필 3개 (분리)</p>
+<p><a href="https://stackoverflow.com/questions/3889797/mysql-user-profile-details-table-setup-best-practice">https://stackoverflow.com/questions/3889797/mysql-user-profile-details-table-setup-best-practice</a></p>
+<p>LDAP란?</p>
+<p>quick dbd &amp; mysql workbench</p>
+<h1 id="referrence">REFERRENCE</h1>
+<ul>
+<li><a href="https://dev.mysql.com/doc/workbench/en/wb-table-editor-columns-tab.html">https://dev.mysql.com/doc/workbench/en/wb-table-editor-columns-tab.html</a></li>
+<li><a href="https://luminitworld.tistory.com/94">https://luminitworld.tistory.com/94</a></li>
+<li><a href="https://roseline.oopy.io/dev/aws-private-db-with-vpc">https://roseline.oopy.io/dev/aws-private-db-with-vpc</a></li>
+<li><a href="https://sarc.io/index.php/aws/649-amazon-rds-relational-database-service">https://sarc.io/index.php/aws/649-amazon-rds-relational-database-service</a></li>
+<li><a href="https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=fromyongsik&amp;logNo=40210577831">https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&amp;blogId=fromyongsik&amp;logNo=40210577831</a></li>
+<li><a href="https://m.blog.naver.com/tipsware/221304314735">https://m.blog.naver.com/tipsware/221304314735</a></li>
+<li><a href="https://salepark.tistory.com/76">https://salepark.tistory.com/76</a></li>
+<li><a href="https://great-park.tistory.com/m/8">https://great-park.tistory.com/m/8</a></li>
+<li><a href="https://olidang.tistory.com/95">https://olidang.tistory.com/95</a></li>
+<li><a href="https://aquerytool.com/aquerymain/index/?rurl=51e2afb4-1af1-4eaf-aa59-73c0fb03ec3e">https://aquerytool.com/aquerymain/index/?rurl=51e2afb4-1af1-4eaf-aa59-73c0fb03ec3e</a></li>
+<li><a href="https://nesoy.github.io/articles/2020-02/mysql-datetime-timestamp">https://nesoy.github.io/articles/2020-02/mysql-datetime-timestamp</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/8.0/en/datetime.html">https://dev.mysql.com/doc/refman/8.0/en/datetime.html</a></li>
+<li><a href="https://www.eversql.com/mysql-datetime-vs-timestamp-column-types-which-one-i-should-use/">https://www.eversql.com/mysql-datetime-vs-timestamp-column-types-which-one-i-should-use/</a></li>
+<li><a href="https://www.tech-recipes.com/rx/22599/mysql-datetime-vs-timestamp-data-type/">https://www.tech-recipes.com/rx/22599/mysql-datetime-vs-timestamp-data-type/</a></li>
+<li><a href="https://happyguy81.tistory.com/116">https://happyguy81.tistory.com/116</a></li>
+</ul>
+<hr>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/server/">server</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/developement/">developement</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/mysql/mysql_/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/review">Review
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2022
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WTESZLPSEQ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,476 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> Validation을 위해 작성하였던 정규 표현식 뜯어보기 | Rad Blog</title>
+    <meta name="description" content="Validation을 위해 작성하였던 정규 표현식 뜯어보기 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="Validation을 위해 작성하였던 정규 표현식 뜯어보기">
+    <meta itemprop="description" content="Validation을 위해 작성하였던 정규 표현식 뜯어보기 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="Validation을 위해 작성하였던 정규 표현식 뜯어보기">
+    <meta property="og:description" content="Validation을 위해 작성하였던 정규 표현식 뜯어보기 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/java/java-regex/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/java/java-regex/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/java/java-regex/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+    
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/java/java-regex/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2022-04-02</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/java/">Java</a>
+                
+            
+                
+                <a href="https://xfrnk2.github.io/categories/regex/">Regex</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="개요">개요</h3>
+<ul>
+<li>본 글은 넷플릭스 팀 프로젝트 서버 파트를 개발하면서 정규식을 공부한 내용을 담고 있다.</li>
+<li>정규식을 떠올리면 늘 드는 생각은, 복사 &amp; 붙여넣기의 사용과 겉핥기 수준, 예를 들면 괄호 안에 문자가 여러개 있으면 &lsquo;또는&rsquo; 이라는 매칭 조건을 주는 것 외에는 아는게 없었기에 언젠가 공부해야겠다는 생각 뿐이였다.</li>
+<li>이번 팀 프로젝트에서 유효성 검사를 위해 필요했던 정규식에 한해서 어떻게 동작하는지 한 땀 한 땀 분석해 보았다.</li>
+<li>이제는 아래의 정규식 정도면 직접 작성할 수 있지 않을까?</li>
+<li>이번 팀 프로젝트가 끝난 후에도 직접 작성을 자주 해서 보다 숙달됬으면 하는 바램이다.</li>
+</ul>
+<hr>
+<p><img src="https://user-images.githubusercontent.com/34790699/161176951-b151758e-9dce-468e-81c5-de1fb6b619a2.png" alt="image"></p>
+<ol>
+<li>
+<p>email <code>^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$</code></p>
+<ul>
+<li><code>[A-Z0-9._%+-</code>]: A-Z 또는 0-9 또는 . 또는 _ % 또는 + 또는 -</li>
+<li><code>@</code> : @포함</li>
+<li><code>[A-Z0-9.-]</code>  : 첫번째 항목과 동일</li>
+<li><code>\.</code> : <code>.</code>과 완전히 일치하는 문자를 매칭</li>
+<li><code>[A-Z]</code> : 영문 대문자 (또는)</li>
+<li><code>{2,6}</code> : 직전 문자가 2개 이상 6개 이하이다. 즉 이메일 주소의 <code>.net</code>이나 <code>.net</code>과 같은 부분의 글자수다.</li>
+</ul>
+</li>
+<li>
+<p>phone number <code>^01(?:0|1|[6-9])-(?:\\d{3}|\\d{4})-\\d{4}$</code></p>
+<ul>
+<li><code>01</code> : 01로 시작</li>
+<li><code>0|1|[6-9]</code> : 0 또는 1 또는 6-9와 매칭</li>
+<li><code>-</code> : - 포함</li>
+<li><code>\\d{3}|\\d{4}</code> : 3개의 숫자 또는 4개의 숫자와 매칭</li>
+<li><code>\\d{4}</code> : 4개의 숫자와 매칭</li>
+</ul>
+</li>
+<li>
+<p>password <code>^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&amp;])[A-Za-z\\d@$!%*#?&amp;]{8,}$</code></p>
+<ul>
+<li><code>(?=.*</code> : 바로 뒤에 있는 것을 매칭, 바로 뒤에 있는 것은 포함되지 않음</li>
+<li><code>A-Za-z</code> : 영대문자 또는 영소문자</li>
+<li><code>*\\d</code> : 숫자와 매칭</li>
+<li><code>[@$!%*#?&amp;]</code> : @ 또는 &hellip;. &amp; (모두 적용)</li>
+<li><code>A-Za-z\\d@$!%*#?&amp;</code> : 영대문자 또는 영소문자 또는 하나의 특수문자</li>
+<li><code>{8,}</code> : 8글자 이상</li>
+</ul>
+</li>
+<li>
+<p>play time (소숫점으로 나타내는 재생 기록) (<code>[0-9]{2,3})(\\.[0-9]{1,2})?</code></p>
+<ul>
+<li><code>[0-9]{2,3}</code> : 숫자가 2개 이상 3개 이하 (정수부, 십~백의 자리 사이의 숫자가 가능)</li>
+<li><code>(\\.[0-9]{1,2})?</code>: <code>.</code>포함, 숫자가 1개 이상 2개 이하(소숫점 아래 숫자)</li>
+</ul>
+</li>
+</ol>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/java/">Java</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/regex/">Regex</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/java-netflix-clone/">Java-netflix-clone</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/mysql/mysql_/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/review">Review
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2022
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-WTESZLPSEQ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="4ML69MKPKO">
+  <input type="hidden" id="algolia-search-apiKey" value="568ba12efff051120f3587e1d297c4cd">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

@@ -5,10 +5,20 @@
     <link>https://xfrnk2.github.io/mysql/</link>
     <description>Recent content in Mysqls on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 06 Apr 2022 23:36:16 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/mysql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</title>
+      <link>https://xfrnk2.github.io/mysql/mysql_/</link>
+      <pubDate>Wed, 06 Apr 2022 23:36:16 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/mysql/mysql_/</guid>
+      <description>AWS RDS의 데이터 이관중 트러블슈팅   Mysql Server &amp;gt; Data Export 시 Export Option을 Self-Contained File로 지정하여 sql 파일 추출 Mysql Server &amp;gt; Data Export 실행하니 아래와 같은 에러가 등장.  ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation   인터넷에 돌아다니는 방법을 사용해 봤는데도 변화가 없었다.
+   https://aws.amazon.com/ko/premiumsupport/knowledge-center/definer-error-mysqldump/     https://aws.</description>
+    </item>
     
     <item>
       <title>[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</title>
