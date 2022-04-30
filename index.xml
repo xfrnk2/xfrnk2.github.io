@@ -4,10 +4,19 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 06 Apr 2022 23:36:16 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 01 May 2022 00:37:36 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Opensources</title>
+      <link>https://xfrnk2.github.io/opensource/</link>
+      <pubDate>Sun, 01 May 2022 00:37:36 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/opensource/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mysqls</title>
