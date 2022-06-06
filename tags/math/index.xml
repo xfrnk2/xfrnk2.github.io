@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>math on Rad Blog</title>
+    <link>https://xfrnk2.github.io/tags/math/</link>
+    <description>Recent content in math on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 05 Jun 2022 00:22:17 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BOJ-1004-어린 왕자[수학, 기하학]</title>
+      <link>https://xfrnk2.github.io/boj/1004/</link>
+      <pubDate>Sun, 05 Jun 2022 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/1004/</guid>
+      <description>BOJ-1004-어린 왕자 문제 바로가기  1004 어린 왕자 처음에 어떻게 풀어야하는지 상당히 막연했지만 다행히도 문제를 이해하고 납득하며 작성하여 넘어갈 수 있었다. 꼭 다시한 번 풀어봤으면 하는 문제.
+t = int(input()) for _ in range(t): x1, y1, x2, y2 = list(map(int, input().split())) count = 0 n = int(input()) for i in range(n): cx, cy, cr = list(map(int, input().split())) # 행성의 중심 좌표와 출발점, 시작점 사이의 거리를 구한다. dis1 = (x1 - cx) ** 2 + (y1 - cy) ** 2 dis2 = (x2 - cx) ** 2 + (y2 - cy) ** 2 pow_cr = cr ** 2 # 두 거리가 모두 행성의 반지름보다 작으면 출발점과 시작점 둘다 행성 내부에 위치한다.</description>
+    </item>
+    
+  </channel>
+</rss>

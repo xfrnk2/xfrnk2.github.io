@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>geometry on Rad Blog</title>
+    <link>https://xfrnk2.github.io/tags/geometry/</link>
+    <description>Recent content in geometry on Rad Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 06 Jun 2022 00:22:17 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/geometry/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BOJ-1002- 터렛[기하학]</title>
+      <link>https://xfrnk2.github.io/boj/1002/</link>
+      <pubDate>Mon, 06 Jun 2022 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/1002/</guid>
+      <description>BOJ-1002-터렛 문제 바로가기  1002 터렛 어떻게 풀어야하나 조차 몰라 두 원의 위치관계를 검색하여 유튜브를 통해 이해하고 납득하여 풀 수 있었던 문제.
+고등학교 수학 개념인지 중학교 수학 개념인지 모르겠으나 내가 모르고 있던 것이였기에 공부를 해야만 했고, 앞으로 기하학 분류의 문제는 이러한 문제들이 더 나올것이라는 생각을 하니 미리미리 대비해둔다는 차원에서 수학과 기하학 문제를 더 접해봐야겠다는 생각이 들었다.
+아래의 강의가 큰 도움이 됬다.
+https://www.youtube.com/watch?v=yYApAGIfLlo
+두 원의 위치관계
+ 외접 내접 두 원이 두개의 점에서 교차할 때 두 원 모두 서로의 외부에 있을 때 하나의 원 안에 다른 하나의 원이 있을 때  import math def turret(input_values) -&amp;gt; None: x1, y1, r1, x2, y2, r2 = list(map(int, input_values.</description>
+    </item>
+    
+    <item>
+      <title>BOJ-1004-어린 왕자[수학, 기하학]</title>
+      <link>https://xfrnk2.github.io/boj/1004/</link>
+      <pubDate>Sun, 05 Jun 2022 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/1004/</guid>
+      <description>BOJ-1004-어린 왕자 문제 바로가기  1004 어린 왕자 처음에 어떻게 풀어야하는지 상당히 막연했지만 다행히도 문제를 이해하고 납득하며 작성하여 넘어갈 수 있었다. 꼭 다시한 번 풀어봤으면 하는 문제.
+t = int(input()) for _ in range(t): x1, y1, x2, y2 = list(map(int, input().split())) count = 0 n = int(input()) for i in range(n): cx, cy, cr = list(map(int, input().split())) # 행성의 중심 좌표와 출발점, 시작점 사이의 거리를 구한다. dis1 = (x1 - cx) ** 2 + (y1 - cy) ** 2 dis2 = (x2 - cx) ** 2 + (y2 - cy) ** 2 pow_cr = cr ** 2 # 두 거리가 모두 행성의 반지름보다 작으면 출발점과 시작점 둘다 행성 내부에 위치한다.</description>
+    </item>
+    
+  </channel>
+</rss>

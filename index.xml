@@ -4,10 +4,19 @@
     <link>https://xfrnk2.github.io/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 12 May 2022 11:17:34 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jun 2022 00:22:17 +0900</lastBuildDate>
     
         <atom:link href="https://xfrnk2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bojs</title>
+      <link>https://xfrnk2.github.io/boj/</link>
+      <pubDate>Mon, 06 Jun 2022 00:22:17 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/boj/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Server_developements</title>
@@ -231,15 +240,6 @@
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/it-voca/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bojs</title>
-      <link>https://xfrnk2.github.io/boj/</link>
-      <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/</guid>
       <description></description>
     </item>
     
