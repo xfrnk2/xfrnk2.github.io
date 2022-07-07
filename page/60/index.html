@@ -130,6 +130,89 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/boj/4949/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/boj/4949/">BOJ-4949-균형잡힌 세상[문자열 처리]</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-09</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/boj/">BOJ</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    BOJ-4949-균형잡힌 세상 문제 바로가기  나의 풀이 def get_result(sentence: str) -&gt; bool: bracket_stack = [] for s in sentence: if s.isalpha(): continue elif s == &quot;(&quot;: bracket_stack.append(1) elif s == &quot;[&quot;: bracket_stack.append(0) elif s == &quot;)&quot; or s == &quot;]&quot;: try: if bracket_stack[-1] == 0 and s == &quot;)&quot;: return False elif bracket_stack[-1] == 1 and s == &quot;]&quot;: return False bracket_stack.pop() except IndexError: return False return not bracket_stack if __name__ == '__main__': sentence_list = [] while True: get_input = input() if get_input == '.
+
+    
+    <a href="https://xfrnk2.github.io/boj/4949/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/boj/">BOJ</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/string/">string</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/20.05.08/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -591,81 +674,6 @@
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.05.04/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/til/20.05.04/">20.05.04_TIL</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-04</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    계획했던 일  Django 배운 내용 문서화하기 LCS (최장 공통 부분 수열) 을 또다른 형태로 구현하기 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사하기   오늘 한 일  Django ManyToManyField 에 대해 복습하고 정리해서 글을 올렸다. Django OneToOneField 에 대해 복습하고 정리해서 글을 올렸다. 도서 &lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo; 을 어제 읽었던 부분을 다시 한 번 읽었다. 결과적으로 어제 이상으로 읽은 것은 10페이지 정도였다. 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사한 내용을 정리 후 문서화했다.
-
-    
-    <a href="https://xfrnk2.github.io/til/20.05.04/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -692,6 +700,10 @@
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/review/220707/">자기혁신방법론 특강 후기</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
                 </li>
                 
@@ -713,10 +725,6 @@
                 
                 <li>
                     <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
                 </li>
                 
             </ul>
@@ -754,12 +762,12 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/python">Python
+                    <a href="/categories/review">Review
                         </a>
                 </li>
                 
                 <li>
-                    <a href="/categories/review">Review
+                    <a href="/categories/python">Python
                         </a>
                 </li>
                 

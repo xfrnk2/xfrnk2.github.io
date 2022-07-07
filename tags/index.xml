@@ -5,10 +5,19 @@
     <link>https://xfrnk2.github.io/tags/</link>
     <description>Recent content in Tags on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 06 Jun 2022 00:22:17 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 07 Jul 2022 00:00:30 +0900</lastBuildDate>
     
 	<atom:link href="https://xfrnk2.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>review</title>
+      <link>https://xfrnk2.github.io/tags/review/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:30 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/tags/review/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>algorithm</title>
@@ -214,15 +223,6 @@
       <pubDate>Tue, 01 Feb 2022 20:45:21 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/tags/web-npm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>review</title>
-      <link>https://xfrnk2.github.io/tags/review/</link>
-      <pubDate>Sat, 18 Dec 2021 00:20:30 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/tags/review/</guid>
       <description></description>
     </item>
     
