@@ -130,6 +130,90 @@
         
     <div class="article-wrapper u-cf">
         
+            <a class="bubble" href="https://xfrnk2.github.io/django/django_migartion/">
+    <i class="fas fa-fw fa-code"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_migartion/">Django - Migration을 통한 database 스키마 관리</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2020-05-05</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
+  Migrations  모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;로 반영시키는 효율적인 방법 제공  관련 명령: 마이그레이션 파일 생성 &gt; python manage.py makemigrations &lt;앱이름&gt; 지정 데이터베이스에 마이그레이션 적용 &gt; python manage.py migrate &lt;앱이름&gt; 마이그레이션 적용 현황 출력 &gt; python manage.py showmigrations &lt;앱이름&gt; 지정 마이그레이션의 SQL 내역 출력 &gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt;  Migration File 기능  모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능  주의할 점  같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨   의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요
+
+    
+    <a href="https://xfrnk2.github.io/django/django_migartion/" class="more">Continue reading</a>
+    
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/migration/">Migration</a>
+                
+                
+                
+                <a href="https://xfrnk2.github.io/tags/migrate/">Migrate</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
             <a class="bubble" href="https://xfrnk2.github.io/til/20.05.04/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
@@ -597,96 +681,6 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     </div>
 
     
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-    <i class="fas fa-fw fa-code"></i>
-</a>
-
-<article class="default article">
-    
-    <div class="featured-image">
-        <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-            <img src="https://example.org/images/my-image.jpg" alt="">
-        </a>
-    </div>
-
-
-    <div class="content">
-    <h1 class="article-title"><a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">Django debug-toolbar를 통한 SQL 디버깅</a></h1>
-    <div class="meta">
-        
-        
-        <span class="date moment">2020-05-02</span>
-        
-        
-
-        
-
-        
-        <span class="categories">
-            
-                
-                <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                
-            
-        </span>
-        
-
-        
-        <span class="author">
-            
-            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-            
-        </span>
-        
-    </div>
-
-    
-    이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
-
-    
-    <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
-    
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                
-                <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/debug-toolbar/">debug-toolbar</a>
-                
-                
-                
-                <a href="https://xfrnk2.github.io/tags/sql/">SQL</a>
-                
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-    
 
     
     <div class="paginator">
@@ -713,6 +707,10 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
             <ul>
                 
                 <li>
+                    <a href="https://xfrnk2.github.io/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
+                </li>
+                
+                <li>
                     <a href="https://xfrnk2.github.io/review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
                 </li>
                 
@@ -734,10 +732,6 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
                 
                 <li>
                     <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
-                </li>
-                
-                <li>
-                    <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                 </li>
                 
             </ul>
