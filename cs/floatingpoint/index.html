@@ -1,0 +1,563 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.69.0" />
+    <title> 부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법 | Rad Blog</title>
+    <meta name="description" content="부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법 - Bilberry Premium Theme for Hugo.">
+    <meta itemprop="name" content="부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법">
+    <meta itemprop="description" content="부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:title" content="부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법">
+    <meta property="og:description" content="부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/88188b6cc451928eba90e8400bc68086?size=200">
+    <meta property="og:url" content="https://xfrnk2.github.io/cs/floatingpoint/">
+    <meta property="og:site_name" content="Rad Blog">
+    <meta property="og:type" content="article">
+
+    
+
+
+    
+    <link href="/cs/floatingpoint/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/cs/floatingpoint/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SL1RKJG57X');
+</script>
+	
+    
+    
+    <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+	
+    
+    
+	
+
+
+ 
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+            
+            <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+            
+            
+        </ul>
+
+        
+        <div id="search-box" class="search">
+            <i class="fas fa-search"></i>
+            <input id="search" type="text" placeholder="Search ...">
+        </div>
+        
+    </div>
+</nav>
+
+
+    
+<header>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SL1RKJG57X');
+</script>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title"><a
+                    href="/">Rad Blog</a></h3>
+            
+            <span class="subtitle">Archive</span>
+            
+        </div>
+
+
+        
+            <div class="toggler">
+                
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+</header>
+
+
+    <div class="main container">
+        
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/cs/floatingpoint/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title"><a href="https://xfrnk2.github.io/cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a></h1>
+    <div class="meta">
+        
+        
+        <span class="date moment">2023-01-04</span>
+        
+        
+
+        
+
+        
+        <span class="categories">
+            
+                
+                <a href="https://xfrnk2.github.io/categories/cs/">CS</a>
+                
+            
+        </span>
+        
+
+        
+        <span class="author">
+            
+            <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+            
+        </span>
+        
+    </div>
+
+    
+    <h3 id="여는-말">여는 말</h3>
+<blockquote>
+<p>부동소수점의 개념을 복기하기 위해 간단히 정리해 보는 글입니다.</p>
+</blockquote>
+<ul>
+<li>IEEE 754 부동소수점 표현에서 숫자는 아래와 같이 부호부, 지수부, 가수부의 세 부분으로 구성</li>
+<li>부호부 (Sign) : 1비트. 숫자의 부호를 나타내며, 양수일 때 0, 음수일 때 1</li>
+<li>지수부 (Exponent) :8비트. 지수 표현</li>
+<li>가수부 (Mantissa) : 23비트. 가수 또는 유효숫자 표현</li>
+</ul>
+<p><img src="https://user-images.githubusercontent.com/34790699/210569178-8bd2923d-7541-4847-8c5a-cc19b05f4313.png" alt="image"><br>
+(출처 : <a href="https://codetorial.net/articles/floating_point.html">https://codetorial.net/articles/floating_point.html</a>)</p>
+<ul>
+<li>숫자를 표현하고 저장하기 위해 32비트 (4바이트)를 사용하는 방식을 단정도 (single precision)</li>
+<li>배정도 (double precision) 표현에서는 64비트 (8바이트)를 사용</li>
+</ul>
+<h3 id="-65를-부동소수점으로-나타내-보자">-6.5를 부동소수점으로 나타내 보자.</h3>
+<ol>
+<li>부호가 음수이므로 부호부는 1이 된다.</li>
+<li>-6.5를 이진수로 변환하면 110.1이 된다. (소숫점 자리수는 오른쪽으로 이동할수록 0.5, 0.25, 0.125와 같이 그 값이 감소한다)</li>
+<li>2진수의 소수점을 왼쪽으로 이동시켜서 소수점 왼쪽에 1만 남도록 하는 과정을 정규화라고 한다.
+<img src="https://user-images.githubusercontent.com/34790699/210569579-5cad55eb-9bb6-4351-9af0-61cb6ba6d4b0.png" alt="image"></li>
+<li>110.1 -&gt; 1.101 이므로 지수는 2이다.</li>
+<li>지수부 : 지수 2에 bias인 127을 더해준다. 그럼 129가 되고, 이것을 이진수로 변환한다. 1000001이 된다.</li>
+<li>가수부 : 101을 왼쪽-&gt;오른쪽 순으로 입력하고, 나머지를 0으로 채운다.</li>
+<li>1 1000001 10100000000000000000000</li>
+</ol>
+<h3 id="부동소수점에-대한-이해">부동소수점에 대한 이해</h3>
+<ul>
+<li>출처 : <a href="https://thrillfighter.tistory.com/349">https://thrillfighter.tistory.com/349</a></li>
+</ul>
+<p>부동 소수점 표현은 아주 큰 수와 아주 작은 수를 효율적?으로 표현하기 위해서 사용한다. 여기서 효율적이란 표현은 정확하다는 표현은 아니다. 효율적일 수록 오차가 발생하기 마련이다. 우선 부동소수점표현을 어떤 방식으로 하는지 이해하고, 오차가 발생할 수 밖에 없는 원리도 이해해보자.</p>
+<p>부동 소수점</p>
+<p>우선 우리가 10진수를 10으로 나누거나 곱하면 소수점의 위치를 변경할 수 있다. 이와 마찬가지로 2진수 또한 2로 나누거나 곱하면 소수점 위치가 한 칸씩 이동된다.(자세한 설명은 하지 않겠지만, 이 원리를 이용해 진수변환도 한다는 것을 알아 두자.) 부동 소수점은 이런 원리를 이용해서 소수점의 위치를 나타낸다. 예를 들어 1001.1011 이란 수가 있다면, 부동 소수점은 이 수를 1.0011011 * 2^3 으로 표현 한다. 여기서 3은 위에서 설명한 원리를 통해 소수점의 위치를 정하게 되고 앞에 1.0011011은 1001.1011을 정규화한 것이다.</p>
+<p>정규화 방법</p>
+<p>정규화 방법은 정수부에 1만 남기도록 소수점을 이동하고 소수점에 관한 정보는 2^x으로 표현하는 것이다. 이런 표현은 고정 소수점 보다 효율적으로(적은 비트로) 큰 수를 표현할 수 있다.</p>
+<p>부동 소수점 구조 알아보기</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/210570952-9744775e-4869-4d6a-b634-1f7e61caf728.png" alt="image"></p>
+<p>위 그림은 c/c++에서 float형의 표현 방식이다.</p>
+<p>부호부 : 표현할 값이 0인 경우 양수, 1인 경우 음수</p>
+<p>지수부:(2의 8승) -1가지 표현을 할 수 있다. 다시 말하면 2진수 체계에서 주어진 가수의 (2의 8승) -1가지 자리수 표현이 가능하다.</p>
+<p>가수부: 가수부는 수의 모양을 알려주는데, 위에 예시의 수의 가수부는 00110110000000000000000(23자리)이 된다. 23bit(자리수)가 갖는 한계와 특징에 대해서는 따로 설명하겠다.</p>
+<p>지수부</p>
+<p>부동 소수점의 지수부는 컴퓨터가 수를 표현하는 일반적인 방식과 다르다. 바이어스(bias)표현 법인 이 방법을 알면 부동 소수점에 대해서 80%는 이해했다고 보면 된다.</p>
+<p>예를 들어 char형 자료형으로 수를 표현하는 방법은 다음과 같다.</p>
+<p>0000 0000 : 0</p>
+<p>&hellip;</p>
+<p>0111 1111 : 127</p>
+<p>1000 0000 : -128</p>
+<p>1000 0001 : -127</p>
+<p>&hellip;</p>
+<p>1111 1111 : -1</p>
+<p>-128~127 까지 수를 표현</p>
+<p>이렇게 음수를 표현하는 방법을 2의 보수법이라고 한다.</p>
+<p>아무튼 char 뿐 아니라 int형도 이런 식으로 표현된다.</p>
+<p>바이어스 표현법</p>
+<p>지수부가 8bit인 부동 소수점을 표현할 때, 바이어스 표현법은 다음과 같다.</p>
+<p>0000 0000 : -127</p>
+<p>0000 0001 : -126</p>
+<p>&hellip;.</p>
+<p>0111 1111 : 0</p>
+<p>&hellip;.</p>
+<p>1111 1111 : 128</p>
+<p>이런 식으로 표현하는 이유는 일반적인 정수를 나타낼 때와 지수를 나타낼 때, 0과 음수의 의미가 다르기 때문이다. 여러 특징이 있겠지만, 우선 밑이 양수인 경우 지수가 음수여도 값은 양수가 되기 때문이고, 지수가 음의 무한대로 뻗어나가더라도 밑이 무한히 0에 가까운 수가 된다.(0보다 큼)</p>
+<p>따라서, 지수부가 8bit인 경우 가장 작게 표현할 수 있는 -127의 경우를 0000 0000으로 표현한다.</p>
+<p>바이어스 상수</p>
+<p>여기서는 IEEE754표준인 127바이어스법(8bit)을 기준으로 한다.</p>
+<p>바이어스 상수 : 2^(n-1)-1</p>
+<p>n:비트부 자리수(여기서는 8bit)</p>
+<p>64바이어스법은 바이어스 상수가 100 0000이 되는데, 여기서는 127바이어스 법만 다룬다.</p>
+<p>2의 보수법 + 바이어스 상수 = 바이어스 표현법</p>
+<p>예를 들어 2의 보수법으로 127을 표현하면 0111 1111 이고 이를 바이어스 표현법으로 바꾸려면(float형) 127((2^8)-1)을 더하면 된다.</p>
+<p>0111 1111 + 0111 1111 = 1111 1110 (127 바이어스 법으로 표현한 127)</p>
+<p>예) -0.4를 16부동 소수점으로 바꾸어라. ( 지수부 5bit, 가수부 10비트)</p>
+<p>0.4 = 0.0110011001100110&hellip;(2진수) = 1.1001100110&hellip;*2^-2</p>
+<p>따라서 지수부는 -2가 된다. -2를 2진수로 나타내면(2의보수법) 1 1110이 된다.</p>
+<p>지수부 비트가 5bit므로 바이어스 상수는 2^5-1 = 15 = 0 1111</p>
+<p>지수부를 바이어스 표현 법으로 나타내기 위해 위 두값을 더한다.</p>
+<p>1 1110 + 0 1111 = 0 1101</p>
+<p>따라서,</p>
+<p>1 0 1101 1001100110</p>
+<p>예) 19.25를 127 바이어스법으로 바꾸면</p>
+<p>19.25</p>
+<p>= 10011.01(2진수)</p>
+<p>= 1.001101 * 2^4</p>
+<p>4 = 100(2진수)</p>
+<p>여기서 비트부를 바이어스법으로 바꾸면</p>
+<p>100 + 0111 1111 = 1000 0011이 된다.</p>
+<p>따라서 0100 0001 1001 1010 0000 0000 0000 0000</p>
+<p>로 표현할 수 있다.</p>
+<p>0을 표현하는 방법</p>
+<p>바이어스 표현 방법으로 지수의 표현은 -127 ~ 128까지 가능하다. 그러면 0의 표현은 어떻게 할까? 상식적으로 생각하면 0은 표현할 수 있는 가장 작은 양수 보다 작거나 같아야 한다. 부동 소수점 표현에서 표현할 수 있는 가장 작은 수는 다음과 같다.
+<img src="https://user-images.githubusercontent.com/34790699/210570897-063489d1-ea64-427f-ac1d-b62d18ce76fe.png" alt="image"></p>
+<p>따라서 모두 0인 경우를 0으로 하기로 한다.</p>
+<p>2^-127보다 작은 수 표현</p>
+<p>그런데 32bit float가 표현할 수 있는 가장 작은 수는 2^149이다. 위에서 모든 비트가 0으로 채워진 경우(지수부가 -127승인 경우)는 0을 표현한다고 했다. 그러면 어떻게 2^-127승 보다 더 작은 수는 어떻게 표현하는 것일까?</p>
+<p>규칙</p>
+<p>지수부가 모두 0인 경우는 특별한 경우로 나누어 생각하는 것이 좋다.</p>
+<p>모든 비트가 0인 경우는 0을 나타낸다.(위에서 살펴봄)</p>
+<p>지수부의 비트가 0이지만 가수부의 비트는 0이 아닌 경우, 유효수에서 정수값을 1이 아닌 0으로 한다. 그리고 지수값을 -126으로 약속 한다.</p>
+<p>예를 들어,</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/210570874-9654c3fc-6156-43a8-a939-e1915d2b3bc5.png" alt="image"></p>
+<p>0.00000000010000000001000 * 2^-126</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/210570853-b5853165-929f-43d6-90af-ce38825064ee.png" alt="image"></p>
+<p>0.10000000000000000000000 * 2^-126 = 2^-127</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/210570830-4cea1fcf-e92c-454c-827d-d18a4b0e38e0.png" alt="image"></p>
+<p>0.00000000000000000000001 * 2^-126 = 2^-149</p>
+<p>따라서 32bit float형의 표현할 수 있는 가장 작은 수는 2^-149승이 된다.</p>
+<p>참고로 2^-126은 다음과 같다.
+<img src="https://user-images.githubusercontent.com/34790699/210570811-a4f3a220-79c1-4a40-8fce-14d9c6a6823c.png" alt="image"></p>
+<ol>
+<li>00000000000000000000000 * 2^-126 = 2^-126</li>
+</ol>
+<p>지수부 비트가 모두 1로 채워진 경우</p>
+<p>우선 이 경우 지수부는 128을 나타내는데 가수부의 형태에 따라서 두 가지 상태를 나타낸다.</p>
+<p>가수부 비트가 모두 1인 경우 inf를 나타냄(무한)</p>
+<p>가수부 비트가 모두 1이 아닌 경우 nan을 나타냄(미정값)</p>
+<p>최대값</p>
+<p>0x7f7fffff 는 float자료형이 표현할 수 있는 가장 큰 수가 된다. 약 2^128승정도가 되는데</p>
+<p><img src="https://user-images.githubusercontent.com/34790699/210570784-c1904d3b-ab8f-476d-984c-7eae3ba6176e.png" alt="image"></p>
+<p>이런 식으로 표현된다.</p>
+<p>부동 소수점의 오차</p>
+<p>부동 소수점은 적은 비트로 큰 수를 표현할 수 있지만, 이런 효율성은 정확성을 떨어뜨릴 수 밖에 없다. float의 가수부의 크기는 23bit인데, 23은 실제로 값자리수(길이)를 나타낸다. 부동 소수점의 표현 방식상 정수값 자리수가 23을 넘어가게 되면 소수점 이동이 23(가수의 길이)이 넘어가므로 가수부의 길이를 초과하여 소수점 이하를 표현할 길이 없어진다. 길이를 넘어가게 되면 가수의 마지막 자리 값은 넘어간 수만큼의 0이 생긴다.</p>
+<p>지수값이 24인 경우 0이 하나 생겼다. 2진수의 LSD(least significant Digit)가 무조건 0이기 때문에 홀수를 표현할 수 없다.</p>
+<p>지수값이 25가 되면 0이 두개 생긴다. 따라서 4의 배수만 표현된다. 이런 식으로 오차가 점점 늘어나는데, 사실 이런 오차는 지수값이 23이넘어가면 값의 크기에 비해서 아주 작은 값이 되므로 그렇게 큰 차이는 아니지만, 정밀도가 떨어질 수밖에 없다. 따라서 double 타입의 자료형을 사용하면 이런 오차를 좀 더 줄일 수 있다.</p>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                
+                <a href="https://xfrnk2.github.io/tags/cs-floatingpoint/">CS, FloatingPoint</a>
+                
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+     
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <a href="/"><strong>Latest posts</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                </li>
+                
+                <li>
+                    <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/categories/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/review">Review
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/categories/python">Python
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+        <div class="tags">
+            <a href="/tags/"><strong>Tags</strong></a>
+            <ul>
+                
+                <li>
+                    <a href="/tags/til">Til
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/algorithm">Algorithm
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/django">Django
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/programmers">Programmers
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/boj">Boj
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/python">Python
+                        </a>
+                </li>
+                
+                <li>
+                    <a href="/tags/resolved-problem">Resolved problem
+                        </a>
+                </li>
+                
+            </ul>
+        </div>
+        
+		
+		
+		
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2023
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script type="text/javascript" src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="09VNYRQFF5">
+  <input type="hidden" id="algolia-search-apiKey" value="bdd0421b23d0fdd444c845cfc509478c">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
