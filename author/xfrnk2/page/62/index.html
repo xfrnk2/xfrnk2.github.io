@@ -121,7 +121,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_model_field/">
+                <a class="bubble" href="https://xfrnk2.github.io/django/django_admin/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -130,15 +130,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/django/django_model_field/">
-            Django - Model Field
+        <a href="https://xfrnk2.github.io/django/django_admin/">
+            Django의 Admin 기능
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-05-02</span>
+                <span class="date moment">2020-04-19</span>
             
         
 
@@ -167,98 +167,10 @@
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  ORM  ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음   보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
-  RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key  1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment)  1 : 1 관계 -&gt; models.
+  1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin.
 
         
-            <a href="https://xfrnk2.github.io/django/django_model_field/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/model/">Model</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_foreignkey/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/django/django_foreignkey/">
-            Django - 관계를 표현하는 Model Field - Foreign Key
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-05-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.
-
-        
-            <a href="https://xfrnk2.github.io/django/django_foreignkey/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/django/django_admin/" class="more">Continue reading</a>
         
     
 </div>
@@ -279,7 +191,12 @@
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/model/">Model</a>
+                    <a href="https://xfrnk2.github.io/tags/django-admin/">Django-Admin</a>
+                    
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/python/">Python</a>
                     
                 
             </div>
@@ -296,105 +213,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-    <div class="featured-image">
-        <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-            <img src="https://example.org/images/my-image.jpg" alt="">
-        </a>
-    </div>
-
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/">
-            Django debug-toolbar를 통한 SQL 디버깅
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-05-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
-
-        
-            <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/debug-toolbar/">debug-toolbar</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/sql/">SQL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.05.02/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.04.19/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -403,15 +222,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.05.02/">
-            20.05.02_TIL
+        <a href="https://xfrnk2.github.io/til/20.04.19/">
+            20.04.19_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-05-02</span>
+                <span class="date moment">2020-04-19</span>
             
         
 
@@ -439,10 +258,13 @@
     </div>
 
     
-        계획했던 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기 Django 배운 내용 문서화하기   오늘 한 일  Django debug-toolbar에 대한 내용을 복습하고 정리해서 글을 올렸다. Django 관계를 표현하는 Model Field, Foreign Key에 대한 내용을 복습하고 정리해서 글을 올렸다.    강의를 들은지 얼마 지난것을 다시 복습하고 정리하려고 하니 머릿속에 그려지는 동안 또다시 시간이 소비된다. 블로그에 글을 쓰다보니 복습을 잘 할 수 있어서 좋으나 한편으로는 복습에 시간을 쏟으며 세월아네월아 하게 되는게 아닌가 싶기도 하다.
+        평소라면 아침에 일어나면 책부터 읽으려고 하는 편인데, 오늘은 왠지 모르게 오래도록 방치해둔 github와 travis-ci간의 오류를 해결하고 싶다는 생각이 들었다.
+makefile을 통해 VENV 실행할 때, Windows/Linux 각 OS별로 작동하는 겸용 스크립트를 작성하는 것이었다.
+그동안 나는 Python을 통해 코딩 퀴즈만 풀어왔었기 때문에 다른 영역의 것들을 쉽게 건드릴 수가 없었다. 뭘 모르는지를 몰랐다. travis-ci를 연동시키고 언젠가는 해야겠지 하면서 차일피일 미루었었다. 틈틈이 해결하기 위해 씨름해본적이 있는데 매번 해결하지 못했다.
+그동안 문제를 해결할 때 일관된 방식으로 빠르게 답을 찾으려고만 했던것 같아서, 작은 것부터 알아갈 필요가 있다고 느꼈다.
 
         
-            <a href="https://xfrnk2.github.io/til/20.05.02/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.04.19/" class="more">Continue reading</a>
         
     
 </div>
@@ -475,7 +297,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.05.01/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.04.18/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -484,15 +306,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.05.01/">
-            20.05.01_TIL
+        <a href="https://xfrnk2.github.io/til/20.04.18/">
+            20.04.18_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-05-01</span>
+                <span class="date moment">2020-04-18</span>
             
         
 
@@ -520,10 +342,13 @@
     </div>
 
     
-        계획했던 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기 학교 과제 시작하기   오늘 한 일  칸아카데미 사이트에서 수열관련 강의 초입부분을 수강했다. LCS (최장 공통 부분 수열) 알고리즘을 이해했다. 사실 어려웠다.ㅜㅜ 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 기본적인 개념을 복습하여 인지했다. 점심 식사 시간에 JTBC 토크멘터리 &lsquo;이어령 선생이 젊은이에게 바치는 마지막 이야기'를 보았는데 유독 &lsquo;Momento Mori'라는 문구가 머릿속을 맴돌았다.
+        그저께부터 다시 &lsquo;성공과 실패를 결정하는 1%의 네트워크 원리&rsquo; 책을 읽고 있다.
+마침 Django를 공부와 함께 웹에 대한 이해도를 높이고 싶었기 때문이다. 이 책은 구매해두고 몇번인가 반복적으로 읽었으나 피부에 와닿지는 못했다. 이번 기회로 직접적인 경험과 더불어 네트워크에 대한 이해도도 높일 수 있으면 좋겠다.
+블로그를 시작한 가장 큰 이유는 배우고 지나간 것들을 내 자신이 자주 복습하지 않기 때문에 의식적으로 정리하고 활용하기 위해서이다.
+그리고 당시에는 열심히 찾아보고 해결했던 문제조차 얼마 시간이 지나지 않았음에도 불구하고 휘발성 지식인 것처럼 날라가는 일을 여러번 겪었기 때문이다.
 
         
-            <a href="https://xfrnk2.github.io/til/20.05.01/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.04.18/" class="more">Continue reading</a>
         
     
 </div>
@@ -556,7 +381,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.04.30/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.04.17/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -565,15 +390,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.04.30/">
-            20.04.30_TIL
+        <a href="https://xfrnk2.github.io/til/20.04.17/">
+            TIL을 처음으로 시작합니다
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-04-30</span>
+                <span class="date moment">2020-04-17</span>
             
         
 
@@ -601,7 +426,7 @@
     </div>
 
     
-        계획했던 일  Django 강의 많이 듣고 진도 나가기 성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기   오늘 한 일  Django Model을 통한 조회 기초를 복습하고 문서화했다. 문서화 한 것을 업로드했다. Django Debug Toolbar를 설치하고 구현해보았다. 라이브 아카데미 동영상을 시청하고 공부했다.   내일 할 일  성공과 실패를 결정하는 1%의 네트워크 원리 책 읽기 백준 알고리즘 문제 (1904번 01타일) 해결을 고민하기 수열과 조합, 등차수열 공부해보기 학교 과제 시작하기   
+        오늘부터 새롭게 배우거나 느낀 것들을 정리하여 기록하는 작업을 시작합니다.
 
         
     
@@ -619,104 +444,6 @@
                     
                     
                     <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_model_basic/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/django/django_model_basic/">
-            Django Model을 통한 조회 (기초)
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-04-30</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Model Manager SELECT * FROM app_model;
-ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
-ModelCls.objects.all().order_by('-id')[:10] INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);
-ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet
- Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
-실제로 데이터가 필요한 시점에 접근
- 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;
-
-        
-            <a href="https://xfrnk2.github.io/django/django_model_basic/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/model/">Model</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/queryset/">Queryset</a>
                     
                 
             </div>
@@ -734,8 +461,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
 
     
     <div class="paginator">
-        
-            <a href="/author/xfrnk2/page/63/" class="older"><i class="fa fa-angle-double-left"></i> Older posts</a>
         
 
         
@@ -774,15 +499,15 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -805,16 +530,6 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -827,6 +542,16 @@ ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지�
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>

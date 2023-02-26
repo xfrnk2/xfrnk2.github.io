@@ -57,40 +57,6 @@
     </item>
     
     <item>
-      <title>BOJ-1002- 터렛[기하학]</title>
-      <link>https://xfrnk2.github.io/boj/1002/</link>
-      <pubDate>Mon, 06 Jun 2022 00:22:17 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/1002/</guid>
-      <description>BOJ-1002-터렛 문제 바로가기  1002 터렛 어떻게 풀어야하나 조차 몰라 두 원의 위치관계를 검색하여 유튜브를 통해 이해하고 납득하여 풀 수 있었던 문제.
-고등학교 수학 개념인지 중학교 수학 개념인지 모르겠으나 내가 모르고 있던 것이였기에 공부를 해야만 했고, 앞으로 기하학 분류의 문제는 이러한 문제들이 더 나올것이라는 생각을 하니 미리미리 대비해둔다는 차원에서 수학과 기하학 문제를 더 접해봐야겠다는 생각이 들었다.
-아래의 강의가 큰 도움이 됬다.
-https://www.youtube.com/watch?v=yYApAGIfLlo
-두 원의 위치관계
- 외접 내접 두 원이 두개의 점에서 교차할 때 두 원 모두 서로의 외부에 있을 때 하나의 원 안에 다른 하나의 원이 있을 때  import math def turret(input_values) -&amp;gt; None: x1, y1, r1, x2, y2, r2 = list(map(int, input_values.</description>
-    </item>
-    
-    <item>
-      <title>BOJ-1004-어린 왕자[수학, 기하학]</title>
-      <link>https://xfrnk2.github.io/boj/1004/</link>
-      <pubDate>Sun, 05 Jun 2022 00:22:17 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/1004/</guid>
-      <description>BOJ-1004-어린 왕자 문제 바로가기  1004 어린 왕자 처음에 어떻게 풀어야하는지 상당히 막연했지만 다행히도 문제를 이해하고 납득하며 작성하여 넘어갈 수 있었다. 꼭 다시한 번 풀어봤으면 하는 문제.
-t = int(input()) for _ in range(t): x1, y1, x2, y2 = list(map(int, input().split())) count = 0 n = int(input()) for i in range(n): cx, cy, cr = list(map(int, input().split())) # 행성의 중심 좌표와 출발점, 시작점 사이의 거리를 구한다. dis1 = (x1 - cx) ** 2 + (y1 - cy) ** 2 dis2 = (x2 - cx) ** 2 + (y2 - cy) ** 2 pow_cr = cr ** 2 # 두 거리가 모두 행성의 반지름보다 작으면 출발점과 시작점 둘다 행성 내부에 위치한다.</description>
-    </item>
-    
-    <item>
-      <title>BOJ-1874-스택 수열[스택]</title>
-      <link>https://xfrnk2.github.io/boj/1874/</link>
-      <pubDate>Sat, 04 Jun 2022 00:22:17 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/1874/</guid>
-      <description>BOJ-1874-스택 수열 문제 바로가기  1874 스택 수열 Before, 실패하는 코드
-def stack_sequence(input_value_n: str, input_value_numbers: str) -&amp;gt; None: n = int(input_value_n) numbers = list(map(int, input_value_numbers.split())) stack = [] number = 0 next_number = 0 r = [] ans = [] for i in range(n): pivot = numbers[i] if number &amp;lt; pivot: while number &amp;lt; pivot: number += 1 if next_number &amp;lt;= number: stack.append(number) ans.append(&amp;#39;+&amp;#39;) next_number = number + 1 elif number &amp;gt; pivot: while number &amp;gt; pivot + 1: number -= 1 ans.</description>
-    </item>
-    
-    <item>
       <title>앞으로 해가면 좋을 인프라 관리</title>
       <link>https://xfrnk2.github.io/server_developement/infra-server-management/</link>
       <pubDate>Thu, 12 May 2022 11:17:34 +0900</pubDate>
@@ -195,24 +161,6 @@ https://howtosanta.com/korea/cloudformation%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98
     </item>
     
     <item>
-      <title>프로그래머스-해시-베스트 앨범</title>
-      <link>https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/</link>
-      <pubDate>Mon, 14 Feb 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/</guid>
-      <description>[프로그래머스-해시-베스트 앨범(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42579  실패한 첫 시도 from collections import defaultdict def solution(genres, plays): d = defaultdict(list) for i in range(len(genres)): d[genres[i]].append((plays[i], i)) for i in d.keys(): d[i].sort(key=lambda x : (-x[0], x[1])) nd = sorted(list(d.keys()), key = lambda c: list(map(lambda i: i[0], d[c])), reverse=True) return [y[1] for x in [d[g][:2] for g in nd] for y in x] 셀프 피드백  defaultdict를 사용했다. nd 변수 라인의 가독성이 떨어진다. 5~14번 테스트 케이스가 실패한다.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스-해시-위장</title>
-      <link>https://xfrnk2.github.io/programmers/hash_camouflage_lv2/</link>
-      <pubDate>Fri, 04 Feb 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/hash_camouflage_lv2/</guid>
-      <description>[프로그래머스-해시-위장(으)로 이동](https://programmers.co.kr/learn/courses/30/lessons/42578  실패한 첫 시도  첫 시도에 방법이 떠오르지 않아 1-2시간 가량 고민 후 검색해 나온 결과를 참고하였다.  첫번째로 작성한 통과 코드 def solution(clothes): answer = 1 clothes_count = {} for item, category in clothes: if category not in clothes_count: clothes_count[category] = 2 continue clothes_count[category] += 1 for num in clothes_count.values(): answer *= num return answer - 1  각 종류별 옷을 착용하지 않는 경우를 생각해서 1을 더해주었고, 최종적으로 모두 입지 않는 경우를 제하기 위해 1을 빼 주었다.</description>
-    </item>
-    
-    <item>
       <title>mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</title>
       <link>https://xfrnk2.github.io/terminal/mkdir_p_option/</link>
       <pubDate>Tue, 01 Feb 2022 21:18:34 +0900</pubDate>
@@ -244,24 +192,6 @@ https://howtosanta.com/korea/cloudformation%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98
     </item>
     
     <item>
-      <title>프로그래머스-해시-전화번호 목록</title>
-      <link>https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/</link>
-      <pubDate>Thu, 27 Jan 2022 14:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/</guid>
-      <description>프로그래머스-해시-전화번호 목록(으)로 이동  실패한 첫 시도 phone_book.sort(key=len) for i in range(len(phone_book)): for j in range(i+1, len(phone_book): ... 셀프 피드백  막연한 생각으로 len 기준으로 정렬을 사용했다. for문이 2중이기 때문에 효율성 실패가 나왔다.   고민 끝에 다른 풀이를 참고하도록 했다.  hash() 함수 또는 해시 자료구조(dictionary)를 쓰기위해 고민했는데 좀처럼 좋은 방법을 찾지 못했다.   문자열을 소팅했을때 일어나는 변화 &amp;gt;&amp;gt;&amp;gt; a = [&amp;quot;1225&amp;quot;, &amp;quot;123&amp;quot;, &amp;quot;12348&amp;quot;, &amp;quot;012&amp;quot;, &amp;quot;012222&amp;quot;, &amp;quot;12448&amp;quot;] &amp;gt;&amp;gt;&amp;gt; a.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스-해시-완주하지 못한 선수</title>
-      <link>https://xfrnk2.github.io/programmers/hash_marathon_lv1/</link>
-      <pubDate>Wed, 26 Jan 2022 19:15:16 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/hash_marathon_lv1/</guid>
-      <description>프로그래머스-해시-완주하지 못한 선수로 이동  첫 성공시도 def solution(participant, completion): answer = &amp;quot;&amp;quot; counts = dict() for i in completion: counts[i] = counts.get(i, 0) + 1 for name in participant: value = counts.get(name) if value == None or value &amp;lt;= 0: answer = name break counts[name] -= 1 return answer 셀프 피드백  복잡하다. 더 간단히 할 수는 없을까?   두번째 성공시도 from collections import Counter def solution(participant, completion): i = iter((Counter(participant) - Counter(completion)).</description>
-    </item>
-    
-    <item>
       <title>2021 우아한 테크코스 4기 프리코스 후기</title>
       <link>https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/</link>
       <pubDate>Sat, 18 Dec 2021 00:20:30 +0900</pubDate>
@@ -287,75 +217,12 @@ https://howtosanta.com/korea/cloudformation%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98
     </item>
     
     <item>
-      <title>프로그래머스 DFS/BFS - 문자열 변환</title>
-      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</link>
-      <pubDate>Tue, 02 Nov 2021 15:53:47 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</guid>
-      <description>from collections import deque def solution(begin, target, words): def check(s1, s2): res = 0 for i in range(len(s1)): if s1[i] == s2[i]: res += 1 if res &amp;gt;= len(s1) - 1: return True return False queue = deque() queue.append([begin, words, 0]) while queue: value, path, c = queue.popleft() if value == target: return c for i, j in enumerate(path): if check(value, j): new_path = path[:] new_value = new_path.pop(i) queue.append([new_value, new_path, c + 1]) return ans 한마디  이틀이나 잡아먹은 문제이다.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 완전탐색 - 모의 고사</title>
-      <link>https://xfrnk2.github.io/programmers/brute_force_mock_test/</link>
-      <pubDate>Tue, 02 Nov 2021 15:52:46 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/brute_force_mock_test/</guid>
-      <description>def solution(answers): N = len(answers) d1 = [1, 2, 3, 4, 5] * (N // 5 + 1) d2 = [2, 1, 2, 3, 2, 4, 2, 5] * (N // 8 + 1) d3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5] * (N // 10 + 1) user = [0] * 3 for i in range(len(answers)): if d1[i] == answers[i]: user[0] += 1 if d2[i] == answers[i]: user[1] += 1 if d3[i] == answers[i]: user[2] += 1 m = max(user) ans = [] for i, u in enumerate(user): if u == m: ans.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 DFS/BFS - 여행 경로</title>
-      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</link>
-      <pubDate>Tue, 02 Nov 2021 15:52:45 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</guid>
-      <description>from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].append(destination) return graph def dfs(): stack = [&#39;ICN&#39;] path = [] while len(stack) &amp;gt; 0: top = stack[-1] if top not in routes or len(routes[top]) == 0: path.append(stack.pop()) else: stack.append(routes[top].pop(0)) return path[::-1] routes = init_graph() for r in routes: routes[r].sort() answer = dfs() return answer # 재귀를 사용한 풀이 - 조금의 비교(참고 코드)를 거쳐 가며 손코딩 from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 DFS/BFS - 타겟 넘버</title>
-      <link>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</link>
-      <pubDate>Tue, 02 Nov 2021 15:52:44 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</guid>
-      <description># lv2 # dfs def solution(numbers, target): ans = 0 def func(num, level): nonlocal ans if level == len(numbers): if target == num: ans += 1 return if level == 1: func(- num + numbers[level], level + 1) func(- num - numbers[level], level + 1) func(num + numbers[level], level + 1) func(num - numbers[level], level + 1) func(numbers[0], 1) return ans # bfs from collections import deque def solution(numbers, target): ans = 0 queue = deque() queue.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 DFS/BFS - 네트워크</title>
-      <link>https://xfrnk2.github.io/programmers/dfsbfs_network/</link>
-      <pubDate>Tue, 02 Nov 2021 15:52:43 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/dfsbfs_network/</guid>
-      <description># lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 </description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 완전탐색 - 소수 찾기</title>
-      <link>https://xfrnk2.github.io/programmers/brute_force_decimal_search/</link>
-      <pubDate>Tue, 02 Nov 2021 15:52:40 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/brute_force_decimal_search/</guid>
-      <description>from itertools import permutations def solution(numbers): ans = 0 container = [] for i in range(1, len(numbers) + 1): dp = ((permutations(numbers, i))) for d in dp: container.append(int(&#39;&#39;.join(d))) container = set(container) def check(n): if n &amp;lt;= 1: return True t = 2 t2 = n ** 0.5 while t &amp;lt;= t2: if n % t == 0: return True t += 1 return False for n in container: if not check(n): ans += 1 return ans 한마디  배울 수 있었던 것 : 조합을 구하는 방법과 처리 (여러번을 해도 숙달되지 않은 상황이다.</description>
-    </item>
-    
-    <item>
       <title>21.10.01-21.10.31_WIL(4 Weeks)</title>
       <link>https://xfrnk2.github.io/til/211001-211031/</link>
       <pubDate>Sun, 31 Oct 2021 00:20:30 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/til/211001-211031/</guid>
       <description>계획했던 일  CS 이론 학습 문제 해결과 알고리즘 풀이 SQL 문법 숙달을 위한 실습   지난 4 Weeks 동안 한 일  정보처리기사 실기를 약 10일동안 준비했다. 가채점 결과 합격 예상! 학교 과제를 여전히 하고 있으며 실용적 배움을 위해 새롭게 듣게된 데이터통계학과 과목 실습에 예상이상의 시간이 소요되고 있다. 특히 R과 파이썬으로 통계 시각화하는 작업. 문제 풀이와 알고리즘 학습을 dps/bps 위주로 진행하였고 최단경로 알고리즘 또한 문제를 풀이했다. 출결관리 웹페이지의 access token 생성 후 인증 절차를 만들어서 기밀성을 높였다.</description>
-    </item>
-    
-    <item>
-      <title>프로그래머스 스킬체크 Lv2_211024</title>
-      <link>https://xfrnk2.github.io/programmers/skillchecklv2/</link>
-      <pubDate>Sun, 24 Oct 2021 14:52:46 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/skillchecklv2/</guid>
-      <description>1번 문제 성공 실패 결정 요인: 좌표1=(x1, y1) &amp;lt; 좌표2=(x2, y2)가 보장되어야 하고, * 집합은 ((0, 0), (1, 1))과 ((1, 1), (0, 0))을 다른 요소로 취급한다. def solution(dirs): curX = 0 curY = 0 visits = set() for d in dirs: if d == &#39;U&#39; and curY &amp;lt; 5: visits.add(((curY, curX),(curY + 1, curX))) curY += 1 elif d == &#39;D&#39; and curY &amp;gt; -5: visits.add(((curY - 1, curX),(curY, curX))) curY -= 1 elif d == &#39;R&#39; and curX &amp;lt; 5: visits.</description>
     </item>
     
     <item>
@@ -2238,16 +2105,6 @@ https://stackoverflow.com/questions/51671699/data-classes-vs-typing-namedtuple-p
     </item>
     
     <item>
-      <title>프로그래머스-정렬-가장 큰 수[정렬]</title>
-      <link>https://xfrnk2.github.io/programmers/the_biggest_number/</link>
-      <pubDate>Tue, 13 Oct 2020 15:52:46 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/programmers/the_biggest_number/</guid>
-      <description>프로그래머스-정렬-가장 큰 수[정렬]문제 바로가기  나의 파이썬 풀이 def solution(numbers): numbers = map(str, numbers) answer = &#39;&#39;.join(sorted(numbers, reverse=True, key=lambda n: (n[0], n[1 % len(n)], n[2 % len(n)], n[3 % len(n)]))) return answer if int(answer) else &#39;0&#39;  Javascript 풀이 해석  친구 말로는 해당 문제의 블로그 등 온라인 상의 Javascript 풀이의 100% 아래와 같은 형태를 하고 있는데, sort 함수의 (b+a)-(a+b)가 이해가 어렵다고 하여 어떻게 설명할 수 있을지 알아보게 되었다.
- function solution(numbers) { var answer = numbers.</description>
-    </item>
-    
-    <item>
       <title>20.10.12_TIL</title>
       <link>https://xfrnk2.github.io/til/20.10.12/</link>
       <pubDate>Mon, 12 Oct 2020 23:41:29 +0900</pubDate>
@@ -3891,33 +3748,6 @@ https://docs.python.org/ko/3/using/cmdline.html   내일 할 일  Django 서버�
     </item>
     
     <item>
-      <title>BOJ-1991-트리순회[트리순회]</title>
-      <link>https://xfrnk2.github.io/boj/1991/</link>
-      <pubDate>Thu, 14 May 2020 18:22:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/1991/</guid>
-      <description>BOJ-1991-트리순회 문제 바로가기  나의 풀이 def pre_order(node): print(node.item, end=&#39;&#39;) if node.left_child != &#39;.&#39;: pre_order(tree[node.left_child]) if node.right_child != &#39;.&#39;: pre_order(tree[node.right_child]) def in_order(node): if node.left_child != &#39;.&#39;: in_order(tree[node.left_child]) print(node.item, end=&#39;&#39;) if node.right_child != &#39;.&#39;: in_order(tree[node.right_child]) def post_order(node): if node.left_child != &#39;.&#39;: post_order(tree[node.left_child]) if node.right_child != &#39;.&#39;: post_order(tree[node.right_child]) print(node.item, end=&#39;&#39;) class Node: def __init__(self, item, left_child, right_child): self.item = item self.left_child = left_child self.right_child = right_child if __name__ == &#39;__main__&#39;: tree = {} for _ in range(int(input())): data = input().</description>
-    </item>
-    
-    <item>
-      <title>BOJ-10814-나이순 정렬[정렬]</title>
-      <link>https://xfrnk2.github.io/boj/10814/</link>
-      <pubDate>Thu, 14 May 2020 18:21:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/10814/</guid>
-      <description>BOJ-10814-나이순 정렬 문제 바로가기  나의 풀이 from operator import itemgetter arr = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split()))+[i] for i in range(int(input()))] arr.sort(key=itemgetter(0, 2)) for x in arr: print(f&amp;quot;{x[0]} {x[1]}&amp;quot;) 순서  정수인지 확인해서 정수인 경우 int와 매핑 인덱스를 값 후열에 추가 1순위를 나이 기준, 2순위를 생성된 순서(=인덱스)로 정렬 나이와 이름 출력  방법  정수 확인을 isdecimal()을 사용 -&amp;gt;[참고링크 바로가기] operator.itemgetter를 사용, lambda 함수도 사용 가능  </description>
-    </item>
-    
-    <item>
-      <title>BOJ-18870-좌표압축[알고리즘]</title>
-      <link>https://xfrnk2.github.io/boj/18870/</link>
-      <pubDate>Thu, 14 May 2020 18:20:50 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/18870/</guid>
-      <description>BOJ-18870-좌표압축 문제 바로가기  나의 풀이 input() arr = list(map(int, input().split())) values_by_key = {} for i,j in enumerate(sorted(set(arr))): values_by_key[j] = i for x in arr: print(values_by_key[x], end=&#39; &#39;) 생각  중복값을 제거하고 컨테이너로 어떻게 전달할까?  순서  중복값 제거한 오름차순 정렬이 된 리스트를 순회 값을 키로, 인덱스를 해당 값의 값으로 저장 초기 리스트 순회하여 저장한 컨테이너로부터 찾아내서 출력  방법  set()으로 중복값 제거, list로 형변환 딕셔너리 사용  </description>
-    </item>
-    
-    <item>
       <title>20.05.13_TIL</title>
       <link>https://xfrnk2.github.io/til/20.05.13/</link>
       <pubDate>Wed, 13 May 2020 23:48:41 +0900</pubDate>
@@ -3960,15 +3790,6 @@ https://docs.python.org/ko/3/using/cmdline.html   내일 할 일  Django 서버�
       
       <guid>https://xfrnk2.github.io/til/20.05.09/</guid>
       <description> 데이터베이스 시스템 공부하기 데이터베이스 시스템 과목 과제 하기 독서하기 지나간 공부했던 내용들 복습하기(알고리즘 등)   오늘 한 일  소화기가 좋지 못해 산에 혼자 다녀왔다. 데이터베이스 시스템 - 관계형 모델의 강의를 3분의 2 시청하고 중요한 내용을 노트에 정리했다. 이전에 푼 백준(4949) 알고리즘 문제를 블로그에 올리며 정리했다.   내일 할 일  데이터베이스 시스템 과목 공부와 과제 하기 건강 신경쓰기  </description>
-    </item>
-    
-    <item>
-      <title>BOJ-4949-균형잡힌 세상[문자열 처리]</title>
-      <link>https://xfrnk2.github.io/boj/4949/</link>
-      <pubDate>Sat, 09 May 2020 00:48:07 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/4949/</guid>
-      <description>BOJ-4949-균형잡힌 세상 문제 바로가기  나의 풀이 def get_result(sentence: str) -&amp;gt; bool: bracket_stack = [] for s in sentence: if s.isalpha(): continue elif s == &amp;quot;(&amp;quot;: bracket_stack.append(1) elif s == &amp;quot;[&amp;quot;: bracket_stack.append(0) elif s == &amp;quot;)&amp;quot; or s == &amp;quot;]&amp;quot;: try: if bracket_stack[-1] == 0 and s == &amp;quot;)&amp;quot;: return False elif bracket_stack[-1] == 1 and s == &amp;quot;]&amp;quot;: return False bracket_stack.pop() except IndexError: return False return not bracket_stack if __name__ == &#39;__main__&#39;: sentence_list = [] while True: get_input = input() if get_input == &#39;.</description>
     </item>
     
     <item>
@@ -4249,15 +4070,6 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
     </item>
     
     <item>
-      <title>BOJ-10825-국영수[정렬]</title>
-      <link>https://xfrnk2.github.io/boj/10825/</link>
-      <pubDate>Tue, 21 Apr 2020 00:55:42 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/10825/</guid>
-      <description>BOJ-10825-국영수 문제 바로가기  나의 풀이 student_list = [list(map(lambda x: int(x) if x.isdecimal() else x, input().split())) for _ in range(int(input()))] student_list.sort(key=lambda student: (-student[1], student[2], -student[3], student[0])) for x in student_list: print(x[0]) 생각  operator.itemgetter도 이용할수 있을까? 정수판별을 위해서 어떤 함수를 사용하는게 적절할까?  순서  input값의 문자열이 정수일 경우 정수화 정렬 실행 0번째 인덱스에 위치한 학생의 이름을 출력  방법  정수 판별을 위해 isdecimal 이용 lambda함수를 이용 정렬하고자 하는 인덱스를 역순으로 정렬하기 위해 머리부분에 -를 붙임.</description>
-    </item>
-    
-    <item>
       <title>20.04.20_TIL</title>
       <link>https://xfrnk2.github.io/til/20.04.20/</link>
       <pubDate>Mon, 20 Apr 2020 00:56:38 +0900</pubDate>
@@ -4266,16 +4078,6 @@ ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining�
       <description>생각보다 책을 오래 읽었다. 이제 절반정도 읽었다. 읽으면서 차츰차츰 네트워크의 구조가 인지되고 그려진다. 다 읽을때 즈음에는 보다 선명하게 머릿속에 남아있으면 좋겠다. 기술서적은 한번 보고 끝나는게 아니라 보고 또 보면서 머릿속에 구조를 각인시켜야 좋은 것 같다. 책을 읽다보니 반성이 된다.
 블로그 글을 작성하기 앞서 블로그 템플릿에 익숙하지 못한 관계로 올리고 싶은 이미지를 올릴 수 없었다. 어차피 블로그를 운영하려면 계속 배울 수 밖에 없다. 그래도 재밌다.
 배웠던 DjangoAdmin의 기능을 문서로 정리해서 글을 작성하였다.</description>
-    </item>
-    
-    <item>
-      <title>BOJ-1026-보물[정렬]</title>
-      <link>https://xfrnk2.github.io/boj/1026/</link>
-      <pubDate>Mon, 20 Apr 2020 00:22:17 +0900</pubDate>
-      
-      <guid>https://xfrnk2.github.io/boj/1026/</guid>
-      <description>BOJ-1026-보물 문제 바로가기  나의 풀이1 get_input = lambda:sorted(map(int, input().split())) get_input() print(sum(list(map(lambda x, y : x * y, get_input(), get_input()[::-1])))) 나의 풀이2 get_input = lambda:sorted(map(int, input().split())) get_input() print(sum(x*y for x, y in zip(get_input(), get_input()[::-1]))) 생각 reverse로 정렬하기보다 더 좋은방법이 없나 찾아본 결과 [::-1]이 가장 좋아보였다.
-순서  정렬된 리스트를 얻어오는 함수를 작성 B를 역순으로 정렬 A와 B의 각각의 원소들을 곱한 리스트를 구한다. 구해진 리스트의 값을을 모두 더한 값을 반환한다.  방법  list와 map, lambda 함수를 이용해서 구현해 보았다.</description>
     </item>
     
     <item>

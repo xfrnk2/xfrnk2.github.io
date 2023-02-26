@@ -137,7 +137,7 @@
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.08/">
+            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -146,97 +146,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.08/">
-            20.08.08_TIL
+        <a href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/">
+            Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까? &lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt;
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-08</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)   오늘 한 일  어제 겪던 에러의 상황과 해결한 내용에 대해서 포스팅했다.   내일 할 일  충분히 쉬기 Django 로그인과 회원가입 공부  
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
-            Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-08-08</span>
+                <span class="date moment">2020-07-29</span>
             
         
 
@@ -264,12 +182,11 @@
     </div>
 
     
-        발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
- 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
-SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net' EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey' EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &gt;&gt;&gt; from django.core.mail import send_mail &gt;&gt;&gt; send_mail('Subject here', 'Here is the message.
+        Travis-ci에서 python venv 실행시 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서, 이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.
+ Windows는 나의 지정 경로에 python이 설치 되어 있었고, 내가 사용하지 않는 Linux에서는 python의 설치된 경로가 &lsquo;usr/local/python&rsquo; 인 것으로 알게 되었기 때문이다. 그래서 환경 변수를 dockerfile에서 어떻게 다루는가에 대해 알아보게 됬는데&hellip;
 
         
-            <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/" class="more">Continue reading</a>
         
     
 </div>
@@ -305,7 +222,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.07/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.29/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -314,15 +231,15 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.07/">
-            20.08.07_TIL
+        <a href="https://xfrnk2.github.io/til/20.07.29/">
+            20.07.29_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-07</span>
+                <span class="date moment">2020-07-29</span>
             
         
 
@@ -350,9 +267,10 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
     </div>
 
     
-        계획했던 일  코딩하기 django 프로젝트 계획하기   오늘 한 일  python 다른사람의 코드들을 읽었다. @abstractmethod, super()에 대한 내용을 이해했다. 아직 써본적이 없으니 이후 꼭 써보려고 한다. Sendgrid를 가지고 다수의 사람들에게 전체 메일을 보낼수 있도록 했다.
-“smtplib.SMTPServerDisconnected: Connection unexpectedly closed”.
-이런 에러가 있었는데 이것을 해결한 것에 대한 내용은 이외의 포스팅에서 다룰 예정이다. 이전에 배웠던 Django를 복습했다. Django를 다뤄본지 너무 오래 되서 기억이 날듯 말듯 했기 때문이다.   내일 할 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)  
+        계획했던 일  Django 서버를 도커를 사용해서 띄우기 -r, -e의 의미 알기   오늘 한 일  집 청소에 많은 시간을 썼다. 삽질하고, 삽질한 기록을 올렸다.
+Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까?
+&lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt; (https://xfrnk2.github.io/sabjil_recording/docker_is_based_on_linux/) -r, -e의 의미에 대해 읽었다. 아는듯 하면 확실히 알지 못하고 넘어가는 때가 많아서 생각보다 자주 오는 곳.
+https://docs.python.org/ko/3/using/cmdline.html   내일 할 일  Django 서버를 도커를 사용해서 띄우기  
 
         
     
@@ -389,7 +307,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.06/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.28/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -398,15 +316,15 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.06/">
-            20.08.06_TIL
+        <a href="https://xfrnk2.github.io/til/20.07.28/">
+            20.07.28_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-06</span>
+                <span class="date moment">2020-07-28</span>
             
         
 
@@ -434,7 +352,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
     </div>
 
     
-        계획했던 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속   오늘 한 일  한의원에 다녀왔다. 레스토랑 시뮬레이션 코딩을 목표로 타이머 기능의 구현을 위해서 연습용 코드를 짰다.   내일 할 일  코딩하기 django 프로젝트 계획하기  
+        계획했던 일  Django 서버를 도커를 사용해서 띄우기 코딩하기   오늘 한 일  docer의 구조와 사용 용도 등 전반적인 맥락에 대해 공부했다. WORKDIR의 경로는 어디이고, 왜 필요한지에 대해 궁금했었고 나름의 답을 얻었다. dockerfile을 작성중이다. Dockerfile 모범사례 참고   내일 할 일  Django 서버를 도커를 사용해서 띄우기 -r, -e의 의미 알기  
 
         
     
@@ -471,7 +389,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/til/20.08.05/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.27/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -480,15 +398,15 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.05/">
-            20.08.05_TIL
+        <a href="https://xfrnk2.github.io/til/20.07.27/">
+            20.07.27_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-05</span>
+                <span class="date moment">2020-07-27</span>
             
         
 
@@ -516,11 +434,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
     </div>
 
     
-        계획했던 일  docker를 배운 내용을 블로그에 포스팅하기위한 과정 정리해서 글 쓰기   오늘 한 일  승모근에 담이 왔는데 그 통증이 심해서 한의원에 가서 침을 맞았다. 그동안 docker를 공부하면서 해왔던 것들에 대해서 정리한 글을 썼다.
-▶ [MYSQL] ERROR: AUTHENTICATION PLUGIN ‘CACHING_SHA2_PASSWORD’ CANNOT BE LOADED 해결
-▶ [DOCKER]DOCKER-COMPOSE을 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동
-▶ [DOCKER] 컨테이너 내 MYSQL서버에 접근하는 방법
-▶ [DOCKER] NETWORK를 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동   내일 할 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속  
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  Django와 Mysql을 연동해서 서버를 올렸다.   내일 할 일  Django 서버를 도커를 사용해서 띄우기 코딩하기  
 
         
     
@@ -557,7 +471,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.26/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -566,15 +480,15 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
-            [Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동
+        <a href="https://xfrnk2.github.io/til/20.07.26/">
+            20.07.26_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-05</span>
+                <span class="date moment">2020-07-26</span>
             
         
 
@@ -585,7 +499,7 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                     
                 
             </span>
@@ -602,15 +516,8 @@ SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net
     </div>
 
     
-        1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
-docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
- 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
-docker network connect (network) (container) ▶ network 조회:
-docker network ls ▶ container 조회:
-docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  이전 뿌요뿌요의 소스코드를 가지고 타이머 기능만을 추출했다.   내일 할 일  도커(docker)를 설치하고 도커 사용법 익히기 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기  
 
-        
-            <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/" class="more">Continue reading</a>
         
     
 </div>
@@ -626,7 +533,7 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                     
                 
             </div>
@@ -646,7 +553,7 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.25/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -655,15 +562,15 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
-            [Docker] 컨테이너 내 Mysql서버에 접근하는 방법
+        <a href="https://xfrnk2.github.io/til/20.07.25/">
+            20.07.25_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-05</span>
+                <span class="date moment">2020-07-25</span>
             
         
 
@@ -674,7 +581,7 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                     
                 
             </span>
@@ -691,15 +598,10 @@ docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwo
     </div>
 
     
-        1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
-▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
-mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
- 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
-docker exec -it (container id) bash ▶ 커맨드 입력
-mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  Docker 홈페이지의 튜토리얼을 모두 마치고, 공식문서를 참고해 django 서버를 띄우는 일을 조금 연습했다. 아직 연습하는 중이다. db와의 연동을 위해 Mysql을 설치했다. Mysql 자체를 사용해본 적이 없어서 Mysql 설치부터 기초 사용 방법과 Django 연동 방법에 관한 내용을 배우는 중이다. 어떤 형태로 올리는 서버를 방법들이 있는지 직접 구현해 보자.
 
         
-            <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.07.25/" class="more">Continue reading</a>
         
     
 </div>
@@ -715,7 +617,89 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/20.07.24/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/20.07.24/">
+            20.07.24_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-07-24</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  Docker 공식문서의 튜토리얼 multi container apps 과정을 진행중이다. 대수로운 진도를 못나갔다.   내일 할 일  도커(docker)를 설치하고 도커 사용법 익히기 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                     
                 
             </div>
@@ -775,15 +759,15 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -806,16 +790,6 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -828,6 +802,16 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>

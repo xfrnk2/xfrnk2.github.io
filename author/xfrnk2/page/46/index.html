@@ -121,7 +121,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.23/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -130,194 +130,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
-            [Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동
+        <a href="https://xfrnk2.github.io/til/20.07.23/">
+            20.07.23_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-05</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        ▶ docker-compose에 대한 공식 문서 링크
- 1. 파일 생성 및 작성 dockerfile,
-docker-compose.xml,
-requirements.txt
-각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
-기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
-▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
-
-        
-            <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/">
-            [MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-08-05</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/mysql/">mysql</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        ▶ MySQL 8.0부터는 default_authentication_plugin 이 mysql_native_password 에서 caching_sha2_password 로 변경되었는데, 강화된 보안 체계로 인해 외부 어플리케이션에서 사용되는 mysql 관련 모듈이 mysql 8.x 의 기본 값으로 설정된 패스워드 보안 알고리즘을 맞추지 못하여 발생하는 에러이니 mysql 인스턴스 전체에 영향을 주지 않는 방법으로 사용자 단위로 패스워드 보안 정책을 변경하는 편이 가장 좋다고 한다.
-▶ stackoverflow를 검색해보면 바로 나오는 것들이지만 빠르게 찾아보기 용이하게 하기 위해 간단히 방법만을 기록해 둡니다. 아래 방법중 어느것인가를 사용하면 에러를 해결했던 것 같습니다.
-
-        
-            <a href="https://xfrnk2.github.io/mysql/mysql_error_default_authentication_plugin/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/database/">database</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/mysql/">Mysql</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/error/">Error</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.04/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.04/">
-            20.08.04_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-08-04</span>
+                <span class="date moment">2020-07-23</span>
             
         
 
@@ -345,10 +166,8 @@ requirements.txt
     </div>
 
     
-        계획했던 일  어제 진행중이던 것 마저 해결하기 docker를 배운 내용을 블로그에 포스팅하기위한 과정 정리해서 글 쓰기   오늘 한 일  osi 7계층 관련 정보(위키백과, 나무위키, 블로그 등) 읽기 CLI를 이용해서 Git을 사용하는 연습을 했다. commit, reset, revert, merge, rebase 커맨드를 이용한 작업을 연습했고, merge와 rebase 사용시 conflict가 일어날 수 있는 경우도 실험하고 연습했다. rebase의 경우 conflict가 일어나면 현재 변경사항과 수신 변경사항의 위치가 역전되는것을 보고 의아해 했는데, 이것은 rebase 도중에 rebase의 기준이 되는 master 브랜치로 head가 옮겨지면서 나타나는 현상임을 인터넷 검색을 통해 알았고 납득이 되었다.
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  수강신청을 했다. Docker 공식문서의 튜토리얼 어제의 배운 내용을 복습하고 bind mount~multi container apps를 진행중이다.   내일 할 일  도커(docker)를 설치하고 도커 사용법 익히기 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기  
 
-        
-            <a href="https://xfrnk2.github.io/til/20.08.04/" class="more">Continue reading</a>
         
     
 </div>
@@ -381,7 +200,7 @@ requirements.txt
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.03/">
+                <a class="bubble" href="https://xfrnk2.github.io/it-voca/it_voca/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -390,15 +209,99 @@ requirements.txt
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.03/">
-            20.08.03_TIL
+        <a href="https://xfrnk2.github.io/it-voca/it_voca/">
+            IT 용어 정리
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-03</span>
+                <span class="date moment">2020-07-23</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/it-voca/">IT-Voca</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        새롭게 알게된 IT용어와 관련 영어 어휘들을 정리하기 위한 문서이며 계속해서 업데이트할 예정입니다. 기록한 시간 순서로 나열합니다.
+   GPU (Grapic Processing Unit) : 그래픽 처리 장치
+  container : 코드와 모든 종속성을 패키지화하는 표준 소프트웨어의 단위, 컨테이너 이미지는 런타임에 컨테이너가 된다. docker 컨테이너의 경우 docker 엔진에서 실행될 때 컨테이너가 된다.
+   특징 : (표준, 경량, 균일)     한 어플리케이션을 사용하기 위한 모든 것을 포함한다.
+
+        
+            <a href="https://xfrnk2.github.io/it-voca/it_voca/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/it-voca/">IT-Voca</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.22/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/20.07.22/">
+            20.07.22_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-07-22</span>
             
         
 
@@ -426,10 +329,8 @@ requirements.txt
     </div>
 
     
-        계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  앞으로 4개월간 단기 아르바이트를 시작하여 오늘 첫 출근이었다. 집에서 거리가 멀어 제법 시간이 소요되었다. 빅터 프랭클의 죽음의 수용소에서를 틈틈이 읽어서 현재 50%정도 읽었다. &ndash;network 기능을 공부했고, 하나의 network 안에 mysql container와 django의 container를 넣어서 연동하는 작업을 무사히 성공시켰다.   일단은 성공한 상태인데 포트의 충돌이 원인인지, 어떤 이유인진 몰라도 mysql workbench가 정상실행되지 않는다. 정상실행되도록 하여 커넥션에 추가하여 연결하고 정상적으로 migration이 되었는지 확인만 하면 진짜 마무리가 된다.
+        계획했던 일  도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  Docker 공식문서의 튜토리얼을 50%(5/10단계) 진행했다. 영어공부는 덤.. 튜토리얼을 마치면 Django를 실행해볼 예정이다.   내일 할 일  도커(docker)를 설치하고 도커 사용법 익히기 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 시간이 날 때 브레센헴 알고리즘 관련 포스팅 하기  
 
-        
-            <a href="https://xfrnk2.github.io/til/20.08.03/" class="more">Continue reading</a>
         
     
 </div>
@@ -462,7 +363,7 @@ requirements.txt
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.02/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.21/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -471,15 +372,15 @@ requirements.txt
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.02/">
-            20.08.02_TIL
+        <a href="https://xfrnk2.github.io/til/20.07.21/">
+            20.07.21_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-02</span>
+                <span class="date moment">2020-07-21</span>
             
         
 
@@ -507,11 +408,10 @@ requirements.txt
     </div>
 
     
-        계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  docker-compose를 이용해서 mysql container와 mysql django container를 올리는 작업에 성공했다.
- &lt;알게된 과정&gt;  로컬의 mysql서버와 연동하는것은 이 이후의 작업들에 비해서 수고스럽지 않았다. docker container에 django 서버를 올려서 로컬의 mysql에 연동시켰다. docker container에 django 서버와 mysql 서버를 동시에 올리려고 하는데 방법을 몰라 찾아보는 시간이 길었던 것 같다. &ndash;link 또는 &ndash;network 기능을 사용해야되는것처럼 보여서 공식문서를 따라갔는데 습득과 적용이 잘 되지 않아 docker-compose를 배우는 쪽으로 방향을 틀었다.
+        계획했던 일  즐거운 마음으로 서울대입구역 알고리즘 스터디모임 첫참가 하기 어디에서나 서버 띄우는 것을 목표로 도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기 브레센헴 알고리즘 관련 포스팅 하기   오늘 한 일  프로그래머스 lv2 문제 프린터 문제를 풀었다. 사실상 스터디 모임 참가를 위해 알고리즘 문제를 푸는 일을 우선하다가 시간을 이미 사용해버려서 지하철 이동하면서 오가는 길에 도커가 무엇이고 컨테이너가 무엇인지 읽었다. 알고리즘 스터디 모임에 처음 참여했는데 생각이상으로 즐거웠고 모두 좋은 분들이었다.
 
         
-            <a href="https://xfrnk2.github.io/til/20.08.02/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.07.21/" class="more">Continue reading</a>
         
     
 </div>
@@ -544,7 +444,7 @@ requirements.txt
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.01/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.20/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -553,15 +453,15 @@ requirements.txt
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.01/">
-            20.08.01_TIL
+        <a href="https://xfrnk2.github.io/til/20.07.20/">
+            20.07.20_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-01</span>
+                <span class="date moment">2020-07-20</span>
             
         
 
@@ -589,10 +489,12 @@ requirements.txt
     </div>
 
     
-        계획했던 일  에러 해결하기  django.db.utils.OperationalError: (2002, &quot;Can't connect to MySQL server on '127.0.0.1' (115)&quot;)  오늘 한 일  mysql workbench 사용법과 mysql 커맨드, docker run의 flag 등을 배우고 익혔다. 결국 docker 컨테이너 두 곳에 django과 mysql를 각각 실행시켜 놓고 각 docker끼리 연결시켜야 되는것이 아닌가 생각이 기울었다. 그러나 여전히 삽질중. 어제 간단히 간추렸던 생각들이 가리키는대로 차례로 따라서 해보았다. &ndash;link는 예전 방식이기 때문에 &ndash;network를 쓰라고 하는데 network에 관한 문서나 지금까지 찾아본 자료들로는 곧바로 적용시키는 것이 어려웠던 편이다.
+        계획했던 일  브레센헴 알고리즘 관련 포스팅 하기 어디에서나 서버 띄우는 것을 목표로 도커(docker)를 설치하고 도커 사용법 익히기 만드는 중이었던 뿌요뿌요 또는 레스토랑 시뮬레이션 프로그램 코딩하기   오늘 한 일   프로그래머스 lv2 문제 프린터를 풀었다.
+  코딩 테스트 연습문제를 풀면서 들었던 생각을 블로그에 포스팅했다.
+   도커를 학습하기 전 tdd에 대한 숙지와 이해를 가지고 시작해야겠다고 판단되어 이론적인 것을 보고, 그동안 pytest를 위해 만들고 방치해놓았던 파일들로부터 발생하는 오류를 해결하고 자동화를 위해 연결된 travis-ci에서 발생하는 에러도 해결하도록 했다.
 
         
-            <a href="https://xfrnk2.github.io/til/20.08.01/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.07.20/" class="more">Continue reading</a>
         
     
 </div>
@@ -625,7 +527,7 @@ requirements.txt
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.31/">
+                <a class="bubble" href="https://xfrnk2.github.io/fft/python-any/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -634,15 +536,105 @@ requirements.txt
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.07.31/">
-            20.07.31_TIL
+        <a href="https://xfrnk2.github.io/fft/python-any/">
+            FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-07-31</span>
+                <span class="date moment">2020-07-20</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        Foot For Thought : 생각할 거리, -를 줄여서 FFT-
+  생각해볼 거리를 정리해서 글로 올리자는 취지로 카테고리를 &lsquo;Food For Thought'라고 설정했다.ㅎㅎ
+&lsquo;Food For Thought'는 최근에 알게된 영어 표현으로 생각해볼 거리를 은유적으로 사용하는 범용적인 말이라고 한다.
+사실 블로그에 글을 올려야겠다 생각하면서도 지나고 나면 까먹기 때문에 이번만큼은 즉각 올리기로 마음먹고 글을 쓰는 중이다.
+ 각설하고, 본론으로 들어가자면 Python으로 코딩 테스트 연습 문제를 풀던 중에, &ldquo;원소 중 하나라도 크거나 작은 것이 있다면&quot;이라는 조건이 붙었을때 어떻게 하면 좋을지 생각해봤다.
+
+        
+            <a href="https://xfrnk2.github.io/fft/python-any/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                    
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/fft/">FFT</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.07.19/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/20.07.19/">
+            20.07.19_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-07-19</span>
             
         
 
@@ -670,11 +662,10 @@ requirements.txt
     </div>
 
     
-        계획했던 일  Django 서버를 도커를 사용해서 띄우기   오늘 한 일  영어 공부 Docker와 Mysql의 연동을 성공했지만 이 방법 저 방법으로 시도해보아도 자주 나타났던 에러.  . django.db.utils.OperationalError: (2002, &quot;Can't connect to MySQL server on '127.0.0.1' (115)&quot;) 시행착오를 반복하다가 해결이 안되어 작은 것 부터 해보기로 생각을 간추렸다.
- mysql과 django를 연동하는것은 무리가 없었다. mysql workbench 보는방법, 다루는 방법을 보다 자세하게 알기 mysql과 docker연동에 대해 무지함 -&gt; mysql 컨테이너와 djnago 컨테이너를 연결하기.
+        계획했던 일  Django 인스타그램 클론 프로젝트 AtoZ 진행하기 알고리즘 관련 블로그 포스팅 준비하기 Apachi와 Django 연동 시키기 프로그래머스 문제 풀기(멀쩡한 사각형)   오늘 한 일  프로그래머스 lv2 문제 멀쩡한 사각형 문제를 풀었다. 브레센헴 알고리즘에 대해 충분히 이해하였으니 이제 포스팅을 하면 된다. 영어 회화 표현 6개를 공부하고 라이브 아카데미의 동영상을 보며 섀도잉과 스피킹 연습을 했다. 이전까지 묵혀두었던 계획한 일들에 더하여 현재 우선시 해야하는 일을 두고 순위를 매겨서 내일 할 일을 계획했다.
 
         
-            <a href="https://xfrnk2.github.io/til/20.07.31/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/til/20.07.19/" class="more">Continue reading</a>
         
     
 </div>
@@ -748,15 +739,15 @@ requirements.txt
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -779,16 +770,6 @@ requirements.txt
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -801,6 +782,16 @@ requirements.txt
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>

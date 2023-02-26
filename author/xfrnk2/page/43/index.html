@@ -121,7 +121,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.22/">
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -130,15 +130,98 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.22/">
-            20.08.22_TIL
+        <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/">
+            Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-22</span>
+                <span class="date moment">2020-08-08</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
+ 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다.  가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
+SENDGRID_API_KEY = os.getenv('SENDGRID_API_KEY') EMAIL_HOST = 'smtp.sendgrid.net' EMAIL_HOST_USER = 'apikey' # this is exactly the value 'apikey' EMAIL_HOST_PASSWORD = SENDGRID_API_KEY EMAIL_PORT = 587 EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다.  &gt;&gt;&gt; from django.core.mail import send_mail &gt;&gt;&gt; send_mail('Subject here', 'Here is the message.
+
+        
+            <a href="https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.07/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/20.08.07/">
+            20.08.07_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-08-07</span>
             
         
 
@@ -166,7 +249,9 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  레스토랑 시뮬레이션 요구 명세에 대한 질문에 대한 피드백을 받고 모호한 부분을 해결하기 위해 코딩을 했다. 해당 맹점 뿐만 아니라 설계를 고려하는데 시간을 많이 썼고 코딩은 3시간정도 했다.   내일 할 일  코딩하기  
+        계획했던 일  코딩하기 django 프로젝트 계획하기   오늘 한 일  python 다른사람의 코드들을 읽었다. @abstractmethod, super()에 대한 내용을 이해했다. 아직 써본적이 없으니 이후 꼭 써보려고 한다. Sendgrid를 가지고 다수의 사람들에게 전체 메일을 보낼수 있도록 했다.
+“smtplib.SMTPServerDisconnected: Connection unexpectedly closed”.
+이런 에러가 있었는데 이것을 해결한 것에 대한 내용은 이외의 포스팅에서 다룰 예정이다. 이전에 배웠던 Django를 복습했다. Django를 다뤄본지 너무 오래 되서 기억이 날듯 말듯 했기 때문이다.   내일 할 일  어제 겪던 에러 이후 상황을 정리해서 회원가입 후 환영 이메일 보내는 데까지 마무리 하기(Django)  
 
         
     
@@ -200,7 +285,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.21/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.06/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -209,15 +294,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.21/">
-            20.08.21_TIL
+        <a href="https://xfrnk2.github.io/til/20.08.06/">
+            20.08.06_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-21</span>
+                <span class="date moment">2020-08-06</span>
             
         
 
@@ -245,7 +330,7 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  컴퓨터 시스템(3판)책을 샀다. 컴퓨터 시스템 아키텍처 공부에 도움이 될만한 책을 고민하다가 괜찮다는 이야기를 들어서 구매했다. 레스토랑 시뮬레이션 - 새로 방문한 손님의 현재 운영상태를 고려한 대기시간을 구하는 부분에서 값이 음수가 나오는 버그가 발생&hellip; 그리고 다시 고치고 나서 보니, 명확하게 파악하지 못하고 모호하게 생각하고 있었던 부분이 있었던 것을 알았다. 이것에 대한 피드백을 받아 비교적 명쾌해졌으니 코딩으로 옮겨보는 시간을 가지려고 한다.   내일 할 일  코딩하기  
+        계획했던 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속   오늘 한 일  한의원에 다녀왔다. 레스토랑 시뮬레이션 코딩을 목표로 타이머 기능의 구현을 위해서 연습용 코드를 짰다.   내일 할 일  코딩하기 django 프로젝트 계획하기  
 
         
     
@@ -279,7 +364,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.20/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.05/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -288,15 +373,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.20/">
-            20.08.20_TIL
+        <a href="https://xfrnk2.github.io/til/20.08.05/">
+            20.08.05_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-20</span>
+                <span class="date moment">2020-08-05</span>
             
         
 
@@ -324,7 +409,11 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  버그를 찾고 수정했다. 수정 하고 다시 살펴보다보면 또다시 버그가 눈에 띄기 시작한다. 그래도 다양한 시도를 해보게 되서 유의미한 시간으로 느끼게 되서 좋다. 오늘 하루동안 최소 8시간은 넘게 붙잡고 있었다.   내일 할 일  코딩하기  
+        계획했던 일  docker를 배운 내용을 블로그에 포스팅하기위한 과정 정리해서 글 쓰기   오늘 한 일  승모근에 담이 왔는데 그 통증이 심해서 한의원에 가서 침을 맞았다. 그동안 docker를 공부하면서 해왔던 것들에 대해서 정리한 글을 썼다.
+▶ [MYSQL] ERROR: AUTHENTICATION PLUGIN ‘CACHING_SHA2_PASSWORD’ CANNOT BE LOADED 해결
+▶ [DOCKER]DOCKER-COMPOSE을 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동
+▶ [DOCKER] 컨테이너 내 MYSQL서버에 접근하는 방법
+▶ [DOCKER] NETWORK를 사용한 CONTAINER 단위 DJANGO 서버와 MYSQL 서버 연동   내일 할 일  한의원 가기 django 프로젝트 계획하기 퇴근후 친구와의 약속  
 
         
     
@@ -358,7 +447,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.19/">
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -367,15 +456,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.19/">
-            20.08.19_TIL
+        <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/">
+            [Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-19</span>
+                <span class="date moment">2020-08-05</span>
             
         
 
@@ -386,7 +475,7 @@
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
                     
                 
             </span>
@@ -403,8 +492,15 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  staticmethod를 남용했던 상태에서 유기적인 구조로 만드는 것을 목표로 코드를 수정중이다. 초반에는 몰랐던 뒤늦게 안 사실이지만 이제 보이지 않을것 같았던 버그들이 드러나기 시작했다.   내일 할 일  코딩하기  
+        1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
+docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
+ 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
+docker network connect (network) (container) ▶ network 조회:
+docker network ls ▶ container 조회:
+docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.
 
+        
+            <a href="https://xfrnk2.github.io/docker/docker_connect_containers_network/" class="more">Continue reading</a>
         
     
 </div>
@@ -420,7 +516,7 @@
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
                     
                 
             </div>
@@ -437,7 +533,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.18/">
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -446,15 +542,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.18/">
-            20.08.18_TIL
+        <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/">
+            [Docker] 컨테이너 내 Mysql서버에 접근하는 방법
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-18</span>
+                <span class="date moment">2020-08-05</span>
             
         
 
@@ -465,7 +561,7 @@
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
                     
                 
             </span>
@@ -482,9 +578,15 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  레스토랑 시뮬레이션을 코딩 했다. 지금까지 시간을 합하면 9시간이다. 일단은 기능적인 부분만(돌아가는 부분) 완성했다고 친다면, 시뮬레이션 결과를 도출하는데 문제는 발견되지 않았다.   잘 작동한다고는 하나 staticmethod를 남용했다는 생각이 들었다. 사용목적에 어울리지 않게 사용한 것 같아서 일반적인 class(init 매직메서드를 사용하는 구조)로 바꾸는 중이다.
-  내일 할 일  코딩하기  
+        1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
+▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
+mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
+ 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
+docker exec -it (container id) bash ▶ 커맨드 입력
+mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
 
+        
+            <a href="https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/" class="more">Continue reading</a>
         
     
 </div>
@@ -500,7 +602,7 @@
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
                     
                 
             </div>
@@ -517,7 +619,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.17/">
+                <a class="bubble" href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -526,15 +628,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.17/">
-            20.08.17_TIL
+        <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/">
+            [Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2020-08-17</span>
+                <span class="date moment">2020-08-05</span>
             
         
 
@@ -545,7 +647,7 @@
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                        <a href="https://xfrnk2.github.io/categories/docker/">docker</a>
                     
                 
             </span>
@@ -562,8 +664,16 @@
     </div>
 
     
-        계획했던 일  코딩하기   오늘 한 일  레스토랑 시뮬레이션을 코딩 했다. 순 코딩시간은 4시간 30분으로, 어제의 시간과 합해보면 총 설계 2시간, 코딩 6시간 30분이다. 윤곽은 어느정도 잡힌 것 같다.   내일 할 일  코딩하기  
+        ▶ docker-compose에 대한 공식 문서 링크
+ 1. 파일 생성 및 작성 dockerfile,
+docker-compose.xml,
+requirements.txt
+각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
+기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
+▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: '3.8' services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &quot;3306:3306&quot; web: build: .
 
+        
+            <a href="https://xfrnk2.github.io/docker/docker_connect_containers_compose/" class="more">Continue reading</a>
         
     
 </div>
@@ -579,86 +689,7 @@
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/20.08.16/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/20.08.16/">
-            20.08.16_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2020-08-16</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  코딩하기   오늘 한 일  레스토랑 시뮬레이션을 작성하고 있다. 설계하는데 시간을 많이 쓴 것 같다. 2시간정도 메모하며 생각했던 것을 단순한 설계도로 그려보고, 다시 새롭게 그리는 일을 반복했다. 설계를 하고 코딩을 2시간정도 해 보고 나니 한꺼번에 머리로 생각해서 코드를 작성하려고 했던 때보다 훨씬 스무스해진 것 같은 느낌이 든다.   내일 할 일  코딩하기  
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    <a href="https://xfrnk2.github.io/tags/docker/">docker</a>
                     
                 
             </div>
@@ -716,15 +747,15 @@
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -747,16 +778,6 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -769,6 +790,16 @@
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>

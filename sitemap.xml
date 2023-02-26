@@ -79,56 +79,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/boj/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/boj/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/1002/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/geometry/</loc>
-    <lastmod>2022-06-06T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/1004/</loc>
-    <lastmod>2022-06-05T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/math/</loc>
-    <lastmod>2022-06-05T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/1874/</loc>
-    <lastmod>2022-06-04T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/stack/</loc>
-    <lastmod>2022-06-04T00:22:17+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/tags/infrastructure/</loc>
     <lastmod>2022-05-12T11:17:34+09:00</lastmod>
   </url>
@@ -309,36 +259,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/hash/</loc>
-    <lastmod>2022-02-14T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/programmers/</loc>
-    <lastmod>2022-02-14T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/programmers/</loc>
-    <lastmod>2022-02-14T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/</loc>
-    <lastmod>2022-02-14T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/hash_bestalbum_lv3/</loc>
-    <lastmod>2022-02-14T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/hash_camouflage_lv2/</loc>
-    <lastmod>2022-02-04T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/terminal/mkdir_p_option/</loc>
     <lastmod>2022-02-01T21:18:34+09:00</lastmod>
   </url>
@@ -409,16 +329,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/programmers/hash_phone_number_list_lv2/</loc>
-    <lastmod>2022-01-27T14:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/hash_marathon_lv1/</loc>
-    <lastmod>2022-01-26T19:15:16+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/</loc>
     <lastmod>2021-12-18T00:20:30+09:00</lastmod>
   </url>
@@ -444,41 +354,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_word_transformation/</loc>
-    <lastmod>2021-11-02T15:53:47+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/bruteforce/</loc>
-    <lastmod>2021-11-02T15:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/brute_force_mock_test/</loc>
-    <lastmod>2021-11-02T15:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/</loc>
-    <lastmod>2021-11-02T15:52:45+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/dfsbfs_target_number/</loc>
-    <lastmod>2021-11-02T15:52:44+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/dfsbfs_network/</loc>
-    <lastmod>2021-11-02T15:52:43+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/brute_force_decimal_search/</loc>
-    <lastmod>2021-11-02T15:52:40+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/til/211001-211031/</loc>
     <lastmod>2021-10-31T00:20:30+09:00</lastmod>
   </url>
@@ -496,11 +371,6 @@
   <url>
     <loc>https://xfrnk2.github.io/til/</loc>
     <lastmod>2021-10-31T00:20:30+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/skillchecklv2/</loc>
-    <lastmod>2021-10-24T14:52:46+09:00</lastmod>
   </url>
   
   <url>
@@ -981,6 +851,11 @@
   <url>
     <loc>https://xfrnk2.github.io/til/210625/</loc>
     <lastmod>2021-06-25T00:20:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/algorithm/</loc>
+    <lastmod>2021-06-24T01:13:19+09:00</lastmod>
   </url>
   
   <url>
@@ -1679,16 +1554,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/tags/sorting/</loc>
-    <lastmod>2020-10-13T15:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/programmers/the_biggest_number/</loc>
-    <lastmod>2020-10-13T15:52:46+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/til/20.10.12/</loc>
     <lastmod>2020-10-12T23:41:29+09:00</lastmod>
   </url>
@@ -2304,6 +2169,11 @@
   </url>
   
   <url>
+    <loc>https://xfrnk2.github.io/tags/sorting/</loc>
+    <lastmod>2020-07-14T15:55:01+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xfrnk2.github.io/algorithm/selection_sort/</loc>
     <lastmod>2020-07-14T15:55:01+09:00</lastmod>
   </url>
@@ -2644,26 +2514,6 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/boj/1991/</loc>
-    <lastmod>2020-05-14T18:22:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/tree/</loc>
-    <lastmod>2020-05-14T18:22:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/10814/</loc>
-    <lastmod>2020-05-14T18:21:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/18870/</loc>
-    <lastmod>2020-05-14T18:20:50+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/til/20.05.13/</loc>
     <lastmod>2020-05-13T23:48:41+09:00</lastmod>
   </url>
@@ -2686,16 +2536,6 @@
   <url>
     <loc>https://xfrnk2.github.io/til/20.05.09/</loc>
     <lastmod>2020-05-09T23:44:52+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/4949/</loc>
-    <lastmod>2020-05-09T00:48:07+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/string/</loc>
-    <lastmod>2020-05-09T00:48:07+09:00</lastmod>
   </url>
   
   <url>
@@ -2874,18 +2714,8 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/boj/10825/</loc>
-    <lastmod>2020-04-21T00:55:42+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/til/20.04.20/</loc>
     <lastmod>2020-04-20T00:56:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/boj/1026/</loc>
-    <lastmod>2020-04-20T00:22:17+09:00</lastmod>
   </url>
   
   <url>
@@ -2926,10 +2756,6 @@
   <url>
     <loc>https://xfrnk2.github.io/gallery/</loc>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/dfs/bfs/</loc>
   </url>
   
 </urlset>

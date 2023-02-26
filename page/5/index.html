@@ -137,7 +137,7 @@
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/brute_force_mock_test/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/210826/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -146,483 +146,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/brute_force_mock_test/">
-            프로그래머스 완전탐색 - 모의 고사
+        <a href="https://xfrnk2.github.io/til/210826/">
+            21.08.26_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-11-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        def solution(answers): N = len(answers) d1 = [1, 2, 3, 4, 5] * (N // 5 + 1) d2 = [2, 1, 2, 3, 2, 4, 2, 5] * (N // 8 + 1) d3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5] * (N // 10 + 1) user = [0] * 3 for i in range(len(answers)): if d1[i] == answers[i]: user[0] += 1 if d2[i] == answers[i]: user[1] += 1 if d3[i] == answers[i]: user[2] += 1 m = max(user) ans = [] for i, u in enumerate(user): if u == m: ans.
-
-        
-            <a href="https://xfrnk2.github.io/programmers/brute_force_mock_test/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/bruteforce/">bruteForce</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/">
-            프로그래머스 DFS/BFS - 여행 경로
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].append(destination) return graph def dfs(): stack = ['ICN'] path = [] while len(stack) &gt; 0: top = stack[-1] if top not in routes or len(routes[top]) == 0: path.append(stack.pop()) else: stack.append(routes[top].pop(0)) return path[::-1] routes = init_graph() for r in routes: routes[r].sort() answer = dfs() return answer # 재귀를 사용한 풀이 - 조금의 비교(참고 코드)를 거쳐 가며 손코딩 from collections import defaultdict def solution(tickets): def init_graph(): graph = defaultdict(list) for key, destination in tickets: graph[key].
-
-        
-            <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_travel_path/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/">
-            프로그래머스 DFS/BFS - 타겟 넘버
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        # lv2 # dfs def solution(numbers, target): ans = 0 def func(num, level): nonlocal ans if level == len(numbers): if target == num: ans += 1 return if level == 1: func(- num + numbers[level], level + 1) func(- num - numbers[level], level + 1) func(num + numbers[level], level + 1) func(num - numbers[level], level + 1) func(numbers[0], 1) return ans # bfs from collections import deque def solution(numbers, target): ans = 0 queue = deque() queue.
-
-        
-            <a href="https://xfrnk2.github.io/programmers/dfsbfs_target_number/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/dfsbfs_network/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/dfsbfs_network/">
-            프로그래머스 DFS/BFS - 네트워크
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        # lv3 def solution(n, computers): d = [0] * n ans = 0 def func(idx): d[idx] = 1 for j, k in enumerate(computers[idx]): if j != idx and k == 1 and d[j] != 1: func(j) for i in range(n): if d[i] == 0: ans += 1 func(i) return ans 한마디 
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/dfs/bfs/">DFS/BFS</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/">
-            프로그래머스 완전탐색 - 소수 찾기
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-11-02</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        from itertools import permutations def solution(numbers): ans = 0 container = [] for i in range(1, len(numbers) + 1): dp = ((permutations(numbers, i))) for d in dp: container.append(int(''.join(d))) container = set(container) def check(n): if n &lt;= 1: return True t = 2 t2 = n ** 0.5 while t &lt;= t2: if n % t == 0: return True t += 1 return False for n in container: if not check(n): ans += 1 return ans 한마디  배울 수 있었던 것 : 조합을 구하는 방법과 처리 (여러번을 해도 숙달되지 않은 상황이다.
-
-        
-            <a href="https://xfrnk2.github.io/programmers/brute_force_decimal_search/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/algorithm/">algorithm</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/bruteforce/">bruteForce</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-        
-    </div>
-
-
-    
-        
-    <div class="article-wrapper u-cf">
-        
-            <a class="bubble" href="https://xfrnk2.github.io/til/211001-211031/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/211001-211031/">
-            21.10.01-21.10.31_WIL(4 Weeks)
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-10-31</span>
+                <span class="date moment">2021-08-26</span>
             
         
 
@@ -650,10 +182,8 @@
     </div>
 
     
-        계획했던 일  CS 이론 학습 문제 해결과 알고리즘 풀이 SQL 문법 숙달을 위한 실습   지난 4 Weeks 동안 한 일  정보처리기사 실기를 약 10일동안 준비했다. 가채점 결과 합격 예상! 학교 과제를 여전히 하고 있으며 실용적 배움을 위해 새롭게 듣게된 데이터통계학과 과목 실습에 예상이상의 시간이 소요되고 있다. 특히 R과 파이썬으로 통계 시각화하는 작업. 문제 풀이와 알고리즘 학습을 dps/bps 위주로 진행하였고 최단경로 알고리즘 또한 문제를 풀이했다. 출결관리 웹페이지의 access token 생성 후 인증 절차를 만들어서 기밀성을 높였다.
+        계획했던 일  볼일 보기   오늘 한 일  이전에 거주하던 곳에 볼일이 있어 다녀왔다. 오가는 길에 DATA STRUCTURE AND ALGORITHMS USING PYTHON의 추상 자료형 챕터를 읽었다.   내일 할 일  깃허브 액션 공부 코딩테스트 대비 문제풀이  
 
-        
-            <a href="https://xfrnk2.github.io/til/211001-211031/" class="more">Continue reading</a>
         
     
 </div>
@@ -689,7 +219,7 @@
         
     <div class="article-wrapper u-cf">
         
-            <a class="bubble" href="https://xfrnk2.github.io/programmers/skillchecklv2/">
+            <a class="bubble" href="https://xfrnk2.github.io/til/210825/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -698,15 +228,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/programmers/skillchecklv2/">
-            프로그래머스 스킬체크 Lv2_211024
+        <a href="https://xfrnk2.github.io/til/210825/">
+            21.08.25_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-10-24</span>
+                <span class="date moment">2021-08-25</span>
             
         
 
@@ -717,7 +247,7 @@
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/programmers/">Programmers</a>
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
                     
                 
             </span>
@@ -734,10 +264,8 @@
     </div>
 
     
-        1번 문제 성공 실패 결정 요인: 좌표1=(x1, y1) &lt; 좌표2=(x2, y2)가 보장되어야 하고, * 집합은 ((0, 0), (1, 1))과 ((1, 1), (0, 0))을 다른 요소로 취급한다. def solution(dirs): curX = 0 curY = 0 visits = set() for d in dirs: if d == 'U' and curY &lt; 5: visits.add(((curY, curX),(curY + 1, curX))) curY += 1 elif d == 'D' and curY &gt; -5: visits.add(((curY - 1, curX),(curY, curX))) curY -= 1 elif d == 'R' and curX &lt; 5: visits.
+        계획했던 일  코딩테스트 대비 문제 풀이 django에서 크롤링 flow 웹서핑을 통한 탐색   오늘 한 일  코딩테스트 대비 문제 2개 풀이 django beautiful soup 설치 후 연습   내일 할 일  볼일 보기  
 
-        
-            <a href="https://xfrnk2.github.io/programmers/skillchecklv2/" class="more">Continue reading</a>
         
     
 </div>
@@ -753,7 +281,417 @@
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/programmers/">Programmers</a>
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/210820/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/210820/">
+            21.08.20_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-08-20</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기   오늘 한 일  코딩테스트 문제풀이 동적계획법 1문제 풀이 크롤링 페이지를 위한 깃허브 액션 사용법과 돔 객체를 어떻게 다루는지에 대한 자료들을 찾아보고 읽었다.   내일 할 일  8/21-8/22 연수  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/210819/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/210819/">
+            21.08.19_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-08-19</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  외출 코딩테스트 대비 문제 풀기   오늘 한 일  코딩테스트 문제풀이 동적계획법 1문제 풀이 최근에 운영체제, 네트워크 배운 내용 노션에 정리   내일 할 일  코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/210818/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/210818/">
+            21.08.18_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-08-18</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 동적계획법 3문제 풀이 운영체제 도서의 주소바인딩 챕터를 읽었다.   내일 할 일  외출 코딩테스트 대비 문제 풀기 장고+리액트로 크롤링을 사용한 웹 사이트 구현을 어떻게 할지 구상하기  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/210817/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/210817/">
+            21.08.17_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-08-17</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 (그리디&amp;스택 풀기 어려웠던 1문제 풀이) KOCW에서 네트워크의 TCP챕터 강의를 찾아 들었다. 도서관에서 여러 책을 읽었다.   내일 할 일  CS 공부 코딩테스트 대비 문제풀이  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+
+    
+        
+    <div class="article-wrapper u-cf">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/til/210816/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/210816/">
+            21.08.16_TIL
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-08-16</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        계획했던 일  CS 공부 코딩테스트 대비 문제풀이   오늘 한 일  코딩테스트 문제풀이 (그리디&amp;스택 2문제) KOCW에서 네트워크의 TCP챕터 강의를 찾아 들었다.   내일 할 일  CS 공부 코딩테스트 대비 문제풀이  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                     
                 
             </div>
@@ -813,15 +751,15 @@
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -844,16 +782,6 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -866,6 +794,16 @@
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>

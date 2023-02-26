@@ -121,7 +121,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/210608/">
+                <a class="bubble" href="https://xfrnk2.github.io/python/python-variables_machanism/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -130,15 +130,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210608/">
-            21.06.08_TIL
+        <a href="https://xfrnk2.github.io/python/python-variables_machanism/">
+            Python - Python의 변수 할당 매커니즘
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-06-08</span>
+                <span class="date moment">2021-04-05</span>
             
         
 
@@ -149,7 +149,7 @@
                 
                     
                     
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                        <a href="https://xfrnk2.github.io/categories/python/">Python</a>
                     
                 
             </span>
@@ -166,10 +166,418 @@
     </div>
 
     
-        계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  이진탐색 문제 풀이 (주어진 시간 40분 내에 다 풀지 못해서 해설을 보고 고민하던 중 시간이 늦어 이만 마무리하기로 한다.) 장고 웹사이트개발 참고서 - 블로그 포스트에 태그 기능 구현하기(50%, 진행중, 이어서 할 예정)   알고리즘 문제를 풀 때 생각으로는 근접했는데 코드로 온전히 구현해내기가 참 어렵다. 아직 알고있는 유형의 문제가 적기 때문인것 같다. 자잘한 알고리즘 문제는 많이 풀어온것 같은데 자신의 위치를 깨닫게 된다.
+        파이썬은 변수를 생성할 때 변수를 위한 메모리를 생성하는 방식이 아니라, 변수가 만들어지고 어떠한 값을 넣으면 변수가 그 값을 참조하는 형태이다. 변수에 상수 값을 할당하고자 해도 값이 변경되기 때문에 파이썬에서는 상수를 사용하지 않는다. 그 대신 클래스를 사용한 여러가지 방법으로 상수를 정의할 수는 있다.(FrozenSpace, SpaceFrozenValues, __slots__, property, metaclass 등, 또는 Python 3.8~ typing.Final(*그러나 재할당 가능))   from uuid import uuid4 class obj: def __init__(self): self.__data = uuid4() self.__is_changed = False @property def data(self): return self.
 
         
-            <a href="https://xfrnk2.github.io/til/210608/" class="more">Continue reading</a>
+            <a href="https://xfrnk2.github.io/python/python-variables_machanism/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/python/">Python</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/">
+            Python - source.error(“incomplete escape %s” % escape, len(escape))
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-04-05</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        문제 발생 상황 raise source.error(&quot;incomplete escape %s&quot; % escape, len(escape)) re.error: incomplete escape \U at position 72 (line 4, column 3)  PEP8을 따르도록 터미널에서 flake8을 입력하니 위와 같은 에러가 발생했다. 검색 결과 보통의 경우 위의 메세지는 파일 어딘가에 \U 문자열이 포함되어 있을때 발생 하는 것으로 나타났지만 \U는 없을 뿐더러 전혀 다른 경우였다.   에러 발생 원인  함수의 입력값으로서 파라미터를 Typing할 때. 추상메서드를 사용한 빈 객체 파라미터에 대한 타입을 명시할 때 발생하는 것이 확인되었다.
+
+        
+            <a href="https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/python-flake8-isort/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/resolved_problem/python-flake8-isort/">
+            Python - isort Error
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-04-05</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        문제 발생 상황  PEP8을 따르도록 수정하기 위해 command prompt에 flake8 file.py을 입력했다. isort error가 표시되었다.   문제 해결  https://pypi.org/project/isort/ isort는 python에서 import하는 라이브러리들을 자동으로 정렬해준다.  isort file.py  이후 나오는 질문에선 y를 입력하면 된다.  
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/">
+            Shell script에 권한을 주기 // Error message - make : command not found, Permission denied for linuxwindowsscript.sh file
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-02-17</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        Shell script에 권한을 주기 makefile의 한 부분 OsConf= ./LinuxWindowsScript.sh # (OS의 종류에 따라 다르게 동작하도록 하는 쉘 스크립트 파일) travis-ci Error log ./LinuxWindowsScript.sh make: ./LinuxWindowsScript.sh: Command not found Makefile:53: recipe for target 'lint' failed make: *** [lint] Error 127 The command &quot;make lint&quot; exited with 2. 해결한 방법 git update-index --add --chmod=+x linuxshellscript.sh git commit -m 'Make linuxshellscript.sh executable' git push  문제 원인 : script doesn&rsquo;t have execute permissions Powershell 사용해서 커맨드 실행 (Windows) 후 정상 작동을 확인  　참고한 곳
+
+        
+            <a href="https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/resolved-problem/">resolved problem</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/review/2020%EB%85%84%ED%9A%8C%EA%B3%A0/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/review/2020%EB%85%84%ED%9A%8C%EA%B3%A0/">
+            블로그 시작 후 첫 회고, 지난 8개월 (2020/04/17~2020/12/31)
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-01-02</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/review/">review</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        블로그 시작 후 첫 회고, 지난 8개월  블로그를 시작하여 첫 게시글을 올린것이 지난 2020년 4월 17일. 그 날 이후로, 글머리에 TIL을 붙이고, 그날 그날의 일과를 기록하기 시작했다. 이따금 새롭게 알게된 중요한 정보나 에러 해결 과정 등에 대해서 필요할 때 볼 수 있도록 별도로 포스팅하였다. 벌써 2020년이 끝나 2021년 새해를 맞이하게 되었다.   무엇이 변했나?  github의 기록을 이따금 돌아볼 때면 발자취를 엿볼 수 있어 성취감을 느낄 수 있었다. 공부에 좋은 동기부여가 되었다.
+
+        
+            <a href="https://xfrnk2.github.io/review/2020%EB%85%84%ED%9A%8C%EA%B3%A0/" class="more">Continue reading</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/review/">review</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/til/2020%EB%85%84%ED%9A%8C%EA%B3%A0/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/til/2020%EB%85%84%ED%9A%8C%EA%B3%A0/">
+            블로그 시작 후 첫 회고, 지난 8개월 (2020/04/17~2020/12/31)
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-01-02</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
+                    
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/review/">review</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        블로그 시작 후 첫 회고, 지난 8개월  블로그를 시작하여 첫 게시글을 올린것이 지난 2020년 4월 17일. 그 날 이후로, 글머리에 TIL을 붙이고, 그날 그날의 일과를 기록하기 시작했다. 이따금 새롭게 알게된 중요한 정보나 에러 해결 과정 등에 대해서 필요할 때 볼 수 있도록 별도로 포스팅하였다. 벌써 2020년이 끝나 2021년 새해를 맞이하게 되었다.   무엇이 변했나?  github의 기록을 이따금 돌아볼 때면 발자취를 엿볼 수 있어 성취감을 느낄 수 있었다. 공부에 좋은 동기부여가 되었다.
+
+        
+            <a href="https://xfrnk2.github.io/til/2020%EB%85%84%ED%9A%8C%EA%B3%A0/" class="more">Continue reading</a>
         
     
 </div>
@@ -188,6 +596,11 @@
                     <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
                     
                 
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/review/">review</a>
+                    
+                
             </div>
         </div>
     
@@ -202,7 +615,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="https://xfrnk2.github.io/til/210607/">
+                <a class="bubble" href="https://xfrnk2.github.io/til/21.01.01/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -211,15 +624,15 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210607/">
-            21.06.07_TIL
+        <a href="https://xfrnk2.github.io/til/21.01.01/">
+            21.01.01_TIL
         </a>
     </h1>
 
     <div class="meta">
         
             
-                <span class="date moment">2021-06-07</span>
+                <span class="date moment">2021-01-01</span>
             
         
 
@@ -247,416 +660,7 @@
     </div>
 
     
-        계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  이진탐색 문제 풀이 장고 웹사이트개발 참고서 - 베이스 템플릿을 상속하여 모든 앱에 적용시키기   1.템플릿 상속을 연습을 거듭한 결과 어느정도 손에 익어가는 것 같다.
-2.장고 ImproperlyConfigured 에러를 해결했다. 오타가 문제였다!
-3.이진탐색 알고리즘 문제를 푸는데 습관적으로 재귀를 타이핑 하고 있었다. 문제를 잘 읽도록 습관을 들여야 할 것 같다.
-  내일 할 일  장고 웹사이트개발 참고서 따라가기   TIL이 아닌 별도의 회고록을 1달이나 1주일 단위로 작성할수 있도록 하면 더 좋을 것 같다.
-
-        
-            <a href="https://xfrnk2.github.io/til/210607/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210606/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210606/">
-            21.06.06_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-06</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  정렬 문제 풀이 파이썬 기본 문법 연습 파이썬 효율성 탐구(flatten, 2차원 리스트의 모든 원소를 1차원 리스트에 넣기)   numpy. reshape &gt; numpy.flatten &raquo; itertools.chain.from_iterable &gt; itertools.chain + * &gt; list comprehension &raquo; sum +꺽쇠 2개는 백~수백배 자릿수 단위 차이
-  내일 할 일    장고 웹사이트개발 참고서 따라가기    
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210605/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210605/">
-            21.06.05_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-05</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  영어 단어 암기하기   오늘 한 일  최근 일주일 내 암기한 500개의 영어단어를 짝 맞추기 퀴즈를 통해서 복습   내일 할 일  장고 웹사이트개발 참고서 따라가기  
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/django/django_url_name_not_found/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/django/django_url_name_not_found/">
-            Django - NoReverseMatch 에러, Reverse not found 해결방법
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-04</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/django/">Django</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        Error  NoReverseMatch at /polls/ Reverse for &lsquo;detail&rsquo; not found. &lsquo;detail&rsquo; is not a valid view function or pattern name.
-  \polls/templates/polls
-&lt;li&gt;&lt;a href=&quot;{% url 'detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt; 'detail' &raquo; 'polls:detail'으로 변경.
-&lt;li&gt;&lt;a href=&quot;{% url 'polls:detail' question.id %}&quot;&gt;{{ question.question_text }}&lt;/a&gt;&lt;/li&gt;   polls 앱의 urls.py는 settings.py과 같은 레벨에 위치한 urls.py 파일의 urlpatterns에 포함되어 있기 때문이다.
- urlpatterns = [ ... path('', include('polls.url', name='polls') ] 
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/django/">Django</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210604/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210604/">
-            21.06.04_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-04</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  파이썬 알고리즘 문제 해결시, 효율적인 문제 해결을 위한 각각의 자료구조의 특징과 성질을 일일히 들여다보기 네이버 부스트캠프 신청서 작성 후 임시 저장(6월 21일까지 제출하면 됨) 기타 협업이 가능한 프로그램의 정보를 웹서핑   향후 주력언어인 파이썬으로 알고리즘 테스트를 볼텐데 효율에 대해서 그동안 미처 생각해보지 못하다가 오늘은 좀 더 적극적으로 생각을 실천에 옮긴 하루였다.
-  20:00~24:00 온라인 독서 모임 진행과 뒷풀이(매주 금요일에 하는 것)   내일 할 일  지난 과제기간동안 밥 먹고 과제하는 시간을 제외하곤 쉬지 못해서 그런지 최근 몸 상태가 영 이상하다.
-
-        
-            <a href="https://xfrnk2.github.io/til/210604/" class="more">Continue reading</a>
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/til/">TIL</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/til/210603/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/til/210603/">
-            21.06.03_TIL
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-03</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/til/">TIL</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        계획했던 일  장고 웹사이트개발 참고서 따라가기   오늘 한 일  이전에 만든 앱들을 하나의 프로젝트로 합치기 부트스트랩 적용, 아직 html과 css를 적절히 다룰줄 모르기 때문에 따라 치는 것만으로도 공부가 된다.
-개념은 알고 있으니, 일일히 외울 필요는 없을 것 같지만, 세부적인것은 앞으로 적극 직접 더 찾아보도록 하면 좋겠다. {% block %}태크와 {% url %} 태그를 적극적으로 활용해보기   내일 할 일  장고 웹사이트개발 참고서 따라가기 밤의 독서모임 사회를 대비하여 충분히 쉬기  
+        계획했던 일  비동기 프로그래밍 문서 보고 실습 리액트 블로그 만들기 계속하기   오늘 한 일  휴식   내일 할 일  회고, 신년 계획 정리  
 
         
     
@@ -731,15 +735,15 @@
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1002/">BOJ-1002- 터렛[기하학]</a>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1004/">BOJ-1004-어린 왕자[수학, 기하학]</a>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/boj/1874/">BOJ-1874-스택 수열[스택]</a>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
             </ul>
@@ -762,16 +766,6 @@
                 </li>
                 
                 <li>
-                    <a href="/categories/programmers">Programmers
-                        (12)</a>
-                </li>
-                
-                <li>
-                    <a href="/categories/boj">Boj
-                        (9)</a>
-                </li>
-                
-                <li>
                     <a href="/categories/review">Review
                         (9)</a>
                 </li>
@@ -784,6 +778,16 @@
                 <li>
                     <a href="/categories/python">Python
                         (6)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                </li>
+                
+                <li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
                 </li>
                 
             </ul>
