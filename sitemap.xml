@@ -3,13 +3,49 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://xfrnk2.github.io/review/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/review/svp%ED%9B%84%EA%B8%B0/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2023-01-04T22:46:14+09:00</lastmod>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2023-01-04T22:46:14+09:00</lastmod>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/review/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/categories/review/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
   </url>
   
   <url>
@@ -28,43 +64,12 @@
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2023-01-04T22:46:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2023-01-04T22:46:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
-    <lastmod>2023-01-04T22:46:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/cs/floatingpoint/</loc>
     <lastmod>2023-01-04T22:46:14+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://xfrnk2.github.io/review/</loc>
-    <lastmod>2022-12-10T23:45:29+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://xfrnk2.github.io/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/</loc>
-    <lastmod>2022-12-10T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/tags/review/</loc>
-    <lastmod>2022-12-10T23:45:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://xfrnk2.github.io/categories/review/</loc>
     <lastmod>2022-12-10T23:45:29+09:00</lastmod>
   </url>
   
