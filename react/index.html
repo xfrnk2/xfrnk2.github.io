@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -27,7 +27,6 @@
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xfrnk2.github.io/react/" />
-<meta property="og:updated_time" content="2020-09-03T23:46:41+09:00" />
 
 
     
@@ -167,8 +166,8 @@
     </div>
 
     
-        종류  onClick onChange onSubmit  형태? &lt;태그 on이벤트명 = {(e) =&gt; {호출할 함수(e)}}&gt; (e는 event)
-&lt;Fragment&gt; &lt;div&gt; &lt;form onSubmit={(event)=&gt;{showForm(event)}}&gt; &lt;input type=&quot;text&quot; name=&quot;title&quot; onChange={(e) =&gt; {changeForm(e)}}/&gt; &lt;input type=&quot;text&quot; name=&quot;reason&quot; onChange={(e) =&gt; {changeForm(e)}}/&gt; &lt;button&gt;submit&lt;/button&gt; &lt;/form&gt; {foods.map((food) =&gt; { return &lt;div className=&quot;food&quot;&gt;{food.title}&lt;/div&gt; })} &lt;/div&gt; &lt;/Fragment&gt; 이벤트 발생 방지  이벤트 자체를 막는 것. ex) &ldquo;새로고침&rdquo;  const showForm = (event) =&gt; { event.preventDefault(); axios.post(&quot;/posts&quot;, form) .then((response) =&gt; { console.log(response); }) .catch((error) =&gt; { console.
+        종류 onClick onChange onSubmit 형태? &lt;태그 on이벤트명 = {(e) =&gt; {호출할 함수(e)}}&gt; (e는 event)
+&lt;Fragment&gt;&lt;div&gt;&lt;form onSubmit={(event)=&gt;{showForm(event)}}&gt;&lt;input type=&#34;text&#34; name=&#34;title&#34; onChange={(e) =&gt; {changeForm(e)}}/&gt;&lt;input type=&#34;text&#34; name=&#34;reason&#34; onChange={(e) =&gt; {changeForm(e)}}/&gt;&lt;button&gt;submit&lt;/button&gt;&lt;/form&gt;{foods.map((food) =&gt; { return &lt;div className=&#34;food&#34;&gt;{food.title}&lt;/div&gt;})}&lt;/div&gt;&lt;/Fragment&gt; 이벤트 발생 방지 이벤트 자체를 막는 것. ex) &ldquo;새로고침&rdquo; const showForm = (event) =&gt; {event.preventDefault();axios.post(&#34;/posts&#34;, form).then((response) =&gt; {console.log(response);}).catch((error) =&gt; {console.log(error);});} Javascript 문법 배열 원소 병합 arr1 = [1, 2, 3];arr2 = [4, 5]; totalarr = [.
 
         
             <a href="https://xfrnk2.github.io/react/react_event/" class="more">Continue reading</a>
@@ -249,9 +248,9 @@
     </div>
 
     
-        컴포넌트란?  부품 재사용 가능 일일히 바꾸어 줄 필요가 없도록 하기 위함 일명 리액트 컴포넌트라고 부른다.  props란?  자식 컴포넌트가 부모 컴포넌트에게 전달받은 데이터   javascript의 이상하고도 유용한 문법 let sweats = [50, 30, 100]; let apple = sweets[0]; let banana = sweets[1]; let berry = sweets[2]; 위의 문법을
+        컴포넌트란? 부품 재사용 가능 일일히 바꾸어 줄 필요가 없도록 하기 위함 일명 리액트 컴포넌트라고 부른다. props란? 자식 컴포넌트가 부모 컴포넌트에게 전달받은 데이터 javascript의 이상하고도 유용한 문법 let sweats = [50, 30, 100];let apple = sweets[0];let banana = sweets[1];let berry = sweets[2]; 위의 문법을
 let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오묘하다)
-훅스(Hooks): useState import {usestate} from 'react'; [state, setstate] = usestate(&quot;김철수&quot;)  state는 변수, setstate는 함수이다.
+훅스(Hooks): useState import {usestate} from &#39;react&#39;;[state, setstate] = usestate(&#34;김철수&#34;) state는 변수, setstate는 함수이다.
 
         
             <a href="https://xfrnk2.github.io/react/react_component/" class="more">Continue reading</a>
@@ -332,7 +331,7 @@ let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오�
     </div>
 
     
-        리액트란?  리액트는 페이스북에서 사용되는 웹 프론트엔드 프레임워크이다. 웹 프론트엔드 프레임워크는 라이브러리가 잘 되어 있어서 컴퓨터는 기반 개발이 용이하다. 또한 SPA방식으로 구현이 편리하기때문에 사용을 권장한다. 웹 프론트 엔드 프레임워크는 대표적으로 리액트, 뷰, 앵귤러가 있다. 뷰는 리액트보다 간결한 편이나, 대규모 프로젝트에서는 뷰보다 리액트를 더 선호하는 편이다. (뷰 &lt; 리액트) 앵귤러는 내용(알아야 할 거, 배워야 할 것)이 아주 많다고 한다.(리액트 &lt; 앵귤러) 요구되는 개발환경은 node-js이다.  SPA방식이란?  싱글 페이지 방식(Single Page Application)이다.
+        리액트란? 리액트는 페이스북에서 사용되는 웹 프론트엔드 프레임워크이다. 웹 프론트엔드 프레임워크는 라이브러리가 잘 되어 있어서 컴퓨터는 기반 개발이 용이하다. 또한 SPA방식으로 구현이 편리하기때문에 사용을 권장한다. 웹 프론트 엔드 프레임워크는 대표적으로 리액트, 뷰, 앵귤러가 있다. 뷰는 리액트보다 간결한 편이나, 대규모 프로젝트에서는 뷰보다 리액트를 더 선호하는 편이다. (뷰 &lt; 리액트) 앵귤러는 내용(알아야 할 거, 배워야 할 것)이 아주 많다고 한다.(리액트 &lt; 앵귤러) 요구되는 개발환경은 node-js이다. SPA방식이란? 싱글 페이지 방식(Single Page Application)이다. 멀티 페이지 방식(Multi Page Application)보다 가볍다.
 
         
             <a href="https://xfrnk2.github.io/react/react_react/" class="more">Continue reading</a>
@@ -461,7 +460,7 @@ let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오�
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -637,7 +636,7 @@ let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오�
                 by xfrnk2
             </a>
             -
-            <a href="https://xfrnk2.github.io/react/index.xml">RSS</a>
+            <a href="https://xfrnk2.github.io/react/index.xml">rss</a>
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"
@@ -648,16 +647,14 @@ let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오�
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

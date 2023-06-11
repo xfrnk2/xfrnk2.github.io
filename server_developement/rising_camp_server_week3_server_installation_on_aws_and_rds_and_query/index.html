@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -24,9 +24,9 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기" />
-<meta property="og:description" content="목표  MYSQL 쿼리문 작성에 익숙해지기 DB 설계의 기본과 기초를 배우고 익히기 새로 배운 내용을 공부하고 기록하기  진행 상황  AWS RDS 구축 실제 Product App을 하나 선정해서 DB 설계하기 위에서 설계한 DB를 바탕으로 App의 특정 화면을 여러 개 정해서 각 화면에 대한 한 방 쿼리 작성하기  AWS RDS 구축 RDS란 ?  Amazon Relational Database Service(Amazon RDS) AWS 클라우드에서 관계형 데이터베이스를 더 쉽게 설치, 운영 및 확장할 수 있는 웹 서비스  RDS의 특징  데이터베이스의 백엔드(Backend)에 대한 관리 및 구축을 지원하면서 기업의 시스템 관리를 간소화 클라우드에서 관계형 데이터베이스를 간편하게 설정, 운영 및 확장 가능 시간 소모적인 데이터베이스 관리 작업을 관리하는 한편, 효율적인 비용으로 크기를 조정할 수 있는 용량을 제공하므로 고객은 애플리케이션과 비즈니스에 좀 더 집중할 수 있음 Amazon Aurora, Oracle, Microsoft SQL Server, PostgreSQL, MySQL 및MariaDB 중에서 선택할 수 있도록6개의 익숙한 데이터베이스 엔진을 제공  (상세)RDS는 다음과 같은 장점들을 가지고 있습니다." />
+<meta property="og:description" content="목표 MYSQL 쿼리문 작성에 익숙해지기 DB 설계의 기본과 기초를 배우고 익히기 새로 배운 내용을 공부하고 기록하기 진행 상황 AWS RDS 구축 실제 Product App을 하나 선정해서 DB 설계하기 위에서 설계한 DB를 바탕으로 App의 특정 화면을 여러 개 정해서 각 화면에 대한 한 방 쿼리 작성하기 AWS RDS 구축 RDS란 ? Amazon Relational Database Service(Amazon RDS) AWS 클라우드에서 관계형 데이터베이스를 더 쉽게 설치, 운영 및 확장할 수 있는 웹 서비스 RDS의 특징 데이터베이스의 백엔드(Backend)에 대한 관리 및 구축을 지원하면서 기업의 시스템 관리를 간소화 클라우드에서 관계형 데이터베이스를 간편하게 설정, 운영 및 확장 가능 시간 소모적인 데이터베이스 관리 작업을 관리하는 한편, 효율적인 비용으로 크기를 조정할 수 있는 용량을 제공하므로 고객은 애플리케이션과 비즈니스에 좀 더 집중할 수 있음 Amazon Aurora, Oracle, Microsoft SQL Server, PostgreSQL, MySQL 및MariaDB 중에서 선택할 수 있도록6개의 익숙한 데이터베이스 엔진을 제공 (상세)RDS는 다음과 같은 장점들을 가지고 있습니다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/" />
+<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/" /><meta property="article:section" content="server_developement" />
 <meta property="article:published_time" content="2022-02-28T11:17:34+09:00" />
 <meta property="article:modified_time" content="2022-02-28T11:17:34+09:00" />
 
@@ -253,7 +253,7 @@
 <p><img src="https://user-images.githubusercontent.com/34790699/161435222-7dd98278-e821-4eff-bce0-5937744e260c.png" alt="Untitled (68)"></p>
 <p><code>show variables like ‘c%’</code> 명령어를 입력해 본다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/161435231-05d50553-e73e-46f2-9285-eb34b14b07be.png" alt="Untitled (69)"></p>
-<p><a href="https://www.notion.so/81765173cdce4bd781409da2fa9aa9b0">(mysql&gt; SHOW VARIABLES LIKE &lsquo;c%';) (1)</a></p>
+<p><a href="https://www.notion.so/81765173cdce4bd781409da2fa9aa9b0">(mysql&gt; SHOW VARIABLES LIKE &lsquo;c%&rsquo;;) (1)</a></p>
 <p><img src="https://user-images.githubusercontent.com/34790699/161435296-7d9687e6-fdd9-4731-8a70-285c6229c405.png" alt="K-008 (1)"></p>
 <p>위 테이블의 모든 항목은 MySQL의 캐릭터셋 환경 변수이다.</p>
 <p>자세한 설명은 아래를 확인하자.</p>
@@ -308,7 +308,7 @@
 <p>멀티 바이트 파일 이름을 사용할 수 있는 시스템에서는 서로 다른 값을 사용하도록 함</p>
 </li>
 <li>
-<p>예를 들면 시스템이 UTF8로 파일이름을 표시한다면, character_set_filesystem을 &lsquo;utf8'로 설정</p>
+<p>예를 들면 시스템이 UTF8로 파일이름을 표시한다면, character_set_filesystem을 &lsquo;utf8&rsquo;로 설정</p>
 </li>
 <li>
 <p>이 변수는 MySQL 5.1.6에서 추가</p>
@@ -377,7 +377,7 @@
 <p>( <a href="https://docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/CHAP_Limits.html">docs.aws.amazon.com/ko_kr/AmazonRDS/latest/UserGuide/CHAP_Limits.html</a> )</p>
 <p>위의 파라미터 그룹 설정을 새로 만든 파라미터 그룹에 설정을 한 것이다.</p>
 <p>RDS의 파라미터 그룹은 default가 기본으로 설정되어 있으므로</p>
-<p>RDS의 파라미터 그룹을 &lsquo;bon-db-group1'로 설정이 필요하다.</p>
+<p>RDS의 파라미터 그룹을 &lsquo;bon-db-group1&rsquo;로 설정이 필요하다.</p>
 <p>데이터 베이스 선택 화면으로 가서 데이터 베이스를 선택해주고,</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/161435378-72b062b8-71b8-4983-a4bc-1a0dc30bfeb8.png" alt="Untitled (75)"></p>
 <p>상단의 수정 버튼을 누른다.</p>
@@ -405,10 +405,10 @@
 <p>(예 : character_set_system)</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/161435455-c057122d-1d8e-4f37-8642-95c646d77414.png" alt="Untitled (81)"></p>
 <p>앞으로 원하는 값으로 변경하고자 할 때는 아래 형식의 명령어를 통해 강제로 변환 시키면 된다.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">DATABASE</span> DB이름
-CHARACTER <span style="color:#66d9ef">SET</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4&#39;</span>
-<span style="color:#66d9ef">COLLATE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4_general_ci&#39;</span>;
-</code></pre></div><p>하지만 위에서 언급한 <code>character_set_system</code> 는</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">ALTER</span> <span style="color:#66d9ef">DATABASE</span> DB<span style="color:#960050;background-color:#1e0010">이름</span>
+</span></span><span style="display:flex;"><span>CHARACTER <span style="color:#66d9ef">SET</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">COLLATE</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;utf8mb4_general_ci&#39;</span>;
+</span></span></code></pre></div><p>하지만 위에서 언급한 <code>character_set_system</code> 는</p>
 <p>항상 utf8로 설정되어있으며, 사용자가 설정하거나 변경할 수 없다.</p>
 <p>그러니 현재로선 무의미하고, 강제적으로 변경해야할 일이 있다면 위의 명령어를 참고하도록 하자.</p>
 <h3 id="인코딩-설정-후-한글이-나오는지-테스트">인코딩 설정 후 한글이 나오는지 테스트</h3>
@@ -557,26 +557,24 @@ CHARACTER <span style="color:#66d9ef">SET</span> <span style="color:#f92672">=</
 </ul>
 <p>직접 실험해 보자.</p>
 <h3 id="현재시간-넣기">현재시간 넣기</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">`</span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> datedemo
-(
- mydatetime datetime,
- mytimestamp <span style="color:#66d9ef">timestamp</span>
-);
-
-<span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">현재</span> <span style="color:#960050;background-color:#1e0010">시간을</span> <span style="color:#960050;background-color:#1e0010">넣어보면</span> <span style="color:#960050;background-color:#1e0010">같은</span> <span style="color:#960050;background-color:#1e0010">결과가</span> <span style="color:#960050;background-color:#1e0010">나온다</span>.
-
-<span style="color:#f92672">`</span><span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> datedemo <span style="color:#66d9ef">values</span> ((now()), (now()));<span style="color:#f92672">`</span>
-
-</code></pre></div><h3 id="타임존-변경하기">타임존 변경하기</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">그런데</span> <span style="color:#960050;background-color:#1e0010">시스템의</span> <span style="color:#960050;background-color:#1e0010">타임존을</span> <span style="color:#960050;background-color:#1e0010">변경하면</span><span style="color:#f92672">?</span>
-
-<span style="color:#f92672">`</span><span style="color:#66d9ef">SET</span> TIME_ZONE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;america/new_york&#34;</span>;
-
-Query OK, <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">rows</span> affected (<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">00</span> sec)<span style="color:#f92672">`</span>
-
-<span style="color:#f92672">##</span> timestamp값이 <span style="color:#960050;background-color:#1e0010">변경된다</span>.
-
-</code></pre></div><p>필드 타입별 적절한 사용예에 대해 공부할 수 있는 글
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">`</span><span style="color:#66d9ef">create</span> <span style="color:#66d9ef">table</span> datedemo
+</span></span><span style="display:flex;"><span>(
+</span></span><span style="display:flex;"><span> mydatetime datetime,
+</span></span><span style="display:flex;"><span> mytimestamp <span style="color:#66d9ef">timestamp</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">현재</span> <span style="color:#960050;background-color:#1e0010">시간을</span> <span style="color:#960050;background-color:#1e0010">넣어보면</span> <span style="color:#960050;background-color:#1e0010">같은</span> <span style="color:#960050;background-color:#1e0010">결과가</span> <span style="color:#960050;background-color:#1e0010">나온다</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">`</span><span style="color:#66d9ef">insert</span> <span style="color:#66d9ef">into</span> datedemo <span style="color:#66d9ef">values</span> ((now()), (now()));<span style="color:#f92672">`</span>
+</span></span></code></pre></div><h3 id="타임존-변경하기">타임존 변경하기</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">그런데</span> <span style="color:#960050;background-color:#1e0010">시스템의</span> <span style="color:#960050;background-color:#1e0010">타임존을</span> <span style="color:#960050;background-color:#1e0010">변경하면</span><span style="color:#f92672">?</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">`</span><span style="color:#66d9ef">SET</span> TIME_ZONE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;america/new_york&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Query OK, <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">rows</span> affected (<span style="color:#ae81ff">0</span>.<span style="color:#ae81ff">00</span> sec)<span style="color:#f92672">`</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">##</span> timestamp<span style="color:#960050;background-color:#1e0010">값이</span> <span style="color:#960050;background-color:#1e0010">변경된다</span>.
+</span></span></code></pre></div><p>필드 타입별 적절한 사용예에 대해 공부할 수 있는 글
 → <a href="https://audgnssweet.tistory.com/66">https://audgnssweet.tistory.com/66</a></p>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/cf6cce60-3050-45eb-aa3a-d2d0d5298247/K-006.png" alt="K-006.png"></p>
 <p>테이블 오른쪽 마우스 클릭</p>
@@ -646,95 +644,95 @@ Query OK, <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">rows<
 </ul>
 <h3 id="1-홈">1) 홈</h3>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fe08ce4e-570d-4872-b037-350e1745cdcc/Untitled.png" alt="Untitled"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.title, P.price, T.name, PHOTO.url,
-	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
-		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
-		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
- <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PC
-<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> PC.productId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
-<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PC.townId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PHOTO
-<span style="color:#66d9ef">on</span> PHOTO.productId <span style="color:#f92672">=</span> P.id
-;
-</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d4027e5f-5a9b-4d4a-a229-53efc21facd4/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> P.title, P.price, T.name, PHOTO.url,
+</span></span><span style="display:flex;"><span>	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> PC.productId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PC.townId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PHOTO
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PHOTO.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span>;
+</span></span></code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d4027e5f-5a9b-4d4a-a229-53efc21facd4/Untitled.png" alt="Untitled"></p>
 <p>채팅 수, 관심 수를 추가하고자 했으나, select문과 join을 어떻게 합쳐서 count 함수를 적용하면 좋을지, 그리고 grouby를 어떻게 사용 해야하는지 아직 시도 중.</p>
 <h1 id="실제-product-app을-하나-선정해서-db-설계하기-1">실제 Product App을 하나 선정해서 DB 설계하기</h1>
 <h3 id="20220228-개선-완료">2022/02/28 개선 완료</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.title, P.contents, P.price, 
-	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
-		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
-		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
-		<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
-		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
-<span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(PL.productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber,
-<span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(<span style="color:#66d9ef">distinct</span> CC.chattingRoomId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber,
-<span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
-<span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
-<span style="color:#66d9ef">on</span> PPS.productId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductLike <span style="color:#66d9ef">as</span> PL
-<span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
-<span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingConnection <span style="color:#66d9ef">as</span> CC
-<span style="color:#66d9ef">on</span> CC.productId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> PPS.id, P.id;
-</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51b667c0-73a4-4b28-a3da-74c3600e2a36/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> P.title, P.contents, P.price, 
+</span></span><span style="display:flex;"><span>	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(PL.productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(<span style="color:#66d9ef">distinct</span> CC.chattingRoomId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber,
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PPS.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductLike <span style="color:#66d9ef">as</span> PL
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingConnection <span style="color:#66d9ef">as</span> CC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> CC.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> PPS.id, P.id;
+</span></span></code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51b667c0-73a4-4b28-a3da-74c3600e2a36/Untitled.png" alt="Untitled"></p>
 <h3 id="-감-잡았다">→ 감 잡았다!</h3>
 <p>group by의 사용법을 자세히 익히기 위해서 참고한 곳</p>
 <p><a href="https://nittaku.tistory.com/431">https://nittaku.tistory.com/431</a></p>
 <p>내가 자주 사용한 문법 (반복)</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> p
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> pc
-<span style="color:#66d9ef">on</span> p.id <span style="color:#f92672">=</span> pc.productId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> t
-<span style="color:#66d9ef">on</span> t.id <span style="color:#f92672">=</span> pc.townId;
-</code></pre></div><p>도움 받은 곳 : <a href="https://happyguy81.tistory.com/116">https://happyguy81.tistory.com/116</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> p
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> pc
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> p.id <span style="color:#f92672">=</span> pc.productId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> t
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> t.id <span style="color:#f92672">=</span> pc.townId;
+</span></span></code></pre></div><p>도움 받은 곳 : <a href="https://happyguy81.tistory.com/116">https://happyguy81.tistory.com/116</a></p>
 <h3 id="20220302-2차-개선-완료">2022/03/02 2차 개선 완료</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingRoom;
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ProductLike;
-<span style="color:#66d9ef">select</span> P.title, P.price, T.name <span style="color:#66d9ef">as</span> town,
-	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
-		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
-		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
-				<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
-		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
-		PL.likeNumber,
-				CR.chattingNumber,
-		<span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
- <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
- <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
- <span style="color:#66d9ef">on</span> PPS.id <span style="color:#f92672">=</span> P.productPhotosId
- <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
- <span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
-  <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> ProductLike) <span style="color:#66d9ef">as</span> PL
- <span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber <span style="color:#66d9ef">from</span> ChattingRoom) <span style="color:#66d9ef">as</span> CR
-<span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PTC
- <span style="color:#66d9ef">on</span> PTC.productId <span style="color:#f92672">=</span> P.id
- <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
- <span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
- <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> P.id
- ;
-</code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22f224e0-4fc8-4283-ab5b-88152d797bd2/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingRoom;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ProductLike;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> P.title, P.price, T.name <span style="color:#66d9ef">as</span> town,
+</span></span><span style="display:flex;"><span>	   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+</span></span><span style="display:flex;"><span>				<span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> P.createdAt <span style="color:#f92672">!=</span> P.updatedAt 
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">then</span> <span style="color:#e6db74">&#39;끌올&#39;</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">null</span> <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> <span style="color:#e6db74">&#39;isUpdated&#39;</span>,
+</span></span><span style="display:flex;"><span>		PL.likeNumber,
+</span></span><span style="display:flex;"><span>				CR.chattingNumber,
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">min</span>(PP.url) <span style="color:#66d9ef">as</span> thumbnail
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhotos <span style="color:#66d9ef">as</span> PPS
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">on</span> PPS.id <span style="color:#f92672">=</span> P.productPhotosId
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PPS.id
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> ProductLike) <span style="color:#66d9ef">as</span> PL
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">on</span> PL.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> productId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(productId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> chattingNumber <span style="color:#66d9ef">from</span> ChattingRoom) <span style="color:#66d9ef">as</span> CR
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductAndTownConnection <span style="color:#66d9ef">as</span> PTC
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">on</span> PTC.productId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> P.id
+</span></span><span style="display:flex;"><span> ;
+</span></span></code></pre></div><p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/22f224e0-4fc8-4283-ab5b-88152d797bd2/Untitled.png" alt="Untitled"></p>
 <h2 id="select-및-join-문을-자유롭게-구사하기-하기-위한-쿼리문-지식">select 및 join 문을 자유롭게 구사하기 하기 위한 쿼리문 지식</h2>
 <p>nullif(expr1, expr2)
 expr1과 expr2이 같지 않은 경우 null 값을 리턴한다.</p>
@@ -755,38 +753,38 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
 <p>group_concat(해당 컬럼 (예 ) Profile.id))</p>
 <h3 id="2-동네-생활">2) 동네 생활</h3>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fa350fc0-1151-4f79-85a1-e5aa87b44e98/Untitled.png" alt="Untitled"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhotos;
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhoto;
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPost;
-
-<span style="color:#66d9ef">select</span> LP.contents, LP.category, P.nickname, T.name,
-		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
-		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
-		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
-		   likeNumber,
-		   commentNumber,
-		   LP.latitude,
-		   LP.longitude,
-		   <span style="color:#66d9ef">min</span>(LPP.url) <span style="color:#66d9ef">as</span> thumbnail
-<span style="color:#66d9ef">from</span> LivingPost <span style="color:#66d9ef">as</span> LP
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
-<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> LP.townId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
-<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> LP.profileId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(LivingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> LivingPostLike) <span style="color:#66d9ef">as</span> LPL
-<span style="color:#66d9ef">on</span> LPL.livingPostId <span style="color:#f92672">=</span> LP.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(livingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> commentNumber <span style="color:#66d9ef">from</span> LivingComment) <span style="color:#66d9ef">as</span> LC
-<span style="color:#66d9ef">on</span> LC.livingPostId <span style="color:#f92672">=</span> LP.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> LivingPostPhoto <span style="color:#66d9ef">as</span> LPP
-<span style="color:#66d9ef">on</span> LPP.livingPostPhotosId <span style="color:#f92672">=</span> LP.id
-<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> LP.id
-;
-</code></pre></div><p>위도, 경도표현은 decimal(10, 7)을 사용했다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhotos;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPostPhoto;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> LivingPost;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> LP.contents, LP.category, P.nickname, T.name,
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(hour , P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, P.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, P.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate,
+</span></span><span style="display:flex;"><span>		   likeNumber,
+</span></span><span style="display:flex;"><span>		   commentNumber,
+</span></span><span style="display:flex;"><span>		   LP.latitude,
+</span></span><span style="display:flex;"><span>		   LP.longitude,
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">min</span>(LPP.url) <span style="color:#66d9ef">as</span> thumbnail
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> LivingPost <span style="color:#66d9ef">as</span> LP
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> LP.townId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> LP.profileId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(LivingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> likeNumber <span style="color:#66d9ef">from</span> LivingPostLike) <span style="color:#66d9ef">as</span> LPL
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> LPL.livingPostId <span style="color:#f92672">=</span> LP.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> livingPostId, <span style="color:#66d9ef">nullif</span>(<span style="color:#66d9ef">count</span>(livingPostId), <span style="color:#ae81ff">0</span>) <span style="color:#66d9ef">as</span> commentNumber <span style="color:#66d9ef">from</span> LivingComment) <span style="color:#66d9ef">as</span> LC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> LC.livingPostId <span style="color:#f92672">=</span> LP.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> LivingPostPhoto <span style="color:#66d9ef">as</span> LPP
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> LPP.livingPostPhotosId <span style="color:#f92672">=</span> LP.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> LP.id
+</span></span><span style="display:flex;"><span>;
+</span></span></code></pre></div><p>위도, 경도표현은 decimal(10, 7)을 사용했다.</p>
 <p>참고사이트 : <a href="https://blog.naver.com/PostView.nhn?blogId=darkchrno&amp;logNo=221356051245&amp;parentCategoryNo=&amp;categoryNo=37&amp;viewDate=&amp;isShowPopularPosts=true&amp;from=search">https://blog.naver.com/PostView.nhn?blogId=darkchrno&amp;logNo=221356051245&amp;parentCategoryNo=&amp;categoryNo=37&amp;viewDate=&amp;isShowPopularPosts=true&amp;from=search</a></p>
 <h2 id="결과">결과</h2>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76e7de0b-2a23-40bd-8946-a1a66c9e7bbd/Untitled.png" alt="Untitled"></p>
@@ -800,42 +798,42 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
 <li><em><strong>max함수를 통해 마지막 날짜 조회 후 group by를 하고 해당하는 데이터를 조건문에 처리(where 조건문 in절부분)하여 최신 데이터 순으로 order by를 통해 다시 한번 정렬을 한다.. order by desc를 통해 select를 해온다.</strong></em></li>
 <li><em><strong>2. select된 데이터를 한번 더 group by를 한다.</strong></em></li>
 </ol>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">조회에</span> <span style="color:#960050;background-color:#1e0010">성공한</span> <span style="color:#960050;background-color:#1e0010">쿼리</span>
-<span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingMessage 
-<span style="color:#66d9ef">where</span> updatedAt <span style="color:#66d9ef">in</span> 
-( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CM.updatedAt)
-<span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CM <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
-)
-</code></pre></div><p>참고한 곳 : <a href="https://myhappyman.tistory.com/76">https://myhappyman.tistory.com/76</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> CR.id, PP.url <span style="color:#66d9ef">as</span> productThumbnail, P.photo <span style="color:#66d9ef">as</span> profileThumbnail, P.nickname, T.name, CM.contents,
-		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
-		   <span style="color:#66d9ef">when</span> timestampdiff(hour , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
-		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
-		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, CM.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
-		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
- <span style="color:#66d9ef">from</span> ChattingRoom <span style="color:#66d9ef">as</span> CR
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Product <span style="color:#66d9ef">as</span> PD
-<span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> PD.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
-<span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PD.productPhotosId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
-<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> CR.buyerProfileId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProfileAndTownConnection <span style="color:#66d9ef">as</span> PTC
-<span style="color:#66d9ef">on</span> PTC.profileId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
-<span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingMessage <span style="color:#66d9ef">as</span> CM
-<span style="color:#66d9ef">on</span> CM.chattingRoomId <span style="color:#f92672">=</span> CR.id
-<span style="color:#66d9ef">where</span> CM.updatedAt <span style="color:#66d9ef">in</span> 
-( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CMTemp.updatedAt)
-<span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CMTemp <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
-)
-<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> CR.id
-;
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#f92672">##</span> <span style="color:#960050;background-color:#1e0010">조회에</span> <span style="color:#960050;background-color:#1e0010">성공한</span> <span style="color:#960050;background-color:#1e0010">쿼리</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">select</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">from</span> ChattingMessage 
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span> updatedAt <span style="color:#66d9ef">in</span> 
+</span></span><span style="display:flex;"><span>( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CM.updatedAt)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CM <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><p>참고한 곳 : <a href="https://myhappyman.tistory.com/76">https://myhappyman.tistory.com/76</a></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> CR.id, PP.url <span style="color:#66d9ef">as</span> productThumbnail, P.photo <span style="color:#66d9ef">as</span> profileThumbnail, P.nickname, T.name, CM.contents,
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">case</span> <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">second</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">second</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 초 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(<span style="color:#66d9ef">minute</span> , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(<span style="color:#66d9ef">minute</span>, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 분 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">when</span> timestampdiff(hour , CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>) <span style="color:#f92672">&lt;</span><span style="color:#ae81ff">24</span>
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">then</span> concat(timestampdiff(hour, CM.updatedAt, <span style="color:#66d9ef">current_timestamp</span>),<span style="color:#e6db74">&#39; 시간 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">else</span> concat(datediff(<span style="color:#66d9ef">current_timestamp</span>, CM.updatedAt),<span style="color:#e6db74">&#39; 일 전&#39;</span>)
+</span></span><span style="display:flex;"><span>		   <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">as</span> uploadedDate
+</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">from</span> ChattingRoom <span style="color:#66d9ef">as</span> CR
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Product <span style="color:#66d9ef">as</span> PD
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> CR.productId <span style="color:#f92672">=</span> PD.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProductPhoto <span style="color:#66d9ef">as</span> PP
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PP.productPhotosId <span style="color:#f92672">=</span> PD.productPhotosId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> CR.buyerProfileId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ProfileAndTownConnection <span style="color:#66d9ef">as</span> PTC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PTC.profileId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Town <span style="color:#66d9ef">as</span> T
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> T.id <span style="color:#f92672">=</span> PTC.townId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> ChattingMessage <span style="color:#66d9ef">as</span> CM
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> CM.chattingRoomId <span style="color:#f92672">=</span> CR.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">where</span> CM.updatedAt <span style="color:#66d9ef">in</span> 
+</span></span><span style="display:flex;"><span>( <span style="color:#66d9ef">select</span> <span style="color:#66d9ef">max</span>(CMTemp.updatedAt)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">from</span> ChattingMessage <span style="color:#66d9ef">as</span> CMTemp <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> chattingRoomId
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> CR.id
+</span></span><span style="display:flex;"><span>;
+</span></span></code></pre></div><ul>
 <li>아래와 같이 ChattingMessage 레코드를 여러개 있는 가운데 최신 메세지만을 불러오고 있다.</li>
 </ul>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/92f33a95-febb-4104-b38a-5725561ad6c6/Untitled.png" alt="Untitled"></p>
@@ -843,17 +841,17 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/55befa7a-4967-405d-9c5c-e3e60090ea23/Untitled.png" alt="Untitled"></p>
 <h2 id="4-프로필">4) 프로필</h2>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/311ecadf-8d0d-445c-b0ae-8dc80a5f5198/Untitled.png" alt="Untitled"></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">select</span> P.nickname, P.profileNumber, M.temperature, M.retradeWantRatio, M.answerRatio, B.badgeNumber, PD.productNumber <span style="color:#66d9ef">from</span> TownAndProfileConnection <span style="color:#66d9ef">as</span> TPC
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
-<span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> TPC.profileId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Manners <span style="color:#66d9ef">as</span> M
-<span style="color:#66d9ef">on</span> M.id <span style="color:#f92672">=</span> P.mannersId
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> productNumber <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> PD
-<span style="color:#66d9ef">on</span> PD.profileId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> badgeNumber <span style="color:#66d9ef">from</span> Badge <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> B
-<span style="color:#66d9ef">on</span> B.profileId <span style="color:#f92672">=</span> P.id
-<span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> TPC.profileId;
-</code></pre></div><h2 id="product">Product</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#66d9ef">select</span> P.nickname, P.profileNumber, M.temperature, M.retradeWantRatio, M.answerRatio, B.badgeNumber, PD.productNumber <span style="color:#66d9ef">from</span> TownAndProfileConnection <span style="color:#66d9ef">as</span> TPC
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Profile <span style="color:#66d9ef">as</span> P
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> P.id <span style="color:#f92672">=</span> TPC.profileId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> Manners <span style="color:#66d9ef">as</span> M
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> M.id <span style="color:#f92672">=</span> P.mannersId
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> productNumber <span style="color:#66d9ef">from</span> Product <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> PD
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> PD.profileId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">left</span> <span style="color:#66d9ef">join</span> (<span style="color:#66d9ef">select</span> profileId, <span style="color:#66d9ef">count</span>(profileId) <span style="color:#66d9ef">as</span> badgeNumber <span style="color:#66d9ef">from</span> Badge <span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> profileId) <span style="color:#66d9ef">as</span> B
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">on</span> B.profileId <span style="color:#f92672">=</span> P.id
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">group</span> <span style="color:#66d9ef">by</span> TPC.profileId;
+</span></span></code></pre></div><h2 id="product">Product</h2>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6b038a91-c5f4-431b-b708-a457334f655c/Untitled.png" alt="Untitled"></p>
 <h2 id="manners">Manners</h2>
 <p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67c14781-0329-4ee3-b9b5-36b7cfc71871/Untitled.png" alt="Untitled"></p>
@@ -984,7 +982,7 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -1096,7 +1094,7 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -1282,16 +1280,14 @@ left join의 경우 매칭이 가능하지 않더라도, 왼쪽에 있는 테이
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

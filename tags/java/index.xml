@@ -5,18 +5,15 @@
     <link>https://xfrnk2.github.io/tags/java/</link>
     <description>Recent content in Java on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 23:49:45 +0900</lastBuildDate>
-    
-	<atom:link href="https://xfrnk2.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Apr 2022 23:49:45 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Validation을 위해 작성하였던 정규 표현식 뜯어보기</title>
       <link>https://xfrnk2.github.io/java/java-regex/</link>
       <pubDate>Sat, 02 Apr 2022 23:49:45 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/java/java-regex/</guid>
-      <description>개요  본 글은 넷플릭스 팀 프로젝트 서버 파트를 개발하면서 정규식을 공부한 내용을 담고 있다. 정규식을 떠올리면 늘 드는 생각은, 복사 &amp;amp; 붙여넣기의 사용과 겉핥기 수준, 예를 들면 괄호 안에 문자가 여러개 있으면 &amp;lsquo;또는&amp;rsquo; 이라는 매칭 조건을 주는 것 외에는 아는게 없었기에 언젠가 공부해야겠다는 생각 뿐이였다. 이번 팀 프로젝트에서 유효성 검사를 위해 필요했던 정규식에 한해서 어떻게 동작하는지 한 땀 한 땀 분석해 보았다. 이제는 아래의 정규식 정도면 직접 작성할 수 있지 않을까?</description>
+      <description>개요 본 글은 넷플릭스 팀 프로젝트 서버 파트를 개발하면서 정규식을 공부한 내용을 담고 있다. 정규식을 떠올리면 늘 드는 생각은, 복사 &amp;amp; 붙여넣기의 사용과 겉핥기 수준, 예를 들면 괄호 안에 문자가 여러개 있으면 &amp;lsquo;또는&amp;rsquo; 이라는 매칭 조건을 주는 것 외에는 아는게 없었기에 언젠가 공부해야겠다는 생각 뿐이였다. 이번 팀 프로젝트에서 유효성 검사를 위해 필요했던 정규식에 한해서 어떻게 동작하는지 한 땀 한 땀 분석해 보았다. 이제는 아래의 정규식 정도면 직접 작성할 수 있지 않을까?</description>
     </item>
     
   </channel>

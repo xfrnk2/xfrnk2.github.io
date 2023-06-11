@@ -5,11 +5,8 @@
     <link>https://xfrnk2.github.io/tags/html/</link>
     <description>Recent content in HTML on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 00:54:03 +0900</lastBuildDate>
-    
-	<atom:link href="https://xfrnk2.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Mon, 05 Oct 2020 00:54:03 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTML 태그 요약</title>
       <link>https://xfrnk2.github.io/web/html/</link>
@@ -17,8 +14,8 @@
       
       <guid>https://xfrnk2.github.io/web/html/</guid>
       <description>비전공자를 위한 HTML/CSS를 보고 HTML 파트를 정리했다. 정의나 유래 등 기초적인 내용에 대해서는 언급하지 않는다.
-  개요  HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
--&amp;gt; 필요할 때 찾고 다 외울 필요는 없다.   빈 태그  내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.</description>
+개요 HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
+-&amp;gt; 필요할 때 찾고 다 외울 필요는 없다. 빈 태그 내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.-&amp;gt;대체태그(replacement태그) &amp;lt;br&amp;gt;, &amp;lt;img src=&amp;quot;&amp;quot;&amp;gt; 태그와 요소의 차이 &amp;lt;h1&amp;gt;Hello&amp;lt;/h1&amp;gt; 태그 : &amp;lt;h1&amp;gt;과 &amp;lt;/h1&amp;gt; 요소 : 내용까지 통틀어서 전체 큰 범위에서의 태그의 역할 head : 문서의 기본 설정 및 외부스타일 시트 또는 js파일을 연결하는 것 meta : 문자의 인코딩 방식 지정하는 것 -&amp;gt; meta charset=&amp;ldquo;UTF-8&amp;rdquo; 제목과 단락 제목 : heading -&amp;gt; &amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt; &amp;hellip; 단락 : paragraph -&amp;gt; &amp;lt;p&amp;gt; // 자동개행됨.</description>
     </item>
     
   </channel>

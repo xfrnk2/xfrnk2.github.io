@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+
+
+  
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://xfrnk2.github.io/">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.113.0">
+    <title>
+        
+           
+               npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유 &vert; Rad Blog
+           
+        
+    </title>
+    <meta itemprop="name" content="npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유">
+    <meta itemprop="description" content="npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:site_name" content="Rad Blog">
+
+    <meta property="og:title" content="npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유" />
+<meta property="og:description" content="npm install (plugin) &ndash;save란? 패키지(plugin)를 ./node_moduels 디렉터리에 설치하고 ./package.json 파일의 dependencies 항목에 플러그인 정보가 저장 된다. &ndash;production 빌드시 해당 플러그인이 포함된다. npm install (plugin) &ndash;save-dev란? 패키지(plugin)를 ./node_moduels 디렉터리에 설치하고 ./package.json 파일의 devDependencies 항목에 플러그인 정보가 저장 된다.
+--production 빌드시 해당 플러그인이 포함되지 않는다.
+한 가지 더 다른 점은, devDependencies 의 경우 dependencies 와 다르게 --production으로 빌드 시 해당 플러그인이 포함되지 않는다.
+--save-dev 의 뒤에 있는 dev라는 단어가 아마 development mode 혹은 development purpose 등을 의미하는 것으로 추정된다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/" /><meta property="article:section" content="web" />
+<meta property="article:published_time" content="2022-02-01T20:45:21+09:00" />
+<meta property="article:modified_time" content="2022-02-01T20:45:21+09:00" />
+
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+    <link href="/web/npm_--save_and_--save-dev/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/web/npm_--save_and_--save-dev/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
+
+    
+    <link rel="canonical" href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+        
+            <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+        
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+                
+            
+			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    Rad Blog
+                </a>
+            </h3>
+
+            
+                <span class="subtitle">Archive</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">
+            npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-02-01</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/web/">web</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <h2 id="npm-install-plugin---save란">npm install (plugin) &ndash;save란?</h2>
+<ul>
+<li>패키지(plugin)를 ./node_moduels 디렉터리에 설치하고 ./package.json 파일의 dependencies 항목에 플러그인 정보가 저장 된다.</li>
+<li>&ndash;production 빌드시 해당 플러그인이 포함된다.</li>
+</ul>
+<hr>
+<h2 id="npm-install-plugin---save-dev란">npm install (plugin) &ndash;save-dev란?</h2>
+<ul>
+<li>
+<p>패키지(plugin)를 <code>./node_moduels</code> 디렉터리에 설치하고 <code>./package.json</code> 파일의 devDependencies 항목에 플러그인 정보가 저장 된다.</p>
+</li>
+<li>
+<p><code>--production</code> 빌드시 해당 플러그인이 포함되지 않는다.</p>
+</li>
+<li>
+<p>한 가지 더 다른 점은, devDependencies 의 경우 dependencies 와 다르게 <code>--production</code>으로 빌드 시 해당 플러그인이 포함되지 않는다.</p>
+</li>
+<li>
+<p><code>--save-dev</code> 의 뒤에 있는 <code>dev</code>라는 단어가 아마 <code>development mode</code> 혹은 <code>development purpose</code> 등을 의미하는 것으로 추정된다.</p>
+</li>
+</ul>
+<hr>
+<h3 id="참고한-곳-">참고한 곳 :</h3>
+<ul>
+<li><a href="https://ithub.tistory.com/165">https://ithub.tistory.com/165</a></li>
+<li><a href="https://pewww.tistory.com/7">https://pewww.tistory.com/7</a></li>
+<li><a href="https://stackoverflow.com/questions/60960687/whats-the-use-of-production-flag-in-npm">https://stackoverflow.com/questions/60960687/whats-the-use-of-production-flag-in-npm</a></li>
+</ul>
+<h3 id="현재-진행중인-공부-실습-">현재 진행중인 공부 실습 :</h3>
+<ul>
+<li><a href="https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396">https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396</a></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/network/123/">라우터(Router)와 스위치(Switch)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/svp%ED%9B%84%EA%B8%B0/">2023년 상반기 삼성 SVP 신입입문교육 후기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_installation_on_aws/">서버를 구축하고 AWS상에 서비스하기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/211218_%EC%9A%B0%EC%95%84%ED%95%9C%ED%85%8C%ED%81%AC%EC%BD%94%EC%8A%A4_%ED%94%84%EB%A6%AC%EC%BD%94%EC%8A%A4%ED%9B%84%EA%B8%B0/">2021 우아한 테크코스 4기 프리코스 후기</a>
+                    </li>
+                
+            </ul>
+			
+        </div>
+        
+		
+
+        
+        <div class="categories">
+            <a href="/categories/"><strong>Categories</strong></a>
+            <ul>
+                
+				<li>
+                    <a href="/categories/til">Til
+                        (345)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/django">Django
+                        (15)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/review">Review
+                        (9)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        (8)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/python">Python
+                        (6)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/codeit">Codeit
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/compiler">Compiler
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/database">Database
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/java">Java
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/server">Server
+                        (4)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/developement">Developement
+                        (3)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/docker">Docker
+                        (3)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/react">React
+                        (3)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/spring">Spring
+                        (3)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/web">Web
+                        (3)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/mysql">Mysql
+                        (2)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/blog">Blog
+                        (1)</a>
+                    　
+				</li>
+                
+				<li>
+                    <a href="/categories/book">Book
+                        (1)</a>
+                    　
+				</li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+
+                
+                <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+            <div class="archive">
+                <a href="/archive/"><strong>Archive</strong></a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2023
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+}
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+
+
+    <script src="https://xfrnk2.github.io/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="6T2JVR4D9M">
+  <input type="hidden" id="algolia-search-apiKey" value="87e54ae22d96655f4823f9f1ffaefff8">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2blog">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+</div>
+
+    
+</body>
+
+</html>
