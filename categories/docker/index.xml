@@ -5,8 +5,11 @@
     <link>https://xfrnk2.github.io/categories/docker/</link>
     <description>Recent content in docker on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</title>
       <link>https://xfrnk2.github.io/docker/docker_connect_containers_network/</link>
@@ -15,10 +18,10 @@
       <guid>https://xfrnk2.github.io/docker/docker_connect_containers_network/</guid>
       <description>1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
 docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
-2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
+ 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
 docker network connect (network) (container) ▶ network 조회:
 docker network ls ▶ container 조회:
-docker ps -a 3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.</description>
+docker ps -a  3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 --name=(name) mysql --default-authentication-plugin=mysql_native_password ▶ (name)은 mysql container에 부여할 이름이다.</description>
     </item>
     
     <item>
@@ -30,7 +33,7 @@ docker ps -a 3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwor
       <description>1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
 ▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
 mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
-2. CMD 또는 터미널 이용 ▶ 커맨드 입력
+ 2. CMD 또는 터미널 이용 ▶ 커맨드 입력
 docker exec -it (container id) bash ▶ 커맨드 입력
 mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.</description>
     </item>
@@ -42,12 +45,12 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
       
       <guid>https://xfrnk2.github.io/docker/docker_connect_containers_compose/</guid>
       <description>▶ docker-compose에 대한 공식 문서 링크
-1. 파일 생성 및 작성 dockerfile,
+ 1. 파일 생성 및 작성 dockerfile,
 docker-compose.xml,
 requirements.txt
 각각의 파일들의 작성방법에 대한 내용은 이 글에서는 다루지 않으므로 생략합니다.
 기본적인 기능으로서 각각의 파일들을 설정한 상태는 아래와 같습니다.
-▼ dockerfile FROM python:3.8.1ENV PYTHONDONTWRITEBYTECODE 1ENV PYTHONUNBUFFERED 1RUN mkdir /codeADD . /code/RUN usr/local/bin/python -m pip install --upgrade pipWORKDIR /code/RUN pip install -r requirements.txt ▼ docker-compose.xml version: &amp;#39;3.8&amp;#39;services:db:image: mysqlcommand: mysqld --default-authentication-plugin=mysql_native_passwordrestart: alwaysenvironment:MYSQL_DATABASE: rad_dbMYSQL_ROOT_PASSWORD: password ports:- &amp;#34;3306:3306&amp;#34;web:build: .</description>
+▼ dockerfile FROM python:3.8.1 ENV PYTHONDONTWRITEBYTECODE 1 ENV PYTHONUNBUFFERED 1 RUN mkdir /code ADD . /code/ RUN usr/local/bin/python -m pip install --upgrade pip WORKDIR /code/ RUN pip install -r requirements.txt ▼ docker-compose.xml version: &#39;3.8&#39; services: db: image: mysql command: mysqld --default-authentication-plugin=mysql_native_password restart: always environment: MYSQL_DATABASE: rad_db MYSQL_ROOT_PASSWORD: password ports: - &amp;quot;3306:3306&amp;quot; web: build: .</description>
     </item>
     
   </channel>

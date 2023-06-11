@@ -5,6 +5,9 @@
     <link>https://xfrnk2.github.io/gallery/</link>
     <description>Recent content on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://xfrnk2.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://xfrnk2.github.io/gallery/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

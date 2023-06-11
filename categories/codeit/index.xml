@@ -5,8 +5,11 @@
     <link>https://xfrnk2.github.io/categories/codeit/</link>
     <description>Recent content in codeit on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 06 Aug 2021 00:18:15 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/categories/codeit/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Aug 2021 00:18:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/categories/codeit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>코드잇 - 자료구조 공부</title>
       <link>https://xfrnk2.github.io/codeit/codeit_learning_data_structure/</link>
@@ -45,7 +48,7 @@
 기본 지식을 되짚어 볼 수 있어서 좋았다.
 대강 추리어 서술하는 것인 개론이란 말처럼 컴퓨터 프로그래밍, 프로그래머, 소프트웨어에 관련된 내용을 다루고 있다.
 빈번한 실습위주의 교과목을 배우는 것이 더 편할 때도 있지만, 개략적이고 총론적인 정보나 사실을 다루는 경우도 나쁘지 않은 편이다.
-요즘 자바스크립트 기초를 수강하고 있는데 곧 마무리 지을 수 있을 것 같다. 마치고 나면 자바스크립트 중급을 들을 예정이다.</description>
+ 요즘 자바스크립트 기초를 수강하고 있는데 곧 마무리 지을 수 있을 것 같다. 마치고 나면 자바스크립트 중급을 들을 예정이다.</description>
     </item>
     
     <item>

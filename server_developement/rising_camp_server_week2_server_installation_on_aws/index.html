@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -24,11 +24,9 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="서버를 구축하고 AWS상에 서비스하기" />
-<meta property="og:description" content="목표 에러와 해결했던 내용을 기록하기 새롭게 알게된 것들을 알아보고 기록하기 진행 상황 1.
-Local 서버 구축 / Window/MacOS &#43; Apache PHP MySQL (Bitnami) 외부에서 접속하기: phpinfo 띄우기 (by 포트포워딩) 2.
-AWS 서버 구축 / Linux &#43; Nginx PHP MySQL 외부에서 접속하기: phpinfo 띄우기 MySQL 외부에서 접속하기 (DataGrip or Workbench) phpMyAdmin 설치 Domain 적용 (가비아, 후이즈 &hellip; 구입) HTTPS 적용 (let&rsquo;s encrypt) Sub Domain 적용 (Dev, Prod) Redirection 적용 (IP to Domain, http → https) 3." />
+<meta property="og:description" content="목표  에러와 해결했던 내용을 기록하기 새롭게 알게된 것들을 알아보고 기록하기  진행 상황     Local 서버 구축 / Window/MacOS &#43; Apache PHP MySQL (Bitnami) 외부에서 접속하기: phpinfo 띄우기 (by 포트포워딩)     AWS 서버 구축 / Linux &#43; Nginx PHP MySQL 외부에서 접속하기: phpinfo 띄우기 MySQL 외부에서 접속하기 (DataGrip or Workbench) phpMyAdmin 설치 Domain 적용 (가비아, 후이즈 &hellip; 구입) HTTPS 적용 (let&rsquo;s encrypt) Sub Domain 적용 (Dev, Prod) Redirection 적용 (IP to Domain, http → https)     Sub Domain에 각각 나만의 페이지 만들기 (html, css, javascript 활용)   외부에서 접속하기: phpinfo 띄우기 (by 포트포워딩) 외부에서 접속하기 위한 포트포워딩 설정 자가 공유기의 관리자 이름과 비밀번호가 일치하지 않아서 초기화 후 차례대로 진행했다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_installation_on_aws/" /><meta property="article:section" content="server_developement" />
+<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_installation_on_aws/" />
 <meta property="article:published_time" content="2022-02-22T11:17:34+09:00" />
 <meta property="article:modified_time" content="2022-02-22T11:17:34+09:00" />
 
@@ -181,12 +179,16 @@ AWS 서버 구축 / Linux &#43; Nginx PHP MySQL 외부에서 접속하기: phpin
 <li><input checked="" disabled="" type="checkbox"> 새롭게 알게된 것들을 알아보고 기록하기</li>
 </ul>
 <h1 id="진행-상황">진행 상황</h1>
-<p>1.</p>
+<ol>
+<li></li>
+</ol>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <strong>Local 서버 구축 / Window/MacOS + Apache PHP MySQL (Bitnami)</strong></li>
 <li><input checked="" disabled="" type="checkbox"> <strong>외부에서 접속하기: phpinfo 띄우기 (by 포트포워딩)</strong></li>
 </ul>
-<p>2.</p>
+<ol start="2">
+<li></li>
+</ol>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <strong>AWS 서버 구축 / Linux + Nginx PHP MySQL</strong></li>
 <li><input checked="" disabled="" type="checkbox"> <strong>외부에서 접속하기: phpinfo 띄우기</strong></li>
@@ -197,7 +199,9 @@ AWS 서버 구축 / Linux &#43; Nginx PHP MySQL 외부에서 접속하기: phpin
 <li><input checked="" disabled="" type="checkbox"> <strong>Sub Domain 적용 (Dev, Prod)</strong></li>
 <li><input checked="" disabled="" type="checkbox"> <strong>Redirection 적용 (IP to Domain, http → https)</strong></li>
 </ul>
-<p>3.</p>
+<ol start="3">
+<li></li>
+</ol>
 <ul>
 <li><input checked="" disabled="" type="checkbox"> <strong>Sub Domain에 각각 나만의 페이지 만들기 (html, css, javascript 활용)</strong></li>
 </ul>
@@ -212,7 +216,7 @@ AWS 서버 구축 / Linux &#43; Nginx PHP MySQL 외부에서 접속하기: phpin
 <p><img src="https://user-images.githubusercontent.com/34790699/156510416-ab370005-9317-4944-9ba2-36a3c10f2c6a.png" alt="Untitled (23)"></p>
 <p>초기화 한 김에 무선 비밀번호를 재설정하기 위해서 들어간 곳에 보이는 여러 프로토콜들..
 학부 과정 중 눈에 익은 게 몇 보이지만, 당장 설명할 수는 없을 것 같아서, 간단하게 한 문장으로라도 요약해 보고 싶단 생각이 들어 정리해봤다.</p>
-<p>AES는 <!-- raw HTML omitted -->의 약자로 &lsquo;고급 암호화 표준&rsquo;라는 의미이고,
+<p>AES는 <!-- raw HTML omitted -->의 약자로 &lsquo;고급 암호화 표준'라는 의미이고,
 미국 표준 기술 연구소에 의해서 연방 정보 처리 표준으로 지정된 암호화 방식
 AES-128, AES-192, AES-256로 불리고, 숫자는 각각 암호화 키 길이이고 키에 따라 각 10,  12, 14 라운드를 실행한다.</p>
 <p>TKIP : 임시 키 무결성 프로토콜(Temporal Key Integrity Protocol, TKIP), IEEE 802.11의 무선 네트워킹 표준으로 사용되는 보안 프로토콜</p>
@@ -228,15 +232,15 @@ apache2&gt; conf &gt; httpd.conf가 있다.
 .php를 가장 우선 열고 싶다면, 순서를 바꾸어서, index.php index.html과 같이 수정할 수 있다.</p>
 <p>웹 서버 호스팅을 받는 경우,
 in dex.html을 아래와 같이 수정한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;?php
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">header(&#34;Location: index.php&#34;);
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">exit;
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
-</span></span><span style="display:flex;"><span>...기존 코드...
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156510470-153f65bc-cdc5-4851-b731-8ecd16c0f9a8.png" alt="Untitled (24)"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;?php
+</span><span style="color:#75715e">header(&#34;Location: index.php&#34;);
+</span><span style="color:#75715e">exit;
+</span><span style="color:#75715e">?&gt;</span>
+
+&lt;<span style="color:#f92672">html</span>&gt;
+...기존 코드...
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156510470-153f65bc-cdc5-4851-b731-8ecd16c0f9a8.png" alt="Untitled (24)"></p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156510538-aa452045-be7a-40c2-9ebb-9263e2c93b4e.png" alt="Untitled (25)"></p>
 <p>아파치를 재시작하니 잘 나온다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156510620-abe308c3-8ffd-4085-a816-00d91c74fdc0.png" alt="Untitled (26)"></p>
@@ -302,27 +306,27 @@ localhost가 아닌 ip로부터 root 계정으로 원격 액세스가 필요하�
 <h3 id="mysql에-접근하기-위한-유저-만들기">MySQL에 접근하기 위한 유저 만들기</h3>
 <p><code>EC2 인스턴스 서버</code>에서 <code>root</code>계정으로 접속해서 계정을 만든다.</p>
 <p>필자의 계정 이름은 <code>bon</code>이다.</p>
-<pre tabindex="0"><code>$ sudo mysql
+<pre><code>$ sudo mysql
 
-mysql&gt; create user &#39;bon&#39;@&#39;%&#39; identified by &#39;비밀번호&#39;;
+mysql&gt; create user 'bon'@'%' identified by '비밀번호';
 
 //만든 계정 확인
 mysql&gt; use mysql;
 mysql&gt; select user, host from bon;
 </code></pre><p><code>bon</code>계정으로 조회가 가능한 데이터베이스 및 테이블을 생성한다.</p>
-<pre tabindex="0"><code>mysql&gt; create database test;
+<pre><code>mysql&gt; create database test;
 mysql&gt; use test;
 mysql&gt; create table ttest(test1 varchar(100), test2 varchar(100));
-mysql&gt; insert into ttest(test1,test2) values(&#39;10&#39;,&#39;20&#39;);
-mysql&gt; insert into ttest(test1,test2) values(&#39;20&#39;,&#39;30&#39;);
+mysql&gt; insert into ttest(test1,test2) values('10','20');
+mysql&gt; insert into ttest(test1,test2) values('20','30');
 </code></pre><hr>
 <h3 id="데이터베이스-접근-권한-주기">데이터베이스 접근 권한 주기</h3>
-<pre tabindex="0"><code>mysql&gt; grant all privileges on test.* to &#39;bon&#39;@&#39;%&#39;;
+<pre><code>mysql&gt; grant all privileges on test.* to 'bon'@'%';
 mysql&gt; flush privileges;
-mysql&gt; show grants for &#39;bon&#39;@&#39;%&#39;;
+mysql&gt; show grants for 'bon'@'%';
 </code></pre><p> <code>flush privileges</code>는 <code>grant</code>라는 테이블을 즉시 리로드해서 변경 사항을 즉시 반영한다.</p>
 <p>원격 접속하기 위한 계정 설정은 끝났고 이제 원격 접속을 가능하게 <code>MySQL</code> 설정 파일을 변경하여야한다.</p>
-<pre tabindex="0"><code>$ cd /etc/mysql/mysql.conf.d
+<pre><code>$ cd /etc/mysql/mysql.conf.d
 $ sudo vi mysqlc.cnf
 </code></pre><hr>
 <h3 id="mysql-외부-접속-설정">MySQL 외부 접속 설정</h3>
@@ -344,20 +348,20 @@ $ sudo vi mysqlc.cnf
 <hr>
 <h3 id="php-myadmin-설치">php myadmin 설치</h3>
 <h3 id="heading"></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>$ sudo apt update
-</span></span><span style="display:flex;"><span>$ sudo apt upgrade
-</span></span><span style="display:flex;"><span>$ sudo apt install phpmyadmin
-</span></span></code></pre></div><p>Web Server와 phpMyAdmin의 데이터베이스를 dbconfig-common로 설정 여부를 묻는 창이 나온다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install phpmyadmin
+</code></pre></div><p>Web Server와 phpMyAdmin의 데이터베이스를 dbconfig-common로 설정 여부를 묻는 창이 나온다.</p>
 <p>webserver : 현 과정에서는 nginx를 사용할 예정이므로 선택하지 않았다.</p>
 <p>dbconfig-common은 필요가 없으므로 No를 선택한다.</p>
 <p>심볼릭 링크란 링크를 연결하여 원본 파일을 직접 사용하는 것 같은 효과를 내는 링크를 말한다.</p>
 <p>Nginx 가 phpMyAdmin 파일을 올바르게 찾게 하기 위해서 /usr/share/phpmyadmin (phpMyAdmin 디렉토리)로부터 /var/www/html/phpmyadmin(Nginx 도큐먼트 root 디렉토리)로 심볼릭 링크를 생성해준다.</p>
-<pre tabindex="0"><code>$ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
+<pre><code>$ sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin
 </code></pre><p>Nginx 설정 파일에서 index.php를 추가하여 php 파일이 nginx를 통해 웹에 보일 수 있게 된다.</p>
-<pre tabindex="0"><code>$ sudo vi /etc/nginx/sites-available/default
+<pre><code>$ sudo vi /etc/nginx/sites-available/default
 </code></pre><p><img src="https://user-images.githubusercontent.com/34790699/156511030-3e7515f4-6a46-4d6b-bc85-7a9ee3c08523.png" alt="Untitled (36)"></p>
 <p>이후 재시작을 통해 변경 사항을 저장, 적용해준다.</p>
-<pre tabindex="0"><code>$ sudo service nginx restart
+<pre><code>$ sudo service nginx restart
 </code></pre><p><code>AWS외부아이피주소/phpmyadmin</code> 에 접속한다.</p>
 <p>phpmyadmin 접속이 정상적으로 되었다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156511100-204c69d9-9b7c-449f-9518-6cc5c5375df1.png" alt="Untitled (37)"></p>
@@ -394,9 +398,10 @@ $ sudo vi mysqlc.cnf
 <p>3.(Standalone)</p>
 <p>standalone 옵션은 또한 한꺼번에 여러 개의 사이트를 인증 받을 수 있는데, 연속된 사이트명을 나열하면 된다.</p>
 <p>그런데 허점이 있다. 이렇게 여러개 사이트를 인증 받을 시 인증서 존재 위치가 맨앞 사이트명으로 통일되게 된다. 나중에 사이트를 없앨 때 곤란한 상황에 처할 수 있는 것이다.</p>
-<pre tabindex="0"><code>service nginx stop
+<pre><code>service nginx stop
 
 certbot certonly --standalone -d 사이트명
+
 </code></pre><p>4.(DNS)</p>
 <p>서브도메인을 모두 적용한다고 가정해 보자. 와일드 카드 방식으로 인증서가 발급 가능하다길래 시도해봤다.</p>
 <p>DNS가 API를 제공하는 경우에만  갱신 작업을 수행하는 스크립트를 실행하던가 해서 처리가 가능하다. 일반적인 도메인 등록 업체를 사용하는 경우 수동으로 갱신할 수밖에 없다.</p>
@@ -460,61 +465,61 @@ certbot certonly --standalone -d 사이트명
 <p>이 도움말에서는 Certbot을 사용하여 Ubuntu 18.04 에서 Nginx용 무료 SSL 인증서를 받고, 자동으로 갱신하도록 설정할 수 있습니다.</p>
 <p>또한, 이 도움말에서는 default 파일 대신, 별도의 Nginx 서버 블록 파일을 사용합니다. 일반적인 실수를 방지하고, default 파일을 예외 처리 파일로 유지할 수 있으므로, 도메인마다 새로운 Nginx 서버 블록 파일을 만드는 것을 추천합니다.</p>
 <h2 id="1-nginx-설치">1. <strong>Nginx 설치</strong></h2>
-<p><code>sudo apt update sudo apt install nginx</code></p>
+<p><code>sudo apt update sudo apt install nginx</code></p>
 <h2 id="2-방화벽-설치aws-쓰고있으면-skip">2. <strong>방화벽 설치(AWS 쓰고있으면 Skip)</strong></h2>
 <h3 id="웹서버-확인"><strong>웹서버 확인</strong></h3>
 <p><code>sudo service nginx status</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>nginx.service - A high performance web server and a reverse proxy server
-</span></span><span style="display:flex;"><span>   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en
-</span></span><span style="display:flex;"><span>   Active: active (running) since Wed 2020-09-16 17:19:24 KST; 1h 19min ago
-</span></span><span style="display:flex;"><span>     Docs: man:nginx(8)
-</span></span><span style="display:flex;"><span>  Process: 7597 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 -
-</span></span><span style="display:flex;"><span>  Process: 7611 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code
-</span></span><span style="display:flex;"><span>  Process: 7599 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process
-</span></span><span style="display:flex;"><span> Main PID: 7615 (nginx)
-</span></span><span style="display:flex;"><span>    Tasks: 2 (limit: 1140)
-</span></span><span style="display:flex;"><span>   CGroup: /system.slice/nginx.service
-</span></span><span style="display:flex;"><span>           ├─7615 nginx: master process /usr/sbin/nginx -g daemon on; master_pro
-</span></span><span style="display:flex;"><span>           └─7754 nginx: worker process
-</span></span></code></pre></div><h2 id="3-서버-블록-설정하기">3. <strong>서버 블록 설정하기</strong></h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">nginx.service - A high performance web server and a reverse proxy server
+   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: en
+   Active: active (running) since Wed 2020-09-16 17:19:24 KST; 1h 19min ago
+     Docs: man:nginx(8)
+  Process: 7597 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 -
+  Process: 7611 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code
+  Process: 7599 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process
+ Main PID: 7615 (nginx)
+    Tasks: 2 (limit: 1140)
+   CGroup: /system.slice/nginx.service
+           ├─7615 nginx: master process /usr/sbin/nginx -g daemon on; master_pro
+           └─7754 nginx: worker process
+</code></pre></div><h2 id="3-서버-블록-설정하기">3. <strong>서버 블록 설정하기</strong></h2>
 <p>우분투 18.04에서 Nginx설치하면 기본으로 <code>/var/www/html</code> 을 제공합니다. 새로운 Nginx 서버블록을 만드려면 자신의 도메인이름으로 된 폴더를 만들어야 합니다.</p>
-<p><code>sudo mkdir -p /var/www/{도메인이름}/html sudo chown -R $USER:$USER /var/www/{도메인이름}/html sudo chmod -R 755 /var/www/{도메인이름}</code></p>
+<p><code>sudo mkdir -p /var/www/{도메인이름}/html sudo chown -R $USER:$USER /var/www/{도메인이름}/html sudo chmod -R 755 /var/www/{도메인이름}</code></p>
 <p>이제부터 {도메인이름}은 <code>example.com</code> 으로 지정하겠습니다.</p>
 <p>지정하고 나면 <code>/etc/nginx/sites-available/</code> 에 <code>example.com</code> 을 만듭니다.</p>
 <p><code>sudo vi /etc/nginx/sites-available/example.com</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>server {
-</span></span><span style="display:flex;"><span>        listen 80;
-</span></span><span style="display:flex;"><span>        listen [::]:80;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        root /var/www/example.com/html;
-</span></span><span style="display:flex;"><span>        index index.html index.htm index.nginx-debian.html;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        server_name example.com www.example.com;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>				location / {
-</span></span><span style="display:flex;"><span>								#try_files $uri $uri/ =404; 주석처리
-</span></span><span style="display:flex;"><span>                proxy_pass http://localhost:8080;
-</span></span><span style="display:flex;"><span>                proxy_set_header X-Real-IP $remote_addr;
-</span></span><span style="display:flex;"><span>                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
-</span></span><span style="display:flex;"><span>                proxy_set_header Host $http_host;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>proxy_pass를 추가하여 리버스프록시 설정합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/example.com/html;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name example.com www.example.com;
+
+				location / {
+								#try_files $uri $uri/ =404; 주석처리
+                proxy_pass http://localhost:8080;
+                proxy_set_header X-Real-IP $remote_addr;
+                proxy_set_header X-Forward-For $proxy_add_x_forwarded_for;
+                proxy_set_header Host $http_host;
+        }
+}
+</code></pre></div><p>proxy_pass를 추가하여 리버스프록시 설정합니다.</p>
 <p>이 파일을 <code>sites-enabled</code> 폴더에 연결합니다.</p>
 <p><code>sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/</code></p>
 <h3 id="etcnginxnginxconf에서-해시-버킷-메모리-문제-해결하기"><code>/etc/nginx/nginx.conf</code> 에서 해시 버킷 메모리 문제 해결하기</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>...
-</span></span><span style="display:flex;"><span>http {
-</span></span><span style="display:flex;"><span>    ...
-</span></span><span style="display:flex;"><span>    server_names_hash_bucket_size 64;
-</span></span><span style="display:flex;"><span>    ...
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>...
-</span></span></code></pre></div><h3 id="nginx-설정이-잘됐는지-확인하기">Nginx 설정이 잘됐는지 확인하기</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">...
+http {
+    ...
+    server_names_hash_bucket_size 64;
+    ...
+}
+...
+</code></pre></div><h3 id="nginx-설정이-잘됐는지-확인하기">Nginx 설정이 잘됐는지 확인하기</h3>
 <p><code>sudo nginx -t</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
-</span></span><span style="display:flex;"><span>nginx: configuration file /etc/nginx/nginx.conf test is successful
-</span></span></code></pre></div><p>테스트가 성공적이라면 바로 nginx restart</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+</code></pre></div><p>테스트가 성공적이라면 바로 nginx restart</p>
 <p><code>sudo service nginx restart</code></p>
 <h2 id="4-certbot-설치">4. <strong>Certbot 설치</strong></h2>
 <p>Let’s Encrypt를 사용하여 SSL 인증서를 얻기 위해서는 우분투 서버에 Certbot 클라이언트를 설치해야 합니다. Certbot의 개발은 빠르게 개발되고 있어서, 우분투 <code>apt</code> 에서 제공하는 Certbot 패키지는 조금 오래된 버젼입니다. 하지만, Certbot의 레포지토리는 항상 최신을 유지하고 있습니다. 우리는 레포지토리를 사용하여 설치할 예정입니다.</p>
@@ -528,101 +533,101 @@ certbot certonly --standalone -d 사이트명
 <p><code>sudo certbot --nginx -d example.com</code></p>
 <p>certbot은 -d 우측에 있는 도메인들을 유효하게 만드는 설정을 진행할 수 있습니다.</p>
 <p>진행시 다음처럼 뜹니다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Saving debug log to /var/log/letsencrypt/letsencrypt.log
-</span></span><span style="display:flex;"><span>Plugins selected: Authenticator nginx, Installer nginx
-</span></span><span style="display:flex;"><span>Enter email address (used for urgent renewal and security notices) (Enter &#39;c&#39; to
-</span></span><span style="display:flex;"><span>cancel): 이메일 주소
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>Please read the Terms of Service at
-</span></span><span style="display:flex;"><span>https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
-</span></span><span style="display:flex;"><span>agree in order to register with the ACME server at
-</span></span><span style="display:flex;"><span>https://acme-v02.api.letsencrypt.org/directory
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>(A)gree/(C)ancel: 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>Would you be willing to share your email address with the Electronic Frontier
-</span></span><span style="display:flex;"><span>Foundation, a founding partner of the Let&#39;s Encrypt project and the non-profit
-</span></span><span style="display:flex;"><span>organization that develops Certbot? We&#39;d like to send you email about our work
-</span></span><span style="display:flex;"><span>encrypting the web, EFF news, campaigns, and ways to support digital freedom.
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>(Y)es/(N)o:
-</span></span></code></pre></div><p>이메일 주소 입력하고, 서비스 약관에 동의해야하는 절차를 수행하면 됩니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Plugins selected: Authenticator nginx, Installer nginx
+Enter email address (used for urgent renewal and security notices) (Enter &#39;c&#39; to
+cancel): 이메일 주소
+
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Please read the Terms of Service at
+https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf. You must
+agree in order to register with the ACME server at
+https://acme-v02.api.letsencrypt.org/directory
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(A)gree/(C)ancel: 
+
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Would you be willing to share your email address with the Electronic Frontier
+Foundation, a founding partner of the Let&#39;s Encrypt project and the non-profit
+organization that develops Certbot? We&#39;d like to send you email about our work
+encrypting the web, EFF news, campaigns, and ways to support digital freedom.
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(Y)es/(N)o:
+</code></pre></div><p>이메일 주소 입력하고, 서비스 약관에 동의해야하는 절차를 수행하면 됩니다.</p>
 <p>위 절차가 성공적으로 진행한다면, certbot은 https를 어떻게 설정할 지 묻습니다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Obtaining a new certificate
-</span></span><span style="display:flex;"><span>Performing the following challenges:
-</span></span><span style="display:flex;"><span>http-01 challenge for example.com
-</span></span><span style="display:flex;"><span>Waiting for verification...
-</span></span><span style="display:flex;"><span>Cleaning up challenges
-</span></span><span style="display:flex;"><span>Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/example.com
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>1: No redirect - Make no further changes to the webserver configuration.
-</span></span><span style="display:flex;"><span>2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
-</span></span><span style="display:flex;"><span>new sites, or if you&#39;re confident your site works on HTTPS. You can undo this
-</span></span><span style="display:flex;"><span>change by editing your web server&#39;s configuration.
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel): 2
-</span></span></code></pre></div><p>질문: http 트래픽을 https로 리다이렉트 할 것입니까? 아니면 http 접근을 막으실 겁니까?</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Obtaining a new certificate
+Performing the following challenges:
+http-01 challenge for example.com
+Waiting for verification...
+Cleaning up challenges
+Deploying Certificate to VirtualHost /etc/nginx/sites-enabled/example.com
+
+Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+1: No redirect - Make no further changes to the webserver configuration.
+2: Redirect - Make all requests redirect to secure HTTPS access. Choose this for
+new sites, or if you&#39;re confident your site works on HTTPS. You can undo this
+change by editing your web server&#39;s configuration.
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Select the appropriate number [1-2] then [enter] (press &#39;c&#39; to cancel): 2
+</code></pre></div><p>질문: http 트래픽을 https로 리다이렉트 할 것입니까? 아니면 http 접근을 막으실 겁니까?</p>
 <p>1번: 리다이렉트 없음 - 웹서버 설정에 아무런 변화도 없습니다.</p>
 <p>2번: 리다이렉트 - 모든 http 연결을 https로 리다이렉트 합니다. 웹서버 설정을 바꿀 수 있습니다. 바뀐 설정은 다시 되돌릴 수 있습니다.</p>
 <p>여기서 2번을 선택하여 http연결을 https로 리다이렉트합니다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>Congratulations! You have successfully enabled
-</span></span><span style="display:flex;"><span>https://example.com
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>You should test your configuration at:
-</span></span><span style="display:flex;"><span>https://www.ssllabs.com/ssltest/analyze.html?d=example.com
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>IMPORTANT NOTES:
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">-</span> Congratulations! Your certificate and chain have been saved at:
-</span></span><span style="display:flex;"><span>   /etc/letsencrypt/live/example.com/fullchain.pem
-</span></span><span style="display:flex;"><span>   Your key file has been saved at:
-</span></span><span style="display:flex;"><span>   /etc/letsencrypt/live/example.com/privkey.pem
-</span></span><span style="display:flex;"><span>   Your cert will expire on 2020-12-15. To obtain a new or tweaked
-</span></span><span style="display:flex;"><span>   version of this certificate in the future, simply run certbot again
-</span></span><span style="display:flex;"><span>   with the &#34;certonly&#34; option. To non-interactively renew <span style="font-style:italic">*all*</span> of
-</span></span><span style="display:flex;"><span>   your certificates, run &#34;certbot renew&#34;
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">-</span> Your account credentials have been saved in your Certbot
-</span></span><span style="display:flex;"><span>   configuration directory at /etc/letsencrypt. You should make a
-</span></span><span style="display:flex;"><span>   secure backup of this folder now. This configuration directory will
-</span></span><span style="display:flex;"><span>   also contain certificates and private keys obtained by Certbot so
-</span></span><span style="display:flex;"><span>   making regular backups of this folder is ideal.
-</span></span><span style="display:flex;"><span> <span style="color:#66d9ef">-</span> If you like Certbot, please consider supporting our work by:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>   Donating to ISRG / Let&#39;s Encrypt:   https://letsencrypt.org/donate
-</span></span><span style="display:flex;"><span>   Donating to EFF:                    https://eff.org/donate-le
-</span></span></code></pre></div><p>Let’s Encrypt의 인증서는 설치가 완료된 이후 90일 까지만 유효합니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">Congratulations! You have successfully enabled
+https://example.com
+
+You should test your configuration at:
+https://www.ssllabs.com/ssltest/analyze.html?d=example.com
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+IMPORTANT NOTES:
+ <span style="color:#66d9ef">-</span> Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/example.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/example.com/privkey.pem
+   Your cert will expire on 2020-12-15. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the &#34;certonly&#34; option. To non-interactively renew <span style="font-style:italic">*all*</span> of
+   your certificates, run &#34;certbot renew&#34;
+ <span style="color:#66d9ef">-</span> Your account credentials have been saved in your Certbot
+   configuration directory at /etc/letsencrypt. You should make a
+   secure backup of this folder now. This configuration directory will
+   also contain certificates and private keys obtained by Certbot so
+   making regular backups of this folder is ideal.
+ <span style="color:#66d9ef">-</span> If you like Certbot, please consider supporting our work by:
+
+   Donating to ISRG / Let&#39;s Encrypt:   https://letsencrypt.org/donate
+   Donating to EFF:                    https://eff.org/donate-le
+</code></pre></div><p>Let’s Encrypt의 인증서는 설치가 완료된 이후 90일 까지만 유효합니다.</p>
 <p>90일 지나기전에 certbot을 다시 실행하여 인증서를 갱신해야합니다.</p>
 <h2 id="6-ssl-자동으로-갱신시키기">6**. SSL 자동으로 갱신시키기**</h2>
 <p>Let’s Encrypt의 인증서는 90일 동안만 유효합니다. 인증서를 자주 갱신시키는 것이 권장되기 때문입니다. 우리는 certbot 패키지를 설치하여 이 문제를 자동화 시킬 수 있습니다. <code>/etc/cron.d</code> 내의 스크립트는 하루 두번씩 실행되어 만료일까지 30일 이내의 모든 인증서를 자동으로 갱신 시킬 수 있습니다.</p>
 <p>갱신 절차를 테스트 해보려면, 다음 명령어를 입력하세요.</p>
 <p><code>$ sudo certbot renew --dry-run</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>Processing /etc/letsencrypt/renewal/example.com.conf
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>Cert not due for renewal, but simulating renewal for dry run
-</span></span><span style="display:flex;"><span>Plugins selected: Authenticator nginx, Installer nginx
-</span></span><span style="display:flex;"><span>Renewing an existing certificate
-</span></span><span style="display:flex;"><span>Performing the following challenges:
-</span></span><span style="display:flex;"><span>http-01 challenge for example.com
-</span></span><span style="display:flex;"><span>Waiting for verification...
-</span></span><span style="display:flex;"><span>Cleaning up challenges
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>new certificate deployed with reload of nginx server; fullchain is
-</span></span><span style="display:flex;"><span>/etc/letsencrypt/live/example.com/fullchain.pem
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>** DRY RUN: simulating &#39;certbot renew&#39; close to cert expiry
-</span></span><span style="display:flex;"><span><span style="font-style:italic">**</span> (The test certificates below have not been saved.)
-</span></span><span style="display:flex;"><span>Congratulations, all renewals succeeded. The following certs have been renewed: /etc/letsencrypt/live/example.com/fullchain.pem (success)
-</span></span><span style="display:flex;"><span><span style="font-style:italic">**</span> DRY RUN: simulating &#39;certbot renew&#39; close to cert expiry
-</span></span><span style="display:flex;"><span><span style="font-style:italic">**</span> (The test certificates above have not been saved.)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</span></span><span style="display:flex;"><span>IMPORTANT NOTES: - Your account credentials have been saved in your Certbot configuration directory at /etc/letsencrypt. You should make a secure backup of this folder now. This configuration directory will also contain certificates and private keys obtained by Certbot so making regular backups of this folder is ideal.
-</span></span></code></pre></div><p>오류가 없다면, 당신은 모든 설정을 마친 것입니다. 이제 certbot이 자동적으로 인증서를 갱신하고, Nginx를 재시작 할것입니다. 만약 자동 갱신 프로세스가 실패할 경우, 인증서가 만료되기 이전에 사전에 지정된 이메일로 경고 메시지가 보내질 것입니다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"><span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Processing /etc/letsencrypt/renewal/example.com.conf
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Cert not due for renewal, but simulating renewal for dry run
+Plugins selected: Authenticator nginx, Installer nginx
+Renewing an existing certificate
+Performing the following challenges:
+http-01 challenge for example.com
+Waiting for verification...
+Cleaning up challenges
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+new certificate deployed with reload of nginx server; fullchain is
+/etc/letsencrypt/live/example.com/fullchain.pem
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+** DRY RUN: simulating &#39;certbot renew&#39; close to cert expiry
+** (The test certificates below have not been saved.)
+Congratulations, all renewals succeeded. The following certs have been renewed: /etc/letsencrypt/live/example.com/fullchain.pem (success)
+** DRY RUN: simulating &#39;certbot renew&#39; close to cert expiry
+** (The test certificates above have not been saved.)
+<span style="color:#66d9ef">-</span> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+IMPORTANT NOTES: - Your account credentials have been saved in your Certbot configuration directory at /etc/letsencrypt. You should make a secure backup of this folder now. This configuration directory will also contain certificates and private keys obtained by Certbot so making regular backups of this folder is ideal.
+</code></pre></div><p>오류가 없다면, 당신은 모든 설정을 마친 것입니다. 이제 certbot이 자동적으로 인증서를 갱신하고, Nginx를 재시작 할것입니다. 만약 자동 갱신 프로세스가 실패할 경우, 인증서가 만료되기 이전에 사전에 지정된 이메일로 경고 메시지가 보내질 것입니다.</p>
 <p>실제로 수동으로 갱신하려면</p>
 <p><code>sudo certbot renew</code></p>
 <p>실행하면 됩니다.</p>
@@ -640,8 +645,8 @@ certbot certonly --standalone -d 사이트명
 <p>하지만 설치하는 과정에서 /etc/cron.d에 자동으로 갱신시켜주는 커맨드가 추가되어 있다.</p>
 <p>다만, 갱신 프로세스가 잘 동작하는지 테스트를 해보고 싶다면 다음과 같은 명령어를 입력해서</p>
 <p>테스트를 진행할 수 있다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">$</span> <span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">certbot</span> <span style="color:#a6e22e">renew</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">dry</span><span style="color:#f92672">-</span><span style="color:#a6e22e">run</span>
-</span></span></code></pre></div><p>아래는 명령어를 실행한 뒤 화면이다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">$</span> <span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">certbot</span> <span style="color:#a6e22e">renew</span> <span style="color:#f92672">--</span><span style="color:#a6e22e">dry</span><span style="color:#f92672">-</span><span style="color:#a6e22e">run</span>
+</code></pre></div><p>아래는 명령어를 실행한 뒤 화면이다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156511374-7cd60bae-3500-4546-b1a8-289ff079a919.png" alt="Untitled (43)"></p>
 <p>모든 설정이 끝났다.</p>
 <p>이제 certbot이 자동적으로 인증서를 갱신하고, Nginx를 재시작한다.
@@ -664,51 +669,52 @@ certbot certonly --standalone -d 사이트명
 <p>root의 처음 설정은 <code>/var/www/html</code> 이다.</p>
 <p>필자는 <code>/var/www/{도메인이름}/html</code> 형태의 구조로 셋팅했다.</p>
 <p>이렇게 폴더 구조를 만든 다음, 해당 폴더로 이동해서, 아래의 명령어를 실행해서 html 파일을 생성 및 편집한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">touch</span> <span style="color:#a6e22e">virtualtest</span>.<span style="color:#a6e22e">html</span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">virtualtest</span>.<span style="color:#a6e22e">html</span>
-</span></span></code></pre></div><p>755로 권한을 부여한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">chmod</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">R</span> <span style="color:#ae81ff">755</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#960050;background-color:#1e0010">/www/virtual</span>
-</span></span></code></pre></div><h3 id="dev-도메인과-prod-도메인을-추가로-설정">dev 도메인과 prod 도메인을 추가로 설정</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># dev.bonster.xyz, prod.bonster.xyz 디렉토리를 생성
-</span></span><span style="display:flex;"><span>sudo mkdir -p /var/www/dev.bonster.xyz
-</span></span><span style="display:flex;"><span>sudo mkdir -p /var/www/prod.bonster.xyz
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># $USER를 사용하여 디렉토리의 소유권을 설정
-</span></span><span style="display:flex;"><span>sudo chown -R $USER:$USER /var/www/dev.bonster.xyz
-</span></span><span style="display:flex;"><span>sudo chmod -R 755 /var/www/prod.bonster.xyz
-</span></span></code></pre></div><h3 id="신규-디렉토리에-indexhtml-생성">신규 디렉토리에 index.html 생성</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># index.html 을 열어 html을 작성
-</span></span><span style="display:flex;"><span>sudo vi /var/www/dev.bonster.xyz/index.html
-</span></span><span style="display:flex;"><span># dev의 index.html 작성 후 prod의 index.html도 작성
-</span></span><span style="display:flex;"><span>sudo vi /var/www/prod.bonster.xyz/index.html
-</span></span></code></pre></div><h3 id="서버-블록-생성">서버 블록 생성</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">touch</span> <span style="color:#a6e22e">virtualtest</span>.<span style="color:#a6e22e">html</span>
+<span style="color:#a6e22e">vim</span> <span style="color:#a6e22e">virtualtest</span>.<span style="color:#a6e22e">html</span>
+</code></pre></div><p>755로 권한을 부여한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">chmod</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">R</span> <span style="color:#ae81ff">755</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#960050;background-color:#1e0010">/www/virtual</span>
+</code></pre></div><h3 id="dev-도메인과-prod-도메인을-추가로-설정">dev 도메인과 prod 도메인을 추가로 설정</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># dev.bonster.xyz, prod.bonster.xyz 디렉토리를 생성
+sudo mkdir -p /var/www/dev.bonster.xyz
+sudo mkdir -p /var/www/prod.bonster.xyz
+
+# $USER를 사용하여 디렉토리의 소유권을 설정
+sudo chown -R $USER:$USER /var/www/dev.bonster.xyz
+sudo chmod -R 755 /var/www/prod.bonster.xyz
+
+</code></pre></div><h3 id="신규-디렉토리에-indexhtml-생성">신규 디렉토리에 index.html 생성</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># index.html 을 열어 html을 작성
+sudo vi /var/www/dev.bonster.xyz/index.html
+# dev의 index.html 작성 후 prod의 index.html도 작성
+sudo vi /var/www/prod.bonster.xyz/index.html
+</code></pre></div><h3 id="서버-블록-생성">서버 블록 생성</h3>
 <p>default는 건드리지 않고, 별도의 서버 블록을 생성해 심볼릭 링크를 적용시킬 것이다.</p>
 <p>아래의 코드는 <code>prod</code>가 생략되었다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sudo vi /etc/nginx/sites-available/dev.bonster.xyz
-</span></span><span style="display:flex;"><span>server {
-</span></span><span style="display:flex;"><span>        listen 80;
-</span></span><span style="display:flex;"><span>        listen [::]:80;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        root /var/www/dev.bonster.xyz;
-</span></span><span style="display:flex;"><span>        index index.html index.htm index.nginx-debian.html;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        server_name dev.bonster.xyz;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        location / {
-</span></span><span style="display:flex;"><span>                try_files $uri $uri/ =404;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>심볼릭 링크 생성</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sudo ln -s /etc/nginx/sites-available/dev.bonster.xyz /etc/nginx/sites-enabled/
-</span></span></code></pre></div><h3 id="해시-버킷-메모리-문제-대비">해시 버킷 메모리 문제 대비</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">sudo vi /etc/nginx/sites-available/dev.bonster.xyz
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/dev.bonster.xyz;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name dev.bonster.xyz;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre></div><p>심볼릭 링크 생성</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">sudo ln -s /etc/nginx/sites-available/dev.bonster.xyz /etc/nginx/sites-enabled/
+</code></pre></div><h3 id="해시-버킷-메모리-문제-대비">해시 버킷 메모리 문제 대비</h3>
 <p>해시 버킷 : 해시 테이블 내부에 있는, 실제 값이 저장되는 장소</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sudo vi /etc/nginx/nginx.conf
-</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156511677-1cc045c3-1343-49ba-a414-2574d8cb7053.png" alt="Untitled (47)"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">sudo vi /etc/nginx/nginx.conf
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156511677-1cc045c3-1343-49ba-a414-2574d8cb7053.png" alt="Untitled (47)"></p>
 <p>중간에 보이는 <code>server_names_hash_bucket_size</code> 에 대한 주석을 해제한다. 위 캡쳐 사진은 주석을 해제한 상태이다.</p>
 <h3 id="지금까지-진행한-것에-문제가-없는지-확인">지금까지 진행한 것에 문제가 없는지 확인</h3>
-<pre tabindex="0"><code>sudo nginx -t
+<pre><code>sudo nginx -t
 </code></pre><h3 id="적용을-위해-재시작">적용을 위해 재시작</h3>
-<pre tabindex="0"><code>sudo systemctl restart nginx
+<pre><code>sudo systemctl restart nginx
 </code></pre><h3 id="호스팅케이알도메인-관리-서비스-내-설정하기">호스팅케이알(도메인 관리 서비스) 내 설정하기</h3>
 <p>호스팅케이알 웹 페이지의 메뉴얼을 보고 설정한 값은 아래와 같다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156511685-262e3625-7595-4408-a7ae-495bc368ee1c.png" alt="Untitled (48)"></p>
@@ -720,7 +726,7 @@ certbot certonly --standalone -d 사이트명
 <p>덧붙이자면, 속도때문에 SSL은 로그인이나 회원 가입등 일부 부분에서만 사용한다고 한다. 네이버에서도 일부분만 적용한다고 한다.</p>
 <hr>
 <h1 id="리디렉션-적용하기-http--https">리디렉션 적용하기 (HTTP → HTTPS)</h1>
-<pre tabindex="0"><code>server {
+<pre><code>server {
     if ($host = bonster.xyz) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
@@ -755,7 +761,7 @@ certbot certonly --standalone -d 사이트명
 <li>루트 사용자만 사용할 수 있는 권한이 존재하므로 필요시만 로그인한다.</li>
 <li>이것 역시 보안이 강화되는 효과를 볼 수 있다.</li>
 </ul>
-<p><strong>AES :</strong> <!-- raw HTML omitted -->의 약자로 &lsquo;고급 암호화 표준&rsquo;라는 의미이고,
+<p><strong>AES :</strong> <!-- raw HTML omitted -->의 약자로 &lsquo;고급 암호화 표준'라는 의미이고,
 미국 표준 기술 연구소에 의해서 연방 정보 처리 표준으로 지정된 암호화 방식
 AES-128, AES-192, AES-256로 불리고, 숫자는 각각 암호화 키 길이이고 키에 따라 각 10,  12, 14 라운드를 실행한다.</p>
 <p><strong>TKIP</strong> : 임시 키 무결성 프로토콜(Temporal Key Integrity Protocol, TKIP), IEEE 802.11의 무선 네트워킹 표준으로 사용되는 보안 프로토콜</p>
@@ -838,10 +844,10 @@ apt-get역시 dpkg를 사용하여 실제 패키지 설치를 수행하다. 수�
 <ol>
 <li>모든 권한 읽기, 쓰기, 실행을 부여</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-jsx" data-lang="jsx"><span style="display:flex;"><span><span style="color:#a6e22e">sudo</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">s</span> <span style="color:#75715e">// root 권한 얻기
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">chmod</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">R</span> <span style="color:#ae81ff">777</span> <span style="color:#a6e22e">filename</span>
-</span></span></code></pre></div><ol start="2">
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">s</span> <span style="color:#75715e">// root 권한 얻기
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">chmod</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">R</span> <span style="color:#ae81ff">777</span> <span style="color:#a6e22e">filename</span>
+</code></pre></div><ol start="2">
 <li><strong>모든 파일 또는 폴더의 권한을 한번에 바꾸는 방법</strong></li>
 </ol>
 <p><em><strong>find 키워드를 사용하면 가능하다.</strong></em></p>
@@ -940,7 +946,7 @@ apt-get역시 dpkg를 사용하여 실제 패키지 설치를 수행하다. 수�
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -1052,7 +1058,7 @@ apt-get역시 dpkg를 사용하여 실제 패키지 설치를 수행하다. 수�
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -1238,14 +1244,16 @@ apt-get역시 dpkg를 사용하여 실제 패키지 설치를 수행하다. 수�
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 

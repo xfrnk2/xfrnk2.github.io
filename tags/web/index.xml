@@ -5,8 +5,11 @@
     <link>https://xfrnk2.github.io/tags/web/</link>
     <description>Recent content in web on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Tue, 01 Feb 2022 21:17:34 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Feb 2022 21:17:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</title>
       <link>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</link>
@@ -14,8 +17,8 @@
       
       <guid>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</guid>
       <description>문제 발생 상황 https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396
-위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제 ./node_modules/.bin/webpack --config webpack.config.js 해결 방법 아래는 해결 방법의 원문(영문)을 옮긴 글이다. That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
-If you are using yarn, follow the below one: Step 1: Remove the old packages</description>
+ 위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제  ./node_modules/.bin/webpack --config webpack.config.js 해결 방법  아래는 해결 방법의 원문(영문)을 옮긴 글이다.   That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
+ If you are using yarn, follow the below one: Step 1: Remove the old packages</description>
     </item>
     
     <item>
@@ -25,8 +28,8 @@ If you are using yarn, follow the below one: Step 1: Remove the old packages</de
       
       <guid>https://xfrnk2.github.io/web/html/</guid>
       <description>비전공자를 위한 HTML/CSS를 보고 HTML 파트를 정리했다. 정의나 유래 등 기초적인 내용에 대해서는 언급하지 않는다.
-개요 HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
--&amp;gt; 필요할 때 찾고 다 외울 필요는 없다. 빈 태그 내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.-&amp;gt;대체태그(replacement태그) &amp;lt;br&amp;gt;, &amp;lt;img src=&amp;quot;&amp;quot;&amp;gt; 태그와 요소의 차이 &amp;lt;h1&amp;gt;Hello&amp;lt;/h1&amp;gt; 태그 : &amp;lt;h1&amp;gt;과 &amp;lt;/h1&amp;gt; 요소 : 내용까지 통틀어서 전체 큰 범위에서의 태그의 역할 head : 문서의 기본 설정 및 외부스타일 시트 또는 js파일을 연결하는 것 meta : 문자의 인코딩 방식 지정하는 것 -&amp;gt; meta charset=&amp;ldquo;UTF-8&amp;rdquo; 제목과 단락 제목 : heading -&amp;gt; &amp;lt;h1&amp;gt;, &amp;lt;h2&amp;gt; &amp;hellip; 단락 : paragraph -&amp;gt; &amp;lt;p&amp;gt; // 자동개행됨.</description>
+  개요  HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
+-&amp;gt; 필요할 때 찾고 다 외울 필요는 없다.   빈 태그  내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.</description>
     </item>
     
     <item>
@@ -36,7 +39,7 @@ If you are using yarn, follow the below one: Step 1: Remove the old packages</de
       
       <guid>https://xfrnk2.github.io/web/ssrandcsr/</guid>
       <description>최근 용어 &amp;lsquo;서버 사이드 렌더링(Server Side Rendering)&amp;lsquo;을 알게 되었는데, 리액트를 공부하며 배우게 된 SPA방식과 관계가 있다고 생각했다. 궁금해서 찾아본 내용(서버 사이드 렌더링((Server Side Rendering))과 클라이언트 사이드 렌더링(Client Side Rendering))을 간단하게 정리해 보았다.
-Server Side Rendering 전통적인 웹 어플리케이션 렌더링 방식 검색엔진 최적화 용이 서버에서 view를 렌더링해서 가져오므로 view를 보기까지 초기 구동속도가 빠름 HTML에 모든 컨텐츠가 저장되어 있으므로 검색엔진 노출에 문제가 되지 않음 사용자가 처음으로 보는 컨텐츠의 시점을 앞당길 수 있음 사용자 정보를 서버측에서 세션 관리 Client Side Rendering SPA 방식(Single Page Application) HTML을 다운로드 받고, JS를 다운로드 받아서, JS가 동작하면서 데이터만 주고받아서 클라이언트 쪽에서 렌더링 하는 방식 브라우저가 없으므로 HTML만 가져와서는 검색에 나오지 않음.</description>
+  Server Side Rendering  전통적인 웹 어플리케이션 렌더링 방식 검색엔진 최적화 용이 서버에서 view를 렌더링해서 가져오므로 view를 보기까지 초기 구동속도가 빠름 HTML에 모든 컨텐츠가 저장되어 있으므로 검색엔진 노출에 문제가 되지 않음 사용자가 처음으로 보는 컨텐츠의 시점을 앞당길 수 있음 사용자 정보를 서버측에서 세션 관리   Client Side Rendering  SPA 방식(Single Page Application) HTML을 다운로드 받고, JS를 다운로드 받아서, JS가 동작하면서 데이터만 주고받아서 클라이언트 쪽에서 렌더링 하는 방식 브라우저가 없으므로 HTML만 가져와서는 검색에 나오지 않음.</description>
     </item>
     
   </channel>

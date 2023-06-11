@@ -5,8 +5,11 @@
     <link>https://xfrnk2.github.io/it-voca/</link>
     <description>Recent content in It-vocas on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 23 Jul 2020 01:42:51 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/it-voca/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jul 2020 01:42:51 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/it-voca/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>IT 용어 정리</title>
       <link>https://xfrnk2.github.io/it-voca/it_voca/</link>
@@ -14,9 +17,9 @@
       
       <guid>https://xfrnk2.github.io/it-voca/it_voca/</guid>
       <description>새롭게 알게된 IT용어와 관련 영어 어휘들을 정리하기 위한 문서이며 계속해서 업데이트할 예정입니다. 기록한 시간 순서로 나열합니다.
-GPU (Grapic Processing Unit) : 그래픽 처리 장치
-container : 코드와 모든 종속성을 패키지화하는 표준 소프트웨어의 단위, 컨테이너 이미지는 런타임에 컨테이너가 된다. docker 컨테이너의 경우 docker 엔진에서 실행될 때 컨테이너가 된다.
-특징 : (표준, 경량, 균일) 한 어플리케이션을 사용하기 위한 모든 것을 포함한다.(코드, 모든 종속성, 라이브러리) 컨테이너는 OS의 커널을 공유해서 사용하기 때문에 앱당 OS가 필요하지 않다.</description>
+   GPU (Grapic Processing Unit) : 그래픽 처리 장치
+  container : 코드와 모든 종속성을 패키지화하는 표준 소프트웨어의 단위, 컨테이너 이미지는 런타임에 컨테이너가 된다. docker 컨테이너의 경우 docker 엔진에서 실행될 때 컨테이너가 된다.
+   특징 : (표준, 경량, 균일)     한 어플리케이션을 사용하기 위한 모든 것을 포함한다.</description>
     </item>
     
   </channel>

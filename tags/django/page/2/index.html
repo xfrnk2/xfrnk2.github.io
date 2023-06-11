@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -27,6 +27,7 @@
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xfrnk2.github.io/tags/django/" />
+<meta property="og:updated_time" content="2021-06-28T23:44:11+09:00" />
 
 
     
@@ -167,8 +168,8 @@
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ORM ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음 보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
-RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key 1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment) 1 : 1 관계 -&gt; models.OneToOneField 1명의 유저(User), 1개의 프로필(Profile) M : N 관계 -&gt; models.
+  ORM  ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음   보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
+  RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key  1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment)  1 : 1 관계 -&gt; models.
 
         
             <a href="https://xfrnk2.github.io/django/django_model_field/" class="more">Continue reading</a>
@@ -255,7 +256,7 @@ RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key 1명의 유저(User)
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정 on_delete : Record 삭제시 Rule CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성 올바른 모델 지정 방법 권장하지 않는 방법의 예시 #modelsfrom django.
+  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.
 
         
             <a href="https://xfrnk2.github.io/django/django_foreignkey/" class="more">Continue reading</a>
@@ -348,8 +349,7 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-django-debug-toolbar 현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능 django-debug-toolbar 설치 설치 공식문서 https://django-debug-toolbar.readthedocs.io/en/latest/installation.html 주의사항 웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작 이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
-https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar-options 코드를 통한 SQL 내역 확인 QuerySet의 query 속성 참조 ex) print(Post.
+  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
 
         
             <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
@@ -441,13 +441,13 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-Model Manager SELECT * FROM app_model;
+  Model Manager SELECT * FROM app_model;
 ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
-ModelCls.objects.all().order_by(&#39;-id&#39;)[:10] INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);
-ModelCls.objects.create(title=&#34;New Title&#34;) Queryset Chaining을 지원 Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet
-Lazy한 특성 QuerySet을 만드는 동안에 DB 접근 X
+ModelCls.objects.all().order_by('-id')[:10] INSERT INTO app_model (title) VALUES (&ldquo;New Title&rdquo;);
+ModelCls.objects.create(title=&quot;New Title&quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&hellip;).exclude(&hellip;).filter(&hellip;) -&gt; QuerySet
+ Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
 실제로 데이터가 필요한 시점에 접근
-데이터가 필요한 시점 queryset print(queryset) list(queryset) for instance in queryset: print(instance) &ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;
+ 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&rdquo;
 
         
             <a href="https://xfrnk2.github.io/django/django_model_basic/" class="more">Continue reading</a>
@@ -539,10 +539,9 @@ Lazy한 특성 QuerySet을 만드는 동안에 DB 접근 X
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-Shell Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython 장고 프로젝트 설정이 로딩된 파이썬 쉘 쉘 : python manage.py shell
-우선순위 : ipython 쉘, bpython 쉘, python 쉘
-옵션 : -i (&ndash;interface) : 인터프리터 인터페이스 커스텀 지정
--c (&ndash;command) : 실행할 파이썬 코드를 문자열로 지정
+  Shell  Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필요 Jupyter Notebook : Ipython의 웹버전, 웹상에서 코드가 동작, 이미지와 차트 등이 활용 가능, 분석 또는 머신러닝에서 사용 BPython   장고 프로젝트 설정이 로딩된 파이썬 쉘   쉘 : python manage.py shell
+  우선순위 : ipython 쉘, bpython 쉘, python 쉘
+  옵션 :   -i (&ndash;interface) : 인터프리터 인터페이스 커스텀 지정
 
         
             <a href="https://xfrnk2.github.io/django/django_shell/" class="more">Continue reading</a>
@@ -629,7 +628,7 @@ Shell Ipython : 기본 패키지에 포함되지 않음, 별도의 설치가 필
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙 Media 파일 (장고에만 있는) FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙 Media 파일 처리 순서 HttpRequest.FILES를 통해 파일이 전달 뷰 로직이나 폼 로직을 통해, 유효성 검증을 수행 FileFIeld/ImageField 필드에 &ldquo;경로(문자열)&ldquo;를 저장 setings.
+  Static &amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest.
 
         
             <a href="https://xfrnk2.github.io/django/django_static_media_file/" class="more">Continue reading</a>
@@ -711,7 +710,7 @@ Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 �
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-1. Django의 Admin 기능 관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공 2. Django Admin의 사용 효과 서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능 3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import adminfrom .models import Item admin.site.regiester(Item) 2. Class from django.contrib import adminfrom .
+  1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin.
 
         
             <a href="https://xfrnk2.github.io/django/django_admin/" class="more">Continue reading</a>
@@ -852,7 +851,7 @@ Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 �
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -1028,7 +1027,7 @@ Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 �
                 by xfrnk2
             </a>
             -
-            <a href="https://xfrnk2.github.io/tags/django/index.xml">rss</a>
+            <a href="https://xfrnk2.github.io/tags/django/index.xml">RSS</a>
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"
@@ -1039,14 +1038,16 @@ Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 �
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 

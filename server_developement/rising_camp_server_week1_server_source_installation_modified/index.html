@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -24,10 +24,10 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)" />
-<meta property="og:description" content="목표 에러와 해결했던 내용을 기록하기 리눅스 환경에 익숙해지기 새롭게 알게된 것들을 알아보고 기록하기 자동 설치 Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 phpMyAdmin 설치 수동 설치 Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 PHP Admin 설치 Common 지켜야 하는 것 필수 패키지는 Compile 설치하지 않는다. 필수 패키지는 apt-get을 사용해서 설치한다.
-apt-get 다루는 방법 apt-get install [package-name] 명령을 사용한다. 필수 패키지는 아래의 웹 사이트를 통해 검색할 수 있다." />
+<meta property="og:description" content="목표  에러와 해결했던 내용을 기록하기 리눅스 환경에 익숙해지기 새롭게 알게된 것들을 알아보고 기록하기  자동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 phpMyAdmin 설치  수동 설치  Apache2 웹서버 설치 MySQL 서버 설치 PHP 설치 PHP Admin 설치   Common   지켜야 하는 것 필수 패키지는 Compile 설치하지 않는다. 필수 패키지는 apt-get을 사용해서 설치한다.
+  apt-get 다루는 방법 apt-get install [package-name] 명령을 사용한다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/" /><meta property="article:section" content="server_developement" />
+<meta property="og:url" content="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/" />
 <meta property="article:published_time" content="2022-02-15T11:17:34+09:00" />
 <meta property="article:modified_time" content="2022-02-15T11:17:34+09:00" />
 
@@ -216,7 +216,7 @@ apt-get 다루는 방법 apt-get install [package-name] 명령을 사용한다. 
 터미널 명령어를 사용한 자체 검색도 가능하다. 매우 편리하다.
 <code>apt-cache search [keyword : 패키지 이름 | 공백 | 패키지 설명]</code></p>
 <ol start="3">
-<li><code>설치한 패키지를 최신 버전으로 관리하는 방법 </code>apt-get update` 를 통해 최신 버전으로 업데이트 할 수 있다.
+<li><code>설치한 패키지를 최신 버전으로 관리하는 방법</code>apt-get update` 를 통해 최신 버전으로 업데이트 할 수 있다.
 기타 자세한 명령어는 아래를 참고하도록 한다.</li>
 </ol>
 <p>&lt;아래&gt;</p>
@@ -253,19 +253,19 @@ PHP: 8.1.0</p>
 <li>net-tools : NET-3 networking toolkit</li>
 <li>(선택) 시스템 시간 동기화를 위한 ntpdate나 xntpd</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>$ sudo su
-</span></span><span style="display:flex;"><span>apt-get install make
-</span></span><span style="display:flex;"><span>apt-get install wget
-</span></span><span style="display:flex;"><span>apt-get install curl
-</span></span><span style="display:flex;"><span>apt-get install lynx
-</span></span><span style="display:flex;"><span>apt-get install gcc
-</span></span><span style="display:flex;"><span>apt-get install g++ 
-</span></span><span style="display:flex;"><span>apt-get install libexpat1-dev
-</span></span><span style="display:flex;"><span>apt-get install net-tools
-</span></span><span style="display:flex;"><span>apt-get install ntpdate
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>apt-get update
-</span></span></code></pre></div></li>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">$ sudo su
+apt-get install make
+apt-get install wget
+apt-get install curl
+apt-get install lynx
+apt-get install gcc
+apt-get install g++ 
+apt-get install libexpat1-dev
+apt-get install net-tools
+apt-get install ntpdate
+  
+apt-get update
+</code></pre></div></li>
 </ul>
 <ol start="2">
 <li>
@@ -304,52 +304,52 @@ apr-util-1.6.1.tar.bz2  pcre-8.45.tar.bz2
 <p>각각의 Source 설치를 진행한다.</p>
 <p>Source 설치시 공통적인 순서가 있다.</p>
 <p>폴더로 이동한 후, <code>Installation config</code> → <code>make</code> → <code>make install</code>의 순서로 진행하게 된다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>cd /usr/local/src/SourceFolder
-</span></span><span style="display:flex;"><span>./configure [Option]
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><p>각 Source 별 실행 명령은 다음와 같다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">cd /usr/local/src/SourceFolder
+./configure [Option]
+make
+make install
+</code></pre></div><p>각 Source 별 실행 명령은 다음와 같다.</p>
 <p>option : prefix = 컴파일 설치 위치</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># apr
-</span></span><span style="display:flex;"><span>cd /usr/local/src/apr-1.7.0
-</span></span><span style="display:flex;"><span>./configure --prefix=/usr/local/apr
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># apr-util
-</span></span><span style="display:flex;"><span>cd /usr/local/src/apr-util-1.6.1
-</span></span><span style="display:flex;"><span>./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># pcre
-</span></span><span style="display:flex;"><span>cd /usr/local/src/pcre-8.45
-</span></span><span style="display:flex;"><span>./configure --prefix=/usr/local/pcre
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># httpd (apache)
-</span></span><span style="display:flex;"><span>cd /usr/local/src/httpd-2.4.52
-</span></span><span style="display:flex;"><span>./configure --prefix=/usr/local/apache2.4.52 \
-</span></span><span style="display:flex;"><span>--enable-module=so --enable-rewrite --enable-so \--with-apr=/usr/local/apr \--with-apr-util=/usr/local/apr-util \--with-pcre=/usr/local/pcre \--enable-mods-shared=all
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><p>단, <code>apr</code> 설치 진행중</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># apr
+cd /usr/local/src/apr-1.7.0
+./configure --prefix=/usr/local/apr
+make
+make install
+   
+# apr-util
+cd /usr/local/src/apr-util-1.6.1
+./configure --prefix=/usr/local/apr-util --with-apr=/usr/local/apr
+make
+make install
+   
+# pcre
+cd /usr/local/src/pcre-8.45
+./configure --prefix=/usr/local/pcre
+make
+make install
+   
+# httpd (apache)
+cd /usr/local/src/httpd-2.4.52
+./configure --prefix=/usr/local/apache2.4.52 \
+--enable-module=so --enable-rewrite --enable-so \--with-apr=/usr/local/apr \--with-apr-util=/usr/local/apr-util \--with-pcre=/usr/local/pcre \--enable-mods-shared=all
+make
+make install
+</code></pre></div><p>단, <code>apr</code> 설치 진행중</p>
 <p>configure 명령어 입력시 아래와 같은 명령줄이 출력되는데,
-<code>config.status: executing libtool commands rm: cannot remove 'libtoolT': No such file or directory</code>
+<code>config.status: executing libtool commands rm: cannot remove 'libtoolT': No such file or directory</code>
 이는 삭제하는 명령에 불과하여 아무 문제가 되지 않으므로 무시해도 좋다.</p>
 </li>
 <li>
 <p>Apache 서버의 동작을 확인한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># /usr/local/
-</span></span><span style="display:flex;"><span>sudo apache2.4.52/bin/httpd -k start
-</span></span><span style="display:flex;"><span>ps -ef | grep httpd | grep -v grep
-</span></span><span style="display:flex;"><span>sudo netstat -anp | grep httpd
-</span></span><span style="display:flex;"><span>sudo curl http://127.0.0.1
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># 실행 화면
-</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;&lt;<span style="color:#f92672">body</span>&gt;&lt;<span style="color:#f92672">h1</span>&gt;It works!&lt;/<span style="color:#f92672">h1</span>&gt;&lt;/<span style="color:#f92672">body</span>&gt;&lt;/<span style="color:#f92672">html</span>&gt;
-</span></span></code></pre></div><p>또는 <code>Linux Desktop</code> 사용중이라면, 웹 브라우저로 다음 URL을 열어도 된다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># /usr/local/
+sudo apache2.4.52/bin/httpd -k start
+ps -ef | grep httpd | grep -v grep
+sudo netstat -anp | grep httpd
+sudo curl http://127.0.0.1
+   
+# 실행 화면
+&lt;html&gt;&lt;body&gt;&lt;h1&gt;It works!&lt;/h1&gt;&lt;/body&gt;&lt;/html&gt;
+</code></pre></div><p>또는 <code>Linux Desktop</code> 사용중이라면, 웹 브라우저로 다음 URL을 열어도 된다.</p>
 <p>(http://127.0.0.1)</p>
 </li>
 </ol>
@@ -367,26 +367,26 @@ ncurses
 bison 2.1 또는 이상 (최신버전 권장)</p>
 <p>그 외
 이미 앞 순서에서 설치된 패키지가 중복되므로 해당 필수 패키지는 생략하였다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>$ sudo su
-</span></span><span style="display:flex;"><span>apt-get update
-</span></span><span style="display:flex;"><span>apt-get install cmake
-</span></span><span style="display:flex;"><span>apt-get install libssl-dev
-</span></span><span style="display:flex;"><span>apt-get install libboost-all-dev
-</span></span><span style="display:flex;"><span>apt-get install libncurses-dev
-</span></span><span style="display:flex;"><span>apt-get install bison 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>apt-get update
-</span></span></code></pre></div><p>단, 아래와 같은 에러가 발생한다면
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">$ sudo su
+apt-get update
+apt-get install cmake
+apt-get install libssl-dev
+apt-get install libboost-all-dev
+apt-get install libncurses-dev
+apt-get install bison 
+   
+apt-get update
+</code></pre></div><p>단, 아래와 같은 에러가 발생한다면
 (<code>dpkg</code> : 데비안에서의 패키지 관리 시스템 소프트웨어)
-<code>E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable) E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?</code></p>
+<code>E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable) E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?</code></p>
 <p><code>sudo killall apt apt-get</code>를 통해, 실행중인 프로세스가 있는지 확인하고 모두 종료시킨다.
 그 다음 아래와 같이 관련 디렉토리를 삭제시킨 후, <code>sudo apt update</code> 명령을 실행한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>sudo rm /var/lib/apt/lists/lock
-</span></span><span style="display:flex;"><span>sudo rm /var/cache/apt/archives/lock
-</span></span><span style="display:flex;"><span>sudo rm /var/lib/dpkg/lock*
-</span></span><span style="display:flex;"><span>sudo dpkg --configure -a 
-</span></span><span style="display:flex;"><span>sudo apt update
-</span></span></code></pre></div><p>위 과정을 마무리 하고 나면, 정상적으로 동작함을 확인 할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock*
+sudo dpkg --configure -a 
+sudo apt update
+</code></pre></div><p>위 과정을 마무리 하고 나면, 정상적으로 동작함을 확인 할 수 있다.</p>
 </li>
 <li>
 <p><code>curl</code>, <code>wget</code>, <code>lynx</code> 중 택 1하여 Source를 다운로드</p>
@@ -455,106 +455,107 @@ tar xvfz [mysql-8.0.28.tar.gz](https://dev.mysql.com/get/Downloads/MySQL-8.0/mys
 <p>위의 과정을 거치니 정상적으로 <code>make</code> 명령을 수행하게 됬다.</p>
 <p>다음으로 컴파일 환경 설정과 make, make install 순으로 명령을 실행한다.</p>
 <p><code>8.0.19</code>버전 설치시 아래와 같은 에러 메시지를 확인 할 수 있다.</p>
-<p><code>- Downloading boost_1_70_0.tar.gz to /usr/local/mysql/boost -- Download failed, error: 22;&quot;HTTP response code said error&quot; CMake Error at cmake/boost.cmake:229 (MESSAGE): You can try downloading [https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz](https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz)</code></p>
+<p><code>- Downloading boost_1_70_0.tar.gz to /usr/local/mysql/boost -- Download failed, error: 22;&quot;HTTP response code said error&quot; CMake Error at cmake/boost.cmake:229 (MESSAGE): You can try downloading [https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz](https://dl.bintray.com/boostorg/release/1.70.0/source/boost_1_70_0.tar.gz)</code></p>
 <p>친절하게도 다운로드 링크가 나와 있으니 그대로 다운로드 받아서 설치한다. 설치 방법은 최상단의 <code>Common</code>목차에서 확인 할 수 있다. 단, <code>./configure의 option</code>으로 위 항목을 추가해야 에러가 발생하지 않는다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># /usr/local/mysql-8.0.19
-</span></span><span style="display:flex;"><span>mkdir mysql_setup
-</span></span><span style="display:flex;"><span>cd mysql_setup
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>/usr/local/mysql-8.0.19/mysql_setup# cmake \
-</span></span><span style="display:flex;"><span>.. \
-</span></span><span style="display:flex;"><span>-DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
-</span></span><span style="display:flex;"><span>-DMYSQL_DATADIR=/usr/local/mysql/data \
-</span></span><span style="display:flex;"><span>-DMYSQL_UNIX_ADDR=/usr/local/mysql/mysql.sock \
-</span></span><span style="display:flex;"><span>-DMYSQL_TCP_PORT=3306 \
-</span></span><span style="display:flex;"><span>-DDEFAULT_CHARSET=utf8 \
-</span></span><span style="display:flex;"><span>-DDEFAULT_COLLATION=utf8_general_ci \
-</span></span><span style="display:flex;"><span>-DSYSCONFDIR=/etc \
-</span></span><span style="display:flex;"><span>-DWITH_EXTRA_CHARSETS=all \
-</span></span><span style="display:flex;"><span>-DWITH_INNOBASE_STORAGE_ENGINE=1 \
-</span></span><span style="display:flex;"><span>-DWITH_ARCHIVE_STORAGE_ENGINE=1 \
-</span></span><span style="display:flex;"><span>-DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
-</span></span><span style="display:flex;"><span>-DDOWNLOAD_BOOST=1 \
-</span></span><span style="display:flex;"><span>-DWITH_BOOST=/usr/local/src/boost_1_70_0        //  boost 패키지를 위한 설정
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156478888-3c3bc1b3-934d-4b10-92b6-02219e1df157.png" alt="Untitled (14)"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># /usr/local/mysql-8.0.19
+mkdir mysql_setup
+cd mysql_setup
+
+/usr/local/mysql-8.0.19/mysql_setup# cmake \
+.. \
+-DCMAKE_INSTALL_PREFIX=/usr/local/mysql \
+-DMYSQL_DATADIR=/usr/local/mysql/data \
+-DMYSQL_UNIX_ADDR=/usr/local/mysql/mysql.sock \
+-DMYSQL_TCP_PORT=3306 \
+-DDEFAULT_CHARSET=utf8 \
+-DDEFAULT_COLLATION=utf8_general_ci \
+-DSYSCONFDIR=/etc \
+-DWITH_EXTRA_CHARSETS=all \
+-DWITH_INNOBASE_STORAGE_ENGINE=1 \
+-DWITH_ARCHIVE_STORAGE_ENGINE=1 \
+-DWITH_BLACKHOLE_STORAGE_ENGINE=1 \
+-DDOWNLOAD_BOOST=1 \
+-DWITH_BOOST=/usr/local/src/boost_1_70_0        //  boost 패키지를 위한 설정
+
+make
+make install
+</code></pre></div><p><img src="https://user-images.githubusercontent.com/34790699/156478888-3c3bc1b3-934d-4b10-92b6-02219e1df157.png" alt="Untitled (14)"></p>
 <p>유달리 생각 이상으로 시간이 소모되는 작업이였다.</p>
 <ol>
 <li>Mysql 초기화</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># usr/local/mysql-8.0.19/mysql_setup
-</span></span><span style="display:flex;"><span># 그룹과 유저를 초기화
-</span></span><span style="display:flex;"><span>groupadd mysql
-</span></span><span style="display:flex;"><span>useradd -r -g mysql -s /bin/false mysql
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># /usr/local/mysql/
-</span></span><span style="display:flex;"><span>mkdir mysql_data
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># 권한부여
-</span></span><span style="display:flex;"><span>chown -R mysql:mysql /usr/local/mysql
-</span></span><span style="display:flex;"><span>chown mysql:mysql mysql_data
-</span></span><span style="display:flex;"><span>chmod 750 mysql_data
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># DB 초기화
-</span></span><span style="display:flex;"><span>bin/mysqld --initialize --user=mysql \
-</span></span><span style="display:flex;"><span>--basedir=/usr/local/mysql \
-</span></span><span style="display:flex;"><span>--datadir=/usr/local/mysql/data
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>&#34;A temporary password is generated for root@localhost: [임시 비밀번호]&#34; 의 형태로, 
-</span></span><span style="display:flex;"><span>임시 비밀번호가 출력된다.
-</span></span></code></pre></div><ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># usr/local/mysql-8.0.19/mysql_setup
+# 그룹과 유저를 초기화
+groupadd mysql
+useradd -r -g mysql -s /bin/false mysql
+
+# /usr/local/mysql/
+mkdir mysql_data
+
+# 권한부여
+chown -R mysql:mysql /usr/local/mysql
+chown mysql:mysql mysql_data
+chmod 750 mysql_data
+
+# DB 초기화
+bin/mysqld --initialize --user=mysql \
+--basedir=/usr/local/mysql \
+--datadir=/usr/local/mysql/data
+
+&#34;A temporary password is generated for root@localhost: [임시 비밀번호]&#34; 의 형태로, 
+임시 비밀번호가 출력된다.
+</code></pre></div><ol>
 <li>비밀번호 재설정과 서버 실행 확인</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># /usr/local/mysql#
-</span></span><span style="display:flex;"><span>bin/mysqld_safe --user=mysql <span style="color:#960050;background-color:#1e0010">&amp;</span>
-</span></span><span style="display:flex;"><span>bin/mysql -u root -p
-</span></span><span style="display:flex;"><span>이전 과정에서 나왔던 임시 비밀번호를 입력한다.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># 비밀번호 재설정
-</span></span><span style="display:flex;"><span>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;[바꿀 비밀번호]&#39;;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># 서버 열기 및 실행 확인
-</span></span><span style="display:flex;"><span>bin/mysql -u root -p
-</span></span><span style="display:flex;"><span>ps -ef | grep mysqld
-</span></span></code></pre></div><hr>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># /usr/local/mysql#
+bin/mysqld_safe --user=mysql &amp;
+bin/mysql -u root -p
+이전 과정에서 나왔던 임시 비밀번호를 입력한다.
+
+# 비밀번호 재설정
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;[바꿀 비밀번호]&#39;;
+
+# 서버 열기 및 실행 확인
+bin/mysql -u root -p
+ps -ef | grep mysqld
+</code></pre></div><hr>
 <h1 id="php-설치">PHP 설치</h1>
 <ol>
 <li>필수 패키지 설치</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>apt-get install libxml2-dev
-</span></span><span style="display:flex;"><span>apt-get install libjpeg-dev
-</span></span><span style="display:flex;"><span>apt-get install libpng-dev
-</span></span><span style="display:flex;"><span>apt-get install libsqlite3-dev
-</span></span></code></pre></div><ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">apt-get install libxml2-dev
+apt-get install libjpeg-dev
+apt-get install libpng-dev
+apt-get install libsqlite3-dev
+</code></pre></div><ol>
 <li>소스설치</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># /usr/local#
-</span></span><span style="display:flex;"><span>wget https://www.php.net/distributions/php-8.1.0.tar.gz 
-</span></span><span style="display:flex;"><span>tar xvfz php-8.1.0.tar.gz
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># /usr/local/php-8.1.0#
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>./configure \
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>--with-apxs2=/usr/local/apache2.4/bin/apxs \ 
-</span></span><span style="display:flex;"><span>--enable-mysqlnd \ 
-</span></span><span style="display:flex;"><span>--with-mysql-sock=mysqlnd \ 
-</span></span><span style="display:flex;"><span>--with-mysqli=mysqlnd \ 
-</span></span><span style="display:flex;"><span>--with-pdo-mysql=mysqlnd \ 
-</span></span><span style="display:flex;"><span>--with-imap-ssl \ 
-</span></span><span style="display:flex;"><span>--with-iconv \ 
-</span></span><span style="display:flex;"><span>--enable-gd \ 
-</span></span><span style="display:flex;"><span>--with-jpeg \ 
-</span></span><span style="display:flex;"><span>--with-libxml \ 
-</span></span><span style="display:flex;"><span>--with-openssl
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>make
-</span></span><span style="display:flex;"><span>make test
-</span></span><span style="display:flex;"><span>make install
-</span></span></code></pre></div><ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">
+# /usr/local#
+wget https://www.php.net/distributions/php-8.1.0.tar.gz 
+tar xvfz php-8.1.0.tar.gz
+
+# /usr/local/php-8.1.0#
+
+./configure \
+
+--with-apxs2=/usr/local/apache2.4/bin/apxs \ 
+--enable-mysqlnd \ 
+--with-mysql-sock=mysqlnd \ 
+--with-mysqli=mysqlnd \ 
+--with-pdo-mysql=mysqlnd \ 
+--with-imap-ssl \ 
+--with-iconv \ 
+--enable-gd \ 
+--with-jpeg \ 
+--with-libxml \ 
+--with-openssl
+
+make
+make test
+make install
+
+</code></pre></div><ol>
 <li>연동 설정</li>
 </ol>
 <h1 id="usrlocalapache24conf">/usr/local/apache2.4/conf</h1>
@@ -563,20 +564,20 @@ tar xvfz [mysql-8.0.28.tar.gz](https://dev.mysql.com/get/Downloads/MySQL-8.0/mys
 <ol>
 <li>PHP 파일을 생성하여 아래와 같이 작성하고 저장한다.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># /usr/local/apache2.4/htdocs
-</span></span><span style="display:flex;"><span> vi phpinfo.php
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;?
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">php phpinfo();
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">?&gt;</span>
-</span></span></code></pre></div><p>아래의 명령을 통해 잘 접속이 되는지 확인한다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span># /usr/local#
-</span></span><span style="display:flex;"><span>apache2.4/bin/httpd -k start
-</span></span><span style="display:flex;"><span>ps -ef | grep httpd | grep -v grep
-</span></span><span style="display:flex;"><span>sudo netstat -anp | grep httpd
-</span></span><span style="display:flex;"><span>sudo curl http://127.0.0.1
-</span></span></code></pre></div><p>브라우저에서도 확인 할 수 있다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown"># /usr/local/apache2.4/htdocs
+ vi phpinfo.php
+
+&lt;?
+php phpinfo();
+?&gt;
+</code></pre></div><p>아래의 명령을 통해 잘 접속이 되는지 확인한다.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-markdown" data-lang="markdown">
+# /usr/local#
+apache2.4/bin/httpd -k start
+ps -ef | grep httpd | grep -v grep
+sudo netstat -anp | grep httpd
+sudo curl http://127.0.0.1
+</code></pre></div><p>브라우저에서도 확인 할 수 있다.</p>
 <p><img src="https://user-images.githubusercontent.com/34790699/156478975-020a7da6-13e0-4eb9-a771-46fa9c903c06.png" alt="Untitled (16)"></p>
 <p>PHPadmin은 간단하므로 이곳에 적는것은 생략한다.</p>
 <hr>
@@ -766,7 +767,7 @@ Ctrl + R : Redo</p>
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -878,7 +879,7 @@ Ctrl + R : Redo</p>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -1064,14 +1065,16 @@ Ctrl + R : Redo</p>
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 

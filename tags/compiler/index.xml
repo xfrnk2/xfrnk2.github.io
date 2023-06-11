@@ -5,15 +5,18 @@
     <link>https://xfrnk2.github.io/tags/compiler/</link>
     <description>Recent content in compiler on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 23 Nov 2020 22:39:02 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Nov 2020 22:39:02 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/compiler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>LR, SLR, CLR 구문분석</title>
       <link>https://xfrnk2.github.io/compiler/lr_syntax_analysis/</link>
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/lr_syntax_analysis/</guid>
-      <description>공부 목표 LR 구문분석 방법의 특성을 이해할 수 있는지? Closure, Goto 함수를 구할 수 있는지? Canonical collection을 이해하고 Goto 그래프를 구성할 수 있는지? 파싱표를 구성하는 방법을 이해할 수 있는지? 파싱표를 보고 구문분석을 할 수 있는지? SLR 파싱표에서 충돌 문제를 이해할 수 있는지? LR(1) 항목에서 lookahead 정보를 계산할 수 있는지? lookahead 정보를 이용한 closure와 canonical collection을 이해 할 수 있는지? 용어 설명 LR : Left to right scanning and Right parse LR(k) 문법 : 모든 엔트리(entry)에 대해, 유일하게 정의되는 파싱표를 만들 수 있는 문법.</description>
+      <description>공부 목표   LR 구문분석 방법의 특성을 이해할 수 있는지? Closure, Goto 함수를 구할 수 있는지? Canonical collection을 이해하고 Goto 그래프를 구성할 수 있는지? 파싱표를 구성하는 방법을 이해할 수 있는지? 파싱표를 보고 구문분석을 할 수 있는지? SLR 파싱표에서 충돌 문제를 이해할 수 있는지? LR(1) 항목에서 lookahead 정보를 계산할 수 있는지? lookahead 정보를 이용한 closure와 canonical collection을 이해 할 수 있는지?    용어 설명  LR : Left to right scanning and Right parse LR(k) 문법 : 모든 엔트리(entry)에 대해, 유일하게 정의되는 파싱표를 만들 수 있는 문법.</description>
     </item>
     
     <item>
@@ -22,7 +25,7 @@
       <pubDate>Mon, 23 Nov 2020 17:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/syntax_analysis/</guid>
-      <description>공부 목표 top-down 방식과 bottom-up 방식의 구문분석을 정확히 이해할 수 있는지? shift-reduce 구문분석 과정을 설명할 수 있는지? 문법에서 FIRST와 FOLLOW 를 계산할 수 있는지? 용어 설명 구문 분석 : 주어진 문장이 문법규칙에 올바른지 아닌지를 검사하는 것. top-down 방식과 bottom-up 방식으로 나눠지는데 일반적으로는 비교적 문법의 제약이 없는 bottom-up 방식을 주로 사용 핸들(handle) : Bottom-up 구문분석에서 reduce 되는 부분 reduce : 유도과정을 거꾸로 적용한 것. 즉, S ‗⇒ αAw ‗⇒ αβ w의 유도과정이 존재할 때, 문장형태 αβw 에서 β를 A로 대체하는 것 shift : 입력기호를 스택에 넣는 것 follow : FOLLOW(A) ＝ {a ∈ VT ∪ {＄} | S ‗⇒ αAaβ, α, β ∈ V＊} 즉, 어떤 문장형태에 있어서, 논터미널 A 다음에 나타 나는 터미널 기호들의 집합.</description>
+      <description>공부 목표   top-down 방식과 bottom-up 방식의 구문분석을 정확히 이해할 수 있는지? shift-reduce 구문분석 과정을 설명할 수 있는지? 문법에서 FIRST와 FOLLOW 를 계산할 수 있는지?    용어 설명  구문 분석 : 주어진 문장이 문법규칙에 올바른지 아닌지를 검사하는 것. top-down 방식과 bottom-up 방식으로 나눠지는데 일반적으로는 비교적 문법의 제약이 없는 bottom-up 방식을 주로 사용 핸들(handle) : Bottom-up 구문분석에서 reduce 되는 부분 reduce : 유도과정을 거꾸로 적용한 것. 즉, S ‗⇒ αAw ‗⇒ αβ w의 유도과정이 존재할 때, 문장형태 αβw 에서 β를 A로 대체하는 것 shift : 입력기호를 스택에 넣는 것 follow : FOLLOW(A) ＝ {a ∈ VT ∪ {＄} | S ‗⇒ αAaβ, α, β ∈ V＊} 즉, 어떤 문장형태에 있어서, 논터미널 A 다음에 나타 나는 터미널 기호들의 집합.</description>
     </item>
     
     <item>
@@ -31,7 +34,7 @@
       <pubDate>Mon, 16 Nov 2020 17:39:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/finite_automata/</guid>
-      <description>공부 목표 유한 오토마타를 이해할 수 있는지? 정규표현 -&amp;gt; 유한 오토마타로 변환할 수 있는지? 입실론 클로저(ε-closure)를 구할 수 있는지? NFA를 DFA로 변환할 수 있는지? 용어 설명 유한 오토마타 : 어떤 알파벳 T로부터 만들어지는 문자열의 특별한 것들을 받아들이는 시스템의 수학적 모델로서, 그 시스템이 변화할 수 있는 상태가 유한개인 것 비결정적 유한 오토마타 : 어떤 상태에서 주어진 하나의 입력기호를 보고, 갈 수 있는 다음 상태가 두개 이상 존재할 수 있는 유한 오토 마타 결정적 유한 오토마타 : 하나의 입력문자열에 대하여 오직 하나의 다음 상태가 결정되는 것 상태전이도 : transition diagram, 오토마타의 각 상태(state)를 노드(node)로 나타내며, 이동함수 δ(q,a) ＝p에 대해서는 태 q에서 p로 가는 레이블(label)이 a인 지시선(directed arc)으로 표기.</description>
+      <description>공부 목표   유한 오토마타를 이해할 수 있는지? 정규표현 -&amp;gt; 유한 오토마타로 변환할 수 있는지? 입실론 클로저(ε-closure)를 구할 수 있는지? NFA를 DFA로 변환할 수 있는지?    용어 설명  유한 오토마타 : 어떤 알파벳 T로부터 만들어지는 문자열의 특별한 것들을 받아들이는 시스템의 수학적 모델로서, 그 시스템이 변화할 수 있는 상태가 유한개인 것 비결정적 유한 오토마타 : 어떤 상태에서 주어진 하나의 입력기호를 보고, 갈 수 있는 다음 상태가 두개 이상 존재할 수 있는 유한 오토 마타 결정적 유한 오토마타 : 하나의 입력문자열에 대하여 오직 하나의 다음 상태가 결정되는 것 상태전이도 : transition diagram, 오토마타의 각 상태(state)를 노드(node)로 나타내며, 이동함수 δ(q,a) ＝p에 대해서는 태 q에서 p로 가는 레이블(label)이 a인 지시선(directed arc)으로 표기.</description>
     </item>
     
     <item>
@@ -40,7 +43,7 @@
       <pubDate>Mon, 16 Nov 2020 17:01:02 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/compiler/formal_language_and_formal_grammar/</guid>
-      <description>공부 목표 형식언어를 표현하는 기초적인 용어를 이해하는지? 형식 문법에대해 설명할 수 있는지? 문법의 표기법을 이해할 수 있는지? 정규문법을 정규표현으로 표현할 수 있는지? 각 문법에서 생성되는 문자열들을 문법규칙을 적용하여 생성할 수 있는지? 용어 설명 컴파일러 설계 : 어떤 컴퓨터 언어에 대한 컴파일러를 구성하는 일 형식 언어 : 어떤 알파벳에서 얻은 기호(symbol)들로 구성되는 문자열의 집합 context-Free 문법 : A → γ (단, A는 논터미널 기호이고, γ는 V*에 속하는 문자열 촘스키 계층구조 : 생성규칙의 형태에 가해지는 제한에 따라 미국의 영문학자 촘스키가 4종류로 나눈 형식문법 context-sensitive 문법 : γ → β (단, |γ|≤|β| γ∈V+, β∈V*)생성규칙에 |γ|≤|β|의 제한을 가하는 것으로 비위축형 (noncontracting) 문법에 속함 공문자열 : 문자열의 길이가 0인 것, ε 혹은 λ로 표시 정규문법 : A → tB A → t 또는 A → Bt A → t(단, t ∈ V *T A, B ∈ VN)</description>
+      <description>공부 목표   형식언어를 표현하는 기초적인 용어를 이해하는지? 형식 문법에대해 설명할 수 있는지? 문법의 표기법을 이해할 수 있는지? 정규문법을 정규표현으로 표현할 수 있는지? 각 문법에서 생성되는 문자열들을 문법규칙을 적용하여 생성할 수 있는지?    용어 설명  컴파일러 설계 : 어떤 컴퓨터 언어에 대한 컴파일러를 구성하는 일 형식 언어 : 어떤 알파벳에서 얻은 기호(symbol)들로 구성되는 문자열의 집합 context-Free 문법 : A → γ (단, A는 논터미널 기호이고, γ는 V*에 속하는 문자열 촘스키 계층구조 : 생성규칙의 형태에 가해지는 제한에 따라 미국의 영문학자 촘스키가 4종류로 나눈 형식문법 context-sensitive 문법 : γ → β (단, |γ|≤|β| γ∈V+, β∈V*)생성규칙에 |γ|≤|β|의 제한을 가하는 것으로 비위축형 (noncontracting) 문법에 속함 공문자열 : 문자열의 길이가 0인 것, ε 혹은 λ로 표시 정규문법 : A → tB A → t 또는 A → Bt A → t(단, t ∈ V *T A, B ∈ VN)</description>
     </item>
     
   </channel>

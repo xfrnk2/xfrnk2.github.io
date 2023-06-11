@@ -5,8 +5,11 @@
     <link>https://xfrnk2.github.io/tags/model/</link>
     <description>Recent content in Model on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 06 May 2020 12:55:27 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/model/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 May 2020 12:55:27 +0900</lastBuildDate>
+    
+	<atom:link href="https://xfrnk2.github.io/tags/model/index.xml" rel="self" type="application/rss+xml" />
+    
+    
     <item>
       <title>Django - Queryset의 정렬 및 범위조건</title>
       <link>https://xfrnk2.github.io/django/django_queryset_sort/</link>
@@ -14,8 +17,7 @@
       
       <guid>https://xfrnk2.github.io/django/django_queryset_sort/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-정렬 조건 추가 일관된 순서를 보장받기 위해 정렬 조건을 추가 DB에서 다수 필드에 대한 정렬을 지원하나 가급적 단일 필드로 하는것이 성능에 이익 시간순/역순 정렬이 필요할때는 id필드를 활용 정렬 조건 지정 방법 1. (추천) 모델 클래스의 Meta 속성으로 ordering 설정 : list로 지정 2. 모든 queryset에 order_by(&amp;hellip;)에 지정 (주의) queryset코드에서 직접 order_by를 지정하면, Meta&amp;gt;ordering 설정값이 무시된다
-django-extensions 커스텀 확장 기능 제공 라이브러리 Management Command, additional database fields, admin extensions 등을 지원 &amp;gt; python manage.</description>
+  정렬 조건 추가  일관된 순서를 보장받기 위해 정렬 조건을 추가 DB에서 다수 필드에 대한 정렬을 지원하나 가급적 단일 필드로 하는것이 성능에 이익 시간순/역순 정렬이 필요할때는 id필드를 활용   정렬 조건 지정 방법 1. (추천) 모델 클래스의 Meta 속성으로 ordering 설정 : list로 지정 2. 모든 queryset에 order_by(&amp;hellip;)에 지정  (주의) queryset코드에서 직접 order_by를 지정하면, Meta&amp;gt;ordering 설정값이 무시된다</description>
     </item>
     
     <item>
@@ -25,9 +27,9 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
       
       <guid>https://xfrnk2.github.io/django/django_manytomanyfield/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase) on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
+  ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
 예 ) 태그 지정에 대한 유효성 검사 ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,
-ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능) 방법 1 (권장) class Post(models.Model):tag_set = models.ManyToManyField(&amp;#39;Tag&amp;#39;, blank=True)class Article(models.Model):tag_set = models.</description>
+ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.</description>
     </item>
     
     <item>
@@ -37,8 +39,8 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
       
       <guid>https://xfrnk2.github.io/django/django_onetoonefield/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능 User:Profile ForeignKey(unique_True)와 유사하지만, reverse 차이 User:Profile를 ForeignKey로 지정한다면 -&amp;gt; profile.user_set.first() -&amp;gt; user User:Profile를 OneToOneField로 지정한다면 -&amp;gt; profile.user -&amp;gt; user OneToOneField(to, on_delete) #django/contrib/auth/models.pyclass User(abstractBaseUser):...# accounts/models.pyclass Profile(models.Model):author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
-OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&amp;gt; 모델명소문자 accounts/models.pyclass Profile(models.Model):user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)phone = models.</description>
+  OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능  User:Profile  ForeignKey(unique_True)와 유사하지만, reverse 차이  User:Profile를 ForeignKey로 지정한다면 -&amp;gt; profile.user_set.first() -&amp;gt; user User:Profile를 OneToOneField로 지정한다면 -&amp;gt; profile.user -&amp;gt; user  OneToOneField(to, on_delete) #django/contrib/auth/models.py class User(abstractBaseUser): ... # accounts/models.py class Profile(models.Model): author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
+ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&amp;gt; 모델명소문자 accounts/models.py class Profile(models.</description>
     </item>
     
     <item>
@@ -48,8 +50,8 @@ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 
       
       <guid>https://xfrnk2.github.io/django/django_model_field/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ORM ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음 보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
-RDMBS에서의 관계 예시 1 : N 관계 -&amp;gt; Foreign Key 1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment) 1 : 1 관계 -&amp;gt; models.OneToOneField 1명의 유저(User), 1개의 프로필(Profile) M : N 관계 -&amp;gt; models.</description>
+  ORM  ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음   보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
+  RDMBS에서의 관계 예시 1 : N 관계 -&amp;gt; Foreign Key  1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment)  1 : 1 관계 -&amp;gt; models.</description>
     </item>
     
     <item>
@@ -59,7 +61,7 @@ RDMBS에서의 관계 예시 1 : N 관계 -&amp;gt; Foreign Key 1명의 유저(U
       
       <guid>https://xfrnk2.github.io/django/django_foreignkey/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &amp;lsquo;self&amp;rsquo; 지정 on_delete : Record 삭제시 Rule CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성 올바른 모델 지정 방법 권장하지 않는 방법의 예시 #modelsfrom django.</description>
+  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &amp;lsquo;self&amp;rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.</description>
     </item>
     
     <item>
@@ -69,13 +71,13 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
       
       <guid>https://xfrnk2.github.io/django/django_model_basic/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-Model Manager SELECT * FROM app_model;
+  Model Manager SELECT * FROM app_model;
 ModelCls.objects.all() SELECT * FROM app_model ORDER BY id DESC LIMIT 10;
-ModelCls.objects.all().order_by(&amp;#39;-id&amp;#39;)[:10] INSERT INTO app_model (title) VALUES (&amp;ldquo;New Title&amp;rdquo;);
-ModelCls.objects.create(title=&amp;#34;New Title&amp;#34;) Queryset Chaining을 지원 Post.objects.all().filter(&amp;hellip;).exclude(&amp;hellip;).filter(&amp;hellip;) -&amp;gt; QuerySet
-Lazy한 특성 QuerySet을 만드는 동안에 DB 접근 X
+ModelCls.objects.all().order_by(&#39;-id&#39;)[:10] INSERT INTO app_model (title) VALUES (&amp;ldquo;New Title&amp;rdquo;);
+ModelCls.objects.create(title=&amp;quot;New Title&amp;quot;)  Queryset Chaining을 지원  Post.objects.all().filter(&amp;hellip;).exclude(&amp;hellip;).filter(&amp;hellip;) -&amp;gt; QuerySet
+ Lazy한 특성  QuerySet을 만드는 동안에 DB 접근 X
 실제로 데이터가 필요한 시점에 접근
-데이터가 필요한 시점 queryset print(queryset) list(queryset) for instance in queryset: print(instance) &amp;ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&amp;rdquo;</description>
+ 데이터가 필요한 시점  queryset print(queryset) list(queryset) for instance in queryset: print(instance)   &amp;ldquo;I/O의 경우 파일 접근은 많이 하지 않고, 대개 데이터베이스 접근이기 때문에, DB QuerySet에 대한 명확한 이해가 성능향상을 도움&amp;rdquo;</description>
     </item>
     
   </channel>
