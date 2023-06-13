@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -24,13 +24,13 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기" />
-<meta property="og:description" content="filter 함수의 특이점 발견 동기 레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.
+<meta property="og:description" content="filter 함수의 특이점 발견 동기  레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.
 (좋은 코드인지는 모르겠다.)
-cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks]self.__cooks = list(filter(None, cooks)) else를 연산하는 과정에서 None이 원소로 들어가는 것을 확인,
-None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter(None, array))*의 형태로 쓰란다. 그래서 형태를 모방한 코드를 작성했는데&hellip;. 그런데..
-왜 이렇게 되지? 싶은, 크게 눈에 띈 부분이 있었다. 특이점 filter(적용시킬 함수, 적용시킬 요소들)의 형태로" />
+ cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks] self.__cooks = list(filter(None, cooks))   else를 연산하는 과정에서 None이 원소로 들어가는 것을 확인,
+None 원소들을 제거해주기 위한 방법을 검색해봤다. list(filter(None, array))의 형태로 쓰란다. 그래서 형태를 모방한 코드를 작성했는데&hellip;. 그런데..
+왜 이렇게 되지? 싶은, 크게 눈에 띈 부분이 있었다.    특이점 filter(적용시킬 함수, 적용시킬 요소들)의 형태로" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/" /><meta property="article:section" content="fft" />
+<meta property="og:url" content="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/" />
 <meta property="article:published_time" content="2020-10-06T18:58:11+09:00" />
 <meta property="article:modified_time" content="2020-10-06T18:58:11+09:00" />
 
@@ -41,9 +41,7 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/fft/python-filter_and_remove_none_in_list/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/fft/python-filter_and_remove_none_in_list/" rel="feed" type="application/rss+xml" title="Rad Blog" />
-    
+
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/">
@@ -58,9 +56,12 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -72,7 +73,7 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -177,13 +178,13 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter
 <p>레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.<br>
 (좋은 코드인지는 모르겠다.)</p>
 </blockquote>
-<pre tabindex="0"><code>cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks]
+<pre><code>cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks]
 self.__cooks = list(filter(None, cooks))
 </code></pre><blockquote>
 <ul>
 <li><code>else</code>를 연산하는 과정에서 <code>None</code>이 원소로 들어가는 것을 확인,<br>
 None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
-<li>*<code>list(filter(None, array))</code>*의 형태로 쓰란다.</li>
+<li><em><code>list(filter(None, array))</code></em>의 형태로 쓰란다.</li>
 <li>그래서 형태를 모방한 코드를 작성했는데&hellip;. 그런데..<br>
 왜 이렇게 되지? 싶은, 크게 눈에 띈 부분이 있었다.</li>
 </ul>
@@ -208,7 +209,7 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
 <hr>
 <h2 id="회고">회고</h2>
 <ul>
-<li>되게 희안했다. 함수로 None이 오면 &lsquo;아무것도 없는 것들을 필터링&rsquo;해야 할 것 같지만, 거꾸로 &lsquo;있는 것들&rsquo;이 필터링되어 나온다니..</li>
+<li>되게 희안했다. 함수로 None이 오면 &lsquo;아무것도 없는 것들을 필터링'해야 할 것 같지만, 거꾸로 &lsquo;있는 것들'이 필터링되어 나온다니..</li>
 <li>가장 먼저, 파이썬 공식문서를 찾아보는 습관을 가지자.</li>
 <li><a href="https://stackoverflow.com/questions/38339496/python-filternone-list-of-bools-behavior">Stack Overflow Link</a></li>
 </ul>
@@ -251,7 +252,7 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -363,7 +364,7 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -371,135 +372,136 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
                     </li>
                 
             </ul>
-			
         </div>
         
-		
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
-				<li>
-                    <a href="/categories/til">Til
-                        (345)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/django">Django
-                        (15)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
                 
-				<li>
-                    <a href="/categories/review">Review
-                        (9)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/resolved-problem">Resolved problem
-                        (8)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/python">Python
-                        (6)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
                 
-				<li>
-                    <a href="/categories/food-for-thought">Food for thought
-                        (5)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/algorithm">Algorithm
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/codeit">Codeit
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
                 
-				<li>
-                    <a href="/categories/compiler">Compiler
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/database">Database
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/java">Java
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
                 
-				<li>
-                    <a href="/categories/server">Server
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/developement">Developement
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/docker">Docker
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
                 
-				<li>
-                    <a href="/categories/react">React
-                        (3)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/spring">Spring
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/web">Web
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
                 
-				<li>
-                    <a href="/categories/mysql">Mysql
-                        (2)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/blog">Blog
-                        (1)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/book">Book
-                        (1)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
                 
             </ul>
         </div>
@@ -509,7 +511,6 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -520,7 +521,9 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
 
             
             <div class="archive">
-                <a href="/archive/"><strong>Archive</strong></a>
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
             </div>
             
         </div>
@@ -549,14 +552,16 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다.</li>
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
@@ -572,9 +577,8 @@ if (!doNotTrack) {
 </script>
 
     
-
-
     <script src="https://xfrnk2.github.io/theme.js"></script>
+    
 
     
     
@@ -589,6 +593,8 @@ if (!doNotTrack) {
 
   
 </div>
+
+    
 
     
 </body>

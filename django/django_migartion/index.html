@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -25,9 +25,9 @@
 
     <meta property="og:title" content="Django - Migration을 통한 database 스키마 관리" />
 <meta property="og:description" content="이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;로 반영시키는 효율적인 방법 제공 관련 명령: 마이그레이션 파일 생성 &gt; python manage.py makemigrations &lt;앱이름&gt; 지정 데이터베이스에 마이그레이션 적용 &gt; python manage.py migrate &lt;앱이름&gt; 마이그레이션 적용 현황 출력 &gt; python manage.py showmigrations &lt;앱이름&gt; 지정 마이그레이션의 SQL 내역 출력 &gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt; Migration File 기능 모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능 주의할 점 같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨 의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요" />
+  Migrations  모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;로 반영시키는 효율적인 방법 제공  관련 명령: 마이그레이션 파일 생성 &gt; python manage.py makemigrations &lt;앱이름&gt; 지정 데이터베이스에 마이그레이션 적용 &gt; python manage.py migrate &lt;앱이름&gt; 마이그레이션 적용 현황 출력 &gt; python manage.py showmigrations &lt;앱이름&gt; 지정 마이그레이션의 SQL 내역 출력 &gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt;  Migration File 기능  모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능  주의할 점  같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨   의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/django/django_migartion/" /><meta property="article:section" content="django" />
+<meta property="og:url" content="https://xfrnk2.github.io/django/django_migartion/" />
 <meta property="article:published_time" content="2020-05-05T14:14:58+09:00" />
 <meta property="article:modified_time" content="2020-05-05T14:14:58+09:00" />
 
@@ -38,9 +38,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/django/django_migartion/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_migartion/" rel="feed" type="application/rss+xml" title="Rad Blog" />
-    
+
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/django/django_migartion/">
@@ -55,9 +53,12 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -69,7 +70,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -179,13 +180,13 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 </ul>
 <h3 id="관련-명령">관련 명령:</h3>
 <h6 id="마이그레이션-파일-생성">마이그레이션 파일 생성</h6>
-<pre tabindex="0"><code>&gt; python manage.py makemigrations &lt;앱이름&gt;
+<pre><code>&gt; python manage.py makemigrations &lt;앱이름&gt;
 </code></pre><h6 id="지정-데이터베이스에-마이그레이션-적용">지정 데이터베이스에 마이그레이션 적용</h6>
-<pre tabindex="0"><code>&gt; python manage.py migrate  &lt;앱이름&gt;
+<pre><code>&gt; python manage.py migrate  &lt;앱이름&gt;
 </code></pre><h6 id="마이그레이션-적용-현황-출력">마이그레이션 적용 현황 출력</h6>
-<pre tabindex="0"><code>&gt; python manage.py showmigrations &lt;앱이름&gt;
+<pre><code>&gt; python manage.py showmigrations &lt;앱이름&gt;
 </code></pre><h6 id="지정-마이그레이션의-sql-내역-출력">지정 마이그레이션의 SQL 내역 출력</h6>
-<pre tabindex="0"><code>&gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt;
+<pre><code>&gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt;
 </code></pre><hr>
 <h3 id="migration-file">Migration File</h3>
 <h6 id="기능">기능</h6>
@@ -214,11 +215,11 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 </ul>
 <hr>
 <h3 id="migrations의-migrate-정역-방향">Migrations의 Migrate (정/역 방향)</h3>
-<pre tabindex="0"><code>&gt; python manage.py migrate &lt;앱이름&gt;
+<pre><code>&gt; python manage.py migrate &lt;앱이름&gt;
 </code></pre><ul>
 <li>미적용 <!-- raw HTML omitted -->부터 최근 <!-- raw HTML omitted -->까지 정방향으로 순차적으로 수행</li>
 </ul>
-<pre tabindex="0"><code>&gt; python manage.py migrate &lt;앱이름&gt; &lt;Migration-이름&gt;
+<pre><code>&gt; python manage.py migrate &lt;앱이름&gt; &lt;Migration-이름&gt;
 </code></pre><ul>
 <li>지정된 &lt;Migration-이름&gt;이 현재 적용된 Migration보다
 <ol>
@@ -231,15 +232,15 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 <h3 id="migration-이름-지정">Migration 이름 지정</h3>
 <p>전체 이름(파일명)을 지정 하지 않더라도, 1개를 판별할 수 있는 일부만 지정해도 OK</p>
 <h6 id="코드-예시">코드 예시</h6>
-<pre tabindex="0"><code> - account/migrations/0001_initial.py
+<pre><code> - account/migrations/0001_initial.py
  - account/migrations/0002_create_field.py
  - account/migrations/0002_update_field.py
 </code></pre><h6 id="success-사례">Success 사례</h6>
-<pre tabindex="0"><code>1. &gt; python manage.py migrate blog 0001
+<pre><code>1. &gt; python manage.py migrate blog 0001
 2. &gt; python manage.py migrate blog 0002_create 
 3. &gt; python manage.py migrate blog 0002_c 
 </code></pre><h6 id="fail-사례">Fail 사례</h6>
-<pre tabindex="0"><code>1. &gt; python manage.py migrate blog 0002
+<pre><code>1. &gt; python manage.py migrate blog 0002
 2. &gt; python manage.py migrate blog 000 
 3. &gt; python manage.py migrate blog 100
 </code></pre><ol>
@@ -248,7 +249,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 <li>매칭되는 파일이 없으므로 Fail</li>
 </ol>
 <h6 id="기타">기타</h6>
-<pre tabindex="0"><code> &gt; python manage.py migrate blog zero
+<pre><code> &gt; python manage.py migrate blog zero
 </code></pre><p>account 앱의 모든 상황을 롤백 (최초의 상황으로 회귀)</p>
 <hr>
 <h3 id="migration-순서">Migration 순서</h3>
@@ -256,10 +257,10 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 <p>보기 좋기 위해 파일명 순으로 되어 있으나 정확하게는
 Migration 파일의 dependencies에 따라서 정의되는 형태</p>
 </blockquote>
-<pre tabindex="0"><code>from django.db iport migrations, models
+<pre><code>from django.db iport migrations, models
 class Migration(migration.Migration):
   dependencies = [
- (&#39;account, &#39;0001_initial&#39;),
+ ('account, '0001_initial'),
 ]
 operations = [
 ...
@@ -280,7 +281,7 @@ operations = [
 <li>특정 모델에 대한 첫 Migration의 경우는 문제가 없으나 추후 새로운 필드를 추가하고자 할 때, 그 필드가 필수필드라면 아래와 같은 질문이 보여짐</li>
 </ul>
 <blockquote>
-<p>you are tying to add a non-nullable field &rsquo;example&rsquo; to post withaout a default; we can&rsquo;t do that (the database needs something to populate existing rows).
+<p>you are tying to add a non-nullable field &lsquo;example&rsquo; to post withaout a default; we can&rsquo;t do that (the database needs something to populate existing rows).
 please select a fix:</p>
 </blockquote>
 <ul>
@@ -347,7 +348,7 @@ please select a fix:</p>
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -459,7 +460,7 @@ please select a fix:</p>
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -467,135 +468,136 @@ please select a fix:</p>
                     </li>
                 
             </ul>
-			
         </div>
         
-		
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
-				<li>
-                    <a href="/categories/til">Til
-                        (345)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/django">Django
-                        (15)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
                 
-				<li>
-                    <a href="/categories/review">Review
-                        (9)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/resolved-problem">Resolved problem
-                        (8)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/python">Python
-                        (6)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
                 
-				<li>
-                    <a href="/categories/food-for-thought">Food for thought
-                        (5)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/algorithm">Algorithm
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/codeit">Codeit
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
                 
-				<li>
-                    <a href="/categories/compiler">Compiler
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/database">Database
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/java">Java
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
                 
-				<li>
-                    <a href="/categories/server">Server
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/developement">Developement
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/docker">Docker
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
                 
-				<li>
-                    <a href="/categories/react">React
-                        (3)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/spring">Spring
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/web">Web
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
                 
-				<li>
-                    <a href="/categories/mysql">Mysql
-                        (2)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/blog">Blog
-                        (1)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/book">Book
-                        (1)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
                 
             </ul>
         </div>
@@ -605,7 +607,6 @@ please select a fix:</p>
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -616,7 +617,9 @@ please select a fix:</p>
 
             
             <div class="archive">
-                <a href="/archive/"><strong>Archive</strong></a>
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
             </div>
             
         </div>
@@ -645,14 +648,16 @@ please select a fix:</p>
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
@@ -668,9 +673,8 @@ if (!doNotTrack) {
 </script>
 
     
-
-
     <script src="https://xfrnk2.github.io/theme.js"></script>
+    
 
     
     
@@ -685,6 +689,8 @@ if (!doNotTrack) {
 
   
 </div>
+
+    
 
     
 </body>

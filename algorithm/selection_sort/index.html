@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -25,12 +25,11 @@
 
     <meta property="og:title" content="정렬 알고리즘 - 선택 정렬(Selection Sort)" />
 <meta property="og:description" content="선택정렬의 원리와 특징 및 성능에 대해서 정리하는 글이다.
-&lt;학습 목표&gt;
-선택정렬의 원리를 이해한다. 선택정렬의 특징을 파악한다. 선택정렬의 성능을 기억한다. 모든 과정을 설명할 수 있다. 선택정렬을 프로그래밍 언어로 구현할 수 있다. 선택정렬의 원리 비교 연산을 통해 주어진 배열의 최솟값을 탐색 배열의 가장 앞에있는 원소와 최솟값을 교환 나머지 미정렬 부분을 가지고 위의 과정을 반복 선택정렬의 정렬 과정 배열의 크기 = n = 5,
-최솟값의 인덱스 = least_index
-[5, 3, 4, 2, 1] 0번째와 1~4번째값을 비교하여 보다 작은 값의 index를 least_index에 저장한다." />
+ &lt;학습 목표&gt;
+ 선택정렬의 원리를 이해한다. 선택정렬의 특징을 파악한다. 선택정렬의 성능을 기억한다. 모든 과정을 설명할 수 있다. 선택정렬을 프로그래밍 언어로 구현할 수 있다.    선택정렬의 원리  비교 연산을 통해 주어진 배열의 최솟값을 탐색 배열의 가장 앞에있는 원소와 최솟값을 교환 나머지 미정렬 부분을 가지고 위의 과정을 반복   선택정렬의 정렬 과정 배열의 크기 = n = 5,
+최솟값의 인덱스 = least_index" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/algorithm/selection_sort/" /><meta property="article:section" content="algorithm" />
+<meta property="og:url" content="https://xfrnk2.github.io/algorithm/selection_sort/" />
 <meta property="article:published_time" content="2020-07-14T15:55:01+09:00" />
 <meta property="article:modified_time" content="2020-07-14T15:55:01+09:00" />
 
@@ -41,9 +40,7 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/algorithm/selection_sort/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/algorithm/selection_sort/" rel="feed" type="application/rss+xml" title="Rad Blog" />
-    
+
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/algorithm/selection_sort/">
@@ -58,9 +55,12 @@
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -72,7 +72,7 @@
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -194,7 +194,7 @@
 <h3 id="선택정렬의-정렬-과정"><strong>선택정렬의 정렬 과정</strong></h3>
 <p>배열의 크기 = n = 5,<br>
 최솟값의 인덱스 = least_index</p>
-<pre tabindex="0"><code>[5, 3, 4, 2, 1] 
+<pre><code>[5, 3, 4, 2, 1] 
 </code></pre><hr>
 <ul>
 <li>0번째와 1~4번째값을 비교하여 보다 작은 값의 index를 least_index에 저장한다.</li>
@@ -202,7 +202,7 @@
 <li>least_index 위치의 값과 0번째 값을 swap한다.</li>
 </ul>
 <p><strong>결과 : 0번째 값(1) 정렬</strong></p>
-<pre tabindex="0"><code>[1, 3, 4, 2, 5] 
+<pre><code>[1, 3, 4, 2, 5] 
 </code></pre><hr>
 <ul>
 <li>1번째와 2~4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
@@ -210,7 +210,7 @@
 <li>least_index 위치의 값과 1번째 값을 swap한다.</li>
 </ul>
 <p><strong>결과 : 0, 1번째 값(1, 2) 정렬</strong></p>
-<pre tabindex="0"><code>[1, 2, 4, 3, 5] 
+<pre><code>[1, 2, 4, 3, 5] 
 </code></pre><hr>
 <ul>
 <li>2번째와 3~4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
@@ -218,7 +218,7 @@
 <li>least_index 위치의 값과 2번째 값을 swap한다.</li>
 </ul>
 <p><strong>결과 : 0, 1, 2번째 값(1, 2, 3) 정렬</strong></p>
-<pre tabindex="0"><code>[1, 2, 3, 4, 5] 
+<pre><code>[1, 2, 3, 4, 5] 
 </code></pre><hr>
 <ul>
 <li>3번째와 4번째 값을 비교하여 보다 작은 것의 index를 least_index에 저장한다.</li>
@@ -226,10 +226,10 @@
 <li>least_index 위치의 값과 3번째 값을 swap한다. (사실상 제자리)</li>
 </ul>
 <p><strong>결과 : 0, 1, 2, 3번째 값(1, 2, 3, 4) 정렬</strong></p>
-<pre tabindex="0"><code>[1, 2, 3, 4, 5] 
+<pre><code>[1, 2, 3, 4, 5] 
 </code></pre><hr>
 <h3 id="source-code"><strong>Source Code</strong></h3>
-<pre tabindex="0"><code>n = len(array) 
+<pre><code>n = len(array) 
 
 for i in range(0, n-1):
 	least_index = i
@@ -301,7 +301,7 @@ for i in range(0, n-1):
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -413,7 +413,7 @@ for i in range(0, n-1):
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -421,135 +421,136 @@ for i in range(0, n-1):
                     </li>
                 
             </ul>
-			
         </div>
         
-		
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
-				<li>
-                    <a href="/categories/til">Til
-                        (345)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/django">Django
-                        (15)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
                 
-				<li>
-                    <a href="/categories/review">Review
-                        (9)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/resolved-problem">Resolved problem
-                        (8)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/python">Python
-                        (6)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
                 
-				<li>
-                    <a href="/categories/food-for-thought">Food for thought
-                        (5)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/algorithm">Algorithm
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/codeit">Codeit
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
                 
-				<li>
-                    <a href="/categories/compiler">Compiler
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/database">Database
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/java">Java
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
                 
-				<li>
-                    <a href="/categories/server">Server
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/developement">Developement
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/docker">Docker
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
                 
-				<li>
-                    <a href="/categories/react">React
-                        (3)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/spring">Spring
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/web">Web
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
                 
-				<li>
-                    <a href="/categories/mysql">Mysql
-                        (2)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/blog">Blog
-                        (1)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/book">Book
-                        (1)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
                 
             </ul>
         </div>
@@ -559,7 +560,6 @@ for i in range(0, n-1):
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -570,7 +570,9 @@ for i in range(0, n-1):
 
             
             <div class="archive">
-                <a href="/archive/"><strong>Archive</strong></a>
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
             </div>
             
         </div>
@@ -599,14 +601,16 @@ for i in range(0, n-1):
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
@@ -622,9 +626,8 @@ if (!doNotTrack) {
 </script>
 
     
-
-
     <script src="https://xfrnk2.github.io/theme.js"></script>
+    
 
     
     
@@ -639,6 +642,8 @@ if (!doNotTrack) {
 
   
 </div>
+
+    
 
     
 </body>

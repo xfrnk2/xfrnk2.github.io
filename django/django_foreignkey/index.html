@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -25,9 +25,9 @@
 
     <meta property="og:title" content="Django - 관계를 표현하는 Model Field - Foreign Key" />
 <meta property="og:description" content="이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정 on_delete : Record 삭제시 Rule CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성 올바른 모델 지정 방법 권장하지 않는 방법의 예시 #modelsfrom django." />
+  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/django/django_foreignkey/" /><meta property="article:section" content="django" />
+<meta property="og:url" content="https://xfrnk2.github.io/django/django_foreignkey/" />
 <meta property="article:published_time" content="2020-05-02T23:07:21+09:00" />
 <meta property="article:modified_time" content="2020-05-02T23:07:21+09:00" />
 
@@ -38,9 +38,7 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/django/django_foreignkey/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/django/django_foreignkey/" rel="feed" type="application/rss+xml" title="Rad Blog" />
-    
+
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/django/django_foreignkey/">
@@ -55,9 +53,12 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -69,7 +70,7 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -194,9 +195,9 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
 <hr>
 <h3 id="올바른-모델-지정-방법">올바른 모델 지정 방법</h3>
 <h6 id="권장하지-않는-방법의-예시">권장하지 않는 방법의 예시</h6>
-<pre tabindex="0"><code>#models
+<pre><code>#models
 from django.contrib.auth.models import User
-</code></pre><pre tabindex="0"><code>post = models.ForeignKey(&#39;auth.User&#39;, on_delete=models.CASCADE)
+</code></pre><pre><code>post = models.ForeignKey('auth.User', on_delete=models.CASCADE)
 </code></pre><h6 id="권장하지-않는-이유">권장하지 않는 이유</h6>
 <ul>
 <li>적용은 되지만 보장되는 방법은 아님</li>
@@ -205,13 +206,13 @@ from django.contrib.auth.models import User
 </ul>
 <hr>
 <h6 id="권장하는-모델-지정-방법">권장하는 모델 지정 방법</h6>
-<pre tabindex="0"><code># setting.py
-AUTH_USER_MODEL = &#39;해당 앱이름.유저모델이름&#39;
+<pre><code># setting.py
+AUTH_USER_MODEL = '해당 앱이름.유저모델이름'
 </code></pre><ul>
 <li>위 값의 디폴트 값은 &lsquo;auth_User&rsquo;</li>
 <li>django.conf.global_settings.py에 저장되어 있고, 항상 현재 활성화 되고 있는 유저 모델을 가리키고 있음을 의미하게 됨</li>
 </ul>
-<pre tabindex="0"><code># models.py
+<pre><code># models.py
 from django.conf import settings
 post = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 </code></pre><ul>
@@ -221,10 +222,10 @@ post = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 <hr>
 <h3 id="코드-예시">코드 예시</h3>
 <p><strong>동일한 코드</strong></p>
-<pre tabindex="0"><code>comment = Comment.objects.all().first()
+<pre><code>comment = Comment.objects.all().first()
 comment = Comment.objects.first()
 </code></pre><p><strong>사용 예시</strong></p>
-<pre tabindex="0"><code>comment.post  
+<pre><code>comment.post  
 # Post.objects.get(pk=comment.post_id)
 </code></pre><ul>
 <li>SELECT가 두번 이루어짐</li>
@@ -233,9 +234,9 @@ comment = Comment.objects.first()
 <hr>
 <h3 id="코멘트-리스트-가져오기">코멘트 리스트 가져오기</h3>
 <h6 id="모두-같은-결과를-도출">모두 같은 결과를 도출</h6>
-<pre tabindex="0"><code>Comment.objects.filter(post_id=4) #직접적인 필드
+<pre><code>Comment.objects.filter(post_id=4) #직접적인 필드
 Comment.objects.filter(post__id=4) #post 측에 있는, 관계에 있는 id
-</code></pre><pre tabindex="0"><code>Comment.objects.filter(post=post) #추천
+</code></pre><pre><code>Comment.objects.filter(post=post) #추천
 post.comment_set.all() #추천, 사용하기 좋은 코드
 </code></pre><hr>
 <h3 id="외래키에서의-reverse-name">외래키에서의 Reverse name</h3>
@@ -257,7 +258,7 @@ post.comment_set.all() #추천, 사용하기 좋은 코드
 </blockquote>
 <h4 id="이름-충돌-피하기"><strong>이름 충돌 피하기</strong></h4>
 <ol>
-<li>어느 한 쪽의 FK에 대해, reverse_name을 포기 -&gt;related_name=&rsquo;+&rsquo;</li>
+<li>어느 한 쪽의 FK에 대해, reverse_name을 포기 -&gt;related_name='+&rsquo;</li>
 </ol>
 <ul>
 <li>reverse_name을 사용하지 않겠다는 선언</li>
@@ -278,13 +279,13 @@ post.comment_set.all() #추천, 사용하기 좋은 코드
 <li>dict/Q 객체를 리턴하는 함수 지정 : 매번 다른 조건 지정 가능</li>
 </ul>
 <h6 id="manytomanyfield에서도-지원">ManyToManyField에서도 지원</h6>
-<pre tabindex="0"><code>staff_member = models.ForeignKey(
+<pre><code>staff_member = models.ForeignKey(
 User,
 on_delete=models.CASCADE,
-limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
+limit_choices_to={'is_staff': True}, #조건을 걸 수 있음!
 )
 </code></pre><p><strong>또다른 사용예시</strong></p>
-<pre tabindex="0"><code>limit_choices_to={is_public : True} # 공개여부
+<pre><code>limit_choices_to={is_public : True} # 공개여부
 </code></pre>
     
 </div>
@@ -324,7 +325,7 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    window.disqus_config = function () {
+    var disqus_config = function () {
     
     
     
@@ -436,7 +437,7 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -444,135 +445,136 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
                     </li>
                 
             </ul>
-			
         </div>
         
-		
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
-				<li>
-                    <a href="/categories/til">Til
-                        (345)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/django">Django
-                        (15)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
                 
-				<li>
-                    <a href="/categories/review">Review
-                        (9)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/resolved-problem">Resolved problem
-                        (8)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/python">Python
-                        (6)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
                 
-				<li>
-                    <a href="/categories/food-for-thought">Food for thought
-                        (5)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/algorithm">Algorithm
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/codeit">Codeit
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
                 
-				<li>
-                    <a href="/categories/compiler">Compiler
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/database">Database
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/java">Java
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
                 
-				<li>
-                    <a href="/categories/server">Server
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/developement">Developement
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/docker">Docker
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
                 
-				<li>
-                    <a href="/categories/react">React
-                        (3)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/spring">Spring
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/web">Web
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
                 
-				<li>
-                    <a href="/categories/mysql">Mysql
-                        (2)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/blog">Blog
-                        (1)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/book">Book
-                        (1)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
                 
             </ul>
         </div>
@@ -582,7 +584,6 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -593,7 +594,9 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
 
             
             <div class="archive">
-                <a href="/archive/"><strong>Archive</strong></a>
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
             </div>
             
         </div>
@@ -622,14 +625,16 @@ limit_choices_to={&#39;is_staff&#39;: True}, #조건을 걸 수 있음!
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
@@ -645,9 +650,8 @@ if (!doNotTrack) {
 </script>
 
     
-
-
     <script src="https://xfrnk2.github.io/theme.js"></script>
+    
 
     
     
@@ -662,6 +666,8 @@ if (!doNotTrack) {
 
   
 </div>
+
+    
 
     
 </body>

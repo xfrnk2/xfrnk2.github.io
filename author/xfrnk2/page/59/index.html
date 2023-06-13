@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.69.0" />
     <title>
         
            
@@ -27,6 +27,7 @@
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xfrnk2.github.io/author/xfrnk2/" />
+<meta property="og:updated_time" content="2023-05-07T22:45:48+09:00" />
 
 
     
@@ -35,9 +36,10 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="/author/xfrnk2/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="/author/xfrnk2/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="https://xfrnk2.github.io/author/xfrnk2/index.xml" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
+
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/author/xfrnk2/">
@@ -52,9 +54,12 @@
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
+
+    
 </head>
 
 <body class="bilberry-hugo-theme">
+    
 
     
     <nav>
@@ -66,7 +71,7 @@
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			       <li><a href="https://github.com/xfrnk2">Github</a></li>
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -166,7 +171,7 @@
     </div>
 
     
-        계획했던 일 Django 배운 내용 문서화하기 LCS (최장 공통 부분 수열) 을 또다른 형태로 구현하기 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사하기 오늘 한 일 Django ManyToManyField 에 대해 복습하고 정리해서 글을 올렸다. Django OneToOneField 에 대해 복습하고 정리해서 글을 올렸다. 도서 &lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo; 을 어제 읽었던 부분을 다시 한 번 읽었다. 결과적으로 어제 이상으로 읽은 것은 10페이지 정도였다. 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사한 내용을 정리 후 문서화했다.
+        계획했던 일  Django 배운 내용 문서화하기 LCS (최장 공통 부분 수열) 을 또다른 형태로 구현하기 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사하기   오늘 한 일  Django ManyToManyField 에 대해 복습하고 정리해서 글을 올렸다. Django OneToOneField 에 대해 복습하고 정리해서 글을 올렸다. 도서 &lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo; 을 어제 읽었던 부분을 다시 한 번 읽었다. 결과적으로 어제 이상으로 읽은 것은 10페이지 정도였다. 분할 정복, 동적 프로그래밍, 그리디 알고리즘의 대표적인 예에 대해서 조사한 내용을 정리 후 문서화했다.
 
         
             <a href="https://xfrnk2.github.io/til/20.05.04/" class="more">Continue reading</a>
@@ -248,9 +253,9 @@
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase) on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
+  ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyToManyField(to, blank=Flase)  on_delete 옵션이 없고 blank라는 옵션을 유의미하게 사용
 예 ) 태그 지정에 대한 유효성 검사 ForeignKey 관계와 OneToOneField 관계에서는 두개의 모델만 있으면 충분하지만,
-ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능) 방법 1 (권장) class Post(models.Model):tag_set = models.ManyToManyField(&#39;Tag&#39;, blank=True)class Article(models.Model):tag_set = models.
+ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능)  방법 1 (권장) class Post(models.Model): tag_set = models.
 
         
             <a href="https://xfrnk2.github.io/django/django_manytomanyfield/" class="more">Continue reading</a>
@@ -332,8 +337,8 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능 User:Profile ForeignKey(unique_True)와 유사하지만, reverse 차이 User:Profile를 ForeignKey로 지정한다면 -&gt; profile.user_set.first() -&gt; user User:Profile를 OneToOneField로 지정한다면 -&gt; profile.user -&gt; user OneToOneField(to, on_delete) #django/contrib/auth/models.pyclass User(abstractBaseUser):...# accounts/models.pyclass Profile(models.Model):author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
-OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&gt; 모델명소문자 accounts/models.pyclass Profile(models.Model):user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)phone = models.
+  OneToOneField 1 : 1 관계에서 어느 쪽이라도 가능  User:Profile  ForeignKey(unique_True)와 유사하지만, reverse 차이  User:Profile를 ForeignKey로 지정한다면 -&gt; profile.user_set.first() -&gt; user User:Profile를 OneToOneField로 지정한다면 -&gt; profile.user -&gt; user  OneToOneField(to, on_delete) #django/contrib/auth/models.py class User(abstractBaseUser): ... # accounts/models.py class Profile(models.Model): author = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE) https://docs.djangoproject.com/en/3.0/ref/models/fields/#onetoonefield
+ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 -&gt; 모델명소문자 accounts/models.py class Profile(models.
 
         
             <a href="https://xfrnk2.github.io/django/django_onetoonefield/" class="more">Continue reading</a>
@@ -419,7 +424,7 @@ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 
     </div>
 
     
-        계획했던 일 LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기 독서하기 Django 배운 내용 문서화하기 오늘 한 일 도서 &lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo; 을 읽기 시작해서 20%정도 읽었다. 파이썬 사용자모임 단톡방에 올라온 질문들에 대해 답변을 남겼다. (리스트 열과 행의 합, 팩토리얼, Counter, 리스트 컴프리헨션) 그로부터 파생된 것들을 공부하는 시간을 보냈다. 딕셔너리의 값 기준 정렬 방법에 대해 알아봤다. 1. Counter(list).most_common(number) 2. result = sorted(arr.items(), key=lambda x : x[1])위처럼 두 가지 형태로 구현하였는데, 최빈값을 구하는 문제를 풀기 위함이었다.
+        계획했던 일  LCS (최장 공통 부분 수열) 알고리즘에 대해서 더 공부하기 독서하기 Django 배운 내용 문서화하기   오늘 한 일  도서 &lsquo;지적 대화를 위한 넓고 얕은 지식&rsquo; 을 읽기 시작해서 20%정도 읽었다. 파이썬 사용자모임 단톡방에 올라온 질문들에 대해 답변을 남겼다. (리스트 열과 행의 합, 팩토리얼, Counter, 리스트 컴프리헨션) 그로부터 파생된 것들을 공부하는 시간을 보냈다. 딕셔너리의 값 기준 정렬 방법에 대해 알아봤다.  1. Counter(list).most_common(number) 2. result = sorted(arr.
 
         
             <a href="https://xfrnk2.github.io/til/20.05.03/" class="more">Continue reading</a>
@@ -501,8 +506,8 @@ OneToOneField에서의 related_name reverse 접근 시의 속성명 : 디폴트 
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ORM ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음 보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
-RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key 1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment) 1 : 1 관계 -&gt; models.OneToOneField 1명의 유저(User), 1개의 프로필(Profile) M : N 관계 -&gt; models.
+  ORM  ORM은 어디까지나, SQL 생성을 도와주는 라이브러리 DB에 대한 모든 것을 알아서 처리해주진 않음   보다 성능높은 어플리케이션을 만들고자 한다면 사용할 DB엔진과 SQL에 대한 높은 이해 필요
+  RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key  1명의 유저(User)가 쓰는 다수의 포스팅(Post) 1명의 유저(User)가 쓰는 다수의 댓글(Comment) 1개의 포스팅(Post)에 다수의 댓글(Comment)  1 : 1 관계 -&gt; models.
 
         
             <a href="https://xfrnk2.github.io/django/django_model_field/" class="more">Continue reading</a>
@@ -589,7 +594,7 @@ RDMBS에서의 관계 예시 1 : N 관계 -&gt; Foreign Key 1명의 유저(User)
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정 on_delete : Record 삭제시 Rule CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성 올바른 모델 지정 방법 권장하지 않는 방법의 예시 #modelsfrom django.
+  ForeignKey(to, on_delete)  1:N의 관계에서 N측에 명시  to  대상모델, 클래스 직접 지정 또는 클래스명을 문자열로 지정 자기 참조는 &lsquo;self&rsquo; 지정  on_delete : Record 삭제시 Rule  CASCADE : 장고 1.x에서의 디폴트값 / 주로 CASCADE를 사용, FK를 참조하는 다른 모델의 Record도 삭제 PROTECT : ProtectedError (IntegrityError 상속) 를 발생시키며 삭제 방지 SET_NULL : null로 대체, 필드에 null=True 옵션 필수 SET_DEFAULT : 디폴트 값으로 대체, 필드에 디폴트값 지정 필수 SET : 대체할 값이나 함수를 지정, 함수의 경우 호출하여 리턴값을 사용 DO_NOTHING : 어떠한 액션X, DB에 따라 오류 발생 가능성   올바른 모델 지정 방법 권장하지 않는 방법의 예시 #models from django.
 
         
             <a href="https://xfrnk2.github.io/django/django_foreignkey/" class="more">Continue reading</a>
@@ -682,8 +687,7 @@ ForeignKey(to, on_delete) 1:N의 관계에서 N측에 명시 to 대상모델, �
 
     
         이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-django-debug-toolbar 현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능 django-debug-toolbar 설치 설치 공식문서 https://django-debug-toolbar.readthedocs.io/en/latest/installation.html 주의사항 웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작 이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
-https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar-options 코드를 통한 SQL 내역 확인 QuerySet의 query 속성 참조 ex) print(Post.
+  django-debug-toolbar  현재 request/response에 대한 다양한 디버깅 정보를 보여주고 다양한 패널을 지원 응답 포맷이 HTML일 때만 가능 SQLPanel을 통해 각 요청 처리시에 발생한 SQL 내역을 확인 가능 Ajax 요청에 대한 지원은 불가능   django-debug-toolbar 설치 설치 공식문서  https://django-debug-toolbar.readthedocs.io/en/latest/installation.html  주의사항  웹페이지의 템플릿에 필히 body 태그가 있어야만, django-debug-toolbar가 동작   이유 : dbt의 html/script 디폴트 주입 타겟이 /body 태그 (INSERT_BEFORE 설정 디폴트: &ldquo;/body&rdquo;)
 
         
             <a href="https://xfrnk2.github.io/django/django_debug_toolbar_sql/" class="more">Continue reading</a>
@@ -826,7 +830,7 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -834,135 +838,136 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
                     </li>
                 
             </ul>
-			
         </div>
         
-		
 
         
         <div class="categories">
-            <a href="/categories/"><strong>Categories</strong></a>
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
             <ul>
                 
-				<li>
-                    <a href="/categories/til">Til
-                        (345)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/django">Django
-                        (15)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
                 
-				<li>
-                    <a href="/categories/review">Review
-                        (9)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/resolved-problem">Resolved problem
-                        (8)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/python">Python
-                        (6)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
                 
-				<li>
-                    <a href="/categories/food-for-thought">Food for thought
-                        (5)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/algorithm">Algorithm
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/codeit">Codeit
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
                 
-				<li>
-                    <a href="/categories/compiler">Compiler
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/database">Database
-                        (4)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/java">Java
-                        (4)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
                 
-				<li>
-                    <a href="/categories/server">Server
-                        (4)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/developement">Developement
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/docker">Docker
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
                 
-				<li>
-                    <a href="/categories/react">React
-                        (3)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/spring">Spring
-                        (3)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/web">Web
-                        (3)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
                 
-				<li>
-                    <a href="/categories/mysql">Mysql
-                        (2)</a>
-                    　
-				</li>
+                </li>
                 
-				<li>
-                    <a href="/categories/blog">Blog
-                        (1)</a>
-                    　
-				</li>
+                <li>
                 
-				<li>
-                    <a href="/categories/book">Book
-                        (1)</a>
-                    　
-				</li>
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
                 
             </ul>
         </div>
@@ -972,7 +977,6 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
             
             <div class="external-profiles">
                 <strong>Social media</strong>
-
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -983,7 +987,9 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
 
             
             <div class="archive">
-                <a href="/archive/"><strong>Archive</strong></a>
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
             </div>
             
         </div>
@@ -1002,7 +1008,7 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
                 by xfrnk2
             </a>
             -
-            <a href="https://xfrnk2.github.io/author/xfrnk2/index.xml">rss</a>
+            <a href="https://xfrnk2.github.io/author/xfrnk2/index.xml">RSS</a>
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"
@@ -1013,14 +1019,16 @@ https://django-debug-toolbar.readthedocs.io/en/latest/configuration.html#toolbar
 
 
     
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-SL1RKJG57X', 'auto');
+	
+	ga('send', 'pageview');
 }
 </script>
 
@@ -1036,9 +1044,8 @@ if (!doNotTrack) {
 </script>
 
     
-
-
     <script src="https://xfrnk2.github.io/theme.js"></script>
+    
 
     
     
@@ -1053,6 +1060,8 @@ if (!doNotTrack) {
 
   
 </div>
+
+    
 
     
 </body>
