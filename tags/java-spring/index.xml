@@ -5,18 +5,15 @@
     <link>https://xfrnk2.github.io/tags/java-spring/</link>
     <description>Recent content in Java, Spring on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Apr 2022 23:47:45 +0900</lastBuildDate>
-    
-	<atom:link href="https://xfrnk2.github.io/tags/java-spring/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Sat, 02 Apr 2022 23:47:45 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/java-spring/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</title>
       <link>https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/</link>
       <pubDate>Sat, 02 Apr 2022 23:47:45 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/</guid>
-      <description>개요  이 글은 넷플릭스 클론코딩 서버 파트를 개발하면서, 소셜로그인을 어떻게 적용시켜볼 수 있는지를 고민하고 설계했던 개념을 담고 있다. SpringSecurity와 Auth를 사용하는 것이 아닌 오로지 Rest API만으로 구현했다.   소셜로그인 WORK FLOW  사용자가 나의 서비스에서 [소셜 로그인]을 누르면 소셜 로그인 창이 뜨게된다. 소셜 로그인이 정상 수행되면 카카오가 [인가 코드](Authorization Code)를 미리 설정한 redirect_uri로 되돌려준다. 나의 서비스는 redirect_uri로 들어온 url에서 [인가 코드]를 얻어서 소셜 로그인 서비스 server에 AccessToken을 요청한다. 소셜 로그인 서비스는 [인가 코드]를 확인하고 AccessToken을 돌려준다.</description>
+      <description>개요 이 글은 넷플릭스 클론코딩 서버 파트를 개발하면서, 소셜로그인을 어떻게 적용시켜볼 수 있는지를 고민하고 설계했던 개념을 담고 있다. SpringSecurity와 Auth를 사용하는 것이 아닌 오로지 Rest API만으로 구현했다. 소셜로그인 WORK FLOW 사용자가 나의 서비스에서 [소셜 로그인]을 누르면 소셜 로그인 창이 뜨게된다. 소셜 로그인이 정상 수행되면 카카오가 [인가 코드](Authorization Code)를 미리 설정한 redirect_uri로 되돌려준다. 나의 서비스는 redirect_uri로 들어온 url에서 [인가 코드]를 얻어서 소셜 로그인 서비스 server에 AccessToken을 요청한다. 소셜 로그인 서비스는 [인가 코드]를 확인하고 AccessToken을 돌려준다.</description>
     </item>
     
     <item>
@@ -25,7 +22,7 @@
       <pubDate>Sat, 02 Apr 2022 23:46:55 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/java/java-teamflix-spring-study/</guid>
-      <description>개요  넷플릭스 팀 프로젝트 서버 개발 기간동안(2022.03.19~2022.03.31) 지금까지 스프링을 공부하며 남겼던 기록들을 정리해 보았다. 필자는 자바 사용을 시작한지 얼마 되지 않은 초심자고, 스프링은 이번 라이징 캠프 수업을 들으며 처음 접한 프레임워크다. 아직 미흡한 부분이 절대적으로 크다고 느끼고, 이제 막 개념을 배워가고 있는 수준이다. 이후에 조금 더 깊이 있는 영역까지 코드를 뜯어보고 분석해 볼 수 있도록 공부해 가고 싶다.   Spring-boot API 구현하기 위한 선수지식  어노테이션을 다양하게 알아둘 필요가 있다.</description>
+      <description>개요 넷플릭스 팀 프로젝트 서버 개발 기간동안(2022.03.19~2022.03.31) 지금까지 스프링을 공부하며 남겼던 기록들을 정리해 보았다. 필자는 자바 사용을 시작한지 얼마 되지 않은 초심자고, 스프링은 이번 라이징 캠프 수업을 들으며 처음 접한 프레임워크다. 아직 미흡한 부분이 절대적으로 크다고 느끼고, 이제 막 개념을 배워가고 있는 수준이다. 이후에 조금 더 깊이 있는 영역까지 코드를 뜯어보고 분석해 볼 수 있도록 공부해 가고 싶다. Spring-boot API 구현하기 위한 선수지식 어노테이션을 다양하게 알아둘 필요가 있다. 롬북을 쓰자. Spring에 대해 알아보자 1.</description>
     </item>
     
     <item>
@@ -34,7 +31,7 @@
       <pubDate>Sat, 02 Apr 2022 23:46:45 +0900</pubDate>
       
       <guid>https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/</guid>
-      <description>개요  본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 외부 API를 사용하면서 어떻게 하면 HTTP 요청을 외부 API로 보내고, 응답을 받아 올 수 있는지 공부해볼 수 있었다. 깊이가 있다고는 말할 수 없지만, 이해하며 기록해 왔던 내용을 아래에 정리해 본다. 물론 세부적인 내용은 대부분 공식문서를 참고했으며, 자주 사용되어 꼭 알아야 했었던 개념 위주로 정리한다.   Body Body는 보통 key, value의 쌍으로 이루어지기 때문에 자바에서 제공해주는 MultiValueMap 타입을 사용해야한다.</description>
+      <description>개요 본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 외부 API를 사용하면서 어떻게 하면 HTTP 요청을 외부 API로 보내고, 응답을 받아 올 수 있는지 공부해볼 수 있었다. 깊이가 있다고는 말할 수 없지만, 이해하며 기록해 왔던 내용을 아래에 정리해 본다. 물론 세부적인 내용은 대부분 공식문서를 참고했으며, 자주 사용되어 꼭 알아야 했었던 개념 위주로 정리한다. Body Body는 보통 key, value의 쌍으로 이루어지기 때문에 자바에서 제공해주는 MultiValueMap 타입을 사용해야한다.</description>
     </item>
     
   </channel>

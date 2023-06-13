@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -25,9 +25,9 @@
 
     <meta property="og:title" content="Django Static &amp; Media 파일" />
 <meta property="og:description" content="이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  Static &amp; Media 파일  Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙   Media 파일 (장고에만 있는)  FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙   Media 파일 처리 순서  HttpRequest." />
+Static &amp; Media 파일 Static 파일 : 개발 리소스로서의 정적인 파일(js, css, image 등) 앱 또는 프로젝트 단위로 저장 및 서빙 Media 파일 (장고에만 있는) FileField/ImageField를 통해 저장한 모든 파일 DB필드에는 저장 경로를 저장하며, 파일은 파일 스토리지에 저장 실제로 문자열을 저장하는 필드(중요) -&gt; 파일은 스토리지에 저장, 경로 문자열이 저장 프로젝트 단위로 저장 및 서빙 Media 파일 처리 순서 HttpRequest.FILES를 통해 파일이 전달 뷰 로직이나 폼 로직을 통해, 유효성 검증을 수행 FileFIeld/ImageField 필드에 &ldquo;경로(문자열)&ldquo;를 저장 setings." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/django/django_static_media_file/" />
+<meta property="og:url" content="https://xfrnk2.github.io/django/django_static_media_file/" /><meta property="article:section" content="django" />
 <meta property="article:published_time" content="2020-04-28T23:25:41+09:00" />
 <meta property="article:modified_time" content="2020-04-28T23:25:41+09:00" />
 
@@ -196,8 +196,8 @@
 <li>setings.MEDIA_ROOT 경로에 파일을 저장</li>
 </ol>
 <h6 id="코드-예시">코드 예시</h6>
-<pre><code>MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
+<pre tabindex="0"><code>MEDIA_URL = &#39;/media/&#39;
+MEDIA_ROOT = os.path.join(BASE_DIR, &#39;..&#39;, &#39;public&#39;, &#39;media&#39;)
 </code></pre><blockquote>
 <p>예) MEDIA_ROOT의 경우, 상위 디렉토리(..)의 public/media에 저장</p>
 </blockquote>
@@ -218,12 +218,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
 <h6 id="위-필드를-상속-받은-커스텀-필드를-만들-수-있다">위 필드를 상속 받은 커스텀 필드를 만들 수 있다.</h6>
 <hr>
 <h3 id="사용할-만한-필드-옵션">사용할 만한 필드 옵션</h3>
-<h6 id="-blank">　 blank</h6>
+<h6 id="blank">　 blank</h6>
 <ul>
 <li>업로드 옵션 처리여부</li>
 <li>default : False</li>
 </ul>
-<h6 id="-upload_to">　 upload_to</h6>
+<h6 id="upload_to">　 upload_to</h6>
 <ul>
 <li>settings.MEDIA_ROOT 하위에서 저장한 파일명/경로명 결정</li>
 <li>default : 파일명 그대로 settings.MEDIA_ROOT에 저장</li>
@@ -245,17 +245,17 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '..', 'public', 'media')
 <p>한 디렉토리에 파일을 너무 많이 몰아둘 경우, OS 파일찾기 성능 저하. 디렉토리 Depth가 깊어지는 것은 성능에 큰 영향 없음. 필드 별로, 다른 디렉토리 저장경로를 가질 것을 권장</p>
 <h6 id="대책-1-필드-별로-다른-디렉토리에-저장">대책 1) 필드 별로 다른 디렉토리에 저장</h6>
 <ul>
-<li>photo = models.ImageField(upload_to=&quot;blog&rdquo;)</li>
-<li>photo = models.ImageField(upload_to=&quot;blog/photo&rdquo;)</li>
+<li>photo = models.ImageField(upload_to=&ldquo;blog&rdquo;)</li>
+<li>photo = models.ImageField(upload_to=&ldquo;blog/photo&rdquo;)</li>
 </ul>
 <h6 id="대책-2-업로드-시간대-별로-다른-디렉토리에-저장">대책 2) 업로드 시간대 별로 다른 디렉토리에 저장</h6>
 <ul>
 <li>upload_to에서 strftime 포맷팅을 지원</li>
-<li>photo = models.ImageField(upload_to=&quot;blog/%Y/%m/%d&rdquo;)</li>
+<li>photo = models.ImageField(upload_to=&ldquo;blog/%Y/%m/%d&rdquo;)</li>
 </ul>
 <hr>
 <h3 id="uuid를-통한-파일명-정하기-예시">uuid를 통한 파일명 정하기 예시</h3>
-<pre><code>import os
+<pre tabindex="0"><code>import os
 from uuid import uuid4 
 from django.utils import timezone
 
@@ -263,34 +263,33 @@ from django.utils import timezone
 def uuid_name_upload_to(instance, filename):
 	app_label = instance.__class__._meta.app_label 	# 앱 별로
 	cls_name = instance. __class__.__name__.lower()# 모델 별로
-	ymd_path = timezone.now().strftime('%Y/%m/%d') 	# 업로드하는 년/월/일 별로 
+	ymd_path = timezone.now().strftime(&#39;%Y/%m/%d&#39;) 	# 업로드하는 년/월/일 별로 
 	uuid_name = uuid4().hex
 	extension = os.path.splitext(filename)[-1].lower() #파일명과 확장자로 분리
-	return '/'.join([
+	return &#39;/&#39;.join([
 			app_label, 
 			cls_name, 
 			ymd_path, 
 			uuid_name[:2], 
 			uuid_name + extension,
 	])
-
 </code></pre><h6 id="uuid의-사용">uuid의 사용</h6>
-<pre><code>&gt;&gt;&gt; from uuid import uuid4 
+<pre tabindex="0"><code>&gt;&gt;&gt; from uuid import uuid4 
 &gt;&gt;&gt; uuid4()
-UUID('2456b825-1e40-4da5-a8a8-114afb1b2ec4')
+UUID(&#39;2456b825-1e40-4da5-a8a8-114afb1b2ec4&#39;)
 &gt;&gt;&gt; uuid4().hex
-'be8a02e5b8bd41c883d09afba142a6c9'
+&#39;be8a02e5b8bd41c883d09afba142a6c9&#39;
 </code></pre><h6 id="splitext의-사용">splitext의 사용</h6>
-<pre><code>&gt;&gt;&gt; from os.path import splitext
-&gt;&gt;&gt; splitext('c:/hello/python.py') # 확장자가 없으면 두번째 원소로 ''를 반환
-('c:/hello/python', '.py') # splitext('경로')[-1]과 같은 형태로 사용
+<pre tabindex="0"><code>&gt;&gt;&gt; from os.path import splitext
+&gt;&gt;&gt; splitext(&#39;c:/hello/python.py&#39;) # 확장자가 없으면 두번째 원소로 &#39;&#39;를 반환
+(&#39;c:/hello/python&#39;, &#39;.py&#39;) # splitext(&#39;경로&#39;)[-1]과 같은 형태로 사용
 </code></pre><hr>
 <h3 id="개발환경에서의-media-파일-서빙">개발환경에서의 media 파일 서빙</h3>
 <ul>
 <li>static 파일과 다르게, 장고 개발서버에서 서빙 미지원</li>
 <li>개발 편의성 목적으로 직접 서빙 Rule 추가 가능</li>
 </ul>
-<pre><code>from django.conf import settings
+<pre tabindex="0"><code>from django.conf import settings
 from django.conf.urls.static import static
 # 중략
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
@@ -314,7 +313,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 <hr>
 <h3 id="기타-팁">기타 팁</h3>
 <h6 id="ㅇ-if-settingsdebug-in-urlspy">ㅇ if settings.DEBUG: in urls.py</h6>
-<pre><code>if settings.DEBUG:
+<pre tabindex="0"><code>if settings.DEBUG:
     urlpatterns += static.static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 </code></pre><ul>
 <li>파일을 읽어서 응답을 주기 위한 방법 (urls.py)</li>
@@ -328,18 +327,18 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 <li>url이 아닌 이미지가 정상적으로 나올수 있게 함</li>
 </ul>
 <h6 id="ㅇ-조회">ㅇ 조회</h6>
-<pre><code>&gt;&gt;&gt; a = Post.objects.all()[2]
+<pre tabindex="0"><code>&gt;&gt;&gt; a = Post.objects.all()[2]
 &lt;Post: 세번째&gt;
 &gt;&gt;&gt; a.photo.url
-'/media/%EA%B7%B8%EC%9C%BC%EB%9E%98.jpg'
+&#39;/media/%EA%B7%B8%EC%9C%BC%EB%9E%98.jpg&#39;
 &gt;&gt;&gt; a.photo.path
-'C:\\Users\\rad87\\Documents\\programming\\mysite\\django_tech\\이미지.jpg'
+&#39;C:\\Users\\rad87\\Documents\\programming\\mysite\\django_tech\\이미지.jpg&#39;
 </code></pre><h6 id="ㅇ-settings의-import">ㅇ settings의 import</h6>
 <blockquote>
 <p>settings는 기본적으로 django.conf의 global_settings와, 현재 프로젝트의 settings가 합쳐져야 되므로
 from django.conf import 현 프로젝트의 settings인 settings 로 하면 합쳐짐(오버라이팅)</p>
 </blockquote>
-<pre><code># from django.conf import global_settings
+<pre tabindex="0"><code># from django.conf import global_settings
 # from django_tech import settings
 from django.conf import settings
 </code></pre><hr>
@@ -390,7 +389,7 @@ FileField/ImageField는 CharField를 상속받은 필드입니다. 문자열 특
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -502,7 +501,7 @@ FileField/ImageField는 CharField를 상속받은 필드입니다. 문자열 특
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -690,16 +689,14 @@ FileField/ImageField는 CharField를 상속받은 필드입니다. 문자열 특
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

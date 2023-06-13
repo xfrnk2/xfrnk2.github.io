@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -24,9 +24,9 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="Mysql Procedure 공부와 실제 데이터 연산에 적용하기" />
-<meta property="og:description" content="개요  본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 방대한 양의 데이터를 어떻게 핸들링 할 수 있을까 고민하다가, Mysql에도 For, While 문 등 여러가지 연산을 가능하게 해주는 문법이 있다는 정보를 입수했다. 구글링을 거듭하다 보니, 보통의 프로그래밍 언어의 함수처럼 간단한 기능이라면 실제로 사용이 가능한 듯 보였다. 방대한 양의 데이터를 일련의 일정한 규칙을 따라 insert하기 위해서, 다음과 같이 공부하며 직접 코드를 작성해 보았다. 작성했던 코드의 일부를 먼저 첨부한다." />
+<meta property="og:description" content="개요 본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 방대한 양의 데이터를 어떻게 핸들링 할 수 있을까 고민하다가, Mysql에도 For, While 문 등 여러가지 연산을 가능하게 해주는 문법이 있다는 정보를 입수했다. 구글링을 거듭하다 보니, 보통의 프로그래밍 언어의 함수처럼 간단한 기능이라면 실제로 사용이 가능한 듯 보였다. 방대한 양의 데이터를 일련의 일정한 규칙을 따라 insert하기 위해서, 다음과 같이 공부하며 직접 코드를 작성해 보았다. 작성했던 코드의 일부를 먼저 첨부한다. 아래에서 각 항목별 의미나 기능을 약술해 본다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/database/database-mysql-procedure/" />
+<meta property="og:url" content="https://xfrnk2.github.io/database/database-mysql-procedure/" /><meta property="article:section" content="database" />
 <meta property="article:published_time" content="2022-04-02T19:35:24+09:00" />
 <meta property="article:modified_time" content="2022-04-02T19:35:24+09:00" />
 
@@ -179,92 +179,92 @@
 <li>(필자는 아래의 코드를 직접 작성하고, 필요한 데이터를 모두 삽입했다. 하단에 실제 사용했던 내용을 주석으로 포함 시켜봤다.)</li>
 </ul>
 <hr>
-<pre><code>
+<pre tabindex="0"><code>
 delimiter //
 drop procedure if exists p1;
 create procedure p1(title VARCHAR(100), ageGrade INT, photoUrl TEXT, year INT, season INT,  resolution VARCHAR(30), summary TEXT)
 begin
 
-DECLARE CstrIDs varchar(150) DEFAULT '논쟁의 중심';
-DECLARE GstrIDs varchar(150) DEFAULT '다큐시리즈';
-DECLARE AstrIDs varchar(500) DEFAULT ''; 
-DECLARE DstrIDs varchar(150) DEFAULT '마크 루이스'; 
+DECLARE CstrIDs varchar(150) DEFAULT &#39;논쟁의 중심&#39;;
+DECLARE GstrIDs varchar(150) DEFAULT &#39;다큐시리즈&#39;;
+DECLARE AstrIDs varchar(500) DEFAULT &#39;&#39;; 
+DECLARE DstrIDs varchar(150) DEFAULT &#39;마크 루이스&#39;; 
  DECLARE element varchar(1000);
  insert ignore into Video (title, ageGrade, photoUrl, year, season, resolution, summary, previewVideoUrl) values (title, ageGrade, photoUrl, year, season, resolution, summary, photoUrl);
  set @V := (select max(videoIdx) from Video);
  select @V;
 
 
-  WHILE CstrIDs != '' DO
+  WHILE CstrIDs != &#39;&#39; DO
 
-    SET element = SUBSTRING_INDEX(CstrIDs, ',', 1);      
+    SET element = SUBSTRING_INDEX(CstrIDs, &#39;,&#39;, 1);      
  insert ignore into `Character`(name) values(element);
 
 	set @C := (select characterIdx from `Character` where name = element);
     insert ignore into CharacterContact (characterIdx, videoIdx) values (@C, @V);
     select @C;
 
-    IF LOCATE(',', CstrIDs) &gt; 0 THEN
-      SET CstrIDs = SUBSTRING(CstrIDs, LOCATE(',', CstrIDs) + 1);
+    IF LOCATE(&#39;,&#39;, CstrIDs) &gt; 0 THEN
+      SET CstrIDs = SUBSTRING(CstrIDs, LOCATE(&#39;,&#39;, CstrIDs) + 1);
       
     ELSE
-      SET CstrIDs = '';
+      SET CstrIDs = &#39;&#39;;
     END IF;
 
   END WHILE;
 
 
-  WHILE GstrIds != '' DO
+  WHILE GstrIds != &#39;&#39; DO
 
-    SET element = SUBSTRING_INDEX(GstrIds, ',', 1);      
+    SET element = SUBSTRING_INDEX(GstrIds, &#39;,&#39;, 1);      
 
 	set @G := (select genreIdx from Genre where name = element);
     insert ignore into GenreContact (genreIdx, videoIdx) values (@G, @V);
     select @G;
 
-    IF LOCATE(',', GstrIds) &gt; 0 THEN
-      SET GstrIds = SUBSTRING(GstrIds, LOCATE(',', GstrIds) + 1);
+    IF LOCATE(&#39;,&#39;, GstrIds) &gt; 0 THEN
+      SET GstrIds = SUBSTRING(GstrIds, LOCATE(&#39;,&#39;, GstrIds) + 1);
       
     ELSE
-      SET GstrIds = '';
+      SET GstrIds = &#39;&#39;;
     END IF;
 
   END WHILE;
 
 
-  WHILE AstrIds != '' DO
+  WHILE AstrIds != &#39;&#39; DO
 
-    SET element = SUBSTRING_INDEX(AstrIds, ',', 1);      
+    SET element = SUBSTRING_INDEX(AstrIds, &#39;,&#39;, 1);      
  insert ignore into Actor(name) values(element);
 
 	set @A := (select actorIdx from Actor where name = element);
     insert ignore into ActorParticipate (actorIdx, videoIdx) values (@A, @V);
     select @A;
 
-    IF LOCATE(',', AstrIds) &gt; 0 THEN
-      SET AstrIds = SUBSTRING(AstrIds, LOCATE(',', AstrIds) + 1);
+    IF LOCATE(&#39;,&#39;, AstrIds) &gt; 0 THEN
+      SET AstrIds = SUBSTRING(AstrIds, LOCATE(&#39;,&#39;, AstrIds) + 1);
       
     ELSE
-      SET AstrIds = '';
+      SET AstrIds = &#39;&#39;;
     END IF;
 
   END WHILE;
 
 
-  WHILE DstrIDs != '' DO
+  WHILE DstrIDs != &#39;&#39; DO
 
-    SET element = SUBSTRING_INDEX(DstrIDs, ',', 1);      
+    SET element = SUBSTRING_INDEX(DstrIDs, &#39;,&#39;, 1);      
 	insert ignore into Director(name) values(element);
 
 	set @D := (select directorIdx from Director where name = element);
     insert ignore into DirectorParticipate (directorIdx, videoIdx) values (@D, @V);
     select @D;
 
-    IF LOCATE(',', DstrIDs) &gt; 0 THEN
-      SET DstrIDs = SUBSTRING(DstrIDs, LOCATE(',', DstrIDs) + 1);
+    IF LOCATE(&#39;,&#39;, DstrIDs) &gt; 0 THEN
+      SET DstrIDs = SUBSTRING(DstrIDs, LOCATE(&#39;,&#39;, DstrIDs) + 1);
       
     ELSE
-      SET DstrIDs = '';
+      SET DstrIDs = &#39;&#39;;
     END IF;
 
   END WHILE;
@@ -277,109 +277,105 @@ end //
 delimiter ;
 
 -- CALL 调用
--- call p1('디어 마이 프렌즈',
+-- call p1(&#39;디어 마이 프렌즈&#39;,
 --  15,
---  'https://occ-0-395-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQutWy_uEtezW_-I9YmJ_SbCjQbTfutLaECvTH5-TeOBveA_904Bdk5xuvCEZ_xXMFqeHkf84rwgqUCcjiOrlyrH50E.webp?r=05a',
+--  &#39;https://occ-0-395-988.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQutWy_uEtezW_-I9YmJ_SbCjQbTfutLaECvTH5-TeOBveA_904Bdk5xuvCEZ_xXMFqeHkf84rwgqUCcjiOrlyrH50E.webp?r=05a&#39;,
 --  2016,
 --  1, 
---  'HD',
---  &quot;자식들 뒷바라지하랴, 가족들 건사하랴, 어느새 훅 지나가 버린 세월. 그렇게 노년에 접어들었지만 인생, 아직 저물지 않았다. '시니어벤저스'와 노희경 표 반짝이는 명대사의 만남, 꼰대들의 유쾌한 인생 찬가가 펼쳐진다.&quot;);
+--  &#39;HD&#39;,
+--  &#34;자식들 뒷바라지하랴, 가족들 건사하랴, 어느새 훅 지나가 버린 세월. 그렇게 노년에 접어들었지만 인생, 아직 저물지 않았다. &#39;시니어벤저스&#39;와 노희경 표 반짝이는 명대사의 만남, 꼰대들의 유쾌한 인생 찬가가 펼쳐진다.&#34;);
 
--- call p1('스위트 투스: 사슴뿔을 가진 소년',
+-- call p1(&#39;스위트 투스: 사슴뿔을 가진 소년&#39;,
 --  15,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfgUpEq5wF12TZ4pOq0ZOl--rE21DUIaQQOSmUtIVV8Q1SYWA0WEcpzOeunKyJjX39UklypUXOWjVV8j3qxFuAscJHRd2qB7kXVeI5G3agxHL640.jpg?r=f1f',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABfgUpEq5wF12TZ4pOq0ZOl--rE21DUIaQQOSmUtIVV8Q1SYWA0WEcpzOeunKyJjX39UklypUXOWjVV8j3qxFuAscJHRd2qB7kXVeI5G3agxHL640.jpg?r=f1f&#39;,
 --  2021,
 --  1, 
---  'HD',
---  &quot;로버트 다우니 주니어가 공동 총괄 프로듀서를 맡은 판타지 어드벤처 시리즈. 제프 러미어의 만화 컬렉션이 원작이다.&quot;);
+--  &#39;HD&#39;,
+--  &#34;로버트 다우니 주니어가 공동 총괄 프로듀서를 맡은 판타지 어드벤처 시리즈. 제프 러미어의 만화 컬렉션이 원작이다.&#34;);
 
 
--- call p1('겟 이븐',
+-- call p1(&#39;겟 이븐&#39;,
 --  15,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUG3egJwcswtP3LDRI7GbFIV1FZp77VXyS7MIjqqwG29mzc5gIBTEW_y3v_wc7Ks3h_QeNsoWuMCJId4otp1X6JournsFZksums4O2166piro3wa.jpg?r=c1d',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABUG3egJwcswtP3LDRI7GbFIV1FZp77VXyS7MIjqqwG29mzc5gIBTEW_y3v_wc7Ks3h_QeNsoWuMCJId4otp1X6JournsFZksums4O2166piro3wa.jpg?r=c1d&#39;,
 --  2020,
 --  1, 
---  'HD',
---  &quot;겉만 번드르르한 학교, 이젠 바꾸리라. 불의를 폭로하리라. 세상에 불만 많은 네 명의 사립학교 학생들. 정의 구현을 위해 힘을 합친 그들이 택한 전략은 바로, 복수다.&quot;);
+--  &#39;HD&#39;,
+--  &#34;겉만 번드르르한 학교, 이젠 바꾸리라. 불의를 폭로하리라. 세상에 불만 많은 네 명의 사립학교 학생들. 정의 구현을 위해 힘을 합친 그들이 택한 전략은 바로, 복수다.&#34;);
 
--- call p1('솔로지옥',
+-- call p1(&#39;솔로지옥&#39;,
 --  15,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYxrlP5o7Aj40SlBkfwIN-4vzLMbkRVXx75idrRpoTGTp9QzvhXtQ8Tc3VfHBH5-OZ_5iQxNh9tnWXPB35gqZf6-plgBh57kzFM_Dh1QOS7rzwFN.jpg?r=d10',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABYxrlP5o7Aj40SlBkfwIN-4vzLMbkRVXx75idrRpoTGTp9QzvhXtQ8Tc3VfHBH5-OZ_5iQxNh9tnWXPB35gqZf6-plgBh57kzFM_Dh1QOS7rzwFN.jpg?r=d10&#39;,
 --  2021,
 --  1, 
---  'HD',
---  &quot;매력적인 싱글 남녀가 무인도에 갇혔다. 누군가와 커플이 되는 게 유일한 탈출 방법. 근데 커플들이 '천국도'로 이동해 밤을 불태울 때, 솔로는 '지옥도'에 남아 자급자족해야 한다고?&quot;);
+--  &#39;HD&#39;,
+--  &#34;매력적인 싱글 남녀가 무인도에 갇혔다. 누군가와 커플이 되는 게 유일한 탈출 방법. 근데 커플들이 &#39;천국도&#39;로 이동해 밤을 불태울 때, 솔로는 &#39;지옥도&#39;에 남아 자급자족해야 한다고?&#34;);
  
--- call p1('코타로는 1인가구',
+-- call p1(&#39;코타로는 1인가구&#39;,
 --  12,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTwKYLwsHEFCf1n_kEfHmA3J5U2IMYpnhZpbgwWe9FT7I2y6f8KVJbNyLHOf_oOyu3Yb0OF8IZqaDk9C5RKoDuJJCSwpw32Y6TTKur_MCALeMV-F.jpg?r=143',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTwKYLwsHEFCf1n_kEfHmA3J5U2IMYpnhZpbgwWe9FT7I2y6f8KVJbNyLHOf_oOyu3Yb0OF8IZqaDk9C5RKoDuJJCSwpw32Y6TTKur_MCALeMV-F.jpg?r=143&#39;,
 --  2022,
 --  1, 
---  'HD',
---  &quot;허름한 원룸 건물에 혼자 이사 온 꼬마 아이. 자기 힘으로 모든 걸 해내는 어린 소년과 옆집의 빈털터리 만화가 청년이 친구가 된다.&quot;);
+--  &#39;HD&#39;,
+--  &#34;허름한 원룸 건물에 혼자 이사 온 꼬마 아이. 자기 힘으로 모든 걸 해내는 어린 소년과 옆집의 빈털터리 만화가 청년이 친구가 된다.&#34;);
 
--- call p1('사랑의 불시착',
+-- call p1(&#39;사랑의 불시착&#39;,
 --  15,
---  'https://t1.daumcdn.net/cfile/tistory/99073B3A5E48BAB20B',
+--  &#39;https://t1.daumcdn.net/cfile/tistory/99073B3A5E48BAB20B&#39;,
 --  2019,
 --  1, 
---  'HD',
---  &quot;패러글라이딩 사고에 휘말린 대한민국 재벌 상속녀 윤세리. 그녀가 낯선 남정네의 품에 뚝 떨어져 버린 뒤, 생각지도 못한 사랑이 시작된다! 정주행을 부르는 두근두근 로맨스.&quot;);
+--  &#39;HD&#39;,
+--  &#34;패러글라이딩 사고에 휘말린 대한민국 재벌 상속녀 윤세리. 그녀가 낯선 남정네의 품에 뚝 떨어져 버린 뒤, 생각지도 못한 사랑이 시작된다! 정주행을 부르는 두근두근 로맨스.&#34;);
 
--- call p1('경이로운 소문',
+-- call p1(&#39;경이로운 소문&#39;,
 --  15,
---  'https://th.bing.com/th/id/OIP.o7WfFvV1WwvQDCPApfCV5gHaKf?pid=ImgDet&amp;rs=1',
+--  &#39;https://th.bing.com/th/id/OIP.o7WfFvV1WwvQDCPApfCV5gHaKf?pid=ImgDet&amp;rs=1&#39;,
 --  2020,
 --  1, 
---  'HD',
---  &quot;《SKY 캐슬》의 조병규와 《너의 노래를 들려줘》의 김세정이 악귀 사냥꾼 팀원으로 출연한다. 히어로 같지 않은 히어로에 관한 드라마.&quot;);
+--  &#39;HD&#39;,
+--  &#34;《SKY 캐슬》의 조병규와 《너의 노래를 들려줘》의 김세정이 악귀 사냥꾼 팀원으로 출연한다. 히어로 같지 않은 히어로에 관한 드라마.&#34;);
 
 
--- call p1('사생활',
+-- call p1(&#39;사생활&#39;,
 --  15,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABV0yHzfIKPHIs-QeVoXJaJcVcLivm_k7nKyKqm9iBOKM3cBnTbXs_E3mL8kK8ZzvLOSkkDkwPPUA2gZxWZ2KGPm3Z2KGwB0kEjwcdyb1YopFk0Nj.jpg?r=37f',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABV0yHzfIKPHIs-QeVoXJaJcVcLivm_k7nKyKqm9iBOKM3cBnTbXs_E3mL8kK8ZzvLOSkkDkwPPUA2gZxWZ2KGPm3Z2KGwB0kEjwcdyb1YopFk0Nj.jpg?r=37f&#39;,
 --  2020,
 --  1, 
---  'HD',
---  &quot;정신 바짝 차려라. 그 누구도 믿을 수 없다. 사생활 공유의 시대, 훔치고 조작하는 데 능한 사기꾼들이 어쩌다 거대한 전쟁에 뛰어든다. 국가의 사생활을 밝혀내기 위해서.&quot;);
+--  &#39;HD&#39;,
+--  &#34;정신 바짝 차려라. 그 누구도 믿을 수 없다. 사생활 공유의 시대, 훔치고 조작하는 데 능한 사기꾼들이 어쩌다 거대한 전쟁에 뛰어든다. 국가의 사생활을 밝혀내기 위해서.&#34;);
 
--- call p1('보건교사 안은영',
+-- call p1(&#39;보건교사 안은영&#39;,
 --  15,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABVX5ptbJ8d_kcbJjbzo_EURyObutZODrNW0DgQCTXs_-14oQAocSoALz7MfYtf3aRGseUXxA_R9oOEQK96DwoHkMCDBGn7C5Oi6_E-Ijbg_FNepV.jpg?r=277',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABVX5ptbJ8d_kcbJjbzo_EURyObutZODrNW0DgQCTXs_-14oQAocSoALz7MfYtf3aRGseUXxA_R9oOEQK96DwoHkMCDBGn7C5Oi6_E-Ijbg_FNepV.jpg?r=277&#39;,
 --  2020,
 --  1, 
---  'HD',
---  &quot;언뜻 보면 모두가 행복한 고등학교다. 그녀의 눈에만 보이는 찐득한 젤리와 악귀만 없다면. 학생들을 지키기 위해 플라스틱 칼을 든 보건교사 안은영. 오늘도 해치워 버려!&quot;);
+--  &#39;HD&#39;,
+--  &#34;언뜻 보면 모두가 행복한 고등학교다. 그녀의 눈에만 보이는 찐득한 젤리와 악귀만 없다면. 학생들을 지키기 위해 플라스틱 칼을 든 보건교사 안은영. 오늘도 해치워 버려!&#34;);
 
--- call p1('페리아: 가장 어두운 빛',
+-- call p1(&#39;페리아: 가장 어두운 빛&#39;,
 --  18,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTj9wCFKKq5tqyoFuP8zWm2TTDLGw_x1WlnU89DxKv5t1WC_NaS9e2DEx9E9XmCr3audDCal01qaGBAw8LGehb4_chl1RLiLjzP6GV5FxkKJ4or8.jpg?r=6b2',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTj9wCFKKq5tqyoFuP8zWm2TTDLGw_x1WlnU89DxKv5t1WC_NaS9e2DEx9E9XmCr3audDCal01qaGBAw8LGehb4_chl1RLiLjzP6GV5FxkKJ4or8.jpg?r=6b2&#39;,
 --  2020,
 --  1, 
---  'HD',
---  &quot;컬트적인 종교의식에 참여한 사람들이 죽는 사건이 발생하고, 거기에 부모님이 연관되어 있다는 걸 알게 된 두 자매. 둘은 피할 수 없는 새로운 현실을 마주한다. 그리고 초자연적인 일들도.&quot;);
+--  &#39;HD&#39;,
+--  &#34;컬트적인 종교의식에 참여한 사람들이 죽는 사건이 발생하고, 거기에 부모님이 연관되어 있다는 걸 알게 된 두 자매. 둘은 피할 수 없는 새로운 현실을 마주한다. 그리고 초자연적인 일들도.&#34;);
 
--- call p1('유희왕 VRAINS',
+-- call p1(&#39;유희왕 VRAINS&#39;,
 --  7,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTS4WBzUJuSC0PBu5YBRdCFZVN0vshww4z-ugDDXWcm48QD0ElE5VuIfPDrGxs2TFV8_bhrHPwqvXHO_r6hTijJmnfUZmiMa_LluEqmfc3fqSaoZ.jpg?r=54e',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABTS4WBzUJuSC0PBu5YBRdCFZVN0vshww4z-ugDDXWcm48QD0ElE5VuIfPDrGxs2TFV8_bhrHPwqvXHO_r6hTijJmnfUZmiMa_LluEqmfc3fqSaoZ.jpg?r=54e&#39;,
 --  2017,
 --  1, 
---  'HD',
---  &quot;이제 무대는 VR의 세계로! 가상현실로 진화한 듀얼 월드, 링크 브레인즈. 정체불명의 해커집단과 과거를 되찾으려는 고등학생 듀얼리스트 유찬. 모든 수수께끼의 해답은 네트워크 공간 속에 있다. 지금 바로 링크 브레인즈로 접속하라.&quot;);
--- call p1('고양이는 건드리지 마라: 인터넷 킬러 사냥',
+--  &#39;HD&#39;,
+--  &#34;이제 무대는 VR의 세계로! 가상현실로 진화한 듀얼 월드, 링크 브레인즈. 정체불명의 해커집단과 과거를 되찾으려는 고등학생 듀얼리스트 유찬. 모든 수수께끼의 해답은 네트워크 공간 속에 있다. 지금 바로 링크 브레인즈로 접속하라.&#34;);
+-- call p1(&#39;고양이는 건드리지 마라: 인터넷 킬러 사냥&#39;,
 --  18,
---  'https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABc2g4DfjEsYbgg38oXDQcABOjUU2-Hs7Y72iHaBcB8qygHrdS2sbec-31kX0pop7S9-aqTfA8bUdVwpKrQj07rJx0Uv3amoQgyfrJipMu_6bUiO2.jpg?r=df0',
+--  &#39;https://occ-0-993-325.1.nflxso.net/dnm/api/v6/9pS1daC2n6UGc3dUogvWIPMR_OU/AAAABc2g4DfjEsYbgg38oXDQcABOjUU2-Hs7Y72iHaBcB8qygHrdS2sbec-31kX0pop7S9-aqTfA8bUdVwpKrQj07rJx0Uv3amoQgyfrJipMu_6bUiO2.jpg?r=df0&#39;,
 --  2019,
 --  1, 
---  'HD',
---  &quot;실제 범죄를 다룬 2019년 다큐멘터리 시리즈. 마크 루이스가 각본 및 연출을 맡았다.&quot;);
-
-
-
-
+--  &#39;HD&#39;,
+--  &#34;실제 범죄를 다룬 2019년 다큐멘터리 시리즈. 마크 루이스가 각본 및 연출을 맡았다.&#34;);
 </code></pre><h1 id="첨부한-코드-설명">첨부한 코드 설명</h1>
 <h3 id="0-테이블-선언-데이터-타입-정의">0. 테이블 선언, 데이터 타입 정의</h3>
-<pre><code>create procedure p1(title VARCHAR(100), ageGrade INT, photoUrl TEXT, year INT, season INT,  resolution VARCHAR(30), summary TEXT)
+<pre tabindex="0"><code>create procedure p1(title VARCHAR(100), ageGrade INT, photoUrl TEXT, year INT, season INT,  resolution VARCHAR(30), summary TEXT)
 </code></pre><ul>
 <li>Mysql의 DataType을 그대로 적용한다. (일반적인 방법으로 시행 착오를 겪다 보니, 정말 <strong>그대로</strong> 라는 것을 깨닫게 되었다.)</li>
 </ul>
@@ -387,26 +383,26 @@ delimiter ;
 <ul>
 <li>SELECT 로 변수를 선언하고 값을 대입할 때는 := 를 써야 한다.</li>
 </ul>
-<pre><code>	set @C := (select characterIdx from `Character` where name = element);
+<pre tabindex="0"><code>	set @C := (select characterIdx from `Character` where name = element);
     insert ignore into CharacterContact (characterIdx, videoIdx) values (@C, @V);
     select @C;
 </code></pre><h3 id="2-지역변수">2. 지역변수</h3>
-<pre><code>delimiter //
+<pre tabindex="0"><code>delimiter //
 drop procedure if exists p1;
 create procedure p1(title VARCHAR(100), ageGrade INT, photoUrl TEXT, year INT, season INT,  resolution VARCHAR(30), summary TEXT)
 begin
 
-DECLARE CstrIDs varchar(150) DEFAULT '논쟁의 중심';
-DECLARE GstrIDs varchar(150) DEFAULT '다큐시리즈';
-DECLARE AstrIDs varchar(500) DEFAULT ''; 
-DECLARE DstrIDs varchar(150) DEFAULT '마크 루이스'; 
+DECLARE CstrIDs varchar(150) DEFAULT &#39;논쟁의 중심&#39;;
+DECLARE GstrIDs varchar(150) DEFAULT &#39;다큐시리즈&#39;;
+DECLARE AstrIDs varchar(500) DEFAULT &#39;&#39;; 
+DECLARE DstrIDs varchar(150) DEFAULT &#39;마크 루이스&#39;; 
 ...
 end
 </code></pre><ul>
 <li>begin에서 시작하여 end에서 끝이 난다. DECLARE 로 먼저 선언 후에 사용하며, 지역변수로 사용하거나 스토어 프로시저(저장 프로시저)의 매개변수로 사용될 수 있다.</li>
 </ul>
 <h3 id="3-중복-데이터-무시하고-삽입하기">3. 중복 데이터 무시하고 삽입하기</h3>
-<pre><code>insert ignore into Director(name) values(element);
+<pre tabindex="0"><code>insert ignore into Director(name) values(element);
 </code></pre><ul>
 <li>최초 입수된 레코드가 남아 있으며, 최초 입수된 레코드의 AUTO_INCREMENT 값이 불변한다.</li>
 </ul>
@@ -467,7 +463,7 @@ end
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -579,7 +575,7 @@ end
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -767,16 +763,14 @@ end
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

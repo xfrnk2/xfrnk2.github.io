@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -24,9 +24,9 @@
     <meta property="og:site_name" content="Rad Blog">
 
     <meta property="og:title" content="2022.03.19~2022.03.31 Spring 공부 정리" />
-<meta property="og:description" content="개요  넷플릭스 팀 프로젝트 서버 개발 기간동안(2022.03.19~2022.03.31) 지금까지 스프링을 공부하며 남겼던 기록들을 정리해 보았다. 필자는 자바 사용을 시작한지 얼마 되지 않은 초심자고, 스프링은 이번 라이징 캠프 수업을 들으며 처음 접한 프레임워크다. 아직 미흡한 부분이 절대적으로 크다고 느끼고, 이제 막 개념을 배워가고 있는 수준이다. 이후에 조금 더 깊이 있는 영역까지 코드를 뜯어보고 분석해 볼 수 있도록 공부해 가고 싶다.   Spring-boot API 구현하기 위한 선수지식  어노테이션을 다양하게 알아둘 필요가 있다." />
+<meta property="og:description" content="개요 넷플릭스 팀 프로젝트 서버 개발 기간동안(2022.03.19~2022.03.31) 지금까지 스프링을 공부하며 남겼던 기록들을 정리해 보았다. 필자는 자바 사용을 시작한지 얼마 되지 않은 초심자고, 스프링은 이번 라이징 캠프 수업을 들으며 처음 접한 프레임워크다. 아직 미흡한 부분이 절대적으로 크다고 느끼고, 이제 막 개념을 배워가고 있는 수준이다. 이후에 조금 더 깊이 있는 영역까지 코드를 뜯어보고 분석해 볼 수 있도록 공부해 가고 싶다. Spring-boot API 구현하기 위한 선수지식 어노테이션을 다양하게 알아둘 필요가 있다. 롬북을 쓰자. Spring에 대해 알아보자 1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/java/java-teamflix-spring-study/" />
+<meta property="og:url" content="https://xfrnk2.github.io/java/java-teamflix-spring-study/" /><meta property="article:section" content="java" />
 <meta property="article:published_time" content="2022-04-02T23:46:55+09:00" />
 <meta property="article:modified_time" content="2022-04-02T23:46:55+09:00" />
 
@@ -225,7 +225,7 @@
 <ol>
 <li>필드 주입 방법</li>
 </ol>
-<pre><code>publicclassExampleCase{
+<pre tabindex="0"><code>publicclassExampleCase{
 
 @Autowiredprivate  ChocolateService  chocolateService;
 
@@ -234,7 +234,7 @@
 </code></pre><ol start="2">
 <li>생성자 주입 방법 (권장)</li>
 </ol>
-<pre><code>publicclassExampleCase{
+<pre tabindex="0"><code>publicclassExampleCase{
 
 privatefinal  ChocolateService  chocolateService;
 privatefinal  DrinkService  drinkService;
@@ -245,12 +245,12 @@ this.drinkService = drinkService;
     }
 }
 </code></pre><p><strong>@RequiredArgsConstructor 어노테이션을 이용한 의존성 주입</strong></p>
-<pre><code>@RequiredArgsConstructor// final로 선언된 멤버 변수를 자동으로 생성합니다.@RestController// JSON으로 데이터를 주고받음을 선언합니다.publicclassProductRestController {
+<pre tabindex="0"><code>@RequiredArgsConstructor// final로 선언된 멤버 변수를 자동으로 생성합니다.@RestController// JSON으로 데이터를 주고받음을 선언합니다.publicclassProductRestController {
 
 privatefinal ProductService productService;
 privatefinal ProductRepository productRepository;
 
-// 등록된 전체 상품 목록 조회@GetMapping(&quot;/api/products&quot;)public List&lt;Product&gt;getProducts() {
+// 등록된 전체 상품 목록 조회@GetMapping(&#34;/api/products&#34;)public List&lt;Product&gt;getProducts() {
 return productRepository.findAll();
     }
 }
@@ -266,18 +266,18 @@ return productRepository.findAll();
 <p><img src="https://blog.kakaocdn.net/dn/JUJjF/btq0XqxWP0H/SKJCxVlKPAEy807oCfTFSk/img.png" alt="https://blog.kakaocdn.net/dn/JUJjF/btq0XqxWP0H/SKJCxVlKPAEy807oCfTFSk/img.png"></p>
 <p><img src="https://blog.kakaocdn.net/dn/4Au88/btq0Ub88sSm/HrqkeES58MiDHNfH680zOk/img.png" alt="https://blog.kakaocdn.net/dn/4Au88/btq0Ub88sSm/HrqkeES58MiDHNfH680zOk/img.png"></p>
 <p>위의 그림과 같이 모든 Class에 시간 측정 로직을 일일히 작성해야 했지만, AOP를 사용해 아래의 그림처럼 한 번에 해결할 수 있다.</p>
-<pre><code>@Component@AspectpublicclassTimeTraceAop {
+<pre tabindex="0"><code>@Component@AspectpublicclassTimeTraceAop {
 
-@Around(&quot;execution(* hello.hellospring..*(..))&quot;)public Objectexecute(ProceedingJoinPoint joinPoint)throws Throwable {
+@Around(&#34;execution(* hello.hellospring..*(..))&#34;)public Objectexecute(ProceedingJoinPoint joinPoint)throws Throwable {
 long start = System.currentTimeMillis();
-        System.out.println(&quot;START: &quot; + joinPoint.toString());
+        System.out.println(&#34;START: &#34; + joinPoint.toString());
 try {
 return joinPoint.proceed();
         }finally {
 long finish = System.currentTimeMillis();
 long timeMs = finish - start;
-            System.out.println(&quot;END: &quot; + joinPoint.toString()+ &quot; &quot; + timeMs +
-                    &quot;ms&quot;);
+            System.out.println(&#34;END: &#34; + joinPoint.toString()+ &#34; &#34; + timeMs +
+                    &#34;ms&#34;);
         }
     }
 }
@@ -319,8 +319,6 @@ long timeMs = finish - start;
                 
                     
                     
-                    <a href="https://xfrnk2.github.io/tags/java/">Java</a>
-                    
                 
                     
                     
@@ -343,7 +341,7 @@ long timeMs = finish - start;
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -455,7 +453,7 @@ long timeMs = finish - start;
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -643,16 +641,14 @@ long timeMs = finish - start;
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

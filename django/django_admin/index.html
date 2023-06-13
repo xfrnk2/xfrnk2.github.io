@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -25,9 +25,9 @@
 
     <meta property="og:title" content="Django의 Admin 기능" />
 <meta property="og:description" content="이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
-  1. Django의 Admin 기능  관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공   2. Django Admin의 사용 효과  서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능   3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import admin from .models import Item admin." />
+1. Django의 Admin 기능 관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공 2. Django Admin의 사용 효과 서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능 3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import adminfrom .models import Item admin.site.regiester(Item) 2. Class from django.contrib import adminfrom ." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/django/django_admin/" />
+<meta property="og:url" content="https://xfrnk2.github.io/django/django_admin/" /><meta property="article:section" content="django" />
 <meta property="article:published_time" content="2020-04-19T18:03:29+09:00" />
 <meta property="article:modified_time" content="2020-04-19T18:03:29+09:00" />
 
@@ -188,19 +188,19 @@
 <hr>
 <h3 id="3-model-class를-django-admin에-등록하는-방법">3. Model Class를 Django Admin에 등록하는 방법</h3>
 <h6 id="1-기본">1. 기본</h6>
-<pre><code>from django.contrib import admin
+<pre tabindex="0"><code>from django.contrib import admin
 from .models import Item 
   
 admin.site.regiester(Item)
 </code></pre><h6 id="2-class">2. Class</h6>
-<pre><code>from django.contrib import admin
+<pre tabindex="0"><code>from django.contrib import admin
 from .models import Item
   
 class ItemAdmin(admin.ModelAdmin):
 	pass
 admin.site.register(Item, ItemAdmin) 
 </code></pre><h6 id="3-class--decorator선호">3. Class + Decorator	(선호)</h6>
-<pre><code>from django.contrib import admin
+<pre tabindex="0"><code>from django.contrib import admin
 from .models import Item
 
 @admin.register(Item)
@@ -245,20 +245,20 @@ class ItemAdmin(admin.ModelAdmin):
 </tbody>
 </table>
 <h6 id="구현-형태">구현 형태</h6>
-<pre><code>admin.py
+<pre tabindex="0"><code>admin.py
 
 @admin.register(Post)
 class PostAdmin(admin.ModelAdmin):
    
-   list_display = ['title', 'content', 'title_length', 'is_public', 'created_at', 'updated_at'] 
-   list_display_links = ['content'] 
-   search_fields = ['title']   
-   list_filter = ['created_at', 'is_public']
+   list_display = [&#39;title&#39;, &#39;content&#39;, &#39;title_length&#39;, &#39;is_public&#39;, &#39;created_at&#39;, &#39;updated_at&#39;] 
+   list_display_links = [&#39;content&#39;] 
+   search_fields = [&#39;title&#39;]   
+   list_filter = [&#39;created_at&#39;, &#39;is_public&#39;]
    
    def title_length(self, post):
-      return f&quot;{len(post.title)}글자&quot;
+      return f&#34;{len(post.title)}글자&#34;
 	  
-   title_length.short_description = &quot;타이틀 글자수&quot;
+   title_length.short_description = &#34;타이틀 글자수&#34;
 </code></pre><h6 id="추가-설명">추가 설명</h6>
 <hr>
 <blockquote>
@@ -281,10 +281,10 @@ class PostAdmin(admin.ModelAdmin):
 <blockquote>
 <p><strong>search_fileds</strong></p>
 </blockquote>
-<pre><code>**로직상의 의미**
-Post.objects.all().filter(title__icontains='포함하는 글자')
+<pre tabindex="0"><code>**로직상의 의미**
+Post.objects.all().filter(title__icontains=&#39;포함하는 글자&#39;)
 </code></pre><ul>
-<li>search_field = [&lsquo;title&rsquo;]의 경우, &lsquo;title'에 대해서 search 옵션을 적용하겠다는 의미.</li>
+<li>search_field = [&rsquo;title&rsquo;]의 경우, &rsquo;title&rsquo;에 대해서 search 옵션을 적용하겠다는 의미.</li>
 </ul>
 <hr>
 <ul>
@@ -337,7 +337,7 @@ Post.objects.all().filter(title__icontains='포함하는 글자')
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -449,7 +449,7 @@ Post.objects.all().filter(title__icontains='포함하는 글자')
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -637,16 +637,14 @@ Post.objects.all().filter(title__icontains='포함하는 글자')
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 

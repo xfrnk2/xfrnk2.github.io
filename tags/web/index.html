@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -27,7 +27,6 @@
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xfrnk2.github.io/tags/web/" />
-<meta property="og:updated_time" content="2022-02-01T21:17:34+09:00" />
 
 
     
@@ -172,8 +171,8 @@
 
     
         문제 발생 상황 https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396
- 위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제  ./node_modules/.bin/webpack --config webpack.config.js 해결 방법  아래는 해결 방법의 원문(영문)을 옮긴 글이다.   That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
- If you are using yarn, follow the below one: Step 1: Remove the old packages
+위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제 ./node_modules/.bin/webpack --config webpack.config.js 해결 방법 아래는 해결 방법의 원문(영문)을 옮긴 글이다. That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
+If you are using yarn, follow the below one: Step 1: Remove the old packages
 
         
             <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/" class="more">Continue reading</a>
@@ -265,8 +264,8 @@
 
     
         비전공자를 위한 HTML/CSS를 보고 HTML 파트를 정리했다. 정의나 유래 등 기초적인 내용에 대해서는 언급하지 않는다.
-  개요  HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
--&gt; 필요할 때 찾고 다 외울 필요는 없다.   빈 태그  내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.
+개요 HTML : Hyper Text Markup Language 2020/10/2 기준 태그 수 약 130개 정도 실제 자주 사용되는 태그는 25개 정도
+-&gt; 필요할 때 찾고 다 외울 필요는 없다. 빈 태그 내용이 없어서 종료 태그가 필요 없음 화면 표시 등과 다른 용도로 사용되며, 대표적인 경우 브라우저가 직접 화면에 그려줘야 하는 경우다.-&gt;대체태그(replacement태그) &lt;br&gt;, &lt;img src=&quot;&quot;&gt; 태그와 요소의 차이 &lt;h1&gt;Hello&lt;/h1&gt; 태그 : &lt;h1&gt;과 &lt;/h1&gt; 요소 : 내용까지 통틀어서 전체 큰 범위에서의 태그의 역할 head : 문서의 기본 설정 및 외부스타일 시트 또는 js파일을 연결하는 것 meta : 문자의 인코딩 방식 지정하는 것 -&gt; meta charset=&ldquo;UTF-8&rdquo; 제목과 단락 제목 : heading -&gt; &lt;h1&gt;, &lt;h2&gt; &hellip; 단락 : paragraph -&gt; &lt;p&gt; // 자동개행됨.
 
         
             <a href="https://xfrnk2.github.io/web/html/" class="more">Continue reading</a>
@@ -353,7 +352,7 @@
 
     
         최근 용어 &lsquo;서버 사이드 렌더링(Server Side Rendering)&lsquo;을 알게 되었는데, 리액트를 공부하며 배우게 된 SPA방식과 관계가 있다고 생각했다. 궁금해서 찾아본 내용(서버 사이드 렌더링((Server Side Rendering))과 클라이언트 사이드 렌더링(Client Side Rendering))을 간단하게 정리해 보았다.
-  Server Side Rendering  전통적인 웹 어플리케이션 렌더링 방식 검색엔진 최적화 용이 서버에서 view를 렌더링해서 가져오므로 view를 보기까지 초기 구동속도가 빠름 HTML에 모든 컨텐츠가 저장되어 있으므로 검색엔진 노출에 문제가 되지 않음 사용자가 처음으로 보는 컨텐츠의 시점을 앞당길 수 있음 사용자 정보를 서버측에서 세션 관리   Client Side Rendering  SPA 방식(Single Page Application) HTML을 다운로드 받고, JS를 다운로드 받아서, JS가 동작하면서 데이터만 주고받아서 클라이언트 쪽에서 렌더링 하는 방식 브라우저가 없으므로 HTML만 가져와서는 검색에 나오지 않음.
+Server Side Rendering 전통적인 웹 어플리케이션 렌더링 방식 검색엔진 최적화 용이 서버에서 view를 렌더링해서 가져오므로 view를 보기까지 초기 구동속도가 빠름 HTML에 모든 컨텐츠가 저장되어 있으므로 검색엔진 노출에 문제가 되지 않음 사용자가 처음으로 보는 컨텐츠의 시점을 앞당길 수 있음 사용자 정보를 서버측에서 세션 관리 Client Side Rendering SPA 방식(Single Page Application) HTML을 다운로드 받고, JS를 다운로드 받아서, JS가 동작하면서 데이터만 주고받아서 클라이언트 쪽에서 렌더링 하는 방식 브라우저가 없으므로 HTML만 가져와서는 검색에 나오지 않음.
 
         
             <a href="https://xfrnk2.github.io/web/ssrandcsr/" class="more">Continue reading</a>
@@ -487,7 +486,7 @@
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -665,7 +664,7 @@
                 by xfrnk2
             </a>
             -
-            <a href="https://xfrnk2.github.io/tags/web/index.xml">RSS</a>
+            <a href="https://xfrnk2.github.io/tags/web/index.xml">rss</a>
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"
@@ -676,16 +675,14 @@
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 
