@@ -11,7 +11,7 @@
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.69.0" />
+    <meta name="generator" content="Hugo 0.113.0">
     <title>
         
            
@@ -25,10 +25,10 @@
 
     <meta property="og:title" content="데이터베이스 기초 - 관계형 모델" />
 <meta property="og:description" content="데이터베이스에 대해 공부한 내용을 이해하고 정리한 글입니다. 첫 공부이므로 기초적인 내용을 다루며 추후 자세한 정보로 업데이트를 예정하고 있습니다.
-  릴레이션  데이터베이스에서는 표를 릴레이션이라 부른다.
- 릴레이션의 구성  스키마 : 열에 대한 의미를 담고 있는 공간, 표머리 레코드/투플 : 행(값) 컬럼/속성/필드 : 열 컬럼값 : 특정 행과 열에 해당하는 값, 데이터란 값에 메타데이터가 2개 붙어 있는 것이므로, 릴레이션은 DB 데이터를 표현하기에 이상적인 구조 인스턴스 : 특정 시점에서의 레코드가 들어가있는 상태, 모드 레코드들  릴레이션의 특징  레코드의 유일성 : 중복된 레코드의 존재가 불가능 레코드의 무순서성 : 레코드의 순서는 의미가 없음 컬럼의 무순서성 : 컬럼은 순서가 없고, 이름과 값의 쌍 컬럼의 원자성 : 모든 값들은 나눌 수 없는, 단 하나의 의미  키의 종류 및 속성  키의 속성 : 유일성(Uniqueness), 최소성(모든 군더더기를 제거, Irreducibility) 키의 종류  슈퍼키(super key) : 유일성 만족 후보키(candidate key) : 유일성, 최소성 만족 기본키(PK:primary key) : 레코드의 구분을 위해 선택된 후보키 외래키(FK:foreign key) : 참조된 다른 릴레이션의 기본키    관계형 모델의 제약조건  영역 제약조건 : 컬럼에 정의된 영역(domain)에 속한 값으로만 컬럼값이 결정 키 제약조건 : 키는 레코드를 고유하게 구별하는 값으로 구성 개체 무결성 제약조건 : 어떠한 기본 값도 널(null:모른다는 의미)이 될 수 없음 참조 무결성 제약조건 : 반드시 존재하는 레코드의 기본키만 참조 가능   널(NULL)의 개념" />
+릴레이션 데이터베이스에서는 표를 릴레이션이라 부른다.
+릴레이션의 구성 스키마 : 열에 대한 의미를 담고 있는 공간, 표머리 레코드/투플 : 행(값) 컬럼/속성/필드 : 열 컬럼값 : 특정 행과 열에 해당하는 값, 데이터란 값에 메타데이터가 2개 붙어 있는 것이므로, 릴레이션은 DB 데이터를 표현하기에 이상적인 구조 인스턴스 : 특정 시점에서의 레코드가 들어가있는 상태, 모드 레코드들 릴레이션의 특징 레코드의 유일성 : 중복된 레코드의 존재가 불가능 레코드의 무순서성 : 레코드의 순서는 의미가 없음 컬럼의 무순서성 : 컬럼은 순서가 없고, 이름과 값의 쌍 컬럼의 원자성 : 모든 값들은 나눌 수 없는, 단 하나의 의미 키의 종류 및 속성 키의 속성 : 유일성(Uniqueness), 최소성(모든 군더더기를 제거, Irreducibility) 키의 종류 슈퍼키(super key) : 유일성 만족 후보키(candidate key) : 유일성, 최소성 만족 기본키(PK:primary key) : 레코드의 구분을 위해 선택된 후보키 외래키(FK:foreign key) : 참조된 다른 릴레이션의 기본키 관계형 모델의 제약조건 영역 제약조건 : 컬럼에 정의된 영역(domain)에 속한 값으로만 컬럼값이 결정 키 제약조건 : 키는 레코드를 고유하게 구별하는 값으로 구성 개체 무결성 제약조건 : 어떠한 기본 값도 널(null:모른다는 의미)이 될 수 없음 참조 무결성 제약조건 : 반드시 존재하는 레코드의 기본키만 참조 가능 널(NULL)의 개념" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://xfrnk2.github.io/database/database3-modeling-relationmodel/" />
+<meta property="og:url" content="https://xfrnk2.github.io/database/database3-modeling-relationmodel/" /><meta property="article:section" content="database" />
 <meta property="article:published_time" content="2020-05-16T19:35:24+09:00" />
 <meta property="article:modified_time" content="2020-05-16T19:35:24+09:00" />
 
@@ -39,7 +39,9 @@
     <script src="/modernizr-simple.js"></script>
 
     
-
+    <link href="/database/database3-modeling-relationmodel/" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/database/database3-modeling-relationmodel/" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    
 
     
     <link rel="canonical" href="https://xfrnk2.github.io/database/database3-modeling-relationmodel/">
@@ -54,12 +56,9 @@
             <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
         
     
-
-    
 </head>
 
 <body class="bilberry-hugo-theme">
-    
 
     
     <nav>
@@ -71,6 +70,7 @@
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
+			       <li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -237,7 +237,7 @@
 <p>만들어지는 릴레이션은 각각의 개체 집합으로 만들어지는 양쪽 릴레이션의 기본키가 참조되어서 기본키이자 외래키로 사용됨</p>
 </li>
 <li>
-<p>&lsquo;관계집합의 속성'은 외래키가 위치한 곳을 따라감</p>
+<p>&lsquo;관계집합의 속성&rsquo;은 외래키가 위치한 곳을 따라감</p>
 </li>
 </ul>
 <h6 id="관계형-모델로-변환-방법">관계형 모델로 변환 방법</h6>
@@ -290,7 +290,7 @@
 </table>
 </li>
 <li><strong>조건의 결합: ∧(and), ∨(or)</strong></li>
-<li>예시 : σ 소속학과='컴퓨터과학과&rsquo;(교수)</li>
+<li>예시 : σ 소속학과=&lsquo;컴퓨터과학과&rsquo;(교수)</li>
 </ul>
 <hr>
 <h6 id="프로젝트-연산">프로젝트 연산</h6>
@@ -334,15 +334,15 @@
 <table>
 <thead>
 <tr>
-<th align="center">예시 : Gcount(과목명)(과목)</th>
+<th style="text-align:center">예시 : Gcount(과목명)(과목)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">count(과목명)</td>
+<td style="text-align:center">count(과목명)</td>
 </tr>
 <tr>
-<td align="center">15</td>
+<td style="text-align:center">15</td>
 </tr>
 </tbody>
 </table>
@@ -360,30 +360,30 @@
 <table>
 <thead>
 <tr>
-<th align="center">예시 : 소속학과G소속학과,count(*)(교수)</th>
+<th style="text-align:center">예시 : 소속학과G소속학과,count(*)(교수)</th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">소속학과</td>
-<td align="center">count(*)</td>
+<td style="text-align:center">소속학과</td>
+<td style="text-align:center">count(*)</td>
 </tr>
 <tr>
-<td align="center">국어국문학과</td>
-<td align="center">1</td>
+<td style="text-align:center">국어국문학과</td>
+<td style="text-align:center">1</td>
 </tr>
 <tr>
-<td align="center">법학과</td>
-<td align="center">2</td>
+<td style="text-align:center">법학과</td>
+<td style="text-align:center">2</td>
 </tr>
 <tr>
-<td align="center">생활과학과</td>
-<td align="center">1</td>
+<td style="text-align:center">생활과학과</td>
+<td style="text-align:center">1</td>
 </tr>
 <tr>
-<td align="center">유아교육과</td>
-<td align="center">2</td>
+<td style="text-align:center">유아교육과</td>
+<td style="text-align:center">2</td>
 </tr>
 </tbody>
 </table>
@@ -428,7 +428,7 @@
         <div id="comments-container">
             <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
@@ -540,7 +540,7 @@
                     </li>
                 
                     <li>
-                        <a href="https://xfrnk2.github.io/web/npm_-save_and_-save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
                     </li>
                 
                     <li>
@@ -548,136 +548,135 @@
                     </li>
                 
             </ul>
+			
         </div>
         
+		
 
         
         <div class="categories">
-            
-            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
-            
-
+            <a href="/categories/"><strong>Categories</strong></a>
             <ul>
                 
-                <li>
+				<li>
+                    <a href="/categories/til">Til
+                        (345)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
+				<li>
+                    <a href="/categories/django">Django
+                        (15)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/review">Review
+                        (9)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/resolved-problem">Resolved problem
+                        (8)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
+				<li>
+                    <a href="/categories/python">Python
+                        (6)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/food-for-thought">Food for thought
+                        (5)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/algorithm">Algorithm
+                        (4)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
+				<li>
+                    <a href="/categories/codeit">Codeit
+                        (4)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/compiler">Compiler
+                        (4)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/database">Database
+                        (4)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
+				<li>
+                    <a href="/categories/java">Java
+                        (4)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/server">Server
+                        (4)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/developement">Developement
+                        (3)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
+				<li>
+                    <a href="/categories/docker">Docker
+                        (3)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/react">React
+                        (3)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/spring">Spring
+                        (3)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
+				<li>
+                    <a href="/categories/web">Web
+                        (3)</a>
+                    　
+				</li>
                 
-                </li>
+				<li>
+                    <a href="/categories/mysql">Mysql
+                        (2)</a>
+                    　
+				</li>
                 
-                <li>
+				<li>
+                    <a href="/categories/blog">Blog
+                        (1)</a>
+                    　
+				</li>
                 
-                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
-                
-                </li>
-                
-                <li>
-                
-                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
-                
-                </li>
+				<li>
+                    <a href="/categories/book">Book
+                        (1)</a>
+                    　
+				</li>
                 
             </ul>
         </div>
@@ -687,6 +686,7 @@
             
             <div class="external-profiles">
                 <strong>Social media</strong>
+
                 
                 <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
                 
@@ -697,9 +697,7 @@
 
             
             <div class="archive">
-                
-                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
-                
+                <a href="/archive/"><strong>Archive</strong></a>
             </div>
             
         </div>
@@ -728,16 +726,14 @@
 
 
     
-<script type="application/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
 var doNotTrack = false;
 if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'G-SL1RKJG57X', 'auto');
-	
-	ga('send', 'pageview');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
 }
 </script>
 
@@ -753,8 +749,9 @@ if (!doNotTrack) {
 </script>
 
     
+
+
     <script src="https://xfrnk2.github.io/theme.js"></script>
-    
 
     
     
@@ -769,8 +766,6 @@ if (!doNotTrack) {
 
   
 </div>
-
-    
 
     
 </body>
