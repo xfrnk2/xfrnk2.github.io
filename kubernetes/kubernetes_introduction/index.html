@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+
+  
+<html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="siteBaseUrl" content="https://xfrnk2.github.io/">
+    <meta name="author" content="xfrnk2">
+    <meta name="description" content="Bilberry Premium Theme for Hugo.">
+    <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
+    <meta name="generator" content="Hugo 0.113.0">
+    <title>
+        
+           
+               kubernetes 소개 &vert; Rad Blog
+           
+        
+    </title>
+    <meta itemprop="name" content="kubernetes 소개">
+    <meta itemprop="description" content="kubernetes 소개 - Bilberry Premium Theme for Hugo.">
+    <meta property="og:site_name" content="Rad Blog">
+
+    <meta property="og:title" content="kubernetes 소개" />
+<meta property="og:description" content="쿠버네티스(Kubernetes)란? 쿠버네티스(Kubernetes) 는 컨테이너화 된 애플리케이션의 대규모 배포, 스케일링 및 관리를 간편하게 만들어주는 오픈 소스 기반 컨테이너 오케스트레이션(Container Orchestration) 도구 다.
+컨테이너 오케스트레이션 &ldquo;컨테이너화 된 애플리케이션에 대한,
+자동화된 설정, 관리 및 제어 체계&rdquo;
+Kubernetes 및 OpenShift 다음으로 Docker Swarm이 업계에서 더 많이 사용되고 있다. Kubernetes 외 오케스트레이션 도구 : Docker Swarm, ,Open Shift, Mesos, Rancher, Amazon ECS, Apache Marathon, Nomad, Kontena, Minikube 쿠버네티스(Kubernetes)의 특징 쿠버네티스는 과거 15년이 넘는 시간 동안 구글 내부에서 프로덕션 규모의 워크로드를 운영하는 수단으로 사용되었다." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/" /><meta property="article:section" content="kubernetes" />
+<meta property="article:published_time" content="2023-06-14T15:05:04+09:00" />
+<meta property="article:modified_time" content="2023-06-14T15:05:04+09:00" />
+
+
+    
+
+
+    <script src="/modernizr-simple.js"></script>
+
+    
+
+
+    
+    <link rel="canonical" href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">
+    
+
+    <link rel="stylesheet" href="https://xfrnk2.github.io/theme.css">
+
+    
+
+    
+        
+            <link rel="stylesheet" href="https://xfrnk2.github.io/wwr11.css">
+        
+    
+
+    
+</head>
+
+<body class="bilberry-hugo-theme">
+    
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+                
+                    <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
+                
+            
+			<li><a href="https://github.com/xfrnk2">Github</a></li>
+        </ul>
+
+        
+            <div id="search-box" class="search">
+                <i class="fas fa-search"></i>
+                <input id="search" type="text" placeholder="Search ...">
+            </div>
+        
+    </div>
+</nav>
+
+
+    
+    <header>
+
+    <div class="container">
+        <div class="logo">
+            <a href="/" class="logo">
+                
+                    <img src="/mugen.png" alt="">
+                
+
+                <span class="overlay"><i class="fa fa-home"></i></span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+                <a href="/">
+                    Rad Blog
+                </a>
+            </h3>
+
+            
+                <span class="subtitle">Archive</span>
+            
+        </div>
+
+        
+
+        
+            <div class="toggler">
+        
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+    </div>
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">
+            kubernetes 소개
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-06-14</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/kubernetes/">kubernetes</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <h1 id="쿠버네티스kubernetes란">쿠버네티스(Kubernetes)란?</h1>
+<blockquote>
+<p><strong>쿠버네티스(Kubernetes)</strong>
+는 컨테이너화 된 애플리케이션의 대규모 배포, 스케일링 및 관리를 간편하게 만들어주는 오픈 소스 기반 <strong>컨테이너 오케스트레이션(Container Orchestration) 도구</strong>
+다.</p>
+</blockquote>
+<h3 id="컨테이너-오케스트레이션httpswwwredhatcomentopicsautomationwhat-is-orchestrationrefseongjinme"><a href="https://www.redhat.com/en/topics/automation/what-is-orchestration?ref=seongjin.me">컨테이너 오케스트레이션</a></h3>
+<blockquote>
+<p>&ldquo;컨테이너화 된 애플리케이션에 대한,</p>
+<blockquote>
+<p>자동화된 설정, 관리 및 제어 체계&rdquo;</p>
+</blockquote>
+</blockquote>
+<ul>
+<li>Kubernetes 및 OpenShift 다음으로 Docker Swarm이 업계에서 더 많이 사용되고 있다.
+<img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/595aa698-00c8-4c43-a41a-00a82a4e32df" alt="image"></li>
+<li>Kubernetes 외 오케스트레이션 도구 : Docker Swarm, ,Open Shift, Mesos, Rancher, Amazon ECS, Apache Marathon, Nomad, Kontena, Minikube</li>
+</ul>
+<hr>
+<h1 id="쿠버네티스kubernetes의-특징">쿠버네티스(Kubernetes)의 특징</h1>
+<ul>
+<li>
+<p>쿠버네티스는 과거 15년이 넘는 시간 동안 구글 내부에서 프로덕션 규모의 워크로드를 운영하는 수단으로 사용되었다.</p>
+</li>
+<li>
+<p>글로벌 3대 클라우드사(AWS, Azure, GCP) 뿐만 아니라 RedHat, VMWare 등에서도 자사 솔루션에 최적화된 버전의 쿠버네티스 플랫폼을 제공하고 있다.</p>
+</li>
+<li>
+<p><strong>마이크로서비스 아키텍처(MSA; Microservice Architecture)에서는 프로젝트에 포함된 세부 기능들이 작은 서비스 단위로 분리되어 구축</strong>된다. 따라서 동시에 수백, 수천 개의 컨테이너를 배포하고 관리해야 하는 상황과 대응해야하며, 다음과 같은 4가지 이슈가 있다.</p>
+<ol>
+<li>배포 관리 : 어떤 컨테이너를 어느 호스트에 배치하여 구동시킬 것인가? 각 호스트가 가진 한정된 리소스에 맞춰 어떻게 최적의 스케줄링을 구현할 것인가? 어떻게 하면 이러한 배포 상태를 최소한의 노력으로 유지 관리할 수 있을 것인가?</li>
+<li>제어 및 모니터링 : 구동 중인 각 컨테이너들의 상태를 어떻게 추적하고 관리할 것인가?</li>
+<li>스케일링 : 수시로 변화하는 운영 상황과 사용량 규모에 어떻게 대응할 것인가?</li>
+<li>네트워킹 : 이렇게 운영되는 인스턴스 및 컨테이너들을 어떻게 상호 연결할 것인가?</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2 id="쿠버네티스kubernetes의-핵심-설계-사상">쿠버네티스(Kubernetes)의 핵심 설계 사상</h2>
+<h3 id="1-선언적-구성-기반의-배포-환경">1. 선언적 구성 기반의 배포 환경</h3>
+<ul>
+<li>k8s에서는 동작을 지시하는 개념(예: 레플리카를 5개 만들어라)보다는 원하는 상태를 선언하는 개념(예: 내 호스트의 레플리카를 항상 5개로 유지하라)을 주로 사용한다.</li>
+<li>원하는 상태(Desired state)와 현재의 상태(Current state)가 상호 일치하는지를 지속적으로 체크하고 업데이트한다.
+<img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/e3710816-31e0-4f53-bf8c-9f2c5c845905" alt="image">
+(이미지 출처 : <a href="https://www.leverege.com/iot-ebook/kubernetes-object-management-model?ref=seongjin.me">Leverage</a>)</li>
+</ul>
+<h3 id="2기능-단위의-분산">2.기능 단위의 분산</h3>
+<ul>
+<li>쿠버네티스에서는 각각의 기능들이 개별적인 구성 요소로서 독립적으로 분산되어 있다.</li>
+<li>쿠버네티스는 내부 요소들의 상태 관리를 위해 컨트롤러를 이용한다.</li>
+<li>노드(Node), 레플리카셋(ReplicaSet), 디플로이먼트(Deployment), 네임스페이스(Namespace) 등 클러스터를 구성하는 주요 요소들이 모두 컨트롤러(Controller)로 구성되어 있으며, <a href="https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/?ref=seongjin.me">Kube Controller Manager</a>안에 패키징 되어 있다.</li>
+</ul>
+<p><img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/aaeb1be6-0eb6-4b34-b5c3-aba5686fe22b" alt="image">
+(이미지 출처: <a href="https://iximiuz.com/en/posts/kubernetes-operator-pattern/?ref=seongjin.me">iximiuz.com</a>)</p>
+<h3 id="3-클러스터-단위-중앙-제어">3. 클러스터 단위 중앙 제어</h3>
+<ul>
+<li>쿠버네티스에서는 전체 물리 리소스를 클러스터 단위로 추상화하여 관리한다. 클러스터 내부에는 클러스터의 구성 요소들에 대해 제어 권한을 가진 컨트롤 플레인(Control Plane) 역할의 마스터 노드(Master Node)를 두게 되며, 관리자는 이 마스터 노드를 이용하여 클러스터 전체를 제어한다.</li>
+</ul>
+<p><img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/11239f66-2572-44b5-943a-9b459a5b66be" alt="image">
+(이미지 출처: Kubernetes Documentation)</p>
+<h3 id="4-동적-그룹화">4. 동적 그룹화</h3>
+<ul>
+<li>쿠버네티스의 구성 요소들에는 쿼리 가능한 레이블(Label)과 메타데이터용 어노테이션(Annotation)에 임의로 키-값 쌍을 삽입할 수 있다.</li>
+<li>관리자는 <code>selector</code>를 이용해서 레이블 기준으로 구성 요소들을 유연하게 관리할 수 있고, 어노테이션에 기재된 내용을 참고하여 해당 요소의 특징적인 내역을 추적할 수 있다.</li>
+</ul>
+<p><img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/3e93227c-d2e5-4ba6-8600-d2fd3365b9e8" alt="image">
+(이미지 출처 : <a href="https://k21academy.com/docker-kubernetes/labels-and-annotations-in-kubernetes/?ref=seongjin.me">K21Academy</a>)</p>
+<h3 id="5-api-기반-상호작용">5. API 기반 상호작용</h3>
+<ul>
+<li>쿠버네티스 요소들이 서로 직접 접근 불가, Kubernetes API server(kube-apiserver)를 통해서만 상호 접근이 가능한 구조를 가진다.</li>
+</ul>
+<p><img src="https://github.com/xfrnk2/xfrnk2.github.io/assets/34790699/f65fa072-59f2-46a4-9e84-ee2be34cb7d1" alt="image">
+(이미지 출처: <a href="https://sysdig.com/blog/monitor-kubernetes-api-server/?ref=seongjin.me">Sysdig</a>)</p>
+<h4 id="reference">Reference</h4>
+<ul>
+<li><a href="https://seongjin.me/kubernetes-core-concepts/">https://seongjin.me/kubernetes-core-concepts/</a></li>
+<li><a href="https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/?ref=seongjin.me">Kubernetes Documentation: What is Kubernetes?</a></li>
+<li><a href="https://www.redhat.com/en/topics/automation/what-is-orchestration?ref=seongjin.me">Red Hat Topics: What is orchestration?</a></li>
+<li><a href="https://velog.io/@tmddud73/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-1-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90">https://velog.io/@tmddud73/%EC%BF%A0%EB%B2%84%EB%84%A4%ED%8B%B0%EC%8A%A4-1-%EA%B8%B0%EB%B3%B8-%EA%B0%9C%EB%85%90</a></li>
+</ul>
+
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/kubernetes/">kubernetes</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "xfrnk2-github-io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>Latest posts</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">kubernetes 소개</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/network/123/">라우터(Router)와 스위치(Switch)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/svp%ED%9B%84%EA%B8%B0/">2023년 상반기 삼성 SVP 신입입문교육 후기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week2_server_installation_on_aws/">서버를 구축하고 AWS상에 서비스하기</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/server_developement/rising_camp_server_week1_server_source_installation_modified/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+        <div class="categories">
+            
+            <a href="https://xfrnk2.github.io/categories/"><strong>Categories</strong></a>
+            
+
+            <ul>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/til/">TIL (345)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/django/">Django (15)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/resolved-problem/">resolved problem (8)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/python/">Python (6)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/food-for-thought/">Food For Thought (5)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/algorithm/">Algorithm (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/codeit/">codeit (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/compiler/">compiler (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/database/">database (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/java/">Java (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/server/">server (4)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/developement/">developement (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/docker/">docker (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/react/">React (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/spring/">Spring (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/web/">web (3)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/mysql/">mysql (2)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/blog/">blog (1)</a>
+                
+                </li>
+                
+                <li>
+                
+                    <a href="https://xfrnk2.github.io/categories/book/">book (1)</a>
+                
+                </li>
+                
+            </ul>
+        </div>
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>Social media</strong>
+                
+                <a href="https://github.com/xfrnk2" target="_blank" rel=""><em class="fab fa-github"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+            <div class="archive">
+                
+                <a href="https://xfrnk2.github.io/archive/"><strong>Archive</strong></a>
+                
+            </div>
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://github.com/xfrnk2" target="_blank">
+                &copy;
+                
+                2023
+                
+                by xfrnk2
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SL1RKJG57X"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-SL1RKJG57X', { 'anonymize_ip': false });
+}
+</script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [['$','$'], ['\\(','\\)']]}
+        });
+</script>
+
+    
+    <script src="https://xfrnk2.github.io/theme.js"></script>
+    
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="6T2JVR4D9M">
+  <input type="hidden" id="algolia-search-apiKey" value="87e54ae22d96655f4823f9f1ffaefff8">
+  <input type="hidden" id="algolia-search-indexName" value="xfrnk2blog">
+  <input type="hidden" id="algolia-search-noSearchResults" value="Nothing found.">
+
+  
+</div>
+
+    
+
+    
+</body>
+
+</html>

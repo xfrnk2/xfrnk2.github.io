@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 May 2023 22:45:48 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 15:05:04 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>kubernetes</title>
+      <link>https://xfrnk2.github.io/categories/kubernetes/</link>
+      <pubDate>Wed, 14 Jun 2023 15:05:04 +0900</pubDate>
+      
+      <guid>https://xfrnk2.github.io/categories/kubernetes/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>network</title>
       <link>https://xfrnk2.github.io/categories/network/</link>
