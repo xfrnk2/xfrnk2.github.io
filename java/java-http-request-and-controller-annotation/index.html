@@ -4,14 +4,14 @@
   
 <html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
 
-<head prefix="og: http://ogp.me/ns#">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://xfrnk2.github.io/">
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.120.3">
     <title>
         
            
@@ -29,6 +29,7 @@
 <meta property="og:url" content="https://xfrnk2.github.io/java/java-http-request-and-controller-annotation/" /><meta property="article:section" content="java" />
 <meta property="article:published_time" content="2022-04-02T23:46:45+09:00" />
 <meta property="article:modified_time" content="2022-04-02T23:46:45+09:00" />
+
 
 
     
@@ -69,7 +70,6 @@
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -229,8 +229,8 @@ docs.spring.io</a></p>
 <h2 id="json-parsing-simple하다">JSON Parsing (Simple하다)</h2>
 <p>링크 참조 : [https://codechacha.com/ko/java-parse-json/<a href="https://a1010100z.tistory.com/5"></a>](<a href="https://codechacha.com/ko/java-parse-json/">https://codechacha.com/ko/java-parse-json/</a>)</p>
 <h2 id="response-entity의-json화">RESPONSE ENTITY의 JSON화</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>JSONParser jsonParser <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSONParser<span style="color:#f92672">();</span> 
-</span></span><span style="display:flex;"><span>JSONObject jsonObject <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>JSONObject<span style="color:#f92672">)</span> jsonParser<span style="color:#f92672">.</span><span style="color:#a6e22e">parse</span><span style="color:#f92672">(</span>response<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">());</span> 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>JSONParser jsonParser <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSONParser(); 
+</span></span><span style="display:flex;"><span>JSONObject jsonObject <span style="color:#f92672">=</span> (JSONObject) jsonParser.<span style="color:#a6e22e">parse</span>(response.<span style="color:#a6e22e">getBody</span>().<span style="color:#a6e22e">toString</span>()); 
 </span></span></code></pre></div><ul>
 <li>Body 부분만 사용하는 경우에 해당</li>
 <li>헤더가 필요하면 getBody()는 필요 없음</li>
@@ -269,56 +269,56 @@ Before</p>
 <ul>
 <li>Content-Type : application/json 이고 json 타입의 데이터</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestBody</span> Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;person :: {}&#34;</span><span style="color:#f92672">,</span> person<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> person<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span>(<span style="color:#a6e22e">@RequestBody</span> Person person) {
+</span></span><span style="display:flex;"><span>	log.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;person :: {}&#34;</span>, person);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> person.<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p><strong>2. @RequestBody MulityValueMap&lt;String, String&gt; map</strong></p>
 <p>MultiValueMap 과 함께 @RequestBody 어노테이션을 붙이면, AnnotationMethodHandlerAdapter에 의해 FormHttpMessageConverter가 등록되게 된다. FormHttpMessageConverter는 미디어 타입이 application/x-www-form-urlencodede로 정의된 폼 데이터를 주고 받을 때 사용하게 된다.</p>
 <ul>
 <li>Content-Type : application/x-www-form-urlencoded 이고 key1=value1 타입의 데이터</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span><span style="color:#a6e22e">@RequestBody</span> MultiValueMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> String<span style="color:#f92672">&gt;</span> data<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;data :: {}&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span>(<span style="color:#a6e22e">@RequestBody</span> MultiValueMap<span style="color:#f92672">&lt;</span>String, String<span style="color:#f92672">&gt;</span> data) {
+</span></span><span style="display:flex;"><span>	log.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;data :: {}&#34;</span>, data);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> data.<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>물론 이론상으로는 2번 방법이 가능하지만, FormHttpMessageConverter를 더 효율적으로 사용하려면 아래 3번 방법이 더 낫다.</p>
 <p><strong>3. @ModelAttribute Person person</strong></p>
 <p>model 객체와 함께 @ModelAttribute를 사용하면 2번과 같이 FormHttpMessageConverter가 등록되어 key=value를 model로 converting 하게 된다. 앞에 아무런 어노테이션도 안붙이고 Person person 으로 선언하면 @ModelAttribute가 암묵적으로 사용된다.</p>
 <ul>
 <li>Content-Type : application/x-www-form-urlencoded 이고 key1=value1 타입의 데이터</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span><span style="color:#f92672">(</span>value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span><span style="color:#f92672">(</span>Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>	log<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;data :: {}&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> data<span style="color:#f92672">.</span><span style="color:#a6e22e">toString</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@PostMapping</span>(value <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;/add&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">postHanlder</span>(Person person) {
+</span></span><span style="display:flex;"><span>	log.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;data :: {}&#34;</span>, data);
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">return</span> data.<span style="color:#a6e22e">toString</span>();
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><hr>
 <h3 id="리턴-타입--jsonarray-vs-jsonobject">리턴 타입 : JSONArray vs JSONObject</h3>
 <h3 id="예시코드">예시코드</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/test&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">testList</span><span style="color:#f92672">(</span>testVo testVo<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://testurl.com&#34;</span><span style="color:#f92672">;</span> <span style="color:#75715e">// api url
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//get parameter 담아주기
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        UriComponentsBuilder builder <span style="color:#f92672">=</span> UriComponentsBuilder<span style="color:#f92672">.</span><span style="color:#a6e22e">fromHttpUrl</span><span style="color:#f92672">(</span>url<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">queryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test1&#34;</span><span style="color:#f92672">,</span> testVo<span style="color:#f92672">.</span><span style="color:#a6e22e">getUserId</span><span style="color:#f92672">())</span>
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">queryParam</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;test2&#34;</span><span style="color:#f92672">,</span> testVo<span style="color:#f92672">.</span><span style="color:#a6e22e">getValue</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>       HttpComponentsClientHttpRequestFactory httpRequestFactory <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpComponentsClientHttpRequestFactory<span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>        httpRequestFactory<span style="color:#f92672">.</span><span style="color:#a6e22e">setConnectTimeout</span><span style="color:#f92672">(</span><span style="color:#ae81ff">30000</span><span style="color:#f92672">);</span> <span style="color:#75715e">// 연결시간 초과
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">//Rest template setting
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        RestTemplate restTpl <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RestTemplate<span style="color:#f92672">(</span>httpRequestFactory<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        HttpHeaders headers  <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpHeaders<span style="color:#f92672">();</span> <span style="color:#75715e">// 담아줄 header
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        HttpEntity entity <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpEntity<span style="color:#f92672">&lt;&gt;(</span>headers<span style="color:#f92672">);</span> <span style="color:#75715e">// http entity에 header 담아줌
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
-</span></span><span style="display:flex;"><span>        ResponseEntity<span style="color:#f92672">&lt;</span>JSONArray<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl<span style="color:#f92672">.</span><span style="color:#a6e22e">exchange</span><span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> HttpMethod<span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> entity<span style="color:#f92672">,</span> JSONArray<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        L<span style="color:#f92672">.</span><span style="color:#a6e22e">info</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;responseEntity.getBody()&#34;</span> <span style="color:#f92672">+</span> responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">());</span>
-</span></span><span style="display:flex;"><span>        List result <span style="color:#f92672">=</span> <span style="color:#f92672">(</span>List<span style="color:#f92672">)</span> responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">();</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@GetMapping</span>(<span style="color:#e6db74">&#34;/test&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> ResponseEntity<span style="color:#f92672">&lt;</span>List<span style="color:#f92672">&gt;</span> <span style="color:#a6e22e">testList</span>(testVo testVo) {
+</span></span><span style="display:flex;"><span>        String url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;http://testurl.com&#34;</span>; <span style="color:#75715e">// api url</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ResponseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">ok</span><span style="color:#f92672">(</span>result<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//get parameter 담아주기</span>
+</span></span><span style="display:flex;"><span>        UriComponentsBuilder builder <span style="color:#f92672">=</span> UriComponentsBuilder.<span style="color:#a6e22e">fromHttpUrl</span>(url)
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">queryParam</span>(<span style="color:#e6db74">&#34;test1&#34;</span>, testVo.<span style="color:#a6e22e">getUserId</span>())
+</span></span><span style="display:flex;"><span>                .<span style="color:#a6e22e">queryParam</span>(<span style="color:#e6db74">&#34;test2&#34;</span>, testVo.<span style="color:#a6e22e">getValue</span>());
+</span></span><span style="display:flex;"><span>       HttpComponentsClientHttpRequestFactory httpRequestFactory <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpComponentsClientHttpRequestFactory();
+</span></span><span style="display:flex;"><span>        httpRequestFactory.<span style="color:#a6e22e">setConnectTimeout</span>(30000); <span style="color:#75715e">// 연결시간 초과</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">//Rest template setting</span>
+</span></span><span style="display:flex;"><span>        RestTemplate restTpl <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> RestTemplate(httpRequestFactory);
+</span></span><span style="display:flex;"><span>        HttpHeaders headers  <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpHeaders(); <span style="color:#75715e">// 담아줄 header</span>
+</span></span><span style="display:flex;"><span>        HttpEntity entity <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HttpEntity<span style="color:#f92672">&lt;&gt;</span>(headers); <span style="color:#75715e">// http entity에 header 담아줌</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        ResponseEntity<span style="color:#f92672">&lt;</span>JSONArray<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl.<span style="color:#a6e22e">exchange</span>(url, HttpMethod.<span style="color:#a6e22e">GET</span>, entity, JSONArray.<span style="color:#a6e22e">class</span>);
+</span></span><span style="display:flex;"><span>        L.<span style="color:#a6e22e">info</span>(<span style="color:#e6db74">&#34;responseEntity.getBody()&#34;</span> <span style="color:#f92672">+</span> responseEntity.<span style="color:#a6e22e">getBody</span>());
+</span></span><span style="display:flex;"><span>        List result <span style="color:#f92672">=</span> (List) responseEntity.<span style="color:#a6e22e">getBody</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> ResponseEntity.<span style="color:#a6e22e">ok</span>(result);
+</span></span><span style="display:flex;"><span>    }
 </span></span></code></pre></div><p>HttpComponentsClientHttpRequestFactory :  RestTemplate 는 ClientHttpRequestFactory 로 부터 ClientHttpRequest 를 가져와서 요청을 보낸다.</p>
 <p>RestTemplate template = new RestTemplate(new HttpComponentsClientHttpRequestFactory());이렇게 써도 가능하나 다양한 설정을 추가하지 못한다.</p>
 <p>POST 방법으로 하고 싶으면 HttpEntity를 선언할때 body부 를 넣어주면된다.</p>
@@ -326,9 +326,9 @@ Before</p>
 <p>HttpEntity entity = new HttpEntity(body,headers);</p>
 <p><strong>그리고 여기서는 return을 List로 받고싶어서 JSONArray를 썼는데,</strong></p>
 <p><strong>List<!-- raw HTML omitted --> 형태가 아닌 다양한 JSon 형태라면 JSONObject로 리턴받아 해당 값을 get해도 된다.</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ResponseEntity<span style="color:#f92672">&lt;</span>JSONObject<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl<span style="color:#f92672">.</span><span style="color:#a6e22e">exchange</span><span style="color:#f92672">(</span>url<span style="color:#f92672">,</span> HttpMethod<span style="color:#f92672">.</span><span style="color:#a6e22e">GET</span><span style="color:#f92672">,</span> entity<span style="color:#f92672">,</span> JSONObject<span style="color:#f92672">.</span><span style="color:#a6e22e">class</span><span style="color:#f92672">);</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ResponseEntity<span style="color:#f92672">&lt;</span>JSONObject<span style="color:#f92672">&gt;</span>  responseEntity <span style="color:#f92672">=</span> restTpl.<span style="color:#a6e22e">exchange</span>(url, HttpMethod.<span style="color:#a6e22e">GET</span>, entity, JSONObject.<span style="color:#a6e22e">class</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>responseEntity<span style="color:#f92672">.</span><span style="color:#a6e22e">getBody</span><span style="color:#f92672">().</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;example&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>responseEntity.<span style="color:#a6e22e">getBody</span>().<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;example&#34;</span>);
 </span></span></code></pre></div><h3 id="참조-문서">참조 문서</h3>
 <p><a href="https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html">https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html</a></p>
 <hr>
@@ -357,16 +357,16 @@ return person.toString();
 <p>예를들어, 아이디, 비밀번호 등의 데이터를 컨트롤러로 보냈을때,</p>
 <p>HttpServletRequest 객체안에 모든 데이터들이 들어가게 된다.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#a6e22e">@Controller</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@RequestMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/board/confirmId&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">confirmId</span><span style="color:#f92672">(</span>HttpServletRequest httpServletRequest<span style="color:#f92672">,</span> Model model<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        String id <span style="color:#f92672">=</span> httpServletRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameter</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        String pwd <span style="color:#f92672">=</span> httpServletRequest<span style="color:#f92672">.</span><span style="color:#a6e22e">getParameter</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pwd&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;id&#34;</span><span style="color:#f92672">,</span> id<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        model<span style="color:#f92672">.</span><span style="color:#a6e22e">addAttribute</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;pwd&#34;</span><span style="color:#f92672">,</span> pwd<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;board/confirmId&#34;</span><span style="color:#f92672">;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@RequestMapping</span>(<span style="color:#e6db74">&#34;/board/confirmId&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">confirmId</span>(HttpServletRequest httpServletRequest, Model model) {
+</span></span><span style="display:flex;"><span>        String id <span style="color:#f92672">=</span> httpServletRequest.<span style="color:#a6e22e">getParameter</span>(<span style="color:#e6db74">&#34;id&#34;</span>);
+</span></span><span style="display:flex;"><span>        String pwd <span style="color:#f92672">=</span> httpServletRequest.<span style="color:#a6e22e">getParameter</span>(<span style="color:#e6db74">&#34;pwd&#34;</span>);
+</span></span><span style="display:flex;"><span>        model.<span style="color:#a6e22e">addAttribute</span>(<span style="color:#e6db74">&#34;id&#34;</span>, id);
+</span></span><span style="display:flex;"><span>        model.<span style="color:#a6e22e">addAttribute</span>(<span style="color:#e6db74">&#34;pwd&#34;</span>, pwd);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;board/confirmId&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>id와 pwd를 HttpServletRquest 객체를 통해 받아오고,
 Model 객체를 이용해서 뷰로 값을 넘기고 있다.</p>
 
@@ -439,6 +439,10 @@ Model 객체를 이용해서 뷰로 값을 넘기고 있다.</p>
             <strong>Latest posts</strong>
             <ul>
                 
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/">2023 한국장애인재단 - 장애플러스 기술 해커톤(메이커톤) 본선 중도포기 후기</a>
+                    </li>
                 
                     <li>
                         <a href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">kubernetes 소개</a>
@@ -516,10 +520,6 @@ Model 객체를 이용해서 뷰로 값을 넘기고 있다.</p>
                         <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
                     </li>
                 
-                    <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -546,7 +546,7 @@ Model 객체를 이용해서 뷰로 값을 넘기고 있다.</p>
                 
                 <li>
                 
-                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (10)</a>
                 
                 </li>
                 

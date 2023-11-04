@@ -6,16 +6,15 @@
     <description>Recent content in Django-Admin on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Apr 2020 18:03:29 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/django-admin/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Apr 2020 18:03:29 +0900</lastBuildDate>
+    <atom:link href="https://xfrnk2.github.io/tags/django-admin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django의 Admin 기능</title>
       <link>https://xfrnk2.github.io/django/django_admin/</link>
       <pubDate>Sun, 19 Apr 2020 18:03:29 +0900</pubDate>
-      
       <guid>https://xfrnk2.github.io/django/django_admin/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
 1. Django의 Admin 기능 관리자 페이지, 강력한 자동 관리 인터페이스 모델 중심의 빠른 인터페이스를 제공 2. Django Admin의 사용 효과 서비스 초기에 관리 도구로 사용하기에 제격 관리 도구 만들 시간을 줄이고, End-User 서비스에 집중이 가능 3. Model Class를 Django Admin에 등록하는 방법 1. 기본 from django.contrib import adminfrom .models import Item admin.site.regiester(Item) 2. Class from django.contrib import adminfrom .</description>
     </item>
-    
   </channel>
 </rss>

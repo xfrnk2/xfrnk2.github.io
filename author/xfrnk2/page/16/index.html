@@ -4,14 +4,14 @@
   
 <html itemscope itemtype="https://schema.org/WebPage" class="no-js" lang="en">
 
-<head prefix="og: http://ogp.me/ns#">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="siteBaseUrl" content="https://xfrnk2.github.io/">
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
-    <meta name="generator" content="Hugo 0.113.0">
+    <meta name="generator" content="Hugo 0.120.3">
     <title>
         
            
@@ -27,6 +27,7 @@
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://xfrnk2.github.io/author/xfrnk2/" />
+
 
 
     
@@ -70,7 +71,6 @@
                     <li><a href="https://xfrnk2.github.io/page/about/">About</a></li>
                 
             
-			<li><a href="https://github.com/xfrnk2">Github</a></li>
         </ul>
 
         
@@ -122,6 +122,88 @@
     <div class="main container">
         
     
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://xfrnk2.github.io/codility/lesson2_arrays_oddoccurrencesinarray/">
+            Codility - lesson2_arrays_OddOccurrencesInArray
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2021-06-22</span>
+            
+        
+
+        
+
+        
+            <span class="categories">
+                
+                    
+                    
+                        <a href="https://xfrnk2.github.io/categories/codility/">Codility</a>
+                    
+                
+            </span>
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
+                
+            </span>
+        
+    </div>
+
+    
+        문제 링크 https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
+풀이 코딜리티에서 처음 풀어본 문제 두번의 시도를 했는데, 각각 O(N^2)과 O(N) or O(N*log n)이 나왔다. 아래와 같이 reduce를 사용하니 시간복잡도가 개선되었다.
+from functools import reducedef solution(A):return reduce(lambda acc, cur : acc ^ cur, A, 0) 첫 번째로 작성했던 지저분한 코드
+def solution(A):return eval(&#39;^&#39;.join(list(map(str, A)))) 
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://xfrnk2.github.io/tags/codility/">Codility</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
     
         <div class="article-wrapper u-cf">
             
@@ -610,99 +692,6 @@ IT 전문가로 사는법 - 장동인
             
         </div>
     
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="https://xfrnk2.github.io/blog/hugo_sitemap_error/">
-    <i class="fas fa-fw fa-pencil-alt"></i>
-</a>
-
-<article class="default article">
-    
-    <div class="featured-image">
-        <a href="https://xfrnk2.github.io/blog/hugo_sitemap_error/">
-            <img src="https://user-images.githubusercontent.com/34790699/122094703-68babb00-ce47-11eb-83cf-66e69889ba61.png" alt="">
-        </a>
-    </div>
-
-
-    <div class="content">
-    <h1 class="article-title">
-        <a href="https://xfrnk2.github.io/blog/hugo_sitemap_error/">
-            github blog, hugo sitemap couldn&#39;t fetch error / 깃허브 블로그, 휴고 사이트맵 가져올수 없음 에러
-        </a>
-    </h1>
-
-    <div class="meta">
-        
-            
-                <span class="date moment">2021-06-16</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    
-                    
-                        <a href="https://xfrnk2.github.io/categories/blog/">blog</a>
-                    
-                
-            </span>
-        
-
-        
-            <span class="author">
-                
-                
-                    <a href="https://xfrnk2.github.io/author/xfrnk2/">xfrnk2</a>
-                
-            </span>
-        
-    </div>
-
-    
-        그동안 기록해 온 글을 구글에 노출시키기 위해 Google search console에 사이트맵을 등록했는데, 제대로 반영되지 않았다.
-hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public 폴더 내에 있는 파일을 그대로 이용하면 된다.
-문제 : sitemap.xml이라고 추가했는데 불구하고, 가져올 수 없음(couldn&rsquo;t fetch, invalid)인 채로 열흘 지속됨.
-해결 : 뒤의 확장자(.xml)을 제외하고 sitemap을 입력하여 제출했더니 곧바로 성공 초록 문구가 나타나며 해결.
-
-        
-    
-</div>
-
-    
-<div class="footer">
-
-
-    
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/blog/">blog</a>
-                    
-                
-                    
-                    
-                    <a href="https://xfrnk2.github.io/tags/hugo/">hugo</a>
-                    
-                
-            </div>
-        </div>
-    
-
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
 
     
     <div class="paginator">
@@ -728,6 +717,10 @@ hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public �
             <strong>Latest posts</strong>
             <ul>
                 
+                
+                    <li>
+                        <a href="https://xfrnk2.github.io/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/">2023 한국장애인재단 - 장애플러스 기술 해커톤(메이커톤) 본선 중도포기 후기</a>
+                    </li>
                 
                     <li>
                         <a href="https://xfrnk2.github.io/kubernetes/kubernetes_introduction/">kubernetes 소개</a>
@@ -805,10 +798,6 @@ hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public �
                         <a href="https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
                     </li>
                 
-                    <li>
-                        <a href="https://xfrnk2.github.io/web/npm_--save_and_--save-dev/">npm --save와 --save-dev를 사용하는 이유, 뒤에 --production을 사용하는 이유</a>
-                    </li>
-                
             </ul>
         </div>
         
@@ -835,7 +824,7 @@ hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public �
                 
                 <li>
                 
-                    <a href="https://xfrnk2.github.io/categories/review/">review (9)</a>
+                    <a href="https://xfrnk2.github.io/categories/review/">review (10)</a>
                 
                 </li>
                 

@@ -6,12 +6,12 @@
     <description>Recent content in BookList on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/booklist/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate>
+    <atom:link href="https://xfrnk2.github.io/tags/booklist/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>독서 목록</title>
       <link>https://xfrnk2.github.io/book_list/book_list/</link>
       <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
-      
       <guid>https://xfrnk2.github.io/book_list/book_list/</guid>
       <description>독서목록 (2021-06-16부터 기록 시작) 전공서 컴퓨터과학이 여는 세계 - 이광근 2021-06-15 ~129p 일독
 2021-06-16 전체 일독
@@ -23,6 +23,5 @@
 2021-07-06 122p~156p 일독 - Part6 운영체제를 새롭게 읽었음 2021-07-08 ~64p 복습 후 내용 정리
 IT 전문가로 사는법 - 장동인</description>
     </item>
-    
   </channel>
 </rss>

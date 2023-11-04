@@ -6,18 +6,17 @@
     <description>Recent content in kubernetes on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 14 Jun 2023 15:05:04 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jun 2023 15:05:04 +0900</lastBuildDate>
+    <atom:link href="https://xfrnk2.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kubernetes 소개</title>
       <link>https://xfrnk2.github.io/kubernetes/kubernetes_introduction/</link>
       <pubDate>Wed, 14 Jun 2023 15:05:04 +0900</pubDate>
-      
       <guid>https://xfrnk2.github.io/kubernetes/kubernetes_introduction/</guid>
       <description>쿠버네티스(Kubernetes)란? 쿠버네티스(Kubernetes) 는 컨테이너화 된 애플리케이션의 대규모 배포, 스케일링 및 관리를 간편하게 만들어주는 오픈 소스 기반 컨테이너 오케스트레이션(Container Orchestration) 도구 다.
 컨테이너 오케스트레이션 &amp;ldquo;컨테이너화 된 애플리케이션에 대한,
 자동화된 설정, 관리 및 제어 체계&amp;rdquo;
 Kubernetes 및 OpenShift 다음으로 Docker Swarm이 업계에서 더 많이 사용되고 있다. Kubernetes 외 오케스트레이션 도구 : Docker Swarm, ,Open Shift, Mesos, Rancher, Amazon ECS, Apache Marathon, Nomad, Kontena, Minikube 쿠버네티스(Kubernetes)의 특징 쿠버네티스는 과거 15년이 넘는 시간 동안 구글 내부에서 프로덕션 규모의 워크로드를 운영하는 수단으로 사용되었다.</description>
     </item>
-    
   </channel>
 </rss>

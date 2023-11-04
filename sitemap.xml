@@ -2,11 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://xfrnk2.github.io/review/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
     <loc>https://xfrnk2.github.io/author/</loc>
-    <lastmod>2023-06-14T15:05:04+09:00</lastmod>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>https://xfrnk2.github.io/categories/</loc>
-    <lastmod>2023-06-14T15:05:04+09:00</lastmod>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/tags/hackathon/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/tags/review/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/categories/review/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/tags/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
+  </url><url>
+    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
+    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>https://xfrnk2.github.io/tags/kubernetes/</loc>
     <lastmod>2023-06-14T15:05:04+09:00</lastmod>
@@ -18,15 +42,6 @@
     <lastmod>2023-06-14T15:05:04+09:00</lastmod>
   </url><url>
     <loc>https://xfrnk2.github.io/kubernetes/kubernetes_introduction/</loc>
-    <lastmod>2023-06-14T15:05:04+09:00</lastmod>
-  </url><url>
-    <loc>https://xfrnk2.github.io/</loc>
-    <lastmod>2023-06-14T15:05:04+09:00</lastmod>
-  </url><url>
-    <loc>https://xfrnk2.github.io/tags/</loc>
-    <lastmod>2023-06-14T15:05:04+09:00</lastmod>
-  </url><url>
-    <loc>https://xfrnk2.github.io/author/xfrnk2/</loc>
     <lastmod>2023-06-14T15:05:04+09:00</lastmod>
   </url><url>
     <loc>https://xfrnk2.github.io/tags/cs/</loc>
@@ -44,16 +59,7 @@
     <loc>https://xfrnk2.github.io/network/123/</loc>
     <lastmod>2023-05-07T22:45:48+09:00</lastmod>
   </url><url>
-    <loc>https://xfrnk2.github.io/review/</loc>
-    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
-  </url><url>
     <loc>https://xfrnk2.github.io/review/svp%ED%9B%84%EA%B8%B0/</loc>
-    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
-  </url><url>
-    <loc>https://xfrnk2.github.io/tags/review/</loc>
-    <lastmod>2023-02-26T19:45:29+09:00</lastmod>
-  </url><url>
-    <loc>https://xfrnk2.github.io/categories/review/</loc>
     <lastmod>2023-02-26T19:45:29+09:00</lastmod>
   </url><url>
     <loc>https://xfrnk2.github.io/cs/</loc>

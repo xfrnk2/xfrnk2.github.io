@@ -6,17 +6,16 @@
     <description>Recent content in Cs on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Jan 2023 22:46:14 +0900</lastBuildDate><atom:link href="https://xfrnk2.github.io/cs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Jan 2023 22:46:14 +0900</lastBuildDate>
+    <atom:link href="https://xfrnk2.github.io/cs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</title>
       <link>https://xfrnk2.github.io/cs/floatingpoint/</link>
       <pubDate>Wed, 04 Jan 2023 22:46:14 +0900</pubDate>
-      
       <guid>https://xfrnk2.github.io/cs/floatingpoint/</guid>
       <description>여는 말 부동소수점의 개념을 복기하기 위해 간단히 정리해 보는 글입니다.
 IEEE 754 부동소수점 표현에서 숫자는 아래와 같이 부호부, 지수부, 가수부의 세 부분으로 구성 부호부 (Sign) : 1비트. 숫자의 부호를 나타내며, 양수일 때 0, 음수일 때 1 지수부 (Exponent) :8비트. 지수 표현 가수부 (Mantissa) : 23비트. 가수 또는 유효숫자 표현 (출처 : https://codetorial.net/articles/floating_point.html)
 숫자를 표현하고 저장하기 위해 32비트 (4바이트)를 사용하는 방식을 단정도 (single precision) 배정도 (double precision) 표현에서는 64비트 (8바이트)를 사용 -6.</description>
     </item>
-    
   </channel>
 </rss>
