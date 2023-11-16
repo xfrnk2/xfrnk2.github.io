@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FFT on Rad Blog</title>
-    <link>https://xfrnk2.github.io/tags/fft/</link>
+    <link>/tags/fft/</link>
     <description>Recent content in FFT on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 13 Nov 2021 13:34:33 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/tags/fft/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/fft/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>버스 지수(Bus Factor)</title>
-      <link>https://xfrnk2.github.io/fft/bus_factor/</link>
+      <link>/fft/bus_factor/</link>
       <pubDate>Sat, 13 Nov 2021 13:34:33 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/fft/bus_factor/</guid>
+      <guid>/fft/bus_factor/</guid>
       <description>여는 글 1인 개발과 버스팩터 및 위험요소를 고려하지 않고 개발했던 지난 시간을 회고하며 제대로 기억하고 무엇을 개선할 필요가 있는지 분명히 인식하기 위해서 정리하는 글을 쓴다.
 읽기 전에 Software engineering at google 책에는
 문제의 발견을 타임라인의 왼쪽으로 이동하라는 내용이 나온다.
@@ -24,18 +24,18 @@
     </item>
     <item>
       <title>FFT in React_PreventDefault로 알아본 이벤트 핸들링</title>
-      <link>https://xfrnk2.github.io/fft/react-preventdefault/</link>
+      <link>/fft/react-preventdefault/</link>
       <pubDate>Fri, 25 Dec 2020 13:34:33 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/fft/react-preventdefault/</guid>
+      <guid>/fft/react-preventdefault/</guid>
       <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
 React(리액트)를 사용하여 TodoList를 구현하던 도중 예기치 않게 발생한 에러를 통해 이벤트 핸들링에 대해 알아보았다.
 문제가 발생한 시점 &amp;lt;div&amp;gt; 내부에 &amp;lt;div&amp;gt;를 선언하여, 부모 레벨 div에서는 onClick 이벤트를, 자식 레벨 div에서는 form을 사용한 onSubmit 이벤트를 발생시키도록 했다. 콘솔로 찍어 확인 한 결과 부모 레벨의 div의 onClick 이벤트만이 계속 나오는 것이 확인되었다. 문제가 있었던 부분 SPA 방식에 기준하여 페이지의 전체 새로고침을 하지않고 특정 부분만을 갱신시키기 위해 preventDefault()를 남용한 것이 화근이었다.</description>
     </item>
     <item>
       <title>FFT in React_props 서빙시 반드시 {}괄호를 사용하자!</title>
-      <link>https://xfrnk2.github.io/fft/react-props_serving/</link>
+      <link>/fft/react-props_serving/</link>
       <pubDate>Mon, 21 Dec 2020 13:34:33 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/fft/react-props_serving/</guid>
+      <guid>/fft/react-props_serving/</guid>
       <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
 React(리액트)를 사용하여 Todo List를 만들었는데, 최종적으로 만들기 직전에 겪었던 문제에 대해서 간단히 정리하기 위해서 글을 쓴다.
 문제가 발생한 시점 Todo List로부터 Todo 데이터의 {todo.title}(제목)과 {todo.content}(내용)을 출력하려고 했는데, undefined 문구가 나오면서 출력할 수 없었다.
@@ -44,9 +44,9 @@ const Todo = (todo, todos, setTodos) =&amp;gt; {.....} 문제를 개선한 모�
     </item>
     <item>
       <title>Python - 특이점이 온 filter함수, list 안의 빈 값(None)을 제거하기</title>
-      <link>https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/</link>
+      <link>/fft/python-filter_and_remove_none_in_list/</link>
       <pubDate>Tue, 06 Oct 2020 18:58:11 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/fft/python-filter_and_remove_none_in_list/</guid>
+      <guid>/fft/python-filter_and_remove_none_in_list/</guid>
       <description>filter 함수의 특이점 발견 동기 레스토랑 시뮬레이션 코딩 중 작성한 코드의 일부이다.
 (좋은 코드인지는 모르겠다.)
 cooks = [cook if not cook.update() else finished_order.append(cook.order_info) for cook in self.__cooks]self.__cooks = list(filter(None, cooks)) else를 연산하는 과정에서 None이 원소로 들어가는 것을 확인,
@@ -55,9 +55,9 @@ None 원소들을 제거해주기 위한 방법을 검색해봤다. *list(filter
     </item>
     <item>
       <title>FFT in Python_비교연산을 수행할 때 하나라도라는 크거나 작은 값을 요구하는 조건이라면 any를 쓰자</title>
-      <link>https://xfrnk2.github.io/fft/python-any/</link>
+      <link>/fft/python-any/</link>
       <pubDate>Mon, 20 Jul 2020 13:34:33 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/fft/python-any/</guid>
+      <guid>/fft/python-any/</guid>
       <description>Foot For Thought : 생각할 거리, -를 줄여서 FFT-
 생각해볼 거리를 정리해서 글로 올리자는 취지로 카테고리를 &amp;lsquo;Food For Thought&amp;rsquo;라고 설정했다.ㅎㅎ
 &amp;lsquo;Food For Thought&amp;rsquo;는 최근에 알게된 영어 표현으로 생각해볼 거리를 은유적으로 사용하는 범용적인 말이라고 한다.

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Codeits on Rad Blog</title>
-    <link>https://xfrnk2.github.io/codeit/</link>
+    <link>/codeit/</link>
     <description>Recent content in Codeits on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Aug 2021 00:18:15 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/codeit/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/codeit/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>코드잇 - 자료구조 공부</title>
-      <link>https://xfrnk2.github.io/codeit/codeit_learning_data_structure/</link>
+      <link>/codeit/codeit_learning_data_structure/</link>
       <pubDate>Fri, 06 Aug 2021 00:18:15 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/codeit/codeit_learning_data_structure/</guid>
+      <guid>/codeit/codeit_learning_data_structure/</guid>
       <description>그동안 제대로 좀 짚어가고 싶었던 자료구조이다.
 어떤 상황에서 데이터를 효과적으로 관리하거나, 서빙하기 위한 자료구조는 무엇일까?
 자료구조의 선택에 따라 운영의 비용 내지는 효율이 크게 좌우된다고 익히 들은 바가 있다.
@@ -23,9 +23,9 @@
     </item>
     <item>
       <title>코드잇 - 자바스크립트 기초 공부</title>
-      <link>https://xfrnk2.github.io/codeit/codeit_learning_basic_javascript/</link>
+      <link>/codeit/codeit_learning_basic_javascript/</link>
       <pubDate>Thu, 22 Jul 2021 00:18:15 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/codeit/codeit_learning_basic_javascript/</guid>
+      <guid>/codeit/codeit_learning_basic_javascript/</guid>
       <description>요즘은 배웠던 자바스크립트, 그리고 HTML 과 CSS를 가지고 웹 페이지를 만들어서 호스팅 후 확인해보는 것을 일삼으며 지내곤 하는데, 시간이 날 때마다 자바스크립트 기초 강의를 클릭, 클릭, 코딩, 코딩.. 하다 보니 빠르진 않으나 어느덧 절반 가까이 수강했다.
 지난 수년간 파이썬을 가지고 이것 저것 만들어 보면서 프로그래밍의 기본은 알고 있었지만, 다른 도구를 손에 잡으니 어딘가 2% 부족하고, 잘 모르는 듯한 느낌을 지울 수가 없었다. 그 주인공이 바로 자바스크립트.
 ​
@@ -33,9 +33,9 @@
     </item>
     <item>
       <title>코드잇 - 컴퓨터개론 완강</title>
-      <link>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction/</link>
+      <link>/codeit/codeit_finishing_computer_introduction/</link>
       <pubDate>Thu, 22 Jul 2021 00:18:15 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/codeit/codeit_finishing_computer_introduction/</guid>
+      <guid>/codeit/codeit_finishing_computer_introduction/</guid>
       <description>코드잇 대학생 코딩 캠프 멤버쉽을 시작한지 29일이 지났다.
 이따금 휴식을 위한 시간으로 들어왔던 컴퓨터 개론 과목을 수료했다.
 기본 지식을 되짚어 볼 수 있어서 좋았다.
@@ -45,9 +45,9 @@
     </item>
     <item>
       <title>코드잇 - 알고리즘 완강</title>
-      <link>https://xfrnk2.github.io/codeit/codeit_finishing_algorythm/</link>
+      <link>/codeit/codeit_finishing_algorythm/</link>
       <pubDate>Fri, 16 Jul 2021 00:18:15 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/codeit/codeit_finishing_algorythm/</guid>
+      <guid>/codeit/codeit_finishing_algorythm/</guid>
       <description>코드잇 대학생 코딩 캠프 멤버쉽을 시작한지 23일이 지났다.
 매일마다 출석 인증하고, 강의를 듣고 실습 과제를 하는 것이 무의식적이라고 체감 될 정도로 익숙해지던 참이었는데, 어느새 알고리즘의 정석 강의를 완강&amp;amp;수료하게 되었다.
 전반적으로 알고리즘 내부의 중요한 사항들에 대해서 배울 수 있었던 강의였던 것 같다.

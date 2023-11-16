@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dockers on Rad Blog</title>
-    <link>https://xfrnk2.github.io/docker/</link>
+    <link>/docker/</link>
     <description>Recent content in Dockers on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 05 Aug 2020 10:36:16 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[Docker] network를 사용한 Container 단위 Django 서버와 Mysql 서버 연동</title>
-      <link>https://xfrnk2.github.io/docker/docker_connect_containers_network/</link>
+      <link>/docker/docker_connect_containers_network/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/docker/docker_connect_containers_network/</guid>
+      <guid>/docker/docker_connect_containers_network/</guid>
       <description>1. 네트워크 생성 docker create network (network name) ▶ 원하는 네트워크 이름을 넣을 수 있다.
 docker network ls ▶ 네트워크가 생성되었음을 확인할 수 있다.
 2. 네트워크 연결 ▶ network와 container 모두 해당 id나 name을 입력할 수 있음
@@ -22,9 +22,9 @@ docker ps -a 3. mysql container 생성 docker run -e MYSQL_ROOT_PASSWORD=passwor
     </item>
     <item>
       <title>[Docker] 컨테이너 내 Mysql서버에 접근하는 방법</title>
-      <link>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/</link>
+      <link>/docker/docker_how_to_connect_to_mysql_in_container/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/docker/docker_how_to_connect_to_mysql_in_container/</guid>
+      <guid>/docker/docker_how_to_connect_to_mysql_in_container/</guid>
       <description>1. Docker Dashboard의 CLI 이용 ▶ Docker Dashboard의 container를 보면 왼쪽에서 두번째 위치에 CLI 버튼이 있다. 위에 마우스를 가져다 대고 있으면 CLI라는 표시가 보인다.
 ▶ CLI 아이콘 클릭시 우측과 같은 창이 뜨게 되는데, 아래와 같이 커맨드를 입력한다.
 mysql -u root -p ▶ 그 다음 지정한 password를 입력하면 mysql에 접속할 수 있다.
@@ -34,9 +34,9 @@ mysql -u root -p 그 다음 지정한 password를 입력하면 mysql에 접속�
     </item>
     <item>
       <title>[Docker]docker-compose을 사용한 Container 단위 Django 서버와 Mysql 서버 연동</title>
-      <link>https://xfrnk2.github.io/docker/docker_connect_containers_compose/</link>
+      <link>/docker/docker_connect_containers_compose/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/docker/docker_connect_containers_compose/</guid>
+      <guid>/docker/docker_connect_containers_compose/</guid>
       <description>▶ docker-compose에 대한 공식 문서 링크
 1. 파일 생성 및 작성 dockerfile,
 docker-compose.xml,

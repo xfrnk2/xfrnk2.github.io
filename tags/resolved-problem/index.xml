@@ -2,72 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>resolved problem on Rad Blog</title>
-    <link>https://xfrnk2.github.io/tags/resolved-problem/</link>
+    <link>/tags/resolved-problem/</link>
     <description>Recent content in resolved problem on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Feb 2022 21:17:34 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/tags/resolved-problem/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/resolved-problem/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</title>
-      <link>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</link>
+      <link>/resolved_problem/module_build_error_outdated_babel_packages/</link>
       <pubDate>Tue, 01 Feb 2022 21:17:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/module_build_error_outdated_babel_packages/</guid>
+      <guid>/resolved_problem/module_build_error_outdated_babel_packages/</guid>
       <description>문제 발생 상황 https://medium.com/uva-mobile-devhub/set-up-react-in-your-django-project-with-webpack-4fe1f8455396
 위의 글을 보고 따라가는데 6번 과정에서 아래의 명령 입력시 발생한 문제 ./node_modules/.bin/webpack --config webpack.config.js 해결 방법 아래는 해결 방법의 원문(영문)을 옮긴 글이다. That is due to outdated babel packages being used. The babel project, just like most other active Javascript projects, have moved on to using scope packages. Hence, the package names starts with @babel
 If you are using yarn, follow the below one: Step 1: Remove the old packages</description>
     </item>
     <item>
       <title>깃허브 토큰 인증 로그인 해결 - Support for password authentication was removed. Please use a personal access token instead 에러 해결</title>
-      <link>https://xfrnk2.github.io/resolved_problem/git_token_authentication_from_20210813/</link>
+      <link>/resolved_problem/git_token_authentication_from_20210813/</link>
       <pubDate>Sun, 15 Aug 2021 11:17:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/git_token_authentication_from_20210813/</guid>
+      <guid>/resolved_problem/git_token_authentication_from_20210813/</guid>
       <description>문제 발생 상황 push를 했더니 아래와 같은 문구가 나왔다. remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead. remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information. fatal: unable to access &amp;ldquo;&amp;hellip;&amp;rdquo; : The requested URL returned error: 403
 해결 방법 8월 13일을 기점으로 유저 이름과 비밀번호로 인증을 하던 형태에서, 개인 인증 토큰을 비밀번호 대신 사용해야 git에 접근할 수 있는 형태로 바뀌었다.
 들어간다 - https://github.</description>
     </item>
     <item>
       <title>Github의 잔디가 심어지지 않던 문제와 해결</title>
-      <link>https://xfrnk2.github.io/resolved_problem/github_grass/</link>
+      <link>/resolved_problem/github_grass/</link>
       <pubDate>Tue, 03 Aug 2021 11:17:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/github_grass/</guid>
+      <guid>/resolved_problem/github_grass/</guid>
       <description>문제 발생 상황 나의 깃허브 페이지에 접속해보니 지난 2일간 잔디가 심어지고 있지 않았고, 커밋&amp;amp;푸쉬는 모두 정상적으로 반영되고 있는 것이 확인되었다. 아마도 약 사흘전 Github Desktop 설치 후 웹 호스팅 용도로의 다른 계정으로 접속해서, 로컬에서 두 계정이 사용되고 있으니 나중에 설정 된 계정으로 사용자가 지정되고 있는 것인가 싶었다. 구글링 후 찾은 해결방법 git config --global user.name 아이디 작성git config --global user.email 이메일 주소 작성 cmd에서 위 방법대로 실행한 후 커밋&amp;amp;푸쉬를 해보니 정상 작동함이 확인되었다.</description>
     </item>
     <item>
       <title>Python - source.error(“incomplete escape %s” % escape, len(escape))</title>
-      <link>https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/</link>
+      <link>/resolved_problem/python-incomplete_escape_s/</link>
       <pubDate>Mon, 05 Apr 2021 11:17:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/python-incomplete_escape_s/</guid>
+      <guid>/resolved_problem/python-incomplete_escape_s/</guid>
       <description>문제 발생 상황 raise source.error(&amp;#34;incomplete escape %s&amp;#34; % escape, len(escape))re.error: incomplete escape \U at position 72 (line 4, column 3) PEP8을 따르도록 터미널에서 flake8을 입력하니 위와 같은 에러가 발생했다. 검색 결과 보통의 경우 위의 메세지는 파일 어딘가에 \U 문자열이 포함되어 있을때 발생 하는 것으로 나타났지만 \U는 없을 뿐더러 전혀 다른 경우였다. 에러 발생 원인 함수의 입력값으로서 파라미터를 Typing할 때. 추상메서드를 사용한 빈 객체 파라미터에 대한 타입을 명시할 때 발생하는 것이 확인되었다.</description>
     </item>
     <item>
       <title>Python - isort Error</title>
-      <link>https://xfrnk2.github.io/resolved_problem/python-flake8-isort/</link>
+      <link>/resolved_problem/python-flake8-isort/</link>
       <pubDate>Mon, 05 Apr 2021 11:16:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/python-flake8-isort/</guid>
+      <guid>/resolved_problem/python-flake8-isort/</guid>
       <description>문제 발생 상황 PEP8을 따르도록 수정하기 위해 command prompt에 flake8 file.py을 입력했다. isort error가 표시되었다. 문제 해결 https://pypi.org/project/isort/ isort는 python에서 import하는 라이브러리들을 자동으로 정렬해준다. isort file.py 이후 나오는 질문에선 y를 입력하면 된다. </description>
     </item>
     <item>
       <title>Shell script에 권한을 주기 // Error message - make : command not found, Permission denied for linuxwindowsscript.sh file</title>
-      <link>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/</link>
+      <link>/resolved_problem/chmod_shell_script_permission-make_command_not_found/</link>
       <pubDate>Wed, 17 Feb 2021 12:39:03 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/chmod_shell_script_permission-make_command_not_found/</guid>
+      <guid>/resolved_problem/chmod_shell_script_permission-make_command_not_found/</guid>
       <description>Shell script에 권한을 주기 makefile의 한 부분 OsConf= ./LinuxWindowsScript.sh# (OS의 종류에 따라 다르게 동작하도록 하는 쉘 스크립트 파일) travis-ci Error log ./LinuxWindowsScript.shmake: ./LinuxWindowsScript.sh: Command not foundMakefile:53: recipe for target &amp;#39;lint&amp;#39; failedmake: *** [lint] Error 127The command &amp;#34;make lint&amp;#34; exited with 2. 해결한 방법 git update-index --add --chmod=+x linuxshellscript.shgit commit -m &amp;#39;Make linuxshellscript.sh executable&amp;#39;git push 문제 원인 : script doesn&amp;rsquo;t have execute permissions Powershell 사용해서 커맨드 실행 (Windows) 후 정상 작동을 확인 참고한 곳</description>
     </item>
     <item>
       <title>Sendgrid Error - “smtplib.SMTPServerDisconnected: Connection unexpectedly closed”</title>
-      <link>https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/</link>
+      <link>/resolved_problem/django_sendgrid_smtp_email/</link>
       <pubDate>Sat, 08 Aug 2020 23:25:41 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/django_sendgrid_smtp_email/</guid>
+      <guid>/resolved_problem/django_sendgrid_smtp_email/</guid>
       <description>발생한 에러 https://sendgrid.com/docs/for-developers/sending-email/django/
 위 링크의 문서를 따라서 sendgrid를 사용해 전체 메일을 보낼수 있게 만들고 싶었다. 가상 환경을 실행시켜 환경변수로서 SENDGRID_API_KEY을 선언한 후, 아래 코드의 첫번째 줄에서 호출될 수 있도록 했다.
 SENDGRID_API_KEY = os.getenv(&amp;#39;SENDGRID_API_KEY&amp;#39;)EMAIL_HOST = &amp;#39;smtp.sendgrid.net&amp;#39;EMAIL_HOST_USER = &amp;#39;apikey&amp;#39; # this is exactly the value &amp;#39;apikey&amp;#39;EMAIL_HOST_PASSWORD = SENDGRID_API_KEYEMAIL_PORT = 587EMAIL_USE_TLS = True 전체메일을 보내기 위해서 커맨드를 입력했는데 아래와 같은 에러가 났다. &amp;gt;&amp;gt;&amp;gt; from django.core.mail import send_mail&amp;gt;&amp;gt;&amp;gt; send_mail(&amp;#39;Subject here&amp;#39;, &amp;#39;Here is the message.</description>
     </item>
     <item>
       <title>Docker를 Windows와 Linux에서 사용할때 각각 다른게 있을까? &lt;Docker 사용시 Shellscript를 통해 환경변수를 export 하기&gt;</title>
-      <link>https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/</link>
+      <link>/resolved_problem/docker_is_based_on_linux/</link>
       <pubDate>Wed, 29 Jul 2020 23:45:21 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/resolved_problem/docker_is_based_on_linux/</guid>
+      <guid>/resolved_problem/docker_is_based_on_linux/</guid>
       <description>Travis-ci에서 python venv 실행시 Linux와 Windows의 activate.bat 파일의 위치가 다른 것을 판단하여 각 운영체제에 맞는 경로의 activate.bat 파일을 실행 할 수 있도록 Makefile을 수정했던 것을 착안해서, 이번에는 Docker에서 Dockerfile을 작성 할 때 마찬가지로 python의 경로를 다르게 할 수 있지 않을까? 하는 생각이 들었다.
 Windows는 나의 지정 경로에 python이 설치 되어 있었고, 내가 사용하지 않는 Linux에서는 python의 설치된 경로가 &amp;lsquo;usr/local/python&amp;rsquo; 인 것으로 알게 되었기 때문이다. 그래서 환경 변수를 dockerfile에서 어떻게 다루는가에 대해 알아보게 됬는데&amp;hellip;</description>
     </item>

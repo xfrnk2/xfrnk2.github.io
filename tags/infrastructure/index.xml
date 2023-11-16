@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>infrastructure on Rad Blog</title>
-    <link>https://xfrnk2.github.io/tags/infrastructure/</link>
+    <link>/tags/infrastructure/</link>
     <description>Recent content in infrastructure on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 12 May 2022 11:17:34 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>앞으로 해가면 좋을 인프라 관리</title>
-      <link>https://xfrnk2.github.io/server_developement/infra-server-management/</link>
+      <link>/server_developement/infra-server-management/</link>
       <pubDate>Thu, 12 May 2022 11:17:34 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/server_developement/infra-server-management/</guid>
+      <guid>/server_developement/infra-server-management/</guid>
       <description>서버 인프라 관리 AWS 클라우드 포메이션이나하쉬코프 테라폼 terraform을 통해 원하는인프라를 코드로 서술 (단 뭔가 토큰이나 시크릿키나, 각종 암호 값 등이 올라가면 안 됨) Github에 Commit 후 보관. Tutorial https://medium.com/pplink/aws-cloudformation%EC%9C%BC%EB%A1%9C-%EC%9D%B8%ED%94%84%EB%9D%BC-%EC%9E%90%EB%8F%99%ED%99%94-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0-9fe13cdf08c9
 https://techblog.woowahan.com/2646/
 https://howtosanta.com/korea/cloudformation%EC%9D%84-%EC%82%AC%EC%9A%A9%ED%95%98%EC%97%AC-ec2-%EC%9D%B8%EC%8A%A4%ED%84%B4%EC%8A%A4%EB%A5%BC-%EC%83%9D%EC%84%B1%ED%95%98%EB%8A%94-%EB%B0%A9%EB%B2%95/</description>

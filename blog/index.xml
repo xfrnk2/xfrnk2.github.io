@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Rad Blog</title>
-    <link>https://xfrnk2.github.io/blog/</link>
+    <link>/blog/</link>
     <description>Recent content in Blogs on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 16 Jun 2021 00:02:16 +0900</lastBuildDate>
-    <atom:link href="https://xfrnk2.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>github blog, hugo sitemap couldn&#39;t fetch error / 깃허브 블로그, 휴고 사이트맵 가져올수 없음 에러</title>
-      <link>https://xfrnk2.github.io/blog/hugo_sitemap_error/</link>
+      <link>/blog/hugo_sitemap_error/</link>
       <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
-      <guid>https://xfrnk2.github.io/blog/hugo_sitemap_error/</guid>
+      <guid>/blog/hugo_sitemap_error/</guid>
       <description>그동안 기록해 온 글을 구글에 노출시키기 위해 Google search console에 사이트맵을 등록했는데, 제대로 반영되지 않았다.
 hugo 블로그는 원래 sitemap.xml 파일 생성 기능이 있어서, public 폴더 내에 있는 파일을 그대로 이용하면 된다.
 문제 : sitemap.xml이라고 추가했는데 불구하고, 가져올 수 없음(couldn&amp;rsquo;t fetch, invalid)인 채로 열흘 지속됨.
