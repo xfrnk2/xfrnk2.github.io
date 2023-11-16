@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hackathon on Rad Blog</title>
-    <link>./tags/hackathon/</link>
+    <link>/tags/hackathon/</link>
     <description>Recent content in hackathon on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Sep 2023 00:20:30 +0900</lastBuildDate>
-    <atom:link href="./tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2023 한국장애인재단 - 장애플러스 기술 해커톤(메이커톤) 본선 중도포기 후기</title>
-      <link>./review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</link>
+      <link>/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</link>
       <pubDate>Sun, 17 Sep 2023 00:20:30 +0900</pubDate>
-      <guid>./review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</guid>
+      <guid>/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</guid>
       <description>아래는 2023년 6월부터, 2023년 9월 초까지 경험했던, 한국장애인재단에서 열린, 장애 플러스 기술 공모전의 메이커톤 본선을 중도 포기한 경험에 대한 후기이다.
 최종평가를 앞두고 공모전 본선 중도 포기 후기를 써본다. 살면서 처음 참여해본 공모전이였고, 많은 값진 경험을 할 수 있었는데, 그 이야기를 써내려볼까 한다.
 장애 + 기술 공모전에 지원해서, 개발하는데만 2달 이상을, 일 외의 시간에 최대한 개발에 몰두하고 몰입했던 경험이었다.

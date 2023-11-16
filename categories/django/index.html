@@ -7,7 +7,7 @@
 <head prefix="og: http://ogp.me/ns#">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="siteBaseUrl" content="./">
+    <meta name="siteBaseUrl" content="/">
     <meta name="author" content="xfrnk2">
     <meta name="description" content="Bilberry Premium Theme for Hugo.">
     <meta name="keywords" content="blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts">
@@ -26,7 +26,7 @@
     <meta property="og:title" content="Django" />
 <meta property="og:description" content="Bilberry Premium Theme for Hugo." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="./categories/django/" />
+<meta property="og:url" content="/categories/django/" />
 
 
 
@@ -36,22 +36,22 @@
     <script src="/modernizr-simple.js"></script>
 
     
-    <link href="./categories/django/index.xml" rel="alternate" type="application/rss+xml" title="Rad Blog" />
-    <link href="./categories/django/index.xml" rel="feed" type="application/rss+xml" title="Rad Blog" />
+    <link href="/categories/django/index.xml" rel="alternate" type="application/rss+xml" title="Rad Blog" />
+    <link href="/categories/django/index.xml" rel="feed" type="application/rss+xml" title="Rad Blog" />
     
 
 
     
-    <link rel="canonical" href="./categories/django/">
+    <link rel="canonical" href="/categories/django/">
     
 
-    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="/theme.css">
 
     
 
     
         
-            <link rel="stylesheet" href="wwr11.css">
+            <link rel="stylesheet" href="/wwr11.css">
         
     
 
@@ -68,7 +68,7 @@
         <ul class="topnav">
             
                 
-                    <li><a href="./page/about/">About</a></li>
+                    <li><a href="/page/about/">About</a></li>
                 
             
         </ul>
@@ -88,7 +88,7 @@
 
     <div class="container">
         <div class="logo">
-            <a href="/." class="logo">
+            <a href="/" class="logo">
                 
                     <img src="/mugen.png" alt="">
                 
@@ -98,7 +98,7 @@
         </div>
         <div class="titles">
             <h3 class="title">
-                <a href="/.">
+                <a href="/">
                     Rad Blog
                 </a>
             </h3>
@@ -125,7 +125,7 @@
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_password_change_form_applyment/">
+                <a class="bubble" href="/django/django_password_change_form_applyment/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -134,7 +134,7 @@
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_password_change_form_applyment/">
+        <a href="/django/django_password_change_form_applyment/">
             Django - 사용자 정의 템플릿이 PasswordChangeForm의 password_change_form.html에 의해 렌더링 되지 않는 이유와 문제 해결
         </a>
     </h1>
@@ -153,7 +153,7 @@
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -163,7 +163,7 @@
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -177,7 +177,7 @@
 When several applications provide different versions of the same resource (template, static file, management command, translation), the application listed first in INSTALLED_APPS has precedence.
 
         
-            <a href="./django/django_password_change_form_applyment/" class="more">Continue reading</a>
+            <a href="/django/django_password_change_form_applyment/" class="more">Continue reading</a>
         
     
 </div>
@@ -193,7 +193,7 @@ When several applications provide different versions of the same resource (templ
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
             </div>
@@ -210,7 +210,7 @@ When several applications provide different versions of the same resource (templ
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_typeerror_positional_-argument_but_2_were_given/">
+                <a class="bubble" href="/django/django_typeerror_positional_-argument_but_2_were_given/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -219,7 +219,7 @@ When several applications provide different versions of the same resource (templ
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_typeerror_positional_-argument_but_2_were_given/">
+        <a href="/django/django_typeerror_positional_-argument_but_2_were_given/">
             Django - takes 1 positional argument but 2 were given 해결
         </a>
     </h1>
@@ -238,7 +238,7 @@ When several applications provide different versions of the same resource (templ
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -248,7 +248,7 @@ When several applications provide different versions of the same resource (templ
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -262,7 +262,7 @@ class ThumbnailImageFieldFile(ImageFieldFile): 내부 함수
 def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 변경. 에러 발생의 이유 That message has umpteen causes; the specific reason here is that all instance methods expect a first arg which by custom we call self. So declaring def method(arg): is wrong for a method, it should be def method(self, arg):. When the method dispatch tries to call method(arg): and match up two parameters self, arg against it, you get that error.
 
         
-            <a href="./django/django_typeerror_positional_-argument_but_2_were_given/" class="more">Continue reading</a>
+            <a href="/django/django_typeerror_positional_-argument_but_2_were_given/" class="more">Continue reading</a>
         
     
 </div>
@@ -278,7 +278,7 @@ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 �
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
             </div>
@@ -295,7 +295,7 @@ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 �
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_url_name_not_found/">
+                <a class="bubble" href="/django/django_url_name_not_found/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -304,7 +304,7 @@ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 �
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_url_name_not_found/">
+        <a href="/django/django_url_name_not_found/">
             Django - NoReverseMatch 에러, Reverse not found 해결방법
         </a>
     </h1>
@@ -323,7 +323,7 @@ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 �
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -333,7 +333,7 @@ def _add_thumb(s): def _add_thumb(s):' &raquo; def _add_thumb(self, s):으로 �
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -361,7 +361,7 @@ urlpatterns = [...path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;poll
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
             </div>
@@ -378,7 +378,7 @@ urlpatterns = [...path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;poll
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_secret_key/">
+                <a class="bubble" href="/django/django_secret_key/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -387,7 +387,7 @@ urlpatterns = [...path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;poll
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_secret_key/">
+        <a href="/django/django_secret_key/">
             Django SECRET_KEY 분리방법
         </a>
     </h1>
@@ -406,7 +406,7 @@ urlpatterns = [...path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;poll
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -416,7 +416,7 @@ urlpatterns = [...path(&#39;&#39;, include(&#39;polls.url&#39;, name=&#39;poll
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -433,7 +433,7 @@ settings.py
 import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_file = os.path.join(BASE_DIR, &#39;config&#39;, &#39;secrets.
 
         
-            <a href="./django/django_secret_key/" class="more">Continue reading</a>
+            <a href="/django/django_secret_key/" class="more">Continue reading</a>
         
     
 </div>
@@ -449,7 +449,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
             </div>
@@ -466,7 +466,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_queryset_sort/">
+                <a class="bubble" href="/django/django_queryset_sort/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -475,7 +475,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_queryset_sort/">
+        <a href="/django/django_queryset_sort/">
             Django - Queryset의 정렬 및 범위조건
         </a>
     </h1>
@@ -494,7 +494,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -504,7 +504,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -516,7 +516,7 @@ import os, jsonfrom django.core.exceptions import ImproperlyConfiguredsecret_f
 django-extensions 커스텀 확장 기능 제공 라이브러리 Management Command, additional database fields, admin extensions 등을 지원 &gt; python manage.
 
         
-            <a href="./django/django_queryset_sort/" class="more">Continue reading</a>
+            <a href="/django/django_queryset_sort/" class="more">Continue reading</a>
         
     
 </div>
@@ -532,17 +532,17 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
                     
                     
-                    <a href="./tags/model/">Model</a>
+                    <a href="/tags/model/">Model</a>
                     
                 
                     
                     
-                    <a href="./tags/queryset/">Queryset</a>
+                    <a href="/tags/queryset/">Queryset</a>
                     
                 
             </div>
@@ -559,7 +559,7 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_migartion/">
+                <a class="bubble" href="/django/django_migartion/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -568,7 +568,7 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_migartion/">
+        <a href="/django/django_migartion/">
             Django - Migration을 통한 database 스키마 관리
         </a>
     </h1>
@@ -587,7 +587,7 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -597,7 +597,7 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -608,7 +608,7 @@ django-extensions 커스텀 확장 기능 제공 라이브러리 Management Comm
 Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;로 반영시키는 효율적인 방법 제공 관련 명령: 마이그레이션 파일 생성 &gt; python manage.py makemigrations &lt;앱이름&gt; 지정 데이터베이스에 마이그레이션 적용 &gt; python manage.py migrate &lt;앱이름&gt; 마이그레이션 적용 현황 출력 &gt; python manage.py showmigrations &lt;앱이름&gt; 지정 마이그레이션의 SQL 내역 출력 &gt; python manage.py sqlmigrate &lt;앱이름&gt; &lt;Migration 이름&gt; Migration File 기능 모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능 주의할 점 같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨 의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요
 
         
-            <a href="./django/django_migartion/" class="more">Continue reading</a>
+            <a href="/django/django_migartion/" class="more">Continue reading</a>
         
     
 </div>
@@ -624,17 +624,17 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
                 
                     
                     
-                    <a href="./tags/django/">Django</a>
+                    <a href="/tags/django/">Django</a>
                     
                 
                     
                     
-                    <a href="./tags/migration/">Migration</a>
+                    <a href="/tags/migration/">Migration</a>
                     
                 
                     
                     
-                    <a href="./tags/migrate/">Migrate</a>
+                    <a href="/tags/migrate/">Migrate</a>
                     
                 
             </div>
@@ -651,7 +651,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
     
         <div class="article-wrapper u-cf">
             
-                <a class="bubble" href="./django/django_manytomanyfield/">
+                <a class="bubble" href="/django/django_manytomanyfield/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -660,7 +660,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
 
     <div class="content">
     <h1 class="article-title">
-        <a href="./django/django_manytomanyfield/">
+        <a href="/django/django_manytomanyfield/">
             Django - 관계를 표현하는 Model Field - ManyToManyField
         </a>
     </h1>
@@ -679,7 +679,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
                 
                     
                     
-                        <a href="./categories/django/">Django</a>
+                        <a href="/categories/django/">Django</a>
                     
                 
             </span>
@@ -689,7 +689,7 @@ Migrations 모델의 변경내역을 &ldquo;데이터베이스 스키마&quot;�
             <span class="author">
                 
                 
-                    <a href="./author/xfrnk2/">xfrnk2</a>
+                    <a href="/author/xfrnk2/">xfrnk2</a>
                 
             </span>
         
@@ -702,7 +702,7 @@ ManyToManyField M : N 관계에서 어느쪽이라도 필드 지정 가능 ManyT
 ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할 수 없기에 중간 테이블이 필요 (별도의 지정 및 정의도 가능) 방법 1 (권장) class Post(models.Model):tag_set = models.ManyToManyField(&#39;Tag&#39;, blank=True)class Article(models.Model):tag_set = models.
 
         
-            <a href="./django/django_manytomanyfield/" class="more">Continue reading</a>
+            <a href="/django/django_manytomanyfield/" class="more">Continue reading</a>
         
     
 </div>
@@ -718,7 +718,7 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
                 
                     
                     
-                    <a href="./tags/model/">Model</a>
+                    <a href="/tags/model/">Model</a>
                     
                 
             </div>
@@ -737,7 +737,7 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
     
     <div class="paginator">
         
-            <a href="categories/django/page/2/" class="older"><i class="fa fa-angle-double-left"></i> Older posts</a>
+            <a href="/categories/django/page/2/" class="older"><i class="fa fa-angle-double-left"></i> Older posts</a>
         
 
         
@@ -758,83 +758,83 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
                 
                 
                     <li>
-                        <a href="./review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/">2023 한국장애인재단 - 장애플러스 기술 해커톤(메이커톤) 본선 중도포기 후기</a>
+                        <a href="/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/">2023 한국장애인재단 - 장애플러스 기술 해커톤(메이커톤) 본선 중도포기 후기</a>
                     </li>
                 
                     <li>
-                        <a href="./kubernetes/kubernetes_introduction/">kubernetes 소개</a>
+                        <a href="/kubernetes/kubernetes_introduction/">kubernetes 소개</a>
                     </li>
                 
                     <li>
-                        <a href="./network/123/">라우터(Router)와 스위치(Switch)</a>
+                        <a href="/network/123/">라우터(Router)와 스위치(Switch)</a>
                     </li>
                 
                     <li>
-                        <a href="./review/svp%ED%9B%84%EA%B8%B0/">2023년 상반기 삼성 SVP 신입입문교육 후기</a>
+                        <a href="/review/svp%ED%9B%84%EA%B8%B0/">2023년 상반기 삼성 SVP 신입입문교육 후기</a>
                     </li>
                 
                     <li>
-                        <a href="./cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a>
+                        <a href="/cs/floatingpoint/">부동소수점 및 음의 소수를 부동소수점으로 나타내는 방법</a>
                     </li>
                 
                     <li>
-                        <a href="./review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
+                        <a href="/review/2022%EB%85%84%ED%9A%8C%EA%B3%A0/">2022년 한 해를 회고하다. 최종 합격 안내를 받은 회사가 있기 까지의 기록.</a>
                     </li>
                 
                     <li>
-                        <a href="./review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
+                        <a href="/review/220707_saffy_start_camp/">자기혁신방법론 특강 후기</a>
                     </li>
                 
                     <li>
-                        <a href="./server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
+                        <a href="/server_developement/infra-server-management/">앞으로 해가면 좋을 인프라 관리</a>
                     </li>
                 
                     <li>
-                        <a href="./opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
+                        <a href="/opensource/good_opensource_instruction_list/">좋은 오픈소스 관련 정보 사이트 목록</a>
                     </li>
                 
                     <li>
-                        <a href="./mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
+                        <a href="/mysql/mysql_import_super_previlage/">[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</a>
                     </li>
                 
                     <li>
-                        <a href="./java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
+                        <a href="/java/java-regex/">Validation을 위해 작성하였던 정규 표현식 뜯어보기</a>
                     </li>
                 
                     <li>
-                        <a href="./java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
+                        <a href="/java/java-teamflix-social-login-workflow/">넷플릭스 클론 팀 프로젝트 - 소셜로그인 WORK FLOW</a>
                     </li>
                 
                     <li>
-                        <a href="./java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
+                        <a href="/java/java-teamflix-spring-study/">2022.03.19~2022.03.31 Spring 공부 정리</a>
                     </li>
                 
                     <li>
-                        <a href="./java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
+                        <a href="/java/java-http-request-and-controller-annotation/">자바로 하는 HTTP 요청 사용과 스프링 컨트롤러 어노테이션 정리</a>
                     </li>
                 
                     <li>
-                        <a href="./database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
+                        <a href="/database/database-mysql-procedure/">Mysql Procedure 공부와 실제 데이터 연산에 적용하기</a>
                     </li>
                 
                     <li>
-                        <a href="./server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
+                        <a href="/server_developement/rising_camp_server_week3_server_installation_on_aws_and_rds_and_query/">당근마켓 클론코딩 서버 개발 - RDS 구축과 DB 설계, 한방 쿼리 작성해보기</a>
                     </li>
                 
                     <li>
-                        <a href="./server_developement/rising_camp_server_week2_server_installation_on_aws/">서버를 구축하고 AWS상에 서비스하기</a>
+                        <a href="/server_developement/rising_camp_server_week2_server_installation_on_aws/">서버를 구축하고 AWS상에 서비스하기</a>
                     </li>
                 
                     <li>
-                        <a href="./server_developement/rising_camp_server_week1_server_source_installation_modified/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
+                        <a href="/server_developement/rising_camp_server_week1_server_source_installation_modified/">소스 설치로 LAMP 실행환경 구축하기 (VM에서 리눅스 계열 OS를 인스턴스 생성하고 APM 소스 설치하기)</a>
                     </li>
                 
                     <li>
-                        <a href="./terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
+                        <a href="/terminal/mkdir_p_option/">mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</a>
                     </li>
                 
                     <li>
-                        <a href="./resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
+                        <a href="/resolved_problem/module_build_error_outdated_babel_packages/">index.js에서 &#39;Preset files are not allowed to export objects&#39; 에러가 발생한 이유</a>
                     </li>
                 
             </ul>
@@ -844,128 +844,128 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
         
         <div class="categories">
             
-            <a href="./categories/"><strong>Categories</strong></a>
+            <a href="/categories/"><strong>Categories</strong></a>
             
 
             <ul>
                 
                 <li>
                 
-                    <a href="./categories/til/">TIL (345)</a>
+                    <a href="/categories/til/">TIL (345)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/django/">Django (15)</a>
+                    <a href="/categories/django/">Django (15)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/review/">review (10)</a>
+                    <a href="/categories/review/">review (10)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/resolved-problem/">resolved problem (8)</a>
+                    <a href="/categories/resolved-problem/">resolved problem (8)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/python/">Python (6)</a>
+                    <a href="/categories/python/">Python (6)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/food-for-thought/">Food For Thought (5)</a>
+                    <a href="/categories/food-for-thought/">Food For Thought (5)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/algorithm/">Algorithm (4)</a>
+                    <a href="/categories/algorithm/">Algorithm (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/codeit/">codeit (4)</a>
+                    <a href="/categories/codeit/">codeit (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/compiler/">compiler (4)</a>
+                    <a href="/categories/compiler/">compiler (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/database/">database (4)</a>
+                    <a href="/categories/database/">database (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/java/">Java (4)</a>
+                    <a href="/categories/java/">Java (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/server/">server (4)</a>
+                    <a href="/categories/server/">server (4)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/developement/">developement (3)</a>
+                    <a href="/categories/developement/">developement (3)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/docker/">docker (3)</a>
+                    <a href="/categories/docker/">docker (3)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/react/">React (3)</a>
+                    <a href="/categories/react/">React (3)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/spring/">Spring (3)</a>
+                    <a href="/categories/spring/">Spring (3)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/web/">web (3)</a>
+                    <a href="/categories/web/">web (3)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/mysql/">mysql (2)</a>
+                    <a href="/categories/mysql/">mysql (2)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/blog/">blog (1)</a>
+                    <a href="/categories/blog/">blog (1)</a>
                 
                 </li>
                 
                 <li>
                 
-                    <a href="./categories/book/">book (1)</a>
+                    <a href="/categories/book/">book (1)</a>
                 
                 </li>
                 
@@ -988,7 +988,7 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
             
             <div class="archive">
                 
-                <a href="./archive/"><strong>Archive</strong></a>
+                <a href="/archive/"><strong>Archive</strong></a>
                 
             </div>
             
@@ -1008,7 +1008,7 @@ ManyToManyField 관계에서는 두개의 테이블만으론 관계를 정의할
                 by xfrnk2
             </a>
             -
-            <a href="./categories/django/index.xml">rss</a>
+            <a href="/categories/django/index.xml">rss</a>
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme"
@@ -1042,7 +1042,7 @@ if (!doNotTrack) {
 </script>
 
     
-    <script src="theme.js"></script>
+    <script src="/theme.js"></script>
     
 
     

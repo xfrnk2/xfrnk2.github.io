@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>BookList on Rad Blog</title>
-    <link>./tags/booklist/</link>
+    <link>/tags/booklist/</link>
     <description>Recent content in BookList on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 17 Jun 2021 00:32:17 +0900</lastBuildDate>
-    <atom:link href="./tags/booklist/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/booklist/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>독서 목록</title>
-      <link>./book_list/book_list/</link>
+      <link>/book_list/book_list/</link>
       <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
-      <guid>./book_list/book_list/</guid>
+      <guid>/book_list/book_list/</guid>
       <description>독서목록 (2021-06-16부터 기록 시작) 전공서 컴퓨터과학이 여는 세계 - 이광근 2021-06-15 ~129p 일독
 2021-06-16 전체 일독
 쉽게 배우고 이해하는 컴퓨터 개론 - 김두진

@@ -2,34 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>React on Rad Blog</title>
-    <link>./categories/react/</link>
+    <link>/categories/react/</link>
     <description>Recent content in React on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 03 Sep 2020 23:46:41 +0900</lastBuildDate>
-    <atom:link href="./categories/react/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/categories/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>React(리액트)_Event(이벤트)</title>
-      <link>./react/react_event/</link>
+      <link>/react/react_event/</link>
       <pubDate>Thu, 03 Sep 2020 23:46:41 +0900</pubDate>
-      <guid>./react/react_event/</guid>
+      <guid>/react/react_event/</guid>
       <description>종류 onClick onChange onSubmit 형태? &amp;lt;태그 on이벤트명 = {(e) =&amp;gt; {호출할 함수(e)}}&amp;gt; (e는 event)
 &amp;lt;Fragment&amp;gt;&amp;lt;div&amp;gt;&amp;lt;form onSubmit={(event)=&amp;gt;{showForm(event)}}&amp;gt;&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;title&amp;#34; onChange={(e) =&amp;gt; {changeForm(e)}}/&amp;gt;&amp;lt;input type=&amp;#34;text&amp;#34; name=&amp;#34;reason&amp;#34; onChange={(e) =&amp;gt; {changeForm(e)}}/&amp;gt;&amp;lt;button&amp;gt;submit&amp;lt;/button&amp;gt;&amp;lt;/form&amp;gt;{foods.map((food) =&amp;gt; { return &amp;lt;div className=&amp;#34;food&amp;#34;&amp;gt;{food.title}&amp;lt;/div&amp;gt;})}&amp;lt;/div&amp;gt;&amp;lt;/Fragment&amp;gt; 이벤트 발생 방지 이벤트 자체를 막는 것. ex) &amp;ldquo;새로고침&amp;rdquo; const showForm = (event) =&amp;gt; {event.preventDefault();axios.post(&amp;#34;/posts&amp;#34;, form).then((response) =&amp;gt; {console.log(response);}).catch((error) =&amp;gt; {console.log(error);});} Javascript 문법 배열 원소 병합 arr1 = [1, 2, 3];arr2 = [4, 5]; totalarr = [.</description>
     </item>
     <item>
       <title>React(리액트)_component 작성시 props와 javascript의 활용</title>
-      <link>./react/react_component/</link>
+      <link>/react/react_component/</link>
       <pubDate>Wed, 02 Sep 2020 00:08:49 +0900</pubDate>
-      <guid>./react/react_component/</guid>
+      <guid>/react/react_component/</guid>
       <description>컴포넌트란? 부품 재사용 가능 일일히 바꾸어 줄 필요가 없도록 하기 위함 일명 리액트 컴포넌트라고 부른다. props란? 자식 컴포넌트가 부모 컴포넌트에게 전달받은 데이터 javascript의 이상하고도 유용한 문법 let sweats = [50, 30, 100];let apple = sweets[0];let banana = sweets[1];let berry = sweets[2]; 위의 문법을
 let [apple, banana ,berry] = sweets; 위처럼 쓸 수 있다.(이상하고 오묘하다)
 훅스(Hooks): useState import {usestate} from &amp;#39;react&amp;#39;;[state, setstate] = usestate(&amp;#34;김철수&amp;#34;) state는 변수, setstate는 함수이다.</description>
     </item>
     <item>
       <title>React(리액트)_에 대해서</title>
-      <link>./react/react_react/</link>
+      <link>/react/react_react/</link>
       <pubDate>Tue, 01 Sep 2020 23:46:41 +0900</pubDate>
-      <guid>./react/react_react/</guid>
+      <guid>/react/react_react/</guid>
       <description>리액트란? 리액트는 페이스북에서 사용되는 웹 프론트엔드 프레임워크이다. 웹 프론트엔드 프레임워크는 라이브러리가 잘 되어 있어서 컴퓨터는 기반 개발이 용이하다. 또한 SPA방식으로 구현이 편리하기때문에 사용을 권장한다. 웹 프론트 엔드 프레임워크는 대표적으로 리액트, 뷰, 앵귤러가 있다. 뷰는 리액트보다 간결한 편이나, 대규모 프로젝트에서는 뷰보다 리액트를 더 선호하는 편이다. (뷰 &amp;lt; 리액트) 앵귤러는 내용(알아야 할 거, 배워야 할 것)이 아주 많다고 한다.(리액트 &amp;lt; 앵귤러) 요구되는 개발환경은 node-js이다. SPA방식이란? 싱글 페이지 방식(Single Page Application)이다. 멀티 페이지 방식(Multi Page Application)보다 가볍다.</description>
     </item>
   </channel>

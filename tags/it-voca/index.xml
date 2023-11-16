@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>IT-Voca on Rad Blog</title>
-    <link>./tags/it-voca/</link>
+    <link>/tags/it-voca/</link>
     <description>Recent content in IT-Voca on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 23 Jul 2020 01:42:51 +0900</lastBuildDate>
-    <atom:link href="./tags/it-voca/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/it-voca/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IT 용어 정리</title>
-      <link>./it-voca/it_voca/</link>
+      <link>/it-voca/it_voca/</link>
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
-      <guid>./it-voca/it_voca/</guid>
+      <guid>/it-voca/it_voca/</guid>
       <description>새롭게 알게된 IT용어와 관련 영어 어휘들을 정리하기 위한 문서이며 계속해서 업데이트할 예정입니다. 기록한 시간 순서로 나열합니다.
 GPU (Grapic Processing Unit) : 그래픽 처리 장치
 container : 코드와 모든 종속성을 패키지화하는 표준 소프트웨어의 단위, 컨테이너 이미지는 런타임에 컨테이너가 된다. docker 컨테이너의 경우 docker 엔진에서 실행될 때 컨테이너가 된다.
