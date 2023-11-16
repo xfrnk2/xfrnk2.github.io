@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kubernetes on Rad Blog</title>
-    <link>/categories/kubernetes/</link>
+    <link>./categories/kubernetes/</link>
     <description>Recent content in kubernetes on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 14 Jun 2023 15:05:04 +0900</lastBuildDate>
-    <atom:link href="/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>kubernetes 소개</title>
-      <link>/kubernetes/kubernetes_introduction/</link>
+      <link>./kubernetes/kubernetes_introduction/</link>
       <pubDate>Wed, 14 Jun 2023 15:05:04 +0900</pubDate>
-      <guid>/kubernetes/kubernetes_introduction/</guid>
+      <guid>./kubernetes/kubernetes_introduction/</guid>
       <description>쿠버네티스(Kubernetes)란? 쿠버네티스(Kubernetes) 는 컨테이너화 된 애플리케이션의 대규모 배포, 스케일링 및 관리를 간편하게 만들어주는 오픈 소스 기반 컨테이너 오케스트레이션(Container Orchestration) 도구 다.
 컨테이너 오케스트레이션 &amp;ldquo;컨테이너화 된 애플리케이션에 대한,
 자동화된 설정, 관리 및 제어 체계&amp;rdquo;

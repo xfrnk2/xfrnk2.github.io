@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Codilities on Rad Blog</title>
-    <link>/codility/</link>
+    <link>./codility/</link>
     <description>Recent content in Codilities on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 22 Jun 2021 01:39:12 +0900</lastBuildDate>
-    <atom:link href="/codility/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./codility/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Codility - lesson2_arrays_OddOccurrencesInArray</title>
-      <link>/codility/lesson2_arrays_oddoccurrencesinarray/</link>
+      <link>./codility/lesson2_arrays_oddoccurrencesinarray/</link>
       <pubDate>Tue, 22 Jun 2021 01:39:12 +0900</pubDate>
-      <guid>/codility/lesson2_arrays_oddoccurrencesinarray/</guid>
+      <guid>./codility/lesson2_arrays_oddoccurrencesinarray/</guid>
       <description>문제 링크 https://app.codility.com/programmers/lessons/2-arrays/odd_occurrences_in_array/
 풀이 코딜리티에서 처음 풀어본 문제 두번의 시도를 했는데, 각각 O(N^2)과 O(N) or O(N*log n)이 나왔다. 아래와 같이 reduce를 사용하니 시간복잡도가 개선되었다.
 from functools import reducedef solution(A):return reduce(lambda acc, cur : acc ^ cur, A, 0) 첫 번째로 작성했던 지저분한 코드

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>terminal on Rad Blog</title>
-    <link>/tags/terminal/</link>
+    <link>./tags/terminal/</link>
     <description>Recent content in terminal on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 01 Feb 2022 21:18:34 +0900</lastBuildDate>
-    <atom:link href="/tags/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/terminal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mkdir -p 옵션을 사용할 경우 어떤 일이 벌어지나</title>
-      <link>/terminal/mkdir_p_option/</link>
+      <link>./terminal/mkdir_p_option/</link>
       <pubDate>Tue, 01 Feb 2022 21:18:34 +0900</pubDate>
-      <guid>/terminal/mkdir_p_option/</guid>
+      <guid>./terminal/mkdir_p_option/</guid>
       <description>mkdir -p 옵션을 사용할 경우 존재하지 않는 중간의 디렉토리를 에러(No such file or directory) 없이 안전하게 파일 경로를 생성해 준다. [ex) f1/f2/f3], -p옵션 없을시 연속된 폴더 입력하면 에러발생 </description>
     </item>
   </channel>

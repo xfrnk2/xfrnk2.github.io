@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Python on Rad Blog</title>
-    <link>/categories/python/</link>
+    <link>./categories/python/</link>
     <description>Recent content in Python on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 02 Jun 2021 02:20:34 +0900</lastBuildDate>
-    <atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python - 딕셔너리 원소의 갯수를 보다 효율적으로 counting하는 방법</title>
-      <link>/python/python-counting_dictionary_elements_efficially/</link>
+      <link>./python/python-counting_dictionary_elements_efficially/</link>
       <pubDate>Wed, 02 Jun 2021 02:20:34 +0900</pubDate>
-      <guid>/python/python-counting_dictionary_elements_efficially/</guid>
+      <guid>./python/python-counting_dictionary_elements_efficially/</guid>
       <description>Dictionary의 get 메소드를 활용하자. counts = dict()for i in items:counts[i] = counts.get(i, 0) + 1 시간복잡도적 측면에서 collections의 Counter보다 더 낫다. 출처 : 링크 </description>
     </item>
     <item>
       <title>Python - 많은 양의 데이터를 효율적으로 입력받는 방법</title>
-      <link>/python/python-sys_stdin_readline/</link>
+      <link>./python/python-sys_stdin_readline/</link>
       <pubDate>Wed, 02 Jun 2021 02:19:34 +0900</pubDate>
-      <guid>/python/python-sys_stdin_readline/</guid>
+      <guid>./python/python-sys_stdin_readline/</guid>
       <description>sys.stdin.readline() 많은 데이터 입력을 받고자 할 때는 sys.stdin.readline()을 사용하는 것이 유리하다.
 (자바에서 Scanner보다 BufferedReader가 빠른것과 같은 맥락에서)
 import sysraw_input = sys.stdin.readlineN = int(raw_input()) 덧붙여서, 위 코드에서 raw_input()은 함수를 담은 변수의 이름에 불과한데, Python 3부터는 raw_input이 없어지고 이것이 input()으로 이름이 바뀌었다. </description>
     </item>
     <item>
       <title>Python - Short Circuit Operator로서의 or, and 연산자</title>
-      <link>/python/python-operator_or_and_and/</link>
+      <link>./python/python-operator_or_and_and/</link>
       <pubDate>Mon, 05 Apr 2021 11:20:34 +0900</pubDate>
-      <guid>/python/python-operator_or_and_and/</guid>
+      <guid>./python/python-operator_or_and_and/</guid>
       <description> 연산 수식 x or y if x is false, then y, else x x and y if x is false, then x, else y 스위치를 이용해 값 병합할 때 사용 https://docs.python.org/3/library/stdtypes.html#boolean-operations-and-or-not </description>
     </item>
     <item>
       <title>Python - Python의 변수 할당 매커니즘</title>
-      <link>/python/python-variables_machanism/</link>
+      <link>./python/python-variables_machanism/</link>
       <pubDate>Mon, 05 Apr 2021 11:19:34 +0900</pubDate>
-      <guid>/python/python-variables_machanism/</guid>
+      <guid>./python/python-variables_machanism/</guid>
       <description>파이썬은 변수를 생성할 때 변수를 위한 메모리를 생성하는 방식이 아니라, 변수가 만들어지고 어떠한 값을 넣으면 변수가 그 값을 참조하는 형태이다. 변수에 상수 값을 할당하고자 해도 값이 변경되기 때문에 파이썬에서는 상수를 사용하지 않는다. 그 대신 클래스를 사용한 여러가지 방법으로 상수를 정의할 수는 있다.(FrozenSpace, SpaceFrozenValues, __slots__, property, metaclass 등, 또는 Python 3.8~ typing.Final(*그러나 재할당 가능)) from uuid import uuid4class obj:def __init__(self):self.__data = uuid4()self.__is_changed = False@propertydef data(self):return self.</description>
     </item>
     <item>
       <title>Python - Namedtuple과 dataclass 비교 정리</title>
-      <link>/python/comparison_namedtuple_and_dataclass/</link>
+      <link>./python/comparison_namedtuple_and_dataclass/</link>
       <pubDate>Wed, 18 Nov 2020 14:10:57 +0900</pubDate>
-      <guid>/python/comparison_namedtuple_and_dataclass/</guid>
+      <guid>./python/comparison_namedtuple_and_dataclass/</guid>
       <description> ＊NamedTuple은 tuple을 상속받았으며 tuple 구조는 c로 작성되었다. 그러므로 해시나 비교 등의 메서드가 빠르다.
 ＊dataclass는 dictionary에 기초하므로 장단점의 차이가 생긴다.
 ＊예를 들면 공간 사용은 tuple이 더 작으나, 액세스 속도는 dataclass가 더 빠르다.
@@ -52,9 +52,9 @@ https://stackoverflow.com/questions/51671699/data-classes-vs-typing-namedtuple-p
     </item>
     <item>
       <title>Python - collections의 namedtuple과 typing의 NamedTuple 비교</title>
-      <link>/python/comparison_namedtuple_and_namedtuple/</link>
+      <link>./python/comparison_namedtuple_and_namedtuple/</link>
       <pubDate>Wed, 18 Nov 2020 13:10:57 +0900</pubDate>
-      <guid>/python/comparison_namedtuple_and_namedtuple/</guid>
+      <guid>./python/comparison_namedtuple_and_namedtuple/</guid>
       <description>코드 사용 예 - typing의 NamedTuple from typing import NamedTupleclass Employee(NamedTuple):name: strid: int 코드 사용 예 - collections의 namedtuple from collections import namedtupleEmployee = namedtuple(&amp;#39;Employee&amp;#39;, [&amp;#39;name&amp;#39;, &amp;#39;id&amp;#39;]) typing의 Namedtuple을 사용하는 편이 보다 자연스러운 인터페이스를 선언할 수 있다. collections의 namedtuple의 신버전이 typing의 NamedTuple이다.
 typinng의 NamedTuple을 사용하면 좋은 점 type 이름을 두 번 반복 할 필요가 없다. ( 예시에서의 &amp;ldquo;Employee&amp;rdquo;) type을 사용자가 직접 정의 할 수 있다. (예 : 독 스트링 또는 일부 메소드 추가) -&amp;gt; NamedTuple의 하위 클래스가 아님 상속이 가능하다.</description>
     </item>

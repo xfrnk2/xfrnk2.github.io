@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Migrate on Rad Blog</title>
-    <link>/tags/migrate/</link>
+    <link>./tags/migrate/</link>
     <description>Recent content in Migrate on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 05 May 2020 14:14:58 +0900</lastBuildDate>
-    <atom:link href="/tags/migrate/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/migrate/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django - Migration을 통한 database 스키마 관리</title>
-      <link>/django/django_migartion/</link>
+      <link>./django/django_migartion/</link>
       <pubDate>Tue, 05 May 2020 14:14:58 +0900</pubDate>
-      <guid>/django/django_migartion/</guid>
+      <guid>./django/django_migartion/</guid>
       <description>이진석 선생님의 리액트와 함께 장고 시작하기 수강중 정리한 글입니다.
 Migrations 모델의 변경내역을 &amp;ldquo;데이터베이스 스키마&amp;quot;로 반영시키는 효율적인 방법 제공 관련 명령: 마이그레이션 파일 생성 &amp;gt; python manage.py makemigrations &amp;lt;앱이름&amp;gt; 지정 데이터베이스에 마이그레이션 적용 &amp;gt; python manage.py migrate &amp;lt;앱이름&amp;gt; 마이그레이션 적용 현황 출력 &amp;gt; python manage.py showmigrations &amp;lt;앱이름&amp;gt; 지정 마이그레이션의 SQL 내역 출력 &amp;gt; python manage.py sqlmigrate &amp;lt;앱이름&amp;gt; &amp;lt;Migration 이름&amp;gt; Migration File 기능 모델의 변경내역을 누적 테이블 생성/삭제, 필드 추가/삭제 등 데이터베이스에 어떤 변화를 가하는 Operation들을 나열 Custom Python/SQL Operation (data migration 등) makemigrations 명령에 의해 모델로부터 자동 생성 모델 참조 없이 빈 Migration File을 만들어서 직접 채워 넣는 것도 가능 주의할 점 같은 Migration 파일이라도 DB 종류에 따라 다른 SQL이 생성됨 모든 데이터 베이스 엔진들이 같은 기능을 제공하지는 않음 적용된 마이그레이션 파일은 절대로 삭제해서는 안됨 의도에 맞게 Migration 파일이 생성되었는지 확인하는 것이 무엇보다 중요</description>
     </item>

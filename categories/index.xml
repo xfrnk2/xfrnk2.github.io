@@ -2,241 +2,241 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Rad Blog</title>
-    <link>/categories/</link>
+    <link>./categories/</link>
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 17 Sep 2023 00:20:30 +0900</lastBuildDate>
-    <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>review</title>
-      <link>/categories/review/</link>
+      <link>./categories/review/</link>
       <pubDate>Sun, 17 Sep 2023 00:20:30 +0900</pubDate>
-      <guid>/categories/review/</guid>
+      <guid>./categories/review/</guid>
       <description></description>
     </item>
     <item>
       <title>kubernetes</title>
-      <link>/categories/kubernetes/</link>
+      <link>./categories/kubernetes/</link>
       <pubDate>Wed, 14 Jun 2023 15:05:04 +0900</pubDate>
-      <guid>/categories/kubernetes/</guid>
+      <guid>./categories/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>network</title>
-      <link>/categories/network/</link>
+      <link>./categories/network/</link>
       <pubDate>Sun, 07 May 2023 22:45:48 +0900</pubDate>
-      <guid>/categories/network/</guid>
+      <guid>./categories/network/</guid>
       <description></description>
     </item>
     <item>
       <title>CS</title>
-      <link>/categories/cs/</link>
+      <link>./categories/cs/</link>
       <pubDate>Wed, 04 Jan 2023 22:46:14 +0900</pubDate>
-      <guid>/categories/cs/</guid>
+      <guid>./categories/cs/</guid>
       <description></description>
     </item>
     <item>
       <title>infrastructure</title>
-      <link>/categories/infrastructure/</link>
+      <link>./categories/infrastructure/</link>
       <pubDate>Thu, 12 May 2022 11:17:34 +0900</pubDate>
-      <guid>/categories/infrastructure/</guid>
+      <guid>./categories/infrastructure/</guid>
       <description></description>
     </item>
     <item>
       <title>server</title>
-      <link>/categories/server/</link>
+      <link>./categories/server/</link>
       <pubDate>Thu, 12 May 2022 11:17:34 +0900</pubDate>
-      <guid>/categories/server/</guid>
+      <guid>./categories/server/</guid>
       <description></description>
     </item>
     <item>
       <title>opensource</title>
-      <link>/categories/opensource/</link>
+      <link>./categories/opensource/</link>
       <pubDate>Sun, 01 May 2022 00:37:36 +0900</pubDate>
-      <guid>/categories/opensource/</guid>
+      <guid>./categories/opensource/</guid>
       <description></description>
     </item>
     <item>
       <title>mysql</title>
-      <link>/categories/mysql/</link>
+      <link>./categories/mysql/</link>
       <pubDate>Wed, 06 Apr 2022 23:36:16 +0900</pubDate>
-      <guid>/categories/mysql/</guid>
+      <guid>./categories/mysql/</guid>
       <description></description>
     </item>
     <item>
       <title>Java</title>
-      <link>/categories/java/</link>
+      <link>./categories/java/</link>
       <pubDate>Sat, 02 Apr 2022 23:49:45 +0900</pubDate>
-      <guid>/categories/java/</guid>
+      <guid>./categories/java/</guid>
       <description></description>
     </item>
     <item>
       <title>Regex</title>
-      <link>/categories/regex/</link>
+      <link>./categories/regex/</link>
       <pubDate>Sat, 02 Apr 2022 23:49:45 +0900</pubDate>
-      <guid>/categories/regex/</guid>
+      <guid>./categories/regex/</guid>
       <description></description>
     </item>
     <item>
       <title>Spring</title>
-      <link>/categories/spring/</link>
+      <link>./categories/spring/</link>
       <pubDate>Sat, 02 Apr 2022 23:47:45 +0900</pubDate>
-      <guid>/categories/spring/</guid>
+      <guid>./categories/spring/</guid>
       <description></description>
     </item>
     <item>
       <title>database</title>
-      <link>/categories/database/</link>
+      <link>./categories/database/</link>
       <pubDate>Sat, 02 Apr 2022 19:35:24 +0900</pubDate>
-      <guid>/categories/database/</guid>
+      <guid>./categories/database/</guid>
       <description></description>
     </item>
     <item>
       <title>developement</title>
-      <link>/categories/developement/</link>
+      <link>./categories/developement/</link>
       <pubDate>Mon, 28 Feb 2022 11:17:34 +0900</pubDate>
-      <guid>/categories/developement/</guid>
+      <guid>./categories/developement/</guid>
       <description></description>
     </item>
     <item>
       <title>terminal</title>
-      <link>/categories/terminal/</link>
+      <link>./categories/terminal/</link>
       <pubDate>Tue, 01 Feb 2022 21:18:34 +0900</pubDate>
-      <guid>/categories/terminal/</guid>
+      <guid>./categories/terminal/</guid>
       <description></description>
     </item>
     <item>
       <title>resolved problem</title>
-      <link>/categories/resolved-problem/</link>
+      <link>./categories/resolved-problem/</link>
       <pubDate>Tue, 01 Feb 2022 21:17:34 +0900</pubDate>
-      <guid>/categories/resolved-problem/</guid>
+      <guid>./categories/resolved-problem/</guid>
       <description></description>
     </item>
     <item>
       <title>web</title>
-      <link>/categories/web/</link>
+      <link>./categories/web/</link>
       <pubDate>Tue, 01 Feb 2022 20:45:21 +0900</pubDate>
-      <guid>/categories/web/</guid>
+      <guid>./categories/web/</guid>
       <description></description>
     </item>
     <item>
       <title>TIL</title>
-      <link>/categories/til/</link>
+      <link>./categories/til/</link>
       <pubDate>Thu, 25 Nov 2021 00:20:30 +0900</pubDate>
-      <guid>/categories/til/</guid>
+      <guid>./categories/til/</guid>
       <description></description>
     </item>
     <item>
       <title>Food For Thought</title>
-      <link>/categories/food-for-thought/</link>
+      <link>./categories/food-for-thought/</link>
       <pubDate>Sat, 13 Nov 2021 13:34:33 +0900</pubDate>
-      <guid>/categories/food-for-thought/</guid>
+      <guid>./categories/food-for-thought/</guid>
       <description></description>
     </item>
     <item>
       <title>codeit</title>
-      <link>/categories/codeit/</link>
+      <link>./categories/codeit/</link>
       <pubDate>Fri, 06 Aug 2021 00:18:15 +0900</pubDate>
-      <guid>/categories/codeit/</guid>
+      <guid>./categories/codeit/</guid>
       <description></description>
     </item>
     <item>
       <title>COMPUTER_INSTRUCTION</title>
-      <link>/categories/computer_instruction/</link>
+      <link>./categories/computer_instruction/</link>
       <pubDate>Thu, 08 Jul 2021 01:17:57 +0900</pubDate>
-      <guid>/categories/computer_instruction/</guid>
+      <guid>./categories/computer_instruction/</guid>
       <description></description>
     </item>
     <item>
       <title>Algorithm</title>
-      <link>/categories/algorithm/</link>
+      <link>./categories/algorithm/</link>
       <pubDate>Wed, 07 Jul 2021 15:55:01 +0900</pubDate>
-      <guid>/categories/algorithm/</guid>
+      <guid>./categories/algorithm/</guid>
       <description></description>
     </item>
     <item>
       <title>Django</title>
-      <link>/categories/django/</link>
+      <link>./categories/django/</link>
       <pubDate>Mon, 28 Jun 2021 23:44:11 +0900</pubDate>
-      <guid>/categories/django/</guid>
+      <guid>./categories/django/</guid>
       <description></description>
     </item>
     <item>
       <title>book</title>
-      <link>/categories/book/</link>
+      <link>./categories/book/</link>
       <pubDate>Sun, 27 Jun 2021 23:22:06 +0900</pubDate>
-      <guid>/categories/book/</guid>
+      <guid>./categories/book/</guid>
       <description></description>
     </item>
     <item>
       <title>Codility</title>
-      <link>/categories/codility/</link>
+      <link>./categories/codility/</link>
       <pubDate>Tue, 22 Jun 2021 01:39:12 +0900</pubDate>
-      <guid>/categories/codility/</guid>
+      <guid>./categories/codility/</guid>
       <description></description>
     </item>
     <item>
       <title>BookList</title>
-      <link>/categories/booklist/</link>
+      <link>./categories/booklist/</link>
       <pubDate>Thu, 17 Jun 2021 00:32:17 +0900</pubDate>
-      <guid>/categories/booklist/</guid>
+      <guid>./categories/booklist/</guid>
       <description></description>
     </item>
     <item>
       <title>blog</title>
-      <link>/categories/blog/</link>
+      <link>./categories/blog/</link>
       <pubDate>Wed, 16 Jun 2021 00:02:16 +0900</pubDate>
-      <guid>/categories/blog/</guid>
+      <guid>./categories/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>/categories/python/</link>
+      <link>./categories/python/</link>
       <pubDate>Wed, 02 Jun 2021 02:20:34 +0900</pubDate>
-      <guid>/categories/python/</guid>
+      <guid>./categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>compiler</title>
-      <link>/categories/compiler/</link>
+      <link>./categories/compiler/</link>
       <pubDate>Mon, 23 Nov 2020 22:39:02 +0900</pubDate>
-      <guid>/categories/compiler/</guid>
+      <guid>./categories/compiler/</guid>
       <description></description>
     </item>
     <item>
       <title>system</title>
-      <link>/categories/system/</link>
+      <link>./categories/system/</link>
       <pubDate>Sun, 04 Oct 2020 00:40:00 +0900</pubDate>
-      <guid>/categories/system/</guid>
+      <guid>./categories/system/</guid>
       <description></description>
     </item>
     <item>
       <title>React</title>
-      <link>/categories/react/</link>
+      <link>./categories/react/</link>
       <pubDate>Thu, 03 Sep 2020 23:46:41 +0900</pubDate>
-      <guid>/categories/react/</guid>
+      <guid>./categories/react/</guid>
       <description></description>
     </item>
     <item>
       <title>Javascript</title>
-      <link>/categories/javascript/</link>
+      <link>./categories/javascript/</link>
       <pubDate>Thu, 03 Sep 2020 00:12:09 +0900</pubDate>
-      <guid>/categories/javascript/</guid>
+      <guid>./categories/javascript/</guid>
       <description></description>
     </item>
     <item>
       <title>docker</title>
-      <link>/categories/docker/</link>
+      <link>./categories/docker/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      <guid>/categories/docker/</guid>
+      <guid>./categories/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>IT-Voca</title>
-      <link>/categories/it-voca/</link>
+      <link>./categories/it-voca/</link>
       <pubDate>Thu, 23 Jul 2020 01:42:51 +0900</pubDate>
-      <guid>/categories/it-voca/</guid>
+      <guid>./categories/it-voca/</guid>
       <description></description>
     </item>
   </channel>

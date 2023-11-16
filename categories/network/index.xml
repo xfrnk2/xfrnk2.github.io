@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>network on Rad Blog</title>
-    <link>/categories/network/</link>
+    <link>./categories/network/</link>
     <description>Recent content in network on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 07 May 2023 22:45:48 +0900</lastBuildDate>
-    <atom:link href="/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./categories/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>라우터(Router)와 스위치(Switch)</title>
-      <link>/network/123/</link>
+      <link>./network/123/</link>
       <pubDate>Sun, 07 May 2023 22:45:48 +0900</pubDate>
-      <guid>/network/123/</guid>
+      <guid>./network/123/</guid>
       <description>Router : 네트워크 by 네트워크 연결 Switch : 장치의 상호 연결 Diff: 무엇을 기반을 동작하는지?, 브로드캐스트 도메인의 구분 가능 여부(라우터O, 스위치X) Router 정의 하나의 공인 IP를 가진 장치 가정용, 기업용 존재 역할 NAT기능을 가진 외부 네트워크와 내부 네트워크를 연결 패킷이 도착할 수 있는 경로를 설정 스위칭 예) 공유기 Switch 역할 A 디바이스에서 B 디바이스로 패킷을 빠르고 효율적으로 전달하는 것 지원하는 기능에 따른 분류 언매니지드 스위치(Unmanaged Switch)
 고정된 환겅 구성, 플러그 앤 플레이 방식, 대부분의 옵션 선택 불가 매니지드 스위치(Managed Switch)</description>
     </item>

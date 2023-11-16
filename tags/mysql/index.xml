@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mysql on Rad Blog</title>
-    <link>/tags/mysql/</link>
+    <link>./tags/mysql/</link>
     <description>Recent content in Mysql on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Apr 2022 23:36:16 +0900</lastBuildDate>
-    <atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>[MYSQL] ERROR 1227 (42000) at line 55: Access denied; you need (at least one of) the SUPER privilege(s) for this operation 해결</title>
-      <link>/mysql/mysql_import_super_previlage/</link>
+      <link>./mysql/mysql_import_super_previlage/</link>
       <pubDate>Wed, 06 Apr 2022 23:36:16 +0900</pubDate>
-      <guid>/mysql/mysql_import_super_previlage/</guid>
+      <guid>./mysql/mysql_import_super_previlage/</guid>
       <description>AWS RDS의 데이터 이관중 트러블슈팅 Mysql Server &amp;gt; Data Export 시 Export Option을 Self-Contained File로 지정하여 sql 파일 추출 Mysql Server &amp;gt; Data Export 실행하니 아래와 같은 에러가 등장. ERROR 1227 (42000) at line 55: Access denied;you need (at least one of) the SUPER privilege(s) for this operation 인터넷에 돌아다니는 방법을 사용해 봤는데도 변화가 없었다.
 https://aws.amazon.com/ko/premiumsupport/knowledge-center/definer-error-mysqldump/ https://aws.amazon.com/ko/premiumsupport/knowledge-center/error-1227-mysqldump/ db dump를 위해 아래의 4종의 명령줄을 주석처리 했다. 설정 파일은 건드리기 찜찜했기 때문.</description>
     </item>
     <item>
       <title>Mysql Procedure 공부와 실제 데이터 연산에 적용하기</title>
-      <link>/database/database-mysql-procedure/</link>
+      <link>./database/database-mysql-procedure/</link>
       <pubDate>Sat, 02 Apr 2022 19:35:24 +0900</pubDate>
-      <guid>/database/database-mysql-procedure/</guid>
+      <guid>./database/database-mysql-procedure/</guid>
       <description>개요 본 글은 넷플릭스 서버를 나름대로 클론 코딩을 해보며 데이터를 채우던 과정중의 기록이다. 방대한 양의 데이터를 어떻게 핸들링 할 수 있을까 고민하다가, Mysql에도 For, While 문 등 여러가지 연산을 가능하게 해주는 문법이 있다는 정보를 입수했다. 구글링을 거듭하다 보니, 보통의 프로그래밍 언어의 함수처럼 간단한 기능이라면 실제로 사용이 가능한 듯 보였다. 방대한 양의 데이터를 일련의 일정한 규칙을 따라 insert하기 위해서, 다음과 같이 공부하며 직접 코드를 작성해 보았다. 작성했던 코드의 일부를 먼저 첨부한다. 아래에서 각 항목별 의미나 기능을 약술해 본다.</description>
     </item>
     <item>
       <title>[MYSQL] Error: Authentication plugin ‘caching_sha2_password’ cannot be loaded 해결</title>
-      <link>/mysql/mysql_error_default_authentication_plugin/</link>
+      <link>./mysql/mysql_error_default_authentication_plugin/</link>
       <pubDate>Wed, 05 Aug 2020 10:36:16 +0900</pubDate>
-      <guid>/mysql/mysql_error_default_authentication_plugin/</guid>
+      <guid>./mysql/mysql_error_default_authentication_plugin/</guid>
       <description>▶ MySQL 8.0부터는 default_authentication_plugin 이 mysql_native_password 에서 caching_sha2_password 로 변경되었는데, 강화된 보안 체계로 인해 외부 어플리케이션에서 사용되는 mysql 관련 모듈이 mysql 8.x 의 기본 값으로 설정된 패스워드 보안 알고리즘을 맞추지 못하여 발생하는 에러이니 mysql 인스턴스 전체에 영향을 주지 않는 방법으로 사용자 단위로 패스워드 보안 정책을 변경하는 편이 가장 좋다고 한다.
 ▶ stackoverflow를 검색해보면 바로 나오는 것들이지만 빠르게 찾아보기 용이하게 하기 위해 간단히 방법만을 기록해 둡니다. 아래 방법중 어느것인가를 사용하면 에러를 해결했던 것 같습니다.</description>
     </item>

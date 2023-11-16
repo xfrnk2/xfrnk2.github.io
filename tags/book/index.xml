@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>book on Rad Blog</title>
-    <link>/tags/book/</link>
+    <link>./tags/book/</link>
     <description>Recent content in book on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 27 Jun 2021 23:22:06 +0900</lastBuildDate>
-    <atom:link href="/tags/book/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/book/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>독서 리뷰 - &#39;우리를 인간이게 하는것, 거울 - 최정원&#39;을 읽고</title>
-      <link>/book/mirror/</link>
+      <link>./book/mirror/</link>
       <pubDate>Sun, 27 Jun 2021 23:22:06 +0900</pubDate>
-      <guid>/book/mirror/</guid>
+      <guid>./book/mirror/</guid>
       <description>도서 바로가기 책을 읽게 된 동기 얼마 전 도서관에 갔다가 우연히 펼쳐보았던 책, 그런데 거울이라는 소재를 가지고 다양한 해석이 될 수 있다는 점에서 흥미를 느껴서, 이후에 읽어보자고 마음을 먹었는데 도서관을 재방문 한 뒤 좀처럼 눈에 띄지 않았다. 사실 최근에 준비를 하던 시 짓기 공모에 거울이라는 소재를 다루고 싶었다. 그래서 거울을 어떻게 표현할 수 있을까 고민을 많이 하던 시기를 막 지나온 참이었다. 책을 만난것은 우연이었고, 곧바로 흥미가 생긴것이 발단이 되었다. 2021-06-27 인 오늘에야 인연이 닿아 읽어보게 된 책을 나의 주관적인 스타일으로 리뷰해 본다.</description>
     </item>
   </channel>

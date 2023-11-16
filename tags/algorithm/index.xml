@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithm on Rad Blog</title>
-    <link>/tags/algorithm/</link>
+    <link>./tags/algorithm/</link>
     <description>Recent content in Algorithm on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 24 Jun 2021 01:13:19 +0900</lastBuildDate>
-    <atom:link href="/tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="./tags/algorithm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>알고리즘 - 팰린드롬 문자열 판별하기(파이썬)</title>
-      <link>/codeitquiz/palindrome_check/</link>
+      <link>./codeitquiz/palindrome_check/</link>
       <pubDate>Thu, 24 Jun 2021 01:13:19 +0900</pubDate>
-      <guid>/codeitquiz/palindrome_check/</guid>
+      <guid>./codeitquiz/palindrome_check/</guid>
       <description> 수강중인 강의로부터 수행한 선수 과제의 일부이다.
 예전에 팰린드롬을 판별하는 문제를 가지고 고전했던 기억이 떠올라서 별도의 기록으로 남기면 좋겠다는 생각으로 작성하였다.
 def is_palindrome(word):pivot = len(word)//2for i in range(1, pivot+1):if word[pivot-i] != word[pivot+i]:return Falsereturn True# 테스트print(is_palindrome(&amp;#34;racecar&amp;#34;))print(is_palindrome(&amp;#34;stars&amp;#34;))print(is_palindrome(&amp;#34;토마토&amp;#34;))print(is_palindrome(&amp;#34;kayak&amp;#34;))print(is_palindrome(&amp;#34;hello&amp;#34;)) 정렬을 직접 구현해보는 연습을 통해 pivot이라는 개념을 사용하는데 익숙해졌나보다. 비교적 쉬운 편에 속했다. </description>
