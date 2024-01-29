@@ -6,8 +6,15 @@
     <description>Recent content in Categories on Rad Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Sep 2023 00:20:30 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 31 Dec 2023 13:01:14 +0100</lastBuildDate>
     <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Notice</title>
+      <link>/categories/notice/</link>
+      <pubDate>Sun, 31 Dec 2023 13:01:14 +0100</pubDate>
+      <guid>/categories/notice/</guid>
+      <description></description>
+    </item>
     <item>
       <title>review</title>
       <link>/categories/review/</link>

@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/author/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/categories/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/categories/notice/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/quote/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/author/xfrnk2/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
+    <loc>/quote/notice-move-blog-to-tistory/</loc>
+    <lastmod>2023-12-31T13:01:14+01:00</lastmod>
+  </url><url>
     <loc>/review/</loc>
     <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>/review/%EC%9E%A5%EC%95%A0%ED%94%8C%EB%9F%AC%EC%8A%A4%EA%B8%B0%EC%88%A0_%EA%B3%B5%EB%AA%A8%EC%A0%84_%EB%B3%B8%EC%84%A0%EC%A4%91%EB%8F%84%ED%8F%AC%EA%B8%B0_%ED%9B%84%EA%B8%B0/</loc>
     <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
-    <loc>/author/</loc>
-    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
-  </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
-  </url><url>
     <loc>/tags/hackathon/</loc>
-    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>/tags/review/</loc>
@@ -27,9 +39,6 @@
     <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2023-09-17T00:20:30+09:00</lastmod>
-  </url><url>
-    <loc>/author/xfrnk2/</loc>
     <lastmod>2023-09-17T00:20:30+09:00</lastmod>
   </url><url>
     <loc>/tags/kubernetes/</loc>
